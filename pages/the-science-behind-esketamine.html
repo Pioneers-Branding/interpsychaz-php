@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head itemscope="" itemtype="http://schema.org/WebSite"> <script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+<meta charset="utf-8"/><link as="font" crossorigin="" href="../wp-content/uploads/dmm-consent-guard/fonts/f-b58a5805e17f555e1620.woff2" rel="preload" type="font/woff2"/><link as="font" crossorigin="" href="../wp-content/uploads/dmm-consent-guard/fonts/f-0f7fcdc8ea1a3358e78a.woff2" rel="preload" type="font/woff2"/>
+<script id="dmm-cg-boot">window.DMMCG={"mode":"disclaimer","cats":["functional","analytics","marketing"],"allow":[],"lib":["code.jquery.com","cdnjs.cloudflare.com","unpkg.com","jsdelivr.net","bootstrapcdn.com","ajax.aspnetcdn.com","use.fontawesome.com","kit.fontawesome.com"],"map":{"google-analytics.com":"analytics","analytics.google.com":"analytics","googletagmanager.com":"analytics","segment.com":"analytics","segment.io":"analytics","withcherry.com":"marketing","recaptcha.net":"functional","gstatic.com":"functional","doubleclick.net":"marketing","googleadservices.com":"marketing","googlesyndication.com":"marketing","facebook.com":"marketing","facebook.net":"marketing","connect.facebook.net":"marketing","tiktok.com":"marketing","bing.com":"marketing","clarity.ms":"analytics","hotjar.com":"analytics","hotjar.io":"analytics","linkedin.com":"marketing","licdn.com":"marketing","hubspot.com":"marketing","hs-scripts.com":"marketing","hs-analytics.net":"analytics","youtube.com":"functional","youtube-nocookie.com":"functional","ytimg.com":"functional","vimeo.com":"functional","fonts.googleapis.com":"functional","fonts.gstatic.com":"functional","translate.google.com":"functional","translate.googleapis.com":"functional","gravatar.com":"functional","w.org":"functional","wp.com":"analytics","cloudflareinsights.com":"analytics","intercom.io":"marketing","tawk.to":"functional","podium.com":"marketing","birdeye.com":"marketing","callrail.com":"marketing","twilio.com":"functional","stripe.com":"functional","paypal.com":"functional"},"ep":"http://interpsychaz.com/wp-json/dmm/v1/","tok":"4249d6030bed8d8538c71a2e62a52d4b","pv":1,"audit":1,"banner":1,"recaptcha":1,"embeds":"placeholder","site":"interpsychaz.com"};</script>
+<script id="dmm-cg-guard">(function (w, d) {
+	'use strict';
+
+	var C = w.DMMCG;
+	if (!C || !C.ep || w.__dmmCgLoaded) { return; }
+	w.__dmmCgLoaded = true;
+
+	var oFetch  = w.fetch;
+	var oBeacon = w.navigator && w.navigator.sendBeacon ? w.navigator.sendBeacon.bind(w.navigator) : null;
+	var oOpen   = w.XMLHttpRequest ? w.XMLHttpRequest.prototype.open : null;
+	var oSend   = w.XMLHttpRequest ? w.XMLHttpRequest.prototype.send : null;
+	var oSetAttr = Element.prototype.setAttribute;
+	var oWrite  = d.write;
+	var oWriteLn = d.writeln;
+
+	var ENFORCE = C.mode === 'enforce';
+	var SELF    = (C.site || w.location.hostname).toLowerCase();
+	var COOKIE  = 'dmm_cg_consent';
+	var GPC     = !!(w.navigator && w.navigator.globalPrivacyControl);
+
+	var consent = null;
+	var once    = {};
+	var seen    = {};
+	var buf     = [];
+	var timer   = null;
+
+	/* <?php url helpers ?> */
+	function absUrl(u) {
+		if (u == null) { return ''; }
+		u = String(u);
+		if (!u || /^(data|blob|javascript|about|mailto|tel|#):/i.test(u)) { return ''; }
+		try { return new URL(u, w.location.href).href; } catch (e) { return ''; }
+	}
+
+	function hostOf(u) {
+		var a = absUrl(u);
+		if (!a) { return ''; }
+		try { return new URL(a).hostname.toLowerCase(); } catch (e) { return ''; }
+	}
+
+	function pathOf(u) {
+		var a = absUrl(u);
+		if (!a) { return ''; }
+		try { return new URL(a).pathname.slice(0, 190); } catch (e) { return ''; }
+	}
+
+	function suffixed(host, pattern) {
+		if (!pattern) { return false; }
+		pattern = String(pattern).toLowerCase().replace(/^\./, '');
+		return host === pattern || host.slice(-(pattern.length + 1)) === '.' + pattern;
+	}
+
+	function isSelf(host) {
+		if (!host) { return true; }
+		var a = host.replace(/^www\./, '');
+		var b = SELF.replace(/^www\./, '');
+		return a === b || a.slice(-(b.length + 1)) === '.' + b;
+	}
+
+	function isAllowed(host) {
+		for (var i = 0; i < (C.allow || []).length; i++) {
+			if (suffixed(host, C.allow[i])) { return true; }
+		}
+		return false;
+	}
+
+	function isLibrary(host, url) {
+		if (host === 'ajax.googleapis.com') { return /\/ajax\/libs\//i.test(url || ''); }
+		for (var i = 0; i < (C.lib || []).length; i++) {
+			if (suffixed(host, C.lib[i])) { return true; }
+		}
+		return false;
+	}
+
+	function catOf(host, url) {
+		if (host === 'www.google.com' || host === 'google.com') {
+			if (/\/recaptcha\//.test(url || '')) { return 'functional'; }
+			if (/\/(pagead|ads|ccm|maps)\//.test(url || '')) { return 'marketing'; }
+		}
+		var map = C.map || {};
+		for (var k in map) {
+			if (Object.prototype.hasOwnProperty.call(map, k) && suffixed(host, k)) { return map[k]; }
+		}
+		return 'unknown';
+	}
+
+	/* <?php consent state ?> */
+	function readCookie() {
+		var m = d.cookie.match(/(?:^|;\s*)dmm_cg_consent=([^;]*)/);
+		if (!m) { return null; }
+		try {
+			var o = JSON.parse(decodeURIComponent(m[1]));
+			if (!o || typeof o !== 'object' || o.v !== C.pv || !(o.c instanceof Array)) { return null; }
+			return o;
+		} catch (e) { return null; }
+	}
+
+	function writeCookie(o) {
+		var v = encodeURIComponent(JSON.stringify(o));
+		d.cookie = COOKIE + '=' + v + ';path=/;max-age=31536000;samesite=Lax' +
+			(w.location.protocol === 'https:' ? ';secure' : '');
+	}
+
+	function granted(cat) {
+		if (cat === 'necessary') { return true; }
+		if (!consent) { return false; }
+		return consent.c.indexOf(cat) > -1;
+	}
+
+	consent = readCookie();
+
+	/* <?php decision + audit buffer ?> */
+	function record(host, url, kind, cat, blocked) {
+		if (!C.audit) { return; }
+		var phase = consent ? 'post' : 'pre';
+		var key = host + '|' + kind + '|' + phase;
+		if (seen[key]) { return; }
+		seen[key] = 1;
+		buf.push({ h: host, p: pathOf(url), k: kind, c: cat, ph: phase, b: blocked ? 1 : 0 });
+		if (!timer) { timer = w.setTimeout(flush, 1500); }
+	}
+
+	function flush() {
+		timer = null;
+		if (!buf.length) { return; }
+		var body = JSON.stringify({ t: C.tok, pg: w.location.pathname.slice(0, 190), items: buf.splice(0, 50) });
+		post('audit', body);
+	}
+
+	function post(route, body) {
+		var url = C.ep + route;
+		try {
+			if (oBeacon && oBeacon(url, new Blob([body], { type: 'text/plain;charset=UTF-8' }))) { return; }
+		} catch (e) { /* fall through */ }
+		try {
+			if (oFetch) {
+				oFetch.call(w, url, { method: 'POST', body: body, keepalive: true, credentials: 'omit', headers: { 'Content-Type': 'text/plain' } });
+			}
+		} catch (e2) { /* give up */ }
+	}
+
+	function decide(rawUrl, kind) {
+		var url = absUrl(rawUrl);
+		if (!url) { return true; }
+
+		var host = hostOf(url);
+		if (!host || isSelf(host) || isAllowed(host)) { return true; }
+		if (once[url]) { return true; }
+
+		if (isLibrary(host, url)) {
+			record(host, url, 'library', catOf(host, url), false);
+			return true;
+		}
+
+		var cat = catOf(host, url);
+		var ok  = granted(cat);
+		var blocked = !ok && ENFORCE;
+
+		record(host, url, kind, cat, blocked);
+
+		return !blocked;
+	}
+
+	/* <?php network patches ?> */
+	if (oFetch) {
+		w.fetch = function (input, init) {
+			var u = (input && typeof input === 'object' && input.url) ? input.url : input;
+			if (!decide(u, 'fetch')) {
+				if (typeof Response === 'function') {
+					return Promise.resolve(new Response(null, { status: 204, statusText: 'dmm-blocked' }));
+				}
+				return Promise.reject(new Error('dmm-blocked'));
+			}
+			return oFetch.apply(w, arguments);
+		};
+	}
+
+	if (oOpen && oSend) {
+		w.XMLHttpRequest.prototype.open = function (method, url) {
+			this.__dmmBlocked = !decide(url, 'xhr');
+			return oOpen.apply(this, arguments);
+		};
+		w.XMLHttpRequest.prototype.send = function () {
+			if (this.__dmmBlocked) {
+				var xhr = this;
+				w.setTimeout(function () {
+					try { xhr.dispatchEvent(new Event('error')); } catch (e) { /* noop */ }
+				}, 0);
+				return;
+			}
+			return oSend.apply(this, arguments);
+		};
+	}
+
+	if (oBeacon) {
+		w.navigator.sendBeacon = function (url, data) {
+			if (!decide(url, 'beacon')) { return true; }
+			return oBeacon(url, data);
+		};
+	}
+
+	/* <?php element src interception ?> */
+	function park(el, url, kind) {
+		try {
+			var host = hostOf(url);
+			oSetAttr.call(el, 'data-dmm-src', String(url));
+			oSetAttr.call(el, 'data-dmm-cat', catOf(host, absUrl(url)));
+			if (kind === 'script') { oSetAttr.call(el, 'type', 'text/plain'); }
+		} catch (e) { /* noop */ }
+	}
+
+	function guardSrc(proto, prop, kind) {
+		if (!proto) { return; }
+		var desc = Object.getOwnPropertyDescriptor(proto, prop);
+		if (!desc || !desc.set) { return; }
+
+		Object.defineProperty(proto, prop, {
+			configurable: true,
+			enumerable: desc.enumerable,
+			get: function () { return desc.get.call(this); },
+			set: function (value) {
+				if (decide(value, kind)) { desc.set.call(this, value); }
+				else { park(this, value, kind); }
+			}
+		});
+	}
+
+	guardSrc(w.HTMLScriptElement && w.HTMLScriptElement.prototype, 'src', 'script');
+	guardSrc(w.HTMLIFrameElement && w.HTMLIFrameElement.prototype, 'src', 'iframe');
+	guardSrc(w.HTMLImageElement && w.HTMLImageElement.prototype, 'src', 'img');
+
+	Element.prototype.setAttribute = function (name, value) {
+		var n = String(name || '').toLowerCase();
+		var tag = (this.tagName || '').toLowerCase();
+
+		if (n === 'src' && (tag === 'script' || tag === 'iframe' || tag === 'img')) {
+			this.src = value;
+			return;
+		}
+
+		if (n === 'href' && tag === 'link') {
+			var rel = String(this.rel || this.getAttribute('rel') || '').toLowerCase();
+			if (/(preconnect|dns-prefetch|prefetch|preload|prerender)/.test(rel) && !decide(value, 'link')) {
+				return oSetAttr.call(this, 'data-dmm-src', String(value));
+			}
+		}
+
+		return oSetAttr.apply(this, arguments);
+	};
+
+	function scrub(markup) {
+		return String(markup).replace(
+			/<script\b([^>]*?)\ssrc\s*=\s*(["'])(.*?)\2([^>]*)>/gi,
+			function (all, pre, q, url, post2) {
+				if (decide(url, 'docwrite')) { return all; }
+				return '<script' + pre + ' type="text/plain" data-dmm-cat="' + catOf(hostOf(url), absUrl(url)) +
+					'" data-dmm-src=' + q + url + q + post2 + '>';
+			}
+		);
+	}
+
+	d.write = function () { return oWrite.call(d, scrub([].join.call(arguments, ''))); };
+	d.writeln = function () { return oWriteLn.call(d, scrub([].join.call(arguments, ''))); };
+
+	if (w.MutationObserver) {
+		new w.MutationObserver(function (records) {
+			for (var i = 0; i < records.length; i++) {
+				var added = records[i].addedNodes;
+				for (var j = 0; j < added.length; j++) {
+					var el = added[j];
+					if (!el || !el.tagName) { continue; }
+					var tag = el.tagName.toLowerCase();
+					if (tag !== 'script' && tag !== 'iframe' && tag !== 'img' && tag !== 'link') { continue; }
+					if (el.getAttribute('data-dmm-src') || el.type === 'text/plain') { continue; }
+					var u = el.getAttribute('src') || el.getAttribute('href');
+					if (u) { decide(u, tag); }
+				}
+			}
+		}).observe(d.documentElement, { childList: true, subtree: true });
+	}
+
+	/* <?php vendor queue stubs ?> */
+	w.dataLayer = w.dataLayer || [];
+	if (typeof w.gtag !== 'function') {
+		w.gtag = function () { w.dataLayer.push(arguments); };
+	}
+	if (!w.fbq) {
+		var fbq = function () { fbq.queue.push(arguments); };
+		fbq.queue = []; fbq.loaded = true; fbq.version = '2.0';
+		w.fbq = w._fbq = fbq;
+	}
+	if (!w.analytics) {
+		var seg = w.analytics = [];
+		seg.methods = ['track', 'page', 'identify', 'group', 'alias', 'ready', 'on', 'once', 'off', 'trackLink', 'trackForm', 'reset', 'addSourceMiddleware', 'setAnonymousId'];
+		seg.factory = function (m) {
+			return function () {
+				var a = Array.prototype.slice.call(arguments);
+				a.unshift(m); seg.push(a); return seg;
+			};
+		};
+		for (var si = 0; si < seg.methods.length; si++) { seg[seg.methods[si]] = seg.factory(seg.methods[si]); }
+		seg.load = function (key, opts) { seg._writeKey = key; seg._loadOptions = opts; };
+		seg.SNIPPET_VERSION = 'dmm-cg';
+	}
+
+	/* <?php reactivate parked nodes ?> */
+	function reactivate(scope) {
+		var nodes = (scope || d).querySelectorAll('[data-dmm-cat]');
+
+		for (var i = 0; i < nodes.length; i++) {
+			var el = nodes[i];
+			var url = el.getAttribute('data-dmm-src');
+			var cat = el.getAttribute('data-dmm-cat');
+			var inline = el.getAttribute('data-dmm-inline') === '1';
+			var host = url ? hostOf(url) : '';
+
+			// Allowlist has to count here too, not just in decide(): lazy reCAPTCHA releases a
+			// host mid-session, and the node it needs to release was parked server-side.
+			if (!granted(cat) && !(url && once[absUrl(url)]) && !(host && isAllowed(host))) { continue; }
+
+			var tag = el.tagName.toLowerCase();
+
+			if (tag === 'script' && el.parentNode) {
+				var s = d.createElement('script');
+				for (var a = 0; a < el.attributes.length; a++) {
+					var at = el.attributes[a];
+					if (at.name === 'type' || at.name.indexOf('data-dmm-') === 0) { continue; }
+					oSetAttr.call(s, at.name, at.value);
+				}
+				var origType = el.getAttribute('data-dmm-type');
+				if (origType) { oSetAttr.call(s, 'type', origType); }
+				if (inline) { s.text = el.textContent; }
+				else if (url) { s.src = url; }
+				el.parentNode.replaceChild(s, el);
+			} else {
+				var attrName = el.getAttribute('data-dmm-attr') || 'src';
+				el.removeAttribute('data-dmm-cat');
+				el.removeAttribute('data-dmm-src');
+				el.removeAttribute('data-dmm-attr');
+				// Patched setAttribute routes src on script/iframe/img back through the guarded
+				// setter, and passes poster/data/srcset straight through.
+				if (url) { el.setAttribute(attrName, url); }
+			}
+		}
+
+		var boxes = (scope || d).querySelectorAll('.dmm-cg-embed');
+		for (var b = 0; b < boxes.length; b++) {
+			if (!boxes[b].querySelector('[data-dmm-src]')) { releaseBox(boxes[b]); }
+		}
+	}
+
+	/* <?php put the embed back where it was, taking the button and note with it ?> */
+	function releaseBox(box) {
+		var frame = box.querySelector('iframe');
+
+		if (frame && box.parentNode) {
+			box.parentNode.insertBefore(frame, box);
+			box.parentNode.removeChild(box);
+			return;
+		}
+
+		box.removeAttribute('data-dmm-placeholder');
+	}
+
+	/* <?php click-to-load embeds ?> */
+	function placeholders() {
+		if (C.embeds !== 'placeholder') { return; }
+
+		var frames = d.querySelectorAll('iframe[data-dmm-src]:not([data-dmm-ph])');
+
+		for (var i = 0; i < frames.length; i++) {
+			(function (frame) {
+				// Already consented: reactivate() is about to load it, so building a
+				// placeholder here would only flash one up and tear it down again.
+				if (granted(frame.getAttribute('data-dmm-cat'))) { return; }
+
+				oSetAttr.call(frame, 'data-dmm-ph', '1');
+
+				var label = frame.getAttribute('data-dmm-label') || hostOf(frame.getAttribute('data-dmm-src'));
+				var box = d.createElement('div');
+				box.className = 'dmm-cg-embed';
+				box.setAttribute('data-dmm-placeholder', '1');
+
+				// Hold the embed's own footprint so releasing it does not shift the layout.
+				var h = parseInt(frame.getAttribute('height'), 10);
+				if (h > 0) { box.style.setProperty('--dmm-embed-h', h + 'px'); }
+
+				var btn = d.createElement('button');
+				btn.type = 'button';
+				btn.className = 'dmm-cg-embed__btn';
+				btn.textContent = 'Load ' + label;
+
+				var note = d.createElement('span');
+				note.className = 'dmm-cg-embed__note';
+				note.textContent = label + ' will receive your IP address.';
+
+				btn.addEventListener('click', function () {
+					var url = absUrl(frame.getAttribute('data-dmm-src'));
+					once[url] = 1;
+					frame.removeAttribute('data-dmm-cat');
+					frame.src = frame.getAttribute('data-dmm-src');
+					frame.removeAttribute('data-dmm-src');
+					releaseBox(box);
+				});
+
+				frame.parentNode.insertBefore(box, frame);
+				box.appendChild(btn);
+				box.appendChild(note);
+				box.appendChild(frame);
+			}(frames[i]));
+		}
+	}
+
+	/* <?php recaptcha loads on first form interaction ?> */
+	function lazyRecaptcha() {
+		if (!C.recaptcha) { return; }
+
+		var armed = false;
+		var fire = function (ev) {
+			if (armed) { return; }
+			var t = ev.target;
+			if (!t || !t.tagName) { return; }
+			var tag = t.tagName.toLowerCase();
+			var inForm = typeof t.closest === 'function' && t.closest('form');
+			if (tag !== 'input' && tag !== 'textarea' && tag !== 'select' && !inForm) { return; }
+
+			armed = true;
+			C.allow = (C.allow || []).concat(['google.com', 'gstatic.com', 'recaptcha.net']);
+			reactivate(d);
+			d.dispatchEvent(new CustomEvent('dmm:recaptcha'));
+		};
+
+		d.addEventListener('focusin', fire, true);
+		d.addEventListener('pointerdown', fire, true);
+	}
+
+	/* <?php cookies a vendor drops once it has run, keyed by the category that let it run ?> */
+	var VENDOR_COOKIES = {
+		analytics: ['_ga', '_gid', '_gat', '__utm', 'ajs_', '_hj', '_clck', '_clsk', '_gcl_au'],
+		marketing: ['_fbp', '_fbc', '_gcl_', 'IDE', 'test_cookie', 'li_sugr', 'li_fat_id', '_uet', 'ttclid', '_ttp', 'MUID'],
+		functional: []
+	};
+
+	function dropCookie(name) {
+		var parts = w.location.hostname.split('.');
+		var scopes = ['', w.location.hostname];
+
+		for (var i = 0; i < parts.length - 1; i++) { scopes.push('.' + parts.slice(i).join('.')); }
+
+		for (var s = 0; s < scopes.length; s++) {
+			d.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/' +
+				(scopes[s] ? ';domain=' + scopes[s] : '');
+		}
+	}
+
+	function clearVendorCookies(cats) {
+		var present = d.cookie.split(';');
+
+		for (var i = 0; i < present.length; i++) {
+			var name = present[i].split('=')[0].trim();
+			if (!name || name === COOKIE) { continue; }
+
+			for (var c = 0; c < cats.length; c++) {
+				var prefixes = VENDOR_COOKIES[cats[c]] || [];
+				for (var p = 0; p < prefixes.length; p++) {
+					if (name.indexOf(prefixes[p]) === 0) { dropCookie(name); break; }
+				}
+			}
+		}
+	}
+
+	/* <?php public api ?> */
+	function apply(cats, method) {
+		var previous = consent ? consent.c.slice() : [];
+		var valid = [];
+		var i;
+
+		for (i = 0; i < cats.length; i++) {
+			if ((C.cats || []).indexOf(cats[i]) > -1 && valid.indexOf(cats[i]) < 0) { valid.push(cats[i]); }
+		}
+
+		var revoked = [];
+		for (i = 0; i < previous.length; i++) {
+			if (valid.indexOf(previous[i]) < 0) { revoked.push(previous[i]); }
+		}
+
+		var stored = { v: C.pv, t: Math.floor(Date.now() / 1000), c: valid };
+		writeCookie(stored);
+		consent = stored;
+		seen = {};
+
+		post('consent', JSON.stringify({
+			t: C.tok, c: valid, m: method || 'save',
+			v: C.pv, pg: w.location.pathname.slice(0, 190), gpc: GPC ? 1 : 0
+		}));
+
+		d.dispatchEvent(new CustomEvent('dmm:consent', { detail: stored }));
+
+		// Parking a node cannot unload a library that already ran. Withdrawing a category the
+		// visitor had previously granted means tearing the page down and rebuilding it clean.
+		if (revoked.length) {
+			clearVendorCookies(revoked);
+			w.location.reload();
+			return;
+		}
+
+		reactivate(d);
+	}
+
+	w.dmmConsent = {
+		version: C.pv,
+		mode: C.mode,
+		gpc: GPC,
+		categories: C.cats || [],
+		get: function () { return consent ? consent.c.slice() : null; },
+		has: function (cat) { return granted(cat); },
+		acceptAll: function () { apply((C.cats || []).slice(), 'accept_all'); },
+		// Disclaimer mode. Records every category as active because in this mode every category
+		// already was — logging anything narrower would misstate what happened.
+		acknowledge: function () { apply((C.cats || []).slice(), 'acknowledge'); },
+		rejectAll: function () { apply([], 'reject_all'); },
+		save: function (cats) { apply(cats || [], 'save'); },
+		withdraw: function () { apply([], 'withdraw'); },
+		open: function () { d.dispatchEvent(new CustomEvent('dmm:open')); },
+		debug: function () { return { config: C, consent: consent, pending: buf.slice(), seen: Object.keys(seen) }; }
+	};
+
+	function ready() {
+		placeholders();
+		lazyRecaptcha();
+		if (consent) { reactivate(d); }
+	}
+
+	if (d.readyState === 'loading') { d.addEventListener('DOMContentLoaded', ready); }
+	else { ready(); }
+
+	w.addEventListener('pagehide', flush);
+	d.addEventListener('visibilitychange', function () { if (d.visibilityState === 'hidden') { flush(); } });
+}(window, document));
+</script>
+<script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.5",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),this},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||!t.src||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e=window){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();
+</script> <!-- Google Tag Manager -->
+<script type="text/rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5B6CGF74');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) --> <script async="" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-7TQS8BS5C3" type="text/rocketlazyloadscript"></script> <script type="text/rocketlazyloadscript"> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-7TQS8BS5C3'); </script>
+<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+<!--[if IE ]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<![endif]-->
+<link href="http://gmpg.org/xfn/11" rel="profile"/>
+<link href="../wp-content/uploads/2025/03/az-logo-white.png.png" rel="icon" type="image/x-icon"/>
+<meta content="#FFFFFF" name="msapplication-TileColor"/>
+<meta content="/wp-content/uploads/2025/03/az-logo-white.png.png" name="msapplication-TileImage"/>
+<link href="../wp-content/uploads/2025/03/az-logo-white.png.png" rel="apple-touch-icon-precomposed"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="Interventional Psychiatry of Arizona" itemprop="name"/>
+<meta content="http://interpsychaz.com" itemprop="url"/>
+<meta content="/wp-content/uploads/2025/03/az-logo-white.png.png.webp" property="og:image"/>
+<link href="http://interpsychaz.com/xmlrpc.php" rel="pingback"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<script data-rocket-type="text/javascript" type="text/rocketlazyloadscript">document.documentElement.className = document.documentElement.className.replace( /\bno-js\b/,'js' );</script>
+<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->
+<title>The Science Behind Esketamine: How It Helps With Suicidal Thoughts | Interventional Psychiatry of Arizona</title>
+<link as="style" data-rocket-preload="" href="../_external/fonts.googleapis.com/css_54cf8c19.css" rel="preload"/>
+<link href="../wp-content/uploads/dmm-consent-guard/fonts/fonts-e32582ff5559e0a721ad.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript data-wpr-hosted-gf-parameters=""><link href="../wp-content/uploads/dmm-consent-guard/fonts/fonts-e32582ff5559e0a721ad.css" rel="stylesheet"/></noscript>
+<meta content="The Science Behind Esketamine: How It Helps With Suicidal Thoughts - When it comes to managing severe depression and suicidal thoughts, traditional treatments can sometimes take weeks to show any effect. This is where" name="description"/>
+<link href="https://interpsychaz.com/the-science-behind-esketamine/" rel="canonical"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="The Science Behind Esketamine: How It Helps With Suicidal Thoughts | Interventional Psychiatry of Arizona" property="og:title"/>
+<meta content="The Science Behind Esketamine: How It Helps With Suicidal Thoughts - When it comes to managing severe depression and suicidal thoughts, traditional treatments can sometimes take weeks to show any effect. This is where" property="og:description"/>
+<meta content="https://interpsychaz.com/the-science-behind-esketamine/" property="og:url"/>
+<meta content="Interventional Psychiatry of Arizona" property="og:site_name"/>
+<meta content="https://www.facebook.com/interpsychaz" property="article:publisher"/>
+<meta content="2025-03-17T10:37:49+00:00" property="article:published_time"/>
+<meta content="2025-03-17T10:40:54+00:00" property="article:modified_time"/>
+<meta content="doctormmdev" name="author"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<script class="yoast-schema-graph" type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/interpsychaz.com\/the-science-behind-esketamine\/#article","isPartOf":{"@id":"https:\/\/interpsychaz.com\/the-science-behind-esketamine\/"},"author":{"name":"doctormmdev","@id":"https:\/\/interpsychaz.com\/#\/schema\/person\/4f5d1b4731d3cda2b27deacce9635919"},"headline":"The Science Behind Esketamine: How It Helps With Suicidal Thoughts","datePublished":"2025-03-17T10:37:49+00:00","dateModified":"2025-03-17T10:40:54+00:00","mainEntityOfPage":{"@id":"https:\/\/interpsychaz.com\/the-science-behind-esketamine\/"},"wordCount":583,"publisher":{"@id":"https:\/\/interpsychaz.com\/#organization"},"articleSection":["Blog"],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https:\/\/interpsychaz.com\/the-science-behind-esketamine\/","url":"https:\/\/interpsychaz.com\/the-science-behind-esketamine\/","name":"The Science Behind Esketamine: How It Helps With Suicidal Thoughts | Interventional Psychiatry of Arizona","isPartOf":{"@id":"https:\/\/interpsychaz.com\/#website"},"datePublished":"2025-03-17T10:37:49+00:00","dateModified":"2025-03-17T10:40:54+00:00","description":"The Science Behind Esketamine: How It Helps With Suicidal Thoughts - When it comes to managing severe depression and suicidal thoughts, traditional treatments can sometimes take weeks to show any effect. This is where","breadcrumb":{"@id":"https:\/\/interpsychaz.com\/the-science-behind-esketamine\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/interpsychaz.com\/the-science-behind-esketamine\/"]}]},{"@type":"BreadcrumbList","@id":"https:\/\/interpsychaz.com\/the-science-behind-esketamine\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/interpsychaz.com\/"},{"@type":"ListItem","position":2,"name":"The Science Behind Esketamine: How It Helps With Suicidal Thoughts"}]},{"@type":"WebSite","@id":"https:\/\/interpsychaz.com\/#website","url":"https:\/\/interpsychaz.com\/","name":"Interventional Psychiatry of Arizona","description":"Premier Psychiatry Center in Phoenix, AZ","publisher":{"@id":"https:\/\/interpsychaz.com\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/interpsychaz.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https:\/\/interpsychaz.com\/#organization","name":"Interventional Psychiatry of Arizona","url":"https:\/\/interpsychaz.com\/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/interpsychaz.com\/#\/schema\/logo\/image\/","url":"https:\/\/interpsychaz.com\/wp-content\/uploads\/2025\/04\/Screenshot-2025-04-02-083422.png","contentUrl":"https:\/\/interpsychaz.com\/wp-content\/uploads\/2025\/04\/Screenshot-2025-04-02-083422.png","width":455,"height":306,"caption":"Interventional Psychiatry of Arizona"},"image":{"@id":"https:\/\/interpsychaz.com\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.facebook.com\/interpsychaz","http:\/\/linkedin.com\/company\/interventional-psychiatry-of-arizona1\/","https:\/\/www.instagram.com\/interpsychaz\/?fbclid=IwZXh0bgNhZW0CMTEAAR251kBD3kHgnDk16DcBasyrqUZTzMyT-ntZBaoL6D_sDNoKG5drlfozRjE_aem_5l3Cy-PnGIw_DFELZK52Aw"]},{"@type":"Person","@id":"https:\/\/interpsychaz.com\/#\/schema\/person\/4f5d1b4731d3cda2b27deacce9635919","name":"doctormmdev","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"http:\/\/interpsychaz.com\/wp-content\/plugins\/dmm-consent-guard\/assets\/img\/avatar.svg","url":"http:\/\/interpsychaz.com\/wp-content\/plugins\/dmm-consent-guard\/assets\/img\/avatar.svg","contentUrl":"http:\/\/interpsychaz.com\/wp-content\/plugins\/dmm-consent-guard\/assets\/img\/avatar.svg","caption":"doctormmdev"},"sameAs":["https:\/\/interpsychaz.com"]}]}</script>
+<!-- / Yoast SEO plugin. -->
+<link href="http://interpsychaz.com/feed/" rel="alternate" title="Interventional Psychiatry of Arizona » Feed" type="application/rss+xml"/>
+<link href="http://interpsychaz.com/comments/feed/" rel="alternate" title="Interventional Psychiatry of Arizona » Comments Feed" type="application/rss+xml"/>
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=http://interpsychaz.com/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=http://interpsychaz.com/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link data-minify="1" href="../wp-content/cache/min/1/wp-content/plugins/dmm-consent-guard/assets/css/banner.css" id="dmm-cg-banner-css" media="all" rel="stylesheet"/>
+<link data-minify="1" href="../wp-content/cache/min/1/wp-content/themes/mts_schema/content/css/ada.css" id="ada_css-css" media="all" rel="stylesheet"/>
+<link data-minify="1" href="../wp-content/cache/min/1/wp-content/themes/blossom-child/style.css" id="schema-stylesheet-css" media="all" rel="stylesheet"/>
+<style id="schema-stylesheet-inline-css">
+
+        body {background-color:#fff;background-image:url(http://interpsychaz.com/wp-content/themes/mts_schema/images/nobg.png);}
+         
+        #secondary-navigation > nav > ul > li:hover > a,
+        #secondary-navigation > nav > ul > li.current-menu-item > a,
+        #secondary-navigation > nav > ul > li.current-menu-parent > a,
+        #secondary-navigation > nav ul.sub-menu > li.current_page_item > a,
+        #secondary-navigation > nav > ul > li.current-menu-item > a { color: #fff !important; }
+
+        #secondary-navigation > nav > ul > li:hover,
+        #secondary-navigation > nav > ul > li.current-menu-item,
+        #secondary-navigation > nav > ul li.current-menu-item ,
+        #secondary-navigation > nav > ul > li.current-menu-parent  { background-color: #ef7136 !important; }
+
+        staff-grid p + span,
+        .dflex p + span,
+        .staff-block,
+        a.btn,
+        a.niceButi { background-color: #ef7136 !important }
+
+        .side-social-icons a, 
+        .page-header,
+        section.page-header,section#wda_testi:after,html button.aicon_link, div.header-social-icons a { background-color: #4b4d97 !important; }
+        .dm-service-section:nth-child(even) img { outline: 2px solid #154064; }
+        .mobileBtn a, .hours { background-color: #4b4d97; } }
+        html ul ul.wda-long-menu { background-color: #4b4d97; } }
+
+
+        .pace .pace-progress, #mobile-menu-wrapper ul li a:hover, .page-numbers.current, .pagination a:hover, .single .pagination a:hover .current { background: #4b4d97; }
+        .postauthor h5, .single_post a, .textwidget a, .pnavigation2 a, .sidebar.c-4-12 a:hover, footer .widget li a:hover, .sidebar.c-4-12 a:hover, .reply a, .title a:hover, .post-info a:hover, .widget .thecomment, #tabber .inside li a:hover, .readMore a:hover, .fn a, a, a:hover, #secondary-navigation .navigation ul li a:hover, .readMore a, #primary-navigation a:hover, #secondary-navigation .navigation ul .current-menu-item a, .widget .wp_review_tab_widget_content a, .sidebar .wpt_widget_content a { color:#4b4d97; }
+         a#pull, #commentform input#submit, #mtscontact_submit, .mts-subscribe input[type='submit'], .widget_product_search input[type='submit'], #move-to-top:hover, .currenttext, .pagination a:hover, .pagination .nav-previous a:hover, .pagination .nav-next a:hover, #load-posts a:hover, .single .pagination a:hover .currenttext, .single .pagination > .current .currenttext, #tabber ul.tabs li a.selected, .tagcloud a, .navigation ul .sfHover a, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .woocommerce .bypostauthor:after, #searchsubmit, .woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce-page nav.woocommerce-pagination ul li span.current, .woocommerce #content nav.woocommerce-pagination ul li span.current, .woocommerce-page #content nav.woocommerce-pagination ul li span.current, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce-page nav.woocommerce-pagination ul li a:hover, .woocommerce #content nav.woocommerce-pagination ul li a:hover, .woocommerce-page #content nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce-page nav.woocommerce-pagination ul li a:focus, .woocommerce #content nav.woocommerce-pagination ul li a:focus, .woocommerce-page #content nav.woocommerce-pagination ul li a:focus, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .latestPost-review-wrapper, .latestPost .review-type-circle.latestPost-review-wrapper, #wpmm-megamenu .review-total-only, .sbutton, #searchsubmit, .widget .wpt_widget_content #tags-tab-content ul li a, .widget .review-total-only.large-thumb { background-color:#4b4d97; color: #fff!important; }
+        .related-posts .title a:hover, .latestPost .title a { color: #4b4d97; }
+        .navigation #wpmm-megamenu .wpmm-pagination a { background-color: #4b4d97!important; }
+        footer {background-color:#154064; }
+        footer {background-image: url(  );}
+        .copyrights,.move_down{ background-color: ; }
+        .copyrights:before {  border-color: transparent transparent  transparent; }
+        .flex-control-thumbs .flex-active{ border-top:3px solid #4b4d97;}
+        .wpmm-megamenu-showing.wpmm-light-scheme { background-color:#4b4d97!important; }
+        
+        
+        
+        
+        
+            
+/*# sourceURL=schema-stylesheet-inline-css */
+</style>
+<link data-minify="1" href="../wp-content/cache/min/1/wp-content/themes/mts_schema/css/owl.carousel.css" id="owl-carousel-css" media="all" rel="stylesheet"/>
+<link href="../wp-content/themes/mts_schema/css/animate.min.css" id="animatecss-css" media="all" rel="stylesheet"/>
+<link data-minify="1" href="../wp-content/cache/min/1/wp-content/themes/mts_schema/fonts/all.min.css" id="fontawesome-css" media="all" rel="stylesheet"/>
+<link data-minify="1" href="../wp-content/cache/min/1/wp-content/themes/mts_schema/css/responsive.css" id="responsive-css" media="all" rel="stylesheet"/>
+<link data-minify="1" href="../wp-content/cache/min/1/wp-content/themes/blossom-child/assets/slick.css" id="slickcss-css" media="all" rel="stylesheet"/>
+<style id="slickcss-inline-css">
+
+    	:root {
+		    --pColor: #4b4d97;
+		    --sColor: #154064;
+		    --aColor: #ef7136;
+		    --bgImage: url();
+}
+    
+/*# sourceURL=slickcss-inline-css */
+</style>
+<link data-minify="1" href="../wp-content/cache/min/1/wp-content/themes/mts_schema/content/css/content-style.css" id="content-css-css" media="all" rel="stylesheet"/>
+<link data-minify="1" href="../wp-content/cache/min/1/wp-content/themes/mts_schema/theme-specific/testimonials/slick.css" id="wda_testimonials-css" media="all" rel="stylesheet"/>
+<style id="rocket-lazyload-inline-css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(http://interpsychaz.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+/*# sourceURL=rocket-lazyload-inline-css */
+</style>
+<script data-minify="1" data-rocket-defer="" data-rocket-src="http://interpsychaz.com/wp-content/cache/min/1/ajax/libs/jquery/1.12.4/jquery.min.js?ver=1782683147" defer="" id="jquery-js" type="text/rocketlazyloadscript"></script>
+<script id="customscript-js-extra">
+var mts_customscript = {"responsive":"1","nav_menu":"both"};
+//# sourceURL=customscript-js-extra
+</script>
+<script data-minify="1" data-rocket-defer="" data-rocket-src="http://interpsychaz.com/wp-content/cache/min/1/wp-content/themes/mts_schema/js/customscript.js?ver=1782683147" defer="" id="customscript-js" type="text/rocketlazyloadscript"></script>
+<script data-minify="1" data-rocket-defer="" data-rocket-src="http://interpsychaz.com/wp-content/cache/min/1/wp-content/themes/mts_schema/content/js/ada.js?ver=1782683147" defer="" id="ada_js-js" type="text/rocketlazyloadscript"></script>
+<script data-rocket-defer="" data-rocket-src="http://interpsychaz.com/wp-content/themes/blossom-child/assets/jquery.counterup.min.js?ver=7.0.4" defer="" id="counterup-js" type="text/rocketlazyloadscript"></script>
+<script data-rocket-defer="" data-rocket-src="http://interpsychaz.com/wp-content/themes/blossom-child/assets/waypoints.min.js?ver=7.0.4" defer="" id="waypoints-js" type="text/rocketlazyloadscript"></script>
+<script data-minify="1" data-rocket-defer="" data-rocket-src="http://interpsychaz.com/wp-content/cache/min/1/wp-content/themes/blossom-child/assets/wow.js?ver=1782683147" defer="" id="wow-js" type="text/rocketlazyloadscript"></script>
+<script data-rocket-defer="" data-rocket-src="http://interpsychaz.com/wp-content/themes/blossom-child/assets/slick.min.js?ver=7.0.4" defer="" id="slick-js" type="text/rocketlazyloadscript"></script>
+<script data-rocket-defer="" data-rocket-src="http://interpsychaz.com/wp-content/themes/mts_schema/theme-specific/testimonials/slick.min.js?ver=7.0.4" defer="" id="wda_testimonials-js" type="text/rocketlazyloadscript"></script>
+<link href="http://interpsychaz.com/wp-json/" rel="https://api.w.org/"/><link href="http://interpsychaz.com/wp-json/wp/v2/posts/321" rel="alternate" title="JSON" type="application/json"/><link href="http://interpsychaz.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<meta content="WordPress 7.0.4" name="generator"/>
+<link href="http://interpsychaz.com/?p=321" rel="shortlink"/>
+<!-- Stream WordPress user activity plugin v4.3.0 -->
+<style type="text/css">
+#logo a { font-family: 'Roboto'; font-weight: normal; font-size: 32px; color: #222222;text-transform: uppercase; }
+#secondary-navigation a { font-family: 'Roboto'; font-weight: normal; font-size: 17px; color: #ffffff;text-transform: uppercase; }
+body { font-family: 'Roboto'; font-weight: 300; font-size: 18px; color: #000000; }
+h1 { font-family: 'Jost'; font-weight: 700; font-size: 36px; color: #000000; }
+h2 { font-family: 'Jost'; font-weight: 600; font-size: 32px; color: #000000; }
+h3 { font-family: 'Jost'; font-weight: 500; font-size: 26px; color: #000000; }
+h4 { font-family: 'Jost'; font-weight: normal; font-size: 20px; color: #000000; }
+h5 { font-family: 'Jost'; font-weight: normal; font-size: 18px; color: #000000; }
+</style>
+<script class="dm-schema" type="application/ld+json">
+    	{
+		    "@context": "http://schema.org",
+		    "@type": "LocalBusiness",
+		    "name": "Interventional Psychiatry of Arizona",
+		    "url": "http://interpsychaz.com",
+		    "image": "/wp-content/uploads/2025/03/az-logo-white.png.png.webp",
+		    "address": {
+		        "addressLocality": "",
+		        "addressRegion": "85016",
+		        "postalCode": "",
+		        "streetAddress": "2929 E Camelback Rd, Suite 119, "
+		    },
+		    "openingHours": "Mon-Fri: 8am-5pm,Sat, Sun: Closed",
+		    "priceRange": "$$",
+		    "telephone" : "+1-(602) 824-8404",
+		    "description": "Convenient and affordable Premier Psychiatry Center in Phoenix, AZ."
+    	}
+     </script>
+<script async="" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-Y09PPBJ34W" type="text/rocketlazyloadscript"></script>
+<script type="text/rocketlazyloadscript">
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-Y09PPBJ34W');
+            </script>
+<style id="wp-custom-css">
+@media only screen 
+  and (max-device-width: 880px) {
+div#gform_wrapper_2 .gform_button {
+    color: #4B4D97 !important;
+    font-weight: 600 !important;
+	background: #ccc !important;
+}
+}
+
+.page-id-30 section.visit-us-today {
+    display: none;
+}
+</style>
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+<!-- Google tag (gtag.js) -->
+<script async="" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=AW-11337249981" type="text/rocketlazyloadscript"></script>
+<script type="text/rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11337249981');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async="" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-7TQS8BS5C3" type="text/rocketlazyloadscript"></script>
+<script type="text/rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7TQS8BS5C3');
+</script>
+<link data-minify="1" href="../wp-content/cache/min/1/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css" id="gform_basic-css" media="all" rel="stylesheet"/>
+<link href="../wp-content/plugins/gravityforms/assets/css/dist/theme-components.min.css" id="gform_theme_components-css" media="all" rel="stylesheet"/>
+<link href="../wp-content/plugins/gravityforms/assets/css/dist/theme.min.css" id="gform_theme-css" media="all" rel="stylesheet"/>
+<link data-minify="1" href="../wp-content/cache/min/1/wp-content/themes/mts_schema/css/slick.css" id="slick-main-css-css" media="all" rel="stylesheet"/>
+<meta content="WP Rocket 3.23.2.1" data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_minify_css wpr_cdn wpr_preload_links wpr_desktop" name="generator"/></head>
+<body class="wp-singular post-template-default single single-post postid-321 single-format-standard wp-theme-mts_schema wp-child-theme-blossom-child main" id="blog" itemscope="" itemtype="http://schema.org/WebPage"> <!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5B6CGF74" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="main-container" data-rocket-location-hash="912a367c5bad16bdf11607761b242d49">
+<header class="main-header regular_header" data-rocket-location-hash="c7d1aa1b1081332d51e6e56e0ec86333" id="site-header" itemscope="" itemtype="http://schema.org/WPHeader" role="banner">
+<div class="header-spacer" data-rocket-location-hash="d21c0ed2158dba275e92e565d61d5107"></div>
+<div class="main-head-wrap" data-rocket-location-hash="7bbea0f353aac79471c3ec9f0cb6cabd">
+<div id="new-top-header">
+<div class="container-wide dm-flex">
+<div class="dm-third new-header">
+<div class="social-icons">
+<a class="header-facebook" href="https://www.facebook.com/interpsychaz" target="_blank">
+<span class="fa fa-facebook"></span>
+</a>
+<a class="header-google" href="https://maps.app.goo.gl/3gQUrhL2xK6Wjpbo7" target="_blank">
+<span class="fa fa-google"></span>
+</a>
+<a class="header-linkedin" href="http://linkedin.com/company/interventional-psychiatry-of-arizona1/" target="_blank">
+<span class="fa fa-linkedin"></span>
+</a>
+<a class="header-instagram" href="https://www.instagram.com/interpsychaz/?fbclid=IwZXh0bgNhZW0CMTEAAR251kBD3kHgnDk16DcBasyrqUZTzMyT-ntZBaoL6D_sDNoKG5drlfozRjE_aem_5l3Cy-PnGIw_DFELZK52Aw" target="_blank">
+<span class="fa fa-instagram"></span>
+</a>
+</div>
+</div>
+<div class="dm-half-plus phone-header">
+<div class="dm-rate-us"> <div class="social-icon-container"> <span class="review-link">Rate Us:</span> <div class="rtg"> <a class="fa fa-star-o" href="http://search.google.com/local/writereview?placeid=ChIJt8rFr_4NK4cRbF9K7nIzGVM" target="_blank"></a><a class="fa fa-star-o" href="http://search.google.com/local/writereview?placeid=ChIJt8rFr_4NK4cRbF9K7nIzGVM" target="_blank"></a> <a class="fa fa-star-o" href="/what-can-we-improve/"></a> <a class="fa fa-star-o" href="/what-can-we-improve/"></a> <a class="fa fa-star-o" href="/what-can-we-improve/"></a> </div></div></div> <p><i class="fa fa-mobile-alt"></i><a href="tel:(602) 824-8404">(602) 824-8404</a></p>
+<p><i class="fa fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/M77iocFYVFsBePD47" target="_blank"> Our <strong> Phoenix, AZ  </strong> Office </a> </p>
+<p>
+<a class="header-btn" href="/appointments/"> Appointments </a>
+</p>
+</div>
+</div>
+</div>
+<div class="after-load" id="header">
+<div class="container-wide" data-rocket-location-hash="c9c85814d1f3b32b7b50424e1a1978bd">
+<div class="secondary-navigation" id="secondary-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+<div class="logo-wrap">
+<h2 class="image-logo" id="logo" itemprop="headline">
+<a href="http://interpsychaz.com"><img alt="Interventional Psychiatry of Arizona" data-lazy-src="/wp-content/uploads/2025/03/az-logo-white.png.png.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="Interventional Psychiatry of Arizona" src="../wp-content/uploads/2025/03/az-logo-white.png.png.webp"/></noscript></a>
+</h2><!-- END #logo -->
+</div>
+<nav class="navigation clearfix mobile-menu-wrapper">
+<ul class="menu clearfix" id="menu-main-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-43" id="menu-item-43"><a href="http://interpsychaz.com/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97" id="menu-item-97"><a href="http://interpsychaz.com/meet-our-team/">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-447" id="menu-item-447"><a href="#">Treatments</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101" id="menu-item-101"><a href="http://interpsychaz.com/services/tms-therapy/">TMS Therapy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115" id="menu-item-115"><a href="http://interpsychaz.com/services/electroconvulsive-therapy-ect/">ECT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122" id="menu-item-122"><a href="http://interpsychaz.com/services/spravato-esketamine-nasal-spray/">Spravato</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141" id="menu-item-141"><a href="http://interpsychaz.com/services/medication-management/">Medication Management</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-482" id="menu-item-482"><a href="http://interpsychaz.com/adolescent-psychiatry/">Young Adult Psychiatry</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-567" id="menu-item-567"><a href="http://interpsychaz.com/adhd-assessments/">ADHD Assessments</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-560" id="menu-item-560"><a href="http://interpsychaz.com/conditions-treated/">Conditions Treated</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549" id="menu-item-549"><a href="http://interpsychaz.com/add-adhd-testing-therapy/">ADD/ADHD Testing &amp; Therapy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-551" id="menu-item-551"><a href="http://interpsychaz.com/anger-management-therapy/">Anger Management Treatment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554" id="menu-item-554"><a href="http://interpsychaz.com/anxiety-phobia-panic-disorder/">Anxiety, Phobia &amp; Panic Disorder</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-556" id="menu-item-556"><a href="http://interpsychaz.com/bipolar-disorder/">Bipolar Disorder</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-555" id="menu-item-555"><a href="http://interpsychaz.com/depression-treatment/">Depression</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-548" id="menu-item-548"><a href="http://interpsychaz.com/obsessive-compulsive-disorder-ocd/">Obsessive-Compulsive Disorder (OCD)</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552" id="menu-item-552"><a href="http://interpsychaz.com/schizophrenia-psychotic-disorder-treatment/">Schizophrenia &amp; Psychotic Disorder Treatment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553" id="menu-item-553"><a href="http://interpsychaz.com/ptsd-trauma-therapy/">PTSD &amp; Trauma</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-157" id="menu-item-157"><a href="http://interpsychaz.com/for-providers/">For Providers</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159" id="menu-item-159"><a href="http://interpsychaz.com/for-providers/refer-a-patient/">Refer a Patient</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-160" id="menu-item-160"><a>Resources</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163" id="menu-item-163"><a href="http://interpsychaz.com/testimonials/">Testimonials</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-167" id="menu-item-167"><a href="http://interpsychaz.com/category/blog/">Blog</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-33" id="menu-item-33"><a href="http://interpsychaz.com/contact/">Contact</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-382" id="menu-item-382"><a href="http://interpsychaz.com/newsletter-sign-up/">Newsletter Sign Up</a></li>
+</ul>
+</li>
+</ul> </nav>
+<a class="toggle-mobile-menu" href="#" id="pull"></a>
+</div>
+</div><!--.container-->
+</div>
+</div>
+</header>
+<script data-rocket-type="text/javascript" type="text/rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+			jQuery(document).ready(function($) {
+				if( jQuery('#menu-main-menu > li').length % 2 == 0 ) {
+					jQuery('#header').addClass('middle-menu');
+					var number_of_items = jQuery('#menu-main-menu > li').length;
+					number_of_items = number_of_items / 2;
+					var logo = $('#logo').html();
+					jQuery('#menu-main-menu > li:nth-child('+number_of_items+')').after('<li class="meunLogo">'+logo+' </li>');
+				} else {
+					jQuery('#header').addClass('non-middle');
+				}
+			});
+			jQuery(window).load(function() {
+				jQuery('#header').removeClass('after-load');
+			});
+		});</script><div class="single" data-rocket-location-hash="56c67d6aea37e5ce914ed3cbb1a24e45" id="page">
+<section class="page-header" data-rocket-location-hash="3aac77729f1c7e705171ebffb90e528f">
+<div class="container">
+<h1 class="page-title">The Science Behind Esketamine: How It Helps With Suicidal Thoughts</h1>
+</div>
+</section>
+<article class="article dm-full-width" data-rocket-location-hash="ec774fc978476739b024a7aaae22a73a">
+<div class="dm-single-post" id="content_box">
+<div class="container single-page dm-flex">
+<div class="dm-sidebar">
+<div class="sidebar-tap">
+<h3> Recent Posts </h3>
+<div class="dm-posts">
+<div>
+<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
+</div>
+<div>
+<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+</div>
+<div>
+<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<p> Anxiety and panic disorders are among the most common... </p>
+</div>
+<div>
+<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<p> When most people think about anxiety, they picture racing... </p>
+</div>
+<div>
+<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
+</div>
+</div>
+</div>
+</div>
+<div class="g post post-321 type-post status-publish format-standard hentry category-blog" id="post-321">
+<div class="single_post">
+<div class="post-single-content box mark-links entry-content">
+<div class="thecontent">
+<p><img alt="" class="aligncenter size-full wp-image-338" data-lazy-sizes="(max-width: 739px) 100vw, 739px" data-lazy-src="/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp 739w, http://interpsychaz.com/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg-800x533.webp 800w" decoding="async" fetchpriority="high" height="492" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20739%20492'%3E%3C/svg%3E" width="739"/><noscript><img alt="" class="aligncenter size-full wp-image-338" decoding="async" fetchpriority="high" height="492" sizes="(max-width: 739px) 100vw, 739px" src="../wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp" srcset="../wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp 739w, ../wp-content/uploads/2025/03/esketamine-nasal-spray.jpg-300x200.webp 300w, ../wp-content/uploads/2025/03/esketamine-nasal-spray.jpg-800x533.webp 800w" width="739"/></noscript>When it comes to managing severe depression and suicidal thoughts, traditional treatments can sometimes take weeks to show any effect. This is where esketamine, known by its brand name <a href="https://interpsychaz.com/treatments/spravato/">Spravato</a>, comes in as a groundbreaking treatment option. Unlike standard antidepressants, esketamine works quickly and targets the brain in a unique way. Let’s dive into the science behind esketamine and how it helps with suicidal thoughts.</p>
+<h2>What Is Esketamine?</h2>
+<p>Esketamine is a medication that is derived from ketamine, a drug that has been used for anesthesia for many years. However, researchers discovered that ketamine also has powerful antidepressant effects. Esketamine is a more refined version of ketamine and is administered as a nasal spray under the supervision of a healthcare professional.</p>
+<h2>How Does Esketamine Work?</h2>
+<p>To understand how esketamine works, we need to look at the brain. Our brain cells, or neurons, communicate with each other through chemicals called neurotransmitters. One of these neurotransmitters is called glutamate, which plays a key role in brain function and mood regulation.</p>
+<h2>Targeting NMDA Receptors</h2>
+<p>Esketamine targets a specific receptor in the brain called the NMDA receptor. Think of NMDA receptors as tiny doorways on neurons that control the flow of glutamate. When these receptors are overactive, they can cause an imbalance in the brain’s communication system, leading to symptoms of depression and suicidal thoughts.</p>
+<p>Esketamine works by blocking these NMDA receptors. By doing so, it helps to restore the balance of neurotransmitters in the brain, leading to an almost immediate improvement in mood. This is why esketamine can be especially effective for people who are experiencing acute suicidal thoughts and need rapid relief.</p>
+<h2>Promoting Brain Healing</h2>
+<p>In addition to balancing neurotransmitters, esketamine also promotes brain healing in other ways. Chronic stress and depression can damage connections between neurons, which can worsen symptoms over time. Esketamine helps to repair these connections and encourages the growth of new neural pathways. This process is called neuroplasticity.</p>
+<p>Think of neuroplasticity as the brain’s ability to reorganize itself by forming new connections. By enhancing neuroplasticity, esketamine helps the brain to recover from the damage caused by prolonged depression and stress, leading to a more lasting improvement in mood and cognitive function.</p>
+<h2>Rapid Relief for Suicidal Thoughts</h2>
+<p>One of the most significant advantages of esketamine is its ability to provide rapid relief. Traditional antidepressants can take weeks to start working, which can be too long for someone in a mental health crisis. Esketamine, on the other hand, can start to show effects within hours. This rapid action can be life-saving for individuals experiencing severe suicidal thoughts.</p>
+<h2>How Is Esketamine Administered?</h2>
+<p><a href="https://interpsychaz.com/treatments/spravato/">Spravato is administered as a nasal spray</a> in a controlled medical setting, usually a clinic or a hospital. Patients take the medication under the supervision of a healthcare professional who monitors them for any side effects. The treatment sessions typically last about two hours, and patients are advised to have someone drive them home afterward, as esketamine can cause drowsiness and disorientation.</p>
+<h2>Conclusion</h2>
+<p>Esketamine represents a new era in the treatment of depression and suicidal thoughts. By targeting NMDA receptors and promoting brain healing, it offers rapid and effective relief for those in crisis. While it is not a cure, esketamine can be a vital part of a comprehensive treatment plan that includes therapy and other medications. As research continues, we hope to learn even more about how this innovative treatment can help those struggling with severe mental health challenges.</p>
+<script data-rocket-type="text/javascript" type="text/rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+jQuery(document).ready(function($) {
+    $.post('http://interpsychaz.com/wp-admin/admin-ajax.php', {action: 'mts_view_count', id: '321'});
+});
+});</script> </div>
+</div><!--.post-single-content-->
+</div><!--.single_post-->
+</div><!--.g post-->
+</div>
+</div>
+</article>
+<div class="clear" data-rocket-location-hash="de914fa142326799da6bde8214adef5a"></div>
+</div><!--#page-->
+<section class="visit-us-today" data-rocket-location-hash="396be7af40e11b8105b577adcbd13af3">
+<div class="container-wide">
+<div class="dm-flex">
+<div class="dm-full vut">
+<h5> Our Location </h5>
+<h2>
+							Come <strong>Visit Us</strong>
+</h2>
+<p>
+							We warmly invite you to experience exceptional care at our practice. Our facility is designed with your comfort and convenience in mind, featuring modern amenities and a welcoming atmosphere. Our dedicated team is here to provide personalized attention and address all your needs with professionalism and compassion.
+						</p>
+</div>
+<div class="dm-half">
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
+<script type="text/rocketlazyloadscript">
+</script>
+<div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">
+<div class="gform_heading">
+<p class="gform_required_legend">"<span class="gfield_required gfield_required_asterisk">*</span>" indicates required fields</p>
+</div><form action="/the-science-behind-esketamine/" data-formid="2" enctype="multipart/form-data" id="gform_2" method="post" novalidate="">
+<div class="gform-body gform_body"><div class="gform_fields top_label form_sublabel_below description_below validation_below" id="gform_fields_2"><div class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_9"><label class="gfield_label gform-field-label" for="input_2_9"><span class="gform-field-label__text">X/Twitter</span></label><div class="ginput_container"><input autocomplete="new-password" id="input_2_9" name="input_9" type="text" value=""/></div><div class="gfield_description" id="gfield_description_2_9">This field is for validation purposes and should be left unchanged.</div></div><div class="gfield gfield--type-html gfield--input-type-html gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_5">Please use this form for general information purposes only. DO NOT send personal health information through this form. Specific patient care must be addressed during your appointment.</div><div class="gfield gfield--type-text gfield--input-type-text gf_left_half gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_1"><label class="gfield_label gform-field-label" for="input_2_1"><span class="gform-field-label__text">Name</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_text"><input aria-invalid="false" aria-required="true" class="medium" id="input_2_1" name="input_1" type="text" value=""/></div></div><div class="gfield gfield--type-phone gfield--input-type-phone gfield--phone-format-standard gf_right_half gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_2"><label class="gfield_label gform-field-label" for="input_2_2"><span class="gform-field-label__text">Phone</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_phone"><input aria-invalid="false" aria-required="true" class="medium" data-mask="(999) 999-9999" id="input_2_2" name="input_2" placeholder="(999) 999-9999" type="tel" value=""/></div></div><div class="gfield gfield--type-email gfield--input-type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_3"><label class="gfield_label gform-field-label" for="input_2_3"><span class="gform-field-label__text">Email</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_email">
+<input aria-invalid="false" aria-required="true" class="large" id="input_2_3" name="input_3" type="email" value=""/>
+</div></div><div class="gfield gfield--type-textarea gfield--input-type-textarea gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_4"><label class="gfield_label gform-field-label" for="input_2_4"><span class="gform-field-label__text">Message</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_textarea"><textarea aria-invalid="false" aria-required="true" class="textarea small" cols="50" id="input_2_4" name="input_4" rows="10"></textarea></div></div><div class="gfield gfield--type-multiselect gfield--input-type-multiselect gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_8"><label class="gfield_label gform-field-label" for="input_2_8"><span class="gform-field-label__text">Reason for inquiry</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_multiselect"><select aria-invalid="false" aria-required="true" class="large gfield_select" id="input_2_8" multiple="multiple" name="input_8[]" size="7"><option value="Medication Management">Medication Management</option><option value="TMS">TMS</option><option value="Spravato (nasal esketamine)">Spravato (nasal esketamine)</option><option value="ECT">ECT</option><option value="ADHD Assessment/Treatment">ADHD Assessment/Treatment</option></select></div></div><fieldset class="gfield gfield--type-radio gfield--type-choice gfield--input-type-radio field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible gfield--choice-align-vertical" id="field_2_6"><legend class="gfield_label gform-field-label"><span class="gform-field-label__text">SMS Opt-in or Opt-out</span></legend><div class="ginput_container ginput_container_radio"><div class="gfield_radio" id="input_2_6">
+<div class="gchoice gchoice_2_6_0">
+<input aria-describedby="gfield_description_2_6" class="gfield-choice-input" id="choice_2_6_0" name="input_6" onchange="gformToggleRadioOther( this )" type="radio" value="Opt into receiving SMS"/>
+<label class="gform-field-label gform-field-label--type-inline" for="choice_2_6_0" id="label_2_6_0">Opt into receiving SMS</label>
+</div>
+<div class="gchoice gchoice_2_6_1">
+<input class="gfield-choice-input" id="choice_2_6_1" name="input_6" onchange="gformToggleRadioOther( this )" type="radio" value="Opt out of receiving SMS"/>
+<label class="gform-field-label gform-field-label--type-inline" for="choice_2_6_1" id="label_2_6_1">Opt out of receiving SMS</label>
+</div></div></div><div class="gfield_description" id="gfield_description_2_6"><p>By providing my phone number, I consent to receive SMS text messages for appointment reminders, marketing messages, and general two-way communication. Msg frequency varies. Msg&amp;data rates may apply. Reply HELP for support. Reply STOP to opt out.  <a href="/privacy-policy/">Privacy Policy</a> | <a href="/terms-and-conditions/">Terms and Conditions</a></p></div></fieldset></div></div>
+<div class="gform-footer gform_footer top_label"> <button class="gform_button button" data-submission-type="submit" id="gform_submit_button_2" onclick="gform.submission.handleButtonClick(this);" type="submit">Submit</button>
+<input class="gform_hidden" data-js="gform_submission_method_2" name="gform_submission_method" type="hidden" value="postback"/>
+<input class="gform_hidden" data-js="gform_theme_2" id="gform_theme_2" name="gform_theme" type="hidden" value="gravity-theme"/>
+<input class="gform_hidden" data-js="gform_style_settings_2" id="gform_style_settings_2" name="gform_style_settings" type="hidden" value="[]"/>
+<input class="gform_hidden" name="is_submit_2" type="hidden" value="1"/>
+<input class="gform_hidden" name="gform_submit" type="hidden" value="2"/>
+<input class="gform_hidden" data-currency="USD" name="gform_currency" type="hidden" value="YsEAPRS5xVrCxSu2G8piphwCwWii1j0ITJo41ZZMWAzLtZ7cvRME7OBowalmPgzYlios9yYbQsBW4dsqQu4QbqGfazB4R/1M+XMIEyAJLzKIaHI="/>
+<input class="gform_hidden" name="gform_unique_id" type="hidden" value=""/>
+<input class="gform_hidden" name="state_2" type="hidden" value="WyJ7XCJnZm9ybV9zdWJtaXNzaW9uX21ldGhvZFwiOltcIjUzMjlkZTU3NjU0NzFiY2YyYzA4ZGE1OGRmZGQyYWU2XCIsXCJiNmQ0OWQ1NTZiZTM0NDllOTY4YTk4Y2NmNGFkZThmY1wiXSxcImdmb3JtX3RoZW1lXCI6XCJmODhkNWIyNDJiZTViODFmZmQ0NjE5MGNhZDk2MzRhZlwiLFwiZ2Zvcm1fc3R5bGVfc2V0dGluZ3NcIjpcImJlNTE1ZTg3MzEwNDNkOWQ1YjUxOTY1YTAyYmFmMGUxXCIsXCJmb3JtX2lkXCI6XCI2MjZiODUxZGU4MDVmOTZmNGJiM2QzMTVjMzAwOGM0NFwiLFwidXJsXCI6XCJlMDRiYWY1YTI5M2ZiMWMwNmI5Mzg5Nzg2YzUyMTcwZVwiLFwic3RhdGVfdGltZXN0YW1wXCI6XCI1NDBjMjFhYTFkMTFlY2Y3YjBjMDRjYzE3ZjliZTdlN1wifSIsIjMyMmZiYWJkOTdkYTE2MWQ2NzNjMDAwZmJiYzhkZDRmIiwxNzg2OTM5Nzk0XQ=="/>
+<input autocomplete="off" class="gform_hidden" id="gform_target_page_number_2" name="gform_target_page_number_2" type="hidden" value="0"/>
+<input autocomplete="off" class="gform_hidden" id="gform_source_page_number_2" name="gform_source_page_number_2" type="hidden" value="1"/>
+<input name="gform_field_values" type="hidden" value=""/>
+</div>
+</form>
+</div> </div>
+<div class="dm-half">
+<iframe allowfullscreen="" data-lazy-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.823582626749!2d-112.03820942507127!3d33.505966773367575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0dfeafc5cab7%3A0x53193372ee4a5f6c!2sInterventional%20Psychiatry%20of%20Arizona!5e0!3m2!1sen!2sin!4v1762937676279!5m2!1sen!2sin" data-rocket-lazyload="fitvidscompatible" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="about:blank" style="border:0;" width="100%"></iframe><noscript><iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.823582626749!2d-112.03820942507127!3d33.505966773367575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0dfeafc5cab7%3A0x53193372ee4a5f6c!2sInterventional%20Psychiatry%20of%20Arizona!5e0!3m2!1sen!2sin!4v1762937676279!5m2!1sen!2sin" style="border:0;" width="100%"></iframe></noscript> </div>
+</div>
+</div>
+</section>
+<footer data-rocket-location-hash="d8f725e3ca4fdc2612fb79a7fe12dd89" id="site-footer" itemscope="" itemtype="http://schema.org/WPFooter" role="contentinfo">
+<div class="copyrights" data-rocket-location-hash="96a0db69eaadeb5b76212029bc38da4c">
+<div class="dm-ff mmn">
+<div class="container">
+<div class="dm-h">
+<div class="footer-logo-wrap">
+<a href="http://interpsychaz.com"><img alt="Interventional Psychiatry of Arizona" data-lazy-src="/wp-content/uploads/2025/03/az-logo-white.png.png.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="Interventional Psychiatry of Arizona" src="../wp-content/uploads/2025/03/az-logo-white.png.png.webp"/></noscript></a>
+</div>
+</div>
+<div class="dm-h">
+<a class="btn" href="http://interpsychaz.com/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a> <br/>
+<p>If you or a loved one is having a behavioral health crisis hotline 988.						 
+						</p>
+</div>
+</div>
+</div>
+<div class="dm-flex">
+<div class="dm-fourth">
+<h3>
+        				Social
+        			</h3>
+<div class="social-icons">
+<a class="header-facebook" href="https://www.facebook.com/interpsychaz" target="_blank">
+<span class="fa fa-facebook"></span>
+</a>
+<a class="header-google" href="https://maps.app.goo.gl/3gQUrhL2xK6Wjpbo7" target="_blank">
+<span class="fa fa-google"></span>
+</a>
+<a class="header-linkedin" href="http://linkedin.com/company/interventional-psychiatry-of-arizona1/" target="_blank">
+<span class="fa fa-linkedin"></span>
+</a>
+<a class="header-instagram" href="https://www.instagram.com/interpsychaz/?fbclid=IwZXh0bgNhZW0CMTEAAR251kBD3kHgnDk16DcBasyrqUZTzMyT-ntZBaoL6D_sDNoKG5drlfozRjE_aem_5l3Cy-PnGIw_DFELZK52Aw" target="_blank">
+<span class="fa fa-instagram"></span>
+</a>
+</div>
+</div>
+<div class="dm-fourth">
+<h3> Office Hours </h3>
+<div class="footer-hours">
+<p>Mon-Fri: 8am-5pm<br/>
+Sat, Sun: Closed</p>
+<script data-rocket-type="text/javascript" type="text/rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+jQuery(document).ready(function($) {
+    $.post('http://interpsychaz.com/wp-admin/admin-ajax.php', {action: 'mts_view_count', id: '321'});
+});
+});</script> </div>
+</div>
+<div class="dm-fourth">
+<h3>
+        				Contact Us
+        			</h3>
+<p>
+<a href="https://maps.app.goo.gl/M77iocFYVFsBePD47" target="_blank"> 2929 E Camelback Rd, Suite 119, <br/>Phoenix, AZ 85016 </a> </p>
+<p> Phone: <a href="tel:(602) 824-8404"> (602) 824-8404 </a>
+</p>
+</div>
+</div>
+<div class="dm-full footer-creds">
+<div class="container">
+</div>
+</div>
+</div>
+</footer><!--#site-footer-->
+</div><!--.main-container-->
+<!--Start of Tawk.to Script-->
+<script data-rocket-type="text/javascript" type="text/rocketlazyloadscript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/67e6985c3b89e8190ea53578/1inec6aa9';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<div aria-labelledby="dmm-cg-title" class="dmm-cg dmm-cg--notice" data-rocket-location-hash="c704c7e0f9983626874ebda652284ba8" hidden="" id="dmm-cg" role="region">
+<div class="dmm-cg__panel" data-rocket-location-hash="2040aba372038ae071f3ac5a2611ae2f">
+<div class="dmm-cg__notice" data-rocket-location-hash="9e5a646a66779b8ca4a7eadb27b033e9">
+<div class="dmm-cg__notice-copy">
+<h2 class="dmm-cg__title" id="dmm-cg-title">This site uses tracking technologies</h2>
+<p class="dmm-cg__body">
+							We and the services embedded in this site — analytics, advertising, booking, maps and translation — collect information about your visit, including your IP address, your browser and the pages you view. Some of that information is shared with those companies. This happens as you browse.															<a class="dmm-cg__inline-link" href="http://interpsychaz.com/privacy-policy/#cookies">Read our Privacy Policy</a>.
+													</p>
+</div>
+<div class="dmm-cg__actions dmm-cg__actions--single">
+<button class="dmm-cg__btn dmm-cg__btn--primary" data-dmm-action="acknowledge" type="button">I understand</button>
+</div>
+</div>
+</div>
+</div>
+<div class="dmm-cg-footer" data-rocket-location-hash="2279e7aeaf75a3a694880ff70ff93889">
+<button class="dmm-cg-open dmm-cg-open--inline" type="button">Cookie settings</button>
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/blossom-child/*","/wp-content/themes/mts_schema/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<div class="cta_fixed_button" data-rocket-location-hash="4fb721514dd513e77173d4ac95de9fa2"><a class="sticks" href="tel:(602) 824-8404" onclick="ga('send', 'event', { eventCategory: 'Mobile', eventAction: 'Call Us', eventValue: 25});"> <i class="fa fa-phone"></i> Call Us </a><a class="sticks" href="sms:admin@interpsychaz.com"> <i class="fa fa-envelope"></i> Text Us </a></div><div class="move_down" data-rocket-location-hash="bb85b5b6ef27dfd2866ec163c8912e7f"></div> <div class="wda-access-toolbar"><div class="wda-toolbar-toggle-link"><svg fill="currentColor" viewbox="0 0 100 100" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Accessibility Tools</title><path d="M50 8.1c23.2 0 41.9 18.8 41.9 41.9 0 23.2-18.8 41.9-41.9 41.9C26.8 91.9 8.1 73.2 8.1 50S26.8 8.1 50 8.1M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm0 11.3c-21.4 0-38.7 17.3-38.7 38.7S28.6 88.7 50 88.7 88.7 71.4 88.7 50 71.4 11.3 50 11.3zm0 8.9c4 0 7.3 3.2 7.3 7.3S54 34.7 50 34.7s-7.3-3.2-7.3-7.3 3.3-7.2 7.3-7.2zm23.7 19.7c-5.8 1.4-11.2 2.6-16.6 3.2.2 20.4 2.5 24.8 5 31.4.7 1.9-.2 4-2.1 4.7-1.9.7-4-.2-4.7-2.1-1.8-4.5-3.4-8.2-4.5-15.8h-2c-1 7.6-2.7 11.3-4.5 15.8-.7 1.9-2.8 2.8-4.7 2.1-1.9-.7-2.8-2.8-2.1-4.7 2.6-6.6 4.9-11 5-31.4-5.4-.6-10.8-1.8-16.6-3.2-1.7-.4-2.8-2.1-2.4-3.9.4-1.7 2.1-2.8 3.9-2.4 19.5 4.6 25.1 4.6 44.5 0 1.7-.4 3.5.7 3.9 2.4.7 1.8-.3 3.5-2.1 3.9z"></path></svg></div><div id="wda-toolbar"><h4>Accessibility Tools</h4><div class="wda-btn wda-btn-resize-plus" data-rocket-location-hash="986442834f5ef9ce6b35cc0922433f90"><svg version="1.1" viewbox="0 0 448 448" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Increase Text</title><path d="M256 200v16c0 4.25-3.75 8-8 8h-56v56c0 4.25-3.75 8-8 8h-16c-4.25 0-8-3.75-8-8v-56h-56c-4.25 0-8-3.75-8-8v-16c0-4.25 3.75-8 8-8h56v-56c0-4.25 3.75-8 8-8h16c4.25 0 8 3.75 8 8v56h56c4.25 0 8 3.75 8 8zM288 208c0-61.75-50.25-112-112-112s-112 50.25-112 112 50.25 112 112 112 112-50.25 112-112zM416 416c0 17.75-14.25 32-32 32-8.5 0-16.75-3.5-22.5-9.5l-85.75-85.5c-29.25 20.25-64.25 31-99.75 31-97.25 0-176-78.75-176-176s78.75-176 176-176 176 78.75 176 176c0 35.5-10.75 70.5-31 99.75l85.75 85.75c5.75 5.75 9.25 14 9.25 22.5z" fill="currentColor"></path></svg>Increase Text</div><div class="wda-btn wda-btn-resize-minus" data-rocket-location-hash="f0f24a03b7e32c06c513804ffee83489"><svg version="1.1" viewbox="0 0 448 448" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Decrease Text</title><path d="M256 200v16c0 4.25-3.75 8-8 8h-144c-4.25 0-8-3.75-8-8v-16c0-4.25 3.75-8 8-8h144c4.25 0 8 3.75 8 8zM288 208c0-61.75-50.25-112-112-112s-112 50.25-112 112 50.25 112 112 112 112-50.25 112-112zM416 416c0 17.75-14.25 32-32 32-8.5 0-16.75-3.5-22.5-9.5l-85.75-85.5c-29.25 20.25-64.25 31-99.75 31-97.25 0-176-78.75-176-176s78.75-176 176-176 176 78.75 176 176c0 35.5-10.75 70.5-31 99.75l85.75 85.75c5.75 5.75 9.25 14 9.25 22.5z" fill="currentColor"></path></svg>Decrease Text</div><div class="wda-btn wda-btn-grayscale" data-rocket-location-hash="eda87fb5f6648e92d5f3c79a74762d8c"><svg version="1.1" viewbox="0 0 448 448" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Grayscale</title><path d="M15.75 384h-15.75v-352h15.75v352zM31.5 383.75h-8v-351.75h8v351.75zM55 383.75h-7.75v-351.75h7.75v351.75zM94.25 383.75h-7.75v-351.75h7.75v351.75zM133.5 383.75h-15.5v-351.75h15.5v351.75zM165 383.75h-7.75v-351.75h7.75v351.75zM180.75 383.75h-7.75v-351.75h7.75v351.75zM196.5 383.75h-7.75v-351.75h7.75v351.75zM235.75 383.75h-15.75v-351.75h15.75v351.75zM275 383.75h-15.75v-351.75h15.75v351.75zM306.5 383.75h-15.75v-351.75h15.75v351.75zM338 383.75h-15.75v-351.75h15.75v351.75zM361.5 383.75h-15.75v-351.75h15.75v351.75zM408.75 383.75h-23.5v-351.75h23.5v351.75zM424.5 383.75h-8v-351.75h8v351.75zM448 384h-15.75v-352h15.75v352z" fill="currentColor"></path></svg>Grayscale</div><div class="wda-btn wda-btn-invert" data-rocket-location-hash="64a341400955f6e8a9cfc5a4b09d66d4"><svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="transaction"><path d="M25,13H9l1.8-2.4A1,1,0,1,0,9.2,9.4l-3,4A1,1,0,0,0,7,15H25a1,1,0,0,0,0-2Z"></path><path d="M21.4,22.8a1,1,0,0,0,.6.2,1,1,0,0,0,.8-.4l3-4A1,1,0,0,0,25,17H7a1,1,0,0,0,0,2H23l-1.8,2.4A1,1,0,0,0,21.4,22.8Z"></path><path d="M26.19,3H24a1,1,0,0,0,0,2h2.19A1.81,1.81,0,0,1,28,6.81V25.19A1.81,1.81,0,0,1,26.19,27H5.81A1.81,1.81,0,0,1,4,25.19V6.81A1.81,1.81,0,0,1,5.81,5H20a1,1,0,0,0,0-2H5.81A3.82,3.82,0,0,0,2,6.81V25.19A3.82,3.82,0,0,0,5.81,29H26.19A3.82,3.82,0,0,0,30,25.19V6.81A3.82,3.82,0,0,0,26.19,3Z"></path></g></svg> Invert Colors</div><div class="wda-btn wda-btn-links-underline" data-rocket-location-hash="62fad85168f0eb5cb86d10dec1616c89"><svg version="1.1" viewbox="0 0 448 448" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Links Underline</title><path d="M364 304c0-6.5-2.5-12.5-7-17l-52-52c-4.5-4.5-10.75-7-17-7-7.25 0-13 2.75-18 8 8.25 8.25 18 15.25 18 28 0 13.25-10.75 24-24 24-12.75 0-19.75-9.75-28-18-5.25 5-8.25 10.75-8.25 18.25 0 6.25 2.5 12.5 7 17l51.5 51.75c4.5 4.5 10.75 6.75 17 6.75s12.5-2.25 17-6.5l36.75-36.5c4.5-4.5 7-10.5 7-16.75zM188.25 127.75c0-6.25-2.5-12.5-7-17l-51.5-51.75c-4.5-4.5-10.75-7-17-7s-12.5 2.5-17 6.75l-36.75 36.5c-4.5 4.5-7 10.5-7 16.75 0 6.5 2.5 12.5 7 17l52 52c4.5 4.5 10.75 6.75 17 6.75 7.25 0 13-2.5 18-7.75-8.25-8.25-18-15.25-18-28 0-13.25 10.75-24 24-24 12.75 0 19.75 9.75 28 18 5.25-5 8.25-10.75 8.25-18.25zM412 304c0 19-7.75 37.5-21.25 50.75l-36.75 36.5c-13.5 13.5-31.75 20.75-50.75 20.75-19.25 0-37.5-7.5-51-21.25l-51.5-51.75c-13.5-13.5-20.75-31.75-20.75-50.75 0-19.75 8-38.5 22-52.25l-22-22c-13.75 14-32.25 22-52 22-19 0-37.5-7.5-51-21l-52-52c-13.75-13.75-21-31.75-21-51 0-19 7.75-37.5 21.25-50.75l36.75-36.5c13.5-13.5 31.75-20.75 50.75-20.75 19.25 0 37.5 7.5 51 21.25l51.5 51.75c13.5 13.5 20.75 31.75 20.75 50.75 0 19.75-8 38.5-22 52.25l22 22c13.75-14 32.25-22 52-22 19 0 37.5 7.5 51 21l52 52c13.75 13.75 21 31.75 21 51z" fill="currentColor"></path></svg>Underline Links</div><div class="wda-btn wda-btn-links-highlight" data-rocket-location-hash="f7007436ddb4b126b9f34e693758b19e"><svg id="Capa_1" style="enable-background:new 0 0 512 512" version="1.1" viewbox="0 0 512 512" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"><g><g><g><path d="M53.572,269.851C57.344,273.779,62.554,276,68,276s10.656-2.221,14.428-6.149l48-50C134.003,216.126,136,211.163,136,206
+				V20c0-11.046-8.954-20-20-20H20C8.954,0,0,8.954,0,20v186c0,5.163,1.997,10.126,5.572,13.851L53.572,269.851z M40,40h56v157.954
+				l-28,29.167l-28-29.167V40z"></path><path d="M205.999,40H492c11.046,0,20-8.954,20-20s-8.954-20-20-20H205.999c-11.046,0-20,8.954-20,20S194.953,40,205.999,40z"></path><path d="M492,472H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20
+				C512,480.954,503.046,472,492,472z"></path><path d="M492,354H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20
+				C512,362.954,503.046,354,492,354z"></path><path d="M492,118H205.999c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20H492c11.046,0,20-8.954,20-20S503.046,118,492,118z"></path><path d="M492,236H205.999c-11.046,0-20,8.954-20,20s8.954,20,20,20H492c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236
+				z"></path></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>Highlight Links</div><div class="wda-btn wda-btn-readable-font" data-rocket-location-hash="5969800dcba56f491ffe861e3d00d495"><svg version="1.1" viewbox="0 0 448 448" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Readable Font</title><path d="M181.25 139.75l-42.5 112.5c24.75 0.25 49.5 1 74.25 1 4.75 0 9.5-0.25 14.25-0.5-13-38-28.25-76.75-46-113zM0 416l0.5-19.75c23.5-7.25 49-2.25 59.5-29.25l59.25-154 70-181h32c1 1.75 2 3.5 2.75 5.25l51.25 120c18.75 44.25 36 89 55 133 11.25 26 20 52.75 32.5 78.25 1.75 4 5.25 11.5 8.75 14.25 8.25 6.5 31.25 8 43 12.5 0.75 4.75 1.5 9.5 1.5 14.25 0 2.25-0.25 4.25-0.25 6.5-31.75 0-63.5-4-95.25-4-32.75 0-65.5 2.75-98.25 3.75 0-6.5 0.25-13 1-19.5l32.75-7c6.75-1.5 20-3.25 20-12.5 0-9-32.25-83.25-36.25-93.5l-112.5-0.5c-6.5 14.5-31.75 80-31.75 89.5 0 19.25 36.75 20 51 22 0.25 4.75 0.25 9.5 0.25 14.5 0 2.25-0.25 4.5-0.5 6.75-29 0-58.25-5-87.25-5-3.5 0-8.5 1.5-12 2-15.75 2.75-31.25 3.5-47 3.5z" fill="currentColor"></path></svg>Readable Font</div><div class="wda-btn wda-btn-reset-font" data-rocket-location-hash="20b8e2f38b8f1233d03df4bdbe75ebc4"><svg height="682.66669" id="svg4641" version="1.1" viewbox="0 0 682.66669 682.66669" width="682.66669" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs4645"><clippath clippathunits="userSpaceOnUse" id="clipPath4663"><path d="M 0,512 H 512 V 0 H 0 Z" id="path4661"></path></clippath></defs><g id="g4647" transform="matrix(1.3333333,0,0,-1.3333333,0,682.66667)"><g id="g4649" transform="translate(119.1121,241.7875)"><path d="M 0,0 27.157,-30.856" id="path4651" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g><g id="g4653" transform="translate(111.3159,241.9036)"><path d="M 0,0 V -30.972" id="path4655" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g><g id="g4657"><g clip-path="url(#clipPath4663)" id="g4659"><g id="g4665" transform="translate(146.2695,258.7797)"><path d="m 0,0 c 0,-9.279 -8.137,-16.802 -17.753,-16.802 -4.769,0 -17.201,-0.074 -17.201,-0.074 l 0.021,33.678 h 17.18 C -8.137,16.802 0,9.279 0,0 Z" id="path4667" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g><g id="g4669" transform="translate(204.0717,275.5816)"><path d="M 0,0 H -27.241 V -64.65 H 0" id="path4671" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g><g id="g4673" transform="translate(202.0631,243.2564)"><path d="M 0,0 H -25.232" id="path4675" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g><g id="g4677" transform="translate(334.4634,275.5816)"><path d="M 0,0 H -27.241 V -64.65 H 0" id="path4679" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g><g id="g4681" transform="translate(332.4549,243.2564)"><path d="M 0,0 H -25.232" id="path4683" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g><g id="g4685" transform="translate(274.781,268.9355)"><path d="m 0,0 c 0,0 -11.601,9.751 -25.281,5.63 -12.561,-3.783 -14.758,-19.004 -5.23,-24.192 4.456,-2.427 8.917,-3.978 18.808,-7.627 23.808,-8.782 13.552,-31.815 -5.614,-31.815 -9.598,0 -17.654,4.203 -22.529,9.583" id="path4687" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g><g id="g4689" transform="translate(400.6841,275.5816)"><path d="M 0,0 H -35.704" id="path4691" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g><g id="g4693" transform="translate(382.9044,273.5172)"><path d="M 0,0 V -62.586" id="path4695" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g><g id="g4697" transform="translate(166.92,424.3)"><path d="m 0,0 c -66.73,-32.9 -112.62,-101.61 -112.62,-181.04 0,-111.77 90.01,-201.78 201.77,-201.78 108.85,0 197.57,86.2 201.63,194.06 0.16,4.32 3.75,7.72 8.07,7.72 h 17.83 c 4.59,0 8.24,-3.82 8.08,-8.41 -2.29,-65.15 -31.01,-123.58 -75.77,-164.89" id="path4699" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g><g id="g4701" transform="translate(44.14,140.1)"><path d="m 0,0 c 38.37,-78.41 119.01,-132.6 211.93,-132.6 49.1,0 94.69,15.01 132.44,40.7" id="path4703" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g><g id="g4705" transform="translate(31.17,172.55)"><path d="m 0,0 c -7.06,22.34 -10.86,46.09 -10.86,70.71 0.01,130.2 105.56,235.75 235.76,235.75 v 18 c 0,6.14 6.99,9.66 11.92,6.01 l 47.24,-34.99 c 4.04,-2.99 4.04,-9.03 0,-12.01 l -47.24,-35 c -4.93,-3.65 -11.92,-0.13 -11.92,6.01 v 18 c -19.64,0 -38.63,-2.81 -56.58,-8.05" id="path4707" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g></g></g></g></svg> Reset</div></div></div>
+<script data-minify="1" data-rocket-defer="" data-rocket-src="http://interpsychaz.com/wp-content/cache/min/1/wp-content/plugins/dmm-consent-guard/assets/js/banner.js?ver=1786719158" defer="" id="dmm-cg-banner-js" type="text/rocketlazyloadscript"></script>
+<script id="rocket-browser-checker-js-after" type="text/rocketlazyloadscript">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"http://interpsychaz.com","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script id="rocket-preload-links-js-after" type="text/rocketlazyloadscript">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script id="owl-carousel-js-extra">
+var slideropts = {"rtl_support":null};
+//# sourceURL=owl-carousel-js-extra
+</script>
+<script data-rocket-defer="" data-rocket-src="http://interpsychaz.com/wp-content/themes/mts_schema/js/owl.carousel.min.js" defer="" id="owl-carousel-js" type="text/rocketlazyloadscript"></script>
+<script data-rocket-defer="" data-rocket-src="http://interpsychaz.com/wp-includes/js/dist/dom-ready.min.js?ver=a06281ae5cf5500e9317" defer="" id="wp-dom-ready-js" type="text/rocketlazyloadscript"></script>
+<script data-rocket-src="http://interpsychaz.com/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d" id="wp-hooks-js" type="text/rocketlazyloadscript"></script>
+<script data-rocket-src="http://interpsychaz.com/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec" id="wp-i18n-js" type="text/rocketlazyloadscript"></script>
+<script id="wp-i18n-js-after" type="text/rocketlazyloadscript">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script data-rocket-defer="" data-rocket-src="http://interpsychaz.com/wp-includes/js/dist/a11y.min.js?ver=af934e5259bc51b8718e" defer="" id="wp-a11y-js" type="text/rocketlazyloadscript"></script>
+<script data-rocket-src="http://interpsychaz.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=3.0.2" defer="defer" id="gform_json-js" type="text/rocketlazyloadscript"></script>
+<script id="gform_gravityforms-js-extra">
+var gform_i18n = {"datepicker":{"helpTextShort":"Press F1 for help","helpText":"Press the arrow keys to navigate by day, PageUp and PageDown to navigate by month, Alt+PageUp and Alt+PageDown to navigate by year, or Escape to cancel.","openOnFocusHelpText":"Press Down arrow to browse the calendar, or Escape to close.","tooltipTxt":"Press Escape to cancel","disabledTxt":"Disabled","markedTxt":"Selected","prevTxt":"Previous","nextTxt":"Next","monthTxt":"Month","yearTxt":"Year","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"days":[{"s":"S","l":"Sunday"},{"s":"M","l":"Monday"},{"s":"T","l":"Tuesday"},{"s":"W","l":"Wednesday"},{"s":"T","l":"Thursday"},{"s":"F","l":"Friday"},{"s":"S","l":"Saturday"}]}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","file_uploaded":"File uploaded","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled","error":"Error","message":"Message"},"vars":{"images_url":"http://interpsychaz.com/wp-content/plugins/gravityforms/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"http://interpsychaz.com/wp-content/plugins/gravityforms","number_formats":[],"version_hash":"c9f9f803338e6d7c2de98ae03cc64978","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+//# sourceURL=gform_gravityforms-js-extra
+</script>
+<script data-rocket-src="http://interpsychaz.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=3.0.2" defer="defer" id="gform_gravityforms-js" type="text/rocketlazyloadscript"></script>
+<script data-rocket-src="http://interpsychaz.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=3f278756f0a3032bed328ff6a9f6c01d" defer="defer" id="gform_gravityforms_utils-js" type="text/rocketlazyloadscript"></script>
+<script data-rocket-src="http://interpsychaz.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=b1d32e3bcae548735f8a8c723e228edd" defer="defer" id="gform_gravityforms_theme_vendors-js" type="text/rocketlazyloadscript"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"c9f9f803338e6d7c2de98ae03cc64978"},"ajax":{"ajaxurl":"http://interpsychaz.com/wp-admin/admin-ajax.php","ajax_submission_nonce":"f0ef6650c1","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again.","error_403":"The request was blocked (403 error) for unknown security reasons. Remove any code-like text (scripts or DB queries) and try again."}}}},"hmr_dev":"","public_path":"http://interpsychaz.com/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"c64be5afee"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+</script>
+<script data-rocket-src="http://interpsychaz.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=a47d2ddc45fa71f5303d9c5936ccd281" defer="defer" id="gform_gravityforms_theme-js" type="text/rocketlazyloadscript"></script>
+<script data-minify="1" data-rocket-defer="" data-rocket-src="http://interpsychaz.com/wp-content/cache/min/1/wp-content/themes/mts_schema/js/slick.js?ver=1782683147" defer="" id="slick-main-js" type="text/rocketlazyloadscript"></script>
+<script type="text/rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 2) {} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+});</script>
+<script type="text/rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "2", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_2" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_2";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_2" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 2, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+});</script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script async="" data-no-minify="1" src="../wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="Play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script><script>var rocket_beacon_data = {"ajax_url":"http:\/\/interpsychaz.com\/wp-admin\/admin-ajax.php","nonce":"59db1b619d","url":"http:\/\/interpsychaz.com\/the-science-behind-esketamine","is_mobile":false,"width_threshold":1600,"height_threshold":700,"delay":500,"debug":null,"status":{"atf":true,"lrc":true,"preconnect_external_domain":true},"elements":"img, video, picture, p, main, div, li, svg, section, header, span","lrc_threshold":1800,"preconnect_external_domain_elements":["link","script","iframe"],"preconnect_external_domain_exclusions":["static.cloudflareinsights.com","rel=\"profile\"","rel=\"preconnect\"","rel=\"dns-prefetch\"","rel=\"icon\""]}</script><script async="" data-name="wpr-wpr-beacon" src="../wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js"></script></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1786939794 -->
