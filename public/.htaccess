@@ -1,0 +1,65 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect .html to .php (if needed)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)\.html$ /$1.php [L,R=301]
+
+# Pretty URLs - route clean URLs to PHP files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1.php [L]
+
+# Handle specific pages
+RewriteRule ^about$ /about.php [L]
+RewriteRule ^contact$ /contact.php [L]
+RewriteRule ^services$ /services.php [L]
+RewriteRule ^conditions-treated$ /conditions-treated.php [L]
+RewriteRule ^meet-our-team$ /meet-our-team.php [L]
+RewriteRule ^testimonials$ /testimonials.php [L]
+RewriteRule ^appointments$ /appointments.php [L]
+RewriteRule ^new-patients$ /new-patients.php [L]
+RewriteRule ^newsletter-sign-up$ /newsletter-sign-up.php [L]
+RewriteRule ^for-providers$ /for-providers.php [L]
+RewriteRule ^for-providers/refer-a-patient$ /for-providers__refer-a-patient.php [L]
+RewriteRule ^privacy-policy$ /privacy-policy.php [L]
+RewriteRule ^terms-and-conditions$ /terms-and-conditions.php [L]
+RewriteRule ^sitemap$ /sitemap.php [L]
+RewriteRule ^accessibility$ /accessibility.php [L]
+RewriteRule ^thank-you$ /thank-you.php [L]
+RewriteRule ^rate-us$ /rate-us.php [L]
+RewriteRule ^review-us$ /review-us.php [L]
+RewriteRule ^what-can-we-improve$ /what-can-we-improve.php [L]
+
+# Treatments
+RewriteRule ^tms-therapy$ /tms-therapy.php [L]
+RewriteRule ^electroconvulsive-therapy-ect$ /electroconvulsive-therapy-ect.php [L]
+RewriteRule ^spravato-esketamine-nasal-spray$ /spravato-esketamine-nasal-spray.php [L]
+RewriteRule ^medication-management$ /medication-management.php [L]
+RewriteRule ^electroconvulsive-therapy$ /electroconvulsive-therapy.php [L]
+RewriteRule ^adolescent-psychiatry$ /adolescent-psychiatry.php [L]
+RewriteRule ^adhd-assessments$ /adhd-assessments.php [L]
+RewriteRule ^insomnia-therapy$ /insomnia-therapy.php [L]
+
+# Services
+RewriteRule ^services/tms-therapy$ /services__tms-therapy.php [L]
+RewriteRule ^services/electroconvulsive-therapy-ect$ /services__electroconvulsive-therapy-ect.php [L]
+RewriteRule ^services/spravato-esketamine-nasal-spray$ /services__spravato-esketamine-nasal-spray.php [L]
+RewriteRule ^services/medication-management$ /services__medication-management.php [L]
+
+# Conditions
+RewriteRule ^add-adhd-testing-therapy$ /add-adhd-testing-therapy.php [L]
+RewriteRule ^anger-management-therapy$ /anger-management-therapy.php [L]
+RewriteRule ^anxiety-phobia-panic-disorder$ /anxiety-phobia-panic-disorder.php [L]
+RewriteRule ^bipolar-disorder$ /bipolar-disorder.php [L]
+RewriteRule ^depression-treatment$ /depression-treatment.php [L]
+RewriteRule ^obsessive-compulsive-disorder-ocd$ /obsessive-compulsive-disorder-ocd.php [L]
+RewriteRule ^schizophrenia-psychotic-disorder-treatment$ /schizophrenia-psychotic-disorder-treatment.php [L]
+RewriteRule ^ptsd-trauma-therapy$ /ptsd-trauma-therapy.php [L]
+
+# Blog
+RewriteRule ^category/blog$ /category__blog.php [L]
+RewriteRule ^category/blog/page/2$ /category__blog__page__2.php [L]
+RewriteRule ^category/blog/page/3$ /category__blog__page__3.php [L]
+RewriteRule ^category/blog/page/4$ /category__blog__page__4.php [L]
