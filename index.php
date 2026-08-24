@@ -1,4 +1,14 @@
-﻿<?php
+<?php
+// If index.php is invoked as a front-controller/fallback for another path, dispatch via router logic
+$requestPath = urldecode(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH));
+$cleanPath = trim($requestPath, '/');
+if ($cleanPath !== '' && $cleanPath !== 'index' && $cleanPath !== 'index.php' && $cleanPath !== 'index.html') {
+    if (file_exists(__DIR__ . '/router.php')) {
+        require __DIR__ . '/router.php';
+        exit;
+    }
+}
+
 $pageTitle = 'Premier Psychiatry Center in Phoenix, AZ | Interventional Psychiatry of Arizona';
 $bodyClass = 'home wp-singular page-template-default page page-id-42';
 $pageDescription = 'Interventional Psychiatry of Arizona is a skilled Premier Psychiatry Center in Phoenix, AZ. Accepting new appointments. Call today or request an appointment on our website.';
@@ -24,17 +34,22 @@ require_once __DIR__ . '/includes/header.php';
 </div>
 </div>
 </div>
- <div class="header-social-icons">
-<a class="header-facebook" href="https://www.facebook.com/interpsychaz" target="_blank">
+<div class="mobile_cta_buttons hide-d mobile-btn">
+<p class="mobileBtn phoneBtn"><a href="tel:<?php echo SITE_PHONE_RAW; ?>" onclick="gtag('event', 'Call Us', { event_category: 'Mobile', value: 25});">Call Us: <?php echo SITE_PHONE; ?></a></p>
+<p class="mobileBtn"><a href="<?php echo GOOGLE_MAPS_OFFICE; ?>" onclick="gtag('event', 'Get Directions', { event_category: 'Mobile', value: 50});" target="_blank">Get Directions</a></p>
+<p class="mobileBtn"><a href="/appointments/" onclick="gtag('event', 'Request Appointment', { event_category: 'Mobile', value: 100});">Request an Appointment</a></p>
+<div class="dm-rate-us"> <div class="social-icon-container"> <span class="review-link">Rate Us:</span> <div class="rtg"> <a class="fa fa-star-o" href="<?php echo GOOGLE_REVIEW_URL; ?>" target="_blank"></a><a class="fa fa-star-o" href="<?php echo GOOGLE_REVIEW_URL; ?>" target="_blank"></a> <a class="fa fa-star-o" href="<?php echo GOOGLE_REVIEW_URL; ?>" target="_blank"></a> <a class="fa fa-star-o" href="<?php echo GOOGLE_REVIEW_URL; ?>" target="_blank"></a> <a class="fa fa-star-o" href="<?php echo GOOGLE_REVIEW_URL; ?>" target="_blank"></a> </div></div></div>
+<div class="header-social-icons">
+<a class="header-facebook" href="<?php echo FACEBOOK_URL; ?>" target="_blank">
 <span class="fa fa-facebook"></span>
 </a>
-<a class="header-google" href="https://maps.app.goo.gl/3gQUrhL2xK6Wjpbo7" target="_blank">
+<a class="header-google" href="<?php echo GOOGLE_MAPS_RATING; ?>" target="_blank">
 <span class="fa fa-google"></span>
 </a>
-<a class="header-linkedin" href="http://linkedin.com/company/interventional-psychiatry-of-arizona1/" target="_blank">
+<a class="header-linkedin" href="<?php echo LINKEDIN_URL; ?>" target="_blank">
 <span class="fa fa-linkedin"></span>
 </a>
-<a class="header-instagram" href="https://www.instagram.com/interpsychaz/?fbclid=IwZXh0bgNhZW0CMTEAAR251kBD3kHgnDk16DcBasyrqUZTzMyT-ntZBaoL6D_sDNoKG5drlfozRjE_aem_5l3Cy-PnGIw_DFELZK52Aw" target="_blank">
+<a class="header-instagram" href="<?php echo INSTAGRAM_URL; ?>" target="_blank">
 <span class="fa fa-instagram"></span>
 </a>
 </div>
@@ -166,7 +181,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half">
 <div>
 <h3 class="dm-blog-title"> Medication Management </h3>
-<p>Treatment for a variety of mental health conditions often involves the use of medications. The correct treatment can greatly enhance a patientâ€™s quality of life by reducing or eliminating symptoms.</p>
+<p>Treatment for a variety of mental health conditions often involves the use of medications. The correct treatment can greatly enhance a patient’s quality of life by reducing or eliminating symptoms.</p>
 <a class="btn" href="/services/"> Learn More </a>
 </div>
 </div>
@@ -180,7 +195,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half">
 <div>
 <h3 class="dm-blog-title"> Spravato </h3>
-<p>SpravatoÂ® (esketamine) is an FDA-approved nasal spray designed to help individuals struggling with treatment-resistant depression.</p>
+<p>Spravato® (esketamine) is an FDA-approved nasal spray designed to help individuals struggling with treatment-resistant depression.</p>
 <a class="btn" href="/services/"> Learn More </a>
 </div>
 </div>
@@ -222,7 +237,7 @@ require_once __DIR__ . '/includes/header.php';
 <h5> Patient Testimonials </h5>
 <h2 class="hd-heading__head wow fadeInDown"> Experience <strong>5-Star Care</strong> </h2>
 <p>
-									Weâ€™re thankful for the opportunity to serve our community. Hear what our patients are saying about their 5-star experience with us!
+									We’re thankful for the opportunity to serve our community. Hear what our patients are saying about their 5-star experience with us!
 								</p>
 <div class="rrss">
 <div class="button-inline">
@@ -309,7 +324,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="nlapo">
 <div class="testila">
 <p class="ts-carousel__para">
-																													I feel fortunate and blessed to have found Dr. Gomezâ€™s...
+																													I feel fortunate and blessed to have found Dr. Gomez’s...
 																																											<a class="dm_classic_modal" href="#" id="dm_modal_3">read more</a>
 </p>
 </div>
@@ -371,7 +386,7 @@ I am very appreciative of his knowledge, experience and perspectives.</div></div
 <div class="dm-testmore dm-readmore"><div class="dm-readmore-wrapper dm-modal"><h4>Mandie M.</h4>As a fellow psychiatric provider in the community, we get to know other local providers very well, and I cannot recommend Dr. Gomez highly enough. He has been the most thorough, careful, compassionate, and evidence-based colleague I have been fortunate enough to meet here in the valley. I have referred scores of patients to him for his specialized interventions, such as TMS, Spravato (esketamine), and even ECT, and he has always taken exceptional care of our mutual patients. I would refer family and friends to Dr. Gomez without hesitation, and I have even referred patients needing a higher level of care than I can provide. I am honored to call Dr. Gomez a colleague, and I feel he elevates the reputation of psychiatrists as a whole.
 </div></div> </div>
 <div class="hidde-modals" data-modal-counter="dm_modal_3" data-wpr-lazyrender="1">
-<div class="dm-testmore dm-readmore"><div class="dm-readmore-wrapper dm-modal"><h4>Janet C.</h4>I feel fortunate and blessed to have found Dr. Gomezâ€™s practice.
+<div class="dm-testmore dm-readmore"><div class="dm-readmore-wrapper dm-modal"><h4>Janet C.</h4>I feel fortunate and blessed to have found Dr. Gomez’s practice.
 He is genuinely concerned about helping me improve my mental health. I am receiving TMS therapy. Today was my 13th visit, and I began noticing positive results the first week. Noemi, the TMS technician is awesome. She also is genuinely concerned about providing the best treatments. I would highly recommend this practice if you are struggling with your mental health.</div></div> </div>
 <div class="hidde-modals" data-modal-counter="dm_modal_4" data-wpr-lazyrender="1">
 <div class="dm-testmore dm-readmore"><div class="dm-readmore-wrapper dm-modal"><h4>Alex C.</h4>After 4 weeks my depression is going away! I had suicidal depression for the last year. Now I have hope!
@@ -390,7 +405,7 @@ He is genuinely concerned about helping me improve my mental health. I am receiv
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

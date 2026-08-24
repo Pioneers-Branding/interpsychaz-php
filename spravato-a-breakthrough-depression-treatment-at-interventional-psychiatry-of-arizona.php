@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -52,22 +52,22 @@ require_once __DIR__ . '/includes/header.php';
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
 <p><img alt="" class="aligncenter size-full wp-image-88" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="/wp-content/uploads/2025/03/psychologyservices_img.jpg" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/psychologyservices_img.jpg 800w, http://interpsychaz.com/wp-content/uploads/2025/03/psychologyservices_img-300x200.jpg 300w, http://interpsychaz.com/wp-content/uploads/2025/03/psychologyservices_img-768x513.jpg 768w" decoding="async" fetchpriority="high" height="534" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20534'%3E%3C/svg%3E" width="800"/><noscript><img alt="" class="aligncenter size-full wp-image-88" decoding="async" fetchpriority="high" height="534" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2025/03/psychologyservices_img.jpg" srcset="/wp-content/uploads/2025/03/psychologyservices_img.jpg 800w, /wp-content/uploads/2025/03/psychologyservices_img-300x200.jpg 300w, /wp-content/uploads/2025/03/psychologyservices_img-768x513.jpg 768w" width="800"/></noscript>Spravato: A Breakthrough Depression Treatment at Interventional Psychiatry of Arizona</p>
-<p>For individuals facing treatment-resistant depression, the search for effective treatments can often feel overwhelming and frustrating. While traditional antidepressants help many, they donâ€™t work for everyone, leaving some individuals in search of alternative options. Spravato (esketamine) represents a breakthrough in the field of depression treatment, offering a new approach for those who havenâ€™t found relief with standard therapies. At Interventional Psychiatry of Arizona, we are proud to offer Spravato as part of our commitment to providing cutting-edge care for individuals battling depression.</p>
+<p>For individuals facing treatment-resistant depression, the search for effective treatments can often feel overwhelming and frustrating. While traditional antidepressants help many, they don’t work for everyone, leaving some individuals in search of alternative options. Spravato (esketamine) represents a breakthrough in the field of depression treatment, offering a new approach for those who haven’t found relief with standard therapies. At Interventional Psychiatry of Arizona, we are proud to offer Spravato as part of our commitment to providing cutting-edge care for individuals battling depression.</p>
 <p>What is Spravato?</p>
-<p>Spravato is an FDA-approved nasal spray that contains esketamine, a derivative of ketamine. Unlike traditional antidepressants, which target neurotransmitters like serotonin, Spravato works by affecting the brainâ€™s glutamate system. Glutamate plays a crucial role in synaptic plasticityâ€”the brainâ€™s ability to adapt and form new neural connections. By targeting this system, Spravato helps to â€œresetâ€ the brain and improve mood regulation.</p>
+<p>Spravato is an FDA-approved nasal spray that contains esketamine, a derivative of ketamine. Unlike traditional antidepressants, which target neurotransmitters like serotonin, Spravato works by affecting the brain’s glutamate system. Glutamate plays a crucial role in synaptic plasticity—the brain’s ability to adapt and form new neural connections. By targeting this system, Spravato helps to “reset” the brain and improve mood regulation.</p>
 <p>One of the most significant advantages of Spravato is that it works much faster than conventional antidepressants. While traditional medications can take weeks or months to produce noticeable improvements, many patients experience relief from their depression symptoms within hours or days of their first Spravato treatment. This makes Spravato a promising option for individuals dealing with severe or treatment-resistant depression, particularly those at risk of suicidal thoughts.</p>
 <p>How Spravato Treatment Works</p>
 <p>Spravato is administered in a clinical setting under the supervision of a qualified psychiatrist. The nasal spray is used in conjunction with an oral antidepressant to maximize its effectiveness. Treatment sessions typically take place twice a week for the first month, after which the frequency of sessions is gradually reduced.</p>
 <p>During each session, the patient self-administers the nasal spray under the guidance of a healthcare professional. Afterward, the patient is closely monitored for at least two hours to ensure there are no adverse reactions. While some patients may experience side effects such as dizziness, nausea, or dissociation, these are generally mild and resolve shortly after the session.</p>
 <p>Why Choose Spravato for Depression?</p>
-<p>For individuals who have not found relief from other depression treatments, Spravato offers a new and highly effective option. Its rapid action can provide relief for patients who have spent years trying different medications with little success. Additionally, Spravato is particularly beneficial for individuals with treatment-resistant depressionâ€”a condition that affects approximately 30% of individuals diagnosed with depression.</p>
+<p>For individuals who have not found relief from other depression treatments, Spravato offers a new and highly effective option. Its rapid action can provide relief for patients who have spent years trying different medications with little success. Additionally, Spravato is particularly beneficial for individuals with treatment-resistant depression—a condition that affects approximately 30% of individuals diagnosed with depression.</p>
 <p>Another advantage of Spravato is its ability to reduce suicidal ideation. For individuals at risk of suicide, the rapid relief provided by Spravato can be life-saving, offering hope during an incredibly challenging time.</p>
 <p>Spravato vs. Electroconvulsive Therapy (ECT)</p>
 <p>Both Spravato and Electroconvulsive Therapy (ECT) are effective treatments for treatment-resistant depression, but they differ significantly in how they are administered and their side effects. While ECT requires anesthesia and induces seizures, Spravato is a nasal spray that is administered without sedation, making it a less invasive option. Additionally, Spravato does not have the cognitive side effects sometimes associated with ECT, such as memory loss.</p>
 <p>Is Spravato Right for You?</p>
-<p>If youâ€™ve been struggling with depression and have not found relief through other treatments, Spravato may be the solution youâ€™ve been searching for. At Interventional Psychiatry of Arizona, our experienced team of psychiatrists will evaluate your condition and determine if Spravato is the right option for you. We are committed to providing personalized care and helping our patients achieve meaningful improvements in their mental health.</p>
+<p>If you’ve been struggling with depression and have not found relief through other treatments, Spravato may be the solution you’ve been searching for. At Interventional Psychiatry of Arizona, our experienced team of psychiatrists will evaluate your condition and determine if Spravato is the right option for you. We are committed to providing personalized care and helping our patients achieve meaningful improvements in their mental health.</p>
 <p>Conclusion</p>
-<p>Spravato represents a major advancement in the treatment of treatment-resistant depression, offering fast and effective relief for individuals who havenâ€™t responded to traditional antidepressants. If youâ€™re ready to explore a new approach to depression treatment, contact Interventional Psychiatry of Arizona today to learn more about how Spravato can help you on your journey to recovery.</p>
+<p>Spravato represents a major advancement in the treatment of treatment-resistant depression, offering fast and effective relief for individuals who haven’t responded to traditional antidepressants. If you’re ready to explore a new approach to depression treatment, contact Interventional Psychiatry of Arizona today to learn more about how Spravato can help you on your journey to recovery.</p>
  </div>
 </div><!--.post-single-content-->
 </div><!--.single_post-->
@@ -90,7 +90,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

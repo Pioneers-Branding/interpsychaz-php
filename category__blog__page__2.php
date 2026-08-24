@@ -24,15 +24,15 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<a class="post-image post-image-left schema-featured" href="/lgbtqia-affirming-care-at-interventional-psychiatry-of-arizona/" id="post-image-thumbnail" title="LGBTQIA+ Affirming CareÂ at Interventional Psychiatry of Arizona">
+<a class="post-image post-image-left schema-featured" href="/lgbtqia-affirming-care-at-interventional-psychiatry-of-arizona/" id="post-image-thumbnail" title="LGBTQIA+ Affirming Care at Interventional Psychiatry of Arizona">
 <div class="post-image-thumbnail"><img alt="LGBTQIA+ Affirming Care at Interventional Psychiatry of Arizona" class="attachment-schema-featured size-schema-featured wp-post-image" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="/wp-content/uploads/2025/09/LGBTQIA-Affirming-Care-at-Interventional-Psychiatry-of-Arizona-800x533.png" data-lazy-srcset="/wp-content/uploads/2025/09/LGBTQIA-Affirming-Care-at-Interventional-Psychiatry-of-Arizona-800x533.png 800w, /wp-content/uploads/2025/09/LGBTQIA-Affirming-Care-at-Interventional-Psychiatry-of-Arizona-300x200.png 300w, /wp-content/uploads/2025/09/LGBTQIA-Affirming-Care-at-Interventional-Psychiatry-of-Arizona-768x513.png 768w" decoding="async" fetchpriority="high" height="533" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20533'%3E%3C/svg%3E" title="" width="800"/><noscript><img alt="LGBTQIA+ Affirming Care at Interventional Psychiatry of Arizona" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" fetchpriority="high" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2025/09/LGBTQIA-Affirming-Care-at-Interventional-Psychiatry-of-Arizona-800x533.png" srcset="/wp-content/uploads/2025/09/LGBTQIA-Affirming-Care-at-Interventional-Psychiatry-of-Arizona-800x533.png 800w, /wp-content/uploads/2025/09/LGBTQIA-Affirming-Care-at-Interventional-Psychiatry-of-Arizona-300x200.png 300w, /wp-content/uploads/2025/09/LGBTQIA-Affirming-Care-at-Interventional-Psychiatry-of-Arizona-768x513.png 768w" title="" width="800"/></noscript></div> </a>
 </div>
 <div class="dm-half post-half">
-<h3 class="title front-view-title"><a href="/lgbtqia-affirming-care-at-interventional-psychiatry-of-arizona/" title="LGBTQIA+ Affirming CareÂ at Interventional Psychiatry of Arizona">LGBTQIA+ Affirming CareÂ at Interventional Psychiatry of Arizona</a></h3>
+<h3 class="title front-view-title"><a href="/lgbtqia-affirming-care-at-interventional-psychiatry-of-arizona/" title="LGBTQIA+ Affirming Care at Interventional Psychiatry of Arizona">LGBTQIA+ Affirming Care at Interventional Psychiatry of Arizona</a></h3>
 <div class="front-view-content">
-                        Mental health care should always be a safe, inclusive, and supportive experience. At Interventional Psychiatry of Arizona, we proudly provide LGBTQIA+ affirming care, ensuring that every individual feels respected,Â â€¦                    </div>
+                        Mental health care should always be a safe, inclusive, and supportive experience. At Interventional Psychiatry of Arizona, we proudly provide LGBTQIA+ affirming care, ensuring that every individual feels respected, â€¦                    </div>
 <div class="readMore">
-<a href="/lgbtqia-affirming-care-at-interventional-psychiatry-of-arizona/" title="LGBTQIA+ Affirming CareÂ at Interventional Psychiatry of Arizona">
+<a href="/lgbtqia-affirming-care-at-interventional-psychiatry-of-arizona/" title="LGBTQIA+ Affirming Care at Interventional Psychiatry of Arizona">
                 [Continue Reading...]            </a>
 </div>
 </div>
@@ -49,7 +49,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/understanding-depression-and-treatment-resistant-depression/" title="Understanding Depression and Treatment-Resistant Depression">Understanding Depression and Treatment-Resistant Depression</a></h3>
 <div class="front-view-content">
-                        What is Depression? Depression is a serious mental health condition that affects how a person feels, thinks, and behaves. It can lead to emotional and physical problems, reducing anÂ â€¦                    </div>
+                        What is Depression? Depression is a serious mental health condition that affects how a person feels, thinks, and behaves. It can lead to emotional and physical problems, reducing an â€¦                    </div>
 <div class="readMore">
 <a href="/understanding-depression-and-treatment-resistant-depression/" title="Understanding Depression and Treatment-Resistant Depression">
                 [Continue Reading...]            </a>
@@ -68,7 +68,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/understanding-the-difference-between-ect-and-tms-for-depression-treatment/" title="Understanding the Difference Between ECT and TMS for Depression Treatment">Understanding the Difference Between ECT and TMS for Depression Treatment</a></h3>
 <div class="front-view-content">
-                        When it comes to treating severe depression and other mental health conditions that have not responded to traditional treatments, patients often explore alternative therapies like Electroconvulsive Therapy (ECT) andÂ â€¦                    </div>
+                        When it comes to treating severe depression and other mental health conditions that have not responded to traditional treatments, patients often explore alternative therapies like Electroconvulsive Therapy (ECT) and â€¦                    </div>
 <div class="readMore">
 <a href="/understanding-the-difference-between-ect-and-tms-for-depression-treatment/" title="Understanding the Difference Between ECT and TMS for Depression Treatment">
                 [Continue Reading...]            </a>
@@ -81,15 +81,15 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<a class="post-image post-image-left schema-featured" href="/debunking-myths-and-misconceptions-about-electroconvulsive-therapy-ect/" id="post-image-thumbnail" title="Debunking Myths and MisconceptionsÂ about Electroconvulsive Therapy (ECT)">
+<a class="post-image post-image-left schema-featured" href="/debunking-myths-and-misconceptions-about-electroconvulsive-therapy-ect/" id="post-image-thumbnail" title="Debunking Myths and Misconceptions about Electroconvulsive Therapy (ECT)">
 <div class="post-image-thumbnail"><img alt="Debunking Myths and Misconceptions About Electroconvulsive Therapy (ECT)" class="attachment-schema-featured size-schema-featured wp-post-image" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="/wp-content/uploads/2025/04/Debunking-Myths-and-Misconceptions-About-Electroconvulsive-Therapy-ECT-800x533.png" data-lazy-srcset="/wp-content/uploads/2025/04/Debunking-Myths-and-Misconceptions-About-Electroconvulsive-Therapy-ECT-800x533.png 800w, /wp-content/uploads/2025/04/Debunking-Myths-and-Misconceptions-About-Electroconvulsive-Therapy-ECT-300x200.png 300w" decoding="async" height="533" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20533'%3E%3C/svg%3E" title="" width="800"/><noscript><img alt="Debunking Myths and Misconceptions About Electroconvulsive Therapy (ECT)" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2025/04/Debunking-Myths-and-Misconceptions-About-Electroconvulsive-Therapy-ECT-800x533.png" srcset="/wp-content/uploads/2025/04/Debunking-Myths-and-Misconceptions-About-Electroconvulsive-Therapy-ECT-800x533.png 800w, /wp-content/uploads/2025/04/Debunking-Myths-and-Misconceptions-About-Electroconvulsive-Therapy-ECT-300x200.png 300w" title="" width="800"/></noscript></div> </a>
 </div>
 <div class="dm-half post-half">
-<h3 class="title front-view-title"><a href="/debunking-myths-and-misconceptions-about-electroconvulsive-therapy-ect/" title="Debunking Myths and MisconceptionsÂ about Electroconvulsive Therapy (ECT)">Debunking Myths and MisconceptionsÂ about Electroconvulsive Therapy (ECT)</a></h3>
+<h3 class="title front-view-title"><a href="/debunking-myths-and-misconceptions-about-electroconvulsive-therapy-ect/" title="Debunking Myths and Misconceptions about Electroconvulsive Therapy (ECT)">Debunking Myths and Misconceptions about Electroconvulsive Therapy (ECT)</a></h3>
 <div class="front-view-content">
-                        Electroconvulsive Therapy (ECT) has been a widely misunderstood treatment due to its portrayal in movies, outdated information, and general misconceptions about psychiatric care. However, in reality, ECT is aÂ â€¦                    </div>
+                        Electroconvulsive Therapy (ECT) has been a widely misunderstood treatment due to its portrayal in movies, outdated information, and general misconceptions about psychiatric care. However, in reality, ECT is a â€¦                    </div>
 <div class="readMore">
-<a href="/debunking-myths-and-misconceptions-about-electroconvulsive-therapy-ect/" title="Debunking Myths and MisconceptionsÂ about Electroconvulsive Therapy (ECT)">
+<a href="/debunking-myths-and-misconceptions-about-electroconvulsive-therapy-ect/" title="Debunking Myths and Misconceptions about Electroconvulsive Therapy (ECT)">
                 [Continue Reading...]            </a>
 </div>
 </div>
@@ -106,7 +106,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/how-neural-pathways-work-and-the-importance-of-increasing-neuroplasticity-with-tms-and-spravato/" title="How Neural Pathways Work and the Importance of Increasing Neuroplasticity with TMS and Spravato">How Neural Pathways Work and the Importance of Increasing Neuroplasticity with TMS and Spravato</a></h3>
 <div class="front-view-content">
-                        The human brain is an intricate and dynamic organ, constantly evolving in response to experiences, thoughts, and emotions. At the core of this adaptability lies neuroplasticity, the brainâ€™s abilityÂ â€¦                    </div>
+                        The human brain is an intricate and dynamic organ, constantly evolving in response to experiences, thoughts, and emotions. At the core of this adaptability lies neuroplasticity, the brain’s ability â€¦                    </div>
 <div class="readMore">
 <a href="/how-neural-pathways-work-and-the-importance-of-increasing-neuroplasticity-with-tms-and-spravato/" title="How Neural Pathways Work and the Importance of Increasing Neuroplasticity with TMS and Spravato">
                 [Continue Reading...]            </a>
@@ -119,15 +119,15 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<a class="post-image post-image-left schema-featured" href="/improved-patient-outcomes-with-close-collaboration-between-therapists-and-tms-providers/" id="post-image-thumbnail" title="Improved Patient Outcomes withÂ Close Collaboration Between Therapists and TMS Providers">
+<a class="post-image post-image-left schema-featured" href="/improved-patient-outcomes-with-close-collaboration-between-therapists-and-tms-providers/" id="post-image-thumbnail" title="Improved Patient Outcomes with Close Collaboration Between Therapists and TMS Providers">
 <div class="post-image-thumbnail"><img alt="Improved Patient Outcomes with Close Collaboration Between Therapists and TMS Providers" class="attachment-schema-featured size-schema-featured wp-post-image" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="/wp-content/uploads/2025/04/Improved-Patient-Outcomes-with-Close-Collaboration-Between-Therapists-and-TMS-Providers-800x533.png" data-lazy-srcset="/wp-content/uploads/2025/04/Improved-Patient-Outcomes-with-Close-Collaboration-Between-Therapists-and-TMS-Providers-800x533.png 800w, /wp-content/uploads/2025/04/Improved-Patient-Outcomes-with-Close-Collaboration-Between-Therapists-and-TMS-Providers-300x200.png 300w" decoding="async" height="533" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20533'%3E%3C/svg%3E" title="" width="800"/><noscript><img alt="Improved Patient Outcomes with Close Collaboration Between Therapists and TMS Providers" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2025/04/Improved-Patient-Outcomes-with-Close-Collaboration-Between-Therapists-and-TMS-Providers-800x533.png" srcset="/wp-content/uploads/2025/04/Improved-Patient-Outcomes-with-Close-Collaboration-Between-Therapists-and-TMS-Providers-800x533.png 800w, /wp-content/uploads/2025/04/Improved-Patient-Outcomes-with-Close-Collaboration-Between-Therapists-and-TMS-Providers-300x200.png 300w" title="" width="800"/></noscript></div> </a>
 </div>
 <div class="dm-half post-half">
-<h3 class="title front-view-title"><a href="/improved-patient-outcomes-with-close-collaboration-between-therapists-and-tms-providers/" title="Improved Patient Outcomes withÂ Close Collaboration Between Therapists and TMS Providers">Improved Patient Outcomes withÂ Close Collaboration Between Therapists and TMS Providers</a></h3>
+<h3 class="title front-view-title"><a href="/improved-patient-outcomes-with-close-collaboration-between-therapists-and-tms-providers/" title="Improved Patient Outcomes with Close Collaboration Between Therapists and TMS Providers">Improved Patient Outcomes with Close Collaboration Between Therapists and TMS Providers</a></h3>
 <div class="front-view-content">
-                        The Importance of an Integrated Approach in Mental Health Care Mental health treatment has evolved significantly in recent years, with a greater emphasis on holistic, integrated care. One ofÂ â€¦                    </div>
+                        The Importance of an Integrated Approach in Mental Health Care Mental health treatment has evolved significantly in recent years, with a greater emphasis on holistic, integrated care. One of â€¦                    </div>
 <div class="readMore">
-<a href="/improved-patient-outcomes-with-close-collaboration-between-therapists-and-tms-providers/" title="Improved Patient Outcomes withÂ Close Collaboration Between Therapists and TMS Providers">
+<a href="/improved-patient-outcomes-with-close-collaboration-between-therapists-and-tms-providers/" title="Improved Patient Outcomes with Close Collaboration Between Therapists and TMS Providers">
                 [Continue Reading...]            </a>
 </div>
 </div>
@@ -138,15 +138,15 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<a class="post-image post-image-left schema-featured" href="/the-benefits-of-transcranial-magnetic-stimulation-tms-for-veterans-and-first-responders/" id="post-image-thumbnail" title="The Benefits of Transcranial Magnetic StimulationÂ (TMS) for Veterans and First Responders">
+<a class="post-image post-image-left schema-featured" href="/the-benefits-of-transcranial-magnetic-stimulation-tms-for-veterans-and-first-responders/" id="post-image-thumbnail" title="The Benefits of Transcranial Magnetic Stimulation (TMS) for Veterans and First Responders">
 <div class="post-image-thumbnail"><img alt="The Benefits of Transcranial Magnetic Stimulation (TMS) for Veterans and First Responders" class="attachment-schema-featured size-schema-featured wp-post-image" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="/wp-content/uploads/2025/04/The-Benefits-of-Transcranial-Magnetic-Stimulation-TMS-for-Veterans-and-First-Responders-800x533.png" data-lazy-srcset="/wp-content/uploads/2025/04/The-Benefits-of-Transcranial-Magnetic-Stimulation-TMS-for-Veterans-and-First-Responders-800x533.png 800w, /wp-content/uploads/2025/04/The-Benefits-of-Transcranial-Magnetic-Stimulation-TMS-for-Veterans-and-First-Responders-300x200.png 300w" decoding="async" height="533" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20533'%3E%3C/svg%3E" title="" width="800"/><noscript><img alt="The Benefits of Transcranial Magnetic Stimulation (TMS) for Veterans and First Responders" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2025/04/The-Benefits-of-Transcranial-Magnetic-Stimulation-TMS-for-Veterans-and-First-Responders-800x533.png" srcset="/wp-content/uploads/2025/04/The-Benefits-of-Transcranial-Magnetic-Stimulation-TMS-for-Veterans-and-First-Responders-800x533.png 800w, /wp-content/uploads/2025/04/The-Benefits-of-Transcranial-Magnetic-Stimulation-TMS-for-Veterans-and-First-Responders-300x200.png 300w" title="" width="800"/></noscript></div> </a>
 </div>
 <div class="dm-half post-half">
-<h3 class="title front-view-title"><a href="/the-benefits-of-transcranial-magnetic-stimulation-tms-for-veterans-and-first-responders/" title="The Benefits of Transcranial Magnetic StimulationÂ (TMS) for Veterans and First Responders">The Benefits of Transcranial Magnetic StimulationÂ (TMS) for Veterans and First Responders</a></h3>
+<h3 class="title front-view-title"><a href="/the-benefits-of-transcranial-magnetic-stimulation-tms-for-veterans-and-first-responders/" title="The Benefits of Transcranial Magnetic Stimulation (TMS) for Veterans and First Responders">The Benefits of Transcranial Magnetic Stimulation (TMS) for Veterans and First Responders</a></h3>
 <div class="front-view-content">
-                        Interventional Psychiatry of Arizona ðŸ“ ðŸ“ž Understanding TMS and Its Impact on Mental Health Mental health challenges, including depression and post-traumatic stress disorder (PTSD), affect millions of people eachÂ â€¦                    </div>
+                        Interventional Psychiatry of Arizona ðŸ“ ðŸ“ž Understanding TMS and Its Impact on Mental Health Mental health challenges, including depression and post-traumatic stress disorder (PTSD), affect millions of people each â€¦                    </div>
 <div class="readMore">
-<a href="/the-benefits-of-transcranial-magnetic-stimulation-tms-for-veterans-and-first-responders/" title="The Benefits of Transcranial Magnetic StimulationÂ (TMS) for Veterans and First Responders">
+<a href="/the-benefits-of-transcranial-magnetic-stimulation-tms-for-veterans-and-first-responders/" title="The Benefits of Transcranial Magnetic Stimulation (TMS) for Veterans and First Responders">
                 [Continue Reading...]            </a>
 </div>
 </div>
@@ -163,7 +163,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/maximizing-your-recovery-best-practices-for-integration-after-tms-and-spravato-treatment/" title="Maximizing Your Recovery: Best Practices for Integration After TMS and Spravato Treatment">Maximizing Your Recovery: Best Practices for Integration After TMS and Spravato Treatment</a></h3>
 <div class="front-view-content">
-                        Transcranial Magnetic Stimulation (TMS) and Spravato (esketamine) are groundbreaking treatments for individuals struggling with treatment-resistant depression, anxiety, and other mental health conditions. While these therapies can be highly effective,Â â€¦                    </div>
+                        Transcranial Magnetic Stimulation (TMS) and Spravato (esketamine) are groundbreaking treatments for individuals struggling with treatment-resistant depression, anxiety, and other mental health conditions. While these therapies can be highly effective, â€¦                    </div>
 <div class="readMore">
 <a href="/maximizing-your-recovery-best-practices-for-integration-after-tms-and-spravato-treatment/" title="Maximizing Your Recovery: Best Practices for Integration After TMS and Spravato Treatment">
                 [Continue Reading...]            </a>
@@ -182,7 +182,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/ect-for-depression-mania-schizophrenia/" title="ECT for Depression, Mania, and Schizophrenia: Who Can Benefit?">ECT for Depression, Mania, and Schizophrenia: Who Can Benefit?</a></h3>
 <div class="front-view-content">
-                        Electroconvulsive Therapy (ECT) is a medical treatment widely recognized for its effectiveness in managing severe psychiatric conditions, particularly when other treatments have proven ineffective. This therapy involves delivering controlledÂ â€¦                    </div>
+                        Electroconvulsive Therapy (ECT) is a medical treatment widely recognized for its effectiveness in managing severe psychiatric conditions, particularly when other treatments have proven ineffective. This therapy involves delivering controlled â€¦                    </div>
 <div class="readMore">
 <a href="/ect-for-depression-mania-schizophrenia/" title="ECT for Depression, Mania, and Schizophrenia: Who Can Benefit?">
                 [Continue Reading...]            </a>
@@ -200,7 +200,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/the-science-behind-esketamine/" title="The Science Behind Esketamine: How It Helps With Suicidal Thoughts">The Science Behind Esketamine: How It Helps With Suicidal Thoughts</a></h3>
 <div class="front-view-content">
-                        When it comes to managing severe depression and suicidal thoughts, traditional treatments can sometimes take weeks to show any effect. This is where esketamine, known by its brand nameÂ â€¦                    </div>
+                        When it comes to managing severe depression and suicidal thoughts, traditional treatments can sometimes take weeks to show any effect. This is where esketamine, known by its brand name â€¦                    </div>
 <div class="readMore">
 <a href="/the-science-behind-esketamine/" title="The Science Behind Esketamine: How It Helps With Suicidal Thoughts">
                 [Continue Reading...]            </a>
@@ -233,7 +233,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_gecko gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

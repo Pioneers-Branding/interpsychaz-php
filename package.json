@@ -1,4 +1,9 @@
 {
   "name": "interpsychaz-php",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "php -S localhost:8000 router.php",
+    "start": "php -S 0.0.0.0:8000 router.php",
+    "build": "node build.js"
+  }
 }

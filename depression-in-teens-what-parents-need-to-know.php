@@ -25,12 +25,12 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
 <h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
@@ -89,14 +89,14 @@ require_once __DIR__ . '/includes/header.php';
 </ul>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Q&amp;A: Depression in Teens</strong></h2>
-<p class="wp-block-paragraph"><strong>Q: How is depression different in teens compared to adults?</strong><strong><br/></strong> A: Teens may not always appear â€œsad.â€ Instead, they may act irritable, angry, or withdrawn. They may also complain of physical symptoms like headaches or stomachaches.</p>
+<p class="wp-block-paragraph"><strong>Q: How is depression different in teens compared to adults?</strong><strong><br/></strong> A: Teens may not always appear “sad.” Instead, they may act irritable, angry, or withdrawn. They may also complain of physical symptoms like headaches or stomachaches.</p>
 <p class="wp-block-paragraph"><strong>Q: Can school stress cause depression?</strong><strong><br/></strong> A: Stress at school can contribute, but depression is a medical condition influenced by a combination of genetics, brain chemistry, environment, and life experiences.</p>
 <p class="wp-block-paragraph"><strong>Q: What should parents do if they suspect their teen is depressed?</strong><strong><br/></strong> A: Start with open and compassionate communication. If concerns persist, reach out to a mental health professional for an evaluation.</p>
 <p class="wp-block-paragraph"><strong>Q: Is it safe for teens to take antidepressant medications?</strong><strong><br/></strong> A: In certain cases, medications can be very effective and are prescribed carefully with close monitoring. Treatment decisions are individualized and discussed with families in detail.</p>
 <p class="wp-block-paragraph"><strong>Q: When is emergency help needed?</strong><strong><br/></strong> A: If a teen expresses thoughts of self-harm or suicide, seek emergency medical attention immediately by calling 911 or going to the nearest emergency room.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
-<h2 class="wp-block-heading"><strong>Support Your Teenâ€™s Mental Health</strong></h2>
-<p class="wp-block-paragraph">Depression in teens is not a sign of weakness or poor parentingâ€”it is a real medical condition that deserves professional care. At <strong>Interventional Psychiatry of Arizona</strong>, we are here to help families navigate this journey with compassion, expertise, and hope.</p>
+<h2 class="wp-block-heading"><strong>Support Your Teen’s Mental Health</strong></h2>
+<p class="wp-block-paragraph">Depression in teens is not a sign of weakness or poor parenting—it is a real medical condition that deserves professional care. At <strong>Interventional Psychiatry of Arizona</strong>, we are here to help families navigate this journey with compassion, expertise, and hope.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Contact Information</strong></h2>
 <p class="wp-block-paragraph"><strong>Interventional Psychiatry of Arizona</strong><br/>Phone: (602) 824-8404</p>
@@ -122,7 +122,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

@@ -1,7 +1,7 @@
 ﻿<?php
 $pageTitle = 'Terms &amp; Conditions | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page page-id-521';
-$pageDescription = 'Terms &amp; Conditions - By opting in to receive SMS messages from (â€œwe,â€ â€œus,â€ â€œourâ€), you agree to the following terms: 1. SMS Messaging Service By providing my phone number, I';
+$pageDescription = 'Terms &amp; Conditions - By opting in to receive SMS messages from (“we,” “us,” “our”), you agree to the following terms: 1. SMS Messaging Service By providing my phone number, I';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/terms-and-conditions/';
@@ -24,17 +24,17 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_page">
 <div class="post-content">
 <div class="container">
-<p><strong>By opting in to receive SMS messages from Interventional Psychiatry of Arizona (â€œwe,â€ â€œus,â€ â€œourâ€), you agree to the following terms:</strong></p>
+<p><strong>By opting in to receive SMS messages from Interventional Psychiatry of Arizona (“we,” “us,” “our”), you agree to the following terms:</strong></p>
 <h3>1. SMS Messaging Service</h3>
 <p>By providing my phone number, I consent to receive SMS text messages from Interventional Psychiatry of Arizona for appointment reminders, marketing messages, and general two-way communication. Msg frequency varies. Msg&amp;data rates may apply. Reply HELP for support. Reply STOP to opt out.</p>
 <h3>2. Message Frequency</h3>
 <p>You will receive [up to 4 messages per month].</p>
 <h3>3. Message and Data Rates</h3>
-<p>Message and data rates may apply based on your mobile carrierâ€™s terms.</p>
+<p>Message and data rates may apply based on your mobile carrier’s terms.</p>
 <h3>4. Privacy Policy</h3>
 <p>Your information will be handled in accordance with our Privacy Policy, which can be viewed <a href="/privacy-policy/">here</a>.</p>
 <h3>5. Opt-Out Instructions</h3>
-<p>You can opt out at any time by replying â€œSTOPâ€ to any SMS message. Reply HELP for support. You may also contact us directly at <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a>.</p>
+<p>You can opt out at any time by replying “STOP” to any SMS message. Reply HELP for support. You may also contact us directly at <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a>.</p>
 <h3>6. Liability</h3>
 <p>We are not responsible for any charges, errors, or delays in SMS delivery caused by your carrier or third-party service providers.</p>
 <p>By opting in, you confirm that you are the owner or authorized user of the phone number provided and that you are at least 18 years old.</p>
@@ -59,7 +59,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

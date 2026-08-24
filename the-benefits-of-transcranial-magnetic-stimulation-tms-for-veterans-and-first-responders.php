@@ -1,7 +1,7 @@
 ﻿<?php
-$pageTitle = 'The Benefits of Transcranial Magnetic StimulationÂ (TMS) for Veterans and First Responders | Interventional Psychiatry of Arizona';
+$pageTitle = 'The Benefits of Transcranial Magnetic Stimulation (TMS) for Veterans and First Responders | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'The Benefits of Transcranial Magnetic StimulationÂ (TMS) for Veterans and First Responders - Interventional Psychiatry of Arizona ðŸ“ ðŸ“ž Understanding TMS and Its Impact on Mental Health Mental health challenges, including depression and';
+$pageDescription = 'The Benefits of Transcranial Magnetic Stimulation (TMS) for Veterans and First Responders - Interventional Psychiatry of Arizona ðŸ“ ðŸ“ž Understanding TMS and Its Impact on Mental Health Mental health challenges, including depression and';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/the-benefits-of-transcranial-magnetic-stimulation-tms-for-veterans-and-first-responders/';
@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single" data-rocket-location-hash="56c67d6aea37e5ce914ed3cbb1a24e45" id="page">
 <section class="page-header" data-rocket-location-hash="3aac77729f1c7e705171ebffb90e528f">
 <div class="container">
-<h1 class="page-title">The Benefits of Transcranial Magnetic StimulationÂ (TMS) for Veterans and First Responders</h1>
+<h1 class="page-title">The Benefits of Transcranial Magnetic Stimulation (TMS) for Veterans and First Responders</h1>
 </div>
 </section>
 <article class="article dm-full-width" data-rocket-location-hash="ec774fc978476739b024a7aaae22a73a">
@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -108,10 +108,10 @@ require_once __DIR__ . '/includes/header.php';
 <p><span style="font-weight: 400;">After completing a full course of TMS, many patients experience </span><b>long-term symptom relief</b><span style="font-weight: 400;">. Some may benefit from occasional </span><b>maintenance sessions</b><span style="font-weight: 400;">.</span></p>
 <h2><b>Why Choose Interventional Psychiatry of Arizona?</b></h2>
 <p><span style="font-weight: 400;">At </span><b>Interventional Psychiatry of Arizona</b><span style="font-weight: 400;">, we are dedicated to </span><b>helping veterans, first responders, and individuals struggling with depression and PTSD</b><span style="font-weight: 400;"> find relief through innovative, evidence-based treatments like TMS.</span></p>
-<p><span style="font-weight: 400;">âœ… </span><b>Experienced providers</b><span style="font-weight: 400;"> specializing in mental health care for high-risk populations</span><span style="font-weight: 400;"><br/>
-</span><span style="font-weight: 400;"> âœ… </span><b>State-of-the-art TMS technology</b><b><br/>
-</b><span style="font-weight: 400;"> âœ… </span><b>Insurance verification and flexible payment options</b><b><br/>
-</b><span style="font-weight: 400;"> âœ… </span><b>Personalized treatment plans tailored to each patientâ€™s needs</b></p>
+<p><span style="font-weight: 400;">✅ </span><b>Experienced providers</b><span style="font-weight: 400;"> specializing in mental health care for high-risk populations</span><span style="font-weight: 400;"><br/>
+</span><span style="font-weight: 400;"> ✅ </span><b>State-of-the-art TMS technology</b><b><br/>
+</b><span style="font-weight: 400;"> ✅ </span><b>Insurance verification and flexible payment options</b><b><br/>
+</b><span style="font-weight: 400;"> ✅ </span><b>Personalized treatment plans tailored to each patient’s needs</b></p>
 <h2><b>Take the First Step Toward Healing</b></h2>
 <p><span style="font-weight: 400;">If you or a loved one is a </span><b>veteran or first responder</b><span style="font-weight: 400;"> struggling with depression, PTSD, or treatment-resistant symptoms, </span><b>TMS therapy may be the breakthrough you need</b><span style="font-weight: 400;">.</span></p>
 <p><b>Interventional Psychiatry of Arizona</b><b><br/>
@@ -140,7 +140,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

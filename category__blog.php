@@ -64,15 +64,15 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<a class="post-image post-image-left schema-featured" href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/" id="post-image-thumbnail" title="Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night">
-<div class="post-image-thumbnail"><img alt="Sleep Problems &amp; Insomnia Why Your Brain Wonâ€™t Shut Off at Night" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" fetchpriority="high" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-800x533.jpg" srcset="/wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-800x533.jpg 800w, /wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-300x200.jpg 300w" title="" width="800"/></div> </a>
+<a class="post-image post-image-left schema-featured" href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/" id="post-image-thumbnail" title="Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night">
+<div class="post-image-thumbnail"><img alt="Sleep Problems &amp; Insomnia Why Your Brain Won’t Shut Off at Night" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" fetchpriority="high" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-800x533.jpg" srcset="/wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-800x533.jpg 800w, /wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-300x200.jpg 300w" title="" width="800"/></div> </a>
 </div>
 <div class="dm-half post-half">
-<h3 class="title front-view-title"><a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/" title="Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a></h3>
+<h3 class="title front-view-title"><a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/" title="Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a></h3>
 <div class="front-view-content">
-                        Sleep is supposed to be restorativeâ€”a time when your mind and body reset. But for millions of people, bedtime becomes a battleground. Racing thoughts, anxiety, and physical restlessness canÂ â€¦                    </div>
+                        Sleep is supposed to be restorative—a time when your mind and body reset. But for millions of people, bedtime becomes a battleground. Racing thoughts, anxiety, and physical restlessness can â€¦                    </div>
 <div class="readMore">
-<a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/" title="Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night">
+<a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/" title="Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night">
                 [Continue Reading...]            </a>
 </div>
 </div>
@@ -83,15 +83,15 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<a class="post-image post-image-left schema-featured" href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/" id="post-image-thumbnail" title="Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy">
-<div class="post-image-thumbnail"><img alt="Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy" class="attachment-schema-featured size-schema-featured wp-post-image" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-800x533.jpg" data-lazy-srcset="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-800x533.jpg 800w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-300x200.jpg 300w" decoding="async" height="533" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20533'%3E%3C/svg%3E" title="" width="800"/><noscript><img alt="Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-800x533.jpg" srcset="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-800x533.jpg 800w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-300x200.jpg 300w" title="" width="800"/></noscript></div> </a>
+<a class="post-image post-image-left schema-featured" href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/" id="post-image-thumbnail" title="Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy">
+<div class="post-image-thumbnail"><img alt="Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy" class="attachment-schema-featured size-schema-featured wp-post-image" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-800x533.jpg" data-lazy-srcset="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-800x533.jpg 800w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-300x200.jpg 300w" decoding="async" height="533" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20533'%3E%3C/svg%3E" title="" width="800"/><noscript><img alt="Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-800x533.jpg" srcset="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-800x533.jpg 800w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-300x200.jpg 300w" title="" width="800"/></noscript></div> </a>
 </div>
 <div class="dm-half post-half">
-<h3 class="title front-view-title"><a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/" title="Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a></h3>
+<h3 class="title front-view-title"><a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/" title="Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a></h3>
 <div class="front-view-content">
-                        In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally drained has become increasingly common. Many people describe what theyâ€™re experiencing as â€œburnoutâ€â€”but what if itâ€™s actually depression? While theÂ â€¦                    </div>
+                        In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally drained has become increasingly common. Many people describe what they’re experiencing as “burnout”—but what if it’s actually depression? While the â€¦                    </div>
 <div class="readMore">
-<a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/" title="Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy">
+<a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/" title="Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy">
                 [Continue Reading...]            </a>
 </div>
 </div>
@@ -108,7 +108,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/" title="Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a></h3>
 <div class="front-view-content">
-                        Anxiety and panic disorders are among the most common mental health conditions in the United Statesâ€”and also among the most misunderstood. For many people, anxiety doesnâ€™t just feel likeÂ â€¦                    </div>
+                        Anxiety and panic disorders are among the most common mental health conditions in the United States—and also among the most misunderstood. For many people, anxiety doesn’t just feel like â€¦                    </div>
 <div class="readMore">
 <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/" title="Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help">
                 [Continue Reading...]            </a>
@@ -127,7 +127,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/" title="Irritability: A Commonly Overlooked Symptom of Anxiety">Irritability: A Commonly Overlooked Symptom of Anxiety</a></h3>
 <div class="front-view-content">
-                        When most people think about anxiety, they picture racing thoughts, a pounding heart, or constant worry. While these symptoms are well-known, one of the most overlooked signs of anxietyÂ â€¦                    </div>
+                        When most people think about anxiety, they picture racing thoughts, a pounding heart, or constant worry. While these symptoms are well-known, one of the most overlooked signs of anxiety â€¦                    </div>
 <div class="readMore">
 <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/" title="Irritability: A Commonly Overlooked Symptom of Anxiety">
                 [Continue Reading...]            </a>
@@ -146,7 +146,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/sleep-hygiene-building-healthy-habits-for-better-rest/" title="Sleep Hygiene: Building Healthy Habits for Better Rest">Sleep Hygiene: Building Healthy Habits for Better Rest</a></h3>
 <div class="front-view-content">
-                        At Interventional Psychiatry of Arizona, we know that sleep is one of the most powerful tools for mental health and overall well-being. Yet, many people struggle with falling asleep,Â â€¦                    </div>
+                        At Interventional Psychiatry of Arizona, we know that sleep is one of the most powerful tools for mental health and overall well-being. Yet, many people struggle with falling asleep, â€¦                    </div>
 <div class="readMore">
 <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/" title="Sleep Hygiene: Building Healthy Habits for Better Rest">
                 [Continue Reading...]            </a>
@@ -165,7 +165,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/adhd-in-females-vs-males-understanding-the-differences/" title="ADHD in Females vs. Males: Understanding the Differences">ADHD in Females vs. Males: Understanding the Differences</a></h3>
 <div class="front-view-content">
-                        Attention-Deficit/Hyperactivity Disorder (ADHD) is one of the most common neurodevelopmental conditions, affecting people across all ages and backgrounds. However, ADHD often looks different in females compared to males, leadingÂ â€¦                    </div>
+                        Attention-Deficit/Hyperactivity Disorder (ADHD) is one of the most common neurodevelopmental conditions, affecting people across all ages and backgrounds. However, ADHD often looks different in females compared to males, leading â€¦                    </div>
 <div class="readMore">
 <a href="/adhd-in-females-vs-males-understanding-the-differences/" title="ADHD in Females vs. Males: Understanding the Differences">
                 [Continue Reading...]            </a>
@@ -184,7 +184,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/the-benefits-of-journaling-to-track-progress-in-treatment/" title="The Benefits of Journaling to Track Progress in Treatment">The Benefits of Journaling to Track Progress in Treatment</a></h3>
 <div class="front-view-content">
-                        At Interventional Psychiatry of Arizona, we believe that healing is a journeyâ€”and keeping track of that journey can be just as important as the treatments themselves. Journaling is aÂ â€¦                    </div>
+                        At Interventional Psychiatry of Arizona, we believe that healing is a journey—and keeping track of that journey can be just as important as the treatments themselves. Journaling is a â€¦                    </div>
 <div class="readMore">
 <a href="/the-benefits-of-journaling-to-track-progress-in-treatment/" title="The Benefits of Journaling to Track Progress in Treatment">
                 [Continue Reading...]            </a>
@@ -203,7 +203,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/tms-for-teens-a-promising-alternative-to-medications-for-depression/" title="TMS for Teens: A Promising Alternative to Medications for Depression">TMS for Teens: A Promising Alternative to Medications for Depression</a></h3>
 <div class="front-view-content">
-                        Depression among teens is a growing concern, with many young people struggling to find relief through traditional treatments. While medications can be effective for some, they often come withÂ â€¦                    </div>
+                        Depression among teens is a growing concern, with many young people struggling to find relief through traditional treatments. While medications can be effective for some, they often come with â€¦                    </div>
 <div class="readMore">
 <a href="/tms-for-teens-a-promising-alternative-to-medications-for-depression/" title="TMS for Teens: A Promising Alternative to Medications for Depression">
                 [Continue Reading...]            </a>
@@ -222,7 +222,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/how-social-media-affects-the-minds-of-teens/" title="How Social Media Affects the Minds of Teens">How Social Media Affects the Minds of Teens</a></h3>
 <div class="front-view-content">
-                        In todayâ€™s digital world, social media is nearly inseparable from the lives of teenagers. While it offers opportunities for connection, creativity, and learning, it can also pose risks toÂ â€¦                    </div>
+                        In today’s digital world, social media is nearly inseparable from the lives of teenagers. While it offers opportunities for connection, creativity, and learning, it can also pose risks to â€¦                    </div>
 <div class="readMore">
 <a href="/how-social-media-affects-the-minds-of-teens/" title="How Social Media Affects the Minds of Teens">
                 [Continue Reading...]            </a>
@@ -241,7 +241,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/depression-in-teens-what-parents-need-to-know/" title="Depression in Teens: What Parents Need to Know">Depression in Teens: What Parents Need to Know</a></h3>
 <div class="front-view-content">
-                        Childhood and adolescence are times of growth, exploration, and change. But for many young people, these stages can also bring struggles with mental health. Depression in teens is moreÂ â€¦                    </div>
+                        Childhood and adolescence are times of growth, exploration, and change. But for many young people, these stages can also bring struggles with mental health. Depression in teens is more â€¦                    </div>
 <div class="readMore">
 <a href="/depression-in-teens-what-parents-need-to-know/" title="Depression in Teens: What Parents Need to Know">
                 [Continue Reading...]            </a>
@@ -274,7 +274,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_gecko gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

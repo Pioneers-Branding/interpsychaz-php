@@ -25,12 +25,12 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
 <h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
@@ -56,7 +56,7 @@ require_once __DIR__ . '/includes/header.php';
 <h3 class="elementor-heading-title elementor-size-default">Understanding Treatment-Resistant Depression</h3>
 <p>Treatment-resistant depression is defined as a lack of response to at least two different antidepressant medications at adequate doses and durations. The causes of treatment-resistant depression are complex and may involve genetic, environmental, and psychological factors. Some individuals may have a genetic predisposition to depression, while others may experience depression due to traumatic life events, chronic stress, or medical conditions such as chronic pain or neurological disorders.</p>
 <h3 class="elementor-heading-title elementor-size-default">Diagnosis of Treatment-Resistant Depression</h3>
-<p>Diagnosing treatment-resistant depression involves a thorough assessment of the individualâ€™s medical and psychiatric history, symptoms, and treatment response. The healthcare provider will review the individualâ€™s previous treatments, dosages, and durations of antidepressant medications, and assess for any underlying medical or psychological conditions that may be contributing to the depression.</p>
+<p>Diagnosing treatment-resistant depression involves a thorough assessment of the individual’s medical and psychiatric history, symptoms, and treatment response. The healthcare provider will review the individual’s previous treatments, dosages, and durations of antidepressant medications, and assess for any underlying medical or psychological conditions that may be contributing to the depression.</p>
 <h3 class="elementor-heading-title elementor-size-default">Treatment Options for Treatment-Resistant Depression</h3>
 <p>Treatment options for treatment-resistant depression are complex and may involve a combination of medication, therapy, and other interventions. Here are some of the most common treatment options:</p>
 <ul class="elementor-icon-list-items">
@@ -93,7 +93,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

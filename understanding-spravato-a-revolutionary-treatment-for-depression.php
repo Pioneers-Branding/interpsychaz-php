@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -53,13 +53,13 @@ require_once __DIR__ . '/includes/header.php';
 <div class="thecontent">
 <p><img alt="" class="aligncenter size-large wp-image-335" data-lazy-sizes="(max-width: 680px) 100vw, 680px" data-lazy-src="/wp-content/uploads/2025/03/women-doing-a-round-of-spravato-treatment.jpg-1024x735.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/women-doing-a-round-of-spravato-treatment.jpg-1024x735.webp 1024w, http://interpsychaz.com/wp-content/uploads/2025/03/women-doing-a-round-of-spravato-treatment.jpg-300x215.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/women-doing-a-round-of-spravato-treatment.jpg-768x551.webp 768w, http://interpsychaz.com/wp-content/uploads/2025/03/women-doing-a-round-of-spravato-treatment.jpg.webp 1500w" decoding="async" fetchpriority="high" height="488" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20680%20488'%3E%3C/svg%3E" width="680"/><noscript><img alt="" class="aligncenter size-large wp-image-335" decoding="async" fetchpriority="high" height="488" sizes="(max-width: 680px) 100vw, 680px" src="/wp-content/uploads/2025/03/women-doing-a-round-of-spravato-treatment.jpg-1024x735.webp" srcset="/wp-content/uploads/2025/03/women-doing-a-round-of-spravato-treatment.jpg-1024x735.webp 1024w, /wp-content/uploads/2025/03/women-doing-a-round-of-spravato-treatment.jpg-300x215.webp 300w, /wp-content/uploads/2025/03/women-doing-a-round-of-spravato-treatment.jpg-768x551.webp 768w, /wp-content/uploads/2025/03/women-doing-a-round-of-spravato-treatment.jpg.webp 1500w" width="680"/></noscript>Understanding Spravato: A Revolutionary Treatment for Depression</p>
 <h2>What is Spravato?</h2>
-<p>Ketamine has long been used as an anesthetic in medical settings, but its potential for treating depression was discovered more recently. Esketamine, the active ingredient in Spravato, works differently from traditional antidepressants, targeting the brainâ€™s glutamate system rather than serotonin or norepinephrine. This unique mechanism offers rapid relief from depressive symptoms, making it a promising option for those with treatment-resistant depression.</p>
+<p>Ketamine has long been used as an anesthetic in medical settings, but its potential for treating depression was discovered more recently. Esketamine, the active ingredient in Spravato, works differently from traditional antidepressants, targeting the brain’s glutamate system rather than serotonin or norepinephrine. This unique mechanism offers rapid relief from depressive symptoms, making it a promising option for those with treatment-resistant depression.</p>
 <h2>How Spravato Works</h2>
-<p>By modulating these receptors, Spravato increases the brainâ€™s capacity to establish new neural connections. This mechanism contrasts with traditional antidepressants, which primarily influence serotonin and norepinephrine pathways and often take several weeks to show effects.</p>
+<p>By modulating these receptors, Spravato increases the brain’s capacity to establish new neural connections. This mechanism contrasts with traditional antidepressants, which primarily influence serotonin and norepinephrine pathways and often take several weeks to show effects.</p>
 <h3>The Administration of Spravato</h3>
-<p>Spravato is administered as a nasal spray in a clinical setting under the supervision of a healthcare professional. This ensures that the patient receives the correct dosage and allows for monitoring of any potential side effects. The treatment is typically used in conjunction with an oral antidepressant to maximize its effectiveness. Patients usually undergo two sessions per week for the first four weeks, followed by a maintenance phase where the frequency of treatments is gradually reduced based on the patientâ€™s response.</p>
+<p>Spravato is administered as a nasal spray in a clinical setting under the supervision of a healthcare professional. This ensures that the patient receives the correct dosage and allows for monitoring of any potential side effects. The treatment is typically used in conjunction with an oral antidepressant to maximize its effectiveness. Patients usually undergo two sessions per week for the first four weeks, followed by a maintenance phase where the frequency of treatments is gradually reduced based on the patient’s response.</p>
 <h3>Benefits of Spravato</h3>
-<p>The onset of action with Spravato treatment demonstrates a notably rapid effect when compared to traditional antidepressants. While the latter typically necessitate weeks or months to reach full efficacy, Spravato often induces a reduction in depressive symptoms within a matter of hours or days following the initial treatment. This expeditious relief has the potential to significantly impact individualsâ€™ lives.</p>
+<p>The onset of action with Spravato treatment demonstrates a notably rapid effect when compared to traditional antidepressants. While the latter typically necessitate weeks or months to reach full efficacy, Spravato often induces a reduction in depressive symptoms within a matter of hours or days following the initial treatment. This expeditious relief has the potential to significantly impact individuals’ lives.</p>
 <h2>Efficacy for Treatment-Resistant Depression</h2>
 <p>Clinical trials have demonstrated its efficacy in this challenging population, providing a new avenue of hope for those who have struggled to find effective treatment.</p>
 <h2>Supervised Treatment and Safety</h2>
@@ -103,7 +103,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

@@ -67,7 +67,7 @@ require_once __DIR__ . '/includes/header.php';
 <h4>What is ECT?</h4>
 <p>Electroconvulsive therapy (ECT), sometimes referred to as electric shock therapy, is a medical treatment for severe psychiatric disorders, including major depression, mania, PTSD, and some forms of schizophrenia. By delivering a brief, controlled electrical current, ECT induces a seizure that stimulates changes in brain chemistry, potentially alleviating symptoms. Treatment typically consists of 6 to 12 sessions, administered three times per week for optimal results.</p>
 <h4>What Happens During an ECT Session?</h4>
-<p>On the day of your treatment at Tempe St. Lukeâ€™s Hospital:</p>
+<p>On the day of your treatment at Tempe St. Luke’s Hospital:</p>
 <ul>
 <li>A small IV is inserted to administer necessary medications.</li>
 <li>You will receive medications to manage discomfort, a short-acting anesthetic to induce sleep, and a muscle relaxant.</li>
@@ -127,7 +127,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

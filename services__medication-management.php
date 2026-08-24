@@ -32,7 +32,7 @@ require_once __DIR__ . '/includes/header.php';
 <h4>Learn More about Medication Management</h4>
 <p>Medications play a vital role in treating a wide range of mental health conditions, helping to reduce or eliminate symptoms and significantly improve quality of life.</p>
 <p>However, every patient responds differently to medications. Experienced mental health specialists carefully assess individual factors, including medical history, current prescriptions, and overall health, to tailor the most effective treatment plan.</p>
-<p>A comprehensive medication management plan ensures that all aspects of a patientâ€™s treatment are monitored, including:</p>
+<p>A comprehensive medication management plan ensures that all aspects of a patient’s treatment are monitored, including:</p>
 <ul>
 <li>Drug interactions with other prescriptions</li>
 <li>Potential side effects and how to manage them</li>

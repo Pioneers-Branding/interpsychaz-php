@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -52,7 +52,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
 <p><span style="font-weight: 400;"><img alt="Understanding the Difference Between ECT and TMS for Depression Treatment" class="aligncenter wp-image-436" data-lazy-sizes="(max-width: 398px) 100vw, 398px" data-lazy-src="/wp-content/uploads/2025/04/Understanding-the-Difference-Between-ECT-and-TMS-for-Depression-Treatment.png" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/04/Understanding-the-Difference-Between-ECT-and-TMS-for-Depression-Treatment.png 1000w, http://interpsychaz.com/wp-content/uploads/2025/04/Understanding-the-Difference-Between-ECT-and-TMS-for-Depression-Treatment-300x200.png 300w, http://interpsychaz.com/wp-content/uploads/2025/04/Understanding-the-Difference-Between-ECT-and-TMS-for-Depression-Treatment-768x514.png 768w, http://interpsychaz.com/wp-content/uploads/2025/04/Understanding-the-Difference-Between-ECT-and-TMS-for-Depression-Treatment-800x533.png 800w" decoding="async" fetchpriority="high" height="266" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20398%20266'%3E%3C/svg%3E" width="398"/><noscript><img alt="Understanding the Difference Between ECT and TMS for Depression Treatment" class="aligncenter wp-image-436" decoding="async" fetchpriority="high" height="266" sizes="(max-width: 398px) 100vw, 398px" src="/wp-content/uploads/2025/04/Understanding-the-Difference-Between-ECT-and-TMS-for-Depression-Treatment.png" srcset="/wp-content/uploads/2025/04/Understanding-the-Difference-Between-ECT-and-TMS-for-Depression-Treatment.png 1000w, /wp-content/uploads/2025/04/Understanding-the-Difference-Between-ECT-and-TMS-for-Depression-Treatment-300x200.png 300w, /wp-content/uploads/2025/04/Understanding-the-Difference-Between-ECT-and-TMS-for-Depression-Treatment-768x514.png 768w, /wp-content/uploads/2025/04/Understanding-the-Difference-Between-ECT-and-TMS-for-Depression-Treatment-800x533.png 800w" width="398"/></noscript>When it comes to treating severe depression and other mental health conditions that have not responded to traditional treatments, patients often explore alternative therapies like </span><b>Electroconvulsive Therapy (ECT)</b><span style="font-weight: 400;"> and </span><b>Transcranial Magnetic Stimulation (TMS)</b><span style="font-weight: 400;">. While both methods are effective and have been used to help patients struggling with treatment-resistant depression, they work in very different ways.</span></p>
-<p><span style="font-weight: 400;">At </span><b>Interventional Psychiatry of Arizona</b><span style="font-weight: 400;">, we specialize in cutting-edge treatments for mental health conditions, and weâ€™re here to help you understand the key differences between </span><b>ECT and TMS</b><span style="font-weight: 400;"> so you can make an informed decision about your care.</span></p>
+<p><span style="font-weight: 400;">At </span><b>Interventional Psychiatry of Arizona</b><span style="font-weight: 400;">, we specialize in cutting-edge treatments for mental health conditions, and we’re here to help you understand the key differences between </span><b>ECT and TMS</b><span style="font-weight: 400;"> so you can make an informed decision about your care.</span></p>
 <h2><b>What is Electroconvulsive Therapy (ECT)?</b></h2>
 <p><span style="font-weight: 400;">Electroconvulsive Therapy (ECT) is a well-established procedure that has been used for decades to treat severe mental health disorders, primarily </span><b>major depression</b><span style="font-weight: 400;">, </span><b>bipolar disorder</b><span style="font-weight: 400;">, and </span><b>schizophrenia</b><span style="font-weight: 400;">. It involves sending small, controlled electric currents through the brain to induce a brief seizure, which is believed to help reset brain chemistry and improve symptoms of mental illness.</span></p>
 <h3><b>How ECT Works:</b></h3>
@@ -81,7 +81,7 @@ require_once __DIR__ . '/includes/header.php';
 <p><b>Transcranial Magnetic Stimulation (TMS)</b><span style="font-weight: 400;"> is a non-invasive procedure that uses </span><b>magnetic pulses</b><span style="font-weight: 400;"> to stimulate nerve cells in the brain. Unlike ECT, </span><b>TMS does not require anesthesia and does not cause seizures</b><span style="font-weight: 400;">. It is most commonly used for </span><b>major depressive disorder</b><span style="font-weight: 400;"> and </span><b>obsessive-compulsive disorder (OCD)</b><span style="font-weight: 400;"> when medications and therapy have not been effective.</span></p>
 <h3><b>How TMS Works:</b></h3>
 <ul>
-<li aria-level="1" style="font-weight: 400;"><span style="font-weight: 400;">A </span><b>magnetic coil</b><span style="font-weight: 400;"> is placed on the patientâ€™s scalp, targeting the prefrontal cortex, an area of the brain associated with mood regulation.</span></li>
+<li aria-level="1" style="font-weight: 400;"><span style="font-weight: 400;">A </span><b>magnetic coil</b><span style="font-weight: 400;"> is placed on the patient’s scalp, targeting the prefrontal cortex, an area of the brain associated with mood regulation.</span></li>
 <li aria-level="1" style="font-weight: 400;"><span style="font-weight: 400;">The device delivers </span><b>pulses of magnetic energy</b><span style="font-weight: 400;">, stimulating neurons and increasing brain activity in areas affected by depression.</span></li>
 <li aria-level="1" style="font-weight: 400;"><span style="font-weight: 400;">The procedure lasts </span><b>about 20-40 minutes</b><span style="font-weight: 400;">, and patients are fully awake and alert during treatment.</span></li>
 <li aria-level="1" style="font-weight: 400;"><span style="font-weight: 400;">TMS requires multiple sessions, usually </span><b>5 days a week for 4-6 weeks</b><span style="font-weight: 400;">.</span></li>
@@ -147,9 +147,9 @@ require_once __DIR__ . '/includes/header.php';
 </table>
 <h2><b>Which Treatment is Right for You?</b></h2>
 <p><span style="font-weight: 400;">The choice between </span><b>ECT and TMS</b><span style="font-weight: 400;"> depends on several factors, including:</span><span style="font-weight: 400;"><br/>
-</span><span style="font-weight: 400;"> âœ” </span><b>The severity of your condition</b><span style="font-weight: 400;"> â€“ ECT is generally reserved for more severe cases, while TMS is used for </span><b>moderate to severe depression</b><span style="font-weight: 400;"> that hasnâ€™t responded to medication.</span><span style="font-weight: 400;"><br/>
-</span><span style="font-weight: 400;"> âœ” </span><b>Tolerance for side effects</b><span style="font-weight: 400;"> â€“ If </span><b>memory issues</b><span style="font-weight: 400;"> are a concern, TMS may be the better option.</span><span style="font-weight: 400;"><br/>
-</span><span style="font-weight: 400;"> âœ” </span><b>Treatment setting</b><span style="font-weight: 400;"> â€“ ECT requires hospital visits and anesthesia, whereas TMS is an </span><b>outpatient procedure</b><span style="font-weight: 400;"> that allows you to resume normal activities immediately.</span></p>
+</span><span style="font-weight: 400;"> ✔ </span><b>The severity of your condition</b><span style="font-weight: 400;"> – ECT is generally reserved for more severe cases, while TMS is used for </span><b>moderate to severe depression</b><span style="font-weight: 400;"> that hasn’t responded to medication.</span><span style="font-weight: 400;"><br/>
+</span><span style="font-weight: 400;"> ✔ </span><b>Tolerance for side effects</b><span style="font-weight: 400;"> – If </span><b>memory issues</b><span style="font-weight: 400;"> are a concern, TMS may be the better option.</span><span style="font-weight: 400;"><br/>
+</span><span style="font-weight: 400;"> ✔ </span><b>Treatment setting</b><span style="font-weight: 400;"> – ECT requires hospital visits and anesthesia, whereas TMS is an </span><b>outpatient procedure</b><span style="font-weight: 400;"> that allows you to resume normal activities immediately.</span></p>
 <p><span style="font-weight: 400;">At </span><b>Interventional Psychiatry of Arizona</b><span style="font-weight: 400;">, our experienced mental health professionals can help assess your condition and recommend the most appropriate treatment for you.</span></p>
 <h2><b>Frequently Asked Questions (FAQ)</b></h2>
 <h3><b>1. Does ECT or TMS hurt?</b></h3>
@@ -164,17 +164,17 @@ require_once __DIR__ . '/includes/header.php';
 <p><span style="font-weight: 400;">ECT often works quickly, with improvements seen within </span><b>1-2 weeks</b><span style="font-weight: 400;">. TMS typically takes a little longer, with most patients noticing changes after </span><b>2-4 weeks</b><span style="font-weight: 400;"> of treatment.</span></p>
 <h3><b>6. Can I drive after TMS or ECT?</b></h3>
 <p><span style="font-weight: 400;">You </span><b>cannot drive after ECT</b><span style="font-weight: 400;"> due to anesthesia and possible confusion. However, you </span><b>can drive after TMS</b><span style="font-weight: 400;">, as it does not cause sedation or cognitive impairment.</span></p>
-<h3><b>7. What if medications havenâ€™t worked for my depression?</b></h3>
+<h3><b>7. What if medications haven’t worked for my depression?</b></h3>
 <p><span style="font-weight: 400;">Both </span><b>ECT and TMS</b><span style="font-weight: 400;"> are effective alternatives for treatment-resistant depression when medications and therapy have failed.</span></p>
 <h2><b>Conclusion: Finding the Right Treatment for You</b></h2>
 <p><span style="font-weight: 400;">Both </span><b>ECT and TMS</b><span style="font-weight: 400;"> are valuable treatments for individuals struggling with severe or treatment-resistant depression. </span><b>ECT</b><span style="font-weight: 400;"> is often used for </span><b>severe cases</b><span style="font-weight: 400;">, while </span><b>TMS</b><span style="font-weight: 400;"> is a gentler, non-invasive option that offers promising results with fewer side effects.</span></p>
-<p><span style="font-weight: 400;">At </span><b>Interventional Psychiatry of Arizona</b><span style="font-weight: 400;">, we are committed to providing </span><b>personalized, evidence-based mental health treatments</b><span style="font-weight: 400;">. If youâ€™re struggling with depression and considering </span><b>ECT or TMS</b><span style="font-weight: 400;">, we can help you decide which option is best for you.</span></p>
+<p><span style="font-weight: 400;">At </span><b>Interventional Psychiatry of Arizona</b><span style="font-weight: 400;">, we are committed to providing </span><b>personalized, evidence-based mental health treatments</b><span style="font-weight: 400;">. If you’re struggling with depression and considering </span><b>ECT or TMS</b><span style="font-weight: 400;">, we can help you decide which option is best for you.</span></p>
 <p><span style="font-weight: 400;">ðŸ“ </span><b>Location:</b><b><br/>
 </b> <b>Interventional Psychiatry of Arizona</b><b><br/>
 </b><span style="font-weight: 400;">ðŸ“ </span><b>Address:</b><span style="font-weight: 400;"> 2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016</span><span style="font-weight: 400;"><br/>
 </span><span style="font-weight: 400;"> ðŸ“ž </span><b>Phone:</b><span style="font-weight: 400;"> <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></span><span style="font-weight: 400;"><br/>
 </span><span style="font-weight: 400;"> ðŸŒ </span><b>Website:</b> <a href="/"><span style="font-weight: 400;">interpsychaz.com</span></a></p>
-<p><span style="font-weight: 400;">Donâ€™t let depression control your lifeâ€”help is available, and weâ€™re here to guide you toward </span><b>lasting relief and recovery</b><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Don’t let depression control your life—help is available, and we’re here to guide you toward </span><b>lasting relief and recovery</b><span style="font-weight: 400;">.</span></p>
  </div>
 </div><!--.post-single-content-->
 </div><!--.single_post-->
@@ -197,7 +197,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

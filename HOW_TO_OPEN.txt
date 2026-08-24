@@ -1,54 +1,27 @@
-Website scraped from: https://interpsychaz.com
-Total pages  : 159
-Total assets : 712
-Errors       : 79
+==================================================
+HOW TO RUN & VIEW THE WEBSITE
+==================================================
 
-──────────────────────────────────────────────────
-HOW TO VIEW THE SCRAPED SITE
-──────────────────────────────────────────────────
+Option 1 — PHP Local Development Server (Recommended):
+  1. Open a terminal in this project folder.
+  2. Run:
+       npm run dev
+     or:
+       php -S localhost:8000 router.php
+  3. Open http://localhost:8000 in your browser.
+  All clean URLs, dropdowns, blog posts, and forms will work seamlessly.
 
-Option 1 — Quick view (recommended):
-  1. Extract this ZIP anywhere on your computer.
-  2. Open a terminal in the extracted folder.
-  3. Run:  python -m http.server 8080
-  4. Open  http://localhost:8080/pages/index.html  in your browser.
+Option 2 — Static HTML Build:
+  1. Run:
+       npm run build
+     or:
+       node build.js
+  2. Output will be generated into the `public/` directory with 120+ pages.
+  3. Serve the static site:
+       npx serve public
+     or open `public/index.html`.
 
-Option 2 — Direct file open:
-  Open  pages/index.html  directly in your browser.
-  (CSS and images load fine. JS-rendered content may not render properly without a server.)
-
-──────────────────────────────────────────────────
-FOLDER STRUCTURE
-──────────────────────────────────────────────────
-
-  pages/          → All .html files (flattened)
-  <other files>   → Media files preserving their original server paths
-                    (e.g., assets/, wp-content/, images/, etc.)
-
-All paths inside each HTML file have already been rewritten
-to point to the local copies — no editing needed.
-
-──────────────────────────────────────────────────
-ERRORS DURING SCRAPE
-──────────────────────────────────────────────────
-
-  • http://interpsychaz.com/fonts/fa-brands-400.eot: HTTP 404
-  • http://interpsychaz.com/fonts/fa-brands-400.woff2: HTTP 404
-  • http://interpsychaz.com/fonts/fa-brands-400.woff: HTTP 404
-  • http://interpsychaz.com/fonts/fa-brands-400.ttf: HTTP 404
-  • http://interpsychaz.com/fonts/fa-brands-400.svg: HTTP 404
-  • http://interpsychaz.com/fonts/fa-regular-400.eot: HTTP 404
-  • http://interpsychaz.com/fonts/fa-regular-400.woff2: HTTP 404
-  • http://interpsychaz.com/fonts/fa-regular-400.woff: HTTP 404
-  • http://interpsychaz.com/fonts/fa-regular-400.ttf: HTTP 404
-  • http://interpsychaz.com/fonts/fa-regular-400.svg: HTTP 404
-  • http://interpsychaz.com/fonts/fa-solid-900.eot: HTTP 404
-  • http://interpsychaz.com/fonts/fa-solid-900.woff2: HTTP 404
-  • http://interpsychaz.com/fonts/fa-solid-900.woff: HTTP 404
-  • http://interpsychaz.com/fonts/fa-solid-900.ttf: HTTP 404
-  • http://interpsychaz.com/fonts/fa-solid-900.svg: HTTP 404
-  • http://interpsychaz.com/740: HTTP 404
-  • http://interpsychaz.com/683: HTTP 404
-  • http://interpsychaz.com/image/webp: HTTP 404
-  • http://interpsychaz.com/800: HTTP 404
-  • http://interpsychaz.com/1000: HTTP 404
+Option 3 — Apache / XAMPP / WAMP:
+  1. Place the project folder into your htdocs / web root.
+  2. Ensure mod_rewrite is enabled (the included .htaccess handles routing).
+  3. Access via http://localhost/<project-folder-name>/

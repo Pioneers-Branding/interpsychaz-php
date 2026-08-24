@@ -31,7 +31,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half wow fadeInLeft dm-space">
 <h4>We work alongside your existing treatment plan to enhance your mental health journey.</h4>
 <p>By leveraging the latest neurotechnologies, such as TMS (Transcranial Magnetic Stimulation), ECT (Electroconvulsive Therapy), and Spravato, patients often achieve faster remission from psychiatric symptoms compared to medication alone. These treatments also help maintain long-term stability more effectively than traditional psychiatric medications.</p>
-<p>TMS and ECT specifically target and modulate dysfunctional brain circuits, providing therapeutic benefits tailored to each patientâ€™s needs.</p>
+<p>TMS and ECT specifically target and modulate dysfunctional brain circuits, providing therapeutic benefits tailored to each patient’s needs.</p>
 <p>To refer a patient or discuss treatment options, contact us today by phone or email.</p>
 <p>Phone: <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></p>
 <p>Email: <a href="mailto:admin@interpsychaz.com">admin@interpsychaz.com</a></p>
@@ -75,22 +75,22 @@ require_once __DIR__ . '/includes/header.php';
 </ul>
 <p>TMS is a valuable treatment option for individuals struggling with MDD as defined by the DSM-V. While it may be considered a first-line treatment, it is most commonly recommended for patients who have not achieved remission after trying one or more antidepressant medications.</p>
 <h4>Theta Burst Stimulation</h4>
-<p>The Horizon 3Â® TMS system provides enhanced treatment versatility, offering multiple therapy options, including:</p>
+<p>The Horizon 3® TMS system provides enhanced treatment versatility, offering multiple therapy options, including:</p>
 <ul>
-<li>Repetitive TMS (rTMS) â€“ Standard 37.5-minute session</li>
-<li>Accelerated TMS â€“ 19-minute session</li>
-<li>Intermittent Theta Burst Stimulation (iTBS) â€“ A rapid 3-minute session with FDA clearance</li>
+<li>Repetitive TMS (rTMS) – Standard 37.5-minute session</li>
+<li>Accelerated TMS – 19-minute session</li>
+<li>Intermittent Theta Burst Stimulation (iTBS) – A rapid 3-minute session with FDA clearance</li>
 </ul>
 <p>This range of treatment durations allows clinicians to tailor therapy based on individual patient needs.</p>
-<h4>StimGuideÂ® 3-D Positioning System</h4>
-<p>The HorizonÂ® Performance with StimGuideÂ® Navigated TMS Package enhances treatment precision by ensuring accurate, consistent coil positioning across four key parameters:</p>
+<h4>StimGuide® 3-D Positioning System</h4>
+<p>The Horizon® Performance with StimGuide® Navigated TMS Package enhances treatment precision by ensuring accurate, consistent coil positioning across four key parameters:</p>
 <ol>
-<li><strong>Contact</strong> â€“ Proper coil placement</li>
-<li><strong>XY Location</strong> â€“ Precise targeting</li>
-<li><strong>Tilt</strong> â€“ Optimal angle adjustment</li>
-<li><strong>Rotation</strong> â€“ Consistent positioning for every session</li>
+<li><strong>Contact</strong> – Proper coil placement</li>
+<li><strong>XY Location</strong> – Precise targeting</li>
+<li><strong>Tilt</strong> – Optimal angle adjustment</li>
+<li><strong>Rotation</strong> – Consistent positioning for every session</li>
 </ol>
-<p>Additionally, the E-z MTÂ® motor threshold determination process simplifies calibration, improving treatment accuracy and efficiency.</p>
+<p>Additionally, the E-z MT® motor threshold determination process simplifies calibration, improving treatment accuracy and efficiency.</p>
 <h4>Electroconvulsive Therapy (ECT)</h4>
 <p>ECT is a well-established psychiatric treatment involving brief electrical stimulation of the brain while the patient is under anesthesia. A psychiatrist, along with an anesthesia team and nursing staff, administers the procedure in a controlled medical setting.</p>
 <p>Since its introduction in the 1940s, ECT has evolved into a highly effective and safe intervention for severe major depression, showing substantial improvement in approximately 80% of patients. It is also used to treat:</p>
@@ -106,12 +106,12 @@ require_once __DIR__ . '/includes/header.php';
 </ul>
 <p>ECT is most effective when combined with psychiatric medications and psychotherapy. In some cases, maintenance ECT may be recommended to prevent relapse after achieving symptom remission.</p>
 <h4>Spravato Esketamine Therapy</h4>
-<p>SPRAVATOÂ® is the first FDA-approved nasal spray antidepressant, used alongside oral antidepressants to treat:</p>
+<p>SPRAVATO® is the first FDA-approved nasal spray antidepressant, used alongside oral antidepressants to treat:</p>
 <ul>
-<li><strong>Treatment-resistant depression (TRD)</strong> â€“ For adults who have not responded to at least two different antidepressants at adequate doses and durations.</li>
-<li><strong>Major Depressive Disorder (MDD)</strong> with suicidal thoughts or actions â€“ Offering a rapid reduction in symptoms for those experiencing acute distress.</li>
+<li><strong>Treatment-resistant depression (TRD)</strong> – For adults who have not responded to at least two different antidepressants at adequate doses and durations.</li>
+<li><strong>Major Depressive Disorder (MDD)</strong> with suicidal thoughts or actions – Offering a rapid reduction in symptoms for those experiencing acute distress.</li>
 </ul>
-<p>Unlike traditional antidepressants, which can take weeks to produce noticeable effects, SpravatoÂ® works within 24 hours by targeting brain cells directly, offering fast relief for severe depressive symptoms.</p>
+<p>Unlike traditional antidepressants, which can take weeks to produce noticeable effects, Spravato® works within 24 hours by targeting brain cells directly, offering fast relief for severe depressive symptoms.</p>
 </div>
 </div>
 </div>
@@ -137,7 +137,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

@@ -1,7 +1,7 @@
 ﻿<?php
 $pageTitle = 'Depression: What You Should Know | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default single';
-$pageDescription = 'Depression: What You Should Know - Depression is a mental health condition that can have a profound effect on every area of a personâ€™s life. Itâ€™s more than just feeling down or going';
+$pageDescription = 'Depression: What You Should Know - Depression is a mental health condition that can have a profound effect on every area of a person’s life. It’s more than just feeling down or going';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/depression-what-you-should-know/';
@@ -25,12 +25,12 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
 <h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
@@ -51,11 +51,11 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<p><img alt="" class="aligncenter size-full wp-image-193" decoding="async" fetchpriority="high" height="493" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog3.jpg.webp" srcset="/wp-content/uploads/2025/03/blog3.jpg.webp 740w, /wp-content/uploads/2025/03/blog3.jpg-300x200.webp 300w, /wp-content/uploads/2025/03/blog3.jpg-800x533.webp 800w" width="740"/>Depression is a mental health condition that can have a profound effect on every area of a personâ€™s life. Itâ€™s more than just feeling down or going through a tough time; depression is a persistent problem that can cause serious symptoms and make it difficult to function in day-to-day life. Despite its prevalence, thereâ€™s still a lot of misunderstanding about what depression is and how it should be treated. In this blog post, weâ€™ll dispel some of the myths about depression and provide some helpful information about what you can do if youâ€™re struggling.</p>
+<p><img alt="" class="aligncenter size-full wp-image-193" decoding="async" fetchpriority="high" height="493" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog3.jpg.webp" srcset="/wp-content/uploads/2025/03/blog3.jpg.webp 740w, /wp-content/uploads/2025/03/blog3.jpg-300x200.webp 300w, /wp-content/uploads/2025/03/blog3.jpg-800x533.webp 800w" width="740"/>Depression is a mental health condition that can have a profound effect on every area of a person’s life. It’s more than just feeling down or going through a tough time; depression is a persistent problem that can cause serious symptoms and make it difficult to function in day-to-day life. Despite its prevalence, there’s still a lot of misunderstanding about what depression is and how it should be treated. In this blog post, we’ll dispel some of the myths about depression and provide some helpful information about what you can do if you’re struggling.</p>
 <p>What Is Depression?</p>
-<p>Depression is more than just feeling sad or going through a tough time. Itâ€™s a mental health condition that causes persistent problems with mood, energy levels, sleep, and concentration. Depression can make it difficult to function in day-to-day life and can even lead to thoughts of suicide. While everyone experiences sadness or low energy levels at times, these feelings usually pass within a few days. When they donâ€™t, and they start to interfere with your life, thatâ€™s when it might be time to seek help.</p>
+<p>Depression is more than just feeling sad or going through a tough time. It’s a mental health condition that causes persistent problems with mood, energy levels, sleep, and concentration. Depression can make it difficult to function in day-to-day life and can even lead to thoughts of suicide. While everyone experiences sadness or low energy levels at times, these feelings usually pass within a few days. When they don’t, and they start to interfere with your life, that’s when it might be time to seek help.</p>
 <p>There are different types of depression, but the most common form is major depressive disorder. To be diagnosed with major depressive disorder, you must have experienced five or more of the following symptoms for at least two weeks:</p>
-<p>Persistent sad, anxious, or â€œemptyâ€ mood</p>
+<p>Persistent sad, anxious, or “empty” mood</p>
 <p>Loss of interest or pleasure in activities once enjoyed</p>
 <p>Significant weight loss or gain; or decrease or increase in appetite</p>
 <p>Insomnia or excessive sleeping</p>
@@ -64,9 +64,9 @@ require_once __DIR__ . '/includes/header.php';
 <p>Feelings of worthlessness or guilt</p>
 <p>Difficulty thinking, concentrating, or making decisions</p>
 <p>Thoughts of death or suicide</p>
-<p>If youâ€™re experiencing any of these symptoms, itâ€™s important to reach out for help. Depression is treatable, but it wonâ€™t go away on its own. Talk to your doctor about your symptoms and ask for a referral to a mental health professional such as a therapist or counselor. You can also call a national helpline like the National Suicide Prevention Lifeline at 1-800-273-8255 for 24/7 support from trained counselors.</p>
+<p>If you’re experiencing any of these symptoms, it’s important to reach out for help. Depression is treatable, but it won’t go away on its own. Talk to your doctor about your symptoms and ask for a referral to a mental health professional such as a therapist or counselor. You can also call a national helpline like the National Suicide Prevention Lifeline at 1-800-273-8255 for 24/7 support from trained counselors.</p>
 <p>Treatments for Depression</p>
-<p>There are several effective treatments for depression, including medication, therapy, and self-care strategies. The best treatment plan will depend on the severity of your symptoms and other factors such as your medical history and preferences. Medication can be an effective way to manage the most severe symptoms of depression; however, itâ€™s important to work with a psychiatrist who can monitor your progress and adjust your dosage as needed. Therapy can also be extremely helpful in treating depression by providing you with tools to manage your symptoms and understand the root causes of your condition. Finally, self-care strategies such as exercise, healthy eating, relaxation techniques, and social support can also help improve your mood and reduce the symptoms of depression.</p>
+<p>There are several effective treatments for depression, including medication, therapy, and self-care strategies. The best treatment plan will depend on the severity of your symptoms and other factors such as your medical history and preferences. Medication can be an effective way to manage the most severe symptoms of depression; however, it’s important to work with a psychiatrist who can monitor your progress and adjust your dosage as needed. Therapy can also be extremely helpful in treating depression by providing you with tools to manage your symptoms and understand the root causes of your condition. Finally, self-care strategies such as exercise, healthy eating, relaxation techniques, and social support can also help improve your mood and reduce the symptoms of depression.</p>
 <p>Conclusion:</p>
 <p>Depression is a serious mental health condition that requires treatment. If you think you might be depressed, talk to your doctor about your symptoms and ask for a referral to a mental health professional such as a therapist or counselor. There are many effective treatments for depression including medication, therapy, and self-care strategies. With proper treatment, people with depression can live full lives and enjoy their activities again.</p>
  </div>

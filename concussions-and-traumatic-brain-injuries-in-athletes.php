@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -58,7 +58,7 @@ require_once __DIR__ . '/includes/header.php';
 <p><strong>Managing Symptoms of Concussions and TBIs</strong> Sports psychiatrists work with athletes who have experienced concussions or TBIs to manage the symptoms they may be experiencing. This can involve a range of treatments, including talk therapy, medication, and rehabilitation. Talk therapy, such as cognitive-behavioral therapy (CBT), can help athletes manage symptoms of depression and anxiety that may be related to their injury. CBT focuses on changing negative thought patterns and behaviors that contribute to these symptoms, helping athletes develop coping strategies and a more positive outlook.</p>
 <p>Medication may also be recommended to manage symptoms such as depression and anxiety. Antidepressants and anti-anxiety medications can be effective in reducing symptoms and improving mental health. Rehabilitation can also be an important part of managing symptoms of concussions and TBIs. This may involve working with physical therapists and other healthcare professionals to develop a plan for recovery and rehabilitation.</p>
 <p><strong>Seeking Help for Concussions and TBIs</strong> If you are an athlete who has experienced a concussion or TBI, it is important to seek help from a healthcare professional as soon as possible. This can help prevent long-term complications and improve your chances of a full recovery. Sports psychiatrists can work with you to manage symptoms of depression, anxiety, and cognitive impairment, and develop a plan for recovery and rehabilitation.</p>
-<p><strong>Conclusion</strong> Concussions and TBIs are serious injuries that can have long-term consequences for an athleteâ€™s mental health and wellbeing. If you are an athlete who has experienced a concussion or TBI, it is important to seek help from a healthcare professional as soon as possible. Sports psychiatrists can provide effective treatments for symptoms such as depression, anxiety, and cognitive impairment, and help you develop a plan for recovery and rehabilitation. With the right support, athletes can manage the risks of concussions and TBIs and continue to enjoy the many benefits of participating in sports.</p>
+<p><strong>Conclusion</strong> Concussions and TBIs are serious injuries that can have long-term consequences for an athlete’s mental health and wellbeing. If you are an athlete who has experienced a concussion or TBI, it is important to seek help from a healthcare professional as soon as possible. Sports psychiatrists can provide effective treatments for symptoms such as depression, anxiety, and cognitive impairment, and help you develop a plan for recovery and rehabilitation. With the right support, athletes can manage the risks of concussions and TBIs and continue to enjoy the many benefits of participating in sports.</p>
  </div>
 </div><!--.post-single-content-->
 </div><!--.single_post-->
@@ -81,7 +81,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

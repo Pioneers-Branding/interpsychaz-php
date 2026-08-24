@@ -1,7 +1,7 @@
 ﻿<?php
 $pageTitle = 'How to Recognize the Signs of Depression | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'How to Recognize the Signs of Depression - Itâ€™s normal to feel down from time to time, but if youâ€™re feeling persistently sad for more than two weeks, you may be suffering from depression.';
+$pageDescription = 'How to Recognize the Signs of Depression - It’s normal to feel down from time to time, but if you’re feeling persistently sad for more than two weeks, you may be suffering from depression.';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/how-to-recognize-the-signs-of-depression/';
@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -51,19 +51,19 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<p><img alt="" class="aligncenter size-full wp-image-195" data-lazy-sizes="(max-width: 740px) 100vw, 740px" data-lazy-src="/wp-content/uploads/2025/03/blog8.jpg-1.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/blog8.jpg-1.webp 740w, http://interpsychaz.com/wp-content/uploads/2025/03/blog8.jpg-1-300x169.webp 300w" decoding="async" fetchpriority="high" height="416" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20740%20416'%3E%3C/svg%3E" width="740"/><noscript><img alt="" class="aligncenter size-full wp-image-195" decoding="async" fetchpriority="high" height="416" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog8.jpg-1.webp" srcset="/wp-content/uploads/2025/03/blog8.jpg-1.webp 740w, /wp-content/uploads/2025/03/blog8.jpg-1-300x169.webp 300w" width="740"/></noscript>Itâ€™s normal to feel down from time to time, but if youâ€™re feeling persistently sad for more than two weeks, you may be suffering from depression. Depression is a serious mental illness that can have a profound effect on every aspect of your life, from your personal relationships to your professional success. But the good news is that with proper diagnosis and treatment, most people with depression can get better. Here are some signs to look out for if you think you or a loved one may be suffering from depression.</p>
+<p><img alt="" class="aligncenter size-full wp-image-195" data-lazy-sizes="(max-width: 740px) 100vw, 740px" data-lazy-src="/wp-content/uploads/2025/03/blog8.jpg-1.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/blog8.jpg-1.webp 740w, http://interpsychaz.com/wp-content/uploads/2025/03/blog8.jpg-1-300x169.webp 300w" decoding="async" fetchpriority="high" height="416" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20740%20416'%3E%3C/svg%3E" width="740"/><noscript><img alt="" class="aligncenter size-full wp-image-195" decoding="async" fetchpriority="high" height="416" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog8.jpg-1.webp" srcset="/wp-content/uploads/2025/03/blog8.jpg-1.webp 740w, /wp-content/uploads/2025/03/blog8.jpg-1-300x169.webp 300w" width="740"/></noscript>It’s normal to feel down from time to time, but if you’re feeling persistently sad for more than two weeks, you may be suffering from depression. Depression is a serious mental illness that can have a profound effect on every aspect of your life, from your personal relationships to your professional success. But the good news is that with proper diagnosis and treatment, most people with depression can get better. Here are some signs to look out for if you think you or a loved one may be suffering from depression.</p>
 <p>Irritability or Anger</p>
-<p>One of the most commonâ€”but often overlookedâ€”signs of depression is irritability or anger. If you find yourself snapping at your loved ones or getting into arguments more often than usual, it could be a sign that something deeper is going on. Of course, itâ€™s normal to feel angry from time to time, but if youâ€™re feeling unusually short-tempered, it could be worth considering whether depression might be the cause.</p>
+<p>One of the most common—but often overlooked—signs of depression is irritability or anger. If you find yourself snapping at your loved ones or getting into arguments more often than usual, it could be a sign that something deeper is going on. Of course, it’s normal to feel angry from time to time, but if you’re feeling unusually short-tempered, it could be worth considering whether depression might be the cause.</p>
 <p>Loss of Interest in Activities You Once Enjoyed</p>
-<p>If youâ€™ve lost interest in activities that used to make you happy, it could be a sign of depression. Depression can cause people to lose motivation and pleasure in things they once enjoyed, like hobbies, sports, or spending time with friends and family. If you find yourself not wanting to do things you normally enjoy, it could be a sign that something is wrong.</p>
+<p>If you’ve lost interest in activities that used to make you happy, it could be a sign of depression. Depression can cause people to lose motivation and pleasure in things they once enjoyed, like hobbies, sports, or spending time with friends and family. If you find yourself not wanting to do things you normally enjoy, it could be a sign that something is wrong.</p>
 <p>Changes in Appetite or Weight</p>
-<p>Changes in appetite and weight are common signs of depression. Some people with depression may lose interest in food and see a significant change in their weight as a result. Others may find themselves overeating and gaining weight. If you notice any changes in your eating habits or weight, itâ€™s worth considering whether depression might be the cause.</p>
+<p>Changes in appetite and weight are common signs of depression. Some people with depression may lose interest in food and see a significant change in their weight as a result. Others may find themselves overeating and gaining weight. If you notice any changes in your eating habits or weight, it’s worth considering whether depression might be the cause.</p>
 <p>Difficulty Concentrating or Making Decisions</p>
-<p>Depression can also cause difficulty concentrating or making decisions. If youâ€™re having trouble focusing at work or school, or if youâ€™re finding it hard to make even simple decisions, it could be a sign that something deeper is going on.</p>
+<p>Depression can also cause difficulty concentrating or making decisions. If you’re having trouble focusing at work or school, or if you’re finding it hard to make even simple decisions, it could be a sign that something deeper is going on.</p>
 <p>Fatigue and Lack of Energy</p>
-<p>Depression can also cause fatigue and lack of energy. People with depression may feel exhausted all the time, even if theyâ€™re getting enough sleep. They may also find it hard to muster up the energy to do things they normally enjoy doing. If fatigue and low energy are interfering with your life, itâ€™s worth considering whether depression might be the reason why.</p>
+<p>Depression can also cause fatigue and lack of energy. People with depression may feel exhausted all the time, even if they’re getting enough sleep. They may also find it hard to muster up the energy to do things they normally enjoy doing. If fatigue and low energy are interfering with your life, it’s worth considering whether depression might be the reason why.</p>
 <p>Conclusion:</p>
-<p>These are just some of the signs that may indicate someone is suffering from depression. If you think you or someone you know might be depressed, itâ€™s important to reach out for help. Depression is a serious mental illness, but with proper diagnosis and treatment most people with depression can get better.â€</p>
+<p>These are just some of the signs that may indicate someone is suffering from depression. If you think you or someone you know might be depressed, it’s important to reach out for help. Depression is a serious mental illness, but with proper diagnosis and treatment most people with depression can get better.”</p>
  </div>
 </div><!--.post-single-content-->
 </div><!--.single_post-->
@@ -86,7 +86,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

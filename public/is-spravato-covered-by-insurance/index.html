@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head itemscope="" itemtype="http://schema.org/WebSite">
+<meta charset="utf-8"/>
+<link as="font" crossorigin="" href="/wp-content/uploads/dmm-consent-guard/fonts/f-b58a5805e17f555e1620.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/wp-content/uploads/dmm-consent-guard/fonts/f-0f7fcdc8ea1a3358e78a.woff2" rel="preload" type="font/woff2"/>
+<script id="dmm-cg-boot">window.DMMCG={"mode":"disclaimer","cats":["functional","analytics","marketing"],"allow":[],"lib":["code.jquery.com","cdnjs.cloudflare.com","unpkg.com","jsdelivr.net","bootstrapcdn.com","ajax.aspnetcdn.com","use.fontawesome.com","kit.fontawesome.com"],"map":{"google-analytics.com":"analytics","analytics.google.com":"analytics","googletagmanager.com":"analytics","segment.com":"analytics","segment.io":"analytics","withcherry.com":"marketing","recaptcha.net":"functional","gstatic.com":"functional","doubleclick.net":"marketing","googleadservices.com":"marketing","googlesyndication.com":"marketing","facebook.com":"marketing","facebook.net":"marketing","connect.facebook.net":"marketing","tiktok.com":"marketing","bing.com":"marketing","clarity.ms":"analytics","hotjar.com":"analytics","hotjar.io":"analytics","linkedin.com":"marketing","licdn.com":"marketing","hubspot.com":"marketing","hs-scripts.com":"marketing","hs-analytics.net":"analytics","youtube.com":"functional","youtube-nocookie.com":"functional","ytimg.com":"functional","vimeo.com":"functional","fonts.googleapis.com":"functional","fonts.gstatic.com":"functional","translate.google.com":"functional","translate.googleapis.com":"functional","gravatar.com":"functional","w.org":"functional","wp.com":"analytics","cloudflareinsights.com":"analytics","intercom.io":"marketing","tawk.to":"functional","podium.com":"marketing","birdeye.com":"marketing","callrail.com":"marketing","twilio.com":"functional","stripe.com":"functional","paypal.com":"functional"},"ep":"https://interpsychaz.com/wp-json/dmm/v1/","tok":"4249d6030bed8d8538c71a2e62a52d4b","pv":1,"audit":1,"banner":1,"recaptcha":1,"embeds":"placeholder","site":"interpsychaz.com"};</script>
+<script id="dmm-cg-guard">(function (w, d) {
+	'use strict';
+	var C = w.DMMCG;
+	if (!C || !C.ep || w.__dmmCgLoaded) { return; }
+	w.__dmmCgLoaded = true;
+	var oFetch  = w.fetch;
+	var oBeacon = w.navigator && w.navigator.sendBeacon ? w.navigator.sendBeacon.bind(w.navigator) : null;
+	var oOpen   = w.XMLHttpRequest ? w.XMLHttpRequest.prototype.open : null;
+	var oSend   = w.XMLHttpRequest ? w.XMLHttpRequest.prototype.send : null;
+	var oSetAttr = Element.prototype.setAttribute;
+	var oWrite  = d.write;
+	var oWriteLn = d.writeln;
+	var ENFORCE = C.mode === 'enforce';
+	var SELF    = (C.site || w.location.hostname).toLowerCase();
+	var COOKIE  = 'dmm_cg_consent';
+	var GPC     = !!(w.navigator && w.navigator.globalPrivacyControl);
+	var consent = null;
+	var once    = {};
+	var seen    = {};
+	var buf     = [];
+	var timer   = null;
+	function absUrl(u) {
+		if (u == null) { return ''; }
+		u = String(u);
+		if (!u || /^(data|blob|javascript|about|mailto|tel|#):/i.test(u)) { return ''; }
+		try { return new URL(u, w.location.href).href; } catch (e) { return ''; }
+	}
+	function hostOf(u) {
+		var a = absUrl(u);
+		if (!a) { return ''; }
+		try { return new URL(a).hostname.toLowerCase(); } catch (e) { return ''; }
+	}
+	function pathOf(u) {
+		var a = absUrl(u);
+		if (!a) { return ''; }
+		try { return new URL(a).pathname.slice(0, 190); } catch (e) { return ''; }
+	}
+	function suffixed(host, pattern) {
+		if (!pattern) { return false; }
+		pattern = String(pattern).toLowerCase().replace(/^\./, '');
+		return host === pattern || host.slice(-(pattern.length + 1)) === '.' + pattern;
+	}
+	function isSelf(host) {
+		if (!host) { return true; }
+		var a = host.replace(/^www\./, '');
+		var b = SELF.replace(/^www\./, '');
+		return a === b || a.slice(-(b.length + 1)) === '.' + b;
+	}
+	function isAllowed(host) {
+		for (var i = 0; i < (C.allow || []).length; i++) {
+			if (suffixed(host, C.allow[i])) { return true; }
+		}
+		return false;
+	}
+	function isLibrary(host, url) {
+		if (host === 'ajax.googleapis.com') { return /\/ajax\/libs\//i.test(url || ''); }
+		for (var i = 0; i < (C.lib || []).length; i++) {
+			if (suffixed(host, C.lib[i])) { return true; }
+		}
+		return false;
+	}
+	function catOf(host, url) {
+		if (host === 'www.google.com' || host === 'google.com') {
+			if (/\/recaptcha\//.test(url || '')) { return 'functional'; }
+			if (/\/(pagead|ads|ccm|maps)\//.test(url || '')) { return 'marketing'; }
+		}
+		var map = C.map || {};
+		for (var k in map) {
+			if (Object.prototype.hasOwnProperty.call(map, k) && suffixed(host, k)) { return map[k]; }
+		}
+		return 'unknown';
+	}
+	function readCookie() {
+		var m = d.cookie.match(/(?:^|;\s*)dmm_cg_consent=([^;]*)/);
+		if (!m) { return null; }
+		try {
+			var o = JSON.parse(decodeURIComponent(m[1]));
+			if (!o || typeof o !== 'object' || o.v !== C.pv || !(o.c instanceof Array)) { return null; }
+			return o;
+		} catch (e) { return null; }
+	}
+	function writeCookie(o) {
+		var v = encodeURIComponent(JSON.stringify(o));
+		d.cookie = COOKIE + '=' + v + ';path=/;max-age=31536000;samesite=Lax' +
+			(w.location.protocol === 'https:' ? ';secure' : '');
+	}
+	function granted(cat) {
+		if (cat === 'necessary') { return true; }
+		if (!consent) { return false; }
+		return consent.c.indexOf(cat) > -1;
+	}
+	consent = readCookie();
+	function record(host, url, kind, cat, blocked) {
+		if (!C.audit) { return; }
+		var phase = consent ? 'post' : 'pre';
+		var key = host + '|' + kind + '|' + phase;
+		if (seen[key]) { return; }
+		seen[key] = 1;
+		buf.push({ h: host, p: pathOf(url), k: kind, c: cat, ph: phase, b: blocked ? 1 : 0 });
+		if (!timer) { timer = w.setTimeout(flush, 1500); }
+	}
+	function flush() {
+		timer = null;
+		if (!buf.length) { return; }
+		var body = JSON.stringify({ t: C.tok, pg: w.location.pathname.slice(0, 190), items: buf.splice(0, 50) });
+		post('audit', body);
+	}
+	function post(route, body) {
+		var url = C.ep + route;
+		try {
+			if (oBeacon && oBeacon(url, new Blob([body], { type: 'text/plain;charset=UTF-8' }))) { return; }
+		} catch (e) { /* fall through */ }
+		try {
+			if (oFetch) {
+				oFetch.call(w, url, { method: 'POST', body: body, keepalive: true, credentials: 'omit', headers: { 'Content-Type': 'text/plain' } });
+			}
+		} catch (e2) { /* give up */ }
+	}
+	function decide(rawUrl, kind) {
+		var url = absUrl(rawUrl);
+		if (!url) { return; }
+		var host = hostOf(url);
+		if (!host || isSelf(host) || isAllowed(host) || isLibrary(host, url)) {
+			record(host, url, kind, '', false);
+			return;
+		}
+		var cat = catOf(host, url);
+		if (cat === 'unknown') {
+			record(host, url, kind, cat, false);
+			return;
+		}
+		var block = !granted(cat);
+		record(host, url, kind, cat, block);
+		if (!block) { return; }
+		if (kind === 'script') {
+			var s = d.createElement('script');
+			for (var i = 0; i < (w.__dmmCgAttrs || []).length; i++) {
+				var a = w.__dmmCgAttrs[i];
+				if (a.name !== 'type' && a.name !== 'src') { oSetAttr.call(s, a.name, a.value); }
+			}
+			oSetAttr.call(s, 'data-dmm-cat', cat);
+			oSetAttr.call(s, 'data-dmm-src', url);
+			if (oSetAttr) { oSetAttr.call(s, 'type', 'text/dummy'); }
+			if (s.parentNode) { s.parentNode.replaceChild(s, s); }
+			return false;
+		}
+		if (kind === 'iframe' || kind === 'img') {
+			var el = d.createElement(kind === 'iframe' ? 'iframe' : 'img');
+			for (var j = 0; j < (w.__dmmCgAttrs || []).length; j++) {
+				var at = w.__dmmCgAttrs[j];
+				oSetAttr.call(el, at.name, at.value);
+			}
+			oSetAttr.call(el, 'data-dmm-cat', cat);
+			oSetAttr.call(el, 'data-dmm-src', url);
+			return false;
+		}
+		return false;
+	}
+	function reactivate(scope) {
+		var nodes = (scope || d).querySelectorAll('[data-dmm-cat]');
+		for (var i = 0; i < nodes.length; i++) {
+			var el = nodes[i];
+			var url = el.getAttribute('data-dmm-src');
+			var cat = el.getAttribute('data-dmm-cat');
+			var inline = el.getAttribute('data-dmm-inline') === '1';
+			var host = url ? hostOf(url) : '';
+			if (!granted(cat) && !(url && once[absUrl(url)]) && !(host && isAllowed(host))) { continue; }
+			var tag = el.tagName.toLowerCase();
+			if (tag === 'script' && el.parentNode) {
+				var s = d.createElement('script');
+				for (var a = 0; a < el.attributes.length; a++) {
+					var at = el.attributes[a];
+					if (at.name === 'type' || at.name.indexOf('data-dmm-') === 0) { continue; }
+					oSetAttr.call(s, at.name, at.value);
+				}
+				var origType = el.getAttribute('data-dmm-type');
+				if (origType) { oSetAttr.call(s, 'type', origType); }
+				if (inline) { s.text = el.textContent; }
+				else if (url) { s.src = url; }
+				el.parentNode.replaceChild(s, el);
+			} else {
+				var attrName = el.getAttribute('data-dmm-attr') || 'src';
+				el.removeAttribute('data-dmm-cat');
+				el.removeAttribute('data-dmm-src');
+				el.removeAttribute('data-dmm-attr');
+				if (url) { el.setAttribute(attrName, url); }
+			}
+		}
+		var boxes = (scope || d).querySelectorAll('.dmm-cg-embed');
+		for (var b = 0; b < boxes.length; b++) {
+			if (!boxes[b].querySelector('[data-dmm-src]')) { releaseBox(boxes[b]); }
+		}
+	}
+	function releaseBox(box) {
+		var frame = box.querySelector('iframe');
+		if (frame && box.parentNode) {
+			box.parentNode.insertBefore(frame, box);
+			box.parentNode.removeChild(box);
+			return;
+		}
+		box.removeAttribute('data-dmm-placeholder');
+	}
+	function placeholders() {
+		if (C.embeds !== 'placeholder') { return; }
+		var frames = d.querySelectorAll('iframe[data-dmm-src]:not([data-dmm-ph])');
+		for (var i = 0; i < frames.length; i++) {
+			(function (frame) {
+				if (granted(frame.getAttribute('data-dmm-cat'))) { return; }
+				oSetAttr.call(frame, 'data-dmm-ph', '1');
+				var label = frame.getAttribute('data-dmm-label') || hostOf(frame.getAttribute('data-dmm-src'));
+				var box = d.createElement('div');
+				box.className = 'dmm-cg-embed';
+				box.setAttribute('data-dmm-placeholder', '1');
+				var h = parseInt(frame.getAttribute('height'), 10);
+				if (h > 0) { box.style.setProperty('--dmm-embed-h', h + 'px'); }
+				var btn = d.createElement('button');
+				btn.type = 'button';
+				btn.className = 'dmm-cg-embed__btn';
+				btn.textContent = 'Load ' + label;
+				var note = d.createElement('span');
+				note.className = 'dmm-cg-embed__note';
+				note.textContent = label + ' will receive your IP address.';
+				btn.addEventListener('click', function () {
+					var url = absUrl(frame.getAttribute('data-dmm-src'));
+					once[url] = 1;
+					frame.removeAttribute('data-dmm-cat');
+					frame.src = frame.getAttribute('data-dmm-src');
+					frame.removeAttribute('data-dmm-src');
+					releaseBox(box);
+				});
+				frame.parentNode.insertBefore(box, frame);
+				box.appendChild(btn);
+				box.appendChild(note);
+				box.appendChild(frame);
+			}(frames[i]));
+		}
+	}
+	function lazyRecaptcha() {
+		if (!C.recaptcha) { return; }
+		var armed = false;
+		var fire = function (ev) {
+			if (armed) { return; }
+			var t = ev.target;
+			if (!t || !t.tagName) { return; }
+			var tag = t.tagName.toLowerCase();
+			var inForm = typeof t.closest === 'function' && t.closest('form');
+			if (tag !== 'input' && tag !== 'textarea' && tag !== 'select' && !inForm) { return; }
+			armed = true;
+			C.allow = (C.allow || []).concat(['google.com', 'gstatic.com', 'recaptcha.net']);
+			reactivate(d);
+			d.dispatchEvent(new CustomEvent('dmm:recaptcha'));
+		};
+		d.addEventListener('focusin', fire, true);
+		d.addEventListener('pointerdown', fire, true);
+	}
+	var VENDOR_COOKIES = {
+		analytics: ['_ga', '_gid', '_gat', '__utm', 'ajs_', '_hj', '_clck', '_clsk', '_gcl_au'],
+		marketing: ['_fbp', '_fbc', '_gcl_', 'IDE', 'test_cookie', 'li_sugr', 'li_fat_id', '_uet', 'ttclid', '_ttp', 'MUID'],
+		functional: []
+	};
+	function dropCookie(name) {
+		var parts = w.location.hostname.split('.');
+		var scopes = ['', w.location.hostname];
+		for (var i = 0; i < parts.length - 1; i++) { scopes.push('.' + parts.slice(i).join('.')); }
+		for (var s = 0; s < scopes.length; s++) {
+			d.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/' +
+				(scopes[s] ? ';domain=' + scopes[s] : '');
+		}
+	}
+	function clearVendorCookies(cats) {
+		var present = d.cookie.split(';');
+		for (var i = 0; i < present.length; i++) {
+			var name = present[i].split('=')[0].trim();
+			if (!name || name === COOKIE) { continue; }
+			for (var c = 0; c < cats.length; c++) {
+				var prefixes = VENDOR_COOKIES[cats[c]] || [];
+				for (var p = 0; p < prefixes.length; p++) {
+					if (name.indexOf(prefixes[p]) === 0) { dropCookie(name); break; }
+				}
+			}
+		}
+	}
+	function apply(cats, method) {
+		var previous = consent ? consent.c.slice() : [];
+		var valid = [];
+		var i;
+		for (i = 0; i < cats.length; i++) {
+			if ((C.cats || []).indexOf(cats[i]) > -1 && valid.indexOf(cats[i]) < 0) { valid.push(cats[i]); }
+		}
+		var revoked = [];
+		for (i = 0; i < previous.length; i++) {
+			if (valid.indexOf(previous[i]) < 0) { revoked.push(previous[i]); }
+		}
+		var stored = { v: C.pv, t: Math.floor(Date.now() / 1000), c: valid };
+		writeCookie(stored);
+		consent = stored;
+		seen = {};
+		post('consent', JSON.stringify({
+			t: C.tok, c: valid, m: method || 'save',
+			v: C.pv, pg: w.location.pathname.slice(0, 190), gpc: GPC ? 1 : 0
+		}));
+		d.dispatchEvent(new CustomEvent('dmm:consent', { detail: stored }));
+		if (revoked.length) {
+			clearVendorCookies(revoked);
+			w.location.reload();
+			return;
+		}
+		reactivate(d);
+	}
+	w.dmmConsent = {
+		version: C.pv,
+		mode: C.mode,
+		gpc: GPC,
+		categories: C.cats || [],
+		get: function () { return consent ? consent.c.slice() : null; },
+		has: function (cat) { return granted(cat); },
+		acceptAll: function () { apply((C.cats || []).slice(), 'accept_all'); },
+		acknowledge: function () { apply((C.cats || []).slice(), 'acknowledge'); },
+		rejectAll: function () { apply([], 'reject_all'); },
+		save: function (cats) { apply(cats || [], 'save'); },
+		withdraw: function () { apply([], 'withdraw'); },
+		open: function () { d.dispatchEvent(new CustomEvent('dmm:open')); },
+		debug: function () { return { config: C, consent: consent, pending: buf.slice(), seen: Object.keys(seen) }; }
+	};
+	function ready() {
+		placeholders();
+		lazyRecaptcha();
+		if (consent) { reactivate(d); }
+	}
+	if (d.readyState === 'loading') { d.addEventListener('DOMContentLoaded', ready); }
+	else { ready(); }
+	w.addEventListener('pagehide', flush);
+	d.addEventListener('visibilitychange', function () { if (d.visibilityState === 'hidden') { flush(); } });
+}(window, document));
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5B6CGF74');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7TQS8BS5C3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7TQS8BS5C3');
+</script>
+<!--[if IE ]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<![endif]-->
+<link href="https://gmpg.org/xfn/11" rel="profile"/>
+<link href="/wp-content/uploads/2025/03/az-logo-white.png.png" rel="icon" type="image/x-icon"/>
+<meta content="#FFFFFF" name="msapplication-TileColor"/>
+<meta content="/wp-content/uploads/2025/03/az-logo-white.png.png" name="msapplication-TileImage"/>
+<link href="/wp-content/uploads/2025/03/az-logo-white.png.png" rel="apple-touch-icon-precomposed"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="Interventional Psychiatry of Arizona" itemprop="name"/>
+<meta content="http://127.0.0.1:8888" itemprop="url"/>
+<meta content="/wp-content/uploads/2025/03/az-logo-white.png.png.webp" property="og:image"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<script>document.documentElement.className = document.documentElement.className.replace( /\bno-js\b/,'js' );</script>
+<title>Is Spravato Covered by Insurance? Costs & Coverage Guide | Interventional Psychiatry of Arizona</title>
+<link as="style" href="/_external/fonts.googleapis.com/css_54cf8c19.css" rel="preload"/>
+<link href="/wp-content/uploads/dmm-consent-guard/fonts/fonts-e32582ff5559e0a721ad.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="/wp-content/uploads/dmm-consent-guard/fonts/fonts-e32582ff5559e0a721ad.css" rel="stylesheet"/></noscript>
+<meta content="Wondering if Spravato is covered by insurance? Learn about insurance coverage, out-of-pocket costs, and the approval process for Spravato treatment in Arizona." name="description"/>
+<link href="https://interpsychaz.com/is-spravato-covered-by-insurance/" rel="canonical"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="Is Spravato Covered by Insurance? Costs & Coverage Guide | Interventional Psychiatry of Arizona" property="og:title"/>
+<meta content="Wondering if Spravato is covered by insurance? Learn about insurance coverage, out-of-pocket costs, and the approval process for Spravato treatment in Arizona." property="og:description"/>
+<meta content="https://interpsychaz.com/is-spravato-covered-by-insurance/" property="og:url"/>
+<meta content="Interventional Psychiatry of Arizona" property="og:site_name"/>
+<meta content="https://www.facebook.com/interpsychaz" property="article:publisher"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<script class="yoast-schema-graph" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://interpsychaz.com/is-spravato-covered-by-insurance/","url":"https://interpsychaz.com/is-spravato-covered-by-insurance/","name":"Is Spravato Covered by Insurance? Costs & Coverage Guide | Interventional Psychiatry of Arizona","isPartOf":{"@id":"http://127.0.0.1:8888/#website"},"about":{"@id":"http://127.0.0.1:8888/#organization"},"description":"Wondering if Spravato is covered by insurance? Learn about insurance coverage, out-of-pocket costs, and the approval process for Spravato treatment in Arizona.","breadcrumb":{"@id":"https://interpsychaz.com/is-spravato-covered-by-insurance//#breadcrumb"},"inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://interpsychaz.com/is-spravato-covered-by-insurance//#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"http://127.0.0.1:8888/"}]},{"@type":"WebSite","@id":"http://127.0.0.1:8888/#website","url":"http://127.0.0.1:8888/","name":"Interventional Psychiatry of Arizona","publisher":{"@id":"http://127.0.0.1:8888/#organization"}},{"@type":"Organization","@id":"http://127.0.0.1:8888/#organization","name":"Interventional Psychiatry of Arizona","url":"http://127.0.0.1:8888/"}]}</script>
+<style>
+        body {background-color:#fff;background-image:url(/wp-content/themes/mts_schema/images/nobg.png);}
+         
+        /* Top Level Navigation */
+        #secondary-navigation > nav > ul > li > a {
+            color: #ffffff !important;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        #secondary-navigation > nav > ul > li:hover > a,
+        #secondary-navigation > nav > ul > li.current-menu-item > a,
+        #secondary-navigation > nav > ul > li.current-menu-parent > a {
+            color: #ffffff !important;
+        }
+
+        #secondary-navigation > nav > ul > li:hover,
+        #secondary-navigation > nav > ul > li.current-menu-item,
+        #secondary-navigation > nav > ul li.current-menu-item,
+        #secondary-navigation > nav > ul > li.current-menu-parent {
+            background-color: #ef7136 !important;
+        }
+
+        /* Dropdown Sub-menus */
+        #secondary-navigation .navigation ul.sub-menu,
+        #secondary-navigation .navigation ul ul {
+            background-color: #ffffff !important;
+            border-radius: 4px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18) !important;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            min-width: 280px !important;
+            width: max-content !important;
+            max-width: 400px !important;
+            padding: 6px 0 !important;
+            z-index: 9999 !important;
+        }
+
+        #secondary-navigation .navigation ul.sub-menu li,
+        #secondary-navigation .navigation ul ul li {
+            background: #ffffff !important;
+            display: block !important;
+            float: none !important;
+            width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        body #secondary-navigation .navigation ul.sub-menu li a,
+        body #secondary-navigation .navigation ul ul li a,
+        #secondary-navigation .navigation ul.sub-menu li a,
+        #secondary-navigation .navigation ul ul li a {
+            color: #154064 !important;
+            font-family: 'Roboto', sans-serif !important;
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            text-transform: none !important;
+            letter-spacing: 0.2px !important;
+            line-height: 1.4 !important;
+            display: block !important;
+            padding: 10px 20px !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+            background: #ffffff !important;
+            border-bottom: 1px solid #f2f4f7 !important;
+            transition: all 0.2s ease !important;
+            text-align: left !important;
+            white-space: normal !important;
+        }
+
+        #secondary-navigation .navigation ul.sub-menu li:last-child a,
+        #secondary-navigation .navigation ul ul li:last-child a {
+            border-bottom: none !important;
+        }
+
+        body #secondary-navigation .navigation ul.sub-menu li:hover > a,
+        body #secondary-navigation .navigation ul.sub-menu li a:hover,
+        body #secondary-navigation .navigation ul ul li:hover > a,
+        body #secondary-navigation .navigation ul ul li a:hover,
+        #secondary-navigation .navigation ul.sub-menu li:hover > a,
+        #secondary-navigation .navigation ul.sub-menu li a:hover {
+            background-color: #ef7136 !important;
+            color: #ffffff !important;
+            padding-left: 24px !important;
+        }
+
+        body #secondary-navigation .navigation ul.sub-menu li.current-menu-item > a,
+        body #secondary-navigation .navigation ul.sub-menu li.current_page_item > a,
+        #secondary-navigation .navigation ul.sub-menu li.current-menu-item > a,
+        #secondary-navigation .navigation ul.sub-menu li.current_page_item > a {
+            background-color: #4b4d97 !important;
+            color: #ffffff !important;
+        }
+
+        staff-grid p + span,
+        .dflex p + span,
+        .staff-block,
+        a.btn,
+        a.niceButi { background-color: #ef7136 !important; }
+
+        .side-social-icons a, 
+        .page-header,
+        section.page-header,section#wda_testi:after,html button.aicon_link, div.header-social-icons a { background-color: #4b4d97 !important; }
+        .dm-service-section:nth-child(even) img { outline: 2px solid #154064; }
+        .mobileBtn a, .hours { background-color: #4b4d97; }
+        html ul ul.wda-long-menu { background-color: #4b4d97; }
+
+        .pace .pace-progress, #mobile-menu-wrapper ul li a:hover, .page-numbers.current, .pagination a:hover, .single .pagination a:hover .current { background: #4b4d97; }
+        .postauthor h5, .single_post a, .textwidget a, .pnavigation2 a, .sidebar.c-4-12 a:hover, footer .widget li a:hover, .reply a, .title a:hover, .post-info a:hover, .widget .thecomment, #tabber .inside li a:hover, .readMore a:hover, .fn a, a:not(.sticks):not(.header-btn):not(.btn), .readMore a, #primary-navigation a:hover, .widget .wp_review_tab_widget_content a, .sidebar .wpt_widget_content a { color:#4b4d97; }
+        a#pull, #commentform input#submit, #mtscontact_submit, .mts-subscribe input[type='submit'], .widget_product_search input[type='submit'], #move-to-top:hover, .currenttext, .pagination a:hover, .pagination .nav-previous a:hover, .pagination .nav-next a:hover, #load-posts a:hover, .single .pagination a:hover .currenttext, .single .pagination > .current .currenttext, #tabber ul.tabs li a.selected, .tagcloud a, .navigation ul .sfHover a, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .woocommerce .bypostauthor:after, #searchsubmit, .woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce-page nav.woocommerce-pagination ul li span.current, .woocommerce #content nav.woocommerce-pagination ul li span.current, .woocommerce-page #content nav.woocommerce-pagination ul li span.current, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce-page nav.woocommerce-pagination ul li a:hover, .woocommerce #content nav.woocommerce-pagination ul li a:hover, .woocommerce-page #content nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce-page nav.woocommerce-pagination ul li a:focus, .woocommerce #content nav.woocommerce-pagination ul li a:focus, .woocommerce-page #content nav.woocommerce-pagination ul li a:focus, .woocommerce a.button, .woocommerce-page a.button, .woocommerce button.button, .woocommerce-page button.button, .woocommerce input.button, .woocommerce-page input.button, .woocommerce #respond input#submit, .woocommerce-page #respond input#submit, .woocommerce #content input.button, .woocommerce-page #content input.button, .latestPost-review-wrapper, .latestPost .review-type-circle.latestPost-review-wrapper { background-color: #4b4d97; }
+        .related-posts .title a:hover, .latestPost .title a { color: #4b4d97; }
+        .navigation #wpmm-megamenu .wpmm-pagination a { background-color: #4b4d97!important; }
+        footer {background-color:#154064; }
+        .copyrights:before { border-color: transparent transparent transparent; }
+        .flex-control-thumbs .flex-active{ border-top:3px solid #4b4d97;}
+        .wpmm-megamenu-showing.wpmm-light-scheme { background-color:#4b4d97!important; }
+
+        /* Responsive YouTube Player Embeds */
+        .rll-youtube-player {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 20px auto;
+            background: #000;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .rll-youtube-player iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .rll-youtube-player img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 0.3s ease;
+        }
+        .rll-youtube-player:hover img {
+            filter: brightness(80%);
+        }
+        .rll-youtube-player .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 68px;
+            height: 48px;
+            background-color: rgba(33, 33, 33, 0.85);
+            border-radius: 12px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+        .rll-youtube-player:hover .play-btn {
+            background-color: #ff0000;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        .rll-youtube-player .play-btn::after {
+            content: '';
+            border-style: solid;
+            border-width: 9px 0 9px 16px;
+            border-color: transparent transparent transparent #ffffff;
+            display: block;
+            margin-left: 3px;
+        }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Jost:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="/wp-content/cache/min/1/wp-content/plugins/dmm-consent-guard/assets/css/banner.css" id="dmm-cg-banner-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/content/css/ada.css" id="ada_css-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/cache/min/1/wp-content/themes/blossom-child/style.css" id="schema-stylesheet-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/css/owl.carousel.css" id="owl-carousel-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/themes/mts_schema/css/animate.min.css" id="animatecss-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/fonts/all.min.css" id="fontawesome-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/css/responsive.css" id="responsive-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/cache/min/1/wp-content/themes/blossom-child/assets/slick.css" id="slickcss-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/content/css/content-style.css" id="content-css-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/theme-specific/testimonials/slick.css" id="wda_testimonials-css" media="all" rel="stylesheet"/>
+<style id="slickcss-inline-css">
+	:root {
+	    --pColor: #4b4d97;
+	    --sColor: #154064;
+	    --aColor: #ef7136;
+	}
+</style>
+<script src="/wp-content/cache/min/1/ajax/libs/jquery/1.12.4/jquery.min.js" defer id="jquery-js"></script>
+<script>
+var mts_customscript = {"responsive":"1","nav_menu":"both"};
+</script>
+<script src="/wp-content/cache/min/1/wp-content/themes/mts_schema/js/customscript.js" defer id="customscript-js"></script>
+<script src="/wp-content/cache/min/1/wp-content/themes/mts_schema/content/js/ada.js" defer id="ada_js-js"></script>
+<script src="/wp-content/themes/blossom-child/assets/jquery.counterup.min.js" defer id="counterup-js"></script>
+<script src="/wp-content/themes/blossom-child/assets/waypoints.min.js" defer id="waypoints-js"></script>
+<script src="/wp-content/cache/min/1/wp-content/themes/blossom-child/assets/wow.js" defer id="wow-js"></script>
+<script src="/wp-content/themes/blossom-child/assets/slick.min.js" defer id="slick-js"></script>
+<script src="/wp-content/themes/mts_schema/theme-specific/testimonials/slick.min.js" defer id="wda_testimonials-js"></script>
+<style id="wp-custom-fonts">
+        #logo a { font-family: 'Roboto'; font-weight: normal; font-size: 32px; color: #222222;text-transform: uppercase; }
+        body { font-family: 'Roboto'; font-weight: 300; font-size: 18px; color: #000000; }
+        h1 { font-family: 'Jost'; font-weight: 700; font-size: 36px; color: #000000; }
+        h2 { font-family: 'Jost'; font-weight: 600; font-size: 32px; color: #000000; }
+        h3 { font-family: 'Jost'; font-weight: 500; font-size: 26px; color: #000000; }
+        h4 { font-family: 'Jost'; font-weight: normal; font-size: 20px; color: #000000; }
+        h5 { font-family: 'Jost'; font-weight: normal; font-size: 18px; color: #000000; }
+</style>
+<script class="dm-schema" type="application/ld+json">
+    	{
+		    "@context": "http://schema.org",
+		    "@type": "LocalBusiness",
+		    "name": "Interventional Psychiatry of Arizona",
+		    "url": "http://127.0.0.1:8888",
+		    "image": "/wp-content/uploads/2025/03/az-logo-white.png.png.webp",
+		    "address": {
+		        "addressLocality": "Phoenix",
+		        "addressRegion": "AZ",
+		        "postalCode": "85016",
+		        "streetAddress": "2929 E Camelback Rd, Suite 119"
+		    },
+		    "openingHours": "Mon-Fri: 8am-5pm,Sat, Sun: Closed",
+		    "priceRange": "$$",
+		    "telephone" : "+1-(602) 824-8404",
+		    "description": "Convenient and affordable Premier Psychiatry Center in Phoenix, AZ."
+    	}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y09PPBJ34W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Y09PPBJ34W');
+</script>
+<style id="wp-custom-css">
+@media only screen 
+  and (max-device-width: 880px) {
+div#gform_wrapper_2 .gform_button {
+    color: #4B4D97 !important;
+    font-weight: 600 !important;
+	background: #ccc !important;
+}
+}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11337249981"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-11337249981');
+</script>
+<link href="/wp-content/cache/min/1/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css" id="gform_basic-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/plugins/gravityforms/assets/css/dist/theme-components.min.css" id="gform_theme_components-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/plugins/gravityforms/assets/css/dist/theme.min.css" id="gform_theme-css" media="all" rel="stylesheet"/>
+<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/css/slick.css" id="slick-main-css-css" media="all" rel="stylesheet"/>
+<style id="site-master-fixes-css">
+/* ==========================================================================
+   1. GLOBAL & INNER PAGE TYPOGRAPHY (Matching Original Website)
+   ========================================================================== */
+body, p, .dm-service-section p, .post-content p, .article p, article p {
+    font-family: "Times New Roman", Times, Georgia, serif !important;
+    font-size: 18px !important;
+    line-height: 1.65 !important;
+    color: #000000 !important;
+    font-weight: 400 !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page-title, .entry-title, .single-title {
+    font-family: "Cinzel", "Times New Roman", Times, Georgia, serif !important;
+    letter-spacing: 0.5px !important;
+}
+
+.dm-service-section h3,
+.post-content h3,
+article h3,
+html h3 {
+    color: #ea8529 !important;
+    font-family: "Cinzel", "Times New Roman", Times, Georgia, serif !important;
+    font-size: 26px !important;
+    font-weight: 700 !important;
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+    text-transform: none !important;
+    line-height: 1.3 !important;
+}
+
+.dm-service-section ul,
+.post-content ul,
+.article ul,
+article ul {
+    font-family: "Times New Roman", Times, Georgia, serif !important;
+    font-size: 18px !important;
+    line-height: 1.6 !important;
+    color: #000000 !important;
+    padding-left: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+.dm-half li,
+.dm-service-section li,
+article ul li {
+    list-style: none !important;
+    position: relative !important;
+    padding-left: 30px !important;
+    margin-bottom: 8px !important;
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+}
+
+.dm-half li:before,
+.dm-service-section li:before,
+article ul li:before {
+    content: "\f14a" !important;
+    font-family: "Font Awesome 5" !important;
+    font-weight: 900 !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 2px !important;
+    color: #000000 !important;
+    font-size: 18px !important;
+}
+
+/* Call to Action Buttons */
+a.btn,
+.btn,
+.dm-service-section a.btn,
+html .btn {
+    background-color: #ea8529 !important;
+    background: #ea8529 !important;
+    color: #ffffff !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    border-radius: 25px !important;
+    padding: 13px 26px !important;
+    display: inline-block !important;
+    margin-top: 15px !important;
+    box-shadow: 0 4px 12px rgba(234, 133, 41, 0.35) !important;
+    text-decoration: none !important;
+    border: none !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+a.btn:hover,
+.btn:hover,
+.dm-service-section a.btn:hover {
+    background-color: #ef7136 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(234, 133, 41, 0.45) !important;
+}
+a.btn i,
+.btn i,
+.dm-service-section a.btn i {
+    margin-right: 8px !important;
+    font-size: 15px !important;
+    display: inline-block !important;
+}
+
+/* Responsive YouTube Player with Red Play Button */
+.rll-youtube-player {
+    position: relative !important;
+    padding-bottom: 56.25% !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    max-width: 100% !important;
+    margin: 20px auto !important;
+    background: #000000 !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+}
+.rll-youtube-player iframe {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+}
+.rll-youtube-player img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: filter 0.3s ease !important;
+}
+.rll-youtube-player:hover img {
+    filter: brightness(80%) !important;
+}
+.rll-youtube-player .play-btn {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 68px !important;
+    height: 48px !important;
+    background-color: #ff0000 !important;
+    border-radius: 14px !important;
+    cursor: pointer !important;
+    border: none !important;
+    transition: transform 0.2s ease, background-color 0.2s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 10 !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4) !important;
+}
+.rll-youtube-player:hover .play-btn {
+    background-color: #cc0000 !important;
+    transform: translate(-50%, -50%) scale(1.1) !important;
+}
+.rll-youtube-player .play-btn::after {
+    content: '' !important;
+    border-style: solid !important;
+    border-width: 9px 0 9px 16px !important;
+    border-color: transparent transparent transparent #ffffff !important;
+    display: block !important;
+    margin-left: 3px !important;
+}
+
+/* ==========================================================================
+   2. DESKTOP NAVIGATION & DROPDOWN MENUS (>= 866px)
+   ========================================================================== */
+@media screen and (min-width: 866px) {
+    #secondary-navigation .navigation > ul > li > a,
+    #secondary-navigation .navigation > ul > li > a:link,
+    #secondary-navigation .navigation > ul > li > a:visited {
+        color: #ffffff !important;
+        font-family: 'Roboto', sans-serif !important;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        text-transform: uppercase !important;
+    }
+    #secondary-navigation .navigation > ul > li:hover > a,
+    #secondary-navigation .navigation > ul > li.current-menu-item > a,
+    #secondary-navigation .navigation > ul > li.current-menu-parent > a {
+        color: #ffffff !important;
+    }
+    #secondary-navigation .navigation > ul > li:hover,
+    #secondary-navigation .navigation > ul > li.current-menu-item,
+    #secondary-navigation .navigation > ul > li.current-menu-parent {
+        background-color: #ea8529 !important;
+    }
+
+    #secondary-navigation .navigation ul.sub-menu,
+    #secondary-navigation .navigation ul ul,
+    .secondary-navigation .navigation ul.sub-menu {
+        background-color: #ffffff !important;
+        border-radius: 4px !important;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22) !important;
+        border: 1px solid rgba(0, 0, 0, 0.1) !important;
+        min-width: 290px !important;
+        width: max-content !important;
+        max-width: 420px !important;
+        padding: 6px 0 !important;
+        z-index: 99999 !important;
+    }
+    #secondary-navigation .navigation ul.sub-menu li,
+    #secondary-navigation .navigation ul ul li {
+        background: #ffffff !important;
+        display: block !important;
+        float: none !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    #secondary-navigation .navigation ul.sub-menu li a,
+    #secondary-navigation .navigation ul ul li a,
+    #secondary-navigation .sub-menu a,
+    .navigation ul.sub-menu a,
+    ul.sub-menu li a {
+        color: #154064 !important;
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        text-transform: none !important;
+        letter-spacing: 0.2px !important;
+        line-height: 1.45 !important;
+        display: block !important;
+        padding: 10px 22px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        background: #ffffff !important;
+        border-bottom: 1px solid #f0f2f5 !important;
+        transition: all 0.15s ease !important;
+        text-align: left !important;
+        white-space: normal !important;
+    }
+    #secondary-navigation .navigation ul.sub-menu li:last-child a,
+    #secondary-navigation .navigation ul ul li:last-child a {
+        border-bottom: none !important;
+    }
+
+    #secondary-navigation .navigation ul.sub-menu li a:hover,
+    #secondary-navigation .navigation ul.sub-menu li:hover > a,
+    #secondary-navigation .navigation ul ul li a:hover,
+    ul.sub-menu li a:hover {
+        background-color: #ea8529 !important;
+        color: #ffffff !important;
+        padding-left: 26px !important;
+    }
+    #secondary-navigation .navigation ul.sub-menu li.current-menu-item > a,
+    #secondary-navigation .navigation ul.sub-menu li.current_page_item > a {
+        background-color: #4b4d97 !important;
+        color: #ffffff !important;
+    }
+
+    .mobile_cta_buttons {
+        display: none !important;
+    }
+}
+
+/* ==========================================================================
+   3. MOBILE HEADER & NAVIGATION (<= 865px)
+   ========================================================================== */
+@media screen and (max-width: 865px) {
+    /* Hide desktop top bar and dynamic header spacer on mobile */
+    #new-top-header {
+        display: none !important;
+        height: 0 !important;
+        min-height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+    }
+    .header-spacer {
+        display: none !important;
+        height: 0 !important;
+        min-height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: hidden !important;
+    }
+
+    /* Reset Header Wrappers */
+    #site-header,
+    .main-header,
+    .main-head-wrap,
+    #header {
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        min-height: auto !important;
+    }
+
+    /* Homepage Transparent Overlay Header */
+    body.home #site-header,
+    body.home .main-head-wrap,
+    body.home #header,
+    body.home #secondary-navigation {
+        background: transparent !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        z-index: 1000 !important;
+    }
+
+    /* Inner Pages Brand Orange Navbar (Matching Original Site Image 2) */
+    body:not(.home) #site-header,
+    body:not(.home) .main-head-wrap,
+    body:not(.home) #header,
+    body:not(.home) #secondary-navigation,
+    body:not(.home) .main-header {
+        background-color: #ea8529 !important;
+        background: #ea8529 !important;
+        position: relative !important;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.12) !important;
+        border: none !important;
+    }
+
+    /* Mobile Secondary Navigation Row */
+    #secondary-navigation {
+        position: relative !important;
+        width: 100% !important;
+        padding: 12px 15px !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        min-height: 72px !important;
+        border: none !important;
+    }
+
+    /* Logo Wrap & Image */
+    .logo-wrap {
+        float: left !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: auto !important;
+        max-width: calc(100% - 60px) !important;
+        display: flex !important;
+        align-items: center !important;
+        border: none !important;
+    }
+    #logo {
+        margin: 0 !important;
+        padding: 0 !important;
+        float: none !important;
+        display: block !important;
+        line-height: 1 !important;
+        border: none !important;
+    }
+    #logo a {
+        display: block !important;
+        line-height: 1 !important;
+        border: none !important;
+    }
+    #logo img {
+        max-height: 52px !important;
+        height: auto !important;
+        width: auto !important;
+        max-width: 270px !important;
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        outline: none !important;
+    }
+
+    /* Hamburger Menu Toggle Icon */
+    a#pull, .toggle-mobile-menu {
+        float: right !important;
+        width: 44px !important;
+        height: 44px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        cursor: pointer !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        color: #ffffff !important;
+        text-indent: 0 !important;
+        text-decoration: none !important;
+        position: absolute !important;
+        right: 15px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+    }
+    a#pull:after, .toggle-mobile-menu:after {
+        content: "\f0c9" !important;
+        font-family: "Font Awesome 5" !important;
+        font-weight: 900 !important;
+        font-size: 28px !important;
+        color: #ffffff !important;
+        position: static !important;
+        display: block !important;
+        line-height: 1 !important;
+    }
+
+    /* Inner Page Header Title Banner */
+    section.page-header, .page-header {
+        background-color: #4b4d97 !important;
+        background: #4b4d97 !important;
+        padding: 22px 15px !important;
+        margin: 0 !important;
+        text-align: center !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        border: none !important;
+    }
+    section.page-header h1,
+    .page-header h1,
+    section.page-header .page-title,
+    .page-header .page-title,
+    section.page-header * {
+        color: #ffffff !important;
+        font-family: "Cinzel", "Times New Roman", Times, Georgia, serif !important;
+        font-size: 26px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1.5px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 1.2 !important;
+        text-align: center !important;
+    }
+
+    /* Mobile Drawer Navigation */
+    .navigation.mobile-menu-wrapper {
+        background-color: #222222 !important;
+        width: 290px !important;
+        z-index: 99999 !important;
+    }
+    .navigation.mobile-menu-wrapper ul.menu > li > a {
+        color: #ffffff !important;
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 15px !important;
+        font-weight: 500 !important;
+        padding: 12px 18px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+        display: block !important;
+        background: transparent !important;
+    }
+    .navigation.mobile-menu-wrapper ul.sub-menu {
+        background-color: #181818 !important;
+        box-shadow: none !important;
+        border: none !important;
+        position: static !important;
+        width: 100% !important;
+        display: block !important;
+        padding: 0 !important;
+    }
+    .navigation.mobile-menu-wrapper ul.sub-menu li a {
+        color: #cccccc !important;
+        background: transparent !important;
+        font-size: 13px !important;
+        padding: 10px 18px 10px 30px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+        display: block !important;
+    }
+    .navigation.mobile-menu-wrapper a:hover,
+    .navigation.mobile-menu-wrapper ul.sub-menu li a:hover {
+        background-color: #ea8529 !important;
+        color: #ffffff !important;
+    }
+
+    /* Homepage Hero Video on Mobile */
+    body.home #page {
+        padding-top: 0 !important;
+    }
+    .homepage .video_holder {
+        position: relative !important;
+        width: 100% !important;
+        min-height: 480px !important;
+        height: 75vh !important;
+        max-height: 600px !important;
+        overflow: hidden !important;
+        background: #000 !important;
+    }
+    .homepage .video_holder video {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+    .homepage .carousel-caption {
+        position: absolute !important;
+        top: 55% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 90% !important;
+        max-width: 450px !important;
+        text-align: center !important;
+        z-index: 10 !important;
+        padding: 0 !important;
+    }
+    .homepage .carousel-caption h2 {
+        font-family: 'Jost', serif !important;
+        font-size: 34px !important;
+        font-weight: 600 !important;
+        color: #ffffff !important;
+        line-height: 1.2 !important;
+        margin-bottom: 15px !important;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.8) !important;
+    }
+    .homepage .carousel-caption p {
+        display: none !important;
+    }
+    .homepage .carousel-caption a.btn {
+        background-color: #ea8529 !important;
+        color: #ffffff !important;
+        font-weight: 700 !important;
+        font-size: 14px !important;
+        padding: 13px 26px !important;
+        border-radius: 30px !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.35) !important;
+        display: inline-block !important;
+    }
+
+    /* Mobile CTA buttons section below hero on homepage */
+    .mobile_cta_buttons {
+        display: block !important;
+        background-color: #4b4d97 !important;
+        padding: 25px 20px 30px !important;
+        text-align: center !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    .mobile_cta_buttons .mobileBtn {
+        margin: 0 0 12px 0 !important;
+    }
+    .mobile_cta_buttons .mobileBtn a {
+        display: block !important;
+        width: 100% !important;
+        max-width: 480px !important;
+        margin: 0 auto !important;
+        padding: 14px 20px !important;
+        background: #ffffff !important;
+        color: #154064 !important;
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        border-radius: 4px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+        text-decoration: none !important;
+        box-sizing: border-box !important;
+    }
+    .mobile_cta_buttons .dm-rate-us {
+        margin: 18px 0 14px !important;
+        display: block !important;
+        text-align: center !important;
+    }
+    .mobile_cta_buttons .review-link {
+        color: #ffffff !important;
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        display: inline-block !important;
+        vertical-align: middle !important;
+        margin-right: 8px !important;
+    }
+    .mobile_cta_buttons .rtg {
+        display: inline-block !important;
+        vertical-align: middle !important;
+    }
+    .mobile_cta_buttons .rtg a.fa-star-o {
+        color: #154064 !important;
+        font-size: 22px !important;
+        margin: 0 2px !important;
+    }
+    .mobile_cta_buttons .header-social-icons {
+        margin: 15px auto 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        gap: 14px !important;
+        background: transparent !important;
+        float: none !important;
+        width: 100% !important;
+    }
+    .mobile_cta_buttons .header-social-icons a {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 42px !important;
+        height: 42px !important;
+        border-radius: 50% !important;
+        background-color: #272863 !important;
+        color: #ffffff !important;
+        font-size: 18px !important;
+        text-decoration: none !important;
+        float: none !important;
+        padding: 0 !important;
+    }
+}
+</style>
+</head>
+<body class="wp-singular page-template-default wp-singular page-template-default page wp-theme-mts_schema wp-child-theme-blossom-child main" data-rsssl="1" id="blog" itemscope="" itemtype="http://schema.org/WebPage">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5B6CGF74" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="main-container">
+<header class="main-header regular_header" id="site-header" itemscope="" itemtype="http://schema.org/WPHeader" role="banner">
+<div class="header-spacer"></div>
+<div class="main-head-wrap">
+<div id="new-top-header">
+<div class="container-wide dm-flex">
+<div class="dm-third new-header">
+<div class="social-icons">
+<a class="header-facebook" href="https://www.facebook.com/interpsychaz" target="_blank">
+<span class="fa fa-facebook"></span>
+</a>
+<a class="header-google" href="https://maps.app.goo.gl/3gQUrhL2xK6Wjpbo7" target="_blank">
+<span class="fa fa-google"></span>
+</a>
+<a class="header-linkedin" href="http://linkedin.com/company/interventional-psychiatry-of-arizona1/" target="_blank">
+<span class="fa fa-linkedin"></span>
+</a>
+<a class="header-instagram" href="https://www.instagram.com/interpsychaz/?fbclid=IwZXh0bgNhZW0CMTEAAR251kBD3kHgnDk16DcBasyrqUZTzMyT-ntZBaoL6D_sDNoKG5drlfozRjE_aem_5l3Cy-PnGIw_DFELZK52Aw" target="_blank">
+<span class="fa fa-instagram"></span>
+</a>
+</div>
+</div>
+<div class="dm-half-plus phone-header">
+<div class="dm-rate-us"> <div class="social-icon-container"> <span class="review-link">Rate Us:</span> <div class="rtg"> <a class="fa fa-star-o" href="http://search.google.com/local/writereview?placeid=ChIJt8rFr_4NK4cRbF9K7nIzGVM" target="_blank"></a><a class="fa fa-star-o" href="http://search.google.com/local/writereview?placeid=ChIJt8rFr_4NK4cRbF9K7nIzGVM" target="_blank"></a> <a class="fa fa-star-o" href="http://search.google.com/local/writereview?placeid=ChIJt8rFr_4NK4cRbF9K7nIzGVM" target="_blank"></a> <a class="fa fa-star-o" href="http://search.google.com/local/writereview?placeid=ChIJt8rFr_4NK4cRbF9K7nIzGVM" target="_blank"></a> <a class="fa fa-star-o" href="http://search.google.com/local/writereview?placeid=ChIJt8rFr_4NK4cRbF9K7nIzGVM" target="_blank"></a> </div></div></div> <p><i class="fa fa-mobile-alt"></i><a href="tel:6028248404">(602) 824-8404</a></p>
+<p><i class="fa fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/M77iocFYVFsBePD47" target="_blank"> Our <strong> Phoenix, AZ  </strong> Office </a> </p>
+<p>
+<a class="header-btn" href="/appointments/"> Appointments </a>
+</p>
+</div>
+</div>
+</div>
+<div class="after-load" id="header">
+<div class="container-wide">
+<div class="secondary-navigation" id="secondary-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+<div class="logo-wrap">
+<h1 class="image-logo" id="logo" itemprop="headline">
+<a href="/"><img alt="Interventional Psychiatry of Arizona" src="/wp-content/uploads/2025/03/az-logo-white.png.png.webp"/></a>
+</h1>
+</div>
+<nav class="navigation clearfix mobile-menu-wrapper">
+<ul class="menu clearfix" id="menu-main-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-42 current_page_item menu-item-43" id="menu-item-43"><a href="/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97" id="menu-item-97"><a href="/meet-our-team/">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-447" id="menu-item-447"><a href="/tms-therapy/">Treatments</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101" id="menu-item-101"><a href="/tms-therapy/">TMS Therapy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-115" id="menu-item-115"><a href="/electroconvulsive-therapy-ect/">ECT</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-122" id="menu-item-122"><a href="/spravato-esketamine-nasal-spray/">Spravato</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-141" id="menu-item-141"><a href="/medication-management/">Medication Management</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-482" id="menu-item-482"><a href="/adolescent-psychiatry/">Young Adult Psychiatry</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-567" id="menu-item-567"><a href="/adhd-assessments/">ADHD Assessments</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-560" id="menu-item-560"><a href="/conditions-treated/">Conditions Treated</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-549" id="menu-item-549"><a href="/add-adhd-testing-therapy/">ADD/ADHD Testing &amp; Therapy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-551" id="menu-item-551"><a href="/anger-management-therapy/">Anger Management Treatment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-554" id="menu-item-554"><a href="/anxiety-phobia-panic-disorder/">Anxiety, Phobia &amp; Panic Disorder</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-556" id="menu-item-556"><a href="/bipolar-disorder/">Bipolar Disorder</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-555" id="menu-item-555"><a href="/depression-treatment/">Depression</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-548" id="menu-item-548"><a href="/obsessive-compulsive-disorder-ocd/">Obsessive-Compulsive Disorder (OCD)</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-552" id="menu-item-552"><a href="/schizophrenia-psychotic-disorder-treatment/">Schizophrenia &amp; Psychotic Disorder Treatment</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-553" id="menu-item-553"><a href="/ptsd-trauma-therapy/">PTSD &amp; Trauma</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-157" id="menu-item-157"><a href="/for-providers/">For Providers</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159" id="menu-item-159"><a href="/for-providers/refer-a-patient/">Refer a Patient</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-160" id="menu-item-160"><a href="/category/blog/">Resources</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163" id="menu-item-163"><a href="/testimonials/">Testimonials</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-167" id="menu-item-167"><a href="/category/blog/">Blog</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-33" id="menu-item-33"><a href="/contact/">Contact</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-382" id="menu-item-382"><a href="/newsletter-sign-up/">Newsletter Sign Up</a></li>
+</ul>
+</li>
+</ul> </nav>
+<a class="toggle-mobile-menu" href="#" id="pull"></a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    jQuery(document).ready(function($) {
+        if( jQuery('#menu-main-menu > li').length % 2 == 0 ) {
+            jQuery('#header').addClass('middle-menu');
+            var number_of_items = jQuery('#menu-main-menu > li').length;
+            number_of_items = number_of_items / 2;
+            var logo = $('#logo').html();
+            jQuery('#menu-main-menu > li:nth-child('+number_of_items+')').after('<li class="meunLogo">'+logo+' </li>');
+        } else {
+            jQuery('#header').addClass('non-middle');
+        }
+    });
+    jQuery(window).load(function() {
+        jQuery('#header').removeClass('after-load');
+    });
+});
+</script>
+
+<div class="single" id="page">
+<section class="page-header">
+<div class="container">
+<h1 class="page-title">Is Spravato Covered by Insurance? Costs & Coverage Guide</h1>
+<p style="text-align:center; color:#fff; font-size:18px; margin-top:-10px;">Published on August 18, 2026</p>
+</div>
+</section>
+<article class="article dm-full-width">
+<div class="dm-single-post" id="content_box">
+<div class="container single-page dm-flex">
+<div class="dm-sidebar">
+<div class="sidebar-tap">
+<h3> Recent Posts </h3>
+<div class="dm-posts">
+<div>
+<h4> <a href="/how-many-sessions-of-tms-are-needed/">How Many Sessions of TMS Are Needed?</a> </h4>
+<p> Wondering how many sessions of TMS are needed? Learn about... </p>
+</div>
+<div>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
+</div>
+<div>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+</div>
+<div>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<p> Anxiety and panic disorders are among the most common... </p>
+</div>
+</div>
+</div>
+</div>
+<div class="g post post-998 type-post status-publish format-standard has-post-thumbnail hentry category-blog has_thumb" id="post-998">
+<div class="single_post">
+<div class="post-single-content box mark-links entry-content">
+<div class="thecontent">
+<figure class="wp-block-image size-large"><img alt="Is Spravato Covered by Insurance?" class="wp-image-998" decoding="async" fetchpriority="high" height="685" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2026/08/spravato_insurance_thumbnail.png" srcset="/wp-content/uploads/2026/08/spravato_insurance_thumbnail.png 1024w" width="1024"/></figure>
+
+<p class="wp-block-paragraph">When traditional antidepressants fail to provide relief, innovative treatments like <a href="/services/spravato-esketamine-nasal-spray/">Spravato (esketamine) nasal spray</a> offer new hope for those struggling with treatment-resistant depression (TRD) and major depressive disorder with suicidal thoughts or actions. However, navigating the healthcare system can be daunting, leading many patients at <strong>Interventional Psychiatry of Arizona</strong> to ask: <em>"Is Spravato covered by insurance?"</em></p>
+
+<h2 class="wp-block-heading"><strong>The Short Answer: Yes, But With Requirements</strong></h2>
+<p class="wp-block-paragraph">The good news is that the vast majority of commercial health insurance plans, as well as Medicare and many Medicaid programs, <strong>do cover Spravato</strong>. Because it is an FDA-approved medication with proven efficacy for severe depression, insurance companies recognize it as a medically necessary treatment for qualifying individuals.</p>
+<p class="wp-block-paragraph">However, coverage is not automatic. Insurance companies require a process called "prior authorization" before they agree to pay for the medication and the associated clinic visits.</p>
+
+<h2 class="wp-block-heading"><strong>What Does Insurance Require for Approval?</strong></h2>
+<p class="wp-block-paragraph">To get Spravato covered by your insurance, you must meet specific clinical criteria to prove that the treatment is medically necessary. While every insurance plan is slightly different, the common requirements include:</p>
+<ul class="wp-block-list">
+<li><strong>Diagnosis:</strong> You must have a formal diagnosis of Major Depressive Disorder (MDD).</li>
+<li><strong>Treatment Resistance:</strong> You must demonstrate that you have tried and failed to respond adequately to at least <strong>two different oral antidepressants</strong> from different classes, at an adequate dose and duration (usually at least 6 weeks each) during your current depressive episode.</li>
+<li><strong>Concurrent Medication:</strong> Spravato is approved to be taken <em>in conjunction</em> with an oral antidepressant. Your insurance will likely require you to be taking an oral antidepressant while receiving Spravato treatments.</li>
+<li><strong>Clinical Assessment:</strong> A baseline assessment of your depression severity (such as the PHQ-9 or MADRS scale) provided by your psychiatrist.</li>
+</ul>
+
+<div style="background-color: #f7f9fa; padding: 20px; border-left: 5px solid #28a745; margin-bottom: 20px;">
+<h3 style="margin-top:0;">Let Us Handle the Paperwork</h3>
+<p>At Interventional Psychiatry of Arizona, our dedicated team of care coordinators specializes in navigating the complex prior authorization process. We handle the paperwork and communicate directly with your insurance company to maximize your chances of approval. <a href="/contact/"><strong>Contact us to check your benefits today!</strong></a></p>
+</div>
+
+<h2 class="wp-block-heading"><strong>Understanding the Two Parts of Spravato Billing</strong></h2>
+<p class="wp-block-paragraph">When dealing with insurance for Spravato, it is important to understand that there are two separate components to the cost:</p>
+<ol class="wp-block-list">
+<li><strong>The Medication (Pharmacy Benefit or Medical Benefit):</strong> This is the cost of the Spravato nasal spray itself. Depending on your insurance plan, this may be billed through your pharmacy benefits (like a normal prescription) or your medical benefits (like an injection given in a doctor's office).</li>
+<li><strong>The Observation Visit (Medical Benefit):</strong> Spravato must be administered under the direct supervision of a healthcare provider, followed by a mandatory two-hour observation period to monitor for side effects like dissociation or increased blood pressure. This two-hour clinic visit is billed separately under your medical benefits.</li>
+</ol>
+
+<h2 class="wp-block-heading"><strong>Out-of-Pocket Costs and Financial Assistance</strong></h2>
+<p class="wp-block-paragraph">Even with insurance coverage, you may still be responsible for out-of-pocket costs, such as deductibles, copayments, or coinsurance. These costs vary wildly depending on whether you have an HMO, PPO, or a high-deductible health plan.</p>
+<p class="wp-block-paragraph">Fortunately, <strong>Janssen Pharmaceuticals</strong> (the maker of Spravato) offers a robust patient assistance program called <strong>Spravato withMe</strong>. For eligible patients with commercial insurance, the Spravato Savings Program can reduce out-of-pocket costs for the medication to as little as <strong>$10 per treatment</strong>. (Note: This program generally covers the cost of the medication, not the clinic observation visit).</p>
+
+<h2 class="wp-block-heading"><strong>Medicare and Medicaid Coverage</strong></h2>
+<p class="wp-block-paragraph">If you are covered by Medicare or Medicaid, you can still access Spravato:</p>
+<ul class="wp-block-list">
+<li><strong>Medicare:</strong> Traditional Medicare Part B generally covers Spravato and the observation visits when administered in an outpatient psychiatric setting, provided you meet the medical necessity criteria. Medicare Advantage plans also cover it, though copays and networks vary.</li>
+<li><strong>Medicaid:</strong> Most state Medicaid programs, including Arizona's AHCCCS, cover Spravato for treatment-resistant depression. Prior authorization is almost always required.</li>
+</ul>
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+<h2 class="wp-block-heading"><strong>Frequently Asked Questions (FAQ)</strong></h2>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How long does it take for insurance to approve Spravato?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The prior authorization process typically takes anywhere from 3 days to 2 weeks. Our clinic staff works diligently to expedite this process by ensuring all clinical documentation is submitted correctly the first time."
+    }
+  }, {
+    "@type": "Question",
+    "name": "What if my insurance denies Spravato coverage?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Denials happen, often due to a lack of documentation showing you tried previous medications. If denied, our team will help file an appeal on your behalf, providing additional clinical evidence to overturn the decision."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Can I pay for Spravato out-of-pocket if I don't have insurance?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, self-pay options are available. However, Spravato is an expensive medication without insurance. We can discuss cash-pay rates and potential patient assistance programs during your consultation."
+    }
+  }]
+}
+</script>
+<p class="wp-block-paragraph"><strong>Q: How long does it take for insurance to approve Spravato?</strong><br/><strong>A:</strong> The prior authorization process typically takes anywhere from 3 days to 2 weeks. Our clinic staff works diligently to expedite this process.</p>
+<p class="wp-block-paragraph"><strong>Q: What if my insurance denies Spravato coverage?</strong><br/><strong>A:</strong> Denials happen, often due to a lack of documentation. If denied, our team will help file an appeal on your behalf, providing additional clinical evidence to overturn the decision.</p>
+<p class="wp-block-paragraph"><strong>Q: Can I pay for Spravato out-of-pocket if I don't have insurance?</strong><br/><strong>A:</strong> Yes, self-pay options are available. However, Spravato is an expensive medication without insurance. We can discuss cash-pay rates and potential patient assistance programs during your consultation.</p>
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+<h2 class="wp-block-heading"><strong>Start Your Journey to Recovery</strong></h2>
+<p class="wp-block-paragraph">Don't let the fear of insurance bureaucracy keep you from getting the treatment you deserve. The team at <strong>Interventional Psychiatry of Arizona</strong> is experienced in working with insurance companies to secure coverage for our patients.</p>
+<p class="wp-block-paragraph"><a href="/contact/"><strong>Contact us today</strong></a> at <strong>(602) 824-8404</strong> to schedule a consultation. We will conduct a thorough evaluation to see if Spravato is right for you, verify your insurance benefits, and guide you through every step of the process.</p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://interpsychaz.com/is-spravato-covered-by-insurance/"
+  },
+  "headline": "Is Spravato Covered by Insurance?",
+  "description": "Learn about insurance coverage, out-of-pocket costs, and the approval process for Spravato treatment in Arizona.",
+  "image": "https://interpsychaz.com/wp-content/uploads/2026/08/spravato_insurance_thumbnail.png",  
+  "author": {
+    "@type": "Organization",
+    "name": "Interventional Psychiatry of Arizona"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Interventional Psychiatry of Arizona",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://interpsychaz.com/wp-content/uploads/2025/03/az-logo-white.png.png.webp"
+    }
+  },
+  "datePublished": "2026-08-18"
+}
+</script>
+
+ </div>
+</div><!--.post-single-content-->
+</div><!--.single_post-->
+</div><!--.g post-->
+</div>
+</div>
+</article>
+<div class="clear"></div>
+</div><!--#page-->
+
+<section class="visit-us-today">
+<div class="container">
+<div class="dm-flex">
+<div class="dm-half">
+<h2>Come Visit Us</h2>
+<div class="gform_wrapper gform_wrapper_2" id="gform_wrapper_2" data-form-id="2">
+<div class="gform_anchor" id="gf_2"></div>
+<form method="post" enctype="multipart/form-data" id="gform_2" action="/thank-you/">
+<div class="gform_body gform-body gform_fields">
+<div class="gform_field gform_field gfield" id="field_2_1">
+<label class="gfield_label gform-field-label" for="input_2_1">Name <span class="gfield_required">*</span></label>
+<div class="ginput_container ginput_container_text"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="5" placeholder="Enter Name" required="required"/></div>
+</div>
+<div class="gform_field gform_field gfield" id="field_2_2">
+<label class="gfield_label gform-field-label" for="input_2_2">Phone <span class="gfield_required">*</span></label>
+<div class="ginput_container ginput_container_phone"><input name="input_2" id="input_2_2" type="tel" value="" class="medium" tabindex="6" placeholder="Enter Phone" required="required"/></div>
+</div>
+<div class="gform_field gform_field gfield" id="field_2_3">
+<label class="gfield_label gform-field-label" for="input_2_3">Email <span class="gfield_required">*</span></label>
+<div class="ginput_container ginput_container_email"><input name="input_3" id="input_2_3" type="email" value="" class="medium" tabindex="7" placeholder="Enter Email" required="required"/></div>
+</div>
+<div class="gform_field gform_field gfield" id="field_2_4">
+<label class="gfield_label gform-field-label" for="input_2_4">Message</label>
+<div class="ginput_container ginput_container_textarea"><textarea name="input_4" id="input_2_4" class="textarea medium" tabindex="8" rows="5" cols="50" placeholder="Enter Message"></textarea></div>
+</div>
+<div class="gform_field gform_field gfield" id="field_2_5">
+<label class="gfield_label gform-field-label">Reason for Inquiry <span class="gfield_required">*</span></label>
+<div class="ginput_container ginput_container_select">
+<select name="input_5[]" id="input_2_5" multiple="multiple" class="medium gfield_select" tabindex="9">
+<option value="General Inquiry">General Inquiry</option>
+<option value="New Patient">New Patient</option>
+<option value="TMS">TMS</option>
+<option value="Spravato">Spravato</option>
+<option value="Medication Management">Medication Management</option>
+<option value="ECT">ECT</option>
+</select>
+</div>
+</div>
+<div class="gform_field gform_field gfield" id="field_2_6">
+<label class="gfield_label gform-field-label">SMS Opt-in</label>
+<div class="ginput_container ginput_container_radio">
+<span class="gfield_radio gform-field-radio"><input type="radio" name="input_6" value="Yes" id="choice_2_6_0" tabindex="10"/><label for="choice_2_6_0" class="gfield_radio_label">Yes</label><input type="radio" name="input_6" value="No" id="choice_2_6_1" tabindex="11" checked="checked"/><label for="choice_2_6_1" class="gfield_radio_label">No</label></span>
+</div>
+</div>
+</div>
+<div class="gform_footer">
+<input type="submit" id="gform_submit_button_2" class="gform_button button" value="Send Message" tabindex="12"/>
+</div>
+<div style="display:none"><input type="hidden" name="gform_unique_id" value=""/><input type="hidden" name="state_2" value="WyJhNjYsImEzNDNiNDlhNjE0MGJlMTg0MjE4ZjFlN2I4OTY2NTgiXQ=="/><input type="hidden" name="gform_target_page_number_2" value="0"/><input type="hidden" name="gform_source_page_number_2" value="0"/><input type="hidden" name="gform_target_page_number_2" value="0"/><input type="hidden" name="gform_source_page_number_2" value="0"/><input type="hidden" name="gform_confirmation_callback_2" value=""/></div>
+</form>
+</div>
+</div>
+<div class="dm-half">
+<iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.823582626749!2d-112.03820942507127!3d33.505966773367575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0dfeafc5cab7%3A0x53193372ee4a5f6c!2sInterventional%20Psychiatry%20of%20Arizona!5e0!3m2!1sen!2sin!4v1762937676279!5m2!1sen!2sin" style="border:0;" width="100%"></iframe>
+</div>
+</div>
+</div>
+</section>
+<footer id="site-footer" itemscope="" itemtype="http://schema.org/WPFooter" role="contentinfo">
+<div class="copyrights">
+<div class="dm-ff mmn">
+<div class="container">
+<div class="dm-h">
+<div class="footer-logo-wrap">
+<a href="/"><img alt="Interventional Psychiatry of Arizona" src="/wp-content/uploads/2025/03/az-logo-white.png.png.webp"/></a>
+</div>
+</div>
+<div class="dm-h">
+<a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a> <br/>
+<p>If you or a loved one is having a behavioral health crisis hotline 988.
+						</p>
+</div>
+</div>
+</div>
+<div class="dm-flex">
+<div class="dm-fourth">
+<h3>
+        				Social
+        			</h3>
+<div class="social-icons">
+<a class="header-facebook" href="https://www.facebook.com/interpsychaz" target="_blank">
+<span class="fa fa-facebook"></span>
+</a>
+<a class="header-google" href="https://maps.app.goo.gl/3gQUrhL2xK6Wjpbo7" target="_blank">
+<span class="fa fa-google"></span>
+</a>
+<a class="header-linkedin" href="http://linkedin.com/company/interventional-psychiatry-of-arizona1/" target="_blank">
+<span class="fa fa-linkedin"></span>
+</a>
+<a class="header-instagram" href="https://www.instagram.com/interpsychaz/?fbclid=IwZXh0bgNhZW0CMTEAAR251kBD3kHgnDk16DcBasyrqUZTzMyT-ntZBaoL6D_sDNoKG5drlfozRjE_aem_5l3Cy-PnGIw_DFELZK52Aw" target="_blank">
+<span class="fa fa-instagram"></span>
+</a>
+</div>
+</div>
+<div class="dm-fourth">
+<h3> Office Hours </h3>
+<div class="footer-hours">
+<p>Mon-Fri: 8am-5pm<br/>
+Sat, Sun: Closed</p>
+</div>
+</div>
+<div class="dm-fourth">
+<h3>
+        				Contact Us
+        			</h3>
+<p>
+<a href="https://maps.app.goo.gl/M77iocFYVFsBePD47" target="_blank"> 2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016</a> </p>
+<p> Phone: <a href="tel:6028248404"> (602) 824-8404 </a>
+</p>
+</div>
+</div>
+<div class="dm-full footer-creds">
+<div class="container">
+</div>
+</div>
+</div>
+</footer>
+</div>
+<!--Start of Tawk.to Script-->
+<script>
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/67e6985c3b89e8190ea53578/1inec6aa9';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<div aria-labelledby="dmm-cg-title" class="dmm-cg dmm-cg--notice" hidden="" id="dmm-cg" role="region">
+<div class="dmm-cg__panel">
+<div class="dmm-cg__notice">
+<div class="dmm-cg__notice-copy">
+<h2 class="dmm-cg__title" id="dmm-cg-title">This site uses tracking technologies</h2>
+<p class="dmm-cg__body">
+							We and the services embedded in this site — analytics, advertising, booking, maps and translation — collect information about your visit, including your IP address, your browser and the pages you view. Some of that information is shared with those companies. This happens as you browse.															<a class="dmm-cg__inline-link" href="/privacy-policy/#cookies">Read our Privacy Policy</a>.
+													</p>
+</div>
+<div class="dmm-cg__actions dmm-cg__actions--single">
+<button class="dmm-cg__btn dmm-cg__btn--primary" data-dmm-action="acknowledge" type="button">I understand</button>
+</div>
+</div>
+</div>
+</div>
+<div class="dmm-cg-footer">
+<button class="dmm-cg-open dmm-cg-open--inline" type="button">Cookie settings</button>
+</div>
+<div class="cta_fixed_button"><a class="sticks" href="tel:6028248404" onclick="ga('send', 'event', { eventCategory: 'Mobile', eventAction: 'Call Us', eventValue: 25});"> <i class="fa fa-phone"></i> Call Us </a><a class="sticks" href="sms:6028248404"> <i class="fa fa-envelope"></i> Text Us </a></div><div class="move_down"></div> <div class="wda-access-toolbar"><div class="wda-toolbar-toggle-link"><svg fill="currentColor" viewbox="0 0 100 100" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Accessibility Tools</title><path d="M50 8.1c23.2 0 41.9 18.8 41.9 41.9 0 23.2-18.8 41.9-41.9 41.9C26.8 91.9 8.1 73.2 8.1 50S26.8 8.1 50 8.1M50 0C22.4 0 0 22.4 0 50s22.4 50 50 50 50-22.4 50-50S77.6 0 50 0zm0 11.3c-21.4 0-38.7 17.3-38.7 38.7S28.6 88.7 50 88.7 88.7 71.4 88.7 50 71.4 11.3 50 11.3zm0 8.9c4 0 7.3 3.2 7.3 7.3S54 34.7 50 34.7s-7.3-3.2-7.3-7.3 3.3-7.2 7.3-7.2zm23.7 19.7c-5.8 1.4-11.2 2.6-16.6 3.2.2 20.4 2.5 24.8 5 31.4.7 1.9-.2 4-2.1 4.7-1.9.7-4-.2-4.7-2.1-1.8-4.5-3.4-8.2-4.5-15.8h-2c-1 7.6-2.7 11.3-4.5 15.8-.7 1.9-2.8 2.8-4.7 2.1-1.9-.7-2.8-2.8-2.1-4.7 2.6-6.6 4.9-11 5-31.4-5.4-.6-10.8-1.8-16.6-3.2-1.7-.4-2.8-2.1-2.4-3.9.4-1.7 2.1-2.8 3.9-2.4 19.5 4.6 25.1 4.6 44.5 0 1.7-.4 3.5.7 3.9 2.4.7 1.8-.3 3.5-2.1 3.9z"></path></svg></div><div id="wda-toolbar"><h4>Accessibility Tools</h4><div class="wda-btn wda-btn-resize-plus"><svg version="1.1" viewbox="0 0 448 448" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Increase Text</title><path d="M256 200v16c0 4.25-3.75 8-8 8h-56v56c0 4.25-3.75 8-8 8h-16c-4.25 0-8-3.75-8-8v-56h-56c-4.25 0-8-3.75-8-8v-16c0-4.25 3.75-8 8-8h56v-56c0-4.25 3.75-8 8-8h16c4.25 0 8 3.75 8 8v56h56c4.25 0 8 3.75 8 8zM288 208c0-61.75-50.25-112-112-112s-112 50.25-112 112 50.25 112 112 112 112-50.25 112-112zM416 416c0 17.75-14.25 32-32 32-8.5 0-16.75-3.5-22.5-9.5l-85.75-85.5c-29.25 20.25-64.25 31-99.75 31-97.25 0-176-78.75-176-176s78.75-176 176-176 176 78.75 176 176c0 35.5-10.75 70.5-31 99.75l85.75 85.75c5.75 5.75 9.25 14 9.25 22.5z"></path></svg>Increase Text</div><div class="wda-btn wda-btn-resize-minus"><svg version="1.1" viewbox="0 0 448 448" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Decrease Text</title><path d="M256 200v16c0 4.25-3.75 8-8 8h-200c-4.25 0-8-3.75-8-8v-16c0-4.25 3.75-8 8-8h200c4.25 0 8 3.75 8 8zM288 208c0-61.75-50.25-112-112-112s-112 50.25-112 112 50.25 112 112 112 112-50.25 112-112zM416 416c0 17.75-14.25 32-32 32-8.5 0-16.75-3.5-22.5-9.5l-85.75-85.5c-29.25 20.25-64.25 31-99.75 31-97.25 0-176-78.75-176-176s78.75-176 176-176 176 78.75 176 176c0 35.5-10.75 70.5-31 99.75l85.75 85.75c5.75 5.75 9.25 14 9.25 22.5z"></path></svg>Decrease Text</div><div class="wda-btn wda-btn-highlight-links"><svg version="1.1" viewbox="0 0 448 448" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Highlight Links</title><path d="M400 32H48C21.5 32 0 53.5 0 80v288c0 26.5 21.5 48 48 48h160v32H128v32h96h96v-32h-80v-32h160c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-16 256H64V80h320v208z" fill="currentColor"></path></svg>Highlight Links</div><div class="wda-btn wda-btn-readable-font"><svg version="1.1" viewbox="0 0 448 448" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Readable Font</title><path d="M181.25 139.75l-42.5 112.5c24.75 0.25 49.5 1 74.25 1 4.75 0 9.5-0.25 14.25-0.5-13-38-28.25-76.75-46-113zM0 416l0.5-19.75c23.5-7.25 49-2.25 59.5-29.25l59.25-154 70-181h32c1 1.75 2 3.5 2.75 5.25l51.25 120c18.75 44.25 36 89 55 133 11.25 26 20 52.75 32.5 78.25 1.75 4 5.25 11.5 8.75 14.25 8.25 6.5 31.25 8 43 12.5 0.75 4.75 1.5 9.5 1.5 14.25 0 2.25-0.25 4.25-0.25 6.5-31.75 0-63.5-4-95.25-4-32.75 0-65.5 2.75-98.25 3.75 0-6.5 0.25-13 1-19.5l32.75-7c6.75-1.5 20-3.25 20-12.5 0-9-32.25-83.25-36.25-93.5l-112.5-0.5c-6.5 14.5-31.75 80-31.75 89.5 0 19.25 36.75 20 51 22 0.25 4.75 0.25 9.5 0.25 14.5 0 2.25-0.25 4.5-0.5 6.75-29 0-58.25-5-87.25-5-3.5 0-8.5 1.5-12 2-15.75 2.75-31.25 3.5-47 3.5z" fill="currentColor"></path></svg>Readable Font</div><div class="wda-btn wda-btn-reset-font"><svg height="682.66669" id="svg4641" version="1.1" viewbox="0 0 682.66669 682.66669" width="682.66669" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs4645"><clippath clippathunits="userSpaceOnUse" id="clipPath4663"><path d="M 0,512 H 512 V 0 H 0 Z" id="path4661"></path></clippath></defs><g id="g4647" transform="matrix(1.3333333,0,0,-1.3333333,0,682.66667)"><g id="g4649" transform="translate(119.1121,241.7875)"><path d="M 0,0 27.157,-30.856" id="path4651" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g><g id="g4653" transform="translate(111.3159,241.9036)"><path d="M 0,0 V -30.972" id="path4655" style="fill:none;stroke:#000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"></path></g></g></svg>Reset Font</div></div></div>
+<script src="/wp-content/cache/min/1/wp-content/plugins/dmm-consent-guard/assets/js/banner.js?ver=1786719158" defer id="dmm-cg-banner-js"></script>
+<script>
+window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300}];
+</script>
+<script async src="/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
+<script src="/wp-content/cache/min/1/wp-content/themes/mts_schema/js/owl.carousel.min.js" defer id="owl-carousel-js"></script>
+<script src="/wp-content/cache/min/1/wp-content/themes/mts_schema/js/slick.js?ver=1782683147" defer id="slick-main-js"></script>
+<!-- Responsive YouTube Video Player Init -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var players = document.querySelectorAll(".rll-youtube-player");
+    players.forEach(function(player) {
+        var videoId = player.getAttribute("data-id") || "";
+        var dataSrc = player.getAttribute("data-src") || "";
+        if (!videoId && dataSrc) {
+            var parts = dataSrc.split('/');
+            videoId = parts[parts.length - 1].split('?')[0];
+        }
+        if (!videoId) return;
+
+        var query = player.getAttribute("data-query") || "";
+        var embedUrl = dataSrc || ("https://www.youtube.com/embed/" + videoId);
+        if (embedUrl.indexOf("http") !== 0) {
+            embedUrl = "https://www.youtube.com/embed/" + videoId;
+        }
+
+        var altText = player.getAttribute("data-alt") || "Play Video";
+
+        // Create thumbnail container
+        player.innerHTML = "";
+        
+        var img = document.createElement("img");
+        img.src = "https://i.ytimg.com/vi/" + videoId + "/hqdefault.jpg";
+        img.alt = altText;
+        img.loading = "lazy";
+
+        var btn = document.createElement("button");
+        btn.className = "play-btn";
+        btn.setAttribute("type", "button");
+        btn.setAttribute("aria-label", altText);
+
+        player.appendChild(img);
+        player.appendChild(btn);
+
+        function loadVideo() {
+            var iframe = document.createElement("iframe");
+            var sep = embedUrl.indexOf("?") === -1 ? "?" : "&";
+            var fullUrl = embedUrl + sep + "autoplay=1";
+            if (query) {
+                fullUrl += "&" + query.replace(/^\?/, "");
+            }
+            iframe.setAttribute("src", fullUrl);
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute("allowfullscreen", "1");
+            iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+            player.innerHTML = "";
+            player.appendChild(iframe);
+        }
+
+        player.addEventListener("click", loadVideo);
+    });
+});
+
+// Mobile Drawer Navigation Toggle
+document.addEventListener("DOMContentLoaded", function() {
+    var toggleBtns = document.querySelectorAll("#pull, .toggle-mobile-menu");
+    toggleBtns.forEach(function(btn) {
+        btn.addEventListener("click", function(e) {
+            e.preventDefault();
+            document.body.classList.toggle("mobile-menu-active");
+            var overlay = document.getElementById("mobile-menu-overlay");
+            if (!overlay) {
+                overlay = document.createElement("div");
+                overlay.id = "mobile-menu-overlay";
+                document.body.appendChild(overlay);
+                overlay.addEventListener("click", function() {
+                    document.body.classList.remove("mobile-menu-active");
+                    overlay.style.display = "none";
+                });
+            }
+            if (document.body.classList.contains("mobile-menu-active")) {
+                overlay.style.display = "block";
+            } else {
+                overlay.style.display = "none";
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>

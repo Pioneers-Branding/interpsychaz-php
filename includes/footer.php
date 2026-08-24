@@ -64,7 +64,7 @@
 <div class="container">
 <div class="dm-h">
 <div class="footer-logo-wrap">
-<a href="<?php echo SITE_URL; ?>/"><img alt="<?php echo SITE_NAME; ?>" src="/wp-content/uploads/2025/03/az-logo-white.png.png.webp"/></a>
+<a href="/"><img alt="<?php echo SITE_NAME; ?>" src="/wp-content/uploads/2025/03/az-logo-white.png.png.webp"/></a>
 </div>
 </div>
 <div class="dm-h">
@@ -157,5 +157,87 @@ window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,
 <script async src="/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
 <script src="/wp-content/cache/min/1/wp-content/themes/mts_schema/js/owl.carousel.min.js" defer id="owl-carousel-js"></script>
 <script src="/wp-content/cache/min/1/wp-content/themes/mts_schema/js/slick.js?ver=1782683147" defer id="slick-main-js"></script>
+<!-- Responsive YouTube Video Player Init -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var players = document.querySelectorAll(".rll-youtube-player");
+    players.forEach(function(player) {
+        var videoId = player.getAttribute("data-id") || "";
+        var dataSrc = player.getAttribute("data-src") || "";
+        if (!videoId && dataSrc) {
+            var parts = dataSrc.split('/');
+            videoId = parts[parts.length - 1].split('?')[0];
+        }
+        if (!videoId) return;
+
+        var query = player.getAttribute("data-query") || "";
+        var embedUrl = dataSrc || ("https://www.youtube.com/embed/" + videoId);
+        if (embedUrl.indexOf("http") !== 0) {
+            embedUrl = "https://www.youtube.com/embed/" + videoId;
+        }
+
+        var altText = player.getAttribute("data-alt") || "Play Video";
+
+        // Create thumbnail container
+        player.innerHTML = "";
+        
+        var img = document.createElement("img");
+        img.src = "https://i.ytimg.com/vi/" + videoId + "/hqdefault.jpg";
+        img.alt = altText;
+        img.loading = "lazy";
+
+        var btn = document.createElement("button");
+        btn.className = "play-btn";
+        btn.setAttribute("type", "button");
+        btn.setAttribute("aria-label", altText);
+
+        player.appendChild(img);
+        player.appendChild(btn);
+
+        function loadVideo() {
+            var iframe = document.createElement("iframe");
+            var sep = embedUrl.indexOf("?") === -1 ? "?" : "&";
+            var fullUrl = embedUrl + sep + "autoplay=1";
+            if (query) {
+                fullUrl += "&" + query.replace(/^\?/, "");
+            }
+            iframe.setAttribute("src", fullUrl);
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute("allowfullscreen", "1");
+            iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+            player.innerHTML = "";
+            player.appendChild(iframe);
+        }
+
+        player.addEventListener("click", loadVideo);
+    });
+});
+
+// Mobile Drawer Navigation Toggle
+document.addEventListener("DOMContentLoaded", function() {
+    var toggleBtns = document.querySelectorAll("#pull, .toggle-mobile-menu");
+    toggleBtns.forEach(function(btn) {
+        btn.addEventListener("click", function(e) {
+            e.preventDefault();
+            document.body.classList.toggle("mobile-menu-active");
+            var overlay = document.getElementById("mobile-menu-overlay");
+            if (!overlay) {
+                overlay = document.createElement("div");
+                overlay.id = "mobile-menu-overlay";
+                document.body.appendChild(overlay);
+                overlay.addEventListener("click", function() {
+                    document.body.classList.remove("mobile-menu-active");
+                    overlay.style.display = "none";
+                });
+            }
+            if (document.body.classList.contains("mobile-menu-active")) {
+                overlay.style.display = "block";
+            } else {
+                overlay.style.display = "none";
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>

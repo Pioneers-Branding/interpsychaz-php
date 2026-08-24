@@ -33,7 +33,7 @@ require_once __DIR__ . '/includes/header.php';
 <p>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016<br/>
 <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></p>
 <h3>Expert OCD Treatment in Phoenix, AZ</h3>
-<p>OCD can feel exhausting and isolating, but itâ€™s highly treatable. At InterPsych AZ, we offer evidence-based treatment to help you break free from obsessive thoughts and compulsive behaviors.</p>
+<p>OCD can feel exhausting and isolating, but it’s highly treatable. At InterPsych AZ, we offer evidence-based treatment to help you break free from obsessive thoughts and compulsive behaviors.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -65,7 +65,7 @@ require_once __DIR__ . '/includes/header.php';
 <li>Intrusive sexual, violent, or religious thoughts</li>
 <li>Fear of harming oneself or others</li>
 <li>Perfectionism and fear of making mistakes</li>
-<li>Needing things to feel â€œjust rightâ€</li>
+<li>Needing things to feel “just right”</li>
 </ul>
 <p><strong>Compulsions may include:</strong></p>
 <ul>
@@ -75,7 +75,7 @@ require_once __DIR__ . '/includes/header.php';
 <li>Mental rituals (counting, praying, reviewing memories)</li>
 <li>Seeking reassurance from others</li>
 </ul>
-<p>OCD is not about being neat or organizedâ€”itâ€™s about uncontrollable cycles of fear and relief-seeking behaviors.</p>
+<p>OCD is not about being neat or organized—it’s about uncontrollable cycles of fear and relief-seeking behaviors.</p>
 </div>
 </div>
 </div>
@@ -136,7 +136,7 @@ We will work you to coordinate any medications, if appropriate.</p>
 <h4>Can OCD be cured?</h4>
 <p>While OCD is often chronic, it is highly manageable. Many clients experience long-term symptom reduction with proper treatment.</p>
 <h4>How is OCD different from being a perfectionist?</h4>
-<p>OCD is driven by unwanted, distressing thoughtsâ€”not preferences. It causes intense anxiety and functional impairment.</p>
+<p>OCD is driven by unwanted, distressing thoughts—not preferences. It causes intense anxiety and functional impairment.</p>
 <h4>Do I have to take medication?</h4>
 <p>Not necessarily. Many clients improve with therapy alone. If needed, medication can be added for optimal results.</p>
 <h4>Do you treat children with OCD?</h4>
@@ -153,7 +153,7 @@ We will work you to coordinate any medications, if appropriate.</p>
 <h3>Take the First Step to Take Back Control</h3>
 <p><strong>Call <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></strong><br/>
 <strong>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016</strong></p>
-<p>You donâ€™t have to live in fear of your thoughts. Get the support you needâ€”OCD is treatable.</p>
+<p>You don’t have to live in fear of your thoughts. Get the support you need—OCD is treatable.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -179,7 +179,7 @@ We will work you to coordinate any medications, if appropriate.</p>
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

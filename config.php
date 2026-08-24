@@ -1,8 +1,6 @@
 <?php
-$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
-$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
-$protocol = 'http';
-$host = 'localhost';
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) ? 'https' : 'http';
+$host = $_SERVER['HTTP_HOST'] ?? 'localhost:8000';
 
 define('SITE_NAME', 'Interventional Psychiatry of Arizona');
 define('SITE_URL', $protocol . '://' . $host);

@@ -26,112 +26,112 @@ require_once __DIR__ . '/includes/header.php';
 <div class="container">
 <h2> <strong>Pages</strong> </h2>
 <ul>
-<li class="page_item page-item-14"><a href="http://interpsychaz.com/about/">About Our Phoenix Psychiatry Center</a></li>
-<li class="page_item page-item-10"><a href="http://interpsychaz.com/accessibility/">Accessibility</a></li>
-<li class="page_item page-item-537"><a href="http://interpsychaz.com/add-adhd-testing-therapy/">ADD/ADHD Testing &amp; Therapy</a></li>
-<li class="page_item page-item-562"><a href="http://interpsychaz.com/adhd-assessments/">ADHD Assessments</a></li>
-<li class="page_item page-item-533"><a href="http://interpsychaz.com/anger-management-therapy/">Anger Management Treatment</a></li>
-<li class="page_item page-item-517"><a href="http://interpsychaz.com/anxiety-phobia-panic-disorder/">Anxiety, Phobia &amp; Panic Disorder</a></li>
-<li class="page_item page-item-31"><a href="http://interpsychaz.com/appointments/">Appointments</a></li>
-<li class="page_item page-item-515"><a href="http://interpsychaz.com/bipolar-disorder/">Bipolar Disorder</a></li>
-<li class="page_item page-item-557"><a href="http://interpsychaz.com/conditions-treated/">Conditions Treated</a></li>
-<li class="page_item page-item-30"><a href="http://interpsychaz.com/contact/">Contact Your Phoenix Psychiatry Providers</a></li>
-<li class="page_item page-item-516"><a href="http://interpsychaz.com/depression-treatment/">Depression</a></li>
-<li class="page_item page-item-152 page_item_has_children"><a href="http://interpsychaz.com/for-providers/">For Providers</a>
+<li class="page_item page-item-14"><a href="/about/">About Our Phoenix Psychiatry Center</a></li>
+<li class="page_item page-item-10"><a href="/accessibility/">Accessibility</a></li>
+<li class="page_item page-item-537"><a href="/add-adhd-testing-therapy/">ADD/ADHD Testing &amp; Therapy</a></li>
+<li class="page_item page-item-562"><a href="/adhd-assessments/">ADHD Assessments</a></li>
+<li class="page_item page-item-533"><a href="/anger-management-therapy/">Anger Management Treatment</a></li>
+<li class="page_item page-item-517"><a href="/anxiety-phobia-panic-disorder/">Anxiety, Phobia &amp; Panic Disorder</a></li>
+<li class="page_item page-item-31"><a href="/appointments/">Appointments</a></li>
+<li class="page_item page-item-515"><a href="/bipolar-disorder/">Bipolar Disorder</a></li>
+<li class="page_item page-item-557"><a href="/conditions-treated/">Conditions Treated</a></li>
+<li class="page_item page-item-30"><a href="/contact/">Contact Your Phoenix Psychiatry Providers</a></li>
+<li class="page_item page-item-516"><a href="/depression-treatment/">Depression</a></li>
+<li class="page_item page-item-152 page_item_has_children"><a href="/for-providers/">For Providers</a>
 <ul class="children">
-<li class="page_item page-item-156"><a href="http://interpsychaz.com/for-providers/refer-a-patient/">Refer a Patient</a></li>
+<li class="page_item page-item-156"><a href="/for-providers/refer-a-patient/">Refer a Patient</a></li>
 </ul>
 </li>
-<li class="page_item page-item-42"><a href="http://interpsychaz.com/">Home</a></li>
-<li class="page_item page-item-535"><a href="http://interpsychaz.com/insomnia-therapy/">Insomnia Therapy</a></li>
-<li class="page_item page-item-93"><a href="http://interpsychaz.com/meet-our-team/">Meet Our Phoenix Psychiatry Team</a></li>
-<li class="page_item page-item-21"><a href="http://interpsychaz.com/new-patients/">New Patients</a></li>
-<li class="page_item page-item-379"><a href="http://interpsychaz.com/newsletter-sign-up/">Newsletter Sign Up</a></li>
-<li class="page_item page-item-538"><a href="http://interpsychaz.com/obsessive-compulsive-disorder-ocd/">Obsessive-Compulsive Disorder (OCD)</a></li>
-<li class="page_item page-item-161"><a href="http://interpsychaz.com/testimonials/">Phoenix Psychiatry Testimonials</a></li>
-<li class="page_item page-item-29 page_item_has_children"><a href="http://interpsychaz.com/services/">Phoenix Psychiatry Treatments</a>
+<li class="page_item page-item-42"><a href="/">Home</a></li>
+<li class="page_item page-item-535"><a href="/insomnia-therapy/">Insomnia Therapy</a></li>
+<li class="page_item page-item-93"><a href="/meet-our-team/">Meet Our Phoenix Psychiatry Team</a></li>
+<li class="page_item page-item-21"><a href="/new-patients/">New Patients</a></li>
+<li class="page_item page-item-379"><a href="/newsletter-sign-up/">Newsletter Sign Up</a></li>
+<li class="page_item page-item-538"><a href="/obsessive-compulsive-disorder-ocd/">Obsessive-Compulsive Disorder (OCD)</a></li>
+<li class="page_item page-item-161"><a href="/testimonials/">Phoenix Psychiatry Testimonials</a></li>
+<li class="page_item page-item-29 page_item_has_children"><a href="/services/">Phoenix Psychiatry Treatments</a>
 <ul class="children">
-<li class="page_item page-item-113"><a href="http://interpsychaz.com/services/electroconvulsive-therapy-ect/">Electroconvulsive Therapy (ECT)</a></li>
-<li class="page_item page-item-135"><a href="http://interpsychaz.com/services/medication-management/">Medication Management</a></li>
-<li class="page_item page-item-120"><a href="http://interpsychaz.com/services/spravato-esketamine-nasal-spray/">Spravato (Esketamine) Nasal Spray</a></li>
-<li class="page_item page-item-98"><a href="http://interpsychaz.com/services/tms-therapy/">TMS Therapy</a></li>
+<li class="page_item page-item-113"><a href="/services/electroconvulsive-therapy-ect/">Electroconvulsive Therapy (ECT)</a></li>
+<li class="page_item page-item-135"><a href="/services/medication-management/">Medication Management</a></li>
+<li class="page_item page-item-120"><a href="/services/spravato-esketamine-nasal-spray/">Spravato (Esketamine) Nasal Spray</a></li>
+<li class="page_item page-item-98"><a href="/services/tms-therapy/">TMS Therapy</a></li>
 </ul>
 </li>
-<li class="page_item page-item-47"><a href="http://interpsychaz.com/privacy-policy/">Privacy Policy</a></li>
-<li class="page_item page-item-524"><a href="http://interpsychaz.com/ptsd-trauma-therapy/">PTSD &amp; Trauma</a></li>
-<li class="page_item page-item-57"><a href="http://interpsychaz.com/rate-us/">Rate Us</a></li>
-<li class="page_item page-item-55"><a href="http://interpsychaz.com/review-us/">Review Us</a></li>
-<li class="page_item page-item-525"><a href="http://interpsychaz.com/schizophrenia-psychotic-disorder-treatment/">Schizophrenia &amp; Psychotic Disorder Treatment</a></li>
-<li class="page_item page-item-11 current_page_item"><a aria-current="page" href="http://interpsychaz.com/sitemap/">Sitemap</a></li>
-<li class="page_item page-item-48"><a href="http://interpsychaz.com/terms-and-conditions/">Terms &amp; Conditions</a></li>
-<li class="page_item page-item-12"><a href="http://interpsychaz.com/thank-you/">Thank You</a></li>
-<li class="page_item page-item-407"><a href="http://interpsychaz.com/tms-therapy-temp/">TMS Therapy Temp</a></li>
-<li class="page_item page-item-56"><a href="http://interpsychaz.com/what-can-we-improve/">What Can We Improve</a></li>
-<li class="page_item page-item-479"><a href="http://interpsychaz.com/adolescent-psychiatry/">Young Adult Psychiatry</a></li>
+<li class="page_item page-item-47"><a href="/privacy-policy/">Privacy Policy</a></li>
+<li class="page_item page-item-524"><a href="/ptsd-trauma-therapy/">PTSD &amp; Trauma</a></li>
+<li class="page_item page-item-57"><a href="/rate-us/">Rate Us</a></li>
+<li class="page_item page-item-55"><a href="/review-us/">Review Us</a></li>
+<li class="page_item page-item-525"><a href="/schizophrenia-psychotic-disorder-treatment/">Schizophrenia &amp; Psychotic Disorder Treatment</a></li>
+<li class="page_item page-item-11 current_page_item"><a aria-current="page" href="/sitemap/">Sitemap</a></li>
+<li class="page_item page-item-48"><a href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
+<li class="page_item page-item-12"><a href="/thank-you/">Thank You</a></li>
+<li class="page_item page-item-407"><a href="/tms-therapy-temp/">TMS Therapy Temp</a></li>
+<li class="page_item page-item-56"><a href="/what-can-we-improve/">What Can We Improve</a></li>
+<li class="page_item page-item-479"><a href="/adolescent-psychiatry/">Young Adult Psychiatry</a></li>
 </ul>
 <h2> <strong>Posts</strong> </h2>
 <ul>
 <!-- the loop -->
-<li><a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a></li>
-<li><a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a></li>
-<li><a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a></li>
-<li><a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a></li>
-<li><a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a></li>
-<li><a href="http://interpsychaz.com/adhd-in-females-vs-males-understanding-the-differences/">ADHD in Females vs. Males: Understanding the Differences</a></li>
-<li><a href="http://interpsychaz.com/the-benefits-of-journaling-to-track-progress-in-treatment/">The Benefits of Journaling to Track Progress in Treatment</a></li>
-<li><a href="http://interpsychaz.com/tms-for-teens-a-promising-alternative-to-medications-for-depression/">TMS for Teens: A Promising Alternative to Medications for Depression</a></li>
-<li><a href="http://interpsychaz.com/how-social-media-affects-the-minds-of-teens/">How Social Media Affects the Minds of Teens</a></li>
-<li><a href="http://interpsychaz.com/depression-in-teens-what-parents-need-to-know/">Depression in Teens: What Parents Need to Know</a></li>
-<li><a href="http://interpsychaz.com/lgbtqia-affirming-care-at-interventional-psychiatry-of-arizona/">LGBTQIA+ Affirming CareÂ at Interventional Psychiatry of Arizona</a></li>
-<li><a href="http://interpsychaz.com/understanding-depression-and-treatment-resistant-depression/">Understanding Depression and Treatment-Resistant Depression</a></li>
-<li><a href="http://interpsychaz.com/understanding-the-difference-between-ect-and-tms-for-depression-treatment/">Understanding the Difference Between ECT and TMS for Depression Treatment</a></li>
-<li><a href="http://interpsychaz.com/debunking-myths-and-misconceptions-about-electroconvulsive-therapy-ect/">Debunking Myths and MisconceptionsÂ about Electroconvulsive Therapy (ECT)</a></li>
-<li><a href="http://interpsychaz.com/how-neural-pathways-work-and-the-importance-of-increasing-neuroplasticity-with-tms-and-spravato/">How Neural Pathways Work and the Importance of Increasing Neuroplasticity with TMS and Spravato</a></li>
-<li><a href="http://interpsychaz.com/improved-patient-outcomes-with-close-collaboration-between-therapists-and-tms-providers/">Improved Patient Outcomes withÂ Close Collaboration Between Therapists and TMS Providers</a></li>
-<li><a href="http://interpsychaz.com/the-benefits-of-transcranial-magnetic-stimulation-tms-for-veterans-and-first-responders/">The Benefits of Transcranial Magnetic StimulationÂ (TMS) for Veterans and First Responders</a></li>
-<li><a href="http://interpsychaz.com/maximizing-your-recovery-best-practices-for-integration-after-tms-and-spravato-treatment/">Maximizing Your Recovery: Best Practices for Integration After TMS and Spravato Treatment</a></li>
-<li><a href="http://interpsychaz.com/ect-for-depression-mania-schizophrenia/">ECT for Depression, Mania, and Schizophrenia: Who Can Benefit?</a></li>
-<li><a href="http://interpsychaz.com/the-science-behind-esketamine/">The Science Behind Esketamine: How It Helps With Suicidal Thoughts</a></li>
-<li><a href="http://interpsychaz.com/spravato-a-breakthrough-depression-treatment-at-interventional-psychiatry-of-arizona/">Spravato: A Breakthrough Depression Treatment at Interventional Psychiatry of Arizona</a></li>
-<li><a href="http://interpsychaz.com/understanding-spravato-a-revolutionary-treatment-for-depression/">Understanding Spravato: A Revolutionary Treatment for Depression</a></li>
-<li><a href="http://interpsychaz.com/3-tips-to-motivate-yourself-while-facing-depression/">3 Tips to Motivate Yourself While Facing Depression</a></li>
-<li><a href="http://interpsychaz.com/interventional-psychiatry-of-arizona/">Interventional Psychiatry of Arizona</a></li>
-<li><a href="http://interpsychaz.com/understanding-the-benefits-of-tms-therapy-in-phoenix-az/">Understanding the Benefits of TMS Therapy in Phoenix, AZ</a></li>
-<li><a href="http://interpsychaz.com/exploring-tms-therapy-in-phoenix-for-anxiety-relief/">Exploring TMS Therapy in Phoenix for Anxiety Relief</a></li>
-<li><a href="http://interpsychaz.com/revolutionizing-mental-health-with-tms-therapy-in-phoenix-az-2/">Revolutionizing Mental Health with TMS Therapy in Phoenix, AZ</a></li>
-<li><a href="http://interpsychaz.com/understanding-the-benefits-of-electroconvulsive-therapy-ect-in-phoenix-az/">Understanding the Benefits of Electroconvulsive Therapy (ECT) in Phoenix, AZ</a></li>
-<li><a href="http://interpsychaz.com/the-fast-acting-relief-of-spravato-for-treatment-resistant-depression-in-phoenix-az/">The Fast-Acting Relief of Spravato for Treatment-Resistant Depression in Phoenix, AZ</a></li>
-<li><a href="http://interpsychaz.com/enhancing-mental-health-through-personalized-medication-management/">Enhancing Mental Health Through Personalized Medication Management</a></li>
-<li><a href="http://interpsychaz.com/revolutionizing-mental-health-with-tms-therapy-in-phoenix-az/">Revolutionizing Mental Health with TMS Therapy in Phoenix, AZ</a></li>
-<li><a href="http://interpsychaz.com/understanding-electroconvulsive-therapy-ect-for-severe-depression/">Understanding Electroconvulsive Therapy (ECT) for Severe Depression</a></li>
-<li><a href="http://interpsychaz.com/2024-discover-fast-acting-relief-with-spravato-nasal-spray-in-phoenix-az/">2024: Discover Fast-Acting Relief with Spravato Nasal Spray in Phoenix, AZ</a></li>
-<li><a href="http://interpsychaz.com/tms-therapy-a-revolutionary-treatment-for-depression-and-anxiety/">TMS Therapy: A Revolutionary Treatment for Depression and Anxiety</a></li>
-<li><a href="http://interpsychaz.com/is-electroconvulsive-therapy-ect-effective-learn-more/">Is Electroconvulsive Therapy (ECT) Effective? Learn More</a></li>
-<li><a href="http://interpsychaz.com/embracing-diversity/">Embracing Diversity</a></li>
-<li><a href="http://interpsychaz.com/nurturing-resilience/">Nurturing Resilience</a></li>
-<li><a href="http://interpsychaz.com/breaking-the-silence/">Breaking the Silence</a></li>
-<li><a href="http://interpsychaz.com/electroconvulsive-therapy/">Electroconvulsive Therapy</a></li>
-<li><a href="http://interpsychaz.com/treatment-resistant-depression/">Treatment Resistant Depression</a></li>
-<li><a href="http://interpsychaz.com/anxiety-disorder-causes/">Anxiety Disorder Causes</a></li>
-<li><a href="http://interpsychaz.com/concussions-and-traumatic-brain-injuries-in-athletes/">Concussions and Traumatic Brain Injuries in Athletes</a></li>
-<li><a href="http://interpsychaz.com/addiction-stigma-shame/">Addiction â€“ Stigma &amp; Shame</a></li>
-<li><a href="http://interpsychaz.com/embracing-diversity-intersectionality-and-mental-health/">Embracing Diversity: Intersectionality and Mental Health</a></li>
-<li><a href="http://interpsychaz.com/performance-anxiety-understanding-and-managing-the-pressure-to-perform/">Performance Anxiety: Understanding and Managing the Pressure to Perform</a></li>
-<li><a href="http://interpsychaz.com/addiction-and-the-brain/">Addiction and the Brain</a></li>
-<li><a href="http://interpsychaz.com/mindfulness-intro/">Mindfulness Intro</a></li>
-<li><a href="http://interpsychaz.com/mindfulness-for-stress-reduction/">Mindfulness for Stress Reduction</a></li>
-<li><a href="http://interpsychaz.com/the-impact-of-exercise-on-mental-health/">The Impact of Exercise on Mental Health</a></li>
-<li><a href="http://interpsychaz.com/the-truth-about-ocd/">The Truth About OCD</a></li>
-<li><a href="http://interpsychaz.com/panic-attacks-what-you-should-know/">Panic Attacks â€“ What You Should Know</a></li>
-<li><a href="http://interpsychaz.com/what-are-panic-attacks-and-how-can-you-deal-with-them/">What are panic attacks and how can you deal with them?</a></li>
-<li><a href="http://interpsychaz.com/what-is-ptsd/">What is PTSD?</a></li>
-<li><a href="http://interpsychaz.com/how-to-recognize-the-signs-of-depression/">How to Recognize the Signs of Depression</a></li>
-<li><a href="http://interpsychaz.com/depression-what-you-should-know/">Depression: What You Should Know</a></li>
-<li><a href="http://interpsychaz.com/managing-anxiety-in-the-workplace/">Managing Anxiety in the Workplace</a></li>
-<li><a href="http://interpsychaz.com/5-ways-to-manage-anxiety/">5 Ways to Manage Anxiety</a></li>
-<li><a href="http://interpsychaz.com/obsessive-compulsive-disorder-when-your-thoughts-take-over/">Obsessive Compulsive Disorder: When Your Thoughts Take Over</a></li>
-<li><a href="http://interpsychaz.com/signs-you-might-have-social-anxiety-disorder/">Signs You Might Have Social Anxiety Disorder</a></li>
-<li><a href="http://interpsychaz.com/5-tips-for-dealing-with-social-anxiety/">5 Tips For Dealing With Social Anxiety</a></li>
+<li><a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a></li>
+<li><a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a></li>
+<li><a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a></li>
+<li><a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a></li>
+<li><a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a></li>
+<li><a href="/adhd-in-females-vs-males-understanding-the-differences/">ADHD in Females vs. Males: Understanding the Differences</a></li>
+<li><a href="/the-benefits-of-journaling-to-track-progress-in-treatment/">The Benefits of Journaling to Track Progress in Treatment</a></li>
+<li><a href="/tms-for-teens-a-promising-alternative-to-medications-for-depression/">TMS for Teens: A Promising Alternative to Medications for Depression</a></li>
+<li><a href="/how-social-media-affects-the-minds-of-teens/">How Social Media Affects the Minds of Teens</a></li>
+<li><a href="/depression-in-teens-what-parents-need-to-know/">Depression in Teens: What Parents Need to Know</a></li>
+<li><a href="/lgbtqia-affirming-care-at-interventional-psychiatry-of-arizona/">LGBTQIA+ Affirming Care at Interventional Psychiatry of Arizona</a></li>
+<li><a href="/understanding-depression-and-treatment-resistant-depression/">Understanding Depression and Treatment-Resistant Depression</a></li>
+<li><a href="/understanding-the-difference-between-ect-and-tms-for-depression-treatment/">Understanding the Difference Between ECT and TMS for Depression Treatment</a></li>
+<li><a href="/debunking-myths-and-misconceptions-about-electroconvulsive-therapy-ect/">Debunking Myths and Misconceptions about Electroconvulsive Therapy (ECT)</a></li>
+<li><a href="/how-neural-pathways-work-and-the-importance-of-increasing-neuroplasticity-with-tms-and-spravato/">How Neural Pathways Work and the Importance of Increasing Neuroplasticity with TMS and Spravato</a></li>
+<li><a href="/improved-patient-outcomes-with-close-collaboration-between-therapists-and-tms-providers/">Improved Patient Outcomes with Close Collaboration Between Therapists and TMS Providers</a></li>
+<li><a href="/the-benefits-of-transcranial-magnetic-stimulation-tms-for-veterans-and-first-responders/">The Benefits of Transcranial Magnetic Stimulation (TMS) for Veterans and First Responders</a></li>
+<li><a href="/maximizing-your-recovery-best-practices-for-integration-after-tms-and-spravato-treatment/">Maximizing Your Recovery: Best Practices for Integration After TMS and Spravato Treatment</a></li>
+<li><a href="/ect-for-depression-mania-schizophrenia/">ECT for Depression, Mania, and Schizophrenia: Who Can Benefit?</a></li>
+<li><a href="/the-science-behind-esketamine/">The Science Behind Esketamine: How It Helps With Suicidal Thoughts</a></li>
+<li><a href="/spravato-a-breakthrough-depression-treatment-at-interventional-psychiatry-of-arizona/">Spravato: A Breakthrough Depression Treatment at Interventional Psychiatry of Arizona</a></li>
+<li><a href="/understanding-spravato-a-revolutionary-treatment-for-depression/">Understanding Spravato: A Revolutionary Treatment for Depression</a></li>
+<li><a href="/3-tips-to-motivate-yourself-while-facing-depression/">3 Tips to Motivate Yourself While Facing Depression</a></li>
+<li><a href="/interventional-psychiatry-of-arizona/">Interventional Psychiatry of Arizona</a></li>
+<li><a href="/understanding-the-benefits-of-tms-therapy-in-phoenix-az/">Understanding the Benefits of TMS Therapy in Phoenix, AZ</a></li>
+<li><a href="/exploring-tms-therapy-in-phoenix-for-anxiety-relief/">Exploring TMS Therapy in Phoenix for Anxiety Relief</a></li>
+<li><a href="/revolutionizing-mental-health-with-tms-therapy-in-phoenix-az-2/">Revolutionizing Mental Health with TMS Therapy in Phoenix, AZ</a></li>
+<li><a href="/understanding-the-benefits-of-electroconvulsive-therapy-ect-in-phoenix-az/">Understanding the Benefits of Electroconvulsive Therapy (ECT) in Phoenix, AZ</a></li>
+<li><a href="/the-fast-acting-relief-of-spravato-for-treatment-resistant-depression-in-phoenix-az/">The Fast-Acting Relief of Spravato for Treatment-Resistant Depression in Phoenix, AZ</a></li>
+<li><a href="/enhancing-mental-health-through-personalized-medication-management/">Enhancing Mental Health Through Personalized Medication Management</a></li>
+<li><a href="/revolutionizing-mental-health-with-tms-therapy-in-phoenix-az/">Revolutionizing Mental Health with TMS Therapy in Phoenix, AZ</a></li>
+<li><a href="/understanding-electroconvulsive-therapy-ect-for-severe-depression/">Understanding Electroconvulsive Therapy (ECT) for Severe Depression</a></li>
+<li><a href="/2024-discover-fast-acting-relief-with-spravato-nasal-spray-in-phoenix-az/">2024: Discover Fast-Acting Relief with Spravato Nasal Spray in Phoenix, AZ</a></li>
+<li><a href="/tms-therapy-a-revolutionary-treatment-for-depression-and-anxiety/">TMS Therapy: A Revolutionary Treatment for Depression and Anxiety</a></li>
+<li><a href="/is-electroconvulsive-therapy-ect-effective-learn-more/">Is Electroconvulsive Therapy (ECT) Effective? Learn More</a></li>
+<li><a href="/embracing-diversity/">Embracing Diversity</a></li>
+<li><a href="/nurturing-resilience/">Nurturing Resilience</a></li>
+<li><a href="/breaking-the-silence/">Breaking the Silence</a></li>
+<li><a href="/electroconvulsive-therapy/">Electroconvulsive Therapy</a></li>
+<li><a href="/treatment-resistant-depression/">Treatment Resistant Depression</a></li>
+<li><a href="/anxiety-disorder-causes/">Anxiety Disorder Causes</a></li>
+<li><a href="/concussions-and-traumatic-brain-injuries-in-athletes/">Concussions and Traumatic Brain Injuries in Athletes</a></li>
+<li><a href="/addiction-stigma-shame/">Addiction – Stigma &amp; Shame</a></li>
+<li><a href="/embracing-diversity-intersectionality-and-mental-health/">Embracing Diversity: Intersectionality and Mental Health</a></li>
+<li><a href="/performance-anxiety-understanding-and-managing-the-pressure-to-perform/">Performance Anxiety: Understanding and Managing the Pressure to Perform</a></li>
+<li><a href="/addiction-and-the-brain/">Addiction and the Brain</a></li>
+<li><a href="/mindfulness-intro/">Mindfulness Intro</a></li>
+<li><a href="/mindfulness-for-stress-reduction/">Mindfulness for Stress Reduction</a></li>
+<li><a href="/the-impact-of-exercise-on-mental-health/">The Impact of Exercise on Mental Health</a></li>
+<li><a href="/the-truth-about-ocd/">The Truth About OCD</a></li>
+<li><a href="/panic-attacks-what-you-should-know/">Panic Attacks – What You Should Know</a></li>
+<li><a href="/what-are-panic-attacks-and-how-can-you-deal-with-them/">What are panic attacks and how can you deal with them?</a></li>
+<li><a href="/what-is-ptsd/">What is PTSD?</a></li>
+<li><a href="/how-to-recognize-the-signs-of-depression/">How to Recognize the Signs of Depression</a></li>
+<li><a href="/depression-what-you-should-know/">Depression: What You Should Know</a></li>
+<li><a href="/managing-anxiety-in-the-workplace/">Managing Anxiety in the Workplace</a></li>
+<li><a href="/5-ways-to-manage-anxiety/">5 Ways to Manage Anxiety</a></li>
+<li><a href="/obsessive-compulsive-disorder-when-your-thoughts-take-over/">Obsessive Compulsive Disorder: When Your Thoughts Take Over</a></li>
+<li><a href="/signs-you-might-have-social-anxiety-disorder/">Signs You Might Have Social Anxiety Disorder</a></li>
+<li><a href="/5-tips-for-dealing-with-social-anxiety/">5 Tips For Dealing With Social Anxiety</a></li>
 <!-- end of the loop -->
 </ul>
 </div>
@@ -155,7 +155,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

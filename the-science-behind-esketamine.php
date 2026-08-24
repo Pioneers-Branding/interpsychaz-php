@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -51,17 +51,17 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<p><img alt="" class="aligncenter size-full wp-image-338" data-lazy-sizes="(max-width: 739px) 100vw, 739px" data-lazy-src="/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp 739w, http://interpsychaz.com/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg-800x533.webp 800w" decoding="async" fetchpriority="high" height="492" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20739%20492'%3E%3C/svg%3E" width="739"/><noscript><img alt="" class="aligncenter size-full wp-image-338" decoding="async" fetchpriority="high" height="492" sizes="(max-width: 739px) 100vw, 739px" src="/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp" srcset="/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp 739w, /wp-content/uploads/2025/03/esketamine-nasal-spray.jpg-300x200.webp 300w, /wp-content/uploads/2025/03/esketamine-nasal-spray.jpg-800x533.webp 800w" width="739"/></noscript>When it comes to managing severe depression and suicidal thoughts, traditional treatments can sometimes take weeks to show any effect. This is where esketamine, known by its brand name <a href="/treatments/spravato/">Spravato</a>, comes in as a groundbreaking treatment option. Unlike standard antidepressants, esketamine works quickly and targets the brain in a unique way. Letâ€™s dive into the science behind esketamine and how it helps with suicidal thoughts.</p>
+<p><img alt="" class="aligncenter size-full wp-image-338" data-lazy-sizes="(max-width: 739px) 100vw, 739px" data-lazy-src="/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp 739w, http://interpsychaz.com/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg-800x533.webp 800w" decoding="async" fetchpriority="high" height="492" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20739%20492'%3E%3C/svg%3E" width="739"/><noscript><img alt="" class="aligncenter size-full wp-image-338" decoding="async" fetchpriority="high" height="492" sizes="(max-width: 739px) 100vw, 739px" src="/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp" srcset="/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp 739w, /wp-content/uploads/2025/03/esketamine-nasal-spray.jpg-300x200.webp 300w, /wp-content/uploads/2025/03/esketamine-nasal-spray.jpg-800x533.webp 800w" width="739"/></noscript>When it comes to managing severe depression and suicidal thoughts, traditional treatments can sometimes take weeks to show any effect. This is where esketamine, known by its brand name <a href="/treatments/spravato/">Spravato</a>, comes in as a groundbreaking treatment option. Unlike standard antidepressants, esketamine works quickly and targets the brain in a unique way. Let’s dive into the science behind esketamine and how it helps with suicidal thoughts.</p>
 <h2>What Is Esketamine?</h2>
 <p>Esketamine is a medication that is derived from ketamine, a drug that has been used for anesthesia for many years. However, researchers discovered that ketamine also has powerful antidepressant effects. Esketamine is a more refined version of ketamine and is administered as a nasal spray under the supervision of a healthcare professional.</p>
 <h2>How Does Esketamine Work?</h2>
 <p>To understand how esketamine works, we need to look at the brain. Our brain cells, or neurons, communicate with each other through chemicals called neurotransmitters. One of these neurotransmitters is called glutamate, which plays a key role in brain function and mood regulation.</p>
 <h2>Targeting NMDA Receptors</h2>
-<p>Esketamine targets a specific receptor in the brain called the NMDA receptor. Think of NMDA receptors as tiny doorways on neurons that control the flow of glutamate. When these receptors are overactive, they can cause an imbalance in the brainâ€™s communication system, leading to symptoms of depression and suicidal thoughts.</p>
+<p>Esketamine targets a specific receptor in the brain called the NMDA receptor. Think of NMDA receptors as tiny doorways on neurons that control the flow of glutamate. When these receptors are overactive, they can cause an imbalance in the brain’s communication system, leading to symptoms of depression and suicidal thoughts.</p>
 <p>Esketamine works by blocking these NMDA receptors. By doing so, it helps to restore the balance of neurotransmitters in the brain, leading to an almost immediate improvement in mood. This is why esketamine can be especially effective for people who are experiencing acute suicidal thoughts and need rapid relief.</p>
 <h2>Promoting Brain Healing</h2>
 <p>In addition to balancing neurotransmitters, esketamine also promotes brain healing in other ways. Chronic stress and depression can damage connections between neurons, which can worsen symptoms over time. Esketamine helps to repair these connections and encourages the growth of new neural pathways. This process is called neuroplasticity.</p>
-<p>Think of neuroplasticity as the brainâ€™s ability to reorganize itself by forming new connections. By enhancing neuroplasticity, esketamine helps the brain to recover from the damage caused by prolonged depression and stress, leading to a more lasting improvement in mood and cognitive function.</p>
+<p>Think of neuroplasticity as the brain’s ability to reorganize itself by forming new connections. By enhancing neuroplasticity, esketamine helps the brain to recover from the damage caused by prolonged depression and stress, leading to a more lasting improvement in mood and cognitive function.</p>
 <h2>Rapid Relief for Suicidal Thoughts</h2>
 <p>One of the most significant advantages of esketamine is its ability to provide rapid relief. Traditional antidepressants can take weeks to start working, which can be too long for someone in a mental health crisis. Esketamine, on the other hand, can start to show effects within hours. This rapid action can be life-saving for individuals experiencing severe suicidal thoughts.</p>
 <h2>How Is Esketamine Administered?</h2>
@@ -90,7 +90,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

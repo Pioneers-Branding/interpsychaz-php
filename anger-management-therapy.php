@@ -33,7 +33,7 @@ require_once __DIR__ . '/includes/header.php';
 <p>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016<br/>
 <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></p>
 <h3>Anger Management Counseling in Phoenix, AZ</h3>
-<p>Everyone feels angry sometimesâ€”but when anger becomes frequent, explosive, or damaging to your relationships, work, or well-being, itâ€™s time to seek professional help. At InterPsych AZ, we provide effective, confidential anger management treatment for adults, teens, and professionals.</p>
+<p>Everyone feels angry sometimes—but when anger becomes frequent, explosive, or damaging to your relationships, work, or well-being, it’s time to seek professional help. At InterPsych AZ, we provide effective, confidential anger management treatment for adults, teens, and professionals.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -44,7 +44,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-flex">
 <div class="dm-full">
 <h3>What is Anger Management Treatment?</h3>
-<p>Anger management treatment helps individuals understand the root causes of their anger, recognize triggers, and develop healthier coping mechanisms. Itâ€™s not about â€œgetting rid ofâ€ angerâ€”itâ€™s about learning to respond, not react.</p>
+<p>Anger management treatment helps individuals understand the root causes of their anger, recognize triggers, and develop healthier coping mechanisms. It’s not about “getting rid of” anger—it’s about learning to respond, not react.</p>
 <p>Unmanaged anger may result in:</p>
 <ul>
 <li>Verbal or physical aggression</li>
@@ -132,7 +132,7 @@ Improve problem-solving and de-escalation skills in relationships, work, and fam
 <p>Call <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a><br/>
 2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016</p>
 <p>Book Your First Session Now<br/>
-Take back control of your reactionsâ€”and your relationships.</p>
+Take back control of your reactions—and your relationships.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -158,7 +158,7 @@ Take back control of your reactionsâ€”and your relationships.</p>
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

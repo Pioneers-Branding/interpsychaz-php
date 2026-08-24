@@ -27,25 +27,25 @@ require_once __DIR__ . '/includes/header.php';
 <h2 class="wp-block-heading">Who we are</h2>
 <p>Our website address is: https://interpsychaz.com.</p>
 <h2 class="wp-block-heading">Comments</h2>
-<p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitorâ€™s IP address and browser user agent string to help spam detection.</p>
+<p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor’s IP address and browser user agent string to help spam detection.</p>
 <p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p>
 <h2 class="wp-block-heading">Media</h2>
 <p>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p>
 <h2 class="wp-block-heading" id="cookies">Cookies</h2>
 <p>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p>
 <p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p>
-<p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select â€œRemember Meâ€, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p>
+<p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select “Remember Me”, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p>
 <p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p>
 <p><!-- dmm-cg:cookies:start --></p>
 <div class="dmm-cg-policy-block" style="background:whitesmoke;padding:20px;border-radius:6px;">
 <h3>Third-party cookies and tracking technologies</h3>
 <p>The cookies described above are set by Interventional Psychiatry of Arizona itself. This part explains what else is stored on your device, what information leaves this site as you use it, and who receives it.</p>
-<p>A cookie is a small file a site stores in your browser. This also covers the other techniques that do the same job â€” local storage, tracking pixels, and scripts embedded from other companies. They are all treated the same way here.</p>
+<p>A cookie is a small file a site stores in your browser. This also covers the other techniques that do the same job — local storage, tracking pixels, and scripts embedded from other companies. They are all treated the same way here.</p>
 <h3>Information collected as you browse</h3>
 <p>When your browser loads a resource from another company, that request necessarily reveals your IP address, the type of browser and device you are using, and the address of the page you were reading at the time. That is true of every embedded map, video, booking widget, font and analytics script, and it happens whether or not you interact with it.</p>
 <h3>Categories</h3>
 <p><strong>Strictly necessary.</strong> Session handling, security, and the record of the choice you make about this policy. These are never optional and nothing here is sent to another company.</p>
-<p><strong>Functional.</strong> Features you would notice the absence of â€” embedded maps and video, appointment booking, translation, and spam protection on forms.</p>
+<p><strong>Functional.</strong> Features you would notice the absence of — embedded maps and video, appointment booking, translation, and spam protection on forms.</p>
 <p><strong>Analytics.</strong> Measures which pages are read and how people move through the site, so it can be improved.</p>
 <p><strong>Marketing.</strong> Advertising, retargeting and working out which campaigns brought people here.</p>
 <h3>Companies that receive data</h3>
@@ -70,7 +70,7 @@ require_once __DIR__ . '/includes/header.php';
 <h2 class="wp-block-heading">Where your data is sent</h2>
 <p>Visitor comments may be checked through an automated spam detection service.</p>
 <h2>SMS Opt In Privacy Policy</h2>
-<p>Interventional Psychiatry of Arizona (â€œwe,â€ â€œus,â€ â€œourâ€) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and share information when you opt in to receive SMS messages from us.</p>
+<p>Interventional Psychiatry of Arizona (“we,” “us,” “our”) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and share information when you opt in to receive SMS messages from us.</p>
 <h3>Information We Collect</h3>
 <p>When you opt in to receive SMS messages, we collect:</p>
 <ul>
@@ -80,13 +80,13 @@ require_once __DIR__ . '/includes/header.php';
 <h3>How We Use Your Information</h3>
 <p>We use your information to:</p>
 <ul>
-<li>Send you the SMS messages youâ€™ve opted in to receive</li>
+<li>Send you the SMS messages you’ve opted in to receive</li>
 <li>Provide updates, promotions, or other relevant content based on your preferences</li>
 </ul>
 <h3>Sharing Your Information</h3>
 <p>We do not share your phone number or SMS opt-in information with third parties for marketing purposes.</p>
 <h3>Your Rights</h3>
-<p>You can opt out of receiving SMS messages at any time by replying with â€œSTOPâ€ to any message we send you.</p>
+<p>You can opt out of receiving SMS messages at any time by replying with “STOP” to any message we send you.</p>
 <h3>Data Security</h3>
 <p>We implement reasonable measures to protect your personal information from unauthorized access or disclosure.<br/>
 If you have questions or concerns about our privacy practices, contact us at <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a>.</p>

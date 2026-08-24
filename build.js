@@ -16,7 +16,7 @@ function findPhpFiles(dir, baseDir = dir) {
     const stat = fs.statSync(fullPath);
     if (stat.isDirectory() && !['wp-content', 'wp-includes', '_external', '.git', 'includes', 'public', 'node_modules'].includes(item)) {
       findPhpFiles(fullPath, baseDir);
-    } else if (stat.isFile() && item.endsWith('.php') && item !== 'config.php' && !fullPath.includes('includes')) {
+    } else if (stat.isFile() && item.endsWith('.php') && item !== 'config.php' && item !== 'router.php' && !fullPath.includes('includes')) {
       const relative = path.relative(baseDir, fullPath).replace(/\.php$/, '');
       pages.push({
         phpFile: fullPath,
@@ -75,7 +75,7 @@ if (fs.existsSync(htaccessSrc)) {
 async function renderPages() {
   console.log('Starting PHP server...');
   
-  const phpProcess = spawn('php', ['-S', '127.0.0.1:8888', '-t', SRC_DIR], {
+  const phpProcess = spawn('php', ['-S', '127.0.0.1:8888', 'router.php'], {
     cwd: SRC_DIR,
     stdio: 'ignore',
   });

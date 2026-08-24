@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -51,19 +51,19 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<p><img alt="" class="aligncenter size-full wp-image-189" data-lazy-sizes="(max-width: 740px) 100vw, 740px" data-lazy-src="/wp-content/uploads/2025/03/blog2.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/blog2.jpg.webp 740w, http://interpsychaz.com/wp-content/uploads/2025/03/blog2.jpg-300x277.webp 300w" decoding="async" fetchpriority="high" height="683" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20740%20683'%3E%3C/svg%3E" width="740"/><noscript><img alt="" class="aligncenter size-full wp-image-189" decoding="async" fetchpriority="high" height="683" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog2.jpg.webp" srcset="/wp-content/uploads/2025/03/blog2.jpg.webp 740w, /wp-content/uploads/2025/03/blog2.jpg-300x277.webp 300w" width="740"/></noscript>Anxiety is a normal emotion that we all experience at one point or another. However, for some people, anxiety can be more constant and overwhelming, making everyday activities and tasks seem impossible. If youâ€™re struggling with anxiety, know that youâ€™re not aloneâ€”an estimated 40 million adults in the United States suffer from anxiety disorders. Here are five ways to manage anxiety and start feeling better.</p>
+<p><img alt="" class="aligncenter size-full wp-image-189" data-lazy-sizes="(max-width: 740px) 100vw, 740px" data-lazy-src="/wp-content/uploads/2025/03/blog2.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/blog2.jpg.webp 740w, http://interpsychaz.com/wp-content/uploads/2025/03/blog2.jpg-300x277.webp 300w" decoding="async" fetchpriority="high" height="683" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20740%20683'%3E%3C/svg%3E" width="740"/><noscript><img alt="" class="aligncenter size-full wp-image-189" decoding="async" fetchpriority="high" height="683" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog2.jpg.webp" srcset="/wp-content/uploads/2025/03/blog2.jpg.webp 740w, /wp-content/uploads/2025/03/blog2.jpg-300x277.webp 300w" width="740"/></noscript>Anxiety is a normal emotion that we all experience at one point or another. However, for some people, anxiety can be more constant and overwhelming, making everyday activities and tasks seem impossible. If you’re struggling with anxiety, know that you’re not alone—an estimated 40 million adults in the United States suffer from anxiety disorders. Here are five ways to manage anxiety and start feeling better.</p>
 <p>1. Identify Your Triggers</p>
 <p>Anxiety is often triggered by specific situations, people, or places. Once you identify what sets off your anxiety, you can start to avoid those triggers or be better prepared to deal with them.</p>
 <p>2. Practice Relaxation Techniques</p>
 <p>There are many different relaxation techniques that can help reduce anxiety, including deep breathing exercises, progressive muscle relaxation, and mindfulness meditation. Find one (or a few!) that work for you and make it a habit to do them regularly.</p>
 <p>3. Get Moving</p>
-<p>Exercise is a great way to reduce stress and ease anxiety. It doesnâ€™t have to be anything overly strenuousâ€”a simple walk around the block can make a big difference. Just make sure to get moving every day.</p>
+<p>Exercise is a great way to reduce stress and ease anxiety. It doesn’t have to be anything overly strenuous—a simple walk around the block can make a big difference. Just make sure to get moving every day.</p>
 <p>4. Connect with Others</p>
-<p>Isolation can make anxiety worse, so itâ€™s important to maintain social connections even when youâ€™re feeling anxious. Talk to friends and family, join a support group, or volunteer in your community. Doing good for others can also help take the focus off of your own worries and anxieties.</p>
+<p>Isolation can make anxiety worse, so it’s important to maintain social connections even when you’re feeling anxious. Talk to friends and family, join a support group, or volunteer in your community. Doing good for others can also help take the focus off of your own worries and anxieties.</p>
 <p>5. Seek Professional Help</p>
-<p>If your anxiety is severe and impacting your ability to function in daily life, donâ€™t hesitate to seek professional help from a therapist or counselor. They can provide additional support and guidance on how to best manage your anxiety disorder.</p>
+<p>If your anxiety is severe and impacting your ability to function in daily life, don’t hesitate to seek professional help from a therapist or counselor. They can provide additional support and guidance on how to best manage your anxiety disorder.</p>
 <p>Conclusion:</p>
-<p>Anxiety is a normal emotion that we all experience at one point or another; however, for some people, it can be more constant and overwhelming, making everyday activities and tasks seem impossible. If youâ€™re struggling with anxiety, there are things you can do to ease your symptoms. Identify your triggers, practice relaxation techniques, get moving every day, connect with others, and seek professional help if needed. Making even small changes in these areas can make a big difference in how youâ€™re feeling day-to-day.</p>
+<p>Anxiety is a normal emotion that we all experience at one point or another; however, for some people, it can be more constant and overwhelming, making everyday activities and tasks seem impossible. If you’re struggling with anxiety, there are things you can do to ease your symptoms. Identify your triggers, practice relaxation techniques, get moving every day, connect with others, and seek professional help if needed. Making even small changes in these areas can make a big difference in how you’re feeling day-to-day.</p>
  </div>
 </div><!--.post-single-content-->
 </div><!--.single_post-->
@@ -86,7 +86,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

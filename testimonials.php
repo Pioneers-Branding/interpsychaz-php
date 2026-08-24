@@ -1,7 +1,7 @@
 ﻿<?php
 $pageTitle = 'Phoenix Psychiatry Testimonials | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page page-id-160';
-$pageDescription = 'Phoenix Psychiatry Testimonials - After working with my Psychologist and Psychiatrist for over 2 months, theyâ€™ve recommended I undergo ECT (in addition to the medications that Iâ€™m';
+$pageDescription = 'Phoenix Psychiatry Testimonials - After working with my Psychologist and Psychiatrist for over 2 months, they’ve recommended I undergo ECT (in addition to the medications that I’m';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/testimonials/';
@@ -25,7 +25,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="post-content">
 <div class="container">
 <div class="testimonial-box-dm">
-<blockquote><p>After working with my Psychologist and Psychiatrist for over 2 months, theyâ€™ve recommended I undergo ECT (in addition to the medications that Iâ€™m prescribed). My Psychiatrist heard of Interventional Psychiatry of Arizona and said they were a good option.</p>
+<blockquote><p>After working with my Psychologist and Psychiatrist for over 2 months, they’ve recommended I undergo ECT (in addition to the medications that I’m prescribed). My Psychiatrist heard of Interventional Psychiatry of Arizona and said they were a good option.</p>
 <p>Dr. Gomez was able to see me quickly for a Psychiatric Evaluation. We determined that I have a strong case to undergo ECT treatment.</p>
 <p>The Dr. was very thorough and educational, especially regarding the beneficial impacts of ECT.</p>
 <p>There was plenty of time to ask any questions I had.</p>
@@ -36,11 +36,11 @@ require_once __DIR__ . '/includes/header.php';
 <p>Dominick</p></blockquote>
 <blockquote><p>My experience was great an I look forward to seeing how everything comes together for relief</p>
 <p>Shannon</p></blockquote>
-<blockquote><p>â€œSeeing Dr. Gomez has really made a difference in helping me stay stable with my bipolar disorder. If I tend to be slipping, he is able to see that and suggest that I take a closer look at what is happening and has me make the suggestions on how to correct what is going on. Personally for me and my family, He has been a life saver.â€</p>
+<blockquote><p>“Seeing Dr. Gomez has really made a difference in helping me stay stable with my bipolar disorder. If I tend to be slipping, he is able to see that and suggest that I take a closer look at what is happening and has me make the suggestions on how to correct what is going on. Personally for me and my family, He has been a life saver.”</p>
 <p>Carol</p></blockquote>
-<blockquote><p>â€œDr. Gomez is amazing! I canâ€™t say enough nice things about him and his staff. I wish there were more doctors like him. He truly has the patientâ€™s best interest in mind with every decision he makes about your care.â€</p>
+<blockquote><p>“Dr. Gomez is amazing! I can’t say enough nice things about him and his staff. I wish there were more doctors like him. He truly has the patient’s best interest in mind with every decision he makes about your care.”</p>
 <p>Michael</p></blockquote>
-<blockquote><p>â€œDr Gomez is an Amazing caring doctor. My mother has been seeing him for her depression for about 3 years. She is a happy person again.â€</p>
+<blockquote><p>“Dr Gomez is an Amazing caring doctor. My mother has been seeing him for her depression for about 3 years. She is a happy person again.”</p>
 <p>ET</p></blockquote>
 <blockquote><p>I had a great experience with Dr. Gomez. He was kind, patient, and compassionate to my care. He took the time to address all my concerns. I am very pleased.</p>
 <p>Anonymous</p></blockquote>

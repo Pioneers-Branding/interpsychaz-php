@@ -1,7 +1,7 @@
 ﻿<?php
 $pageTitle = '5 Tips For Dealing With Social Anxiety | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = '5 Tips For Dealing With Social Anxiety - Itâ€™s estimated that around 7% of the population suffers from social anxiety, making it one of the most common mental health disorders. If youâ€™re someone';
+$pageDescription = '5 Tips For Dealing With Social Anxiety - It’s estimated that around 7% of the population suffers from social anxiety, making it one of the most common mental health disorders. If you’re someone';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/5-tips-for-dealing-with-social-anxiety/';
@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -52,14 +52,14 @@ require_once __DIR__ . '/includes/header.php';
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
 <p><img alt="" class="aligncenter size-full wp-image-170" data-lazy-sizes="(max-width: 740px) 100vw, 740px" data-lazy-src="/wp-content/uploads/2025/03/blog5.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/blog5.jpg.webp 740w, http://interpsychaz.com/wp-content/uploads/2025/03/blog5.jpg-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/blog5.jpg-800x533.webp 800w" decoding="async" fetchpriority="high" height="494" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20740%20494'%3E%3C/svg%3E" width="740"/><noscript><img alt="" class="aligncenter size-full wp-image-170" decoding="async" fetchpriority="high" height="494" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog5.jpg.webp" srcset="/wp-content/uploads/2025/03/blog5.jpg.webp 740w, /wp-content/uploads/2025/03/blog5.jpg-300x200.webp 300w, /wp-content/uploads/2025/03/blog5.jpg-800x533.webp 800w" width="740"/></noscript></p>
-<p>Itâ€™s estimated that around 7% of the population suffers from social anxiety, making it one of the most common mental health disorders. If youâ€™re someone who struggles with social anxiety, youâ€™re probably all too familiar with the feel of dread and panic that come with being in social situations. But there is hope!</p>
+<p>It’s estimated that around 7% of the population suffers from social anxiety, making it one of the most common mental health disorders. If you’re someone who struggles with social anxiety, you’re probably all too familiar with the feel of dread and panic that come with being in social situations. But there is hope!</p>
 <p>Here are 5 tips for dealing with social anxiety:</p>
 <p>1. Understand your triggers. What are the situations that make you feel most anxious? Once you know your triggers, you can start to plan for how to deal with them.</p>
 <p>2. Breathe. It sounds simple, but deep breathing can help to calm your nerves and ease anxiety.</p>
-<p>3. Challenge your negative thoughts. When youâ€™re feeling anxious, itâ€™s easy to fall into a spiral of negative thinking. But those thoughts are usually not accurate! Challenge them by asking yourself if thereâ€™s any evidence to support them.</p>
+<p>3. Challenge your negative thoughts. When you’re feeling anxious, it’s easy to fall into a spiral of negative thinking. But those thoughts are usually not accurate! Challenge them by asking yourself if there’s any evidence to support them.</p>
 <p>4. Practice exposure therapy. This is when you gradually expose yourself to the situations that make you anxious. Start small, and work your way up to the bigger fear-inducing situations.</p>
-<p>5. Seek professional help. If you find that youâ€™re struggling to cope with your social anxiety on your own, donâ€™t hesitate to seek professional help from a therapist or counselor.</p>
-<p>Dealing with social anxiety can be tough, but there are things that you can do to ease your anxiety and make social situations more manageable. If you find that your anxiety is impacting your quality of life, donâ€™t hesitate to seek professional help and call us at</p>
+<p>5. Seek professional help. If you find that you’re struggling to cope with your social anxiety on your own, don’t hesitate to seek professional help from a therapist or counselor.</p>
+<p>Dealing with social anxiety can be tough, but there are things that you can do to ease your anxiety and make social situations more manageable. If you find that your anxiety is impacting your quality of life, don’t hesitate to seek professional help and call us at</p>
 <p>(602) 824-8404</p>
  </div>
 </div><!--.post-single-content-->
@@ -83,7 +83,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

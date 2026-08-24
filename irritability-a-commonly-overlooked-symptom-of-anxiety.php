@@ -25,12 +25,12 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
 <h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
@@ -52,28 +52,28 @@ require_once __DIR__ . '/includes/header.php';
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
 <figure class="wp-block-image size-large"><img alt="Irritability: A Commonly Overlooked Symptom of Anxiety" class="wp-image-620" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="/wp-content/uploads/2025/09/Irritability-A-Commonly-Overlooked-Symptom-of-Anxiety-1024x685.png" data-lazy-srcset="/wp-content/uploads/2025/09/Irritability-A-Commonly-Overlooked-Symptom-of-Anxiety-1024x685.png 1024w, /wp-content/uploads/2025/09/Irritability-A-Commonly-Overlooked-Symptom-of-Anxiety-300x200.png 300w, /wp-content/uploads/2025/09/Irritability-A-Commonly-Overlooked-Symptom-of-Anxiety-768x513.png 768w, /wp-content/uploads/2025/09/Irritability-A-Commonly-Overlooked-Symptom-of-Anxiety.png 1300w" decoding="async" fetchpriority="high" height="685" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20685'%3E%3C/svg%3E" width="1024"/><noscript><img alt="Irritability: A Commonly Overlooked Symptom of Anxiety" class="wp-image-620" decoding="async" fetchpriority="high" height="685" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2025/09/Irritability-A-Commonly-Overlooked-Symptom-of-Anxiety-1024x685.png" srcset="/wp-content/uploads/2025/09/Irritability-A-Commonly-Overlooked-Symptom-of-Anxiety-1024x685.png 1024w, /wp-content/uploads/2025/09/Irritability-A-Commonly-Overlooked-Symptom-of-Anxiety-300x200.png 300w, /wp-content/uploads/2025/09/Irritability-A-Commonly-Overlooked-Symptom-of-Anxiety-768x513.png 768w, /wp-content/uploads/2025/09/Irritability-A-Commonly-Overlooked-Symptom-of-Anxiety.png 1300w" width="1024"/></noscript></figure>
-<p class="wp-block-paragraph">When most people think about anxiety, they picture racing thoughts, a pounding heart, or constant worry. While these symptoms are well-known, one of the most overlooked signs of anxiety is <strong>irritability</strong>. Many individuals experiencing anxiety find themselves snapping at loved ones, feeling restless, or becoming easily frustratedâ€”even when they donâ€™t necessarily feel â€œworried.â€</p>
+<p class="wp-block-paragraph">When most people think about anxiety, they picture racing thoughts, a pounding heart, or constant worry. While these symptoms are well-known, one of the most overlooked signs of anxiety is <strong>irritability</strong>. Many individuals experiencing anxiety find themselves snapping at loved ones, feeling restless, or becoming easily frustrated—even when they don’t necessarily feel “worried.”</p>
 <p class="wp-block-paragraph">At <strong>Interventional Psychiatry of Arizona</strong>, we believe understanding this connection is essential for early recognition and effective treatment.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Why Irritability Happens with Anxiety</strong></h2>
-<p class="wp-block-paragraph">Anxiety activates the bodyâ€™s <strong>fight-or-flight response</strong>, leading to a surge of stress hormones. This heightened state of alertness can make a person feel tense, restless, or on edge. Over time, the constant strain can spill over into irritability, making even small inconveniences feel overwhelming.</p>
+<p class="wp-block-paragraph">Anxiety activates the body’s <strong>fight-or-flight response</strong>, leading to a surge of stress hormones. This heightened state of alertness can make a person feel tense, restless, or on edge. Over time, the constant strain can spill over into irritability, making even small inconveniences feel overwhelming.</p>
 <p class="wp-block-paragraph">Common contributing factors include:</p>
 <ul class="wp-block-list">
-<li><strong>Sleep disturbances</strong> â€“ Anxiety often disrupts sleep, which amplifies mood swings.<br/></li>
-<li><strong>Cognitive overload</strong> â€“ Worrying consumes mental energy, leaving little room for patience.<br/></li>
-<li><strong>Physical tension</strong> â€“ Tight muscles and restlessness can translate into short-tempered behavior.<br/></li>
+<li><strong>Sleep disturbances</strong> – Anxiety often disrupts sleep, which amplifies mood swings.<br/></li>
+<li><strong>Cognitive overload</strong> – Worrying consumes mental energy, leaving little room for patience.<br/></li>
+<li><strong>Physical tension</strong> – Tight muscles and restlessness can translate into short-tempered behavior.<br/></li>
 </ul>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>The Impact of Untreated Irritability</strong></h2>
-<p class="wp-block-paragraph">Ignoring irritability linked to anxiety can have lasting consequences. Relationships may suffer, work performance may decline, and overall quality of life can worsen. Many people mistakenly think they simply have a â€œbad temperâ€ when, in fact, their underlying anxiety is the true cause.</p>
+<p class="wp-block-paragraph">Ignoring irritability linked to anxiety can have lasting consequences. Relationships may suffer, work performance may decline, and overall quality of life can worsen. Many people mistakenly think they simply have a “bad temper” when, in fact, their underlying anxiety is the true cause.</p>
 <p class="wp-block-paragraph">By addressing the root of anxiety, patients often notice improvements not only in their mood but also in their ability to connect and communicate with others calmly.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Q&amp;A: Irritability and Anxiety</strong></h2>
 <p class="wp-block-paragraph"><strong>Q: Can irritability really be a main sign of anxiety, even without constant worrying?</strong><strong><br/></strong> <strong>A:</strong> Yes. Some individuals may not recognize traditional anxious thoughts but still live in a state of restlessness and tension. Irritability can be the most noticeable outward symptom of their anxiety.</p>
-<p class="wp-block-paragraph"><strong>Q: How can I tell if my irritability is caused by anxiety or something else?</strong><strong><br/></strong> <strong>A:</strong> A professional evaluation can help. Irritability from anxiety is often accompanied by other signs such as trouble sleeping, muscle tension, difficulty concentrating, or feelings of being â€œon edge.â€</p>
+<p class="wp-block-paragraph"><strong>Q: How can I tell if my irritability is caused by anxiety or something else?</strong><strong><br/></strong> <strong>A:</strong> A professional evaluation can help. Irritability from anxiety is often accompanied by other signs such as trouble sleeping, muscle tension, difficulty concentrating, or feelings of being “on edge.”</p>
 <p class="wp-block-paragraph"><strong>Q: What treatment options help with anxiety-related irritability?</strong><strong><br/></strong> <strong>A:</strong> Treatments may include psychotherapy, lifestyle strategies such as improved sleep hygiene, mindfulness practices, and in some cases, medications or interventional approaches like TMS (Transcranial Magnetic Stimulation).</p>
 <p class="wp-block-paragraph"><strong>Q: Does treating anxiety really reduce irritability?</strong><strong><br/></strong> <strong>A:</strong> Absolutely. Once anxiety is managed, many patients report greater calmness, more patience, and improved relationships with those around them.</p>
-<p class="wp-block-paragraph"><strong>Q: When should I seek professional help?</strong><strong><br/></strong> <strong>A:</strong> If irritability is frequent, affecting your relationships, or interfering with daily life, itâ€™s time to reach out to a mental health professional.</p>
+<p class="wp-block-paragraph"><strong>Q: When should I seek professional help?</strong><strong><br/></strong> <strong>A:</strong> If irritability is frequent, affecting your relationships, or interfering with daily life, it’s time to reach out to a mental health professional.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Take the First Step Toward Relief</strong></h2>
 <p class="wp-block-paragraph">If you or someone you love struggles with irritability, it may be a sign of underlying anxiety. The good news is that help is available. At <strong>Interventional Psychiatry of Arizona</strong>, our compassionate team specializes in advanced treatments tailored to your needs.</p>
@@ -102,7 +102,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

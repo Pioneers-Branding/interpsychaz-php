@@ -1,7 +1,7 @@
 ﻿<?php
-$pageTitle = 'Panic Attacks â€“ What You Should Know | Interventional Psychiatry of Arizona';
+$pageTitle = 'Panic Attacks – What You Should Know | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'Panic Attacks â€“ What You Should Know - Many people suffer from panic attacks, but donâ€™t know what they are or how to deal with them. If youâ€™re one of those people, this blog post is for you. In';
+$pageDescription = 'Panic Attacks – What You Should Know - Many people suffer from panic attacks, but don’t know what they are or how to deal with them. If you’re one of those people, this blog post is for you. In';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/panic-attacks-what-you-should-know/';
@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single" data-rocket-location-hash="56c67d6aea37e5ce914ed3cbb1a24e45" id="page">
 <section class="page-header" data-rocket-location-hash="3aac77729f1c7e705171ebffb90e528f">
 <div class="container">
-<h1 class="page-title">Panic Attacks â€“ What You Should Know</h1>
+<h1 class="page-title">Panic Attacks – What You Should Know</h1>
 </div>
 </section>
 <article class="article dm-full-width" data-rocket-location-hash="ec774fc978476739b024a7aaae22a73a">
@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -51,13 +51,13 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<p><img alt="" class="aligncenter size-full wp-image-219" data-lazy-sizes="(max-width: 740px) 100vw, 740px" data-lazy-src="/wp-content/uploads/2025/03/blog6.jpg-1.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/blog6.jpg-1.webp 740w, http://interpsychaz.com/wp-content/uploads/2025/03/blog6.jpg-1-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/blog6.jpg-1-800x533.webp 800w" decoding="async" fetchpriority="high" height="493" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20740%20493'%3E%3C/svg%3E" width="740"/><noscript><img alt="" class="aligncenter size-full wp-image-219" decoding="async" fetchpriority="high" height="493" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog6.jpg-1.webp" srcset="/wp-content/uploads/2025/03/blog6.jpg-1.webp 740w, /wp-content/uploads/2025/03/blog6.jpg-1-300x200.webp 300w, /wp-content/uploads/2025/03/blog6.jpg-1-800x533.webp 800w" width="740"/></noscript>Many people suffer from panic attacks, but donâ€™t know what they are or how to deal with them. If youâ€™re one of those people, this blog post is for you. In this post, weâ€™ll give you a brief overview of panic attacks and some tips on how to deal with them.</p>
+<p><img alt="" class="aligncenter size-full wp-image-219" data-lazy-sizes="(max-width: 740px) 100vw, 740px" data-lazy-src="/wp-content/uploads/2025/03/blog6.jpg-1.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/blog6.jpg-1.webp 740w, http://interpsychaz.com/wp-content/uploads/2025/03/blog6.jpg-1-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/blog6.jpg-1-800x533.webp 800w" decoding="async" fetchpriority="high" height="493" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20740%20493'%3E%3C/svg%3E" width="740"/><noscript><img alt="" class="aligncenter size-full wp-image-219" decoding="async" fetchpriority="high" height="493" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog6.jpg-1.webp" srcset="/wp-content/uploads/2025/03/blog6.jpg-1.webp 740w, /wp-content/uploads/2025/03/blog6.jpg-1-300x200.webp 300w, /wp-content/uploads/2025/03/blog6.jpg-1-800x533.webp 800w" width="740"/></noscript>Many people suffer from panic attacks, but don’t know what they are or how to deal with them. If you’re one of those people, this blog post is for you. In this post, we’ll give you a brief overview of panic attacks and some tips on how to deal with them.</p>
 <p>What is a Panic Attack?</p>
 <p>A panic attack is a sudden episode of intense fear or anxiety that can cause physical symptoms such as a racing heart, shortness of breath, and dizziness. A panic attack typically lasts for a few minutes, but the experience can be so terrifying that it feels like an eternity.</p>
 <p>What Causes Panic Attacks?</p>
 <p>There is no one definitive answer to this question. However, experts believe that panic attacks can be triggered by a variety of factors, including stress, genetics, and certain medical conditions.</p>
 <p>How Can I Deal With Panic Attacks?</p>
-<p>If you suffer from panic attacks, there are a few things you can do to try to lessen their frequency or severity. First, itâ€™s important to understand what triggers your panic attacks and try to avoid those triggers if possible. Second, deep breathing exercises can help to calm your body and mind during an attack. Third, talking to a therapist or counselor about your experiences can also be helpful. And finally, medication may be prescribed by a doctor if the above methods do not provide relief.</p>
+<p>If you suffer from panic attacks, there are a few things you can do to try to lessen their frequency or severity. First, it’s important to understand what triggers your panic attacks and try to avoid those triggers if possible. Second, deep breathing exercises can help to calm your body and mind during an attack. Third, talking to a therapist or counselor about your experiences can also be helpful. And finally, medication may be prescribed by a doctor if the above methods do not provide relief.</p>
 <p>Panic attacks can be scary and debilitating, but there are ways to cope with them. If you suffer from panic attacks, remember that you are not alone and there are people who can help you.</p>
  </div>
 </div><!--.post-single-content-->
@@ -81,7 +81,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

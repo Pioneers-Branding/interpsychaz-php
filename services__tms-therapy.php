@@ -31,14 +31,14 @@ require_once __DIR__ . '/includes/header.php';
 </div>
 <div class="dm-half wow fadeInLeft dm-space">
 <h3>Learn More about TMS Therapy</h3>
-<p class="" data-end="330" data-start="40"><strong data-end="83" data-start="40">Transcranial Magnetic Stimulation (TMS)</strong> is a <strong data-end="115" data-start="89">non-invasive treatment</strong> that uses MRI technology to stimulate specific brain regions involved in mood regulation. It has been <strong data-end="253" data-start="218">proven effective for depression</strong> and is a great option for those who havenâ€™t found relief with medications.</p>
-<p class="" data-end="438" data-start="332">âœ” <strong data-end="394" data-start="334">50-60% of patients experience significant symptom relief</strong><br data-end="397" data-start="394"/>âœ” <strong data-end="436" data-start="399">30-40% achieve complete remission</strong></p>
+<p class="" data-end="330" data-start="40"><strong data-end="83" data-start="40">Transcranial Magnetic Stimulation (TMS)</strong> is a <strong data-end="115" data-start="89">non-invasive treatment</strong> that uses MRI technology to stimulate specific brain regions involved in mood regulation. It has been <strong data-end="253" data-start="218">proven effective for depression</strong> and is a great option for those who haven’t found relief with medications.</p>
+<p class="" data-end="438" data-start="332">✔ <strong data-end="394" data-start="334">50-60% of patients experience significant symptom relief</strong><br data-end="397" data-start="394"/>✔ <strong data-end="436" data-start="399">30-40% achieve complete remission</strong></p>
 <h3 class="" data-end="471" data-start="440"><strong data-end="469" data-start="444">Is TMS Right for You?</strong></h3>
-<p class="" data-end="716" data-start="472">âœ… Youâ€™ve tried <strong data-end="510" data-start="487">2-4 antidepressants</strong> without success or experienced intolerable side effects.<br data-end="570" data-start="567"/>âœ… Youâ€™re seeking a <strong data-end="617" data-start="589">non-invasive alternative</strong> to medications.<br data-end="636" data-start="633"/>âœ… <strong data-end="679" data-start="638">Insurance coverage is often available</strong> for depression treatment with TMS.</p>
+<p class="" data-end="716" data-start="472">✅ You’ve tried <strong data-end="510" data-start="487">2-4 antidepressants</strong> without success or experienced intolerable side effects.<br data-end="570" data-start="567"/>✅ You’re seeking a <strong data-end="617" data-start="589">non-invasive alternative</strong> to medications.<br data-end="636" data-start="633"/>✅ <strong data-end="679" data-start="638">Insurance coverage is often available</strong> for depression treatment with TMS.</p>
 <h3 class="" data-end="762" data-start="718"><strong data-end="760" data-start="722">Other Conditions TMS Can Help With</strong></h3>
-<p class="" data-end="916" data-start="763">TMS has also shown <strong data-end="803" data-start="782">promising results</strong> for:<br data-end="811" data-start="808"/>âœ” <strong data-end="824" data-start="813">Anxiety</strong><br data-end="827" data-start="824"/>âœ” <strong data-end="868" data-start="829">Obsessive-Compulsive Disorder (OCD)</strong><br data-end="871" data-start="868"/>âœ” <strong data-end="914" data-is-only-node="" data-start="873">Post-Traumatic Stress Disorder (PTSD)</strong><br/>
-âœ” <strong data-end="824" data-start="813">Pain</strong><br/>
-âœ” <strong data-end="824" data-start="813">Postpartum Depression</strong></p>
+<p class="" data-end="916" data-start="763">TMS has also shown <strong data-end="803" data-start="782">promising results</strong> for:<br data-end="811" data-start="808"/>✔ <strong data-end="824" data-start="813">Anxiety</strong><br data-end="827" data-start="824"/>✔ <strong data-end="868" data-start="829">Obsessive-Compulsive Disorder (OCD)</strong><br data-end="871" data-start="868"/>✔ <strong data-end="914" data-is-only-node="" data-start="873">Post-Traumatic Stress Disorder (PTSD)</strong><br/>
+✔ <strong data-end="824" data-start="813">Pain</strong><br/>
+✔ <strong data-end="824" data-start="813">Postpartum Depression</strong></p>
 <p class="" data-end="1091" data-start="918">While insurance <strong data-end="986" data-start="934">may not always cover these off-label treatments,</strong> we can assist in applying for coverage. Contact us today to find out if TMS is the right option for you!</p>
 <a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </div>
@@ -111,7 +111,7 @@ require_once __DIR__ . '/includes/header.php';
 <h4>Who administers rTMS?</h4>
 <p>A trained TMS physician prescribes and supervises the treatment. Once the initial settings are established, a TMS technician administers sessions under direct physician supervision to ensure safety and effectiveness.</p>
 <h4>How long is an rTMS procedure?</h4>
-<p>rTMS therapy typically lasts 30-40 minutes per session and is administered 5 days a week for 4-6 weeks. Some advanced protocols, such as the MagstimÂ® TMS device, can shorten treatment time to as little as 3 minutes per session.</p>
+<p>rTMS therapy typically lasts 30-40 minutes per session and is administered 5 days a week for 4-6 weeks. Some advanced protocols, such as the Magstim® TMS device, can shorten treatment time to as little as 3 minutes per session.</p>
 <h4>Do I need to be hospitalized for a course of rTMS?</h4>
 <p>No. rTMS is performed on an outpatient basis with no need for sedation or general anesthesia. Patients remain awake and can resume normal activities, including driving, immediately after treatment.</p>
 <h4>What are the side-effects of rTMS?</h4>
@@ -130,7 +130,7 @@ require_once __DIR__ . '/includes/header.php';
 <p>rTMS is indicated for adults with Major Depressive Disorder (MDD) who have not responded to antidepressants. If your physician believes you may be a candidate, a referral for evaluation can be made.</p>
 <h4>Is TMS covered by my insurance?</h4>
 <p>Most insurance providers, including Medicare, cover rTMS therapy. Medicaid may provide coverage in some states. Prior authorization is typically required, and insurance often mandates trials of antidepressant medications and psychotherapy before approving rTMS treatment. Your physician will handle the approval process.</p>
-<p>Want to learn more about rTMS? Contact us today to see if youâ€™re a candidate!</p>
+<p>Want to learn more about rTMS? Contact us today to see if you’re a candidate!</p>
 </div>
 </div>
 </div>
@@ -156,7 +156,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

@@ -33,7 +33,7 @@ require_once __DIR__ . '/includes/header.php';
 <p>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016<br/>
 <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></p>
 <h3>ADD &amp; ADHD Evaluation and Treatment in Phoenix</h3>
-<p>Struggling to focus, stay organized, or control impulsive behavior? Whether youâ€™re a parent seeking help for your child or an adult who suspects ADHD, InterPsych AZ offers compassionate, evidence-based ADD/ADHD assessment and therapy to help improve focus, functioning, and quality of life.</p>
+<p>Struggling to focus, stay organized, or control impulsive behavior? Whether you’re a parent seeking help for your child or an adult who suspects ADHD, InterPsych AZ offers compassionate, evidence-based ADD/ADHD assessment and therapy to help improve focus, functioning, and quality of life.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -103,7 +103,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-full">
 <h3>Treatment Options at InterPsych AZ</h3>
 <p><strong>Executive Function Coaching</strong><br/>
-Skill-building for managing deadlines, priorities, and distractionsâ€”especially for adults and college students.</p>
+Skill-building for managing deadlines, priorities, and distractions—especially for adults and college students.</p>
 <p><strong>Parent Coaching &amp; Behavioral Strategies</strong><br/>
 For children, we teach parents tools to improve structure, consistency, and communication at home.</p>
 <p><strong>Medication</strong><br/>
@@ -151,11 +151,11 @@ We will work with you to coordinate any medications, if appropriate.</p>
 <div class="dm-container">
 <div class="dm-flex">
 <div class="dm-full">
-<h3>Take Control of Your Focusâ€”Reach Out Today</h3>
+<h3>Take Control of Your Focus—Reach Out Today</h3>
 <p><strong>Call <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></strong><br/>
 <strong>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016</strong></p>
 <p>Schedule Your ADHD Evaluation or Therapy Today<br/>
-We help kids and adults with ADHD develop tools, not just cope. Letâ€™s find what works for you.</p>
+We help kids and adults with ADHD develop tools, not just cope. Let’s find what works for you.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -181,7 +181,7 @@ We help kids and adults with ADHD develop tools, not just cope. Letâ€™s fin
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

@@ -40,7 +40,7 @@ require_once __DIR__ . '/includes/header.php';
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-552" id="menu-item-552"><a href="/schizophrenia-psychotic-disorder-treatment/">Schizophrenia &amp; Psychotic Disorder Treatment</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-553" id="menu-item-553"><a href="/ptsd-trauma-therapy/">PTSD &amp; Trauma Therapy</a></li>
 </ul>
-<p><em>**At this time we do not have psychologists/therapists on staff at our office. We are a medical doctorâ€™s office providing psychiatric evaluations and treatments including medication management, TMS, Spravato, and ECT. </em></p>
+<p><em>**At this time we do not have psychologists/therapists on staff at our office. We are a medical doctor’s office providing psychiatric evaluations and treatments including medication management, TMS, Spravato, and ECT. </em></p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>

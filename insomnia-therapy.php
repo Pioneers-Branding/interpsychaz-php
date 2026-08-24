@@ -34,7 +34,7 @@ require_once __DIR__ . '/includes/header.php';
 <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></p>
 <h3>Insomnia &amp; Sleep Disorder Therapy in Phoenix, AZ</h3>
 <p>Struggling to fall asleep? Waking up too early? Feeling exhausted every day? At InterPsych AZ, we specialize in non-medication-based insomnia treatment.</p>
-<p><a class="btn" href="http://interpsychaz.com/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
+<p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
 </div>
@@ -49,7 +49,7 @@ require_once __DIR__ . '/includes/header.php';
 <ul>
 <li>Take more than 30 minutes to fall asleep</li>
 <li>Wake up frequently at night</li>
-<li>Feel tired even after 7â€“8 hours in bed</li>
+<li>Feel tired even after 7–8 hours in bed</li>
 <li>Rely on substances (alcohol, melatonin, THC) to sleep</li>
 <li>Worry constantly about not sleeping</li>
 </ul>
@@ -126,9 +126,9 @@ If sleep apnea or medical issues are suspected, we collaborate with sleep physic
 <h3>Frequently Asked Questions</h3>
 <div class="contentfaqs">
 <h4>Do I need sleeping pills to treat insomnia?</h4>
-<p>No. CBT-I is proven to be more effective than medicationâ€”and without side effects.</p>
+<p>No. CBT-I is proven to be more effective than medication—and without side effects.</p>
 <h4>How long does CBT-I take to work?</h4>
-<p>Most clients see noticeable improvements in 4â€“6 sessions. Itâ€™s short-term and focused.</p>
+<p>Most clients see noticeable improvements in 4–6 sessions. It’s short-term and focused.</p>
 <h4>Is insomnia a mental health issue?</h4>
 <p>Sometimes. Insomnia may be standalone or caused by anxiety, depression, or trauma. Our therapists treat both the symptom and the cause.</p>
 <h4>Do you treat sleep problems in teens or parents?</h4>
@@ -142,12 +142,12 @@ If sleep apnea or medical issues are suspected, we collaborate with sleep physic
 <div class="dm-container">
 <div class="dm-flex">
 <div class="dm-full">
-<h3>Start Sleeping Betterâ€”Naturally</h3>
+<h3>Start Sleeping Better—Naturally</h3>
 <p>Call <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a><br/>
 2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016</p>
 <p>Schedule an Appointment Now<br/>
-Rest doesnâ€™t have to be a dream. You can sleep againâ€”and we can help.</p>
-<p><a class="btn" href="http://interpsychaz.com/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
+Rest doesn’t have to be a dream. You can sleep again—and we can help.</p>
+<p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
 </div>
@@ -172,7 +172,7 @@ Rest doesnâ€™t have to be a dream. You can sleep againâ€”and we can he
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

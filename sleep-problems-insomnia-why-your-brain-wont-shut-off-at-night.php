@@ -1,7 +1,7 @@
 ﻿<?php
-$pageTitle = 'Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night | Interventional Psychiatry of Arizona Sleep Problems &amp; Insomnia Treatment | Interventional Psychiatry of Arizona';
+$pageTitle = 'Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night | Interventional Psychiatry of Arizona Sleep Problems &amp; Insomnia Treatment | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night - Sleep is supposed to be restorativeâ€”a time when your mind and body reset. But for millions of people, bedtime becomes a battleground. Racing thoughts, Struggling with insomnia or racing thoughts at night? Learn about the anxietyâ€“insomnia cycle and effective treatments at Interventional Psychiatry of Arizona. Call (602) 824-8404 today.';
+$pageDescription = 'Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night - Sleep is supposed to be restorative—a time when your mind and body reset. But for millions of people, bedtime becomes a battleground. Racing thoughts, Struggling with insomnia or racing thoughts at night? Learn about the anxiety–insomnia cycle and effective treatments at Interventional Psychiatry of Arizona. Call (602) 824-8404 today.';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/';
@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single" id="page">
 <section class="page-header">
 <div class="container">
-<h1 class="page-title">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</h1>
+<h1 class="page-title">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</h1>
 </div>
 </section>
 <article class="article dm-full-width">
@@ -25,12 +25,12 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
 <h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
@@ -51,11 +51,11 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<figure class="wp-block-image size-large"><img alt="Sleep Problems &amp; Insomnia Why Your Brain Wonâ€™t Shut Off at Night" class="wp-image-769" decoding="async" fetchpriority="high" height="685" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-1024x685.jpg" srcset="/wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-1024x685.jpg 1024w, /wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-300x200.jpg 300w, /wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-768x514.jpg 768w, /wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-1536x1028.jpg 1536w, /wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night.jpg 1900w" width="1024"/></figure>
-<p class="wp-block-paragraph">Sleep is supposed to be restorativeâ€”a time when your mind and body reset. But for millions of people, bedtime becomes a battleground. Racing thoughts, anxiety, and physical restlessness can make falling (and staying) asleep feel impossible. If youâ€™ve ever wondered why your brain seems most active when your head hits the pillow, youâ€™re not aloneâ€”and more importantly, there are effective solutions.</p>
+<figure class="wp-block-image size-large"><img alt="Sleep Problems &amp; Insomnia Why Your Brain Won’t Shut Off at Night" class="wp-image-769" decoding="async" fetchpriority="high" height="685" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-1024x685.jpg" srcset="/wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-1024x685.jpg 1024w, /wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-300x200.jpg 300w, /wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-768x514.jpg 768w, /wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night-1536x1028.jpg 1536w, /wp-content/uploads/2026/04/Sleep-Problems-Insomnia-Why-Your-Brain-Wont-Shut-Off-at-Night.jpg 1900w" width="1024"/></figure>
+<p class="wp-block-paragraph">Sleep is supposed to be restorative—a time when your mind and body reset. But for millions of people, bedtime becomes a battleground. Racing thoughts, anxiety, and physical restlessness can make falling (and staying) asleep feel impossible. If you’ve ever wondered why your brain seems most active when your head hits the pillow, you’re not alone—and more importantly, there are effective solutions.</p>
 <p class="wp-block-paragraph">At <strong>Interventional Psychiatry of Arizona</strong>, we specialize in helping individuals break free from the cycle of insomnia and reclaim healthy, restorative sleep.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
-<h2 class="wp-block-heading"><strong>Why Your Brain Wonâ€™t Shut Off at Night</strong></h2>
+<h2 class="wp-block-heading"><strong>Why Your Brain Won’t Shut Off at Night</strong></h2>
 <p class="wp-block-paragraph">During the day, your brain is occupied with tasks, conversations, and distractions. At night, when external stimulation fades, your internal world takes center stage.</p>
 <p class="wp-block-paragraph">For many people, this leads to:</p>
 <ul class="wp-block-list">
@@ -64,9 +64,9 @@ require_once __DIR__ . '/includes/header.php';
 <li><strong>Replaying past events or worrying about the future</strong></li>
 <li><strong>Increased awareness of stress or emotional discomfort</strong></li>
 </ul>
-<p class="wp-block-paragraph">From a neurological standpoint, insomnia is often linked to <strong>hyperarousal</strong>â€”a state where the brain remains overly alert instead of transitioning into rest mode. This is especially common in individuals dealing with anxiety, depression, or trauma.</p>
+<p class="wp-block-paragraph">From a neurological standpoint, insomnia is often linked to <strong>hyperarousal</strong>—a state where the brain remains overly alert instead of transitioning into rest mode. This is especially common in individuals dealing with anxiety, depression, or trauma.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
-<h2 class="wp-block-heading"><strong>The Anxietyâ€“Insomnia Cycle</strong></h2>
+<h2 class="wp-block-heading"><strong>The Anxiety–Insomnia Cycle</strong></h2>
 <p class="wp-block-paragraph">Insomnia and anxiety often fuel each other in a frustrating loop:</p>
 <ol class="wp-block-list">
 <li><strong>Anxiety makes it hard to fall asleep</strong></li>
@@ -80,10 +80,10 @@ require_once __DIR__ . '/includes/header.php';
 <li><strong>Major Depressive Disorder</strong></li>
 <li><strong>Chronic stress and burnout</strong></li>
 </ul>
-<p class="wp-block-paragraph">Breaking this cycle requires more than just sleep tipsâ€”it often requires addressing the underlying mental health factors.</p>
+<p class="wp-block-paragraph">Breaking this cycle requires more than just sleep tips—it often requires addressing the underlying mental health factors.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Medications vs. Natural Sleep Strategies</strong></h2>
-<p class="wp-block-paragraph">Many people turn to sleep medications for relief. While they can be helpful short-term, theyâ€™re not always a long-term solution.</p>
+<p class="wp-block-paragraph">Many people turn to sleep medications for relief. While they can be helpful short-term, they’re not always a long-term solution.</p>
 <h3 class="wp-block-heading"><strong>Medications</strong></h3>
 <p class="wp-block-paragraph"><strong>Pros:</strong></p>
 <ul class="wp-block-list">
@@ -118,49 +118,49 @@ require_once __DIR__ . '/includes/header.php';
 </ul>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h3 class="wp-block-heading"><strong>Interventional Psychiatry: A Modern Approach</strong></h3>
-<p class="wp-block-paragraph">When traditional methods arenâ€™t enough, advanced treatments can make a significant difference.</p>
+<p class="wp-block-paragraph">When traditional methods aren’t enough, advanced treatments can make a significant difference.</p>
 <p class="wp-block-paragraph">At <strong>Interventional Psychiatry of Arizona</strong>, we offer evidence-based options such as:</p>
 <ul class="wp-block-list">
 <li><strong>Transcranial Magnetic Stimulation (TMS)</strong></li>
 <li><strong>Ketamine therapy</strong></li>
 <li><strong>Medication optimization and psychiatric care</strong></li>
 </ul>
-<p class="wp-block-paragraph">These treatments target the underlying brain circuits involved in mood, anxiety, and sleepâ€”helping restore balance and improve overall well-being.</p>
+<p class="wp-block-paragraph">These treatments target the underlying brain circuits involved in mood, anxiety, and sleep—helping restore balance and improve overall well-being.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Why Treating Insomnia Matters</strong></h2>
-<p class="wp-block-paragraph">Chronic insomnia is more than just an inconvenienceâ€”it impacts nearly every aspect of life:</p>
+<p class="wp-block-paragraph">Chronic insomnia is more than just an inconvenience—it impacts nearly every aspect of life:</p>
 <ul class="wp-block-list">
 <li>Mood and emotional regulation</li>
 <li>Memory and concentration</li>
 <li>Physical health (immune function, heart health)</li>
 <li>Work performance and relationships</li>
 </ul>
-<p class="wp-block-paragraph">Itâ€™s also often the <strong>first sign of deeper mental health concerns</strong>, making it an important entry point for care.</p>
+<p class="wp-block-paragraph">It’s also often the <strong>first sign of deeper mental health concerns</strong>, making it an important entry point for care.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Q&amp;A: Sleep Problems &amp; Insomnia</strong></h2>
 <h3 class="wp-block-heading"><strong>Q: Why do I feel more anxious at night?</strong></h3>
 <p class="wp-block-paragraph">A: At night, there are fewer distractions, allowing worries and intrusive thoughts to surface. Additionally, fatigue can lower your ability to regulate emotions, making anxiety feel more intense.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h3 class="wp-block-heading"><strong>Q: How much sleep do I actually need?</strong></h3>
-<p class="wp-block-paragraph">A: Most adults need <strong>7â€“9 hours of sleep per night</strong>, though individual needs vary. Quality matters just as much as quantity.</p>
+<p class="wp-block-paragraph">A: Most adults need <strong>7–9 hours of sleep per night</strong>, though individual needs vary. Quality matters just as much as quantity.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h3 class="wp-block-heading"><strong>Q: Is it bad to rely on sleep medication?</strong></h3>
-<p class="wp-block-paragraph">A: Occasional use can be helpful, but long-term reliance may lead to tolerance and dependency. Itâ€™s best to use medication under the guidance of a qualified provider.</p>
+<p class="wp-block-paragraph">A: Occasional use can be helpful, but long-term reliance may lead to tolerance and dependency. It’s best to use medication under the guidance of a qualified provider.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
-<h3 class="wp-block-heading"><strong>Q: What is the anxietyâ€“insomnia cycle?</strong></h3>
-<p class="wp-block-paragraph">A: Itâ€™s a loop where anxiety prevents sleep, and lack of sleep worsens anxiety. Over time, this can become a chronic pattern without proper intervention.</p>
+<h3 class="wp-block-heading"><strong>Q: What is the anxiety–insomnia cycle?</strong></h3>
+<p class="wp-block-paragraph">A: It’s a loop where anxiety prevents sleep, and lack of sleep worsens anxiety. Over time, this can become a chronic pattern without proper intervention.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h3 class="wp-block-heading"><strong>Q: When should I seek professional help?</strong></h3>
-<p class="wp-block-paragraph">A: If youâ€™ve had trouble sleeping for <strong>more than a few weeks</strong>, or if insomnia is affecting your daily life, mood, or functioning, itâ€™s time to seek help.</p>
+<p class="wp-block-paragraph">A: If you’ve had trouble sleeping for <strong>more than a few weeks</strong>, or if insomnia is affecting your daily life, mood, or functioning, it’s time to seek help.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h3 class="wp-block-heading"><strong>Q: Can treating anxiety or depression improve sleep?</strong></h3>
 <p class="wp-block-paragraph">A: Absolutely. Since these conditions are closely linked, addressing the underlying mental health issue often leads to better sleep.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
-<h3 class="wp-block-heading"><strong>Q: What treatments are available if therapy and sleep hygiene donâ€™t work?</strong></h3>
+<h3 class="wp-block-heading"><strong>Q: What treatments are available if therapy and sleep hygiene don’t work?</strong></h3>
 <p class="wp-block-paragraph">A: Advanced options like <strong>TMS and ketamine therapy</strong> can help regulate brain activity and improve both mood and sleep, especially in treatment-resistant cases.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Take the First Step Toward Better Sleep</strong></h2>
-<p class="wp-block-paragraph">If your nights are filled with racing thoughts and restless hours, you donâ€™t have to manage it alone. Effective, science-backed treatments are availableâ€”and relief is possible.</p>
+<p class="wp-block-paragraph">If your nights are filled with racing thoughts and restless hours, you don’t have to manage it alone. Effective, science-backed treatments are available—and relief is possible.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Contact Information</strong></h2>
 <p class="wp-block-paragraph"><strong>Interventional Psychiatry of Arizona<br/></strong> ðŸ“ž Phone: (602) 824-8404<br/>ðŸŒ Website: <a href="https://interpsychaz.com" id="interpsychaz.com" type="link">interpsychaz.com</a></p>
@@ -187,7 +187,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

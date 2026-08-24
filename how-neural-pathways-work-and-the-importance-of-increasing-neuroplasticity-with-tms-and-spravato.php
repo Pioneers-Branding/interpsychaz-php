@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -51,10 +51,10 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<p><span style="font-weight: 400;"><img alt="How Neural Pathways Work and the Importance of Increasing Neuroplasticity with TMS and Spravato" class="aligncenter wp-image-431" data-lazy-sizes="(max-width: 404px) 100vw, 404px" data-lazy-src="/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato.png" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato.png 1000w, http://interpsychaz.com/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato-300x200.png 300w, http://interpsychaz.com/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato-768x514.png 768w, http://interpsychaz.com/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato-800x533.png 800w" decoding="async" fetchpriority="high" height="270" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20404%20270'%3E%3C/svg%3E" width="404"/><noscript><img alt="How Neural Pathways Work and the Importance of Increasing Neuroplasticity with TMS and Spravato" class="aligncenter wp-image-431" decoding="async" fetchpriority="high" height="270" sizes="(max-width: 404px) 100vw, 404px" src="/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato.png" srcset="/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato.png 1000w, /wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato-300x200.png 300w, /wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato-768x514.png 768w, /wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato-800x533.png 800w" width="404"/></noscript>The human brain is an intricate and dynamic organ, constantly evolving in response to experiences, thoughts, and emotions. At the core of this adaptability lies </span><b>neuroplasticity</b><span style="font-weight: 400;">, the brainâ€™s ability to reorganize and form new neural connections. Understanding how neural pathways work can help us appreciate the effectiveness of treatments like Transcranial Magnetic Stimulation (TMS) and Spravato (esketamine), both of which are designed to enhance neuroplasticity and improve mental health conditions.</span></p>
+<p><span style="font-weight: 400;"><img alt="How Neural Pathways Work and the Importance of Increasing Neuroplasticity with TMS and Spravato" class="aligncenter wp-image-431" data-lazy-sizes="(max-width: 404px) 100vw, 404px" data-lazy-src="/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato.png" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato.png 1000w, http://interpsychaz.com/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato-300x200.png 300w, http://interpsychaz.com/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato-768x514.png 768w, http://interpsychaz.com/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato-800x533.png 800w" decoding="async" fetchpriority="high" height="270" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20404%20270'%3E%3C/svg%3E" width="404"/><noscript><img alt="How Neural Pathways Work and the Importance of Increasing Neuroplasticity with TMS and Spravato" class="aligncenter wp-image-431" decoding="async" fetchpriority="high" height="270" sizes="(max-width: 404px) 100vw, 404px" src="/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato.png" srcset="/wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato.png 1000w, /wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato-300x200.png 300w, /wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato-768x514.png 768w, /wp-content/uploads/2025/04/How-Neural-Pathways-Work-and-the-Importance-of-Increasing-Neuroplasticity-with-TMS-and-Spravato-800x533.png 800w" width="404"/></noscript>The human brain is an intricate and dynamic organ, constantly evolving in response to experiences, thoughts, and emotions. At the core of this adaptability lies </span><b>neuroplasticity</b><span style="font-weight: 400;">, the brain’s ability to reorganize and form new neural connections. Understanding how neural pathways work can help us appreciate the effectiveness of treatments like Transcranial Magnetic Stimulation (TMS) and Spravato (esketamine), both of which are designed to enhance neuroplasticity and improve mental health conditions.</span></p>
 <h2><b>Understanding Neural Pathways and Neuroplasticity</b></h2>
 <p><span style="font-weight: 400;">Neural pathways are the connections between different neurons in the brain that facilitate communication and processing of information. These pathways are responsible for everything from sensory perception to emotions and decision-making. Over time, neural pathways can strengthen or weaken based on repeated experiences and behaviors.</span></p>
-<p><span style="font-weight: 400;">Neuroplasticity refers to the brainâ€™s ability to adapt and change by forming new neural pathways. This ability allows us to learn new skills, recover from injuries, and adapt to new situations. However, conditions such as depression, anxiety, and PTSD can impair neuroplasticity, leading to rigid thought patterns and emotional distress.</span></p>
+<p><span style="font-weight: 400;">Neuroplasticity refers to the brain’s ability to adapt and change by forming new neural pathways. This ability allows us to learn new skills, recover from injuries, and adapt to new situations. However, conditions such as depression, anxiety, and PTSD can impair neuroplasticity, leading to rigid thought patterns and emotional distress.</span></p>
 <h2><b>Why Increasing Neuroplasticity is Important</b></h2>
 <p><span style="font-weight: 400;">When neuroplasticity is enhanced, the brain becomes more adaptable and resilient. This is especially important for individuals suffering from mental health conditions, as increasing neuroplasticity can help break negative thought loops and foster positive changes in mood and behavior. Enhancing neuroplasticity can improve:</span></p>
 <ul>
@@ -110,7 +110,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

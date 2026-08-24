@@ -33,7 +33,7 @@ require_once __DIR__ . '/includes/header.php';
 <p>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016<br/>
 <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></p>
 <h3>Anxiety, Panic &amp; Phobia Therapy in Phoenix, AZ</h3>
-<p>Do anxiety, panic attacks, or irrational fears interfere with your life? At InterPsych AZ, we specialize in evidence-based treatment for anxiety disorders, panic disorder, and phobiasâ€”helping you regain control, calm, and confidence.</p>
+<p>Do anxiety, panic attacks, or irrational fears interfere with your life? At InterPsych AZ, we specialize in evidence-based treatment for anxiety disorders, panic disorder, and phobias—helping you regain control, calm, and confidence.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -115,7 +115,7 @@ Teaches techniques to prevent or manage panic attacks through breathing, relaxat
 <p><strong>Mindfulness &amp; Stress Management</strong><br/>
 Incorporates grounding, present-moment awareness, and coping skills.</p>
 <p><strong>Medication</strong><br/>
-If needed, weâ€™ll collaborate with you for medication support like SSRIs or beta-blockers.</p>
+If needed, we’ll collaborate with you for medication support like SSRIs or beta-blockers.</p>
 </div>
 </div>
 </div>
@@ -142,14 +142,14 @@ If needed, weâ€™ll collaborate with you for medication support like SSRIs o
 <div class="dm-full">
 <h3>Frequently Asked Questions</h3>
 <div class="contentfaqs">
-<h4>Whatâ€™s the difference between anxiety and panic disorder?</h4>
+<h4>What’s the difference between anxiety and panic disorder?</h4>
 <p>Anxiety is a persistent feeling of worry, while panic disorder involves sudden, intense episodes of fear called panic attacks.</p>
 <h4>Do I need medication?</h4>
 <p>Many patients improve with therapy alone. If appropriate, medication may be added as part of your treatment plan.</p>
-<h4>What if Iâ€™ve had anxiety for years?</h4>
-<p>Long-term anxiety is still treatable. CBT and exposure therapy have excellent outcomesâ€”even for chronic symptoms.</p>
+<h4>What if I’ve had anxiety for years?</h4>
+<p>Long-term anxiety is still treatable. CBT and exposure therapy have excellent outcomes—even for chronic symptoms.</p>
 <h4>How long does treatment take?</h4>
-<p>Some clients see improvement in just a few sessions. Most plans span 8â€“16 weeks depending on severity.</p>
+<p>Some clients see improvement in just a few sessions. Most plans span 8–16 weeks depending on severity.</p>
 </div>
 </div>
 </div>
@@ -160,7 +160,7 @@ If needed, weâ€™ll collaborate with you for medication support like SSRIs o
 <div class="dm-flex">
 <div class="dm-full">
 <h3>Contact Us Today for Help</h3>
-<p>Call us atÂ <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a><br/>
+<p>Call us at <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a><br/>
 2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016</p>
 <p>Request an Appointment Now</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
@@ -188,7 +188,7 @@ If needed, weâ€™ll collaborate with you for medication support like SSRIs o
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

@@ -31,7 +31,7 @@ require_once __DIR__ . '/includes/header.php';
 </div>
 <div class="dm-half wow fadeInLeft dm-space">
 <span class="anchor-fix" id="adhdevaluation"></span>
-<h3>Comprehensive ADHD Evaluations for Patients Ages 6â€“70</h3>
+<h3>Comprehensive ADHD Evaluations for Patients Ages 6–70</h3>
 <p>At Interventional Psychiatry of Arizona, we proudly offer thorough ADHD assessments for children, teens, and adults using the FDA-cleared <strong>QbCheck</strong>. This innovative tool provides objective, reliable data to help guide diagnosis and treatment planning.</p>
 <p>Led by Board-Certified Psychiatrist Dr. Gerhard Gomez and ADHD specialist Michael Jacobson, PA-C, our team combines expertise and compassion to help patients of all ages achieve their fullest potential.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
@@ -44,20 +44,20 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-flex">
 <div class="dm-full">
 <h3>Why an Accurate ADHD Assessment Matters</h3>
-<p>ADHD can be misunderstood, misdiagnosed, or overlooked â€” which is why a proper evaluation is so important. A correct diagnosis opens the door to personalized treatment that can make a real difference:</p>
-<h4>For Children (6â€“12):</h4>
+<p>ADHD can be misunderstood, misdiagnosed, or overlooked — which is why a proper evaluation is so important. A correct diagnosis opens the door to personalized treatment that can make a real difference:</p>
+<h4>For Children (6–12):</h4>
 <ul>
 <li>Improved school performance</li>
 <li>Better peer relationships</li>
 <li>Reduced behavioral challenges</li>
 </ul>
-<h4>For Teens (13â€“18):</h4>
+<h4>For Teens (13–18):</h4>
 <ul>
 <li>Enhanced academic achievement</li>
 <li>Improved self-esteem</li>
 <li>Lower risk of anxiety, depression, and substance misuse</li>
 </ul>
-<h4>For Adults (19â€“70):</h4>
+<h4>For Adults (19–70):</h4>
 <ul>
 <li>Increased work productivity</li>
 <li>Improved family and social relationships</li>
@@ -85,7 +85,7 @@ require_once __DIR__ . '/includes/header.php';
 <li>In-office or telehealth options available</li>
 <li>May be covered by most insurance plans; cash-pay options also offered</li>
 </ul>
-<p>Weâ€™re committed to making expert ADHD care accessible to patients and families throughout Arizona.</p>
+<p>We’re committed to making expert ADHD care accessible to patients and families throughout Arizona.</p>
 <h3>Why Choose Interventional Psychiatry of Arizona?</h3>
 <ul>
 <li>Experienced team led by Board-Certified Psychiatrist Dr. Gomez</li>
@@ -102,7 +102,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-flex">
 <div class="dm-full">
 <h3>Schedule Your ADHD Evaluation Today</h3>
-<p>If you or your loved one is struggling with focus, impulsivity, or inattention, donâ€™t wait â€” get the clarity and support you deserve.</p>
+<p>If you or your loved one is struggling with focus, impulsivity, or inattention, don’t wait — get the clarity and support you deserve.</p>
 <p><strong>ðŸ“ž Call us at <a href="tel:16028248404">(602) 824-8404</a><br/>
 ðŸŒ Visit <a href="https://www.interpsychaz.com" target="_blank">www.interpsychaz.com</a></strong></p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
@@ -130,7 +130,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_gecko gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

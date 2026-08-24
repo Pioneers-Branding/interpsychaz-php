@@ -1,7 +1,7 @@
 ﻿<?php
 $pageTitle = 'Performance Anxiety: Understanding and Managing the Pressure to Perform | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'Performance Anxiety: Understanding and Managing the Pressure to Perform - For athletes, the pressure to perform at a high level is constant. Whether itâ€™s the expectation of coaches, the scrutiny of fans, or the desire to meet';
+$pageDescription = 'Performance Anxiety: Understanding and Managing the Pressure to Perform - For athletes, the pressure to perform at a high level is constant. Whether it’s the expectation of coaches, the scrutiny of fans, or the desire to meet';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/performance-anxiety-understanding-and-managing-the-pressure-to-perform/';
@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -51,7 +51,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<p><img alt="" class="aligncenter size-full wp-image-231" data-lazy-sizes="(max-width: 600px) 100vw, 600px" data-lazy-src="/wp-content/uploads/2025/03/sportsblog.png.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/sportsblog.png.webp 600w, http://interpsychaz.com/wp-content/uploads/2025/03/sportsblog.png-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/sportsblog.png-800x533.webp 800w" decoding="async" fetchpriority="high" height="400" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E" width="600"/><noscript><img alt="" class="aligncenter size-full wp-image-231" decoding="async" fetchpriority="high" height="400" sizes="(max-width: 600px) 100vw, 600px" src="/wp-content/uploads/2025/03/sportsblog.png.webp" srcset="/wp-content/uploads/2025/03/sportsblog.png.webp 600w, /wp-content/uploads/2025/03/sportsblog.png-300x200.webp 300w, /wp-content/uploads/2025/03/sportsblog.png-800x533.webp 800w" width="600"/></noscript>For athletes, the pressure to perform at a high level is constant. Whether itâ€™s the expectation of coaches, the scrutiny of fans, or the desire to meet personal goals, the pressure to succeed can take a toll on an athleteâ€™s mental health. <a href="/category/performance-anxiety/">Performance anxiety</a>, also known as â€œchoking under pressure,â€ is a common experience for athletes at all levels. In this article, we will explore what performance anxiety is, why it happens, and how sports psychiatrists can help athletes manage this challenging condition.</p>
+<p><img alt="" class="aligncenter size-full wp-image-231" data-lazy-sizes="(max-width: 600px) 100vw, 600px" data-lazy-src="/wp-content/uploads/2025/03/sportsblog.png.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/sportsblog.png.webp 600w, http://interpsychaz.com/wp-content/uploads/2025/03/sportsblog.png-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/sportsblog.png-800x533.webp 800w" decoding="async" fetchpriority="high" height="400" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E" width="600"/><noscript><img alt="" class="aligncenter size-full wp-image-231" decoding="async" fetchpriority="high" height="400" sizes="(max-width: 600px) 100vw, 600px" src="/wp-content/uploads/2025/03/sportsblog.png.webp" srcset="/wp-content/uploads/2025/03/sportsblog.png.webp 600w, /wp-content/uploads/2025/03/sportsblog.png-300x200.webp 300w, /wp-content/uploads/2025/03/sportsblog.png-800x533.webp 800w" width="600"/></noscript>For athletes, the pressure to perform at a high level is constant. Whether it’s the expectation of coaches, the scrutiny of fans, or the desire to meet personal goals, the pressure to succeed can take a toll on an athlete’s mental health. <a href="/category/performance-anxiety/">Performance anxiety</a>, also known as “choking under pressure,” is a common experience for athletes at all levels. In this article, we will explore what performance anxiety is, why it happens, and how sports psychiatrists can help athletes manage this challenging condition.</p>
 <p><strong>What is Performance Anxiety?</strong></p>
 <p>Performance anxiety is a type of anxiety that occurs in situations where an individual is expected to perform at a high level. For athletes, this may occur during competitions, training sessions, or even during practice. The anxiety can manifest as physical symptoms, such as increased heart rate, sweating, and trembling. It can also lead to negative thoughts, such as self-doubt, fear of failure, and a sense of being overwhelmed.</p>
 <p><strong>Why Does Performance Anxiety Happen?</strong></p>
@@ -63,7 +63,7 @@ require_once __DIR__ . '/includes/header.php';
 <p>In some cases, sports psychiatrists may also recommend medication to help manage anxiety symptoms. Medications such as beta-blockers can help reduce physical symptoms of anxiety, such as increased heart rate and trembling.</p>
 <p>In addition to therapy and medication, sports psychiatrists may also recommend relaxation techniques, such as deep breathing exercises and mindfulness meditation. These techniques can help athletes manage their anxiety symptoms and perform at a high level.</p>
 <p><strong>Conclusion</strong></p>
-<p>Performance anxiety is a common experience for athletes, but it doesnâ€™t have to be debilitating. With the help of sports psychiatrists, athletes can learn to manage their anxiety symptoms and perform at their best. By understanding the underlying causes of performance anxiety and developing effective coping strategies, athletes can overcome the pressure to perform and achieve their goals. If you are an athlete struggling with performance anxiety, donâ€™t hesitate to reach out to a sports psychiatrist for help.</p>
+<p>Performance anxiety is a common experience for athletes, but it doesn’t have to be debilitating. With the help of sports psychiatrists, athletes can learn to manage their anxiety symptoms and perform at their best. By understanding the underlying causes of performance anxiety and developing effective coping strategies, athletes can overcome the pressure to perform and achieve their goals. If you are an athlete struggling with performance anxiety, don’t hesitate to reach out to a sports psychiatrist for help.</p>
  </div>
 </div><!--.post-single-content-->
 </div><!--.single_post-->
@@ -86,7 +86,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

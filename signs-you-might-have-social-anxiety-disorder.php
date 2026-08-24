@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -52,16 +52,16 @@ require_once __DIR__ . '/includes/header.php';
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
 <p><img alt="" class="aligncenter size-full wp-image-184" data-lazy-sizes="(max-width: 740px) 100vw, 740px" data-lazy-src="/wp-content/uploads/2025/03/blog-4.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/blog-4.jpg.webp 740w, http://interpsychaz.com/wp-content/uploads/2025/03/blog-4.jpg-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/blog-4.jpg-800x533.webp 800w" decoding="async" fetchpriority="high" height="493" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20740%20493'%3E%3C/svg%3E" width="740"/><noscript><img alt="" class="aligncenter size-full wp-image-184" decoding="async" fetchpriority="high" height="493" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog-4.jpg.webp" srcset="/wp-content/uploads/2025/03/blog-4.jpg.webp 740w, /wp-content/uploads/2025/03/blog-4.jpg-300x200.webp 300w, /wp-content/uploads/2025/03/blog-4.jpg-800x533.webp 800w" width="740"/></noscript></p>
-<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-3jhs">Social anxiety disorder, also called social phobia, is an intense fear of being judged by others in social situations. It is more than just shyness or stage fright. Itâ€™s a persistent fear that gets in the way of everyday activities such as work, school, or social events. People with social anxiety disorder may worry about things like blushing, sweating, trembling, or feeling nauseous. They may feel like everyone is watching them and judging them negatively. This can cause them to avoid social situations or endure them with great distress. If you think you might have social anxiety disorder, here are some signs to look out for.</p>
+<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-3jhs">Social anxiety disorder, also called social phobia, is an intense fear of being judged by others in social situations. It is more than just shyness or stage fright. It’s a persistent fear that gets in the way of everyday activities such as work, school, or social events. People with social anxiety disorder may worry about things like blushing, sweating, trembling, or feeling nauseous. They may feel like everyone is watching them and judging them negatively. This can cause them to avoid social situations or endure them with great distress. If you think you might have social anxiety disorder, here are some signs to look out for.</p>
 <p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-31cc7">1. Worrying about social situations long in advance. If you find yourself dreading upcoming events days or even weeks in advance, it could be a sign of social anxiety disorder.</p>
-<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-a2njp">2. Feeling extremely nervous in social situations. If you get anxious just thinking about being around other people, itâ€™s likely more than just shyness.</p>
-<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-b4k24">3. Avoiding social situations. If you start avoiding parties, work gatherings, and other events because youâ€™re afraid of how youâ€™ll feel there, itâ€™s a sign that your anxiety is starting to interfere with your life.</p>
-<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-9te49">4. Experiencing physical symptoms of anxiety in social situations. If your heart races, your hands shake, or you feel nauseous when youâ€™re around other people, itâ€™s a sign that your body is reacting strongly to the anxiety youâ€™re feeling.</p>
+<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-a2njp">2. Feeling extremely nervous in social situations. If you get anxious just thinking about being around other people, it’s likely more than just shyness.</p>
+<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-b4k24">3. Avoiding social situations. If you start avoiding parties, work gatherings, and other events because you’re afraid of how you’ll feel there, it’s a sign that your anxiety is starting to interfere with your life.</p>
+<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-9te49">4. Experiencing physical symptoms of anxiety in social situations. If your heart races, your hands shake, or you feel nauseous when you’re around other people, it’s a sign that your body is reacting strongly to the anxiety you’re feeling.</p>
 <p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-fde34">5. Worrying about being embarrassed or humiliated in social situations. People with social anxiety disorder often worry about saying or doing something embarrassing in front of other people. They may worry that they will blush, sweat, tremble, or say something foolish.</p>
-<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-31fnr">6. Feeling like youâ€™re being judged by others in social situations. People with social anxiety disorder often feel like they are being watched and evaluated by others in social situations. They may worry that others will notice their anxiety and judge them negatively because of it.</p>
-<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-bnp3i">7. fearing that others will see that youâ€™re anxious. Many people with social anxiety disorder are afraid that others will see how anxious they are and think less of them because of it.</p>
+<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-31fnr">6. Feeling like you’re being judged by others in social situations. People with social anxiety disorder often feel like they are being watched and evaluated by others in social situations. They may worry that others will notice their anxiety and judge them negatively because of it.</p>
+<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-bnp3i">7. fearing that others will see that you’re anxious. Many people with social anxiety disorder are afraid that others will see how anxious they are and think less of them because of it.</p>
 <p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-8g6r4">8. fearing that others will notice your physical symptoms. Many people with social anxiety disorder are also afraid that others will see their physical symptoms of anxiety such as blushing , sweating , trembling , or having a hard time speaking This can make them even more anxious and cause them to avoid social situations even more.</p>
-<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-4jrgk">If you think you might have social anxiety disorder, itâ€™s important to talk to a mental health professional who can help you diagnose and treat the condition. There are many effective treatments for social anxiety disorder , including cognitive-behavioral therapy (CBT) , exposure therapy , and medication. With treatment , most people with social anxiety disorder can learn to manage their fear and live full , happy lives .</p>
+<p class="mm8Nw _1j-51 roLFQS _1FoOD _1oG79 WJlzbz roLFQS public-DraftStyleDefault-block-depth0 fixed-tab-size public-DraftStyleDefault-text-ltr" id="viewer-4jrgk">If you think you might have social anxiety disorder, it’s important to talk to a mental health professional who can help you diagnose and treat the condition. There are many effective treatments for social anxiety disorder , including cognitive-behavioral therapy (CBT) , exposure therapy , and medication. With treatment , most people with social anxiety disorder can learn to manage their fear and live full , happy lives .</p>
  </div>
 </div><!--.post-single-content-->
 </div><!--.single_post-->
@@ -84,7 +84,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

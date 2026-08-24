@@ -1,7 +1,7 @@
 ﻿<?php
-$pageTitle = 'Addiction â€“ Stigma &amp; Shame | Interventional Psychiatry of Arizona';
+$pageTitle = 'Addiction – Stigma &amp; Shame | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'Addiction â€“ Stigma &amp; Shame - Addiction is a difficult and often isolating experience. Those who struggle with substance abuse often face stigma and shame, which can make it even';
+$pageDescription = 'Addiction – Stigma &amp; Shame - Addiction is a difficult and often isolating experience. Those who struggle with substance abuse often face stigma and shame, which can make it even';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/addiction-stigma-shame/';
@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single" data-rocket-location-hash="56c67d6aea37e5ce914ed3cbb1a24e45" id="page">
 <section class="page-header" data-rocket-location-hash="3aac77729f1c7e705171ebffb90e528f">
 <div class="container">
-<h1 class="page-title">Addiction â€“ Stigma &amp; Shame</h1>
+<h1 class="page-title">Addiction – Stigma &amp; Shame</h1>
 </div>
 </section>
 <article class="article dm-full-width" data-rocket-location-hash="ec774fc978476739b024a7aaae22a73a">
@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -55,7 +55,7 @@ require_once __DIR__ . '/includes/header.php';
 <p>Stigma is a negative stereotype or perception that people hold about a particular group of individuals. In the case of addiction, stigma can lead to discrimination and marginalization of those who are struggling with substance abuse. Stigma can also lead to shame, which is a painful emotion that arises from a sense of inadequacy or failure.</p>
 <p>The stigma and shame associated with addiction can prevent people from seeking help. Many people are afraid to admit that they have a problem with substance abuse because they fear being judged or rejected by their peers, colleagues, or family members. Stigma can also lead to self-stigma, which is a negative perception that an individual holds about themselves.</p>
 <p>Reducing stigma and promoting acceptance and understanding of addiction is essential for helping people overcome addiction. One way to reduce stigma is through education. Educating the public about the nature of addiction can help to dispel myths and misunderstandings surrounding the condition. Education can also help to promote empathy and understanding for those who are struggling with substance abuse.</p>
-<p>Another way to reduce stigma is through language. The language we use when discussing addiction can have a significant impact on how individuals with addiction are perceived. Using person-first language, which focuses on the person rather than the condition, can help to reduce stigma and promote understanding. For example, instead of referring to someone as a â€œdrug addict,â€ we can use the term â€œperson with a substance use disorder.â€</p>
+<p>Another way to reduce stigma is through language. The language we use when discussing addiction can have a significant impact on how individuals with addiction are perceived. Using person-first language, which focuses on the person rather than the condition, can help to reduce stigma and promote understanding. For example, instead of referring to someone as a “drug addict,” we can use the term “person with a substance use disorder.”</p>
 <p>Finally, promoting acceptance and understanding of addiction can also help to reduce stigma. Encouraging individuals to share their stories and experiences can help to break down barriers and promote empathy and understanding. Creating a supportive community for those who are struggling with addiction can also help to reduce stigma and promote healing.</p>
 <p>In conclusion, stigma and shame surrounding addiction can prevent people from seeking help and exacerbate the negative effects of addiction. It is essential to reduce stigma and promote acceptance and understanding of addiction through education, language, and community support. By working together to reduce stigma, we can create a more compassionate and supportive society for those who are struggling with addiction.</p>
  </div>
@@ -80,7 +80,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

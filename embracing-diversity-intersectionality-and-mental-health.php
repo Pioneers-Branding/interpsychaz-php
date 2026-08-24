@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -53,7 +53,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="thecontent">
 <p><strong><img alt="" class="aligncenter size-full wp-image-251" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="/wp-content/uploads/2025/03/iStock_000022199547_Smoll.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/iStock_000022199547_Smoll.jpg.webp 800w, http://interpsychaz.com/wp-content/uploads/2025/03/iStock_000022199547_Smoll.jpg-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/iStock_000022199547_Smoll.jpg-768x512.webp 768w" decoding="async" fetchpriority="high" height="533" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20533'%3E%3C/svg%3E" width="800"/><noscript><img alt="" class="aligncenter size-full wp-image-251" decoding="async" fetchpriority="high" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2025/03/iStock_000022199547_Smoll.jpg.webp" srcset="/wp-content/uploads/2025/03/iStock_000022199547_Smoll.jpg.webp 800w, /wp-content/uploads/2025/03/iStock_000022199547_Smoll.jpg-300x200.webp 300w, /wp-content/uploads/2025/03/iStock_000022199547_Smoll.jpg-768x512.webp 768w" width="800"/></noscript>Introduction:</strong></p>
 <p>Welcome to our blog, where we explore the important intersection of mental health and identity. In honor of Mental Health Awareness Month, we are shining a light on the significance of understanding mental health through an intersectional lens. Join us as we discuss the unique challenges faced by marginalized communities and advocate for inclusive and equitable mental health care.</p>
-<p>Â </p>
+<p> </p>
 <p><strong>Unveiling the Intersections:</strong></p>
 <ul>
 <li>Mental health is not a one-size-fits-all experience. Intersectionality acknowledges that our identities and social locations overlap, shaping our experiences and access to resources. It involves delving into how factors such as gender, race, ethnicity, sexuality, and socioeconomic status intersect with mental health. By recognizing and understanding these complexities, we can better appreciate the diverse challenges individuals face and work towards creating more inclusive support systems.</li>
@@ -66,7 +66,7 @@ require_once __DIR__ . '/includes/header.php';
 <p>This involves promoting mental health awareness and literacy within marginalized communities, advocating for increased funding for mental health programs, and urging policymakers to prioritize equitable mental health care. Additionally, collaboration between mental health providers, community organizations, and social services can help ensure that mental health resources reach underserved populations.</p>
 <p><strong>Cultivating Cultural Competence:</strong></p>
 <ul>
-<li>Cultural competence is vital in providing effective mental health care. We should explore the importance of understanding diverse cultural contexts, beliefs, and practices when supporting individuals from different backgrounds. Mental health professionals should strive to be culturally sensitive, acknowledging and respecting the unique experiences and cultural influences that shape an individualâ€™s mental health journey.</li>
+<li>Cultural competence is vital in providing effective mental health care. We should explore the importance of understanding diverse cultural contexts, beliefs, and practices when supporting individuals from different backgrounds. Mental health professionals should strive to be culturally sensitive, acknowledging and respecting the unique experiences and cultural influences that shape an individual’s mental health journey.</li>
 </ul>
 <p>Cultivating cultural competence involves ongoing education, training, and self-reflection. It also requires creating safe spaces where individuals can express their cultural identities without fear of judgment or discrimination. By integrating cultural knowledge into mental health practices, we can provide more effective, relevant, and personalized support.</p>
 <p><strong>Empowering Voices:</strong></p>
@@ -103,7 +103,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

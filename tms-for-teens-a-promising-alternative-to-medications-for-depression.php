@@ -25,12 +25,12 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
 <h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
@@ -58,18 +58,18 @@ require_once __DIR__ . '/includes/header.php';
 <h2 class="wp-block-heading"><strong>Why Consider TMS for Teens?</strong></h2>
 <p class="wp-block-paragraph">Teens are at a unique stage of development, both physically and emotionally. While antidepressants can provide relief, they may also cause unwanted effects such as sleep disturbances, appetite changes, or emotional blunting. TMS offers:</p>
 <ul class="wp-block-list">
-<li><strong>Non-invasive care</strong> â€“ no needles, anesthesia, or surgery<br/></li>
-<li><strong>Fewer side effects</strong> â€“ generally limited to mild scalp discomfort or headaches<br/></li>
-<li><strong>Improved focus and mood</strong> â€“ many patients report feeling clearer and more motivated<br/></li>
-<li><strong>Outpatient convenience</strong> â€“ treatments are done in-office, and teens can resume school or activities the same day<br/></li>
+<li><strong>Non-invasive care</strong> – no needles, anesthesia, or surgery<br/></li>
+<li><strong>Fewer side effects</strong> – generally limited to mild scalp discomfort or headaches<br/></li>
+<li><strong>Improved focus and mood</strong> – many patients report feeling clearer and more motivated<br/></li>
+<li><strong>Outpatient convenience</strong> – treatments are done in-office, and teens can resume school or activities the same day<br/></li>
 </ul>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Q&amp;A: TMS for Teens</strong></h2>
 <p class="wp-block-paragraph"><strong>Q: Is TMS safe for teenagers?</strong><strong><br/></strong> Yes. While TMS has primarily been studied in adults, emerging research and clinical practice suggest it is safe and effective for adolescents struggling with depression, especially when monitored by a trained psychiatrist.</p>
 <p class="wp-block-paragraph"><strong>Q: How does TMS compare to medications?</strong><strong><br/></strong> Medications alter brain chemistry through systemic absorption, which can lead to side effects throughout the body. TMS works locally by stimulating brain regions involved in mood regulation, offering targeted treatment without systemic side effects.</p>
-<p class="wp-block-paragraph"><strong>Q: How long does treatment take?</strong><strong><br/></strong> A typical course involves <strong>daily sessions, five days per week for 4â€“6 weeks</strong>. Each session lasts about 20â€“40 minutes.</p>
+<p class="wp-block-paragraph"><strong>Q: How long does treatment take?</strong><strong><br/></strong> A typical course involves <strong>daily sessions, five days per week for 4–6 weeks</strong>. Each session lasts about 20–40 minutes.</p>
 <p class="wp-block-paragraph"><strong>Q: Will TMS replace therapy or other treatments?</strong><strong><br/></strong> Not necessarily. TMS is often most effective when combined with psychotherapy, healthy lifestyle practices, and sometimes low-dose medication.</p>
-<p class="wp-block-paragraph"><strong>Q: What if my teen doesnâ€™t respond to TMS?</strong><strong><br/></strong> Every teen is unique. If TMS alone does not provide enough relief, our psychiatrists may recommend other interventional options or a tailored care plan that best suits your childâ€™s needs.</p>
+<p class="wp-block-paragraph"><strong>Q: What if my teen doesn’t respond to TMS?</strong><strong><br/></strong> Every teen is unique. If TMS alone does not provide enough relief, our psychiatrists may recommend other interventional options or a tailored care plan that best suits your child’s needs.</p>
 <p class="wp-block-paragraph"><strong>Q: Does TMS hurt?</strong><strong><br/></strong> Most teens describe the sensation as a tapping or clicking sound on the scalp. Discomfort is mild and usually improves after the first few sessions.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Taking the Next Step</strong></h2>

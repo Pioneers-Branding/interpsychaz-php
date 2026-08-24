@@ -78,7 +78,7 @@ require_once __DIR__ . '/includes/header.php';
 <p>If your teen is experiencing changes in mood, behavior, academic performance, or social relationships that last more than a few weeks, it may be time to consult a psychiatrist.</p>
 <h4>Does Teenage Psychiatry involve medication?</h4>
 <p>Not always. While medication can be part of the treatment plan, we start with psychiatric evaluations to determine the best options for your teen. These can include any combination of: referrals for further testing, therapy, medications, or school accommodation recommendations. Use of medication is carefully considered and monitored.</p>
-<h4>Can I be involved in my teenâ€™s treatment?</h4>
+<h4>Can I be involved in my teen’s treatment?</h4>
 <p>Yes. Family involvement is highly encouraged and often leads to better outcomes. We work with parents and guardians throughout the care process.</p>
 </div>
 </div>
@@ -90,7 +90,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-flex">
 <div class="dm-full">
 <h3>Start Healing Today</h3>
-<p>Supporting your teenâ€™s mental health today can change their future. Contact Interventional Psychiatry of Arizona to schedule a confidential consultation and discover how we can help your teenager feel more balanced, confident, and supported.</p>
+<p>Supporting your teen’s mental health today can change their future. Contact Interventional Psychiatry of Arizona to schedule a confidential consultation and discover how we can help your teenager feel more balanced, confident, and supported.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -116,7 +116,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

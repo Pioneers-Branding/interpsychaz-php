@@ -35,7 +35,7 @@ require_once __DIR__ . '/includes/header.php';
 <p>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016<br/>
 <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></p>
 <h3>Compassionate PTSD &amp; Trauma Care in Phoenix</h3>
-<p>Trauma changes how we see the world, ourselves, and our future. At InterPsych AZ, we provide specialized, evidence-based treatment for Post-Traumatic Stress Disorder (PTSD) and trauma-related conditionsâ€”helping clients process past experiences and reclaim their lives.</p>
+<p>Trauma changes how we see the world, ourselves, and our future. At InterPsych AZ, we provide specialized, evidence-based treatment for Post-Traumatic Stress Disorder (PTSD) and trauma-related conditions—helping clients process past experiences and reclaim their lives.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -89,7 +89,7 @@ require_once __DIR__ . '/includes/header.php';
 <li>Trauma history intake</li>
 <li>Functional assessments to evaluate daily impact</li>
 </ul>
-<p>We determine if youâ€™re experiencing PTSD, complex trauma, or other trauma-related conditions and develop a customized treatment plan.</p>
+<p>We determine if you’re experiencing PTSD, complex trauma, or other trauma-related conditions and develop a customized treatment plan.</p>
 </div>
 </div>
 </div>
@@ -131,7 +131,7 @@ require_once __DIR__ . '/includes/header.php';
 <p>Call <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a><br/>
 2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016</p>
 <p>Book Your Appointment Now<br/>
-You donâ€™t have to live in survival mode. Weâ€™re here to help you feel safe, connected, and whole again.</p>
+You don’t have to live in survival mode. We’re here to help you feel safe, connected, and whole again.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -157,7 +157,7 @@ You donâ€™t have to live in survival mode. Weâ€™re here to help you fe
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

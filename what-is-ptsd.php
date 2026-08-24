@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -58,15 +58,15 @@ require_once __DIR__ . '/includes/header.php';
 <p>2) Avoiding anything that reminds you of the event</p>
 <p>3) Negative changes in your thoughts and feelings</p>
 <p>4) Feeling on edge</p>
-<p>Reliving the event (flashbacks): Flashbacks are like reliving the trauma all over again. They can happen anytime â€“ when you are awake or asleep. You may see, hear, or smell things that remind you of the event and feel like it is happening again in the present.</p>
+<p>Reliving the event (flashbacks): Flashbacks are like reliving the trauma all over again. They can happen anytime – when you are awake or asleep. You may see, hear, or smell things that remind you of the event and feel like it is happening again in the present.</p>
 <p>Avoiding anything that reminds you of the event: You may try to avoid any activities, places, people, thoughts, or feelings that remind you of the trauma. You may feel numb and disconnected from others. You may lose interest in activities that you used to enjoy and have trouble experiencing positive emotions.</p>
 <p>Negative changes in your thoughts and feelings: It is common for people with PTSD to think differently about themselves and others after a traumatic experience. For example, you may blame yourself for what happened or be convinced that the world is completely dangerous. These negative beliefs can lead to feeling hopelessness, shame, or despair.</p>
 <p>Feeling on edge: People with PTSD often feel jumpy and easily startled. They may have trouble sleeping and concentrating or always be on the lookout for danger. Their bodies might stay on high alert all the time which leads to feeling tense and irritable a lot.</p>
-<p>Not everyone who experiences a traumatic event will develop PTSD but if your symptoms last more than a few weeks and are interfering with your life itâ€™s important to get help from a mental health professional who specializes in treating PTSD.</p>
+<p>Not everyone who experiences a traumatic event will develop PTSD but if your symptoms last more than a few weeks and are interfering with your life it’s important to get help from a mental health professional who specializes in treating PTSD.</p>
 <p>Treatment for PTSD</p>
-<p>There are many effective treatments available for PTSD including cognitive behavioral therapy (CBT), eye movement desensitization reprocessing (EMDR), medication, and support groups. CBT helps people change their thinking patterns and improve their coping skills so they can better manage their symptoms. EMDR helps people process their trauma so they can move on from it instead of reliving it over and over again in their minds. Medication can help with some of the symptoms of PTSD such as sleep problems and depression but itâ€™s important to note that medication should not be used as the only treatment for PTSD as it does not address the root cause of the problem â€“ the trauma itself. Support groups provide a safe place for people with PTSD to share their experiences with others who understand what they are going through which can be very helpful in managing symptoms and promoting healing.â€</p>
+<p>There are many effective treatments available for PTSD including cognitive behavioral therapy (CBT), eye movement desensitization reprocessing (EMDR), medication, and support groups. CBT helps people change their thinking patterns and improve their coping skills so they can better manage their symptoms. EMDR helps people process their trauma so they can move on from it instead of reliving it over and over again in their minds. Medication can help with some of the symptoms of PTSD such as sleep problems and depression but it’s important to note that medication should not be used as the only treatment for PTSD as it does not address the root cause of the problem – the trauma itself. Support groups provide a safe place for people with PTSD to share their experiences with others who understand what they are going through which can be very helpful in managing symptoms and promoting healing.”</p>
 <p>Conclusion:</p>
-<p>If you have experienced or witnessed a traumatic event and it is causing you distress, you may have PTSD. Symptoms of PTSD include flashbacks, avoidance behaviors, negative changes in thought and feeling patterns, and feeling on edge all the time. There are many effective treatments available for PTSD including cognitive behavioral therapy (CBT), eye movement desensitization reprocessing (EMDR), medication, and support groups.â€</p>
+<p>If you have experienced or witnessed a traumatic event and it is causing you distress, you may have PTSD. Symptoms of PTSD include flashbacks, avoidance behaviors, negative changes in thought and feeling patterns, and feeling on edge all the time. There are many effective treatments available for PTSD including cognitive behavioral therapy (CBT), eye movement desensitization reprocessing (EMDR), medication, and support groups.”</p>
  </div>
 </div><!--.post-single-content-->
 </div><!--.single_post-->
@@ -89,7 +89,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

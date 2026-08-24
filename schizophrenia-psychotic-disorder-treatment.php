@@ -44,7 +44,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-flex">
 <div class="dm-full">
 <h3>What Are Psychotic Disorders?</h3>
-<p>Psychotic disorders are serious mental health conditions that impact a personâ€™s perception of reality. They may involve hallucinations, delusions, disorganized thinking, or altered behavior.</p>
+<p>Psychotic disorders are serious mental health conditions that impact a person’s perception of reality. They may involve hallucinations, delusions, disorganized thinking, or altered behavior.</p>
 <p>The most common psychotic disorders include:</p>
 <ul>
 <li>Schizophrenia</li>
@@ -64,8 +64,8 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-full">
 <h3>Symptoms of Psychotic Disorders</h3>
 <ul>
-<li>Hallucinations (seeing, hearing, or feeling things that arenâ€™t there)</li>
-<li>Delusions (strong beliefs that arenâ€™t based in reality)</li>
+<li>Hallucinations (seeing, hearing, or feeling things that aren’t there)</li>
+<li>Delusions (strong beliefs that aren’t based in reality)</li>
 <li>Disorganized speech or behavior</li>
 <li>Flat affect or emotional withdrawal</li>
 <li>Difficulty with concentration or memory</li>
@@ -131,7 +131,7 @@ Recognize early warning signs, reduce hospitalizations, and build safety nets fo
 <div class="dm-full">
 <h3>Frequently Asked Questions</h3>
 <div class="contentfaqs">
-<h4>Whatâ€™s the difference between schizophrenia and schizoaffective disorder?</h4>
+<h4>What’s the difference between schizophrenia and schizoaffective disorder?</h4>
 <p>Schizoaffective disorder includes mood symptoms (depression or mania) along with psychotic symptoms. Schizophrenia does not consistently include mood episodes.</p>
 <h4>Do I have to take medication forever?</h4>
 <p>Medication is often essential but can be reassessed over time. Many patients achieve stability and fewer side effects with the right psychiatric support.</p>
@@ -152,7 +152,7 @@ Recognize early warning signs, reduce hospitalizations, and build safety nets fo
 <p>Call <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a><br/>
 2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016</p>
 <p>Request an Appointment Today<br/>
-You or your loved one deserve compassionate, expert care for complex mental health challenges. Weâ€™re here to help.</p>
+You or your loved one deserve compassionate, expert care for complex mental health challenges. We’re here to help.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -178,7 +178,7 @@ You or your loved one deserve compassionate, expert care for complex mental heal
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

@@ -33,7 +33,7 @@ require_once __DIR__ . '/includes/header.php';
 <p>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016<br/>
 <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></p>
 <h3>Compassionate Depression Treatment in Phoenix, AZ</h3>
-<p>Depression is more than feeling sadâ€”itâ€™s a medical condition that affects how you feel, think, and function. At InterPsych AZ, we offer personalized and evidence-based care to help you manage symptoms of depression and regain control of your life.</p>
+<p>Depression is more than feeling sad—it’s a medical condition that affects how you feel, think, and function. At InterPsych AZ, we offer personalized and evidence-based care to help you manage symptoms of depression and regain control of your life.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -45,7 +45,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-full">
 <h3>What is Depression?</h3>
 <p>Depression (Major Depressive Disorder) is a common mental health condition characterized by persistent sadness, lack of interest in daily activities, and emotional or physical fatigue. It can interfere with work, relationships, sleep, and your overall quality of life.<br/>
-Depression is treatableâ€”and you donâ€™t have to face it alone.</p>
+Depression is treatable—and you don’t have to face it alone.</p>
 </div>
 </div>
 </div>
@@ -124,7 +124,7 @@ We will work with you to coordinate any medications, if appropriate.</p>
 <div class="dm-full">
 <h3>Frequently Asked Questions</h3>
 <div class="contentfaqs">
-<h4>How do I know if Iâ€™m depressed or just stressed?</h4>
+<h4>How do I know if I’m depressed or just stressed?</h4>
 <p>While stress can cause temporary sadness, depression lasts for weeks or months and significantly impacts your daily life. We can help assess the difference.</p>
 <h4>Will I need medication?</h4>
 <p>Not always. Many patients benefit from therapy alone. If needed, we can provide referrals to trusted therapists.</p>
@@ -141,7 +141,7 @@ We will work with you to coordinate any medications, if appropriate.</p>
 <p><a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a><br/>
 2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016</p>
 <p>Schedule an Appointment<br/>
-Weâ€™re here to help you find peace, balance, and hope.</p>
+We’re here to help you find peace, balance, and hope.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -167,7 +167,7 @@ Weâ€™re here to help you find peace, balance, and hope.</p>
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

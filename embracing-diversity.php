@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -56,7 +56,7 @@ require_once __DIR__ . '/includes/header.php';
 <p>For example, individuals from racial and ethnic minority backgrounds may experience higher rates of mental health disparities due to systemic racism, discrimination, and cultural factors. LGBTQ+ individuals may face additional challenges related to stigma, identity acceptance, and access to affirming mental health services. Exploring these intersections helps us develop a holistic understanding of mental health experiences.</p>
 <p><strong>Addressing Disparities:</strong> Marginalized communities often face disparities in accessing mental health resources and care. Our approach should look into the systemic barriers that contribute to these disparities, such as limited availability of culturally competent services, language barriers, lack of insurance coverage, and stigma within communities. By understanding these obstacles, we can advocate for policies and initiatives that aim to bridge the gap.</p>
 <p>This involves promoting mental health awareness and literacy within marginalized communities, advocating for increased funding for mental health programs, and urging policymakers to prioritize equitable mental health care. Additionally, collaboration between mental health providers, community organizations, and social services can help ensure that mental health resources reach underserved populations.</p>
-<p><strong>Cultivating Cultural Competence:</strong> Cultural competence is vital in providing effective mental health care. We should explore the importance of understanding diverse cultural contexts, beliefs, and practices when supporting individuals from different backgrounds. Mental health professionals should strive to be culturally sensitive, acknowledging and respecting the unique experiences and cultural influences that shape an individualâ€™s mental health journey.</p>
+<p><strong>Cultivating Cultural Competence:</strong> Cultural competence is vital in providing effective mental health care. We should explore the importance of understanding diverse cultural contexts, beliefs, and practices when supporting individuals from different backgrounds. Mental health professionals should strive to be culturally sensitive, acknowledging and respecting the unique experiences and cultural influences that shape an individual’s mental health journey.</p>
 <p>Cultivating cultural competence involves ongoing education, training, and self-reflection. It also requires creating safe spaces where individuals can express their cultural identities without fear of judgment or discrimination. By integrating cultural knowledge into mental health practices, we can provide more effective, relevant, and personalized support.</p>
 <p><strong>Empowering Voices:</strong> Amplifying the voices of marginalized communities is crucial in the journey towards mental health equity. We need to highlight stories and experiences of individuals who have navigated the intersection of mental health and identity. By sharing these narratives, we aim to foster understanding, empathy, and solidarity.</p>
 <p>These personal stories provide insight into the unique challenges faced by marginalized communities and showcase the resilience and strength of individuals. By amplifying these voices, we contribute to destigmatizing mental health struggles within diverse communities and encourage others to seek help and support.</p>
@@ -85,7 +85,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

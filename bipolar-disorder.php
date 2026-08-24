@@ -29,11 +29,11 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half wow fadeInRight">
 <img alt="" class="aligncenter size-full wp-image-518" decoding="async" fetchpriority="high" height="667" sizes="(max-width: 1000px) 100vw, 1000px" src="/wp-content/uploads/2025/07/displaying_bipolar_disorder_man_jpg.jpg" srcset="/wp-content/uploads/2025/07/displaying_bipolar_disorder_man_jpg.jpg 1000w, /wp-content/uploads/2025/07/displaying_bipolar_disorder_man_jpg-300x200.jpg 300w, /wp-content/uploads/2025/07/displaying_bipolar_disorder_man_jpg-768x512.jpg 768w, /wp-content/uploads/2025/07/displaying_bipolar_disorder_man_jpg-800x533.jpg 800w" width="1000"/></div>
 <div class="dm-half wow fadeInLeft dm-space"><span class="anchor-fix" id="bipolar-disorder"></span>
-<h3>Bipolar Disorder â€“ InterPsych AZ</h3>
+<h3>Bipolar Disorder – InterPsych AZ</h3>
 <p>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016<br/>
 <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></p>
 <h3>Bipolar Disorder Treatment in Phoenix, AZ</h3>
-<p>At InterPsych AZ, we provide expert, compassionate care for individuals living with bipolar disorder. Whether youâ€™re struggling with mood swings, depression, or manic episodes, our team of mental health professionals are here to help.</p>
+<p>At InterPsych AZ, we provide expert, compassionate care for individuals living with bipolar disorder. Whether you’re struggling with mood swings, depression, or manic episodes, our team of mental health professionals are here to help.</p>
 <p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
 </p></div>
 </div>
@@ -47,9 +47,9 @@ require_once __DIR__ . '/includes/header.php';
 <p>Bipolar disorder is a mental health condition that causes extreme mood shifts, including emotional highs (mania or hypomania) and lows (depression). These mood episodes can interfere with your daily life, relationships, and job performance.</p>
 <p>There are different types of bipolar disorder:</p>
 <ul>
-<li><strong>Bipolar I Disorder</strong> â€“ Includes at least one manic episode.</li>
-<li><strong>Bipolar II Disorder</strong> â€“ Includes depressive and hypomanic episodes.</li>
-<li><strong>Cyclothymic Disorder</strong> â€“ Chronic fluctuating mood disturbances.</li>
+<li><strong>Bipolar I Disorder</strong> – Includes at least one manic episode.</li>
+<li><strong>Bipolar II Disorder</strong> – Includes depressive and hypomanic episodes.</li>
+<li><strong>Cyclothymic Disorder</strong> – Chronic fluctuating mood disturbances.</li>
 </ul>
 </div>
 </div>
@@ -74,7 +74,7 @@ require_once __DIR__ . '/includes/header.php';
 <li>Difficulty concentrating</li>
 <li>Suicidal thoughts or self-harm</li>
 </ul>
-<p>If youâ€™re experiencing these symptoms, youâ€™re not aloneâ€”and help is available.</p>
+<p>If you’re experiencing these symptoms, you’re not alone—and help is available.</p>
 </div>
 </div>
 </div>
@@ -177,7 +177,7 @@ We will work with you to coordinate any medications, if appropriate.</p>
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

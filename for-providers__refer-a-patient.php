@@ -28,7 +28,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-flex">
 <div class="dm-half wow fadeInRight">
 <h2>Working Together to Give Patients Hope</h2>
-<p>Are you considering referring a patient but unsure if theyâ€™re the right fit? Let us handle the evaluation! Our team will assess your patient to determine if they are a candidate for TMS therapy, and weâ€™ll keep you informed every step of the way.</p>
+<p>Are you considering referring a patient but unsure if they’re the right fit? Let us handle the evaluation! Our team will assess your patient to determine if they are a candidate for TMS therapy, and we’ll keep you informed every step of the way.</p>
 <div class="contentfaqs">
 <h4>Patient Eligibility</h4>
 <p>A patient may be a good candidate for TMS if they:</p>
@@ -47,14 +47,14 @@ require_once __DIR__ . '/includes/header.php';
 <li>Participation in evidence-based talk therapy</li>
 </ul>
 <h4>Free Phone Consultation</h4>
-<p>Weâ€™ll reach out to your patient to determine their eligibility for our advanced treatment modalities and develop a personalized treatment plan. Throughout the process, weâ€™ll ensure clear and consistent communication with you.</p>
+<p>We’ll reach out to your patient to determine their eligibility for our advanced treatment modalities and develop a personalized treatment plan. Throughout the process, we’ll ensure clear and consistent communication with you.</p>
 <p>For referrals or questions, contact us today!</p>
 </div>
 </div>
 <div class="dm-half wow fadeInLeft dm-space">
 <h3>Appointments &amp; Contact</h3>
 <p>Please call our office to schedule an appointment to determine if you are a candidate for either Spravato, TMS, or ECT.</p>
-<p>Providers please fax patientâ€™s records to submit a referral.</p>
+<p>Providers please fax patient’s records to submit a referral.</p>
 <h4>Get In Touch</h4>
 <p>Phone: <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a><br/>
 Fax: <a href="tel:(602) 899-6550">(602) 899-6550</a></p>

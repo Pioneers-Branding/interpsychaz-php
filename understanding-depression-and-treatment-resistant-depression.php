@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -52,7 +52,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
 <h2><b><img alt="Understanding Depression and Treatment-Resistant Depression" class="aligncenter wp-image-435" data-lazy-sizes="(max-width: 401px) 100vw, 401px" data-lazy-src="/wp-content/uploads/2025/04/Understanding-Depression-and-Treatment-Resistant-Depression.png" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/04/Understanding-Depression-and-Treatment-Resistant-Depression.png 1000w, http://interpsychaz.com/wp-content/uploads/2025/04/Understanding-Depression-and-Treatment-Resistant-Depression-300x200.png 300w, http://interpsychaz.com/wp-content/uploads/2025/04/Understanding-Depression-and-Treatment-Resistant-Depression-768x514.png 768w, http://interpsychaz.com/wp-content/uploads/2025/04/Understanding-Depression-and-Treatment-Resistant-Depression-800x533.png 800w" decoding="async" fetchpriority="high" height="268" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20401%20268'%3E%3C/svg%3E" width="401"/><noscript><img alt="Understanding Depression and Treatment-Resistant Depression" class="aligncenter wp-image-435" decoding="async" fetchpriority="high" height="268" sizes="(max-width: 401px) 100vw, 401px" src="/wp-content/uploads/2025/04/Understanding-Depression-and-Treatment-Resistant-Depression.png" srcset="/wp-content/uploads/2025/04/Understanding-Depression-and-Treatment-Resistant-Depression.png 1000w, /wp-content/uploads/2025/04/Understanding-Depression-and-Treatment-Resistant-Depression-300x200.png 300w, /wp-content/uploads/2025/04/Understanding-Depression-and-Treatment-Resistant-Depression-768x514.png 768w, /wp-content/uploads/2025/04/Understanding-Depression-and-Treatment-Resistant-Depression-800x533.png 800w" width="401"/></noscript>What is Depression?</b></h2>
-<p><span style="font-weight: 400;">Depression is a serious mental health condition that affects how a person feels, thinks, and behaves. It can lead to emotional and physical problems, reducing an individualâ€™s ability to function in daily life. While many people experience occasional sadness, clinical depression is persistent and can interfere with daily activities such as work, sleep, and relationships.</span></p>
+<p><span style="font-weight: 400;">Depression is a serious mental health condition that affects how a person feels, thinks, and behaves. It can lead to emotional and physical problems, reducing an individual’s ability to function in daily life. While many people experience occasional sadness, clinical depression is persistent and can interfere with daily activities such as work, sleep, and relationships.</span></p>
 <h2><b>Common Causes of Depression</b></h2>
 <p><span style="font-weight: 400;">Depression can be caused by a combination of biological, psychological, and environmental factors, including:</span></p>
 <h4><b>1. Brain Chemistry Imbalances</b></h4>
@@ -142,7 +142,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

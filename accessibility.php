@@ -25,7 +25,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="post-content">
 <div class="container">
 <p><strong>Overview</strong><br/>
-At Interventional Psychiatry of Arizona, we respect the dignity and independence of our guests and we are committed to providing full and equal access to everyone who visits our facility and website. Hereâ€™s what you can expect from us:</p>
+At Interventional Psychiatry of Arizona, we respect the dignity and independence of our guests and we are committed to providing full and equal access to everyone who visits our facility and website. Here’s what you can expect from us:</p>
 <p><strong>Communication</strong><br/>
 We are committed to effectively communicating with our guests. We provide, at no charge, auxiliary aids and services which are reasonably necessary to achieve effective communication. We accept Operator Relay Service calls, and Teletypewriter (TTY/TDD) calls through 711, in the same manner as traditional telephonic channels.</p>
 <p><strong>Website Access</strong><br/>

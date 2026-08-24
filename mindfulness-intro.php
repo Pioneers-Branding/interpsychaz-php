@@ -1,7 +1,7 @@
 ﻿<?php
 $pageTitle = 'Mindfulness Intro | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'Mindfulness Intro - Welcome to the world of mindfulness! If youâ€™re new to the practice, itâ€™s important to understand what it is, where it comes from, and how it can benefit';
+$pageDescription = 'Mindfulness Intro - Welcome to the world of mindfulness! If you’re new to the practice, it’s important to understand what it is, where it comes from, and how it can benefit';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/mindfulness-intro/';
@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -51,10 +51,10 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<p><img alt="" class="aligncenter size-full wp-image-227" data-lazy-sizes="(max-width: 600px) 100vw, 600px" data-lazy-src="/wp-content/uploads/2025/03/iStock-841676562-1.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/iStock-841676562-1.jpg.webp 600w, http://interpsychaz.com/wp-content/uploads/2025/03/iStock-841676562-1.jpg-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/iStock-841676562-1.jpg-800x533.webp 800w" decoding="async" fetchpriority="high" height="400" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E" width="600"/><noscript><img alt="" class="aligncenter size-full wp-image-227" decoding="async" fetchpriority="high" height="400" sizes="(max-width: 600px) 100vw, 600px" src="/wp-content/uploads/2025/03/iStock-841676562-1.jpg.webp" srcset="/wp-content/uploads/2025/03/iStock-841676562-1.jpg.webp 600w, /wp-content/uploads/2025/03/iStock-841676562-1.jpg-300x200.webp 300w, /wp-content/uploads/2025/03/iStock-841676562-1.jpg-800x533.webp 800w" width="600"/></noscript>Welcome to the world of <a href="/category/mindfulness/">mindfulness</a>! If youâ€™re new to the practice, itâ€™s important to understand what it is, where it comes from, and how it can benefit your life. Mindfulness is a practice of paying attention to the present moment, without judgment or distraction. It can be done through a variety of techniques, including meditation, breathing exercises, and simply taking a few moments to focus on your surroundings. The origins of mindfulness can be traced back to ancient Eastern traditions, but it has gained popularity in the West in recent years due to its many benefits for mental and physical health.</p>
+<p><img alt="" class="aligncenter size-full wp-image-227" data-lazy-sizes="(max-width: 600px) 100vw, 600px" data-lazy-src="/wp-content/uploads/2025/03/iStock-841676562-1.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/iStock-841676562-1.jpg.webp 600w, http://interpsychaz.com/wp-content/uploads/2025/03/iStock-841676562-1.jpg-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/iStock-841676562-1.jpg-800x533.webp 800w" decoding="async" fetchpriority="high" height="400" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20400'%3E%3C/svg%3E" width="600"/><noscript><img alt="" class="aligncenter size-full wp-image-227" decoding="async" fetchpriority="high" height="400" sizes="(max-width: 600px) 100vw, 600px" src="/wp-content/uploads/2025/03/iStock-841676562-1.jpg.webp" srcset="/wp-content/uploads/2025/03/iStock-841676562-1.jpg.webp 600w, /wp-content/uploads/2025/03/iStock-841676562-1.jpg-300x200.webp 300w, /wp-content/uploads/2025/03/iStock-841676562-1.jpg-800x533.webp 800w" width="600"/></noscript>Welcome to the world of <a href="/category/mindfulness/">mindfulness</a>! If you’re new to the practice, it’s important to understand what it is, where it comes from, and how it can benefit your life. Mindfulness is a practice of paying attention to the present moment, without judgment or distraction. It can be done through a variety of techniques, including meditation, breathing exercises, and simply taking a few moments to focus on your surroundings. The origins of mindfulness can be traced back to ancient Eastern traditions, but it has gained popularity in the West in recent years due to its many benefits for mental and physical health.</p>
 <p>So, what are some of the benefits of mindfulness? Research has shown that mindfulness can reduce stress, anxiety, and depression. It can also improve concentration, memory, and overall well being. By being present in the moment and fully engaged in your surroundings, you can experience life more fully and with greater appreciation.</p>
-<p>If youâ€™re new to mindfulness, itâ€™s important to start small and not feel overwhelmed by the practice. Begin with a few minutes of meditation or simply focusing on your breath. You can also incorporate mindfulness into your daily routine by taking a few moments to appreciate the beauty of nature or the taste and texture of your food.</p>
-<p>Itâ€™s important to approach mindfulness with an open mind and without judgment. The practice is not about perfection or achieving a certain outcome, but rather about being present and accepting of whatever arises in the moment.</p>
+<p>If you’re new to mindfulness, it’s important to start small and not feel overwhelmed by the practice. Begin with a few minutes of meditation or simply focusing on your breath. You can also incorporate mindfulness into your daily routine by taking a few moments to appreciate the beauty of nature or the taste and texture of your food.</p>
+<p>It’s important to approach mindfulness with an open mind and without judgment. The practice is not about perfection or achieving a certain outcome, but rather about being present and accepting of whatever arises in the moment.</p>
 <p>In conclusion, mindfulness is a powerful tool for improving mental and physical health, and can be incorporated into your daily routine in small, manageable ways. By embracing the practice with an open mind and heart, you can experience the many benefits that mindfulness has to offer. So, take a few moments today to be present in the moment and see how it can change your perspective on life.</p>
  </div>
 </div><!--.post-single-content-->
@@ -78,7 +78,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

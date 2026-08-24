@@ -1,7 +1,7 @@
 ﻿<?php
-$pageTitle = 'Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy | Interventional Psychiatry of Arizona Burnout vs Depression: Signs, Symptoms &amp; Advanced Treatment Options | Interventional Psychiatry AZ';
+$pageTitle = 'Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy | Interventional Psychiatry of Arizona Burnout vs Depression: Signs, Symptoms &amp; Advanced Treatment Options | Interventional Psychiatry AZ';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy - In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally drained has become increasingly common. Many people describe what theyâ€™reStruggling with burnout or depression? Learn the key differences, why nothing feels enjoyable, and advanced treatment options beyond therapy. Call Interventional Psychiatry of Arizona today.';
+$pageDescription = 'Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy - In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally drained has become increasingly common. Many people describe what they’reStruggling with burnout or depression? Learn the key differences, why nothing feels enjoyable, and advanced treatment options beyond therapy. Call Interventional Psychiatry of Arizona today.';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/';
@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single" id="page">
 <section class="page-header">
 <div class="container">
-<h1 class="page-title">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</h1>
+<h1 class="page-title">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</h1>
 </div>
 </section>
 <article class="article dm-full-width">
@@ -25,12 +25,12 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
 <h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
@@ -51,11 +51,11 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<figure class="wp-block-image size-large"><img alt="Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy" class="wp-image-770" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-1024x685.jpg" data-lazy-srcset="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-1024x685.jpg 1024w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-300x200.jpg 300w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-768x514.jpg 768w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-1536x1028.jpg 1536w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy.jpg 1900w" decoding="async" fetchpriority="high" height="685" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20685'%3E%3C/svg%3E" width="1024"/><noscript><img alt="Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy" class="wp-image-770" decoding="async" fetchpriority="high" height="685" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-1024x685.jpg" srcset="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-1024x685.jpg 1024w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-300x200.jpg 300w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-768x514.jpg 768w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy-1536x1028.jpg 1536w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Differenceâ€”and-When-Its-Time-for-More-Than-Therapy.jpg 1900w" width="1024"/></noscript></figure>
-<p class="wp-block-paragraph">In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally drained has become increasingly common. Many people describe what theyâ€™re experiencing as â€œburnoutâ€â€”but what if itâ€™s actually depression? While the two can overlap, understanding the difference is crucial for getting the right kind of help.</p>
-<p class="wp-block-paragraph">At <strong>Interventional Psychiatry of Arizona</strong>, we specialize in advanced, evidence-based treatments for individuals who feel stuck, especially when traditional approaches like talk therapy or medication arenâ€™t enough.</p>
+<figure class="wp-block-image size-large"><img alt="Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy" class="wp-image-770" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-1024x685.jpg" data-lazy-srcset="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-1024x685.jpg 1024w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-300x200.jpg 300w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-768x514.jpg 768w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-1536x1028.jpg 1536w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy.jpg 1900w" decoding="async" fetchpriority="high" height="685" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20685'%3E%3C/svg%3E" width="1024"/><noscript><img alt="Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy" class="wp-image-770" decoding="async" fetchpriority="high" height="685" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-1024x685.jpg" srcset="/wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-1024x685.jpg 1024w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-300x200.jpg 300w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-768x514.jpg 768w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy-1536x1028.jpg 1536w, /wp-content/uploads/2026/04/Depression-Burnout-How-to-Tell-the-Difference—and-When-Its-Time-for-More-Than-Therapy.jpg 1900w" width="1024"/></noscript></figure>
+<p class="wp-block-paragraph">In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally drained has become increasingly common. Many people describe what they’re experiencing as “burnout”—but what if it’s actually depression? While the two can overlap, understanding the difference is crucial for getting the right kind of help.</p>
+<p class="wp-block-paragraph">At <strong>Interventional Psychiatry of Arizona</strong>, we specialize in advanced, evidence-based treatments for individuals who feel stuck, especially when traditional approaches like talk therapy or medication aren’t enough.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
-<h2 class="wp-block-heading"><strong>Burnout vs. Depression: Whatâ€™s the Difference?</strong></h2>
+<h2 class="wp-block-heading"><strong>Burnout vs. Depression: What’s the Difference?</strong></h2>
 <p class="wp-block-paragraph">Although burnout and depression share similar symptoms, they are not the same condition.</p>
 <h3 class="wp-block-heading"><strong>Burnout</strong></h3>
 <p class="wp-block-paragraph">Burnout is typically tied to <strong>external stressors</strong>, most often related to work or caregiving responsibilities. It builds over time and is characterized by:</p>
@@ -67,7 +67,7 @@ require_once __DIR__ . '/includes/header.php';
 </ul>
 <p class="wp-block-paragraph">Burnout often improves when the stressor is reduced or removed (e.g., taking time off, changing jobs, setting boundaries).</p>
 <h3 class="wp-block-heading"><strong>Depression</strong></h3>
-<p class="wp-block-paragraph">Depression is a <strong>clinical mental health condition</strong> that affects how you think, feel, and function across all areas of lifeâ€”not just work.</p>
+<p class="wp-block-paragraph">Depression is a <strong>clinical mental health condition</strong> that affects how you think, feel, and function across all areas of life—not just work.</p>
 <p class="wp-block-paragraph">Common symptoms include:</p>
 <ul class="wp-block-list">
 <li>Persistent sadness or emptiness</li>
@@ -77,33 +77,33 @@ require_once __DIR__ . '/includes/header.php';
 <li>Difficulty concentrating</li>
 <li>Feelings of worthlessness or guilt</li>
 </ul>
-<p class="wp-block-paragraph">Unlike burnout, depression <strong>doesnâ€™t always improve with rest or lifestyle changes</strong>â€”and may require targeted treatment.</p>
+<p class="wp-block-paragraph">Unlike burnout, depression <strong>doesn’t always improve with rest or lifestyle changes</strong>—and may require targeted treatment.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Why Nothing Feels Enjoyable Anymore</strong></h2>
-<p class="wp-block-paragraph">One of the most telling signs of depression is <strong>anhedonia</strong>â€”the inability to feel pleasure.</p>
+<p class="wp-block-paragraph">One of the most telling signs of depression is <strong>anhedonia</strong>—the inability to feel pleasure.</p>
 <p class="wp-block-paragraph">You might notice:</p>
 <ul class="wp-block-list">
 <li>Activities you once loved feel like a chore</li>
 <li>Socializing feels draining instead of energizing</li>
-<li>You feel emotionally â€œflatâ€ or numb</li>
-<li>Even positive events donâ€™t bring joy</li>
+<li>You feel emotionally “flat” or numb</li>
+<li>Even positive events don’t bring joy</li>
 </ul>
-<p class="wp-block-paragraph">This isnâ€™t laziness or lack of motivationâ€”itâ€™s a neurological symptom. Depression can alter brain circuits involved in reward and motivation, making it difficult to experience enjoyment.</p>
+<p class="wp-block-paragraph">This isn’t laziness or lack of motivation—it’s a neurological symptom. Depression can alter brain circuits involved in reward and motivation, making it difficult to experience enjoyment.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>When Depression Needs More Than Therapy</strong></h2>
-<p class="wp-block-paragraph">Talk therapy is a powerful tool, but itâ€™s not always enoughâ€”especially for individuals with <strong>treatment-resistant depression</strong>.</p>
+<p class="wp-block-paragraph">Talk therapy is a powerful tool, but it’s not always enough—especially for individuals with <strong>treatment-resistant depression</strong>.</p>
 <p class="wp-block-paragraph">Here are signs you may need more advanced care:</p>
 <ul class="wp-block-list">
-<li>Youâ€™ve tried therapy and/or medication with little improvement</li>
+<li>You’ve tried therapy and/or medication with little improvement</li>
 <li>Symptoms persist for months or years</li>
-<li>You feel stuck despite doing â€œeverything rightâ€</li>
+<li>You feel stuck despite doing “everything right”</li>
 <li>Depression is interfering with work, relationships, or daily life</li>
 <li>You experience frequent relapses</li>
 </ul>
 <p class="wp-block-paragraph">If this sounds familiar, it may be time to explore <strong>interventional psychiatry treatments</strong>, which go beyond traditional approaches.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Advanced Treatment Options That Work</strong></h2>
-<p class="wp-block-paragraph">At Interventional Psychiatry of Arizona, we offer cutting-edge treatments designed for individuals who havenâ€™t found relief through conventional methods.</p>
+<p class="wp-block-paragraph">At Interventional Psychiatry of Arizona, we offer cutting-edge treatments designed for individuals who haven’t found relief through conventional methods.</p>
 <h3 class="wp-block-heading"><strong>1. Transcranial Magnetic Stimulation (TMS)</strong></h3>
 <p class="wp-block-paragraph">A non-invasive treatment that uses magnetic pulses to stimulate areas of the brain involved in mood regulation.</p>
 <p class="wp-block-paragraph"><strong>Benefits:</strong></p>
@@ -126,7 +126,7 @@ require_once __DIR__ . '/includes/header.php';
 <p class="wp-block-paragraph">When medications are used, they are carefully tailored to your unique biology and response patterns.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Why Interventional Psychiatry Works</strong></h2>
-<p class="wp-block-paragraph">Traditional treatments often focus on <strong>chemical imbalances</strong>, but interventional psychiatry goes furtherâ€”targeting the <strong>neural circuits</strong> involved in mood, motivation, and emotional regulation.</p>
+<p class="wp-block-paragraph">Traditional treatments often focus on <strong>chemical imbalances</strong>, but interventional psychiatry goes further—targeting the <strong>neural circuits</strong> involved in mood, motivation, and emotional regulation.</p>
 <p class="wp-block-paragraph">This approach can:</p>
 <ul class="wp-block-list">
 <li>Provide faster relief</li>
@@ -135,14 +135,14 @@ require_once __DIR__ . '/includes/header.php';
 </ul>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Frequently Asked Questions (Q&amp;A)</strong></h2>
-<h3 class="wp-block-heading"><strong>Q: How can I tell if Iâ€™m burned out or depressed?</strong></h3>
+<h3 class="wp-block-heading"><strong>Q: How can I tell if I’m burned out or depressed?</strong></h3>
 <p class="wp-block-paragraph"><strong>A:</strong> Burnout is usually tied to a specific situation (like work), while depression affects all areas of life. If your symptoms persist even when stress is reduced, it may be depression.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h3 class="wp-block-heading"><strong>Q: Can burnout turn into depression?</strong></h3>
 <p class="wp-block-paragraph"><strong>A:</strong> Yes. Chronic, unmanaged burnout can evolve into clinical depression if left untreated.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
-<h3 class="wp-block-heading"><strong>Q: What if therapy hasnâ€™t worked for me?</strong></h3>
-<p class="wp-block-paragraph"><strong>A:</strong> Youâ€™re not alone. Many people need more than talk therapy. Treatments like TMS or ketamine therapy can be highly effective alternatives.</p>
+<h3 class="wp-block-heading"><strong>Q: What if therapy hasn’t worked for me?</strong></h3>
+<p class="wp-block-paragraph"><strong>A:</strong> You’re not alone. Many people need more than talk therapy. Treatments like TMS or ketamine therapy can be highly effective alternatives.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h3 class="wp-block-heading"><strong>Q: Is ketamine therapy safe?</strong></h3>
 <p class="wp-block-paragraph"><strong>A:</strong> When administered in a controlled medical setting, ketamine is safe and well-tolerated. Our team closely monitors every session.</p>
@@ -156,7 +156,7 @@ require_once __DIR__ . '/includes/header.php';
 <h3 class="wp-block-heading"><strong>Q: Who is a good candidate for interventional psychiatry?</strong></h3>
 <p class="wp-block-paragraph"><strong>A:</strong> Individuals who:</p>
 <ul class="wp-block-list">
-<li>Havenâ€™t responded to traditional treatments</li>
+<li>Haven’t responded to traditional treatments</li>
 <li>Experience persistent or severe depression</li>
 <li>Want alternatives to medication</li>
 </ul>
@@ -165,7 +165,7 @@ require_once __DIR__ . '/includes/header.php';
 <p class="wp-block-paragraph"><strong>A:</strong> Many insurance plans cover TMS therapy. Our team can help verify your benefits.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Take the Next Step Toward Feeling Like Yourself Again</strong></h2>
-<p class="wp-block-paragraph">If youâ€™ve been struggling with burnout, depression, or a persistent lack of joy, itâ€™s time to explore options that go beyond traditional care. You donâ€™t have to stay stuckâ€”and effective treatment is available.</p>
+<p class="wp-block-paragraph">If you’ve been struggling with burnout, depression, or a persistent lack of joy, it’s time to explore options that go beyond traditional care. You don’t have to stay stuck—and effective treatment is available.</p>
 <hr class="wp-block-separator has-alpha-channel-opacity"/>
 <h2 class="wp-block-heading"><strong>Contact Information</strong></h2>
 <p class="wp-block-paragraph"><strong>Interventional Psychiatry of Arizona<br/></strong> ðŸ“ž Phone: (602) 824-8404<br/>ðŸŒ Website: <a href="https://interpsychaz.com" id="interpsychaz.com" type="link">interpsychaz.com</a></p>
@@ -192,7 +192,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

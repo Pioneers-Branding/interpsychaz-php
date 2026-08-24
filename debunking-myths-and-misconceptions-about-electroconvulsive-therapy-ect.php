@@ -1,7 +1,7 @@
 ﻿<?php
-$pageTitle = 'Debunking Myths and MisconceptionsÂ about Electroconvulsive Therapy (ECT) | Interventional Psychiatry of Arizona';
+$pageTitle = 'Debunking Myths and Misconceptions about Electroconvulsive Therapy (ECT) | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'Debunking Myths and MisconceptionsÂ about Electroconvulsive Therapy (ECT) - Electroconvulsive Therapy (ECT) has been a widely misunderstood treatment due to its portrayal in movies, outdated information, and general misconceptions';
+$pageDescription = 'Debunking Myths and Misconceptions about Electroconvulsive Therapy (ECT) - Electroconvulsive Therapy (ECT) has been a widely misunderstood treatment due to its portrayal in movies, outdated information, and general misconceptions';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/debunking-myths-and-misconceptions-about-electroconvulsive-therapy-ect/';
@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single" data-rocket-location-hash="56c67d6aea37e5ce914ed3cbb1a24e45" id="page">
 <section class="page-header" data-rocket-location-hash="3aac77729f1c7e705171ebffb90e528f">
 <div class="container">
-<h1 class="page-title">Debunking Myths and MisconceptionsÂ about Electroconvulsive Therapy (ECT)</h1>
+<h1 class="page-title">Debunking Myths and Misconceptions about Electroconvulsive Therapy (ECT)</h1>
 </div>
 </section>
 <article class="article dm-full-width" data-rocket-location-hash="ec774fc978476739b024a7aaae22a73a">
@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -75,7 +75,7 @@ require_once __DIR__ . '/includes/header.php';
 <h2><b>Myth #4: ECT is Like What You See in Movies</b></h2>
 <p><span style="font-weight: 400;">Hollywood has contributed significantly to the fear surrounding ECT by portraying it as a </span><b>barbaric</b><span style="font-weight: 400;"> and outdated treatment.</span></p>
 <h3><b>The Reality</b></h3>
-<p><span style="font-weight: 400;">The way ECT is depicted in movies like </span><i><span style="font-weight: 400;">One Flew Over the Cuckooâ€™s Nest</span></i><span style="font-weight: 400;"> is completely inaccurate. In reality, modern ECT is performed in a </span><b>controlled medical setting</b><span style="font-weight: 400;"> by a team of highly trained professionals. Patients receive </span><b>anesthesia, muscle relaxants, and precise electrical stimulation</b><span style="font-weight: 400;"> to induce a controlled therapeutic seizure. The entire procedure takes only a few minutes, and patients wake up shortly after. The experience is </span><b>nothing like the dramatic and painful portrayals seen in films</b><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">The way ECT is depicted in movies like </span><i><span style="font-weight: 400;">One Flew Over the Cuckoo’s Nest</span></i><span style="font-weight: 400;"> is completely inaccurate. In reality, modern ECT is performed in a </span><b>controlled medical setting</b><span style="font-weight: 400;"> by a team of highly trained professionals. Patients receive </span><b>anesthesia, muscle relaxants, and precise electrical stimulation</b><span style="font-weight: 400;"> to induce a controlled therapeutic seizure. The entire procedure takes only a few minutes, and patients wake up shortly after. The experience is </span><b>nothing like the dramatic and painful portrayals seen in films</b><span style="font-weight: 400;">.</span></p>
 <h2><b>Myth #5: ECT Completely Wipes Out Memories</b></h2>
 <p><span style="font-weight: 400;">Some people believe that ECT results in </span><b>permanent and widespread memory loss</b><span style="font-weight: 400;">, making it too risky.</span></p>
 <h3><b>The Reality</b></h3>
@@ -129,7 +129,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

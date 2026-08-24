@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -52,19 +52,19 @@ require_once __DIR__ . '/includes/header.php';
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
 <h2><img alt="" class="aligncenter size-large wp-image-298" data-lazy-sizes="(max-width: 680px) 100vw, 680px" data-lazy-src="/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-1024x576.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-1024x576.webp 1024w, http://interpsychaz.com/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-300x169.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-768x432.webp 768w, http://interpsychaz.com/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-1536x864.webp 1536w, http://interpsychaz.com/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-2048x1152.webp 2048w" decoding="async" fetchpriority="high" height="383" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20680%20383'%3E%3C/svg%3E" width="680"/><noscript><img alt="" class="aligncenter size-large wp-image-298" decoding="async" fetchpriority="high" height="383" sizes="(max-width: 680px) 100vw, 680px" src="/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-1024x576.webp" srcset="/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-1024x576.webp 1024w, /wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-300x169.webp 300w, /wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-768x432.webp 768w, /wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-1536x864.webp 1536w, /wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-2048x1152.webp 2048w" width="680"/></noscript>Spravato Overview</h2>
-<p>If you or a loved one in Phoenix, AZ is struggling with <a href="/post/treatment-resistant-depression/">treatment-resistant depression</a>, Spravato (<a href="/treatments/spravato/">Esketamine</a>) Nasal Spray could offer the fast-acting relief youâ€™ve been searching for. This unique medication has a mechanism that provides relief in as little as 24 hours, offering hope for those who have not found success with other treatments. When used alongside an oral antidepressant, Spravato has shown to be effective in providing relief from the challenging symptoms of depression.</p>
+<p>If you or a loved one in Phoenix, AZ is struggling with <a href="/post/treatment-resistant-depression/">treatment-resistant depression</a>, Spravato (<a href="/treatments/spravato/">Esketamine</a>) Nasal Spray could offer the fast-acting relief you’ve been searching for. This unique medication has a mechanism that provides relief in as little as 24 hours, offering hope for those who have not found success with other treatments. When used alongside an oral antidepressant, Spravato has shown to be effective in providing relief from the challenging symptoms of depression.</p>
 <h2>Spravato (Esketamine) Nasal Spray in Phoenix, AZ</h2>
 <h3>Fast-Acting Relief</h3>
 <ul>
 <li aria-level="1" style="font-weight: 400;">Spravato swiftly delivers relief for individuals struggling with treatment-resistant depression, offering a glimmer of hope in as little as 24 hours.</li>
 <li aria-level="1" style="font-weight: 400;">Its unique mechanism, akin to ketamine, provides fast-acting results that can make a significant difference for those battling the challenges of depression.</li>
 </ul>
-<p>Remember, youâ€™re not alone in this. Seeking help is the first step towards finding relief from the burdens of treatment-resistant depression.</p>
+<p>Remember, you’re not alone in this. Seeking help is the first step towards finding relief from the burdens of treatment-resistant depression.</p>
 <h2>Safety Profile</h2>
 <h3>Side Effects</h3>
 <ul>
-<li aria-level="1" style="font-weight: 400;">When considering Spravato for treatment-resistant depression, itâ€™s essential to be aware of the potential side effects. Some common side effects of Spravato treatment may include dizziness, <a href="/treatments/spravato/">dissociation</a>, nausea, sedation, and increased blood pressure. These effects typically occur within two hours of taking the medication and gradually subside. Itâ€™s crucial to discuss any concerns about these side effects with a healthcare professional.</li>
-<li aria-level="1" style="font-weight: 400;">Before starting Spravato treatment, itâ€™s important to inform your healthcare provider about any existing medical conditions or medications you are currently taking. This information will help in assessing the suitability of Spravato for your specific situation and minimizing potential risks.</li>
+<li aria-level="1" style="font-weight: 400;">When considering Spravato for treatment-resistant depression, it’s essential to be aware of the potential side effects. Some common side effects of Spravato treatment may include dizziness, <a href="/treatments/spravato/">dissociation</a>, nausea, sedation, and increased blood pressure. These effects typically occur within two hours of taking the medication and gradually subside. It’s crucial to discuss any concerns about these side effects with a healthcare professional.</li>
+<li aria-level="1" style="font-weight: 400;">Before starting Spravato treatment, it’s important to inform your healthcare provider about any existing medical conditions or medications you are currently taking. This information will help in assessing the suitability of Spravato for your specific situation and minimizing potential risks.</li>
 </ul>
 <h3>Consultation Process</h3>
 <ul>
@@ -80,13 +80,13 @@ require_once __DIR__ . '/includes/header.php';
 <h3>Long-Term Efficacy</h3>
 <ul>
 <li aria-level="1" style="font-weight: 400;">In addition to its rapid relief benefits, Spravato also exhibits long-term <a href="/post/is-electroconvulsive-therapy-ect-effective-learn-more">efficacy</a> in the treatment of depression. By consistently administering Spravato as part of a comprehensive treatment plan, individuals may experience sustained improvement in their depressive symptoms over an extended period.</li>
-<li aria-level="1" style="font-weight: 400;">This long-term efficacy is particularly valuable for those grappling with treatment-resistant depression, where finding effective and enduring relief can be incredibly challenging. Spravatoâ€™s ability to address the persistent nature of treatment-resistant depression makes it a promising option for individuals seeking lasting solutions to their mental health struggles.</li>
+<li aria-level="1" style="font-weight: 400;">This long-term efficacy is particularly valuable for those grappling with treatment-resistant depression, where finding effective and enduring relief can be incredibly challenging. Spravato’s ability to address the persistent nature of treatment-resistant depression makes it a promising option for individuals seeking lasting solutions to their mental health struggles.</li>
 </ul>
 <p>Spravato provides both rapid relief and long-term efficacy for individuals battling treatment-resistant depression. Its unique mechanism akin to ketamine offers swift results while also addressing the persistent challenges associated with this condition.</p>
 <h2>Conclusion</h2>
 <p>In conclusion, if you or a loved one in Phoenix, AZ is struggling with treatment-resistant depression, Spravato offers a glimmer of hope. With its unique mechanism akin to ketamine, it provides rapid relief in as little as 24 hours. Consider incorporating Spravato alongside an oral antidepressant for an effective treatment approach.</p>
 <p>Remember, seeking help is the first step toward finding relief from the burdens of treatment-resistant depression.</p>
-<p>â€œThe fast-acting relief provided by Spravato can bring about significant improvements in mood and overall well-being within a short period.â€</p>
+<p>“The fast-acting relief provided by Spravato can bring about significant improvements in mood and overall well-being within a short period.”</p>
 <p><strong>CALL US DIRECTLY</strong></p>
 <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a>
 2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016
@@ -113,7 +113,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

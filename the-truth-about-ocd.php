@@ -1,7 +1,7 @@
 ﻿<?php
 $pageTitle = 'The Truth About OCD | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'The Truth About OCD - When most people hear the term â€œOCD,â€ they think of someone who is overly fastidious or perhaps a bit eccentric. But the reality is that';
+$pageDescription = 'The Truth About OCD - When most people hear the term “OCD,” they think of someone who is overly fastidious or perhaps a bit eccentric. But the reality is that';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/the-truth-about-ocd/';
@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -51,15 +51,15 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<p><img alt="" class="aligncenter size-full wp-image-221" data-lazy-sizes="(max-width: 740px) 100vw, 740px" data-lazy-src="/wp-content/uploads/2025/03/blog11.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/blog11.jpg.webp 740w, http://interpsychaz.com/wp-content/uploads/2025/03/blog11.jpg-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/blog11.jpg-800x533.webp 800w" decoding="async" fetchpriority="high" height="493" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20740%20493'%3E%3C/svg%3E" width="740"/><noscript><img alt="" class="aligncenter size-full wp-image-221" decoding="async" fetchpriority="high" height="493" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog11.jpg.webp" srcset="/wp-content/uploads/2025/03/blog11.jpg.webp 740w, /wp-content/uploads/2025/03/blog11.jpg-300x200.webp 300w, /wp-content/uploads/2025/03/blog11.jpg-800x533.webp 800w" width="740"/></noscript>When most people hear the term â€œOCD,â€ they think of someone who is overly fastidious or perhaps a bit eccentric. But the reality is that obsessive-compulsive disorder (OCD) is a serious mental illness that can have a profound effect on every aspect of a personâ€™s life. If you or someone you know is struggling with OCD, itâ€™s important to understand the facts about this condition. Here are four things you should know about OCD.</p>
+<p><img alt="" class="aligncenter size-full wp-image-221" data-lazy-sizes="(max-width: 740px) 100vw, 740px" data-lazy-src="/wp-content/uploads/2025/03/blog11.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/blog11.jpg.webp 740w, http://interpsychaz.com/wp-content/uploads/2025/03/blog11.jpg-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/blog11.jpg-800x533.webp 800w" decoding="async" fetchpriority="high" height="493" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20740%20493'%3E%3C/svg%3E" width="740"/><noscript><img alt="" class="aligncenter size-full wp-image-221" decoding="async" fetchpriority="high" height="493" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog11.jpg.webp" srcset="/wp-content/uploads/2025/03/blog11.jpg.webp 740w, /wp-content/uploads/2025/03/blog11.jpg-300x200.webp 300w, /wp-content/uploads/2025/03/blog11.jpg-800x533.webp 800w" width="740"/></noscript>When most people hear the term “OCD,” they think of someone who is overly fastidious or perhaps a bit eccentric. But the reality is that obsessive-compulsive disorder (OCD) is a serious mental illness that can have a profound effect on every aspect of a person’s life. If you or someone you know is struggling with OCD, it’s important to understand the facts about this condition. Here are four things you should know about OCD.</p>
 <p>1. OCD is much more than just being tidy or organized.</p>
 <p>OCD is characterized by intrusive, unwanted thoughts (obsessions) that drive a person to engage in repetitive behaviors (compulsions) in an attempt to relieve the anxiety caused by the obsessions. People with OCD often realize that their obsessions and compulsions are irrational, but they cannot control them.</p>
 <p>2. OCD can be debilitating.</p>
-<p>For people with OCD, their obsessions and compulsions can take up so much time and energy that theyâ€™re unable to function effectively in their everyday lives. In severe cases, OCD can be completely disabling.</p>
+<p>For people with OCD, their obsessions and compulsions can take up so much time and energy that they’re unable to function effectively in their everyday lives. In severe cases, OCD can be completely disabling.</p>
 <p>3. OCD is treatable.</p>
 <p>While there is no cure for OCD, it is a treatable condition. With proper diagnosis and treatment, most people with OCD can learn to manage their symptoms and lead productive lives.</p>
 <p>4. You are not alone.</p>
-<p>If you or someone you love is struggling with OCD, know that you are not alone. There are many resources available to help you understand and manage your condition. The first step is to talk to your doctor about your symptoms and get an accurate diagnosis. From there, you can work with a mental health professional to develop a treatment plan that works for you. Remember, there is hopeâ€”you can get better!</p>
+<p>If you or someone you love is struggling with OCD, know that you are not alone. There are many resources available to help you understand and manage your condition. The first step is to talk to your doctor about your symptoms and get an accurate diagnosis. From there, you can work with a mental health professional to develop a treatment plan that works for you. Remember, there is hope—you can get better!</p>
  </div>
 </div><!--.post-single-content-->
 </div><!--.single_post-->
@@ -82,7 +82,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

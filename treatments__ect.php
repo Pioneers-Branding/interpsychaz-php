@@ -25,12 +25,12 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
 <h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
@@ -51,7 +51,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<p><img alt="" class="aligncenter size-full wp-image-339" decoding="async" fetchpriority="high" height="1000" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2025/03/ECT-for-Depression.jpg.webp" srcset="/wp-content/uploads/2025/03/ECT-for-Depression.jpg.webp 800w, /wp-content/uploads/2025/03/ECT-for-Depression.jpg-240x300.webp 240w, /wp-content/uploads/2025/03/ECT-for-Depression.jpg-768x960.webp 768w" width="800"/>Electroconvulsive Therapy (ECT) is a medical treatment widely recognized for its effectiveness in managing severe psychiatric conditions, particularly when other treatments have proven ineffective. This therapy involves delivering controlled electrical stimulation to the brain under general anesthesia to produce a brief, controlled seizure. ECT has been a valuable tool in addressing symptoms of severe depression, mania, and some forms of schizophrenia. Hereâ€™s a closer look at how ECT works and who can benefit most from this intervention.</p>
+<p><img alt="" class="aligncenter size-full wp-image-339" decoding="async" fetchpriority="high" height="1000" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2025/03/ECT-for-Depression.jpg.webp" srcset="/wp-content/uploads/2025/03/ECT-for-Depression.jpg.webp 800w, /wp-content/uploads/2025/03/ECT-for-Depression.jpg-240x300.webp 240w, /wp-content/uploads/2025/03/ECT-for-Depression.jpg-768x960.webp 768w" width="800"/>Electroconvulsive Therapy (ECT) is a medical treatment widely recognized for its effectiveness in managing severe psychiatric conditions, particularly when other treatments have proven ineffective. This therapy involves delivering controlled electrical stimulation to the brain under general anesthesia to produce a brief, controlled seizure. ECT has been a valuable tool in addressing symptoms of severe depression, mania, and some forms of schizophrenia. Here’s a closer look at how ECT works and who can benefit most from this intervention.</p>
 <h2>ECT for Depression</h2>
 <h3>When Is It Recommended?</h3>
 <p><a href="/treatments/ect/">ECT</a> is often used for individuals with severe, treatment-resistant depression, especially when symptoms are life-threatening or unresponsive to medications and psychotherapy. Conditions where ECT is particularly beneficial include:</p>
@@ -133,7 +133,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_gecko gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">

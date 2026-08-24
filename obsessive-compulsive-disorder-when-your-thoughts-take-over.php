@@ -1,7 +1,7 @@
 ﻿<?php
 $pageTitle = 'Obsessive Compulsive Disorder: When Your Thoughts Take Over | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'Obsessive Compulsive Disorder: When Your Thoughts Take Over - Imagine if your mind was a radio that you couldnâ€™t turn off. It would play the same song on repeat, no matter how much you tried to change the station.';
+$pageDescription = 'Obsessive Compulsive Disorder: When Your Thoughts Take Over - Imagine if your mind was a radio that you couldn’t turn off. It would play the same song on repeat, no matter how much you tried to change the station.';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/obsessive-compulsive-disorder-when-your-thoughts-take-over/';
@@ -25,23 +25,23 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Wonâ€™t Shut Off at Night</a> </h4>
-<p> Sleep is supposed to be restorativeâ€”a time when your... </p>
+<h4> <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a> </h4>
+<p> Sleep is supposed to be restorative—a time when your... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Differenceâ€”and When Itâ€™s Time for More Than Therapy</a> </h4>
-<p> In todayâ€™s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
+<h4> <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a> </h4>
+<p> In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
+<h4> <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a> </h4>
 <p> Anxiety and panic disorders are among the most common... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
+<h4> <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/">Irritability: A Commonly Overlooked Symptom of Anxiety</a> </h4>
 <p> When most people think about anxiety, they picture racing... </p>
 </div>
 <div>
-<h4> <a href="http://interpsychaz.com/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
+<h4> <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/">Sleep Hygiene: Building Healthy Habits for Better Rest</a> </h4>
 <p> At Interventional Psychiatry of Arizona, we know that sleep... </p>
 </div>
 </div>
@@ -51,15 +51,15 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<p><img alt="" class="aligncenter size-full wp-image-187" data-lazy-sizes="(max-width: 740px) 100vw, 740px" data-lazy-src="/wp-content/uploads/2025/03/blog1.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/blog1.jpg.webp 740w, http://interpsychaz.com/wp-content/uploads/2025/03/blog1.jpg-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/blog1.jpg-800x533.webp 800w" decoding="async" fetchpriority="high" height="493" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20740%20493'%3E%3C/svg%3E" width="740"/><noscript><img alt="" class="aligncenter size-full wp-image-187" decoding="async" fetchpriority="high" height="493" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog1.jpg.webp" srcset="/wp-content/uploads/2025/03/blog1.jpg.webp 740w, /wp-content/uploads/2025/03/blog1.jpg-300x200.webp 300w, /wp-content/uploads/2025/03/blog1.jpg-800x533.webp 800w" width="740"/></noscript>Imagine if your mind was a radio that you couldnâ€™t turn off. It would play the same song on repeat, no matter how much you tried to change the station. For people with obsessive compulsive disorder (OCD), thatâ€™s reality. OCD is a mental health condition that causes intrusive, unwanted thoughts (obsessions) and repetitive behaviors (compulsions). People with OCD canâ€™t control their obsessions and compulsions, even though they may realize that their behavior isnâ€™t logical.</p>
+<p><img alt="" class="aligncenter size-full wp-image-187" data-lazy-sizes="(max-width: 740px) 100vw, 740px" data-lazy-src="/wp-content/uploads/2025/03/blog1.jpg.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/blog1.jpg.webp 740w, http://interpsychaz.com/wp-content/uploads/2025/03/blog1.jpg-300x200.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/blog1.jpg-800x533.webp 800w" decoding="async" fetchpriority="high" height="493" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20740%20493'%3E%3C/svg%3E" width="740"/><noscript><img alt="" class="aligncenter size-full wp-image-187" decoding="async" fetchpriority="high" height="493" sizes="(max-width: 740px) 100vw, 740px" src="/wp-content/uploads/2025/03/blog1.jpg.webp" srcset="/wp-content/uploads/2025/03/blog1.jpg.webp 740w, /wp-content/uploads/2025/03/blog1.jpg-300x200.webp 300w, /wp-content/uploads/2025/03/blog1.jpg-800x533.webp 800w" width="740"/></noscript>Imagine if your mind was a radio that you couldn’t turn off. It would play the same song on repeat, no matter how much you tried to change the station. For people with obsessive compulsive disorder (OCD), that’s reality. OCD is a mental health condition that causes intrusive, unwanted thoughts (obsessions) and repetitive behaviors (compulsions). People with OCD can’t control their obsessions and compulsions, even though they may realize that their behavior isn’t logical.</p>
 <p><strong>What Causes OCD?</strong></p>
-<p>The cause of OCD isnâ€™t fully understood, but itâ€™s thought to involve a combination of genetic and environmental factors. OCD may run in families, but itâ€™s not clear how much of this is due to genetics and how much is due to learned behavior. In some cases, OCD may be triggered by a stressful life event, such as the death of a loved one or a divorce.</p>
+<p>The cause of OCD isn’t fully understood, but it’s thought to involve a combination of genetic and environmental factors. OCD may run in families, but it’s not clear how much of this is due to genetics and how much is due to learned behavior. In some cases, OCD may be triggered by a stressful life event, such as the death of a loved one or a divorce.</p>
 <p><strong>Symptoms of OCD</strong></p>
-<p>People with OCD may have either obsessions or compulsions, or both. Obsessions are intrusive, unwanted thoughts, images, or urges that repeatedly occur in your mind. You may try to ignore them or get rid of them by performing a compulsion. Compulsions are repetitive behaviors that you feel you have to do to relieve your anxiety caused by the obsessions. These compulsions are usually not realistically connected to whatâ€™s causing your obsession. For example, if youâ€™re obsessed with germs and contamination, you may wash your hands over and over again throughout the day.</p>
+<p>People with OCD may have either obsessions or compulsions, or both. Obsessions are intrusive, unwanted thoughts, images, or urges that repeatedly occur in your mind. You may try to ignore them or get rid of them by performing a compulsion. Compulsions are repetitive behaviors that you feel you have to do to relieve your anxiety caused by the obsessions. These compulsions are usually not realistically connected to what’s causing your obsession. For example, if you’re obsessed with germs and contamination, you may wash your hands over and over again throughout the day.</p>
 <p><strong>Treatment for OCD</strong></p>
 <p>If you have symptoms of OCD, talk to your doctor or a mental health provider. Treatment for OCD often includes medication and <a href="/category/cbt/">cognitive behavioral therapy (CBT)</a>. Medication can help reduce the intensity of your symptoms, while CBT can help you learn how to better manage your condition. In some cases, exposure and response prevention (ERP) may also be recommended as part of your treatment plan. ERP is a specific type of CBT that involves gradually exposing yourself to situations that trigger your obsessions and learning how to resist performing compulsions in response.</p>
 <p><strong>Conclusion:</strong></p>
-<p>If you have symptoms of OCD, donâ€™t hesitate to reach out for help. There are many effective treatments available that can help improve your quality of life. With proper treatment, you can learn how to better manage your condition and live a fulfilling life despite your challenges.</p>
+<p>If you have symptoms of OCD, don’t hesitate to reach out for help. There are many effective treatments available that can help improve your quality of life. With proper treatment, you can learn how to better manage your condition and live a fulfilling life despite your challenges.</p>
  </div>
 </div><!--.post-single-content-->
 </div><!--.single_post-->
@@ -82,7 +82,7 @@ require_once __DIR__ . '/includes/header.php';
 						</p>
 </div>
 <div class="dm-half">
-<h3> Have Questions? <br/> Weâ€™ll Reply Quickly. </h3>
+<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
 <script type="text/rocketlazyloadscript">
 </script>
 <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">
