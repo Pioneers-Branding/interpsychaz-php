@@ -71,13 +71,35 @@ if (fs.existsSync(htaccessSrc)) {
   fs.copyFileSync(htaccessSrc, path.join(OUT_DIR, '.htaccess'));
 }
 
+// Check if PHP is available in the build environment
+function hasPhp() {
+  try {
+    execSync('php -v', { stdio: 'ignore' });
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
 // Start PHP built-in server and render pages
 async function renderPages() {
+  if (!hasPhp()) {
+    console.log('Notice: PHP binary not found in build environment (e.g., Vercel build).');
+    console.log('Using pre-rendered static HTML and assets in /public directory.');
+    console.log('\nBuild complete! Output in /public directory');
+    return;
+  }
+
   console.log('Starting PHP server...');
   
   const phpProcess = spawn('php', ['-S', '127.0.0.1:8888', 'router.php'], {
     cwd: SRC_DIR,
     stdio: 'ignore',
+  });
+
+  // Handle spawn error gracefully
+  phpProcess.on('error', (err) => {
+    console.warn(`Warning: Failed to spawn PHP: ${err.message}`);
   });
 
   // Wait for server to start
@@ -105,7 +127,9 @@ async function renderPages() {
     }
   }
 
-  phpProcess.kill();
+  try {
+    phpProcess.kill();
+  } catch (e) {}
   console.log('\nBuild complete! Output in /public directory');
 }
 
