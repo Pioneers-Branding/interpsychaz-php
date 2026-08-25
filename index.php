@@ -29,7 +29,7 @@ require_once __DIR__ . '/includes/header.php';
 			</video>
 			<div class="carousel-caption">
 				<h1 class="wow fadeIn">Breakthrough Treatments </h1>
-				<p style="color: white; !important">Learn how Interventional Psychiatry can offer new solutions for
+				<p style="color: #fff !important">Learn how Interventional Psychiatry can offer new solutions for
 					depression,
 					anxiety, and other mental health challenges</p>
 				<a class="btn fadeInUp wow" href="/appointments/"> Request An Appointment Today! </a>

@@ -3216,7 +3216,7 @@ body .access_container_inner .a_module {
 
 .copyrights p,
 .copyrights a {
-    color: #fff !important
+    color: #fff
 }
 
 .copyrights a:hover {
@@ -3224,7 +3224,8 @@ body .access_container_inner .a_module {
 }
 
 .copyrights p {
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    color: #fff !important;
 }
 
 .copyrights p span {
