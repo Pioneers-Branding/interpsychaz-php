@@ -1,11 +1,11 @@
 ﻿<?php
-$pageTitle = 'Blog | Page 4 of 6 | Interventional Psychiatry of Arizona';
+$pageTitle = 'Blog | Page 4 of 4 | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default archive';
 $pageDescription = 'Interventional Psychiatry of Arizona is a skilled Premier Psychiatry Center in Phoenix, AZ.';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/category/blog/page/4/';
-$hideVisitUs = false;
+$hideVisitUs = true; // page renders its own visit-us-today section below
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
@@ -24,12 +24,12 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<img data-lazy-src="/wp-content/uploads/2025/03/Blog-Banners-1-54.png-1024x576.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img src="/wp-content/uploads/2025/03/Blog-Banners-1-54.png-1024x576.webp"/></noscript>
+<img alt="Revolutionizing Mental Health with TMS Therapy in Phoenix, AZ" data-lazy-src="/wp-content/uploads/2025/03/Blog-Banners-1-54.png-1024x576.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="Revolutionizing Mental Health with TMS Therapy in Phoenix, AZ" src="/wp-content/uploads/2025/03/Blog-Banners-1-54.png-1024x576.webp"/></noscript>
 </div>
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/revolutionizing-mental-health-with-tms-therapy-in-phoenix-az/" title="Revolutionizing Mental Health with TMS Therapy in Phoenix, AZ">Revolutionizing Mental Health with TMS Therapy in Phoenix, AZ</a></h3>
 <div class="front-view-content">
-                        Revolutionizing Mental Health Understanding TMS Therapy Transcranial magnetic stimulation (TMS) therapy is a groundbreaking non-invasive mental health treatment. Utilizing FDA-approved repetitive transcranial magnetic stimulation (rTMS) technology offers relief from â€¦                    </div>
+                        Revolutionizing Mental Health Understanding TMS Therapy Transcranial magnetic stimulation (TMS) therapy is a groundbreaking non-invasive mental health treatment. Utilizing FDA-approved repetitive transcranial magnetic stimulation (rTMS) technology offers relief from …                    </div>
 <div class="readMore">
 <a href="/revolutionizing-mental-health-with-tms-therapy-in-phoenix-az/" title="Revolutionizing Mental Health with TMS Therapy in Phoenix, AZ">
                 [Continue Reading...]            </a>
@@ -42,12 +42,12 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<img data-lazy-src="/wp-content/uploads/2025/03/Blog-Banners-1-98.png-1024x576.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img src="/wp-content/uploads/2025/03/Blog-Banners-1-98.png-1024x576.webp"/></noscript>
+<img alt="Understanding Electroconvulsive Therapy (ECT) for Severe Depression" data-lazy-src="/wp-content/uploads/2025/03/Blog-Banners-1-98.png-1024x576.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="Understanding Electroconvulsive Therapy (ECT) for Severe Depression" src="/wp-content/uploads/2025/03/Blog-Banners-1-98.png-1024x576.webp"/></noscript>
 </div>
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/understanding-electroconvulsive-therapy-ect-for-severe-depression/" title="Understanding Electroconvulsive Therapy (ECT) for Severe Depression">Understanding Electroconvulsive Therapy (ECT) for Severe Depression</a></h3>
 <div class="front-view-content">
-                        Understanding ECT Electroconvulsive therapy, commonly known as ECT, is a viable treatment option for severe psychiatric disorders such as major depression, mania, PTSD, and certain types of schizophrenia. This â€¦                    </div>
+                        Understanding ECT Electroconvulsive therapy, commonly known as ECT, is a viable treatment option for severe psychiatric disorders such as major depression, mania, PTSD, and certain types of schizophrenia. This …                    </div>
 <div class="readMore">
 <a href="/understanding-electroconvulsive-therapy-ect-for-severe-depression/" title="Understanding Electroconvulsive Therapy (ECT) for Severe Depression">
                 [Continue Reading...]            </a>
@@ -60,12 +60,12 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<img data-lazy-src="/wp-content/uploads/2025/03/Blog-Banners-1-99.png-1024x576.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img src="/wp-content/uploads/2025/03/Blog-Banners-1-99.png-1024x576.webp"/></noscript>
+<img alt="2024: Discover Fast-Acting Relief with Spravato Nasal Spray in Phoenix, AZ" data-lazy-src="/wp-content/uploads/2025/03/Blog-Banners-1-99.png-1024x576.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="2024: Discover Fast-Acting Relief with Spravato Nasal Spray in Phoenix, AZ" src="/wp-content/uploads/2025/03/Blog-Banners-1-99.png-1024x576.webp"/></noscript>
 </div>
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/2024-discover-fast-acting-relief-with-spravato-nasal-spray-in-phoenix-az/" title="2024: Discover Fast-Acting Relief with Spravato Nasal Spray in Phoenix, AZ">2024: Discover Fast-Acting Relief with Spravato Nasal Spray in Phoenix, AZ</a></h3>
 <div class="front-view-content">
-                        Fast-Acting Relief Are you or a loved one struggling with treatment-resistant depression or major depressive disorder with suicidal thoughts in Phoenix, Arizona? Discover fast-acting relief with Spravato nasal spray. â€¦                    </div>
+                        Fast-Acting Relief Are you or a loved one struggling with treatment-resistant depression or major depressive disorder with suicidal thoughts in Phoenix, Arizona? Discover fast-acting relief with Spravato nasal spray. …                    </div>
 <div class="readMore">
 <a href="/2024-discover-fast-acting-relief-with-spravato-nasal-spray-in-phoenix-az/" title="2024: Discover Fast-Acting Relief with Spravato Nasal Spray in Phoenix, AZ">
                 [Continue Reading...]            </a>
@@ -78,12 +78,12 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<img data-lazy-src="/wp-content/uploads/2025/03/Blog-Banners-1-23.png-1-1024x576.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img src="/wp-content/uploads/2025/03/Blog-Banners-1-23.png-1-1024x576.webp"/></noscript>
+<img alt="TMS Therapy: A Revolutionary Treatment for Depression and Anxiety" data-lazy-src="/wp-content/uploads/2025/03/Blog-Banners-1-23.png-1-1024x576.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="TMS Therapy: A Revolutionary Treatment for Depression and Anxiety" src="/wp-content/uploads/2025/03/Blog-Banners-1-23.png-1-1024x576.webp"/></noscript>
 </div>
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/tms-therapy-a-revolutionary-treatment-for-depression-and-anxiety/" title="TMS Therapy: A Revolutionary Treatment for Depression and Anxiety">TMS Therapy: A Revolutionary Treatment for Depression and Anxiety</a></h3>
 <div class="front-view-content">
-                        Unlocking Hope: TMS Therapy for Depression and Anxiety Depression and anxiety can be debilitating conditions that greatly impact an individual’s quality of life. Fortunately, there is hope in the â€¦                    </div>
+                        Unlocking Hope: TMS Therapy for Depression and Anxiety Depression and anxiety can be debilitating conditions that greatly impact an individual’s quality of life. Fortunately, there is hope in the …                    </div>
 <div class="readMore">
 <a href="/tms-therapy-a-revolutionary-treatment-for-depression-and-anxiety/" title="TMS Therapy: A Revolutionary Treatment for Depression and Anxiety">
                 [Continue Reading...]            </a>
@@ -96,12 +96,12 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<img data-lazy-src="/wp-content/uploads/2025/03/Blog-Banners-1-23.png-1024x576.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img src="/wp-content/uploads/2025/03/Blog-Banners-1-23.png-1024x576.webp"/></noscript>
+<img alt="Is Electroconvulsive Therapy (ECT) Effective? Learn More" data-lazy-src="/wp-content/uploads/2025/03/Blog-Banners-1-23.png-1024x576.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="Is Electroconvulsive Therapy (ECT) Effective? Learn More" src="/wp-content/uploads/2025/03/Blog-Banners-1-23.png-1024x576.webp"/></noscript>
 </div>
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/is-electroconvulsive-therapy-ect-effective-learn-more/" title="Is Electroconvulsive Therapy (ECT) Effective? Learn More">Is Electroconvulsive Therapy (ECT) Effective? Learn More</a></h3>
 <div class="front-view-content">
-                        Understanding ECT Electroconvulsive Therapy (ECT) is a highly effective treatment option for individuals experiencing severe episodes of depression, mania, and certain forms of schizophrenia. It involves the controlled administration â€¦                    </div>
+                        Understanding ECT Electroconvulsive Therapy (ECT) is a highly effective treatment option for individuals experiencing severe episodes of depression, mania, and certain forms of schizophrenia. It involves the controlled administration …                    </div>
 <div class="readMore">
 <a href="/is-electroconvulsive-therapy-ect-effective-learn-more/" title="Is Electroconvulsive Therapy (ECT) Effective? Learn More">
                 [Continue Reading...]            </a>
@@ -114,12 +114,12 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<img data-lazy-src="/wp-content/uploads/2025/03/diversityhands-600.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img src="/wp-content/uploads/2025/03/diversityhands-600.jpg.webp"/></noscript>
+<img alt="Embracing Diversity" data-lazy-src="/wp-content/uploads/2025/03/diversityhands-600.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="Embracing Diversity" src="/wp-content/uploads/2025/03/diversityhands-600.jpg.webp"/></noscript>
 </div>
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/embracing-diversity/" title="Embracing Diversity">Embracing Diversity</a></h3>
 <div class="front-view-content">
-                        Intersectionality and Mental Health Welcome to our blog, where we explore the important intersection of mental health and identity. In honor of Mental Health Awareness Month, we are shining â€¦                    </div>
+                        Intersectionality and Mental Health Welcome to our blog, where we explore the important intersection of mental health and identity. In honor of Mental Health Awareness Month, we are shining …                    </div>
 <div class="readMore">
 <a href="/embracing-diversity/" title="Embracing Diversity">
                 [Continue Reading...]            </a>
@@ -132,12 +132,12 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<img data-lazy-src="/wp-content/uploads/2025/03/teenage-mentalhealth.jpg-1.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img src="/wp-content/uploads/2025/03/teenage-mentalhealth.jpg-1.webp"/></noscript>
+<img alt="Nurturing Resilience" data-lazy-src="/wp-content/uploads/2025/03/teenage-mentalhealth.jpg-1.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="Nurturing Resilience" src="/wp-content/uploads/2025/03/teenage-mentalhealth.jpg-1.webp"/></noscript>
 </div>
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/nurturing-resilience/" title="Nurturing Resilience">Nurturing Resilience</a></h3>
 <div class="front-view-content">
-                        Prioritizing Youth Mental Health Welcome to our blog, where we delve into the crucial topic of mental health awareness among young people. Adolescence and early adulthood are transformative phases â€¦                    </div>
+                        Prioritizing Youth Mental Health Welcome to our blog, where we delve into the crucial topic of mental health awareness among young people. Adolescence and early adulthood are transformative phases …                    </div>
 <div class="readMore">
 <a href="/nurturing-resilience/" title="Nurturing Resilience">
                 [Continue Reading...]            </a>
@@ -150,12 +150,12 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<img data-lazy-src="/wp-content/uploads/2025/03/stigma-blog-600.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img src="/wp-content/uploads/2025/03/stigma-blog-600.jpg.webp"/></noscript>
+<img alt="Breaking the Silence" data-lazy-src="/wp-content/uploads/2025/03/stigma-blog-600.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="Breaking the Silence" src="/wp-content/uploads/2025/03/stigma-blog-600.jpg.webp"/></noscript>
 </div>
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/breaking-the-silence/" title="Breaking the Silence">Breaking the Silence</a></h3>
 <div class="front-view-content">
-                        Overcoming Stigma in Mental Health Welcome to our blog, where we aim to foster a professional and empathic dialogue surrounding mental health. In honor of Mental Health Awareness Month, â€¦                    </div>
+                        Overcoming Stigma in Mental Health Welcome to our blog, where we aim to foster a professional and empathic dialogue surrounding mental health. In honor of Mental Health Awareness Month, …                    </div>
 <div class="readMore">
 <a href="/breaking-the-silence/" title="Breaking the Silence">
                 [Continue Reading...]            </a>
@@ -168,12 +168,12 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<img data-lazy-src="/wp-content/uploads/2025/03/ect-blog-600.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img src="/wp-content/uploads/2025/03/ect-blog-600.jpg.webp"/></noscript>
+<img alt="Electroconvulsive Therapy" data-lazy-src="/wp-content/uploads/2025/03/ect-blog-600.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="Electroconvulsive Therapy" src="/wp-content/uploads/2025/03/ect-blog-600.jpg.webp"/></noscript>
 </div>
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/electroconvulsive-therapy/" title="Electroconvulsive Therapy">Electroconvulsive Therapy</a></h3>
 <div class="front-view-content">
-                        ECT Benefits As an expert in electroconvulsive therapy (ECT), I can attest to the significant benefits this treatment can offer to certain patients with severe mental health conditions. ECT â€¦                    </div>
+                        ECT Benefits As an expert in electroconvulsive therapy (ECT), I can attest to the significant benefits this treatment can offer to certain patients with severe mental health conditions. ECT …                    </div>
 <div class="readMore">
 <a href="/electroconvulsive-therapy/" title="Electroconvulsive Therapy">
                 [Continue Reading...]            </a>
@@ -186,12 +186,12 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<img data-lazy-src="/wp-content/uploads/2025/03/ipa-depressionblog-600.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img src="/wp-content/uploads/2025/03/ipa-depressionblog-600.jpg.webp"/></noscript>
+<img alt="Treatment Resistant Depression" data-lazy-src="/wp-content/uploads/2025/03/ipa-depressionblog-600.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="Treatment Resistant Depression" src="/wp-content/uploads/2025/03/ipa-depressionblog-600.jpg.webp"/></noscript>
 </div>
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/treatment-resistant-depression/" title="Treatment Resistant Depression">Treatment Resistant Depression</a></h3>
 <div class="front-view-content">
-                        Understanding and Managing a Complex Condition Depression is a common mental health condition that affects millions of people worldwide. While many individuals with depression can find relief with antidepressant â€¦                    </div>
+                        Understanding and Managing a Complex Condition Depression is a common mental health condition that affects millions of people worldwide. While many individuals with depression can find relief with antidepressant …                    </div>
 <div class="readMore">
 <a href="/treatment-resistant-depression/" title="Treatment Resistant Depression">
                 [Continue Reading...]            </a>
@@ -202,8 +202,8 @@ require_once __DIR__ . '/includes/header.php';
 </article>
 <div class="pagination pagination-previous-next">
 <ul>
-<li class="nav-previous"><a href="/category/blog/page/5/"><i class="fa fa-angle-left"></i> Previous</a></li>
-<li class="nav-next"><a href="/category/blog/page/3/">Next <i class="fa fa-angle-right"></i></a></li>
+<li class="nav-previous"><a href="/category/blog/page/3/"><i class="fa fa-angle-left"></i> Previous</a></li>
+<li class="nav-next"></li>
 </ul>
 </div>
 </div>

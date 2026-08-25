@@ -18,10 +18,16 @@ function findPhpFiles(dir, baseDir = dir) {
       findPhpFiles(fullPath, baseDir);
     } else if (stat.isFile() && item.endsWith('.php') && item !== 'config.php' && item !== 'router.php' && !fullPath.includes('includes')) {
       const relative = path.relative(baseDir, fullPath).replace(/\.php$/, '');
+      // Double-underscore filenames stand in for nested clean URLs
+      // (category__blog -> /category/blog/, services__tms-therapy -> /services/tms-therapy/).
+      // The PHP router translates these at request time; the static build has no router,
+      // so emit the nested path as well or those URLs 404 once deployed.
+      const aliases = relative.includes('__') ? [relative.replace(/__/g, '/')] : [];
       pages.push({
         phpFile: fullPath,
         outputName: relative === 'index' ? 'index.html' : relative + '/index.html',
         outputDir: path.join(OUT_DIR, relative === 'index' ? '' : relative),
+        aliases,
       });
     }
   }
@@ -34,6 +40,9 @@ console.log(`Found ${pages.length} pages to build`);
 // Ensure output directories exist
 for (const page of pages) {
   fs.mkdirSync(page.outputDir, { recursive: true });
+  for (const alias of page.aliases) {
+    fs.mkdirSync(path.join(OUT_DIR, alias), { recursive: true });
+  }
 }
 
 // Copy static assets
@@ -122,6 +131,10 @@ async function renderPages() {
 
       fs.writeFileSync(path.join(OUT_DIR, page.outputName), html);
       console.log(`  Built: ${page.outputName}`);
+      for (const alias of page.aliases) {
+        fs.writeFileSync(path.join(OUT_DIR, alias, 'index.html'), html);
+        console.log(`    alias: ${alias}/index.html`);
+      }
     } catch (err) {
       console.error(`  Error building ${page.phpFile}: ${err.message}`);
     }

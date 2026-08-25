@@ -5,7 +5,7 @@ $pageDescription = 'Depression &amp; Burnout: How to Tell the Difference—and W
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/';
-$hideVisitUs = false;
+$hideVisitUs = true; // page renders its own visit-us-today section below
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';

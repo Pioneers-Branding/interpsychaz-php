@@ -5,7 +5,7 @@ $pageDescription = 'ECT for Depression, Mania, and Schizophrenia: Who Can Benefi
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/ect-for-depression-mania-schizophrenia/';
-$hideVisitUs = false;
+$hideVisitUs = true; // page renders its own visit-us-today section below
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
@@ -57,7 +57,7 @@ require_once __DIR__ . '/includes/header.php';
 <p><a href="/treatments/ect/">ECT</a> is often used for individuals with severe, treatment-resistant depression, especially when symptoms are life-threatening or unresponsive to medications and psychotherapy. Conditions where ECT is particularly beneficial include:</p>
 <ul>
 <li><strong>Major Depressive Disorder (MDD):</strong> Especially cases with profound symptoms such as persistent suicidal thoughts, inability to function, or psychotic features (hallucinations or delusions).</li>
-<li><strong>Bipolar Depression:</strong> ECT can be effective in managing <a href="/post/depression-what-you-should-know/">depressive episodes</a> in bipolar disorder when mood stabilizers and antidepressants fail.</li>
+<li><strong>Bipolar Depression:</strong> ECT can be effective in managing <a href="/depression-what-you-should-know/">depressive episodes</a> in bipolar disorder when mood stabilizers and antidepressants fail.</li>
 </ul>
 <h3>Benefits for Depressive Symptoms</h3>
 <p>ECT offers rapid relief from symptoms such as:</p>
@@ -66,13 +66,13 @@ require_once __DIR__ . '/includes/header.php';
 <li>Persistent suicidal ideation.</li>
 <li>Severe fatigue or inability to carry out daily activities.</li>
 </ul>
-<p>This makes ECT a <a href="/post/understanding-electroconvulsive-therapy-ect-for-severe-depression/">potential lifesaving option</a> for individuals at immediate risk of harm due to their depressive symptoms.</p>
+<p>This makes ECT a <a href="/understanding-electroconvulsive-therapy-ect-for-severe-depression/">potential lifesaving option</a> for individuals at immediate risk of harm due to their depressive symptoms.</p>
 <h2>ECT for Mania</h2>
 <h3>What Is Mania?</h3>
 <p>Mania is characterized by periods of elevated mood, hyperactivity, and impulsivity, often seen in bipolar disorder. Severe mania can include symptoms such as:</p>
 <ul>
 <li>Extreme irritability or agitation.</li>
-<li>Risky behaviors, such as <a href="/post/addiction-and-the-brain/">excessive spending or substance use</a>.</li>
+<li>Risky behaviors, such as <a href="/addiction-and-the-brain/">excessive spending or substance use</a>.</li>
 <li>Reduced need for sleep, leading to exhaustion.</li>
 </ul>
 <h3>When Is ECT Used for Mania?</h3>
@@ -94,7 +94,7 @@ require_once __DIR__ . '/includes/header.php';
 <h3>When Is ECT Used for Schizophrenia?</h3>
 <p>ECT is not a first-line treatment for schizophrenia but is considered in specific situations, such as:</p>
 <ul>
-<li><strong>Catatonia:</strong> A state of motor immobility or extreme agitation often seen in schizophrenia. ECT is one of the <a href="/treatments/">most effective treatments</a> for catatonic symptoms.</li>
+<li><strong>Catatonia:</strong> A state of motor immobility or extreme agitation often seen in schizophrenia. ECT is one of the <a href="/services/">most effective treatments</a> for catatonic symptoms.</li>
 <li><strong>Treatment-Resistant Schizophrenia:</strong> When antipsychotic medications fail to control symptoms.</li>
 <li><strong>Severe, Acute Episodes:</strong> When rapid symptom relief is required, particularly for those at risk of self-harm or aggression.</li>
 </ul>

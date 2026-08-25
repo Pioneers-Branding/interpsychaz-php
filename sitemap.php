@@ -5,7 +5,7 @@ $pageDescription = 'Sitemap -';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/sitemap/';
-$hideVisitUs = false;
+$hideVisitUs = true; // page renders its own visit-us-today section below
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
@@ -65,7 +65,6 @@ require_once __DIR__ . '/includes/header.php';
 <li class="page_item page-item-11 current_page_item"><a aria-current="page" href="/sitemap/">Sitemap</a></li>
 <li class="page_item page-item-48"><a href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
 <li class="page_item page-item-12"><a href="/thank-you/">Thank You</a></li>
-<li class="page_item page-item-407"><a href="/tms-therapy-temp/">TMS Therapy Temp</a></li>
 <li class="page_item page-item-56"><a href="/what-can-we-improve/">What Can We Improve</a></li>
 <li class="page_item page-item-479"><a href="/adolescent-psychiatry/">Young Adult Psychiatry</a></li>
 </ul>

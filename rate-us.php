@@ -5,7 +5,7 @@ $pageDescription = 'Rate Us - Click the number of stars to let us know how we ar
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/rate-us/';
-$hideVisitUs = false;
+$hideVisitUs = true; // page renders its own visit-us-today section below
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
@@ -26,7 +26,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="container">
 <div class="rate-us-page-dm">
 <h3>Click the number of stars to let us know how we are doing!</h3>
-<p><img data-lazy-src="/wp-content/themes/mts_schema/content/images/google-reviews.png" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img decoding="async" src="/wp-content/themes/mts_schema/content/images/google-reviews.png"/></noscript></p>
+<p><img alt="Google Reviews" data-lazy-src="/wp-content/themes/mts_schema/content/images/google-reviews.png" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="Google Reviews" decoding="async" src="/wp-content/themes/mts_schema/content/images/google-reviews.png"/></noscript></p>
 <div class="dm-rate-us">
 <div class="social-icon-container">
 <div class="rtg"> <a class="fa fa-star-o" href="http://search.google.com/local/writereview?placeid=ChIJt8rFr_4NK4cRbF9K7nIzGVM" target="_blank"></a><a class="fa fa-star-o" href="http://search.google.com/local/writereview?placeid=ChIJt8rFr_4NK4cRbF9K7nIzGVM" target="_blank"></a> <a class="fa fa-star-o" href="/what-can-we-improve/"></a> <a class="fa fa-star-o" href="/what-can-we-improve/"></a> <a class="fa fa-star-o" href="/what-can-we-improve/"></a> </div>

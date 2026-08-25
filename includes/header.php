@@ -37,9 +37,9 @@
 <div class="container-wide">
 <div class="secondary-navigation" id="secondary-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
 <div class="logo-wrap">
-<h1 class="image-logo" id="logo" itemprop="headline">
+<div class="image-logo" id="logo">
 <a href="/"><img alt="<?php echo SITE_NAME; ?>" src="/wp-content/uploads/2025/03/az-logo-white.png.png.webp"/></a>
-</h1>
+</div>
 </div>
 <nav class="navigation clearfix mobile-menu-wrapper">
 <ul class="menu clearfix" id="menu-main-menu">

@@ -1,11 +1,11 @@
 ﻿<?php
-$pageTitle = 'Blog | Page 2 of 6 | Interventional Psychiatry of Arizona';
+$pageTitle = 'Blog | Page 2 of 4 | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default archive';
 $pageDescription = 'Interventional Psychiatry of Arizona is a skilled Premier Psychiatry Center in Phoenix, AZ.';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/category/blog/page/2/';
-$hideVisitUs = false;
+$hideVisitUs = true; // page renders its own visit-us-today section below
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
@@ -30,7 +30,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/lgbtqia-affirming-care-at-interventional-psychiatry-of-arizona/" title="LGBTQIA+ Affirming Care at Interventional Psychiatry of Arizona">LGBTQIA+ Affirming Care at Interventional Psychiatry of Arizona</a></h3>
 <div class="front-view-content">
-                        Mental health care should always be a safe, inclusive, and supportive experience. At Interventional Psychiatry of Arizona, we proudly provide LGBTQIA+ affirming care, ensuring that every individual feels respected, â€¦                    </div>
+                        Mental health care should always be a safe, inclusive, and supportive experience. At Interventional Psychiatry of Arizona, we proudly provide LGBTQIA+ affirming care, ensuring that every individual feels respected, …                    </div>
 <div class="readMore">
 <a href="/lgbtqia-affirming-care-at-interventional-psychiatry-of-arizona/" title="LGBTQIA+ Affirming Care at Interventional Psychiatry of Arizona">
                 [Continue Reading...]            </a>
@@ -49,7 +49,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/understanding-depression-and-treatment-resistant-depression/" title="Understanding Depression and Treatment-Resistant Depression">Understanding Depression and Treatment-Resistant Depression</a></h3>
 <div class="front-view-content">
-                        What is Depression? Depression is a serious mental health condition that affects how a person feels, thinks, and behaves. It can lead to emotional and physical problems, reducing an â€¦                    </div>
+                        What is Depression? Depression is a serious mental health condition that affects how a person feels, thinks, and behaves. It can lead to emotional and physical problems, reducing an …                    </div>
 <div class="readMore">
 <a href="/understanding-depression-and-treatment-resistant-depression/" title="Understanding Depression and Treatment-Resistant Depression">
                 [Continue Reading...]            </a>
@@ -68,7 +68,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/understanding-the-difference-between-ect-and-tms-for-depression-treatment/" title="Understanding the Difference Between ECT and TMS for Depression Treatment">Understanding the Difference Between ECT and TMS for Depression Treatment</a></h3>
 <div class="front-view-content">
-                        When it comes to treating severe depression and other mental health conditions that have not responded to traditional treatments, patients often explore alternative therapies like Electroconvulsive Therapy (ECT) and â€¦                    </div>
+                        When it comes to treating severe depression and other mental health conditions that have not responded to traditional treatments, patients often explore alternative therapies like Electroconvulsive Therapy (ECT) and …                    </div>
 <div class="readMore">
 <a href="/understanding-the-difference-between-ect-and-tms-for-depression-treatment/" title="Understanding the Difference Between ECT and TMS for Depression Treatment">
                 [Continue Reading...]            </a>
@@ -87,7 +87,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/debunking-myths-and-misconceptions-about-electroconvulsive-therapy-ect/" title="Debunking Myths and Misconceptions about Electroconvulsive Therapy (ECT)">Debunking Myths and Misconceptions about Electroconvulsive Therapy (ECT)</a></h3>
 <div class="front-view-content">
-                        Electroconvulsive Therapy (ECT) has been a widely misunderstood treatment due to its portrayal in movies, outdated information, and general misconceptions about psychiatric care. However, in reality, ECT is a â€¦                    </div>
+                        Electroconvulsive Therapy (ECT) has been a widely misunderstood treatment due to its portrayal in movies, outdated information, and general misconceptions about psychiatric care. However, in reality, ECT is a …                    </div>
 <div class="readMore">
 <a href="/debunking-myths-and-misconceptions-about-electroconvulsive-therapy-ect/" title="Debunking Myths and Misconceptions about Electroconvulsive Therapy (ECT)">
                 [Continue Reading...]            </a>
@@ -106,7 +106,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/how-neural-pathways-work-and-the-importance-of-increasing-neuroplasticity-with-tms-and-spravato/" title="How Neural Pathways Work and the Importance of Increasing Neuroplasticity with TMS and Spravato">How Neural Pathways Work and the Importance of Increasing Neuroplasticity with TMS and Spravato</a></h3>
 <div class="front-view-content">
-                        The human brain is an intricate and dynamic organ, constantly evolving in response to experiences, thoughts, and emotions. At the core of this adaptability lies neuroplasticity, the brain’s ability â€¦                    </div>
+                        The human brain is an intricate and dynamic organ, constantly evolving in response to experiences, thoughts, and emotions. At the core of this adaptability lies neuroplasticity, the brain’s ability …                    </div>
 <div class="readMore">
 <a href="/how-neural-pathways-work-and-the-importance-of-increasing-neuroplasticity-with-tms-and-spravato/" title="How Neural Pathways Work and the Importance of Increasing Neuroplasticity with TMS and Spravato">
                 [Continue Reading...]            </a>
@@ -125,7 +125,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/improved-patient-outcomes-with-close-collaboration-between-therapists-and-tms-providers/" title="Improved Patient Outcomes with Close Collaboration Between Therapists and TMS Providers">Improved Patient Outcomes with Close Collaboration Between Therapists and TMS Providers</a></h3>
 <div class="front-view-content">
-                        The Importance of an Integrated Approach in Mental Health Care Mental health treatment has evolved significantly in recent years, with a greater emphasis on holistic, integrated care. One of â€¦                    </div>
+                        The Importance of an Integrated Approach in Mental Health Care Mental health treatment has evolved significantly in recent years, with a greater emphasis on holistic, integrated care. One of …                    </div>
 <div class="readMore">
 <a href="/improved-patient-outcomes-with-close-collaboration-between-therapists-and-tms-providers/" title="Improved Patient Outcomes with Close Collaboration Between Therapists and TMS Providers">
                 [Continue Reading...]            </a>
@@ -144,7 +144,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/the-benefits-of-transcranial-magnetic-stimulation-tms-for-veterans-and-first-responders/" title="The Benefits of Transcranial Magnetic Stimulation (TMS) for Veterans and First Responders">The Benefits of Transcranial Magnetic Stimulation (TMS) for Veterans and First Responders</a></h3>
 <div class="front-view-content">
-                        Interventional Psychiatry of Arizona ðŸ“ ðŸ“ž Understanding TMS and Its Impact on Mental Health Mental health challenges, including depression and post-traumatic stress disorder (PTSD), affect millions of people each â€¦                    </div>
+                        Interventional Psychiatry of Arizona ðŸ“ ðŸ“ž Understanding TMS and Its Impact on Mental Health Mental health challenges, including depression and post-traumatic stress disorder (PTSD), affect millions of people each …                    </div>
 <div class="readMore">
 <a href="/the-benefits-of-transcranial-magnetic-stimulation-tms-for-veterans-and-first-responders/" title="The Benefits of Transcranial Magnetic Stimulation (TMS) for Veterans and First Responders">
                 [Continue Reading...]            </a>
@@ -163,7 +163,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/maximizing-your-recovery-best-practices-for-integration-after-tms-and-spravato-treatment/" title="Maximizing Your Recovery: Best Practices for Integration After TMS and Spravato Treatment">Maximizing Your Recovery: Best Practices for Integration After TMS and Spravato Treatment</a></h3>
 <div class="front-view-content">
-                        Transcranial Magnetic Stimulation (TMS) and Spravato (esketamine) are groundbreaking treatments for individuals struggling with treatment-resistant depression, anxiety, and other mental health conditions. While these therapies can be highly effective, â€¦                    </div>
+                        Transcranial Magnetic Stimulation (TMS) and Spravato (esketamine) are groundbreaking treatments for individuals struggling with treatment-resistant depression, anxiety, and other mental health conditions. While these therapies can be highly effective, …                    </div>
 <div class="readMore">
 <a href="/maximizing-your-recovery-best-practices-for-integration-after-tms-and-spravato-treatment/" title="Maximizing Your Recovery: Best Practices for Integration After TMS and Spravato Treatment">
                 [Continue Reading...]            </a>
@@ -182,7 +182,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/ect-for-depression-mania-schizophrenia/" title="ECT for Depression, Mania, and Schizophrenia: Who Can Benefit?">ECT for Depression, Mania, and Schizophrenia: Who Can Benefit?</a></h3>
 <div class="front-view-content">
-                        Electroconvulsive Therapy (ECT) is a medical treatment widely recognized for its effectiveness in managing severe psychiatric conditions, particularly when other treatments have proven ineffective. This therapy involves delivering controlled â€¦                    </div>
+                        Electroconvulsive Therapy (ECT) is a medical treatment widely recognized for its effectiveness in managing severe psychiatric conditions, particularly when other treatments have proven ineffective. This therapy involves delivering controlled …                    </div>
 <div class="readMore">
 <a href="/ect-for-depression-mania-schizophrenia/" title="ECT for Depression, Mania, and Schizophrenia: Who Can Benefit?">
                 [Continue Reading...]            </a>
@@ -195,12 +195,12 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
-<img data-lazy-src="/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img src="/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp"/></noscript>
+<img alt="The Science Behind Esketamine: How It Helps With Suicidal Thoughts" data-lazy-src="/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E"/><noscript><img alt="The Science Behind Esketamine: How It Helps With Suicidal Thoughts" src="/wp-content/uploads/2025/03/esketamine-nasal-spray.jpg.webp"/></noscript>
 </div>
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/the-science-behind-esketamine/" title="The Science Behind Esketamine: How It Helps With Suicidal Thoughts">The Science Behind Esketamine: How It Helps With Suicidal Thoughts</a></h3>
 <div class="front-view-content">
-                        When it comes to managing severe depression and suicidal thoughts, traditional treatments can sometimes take weeks to show any effect. This is where esketamine, known by its brand name â€¦                    </div>
+                        When it comes to managing severe depression and suicidal thoughts, traditional treatments can sometimes take weeks to show any effect. This is where esketamine, known by its brand name …                    </div>
 <div class="readMore">
 <a href="/the-science-behind-esketamine/" title="The Science Behind Esketamine: How It Helps With Suicidal Thoughts">
                 [Continue Reading...]            </a>
@@ -211,8 +211,8 @@ require_once __DIR__ . '/includes/header.php';
 </article>
 <div class="pagination pagination-previous-next">
 <ul>
-<li class="nav-previous"><a href="/category/blog/page/3/"><i class="fa fa-angle-left"></i> Previous</a></li>
-<li class="nav-next"><a href="/category__blog/">Next <i class="fa fa-angle-right"></i></a></li>
+<li class="nav-previous"><a href="/category/blog/"><i class="fa fa-angle-left"></i> Previous</a></li>
+<li class="nav-next"><a href="/category/blog/page/3/">Next <i class="fa fa-angle-right"></i></a></li>
 </ul>
 </div>
 </div>

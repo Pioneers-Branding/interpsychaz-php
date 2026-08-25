@@ -5,7 +5,7 @@ $pageDescription = 'Interventional Psychiatry of Arizona is a skilled Premier Ps
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/category/blog/';
-$hideVisitUs = false;
+$hideVisitUs = true; // page renders its own visit-us-today section below
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
@@ -70,7 +70,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/" title="Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a></h3>
 <div class="front-view-content">
-                        Sleep is supposed to be restorative—a time when your mind and body reset. But for millions of people, bedtime becomes a battleground. Racing thoughts, anxiety, and physical restlessness can â€¦                    </div>
+                        Sleep is supposed to be restorative—a time when your mind and body reset. But for millions of people, bedtime becomes a battleground. Racing thoughts, anxiety, and physical restlessness can …                    </div>
 <div class="readMore">
 <a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/" title="Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night">
                 [Continue Reading...]            </a>
@@ -89,7 +89,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/" title="Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a></h3>
 <div class="front-view-content">
-                        In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally drained has become increasingly common. Many people describe what they’re experiencing as “burnout”—but what if it’s actually depression? While the â€¦                    </div>
+                        In today’s fast-paced world, feeling overwhelmed, exhausted, or emotionally drained has become increasingly common. Many people describe what they’re experiencing as “burnout”—but what if it’s actually depression? While the …                    </div>
 <div class="readMore">
 <a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/" title="Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy">
                 [Continue Reading...]            </a>
@@ -108,7 +108,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/" title="Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a></h3>
 <div class="front-view-content">
-                        Anxiety and panic disorders are among the most common mental health conditions in the United States—and also among the most misunderstood. For many people, anxiety doesn’t just feel like â€¦                    </div>
+                        Anxiety and panic disorders are among the most common mental health conditions in the United States—and also among the most misunderstood. For many people, anxiety doesn’t just feel like …                    </div>
 <div class="readMore">
 <a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/" title="Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help">
                 [Continue Reading...]            </a>
@@ -127,7 +127,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/" title="Irritability: A Commonly Overlooked Symptom of Anxiety">Irritability: A Commonly Overlooked Symptom of Anxiety</a></h3>
 <div class="front-view-content">
-                        When most people think about anxiety, they picture racing thoughts, a pounding heart, or constant worry. While these symptoms are well-known, one of the most overlooked signs of anxiety â€¦                    </div>
+                        When most people think about anxiety, they picture racing thoughts, a pounding heart, or constant worry. While these symptoms are well-known, one of the most overlooked signs of anxiety …                    </div>
 <div class="readMore">
 <a href="/irritability-a-commonly-overlooked-symptom-of-anxiety/" title="Irritability: A Commonly Overlooked Symptom of Anxiety">
                 [Continue Reading...]            </a>
@@ -146,7 +146,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/sleep-hygiene-building-healthy-habits-for-better-rest/" title="Sleep Hygiene: Building Healthy Habits for Better Rest">Sleep Hygiene: Building Healthy Habits for Better Rest</a></h3>
 <div class="front-view-content">
-                        At Interventional Psychiatry of Arizona, we know that sleep is one of the most powerful tools for mental health and overall well-being. Yet, many people struggle with falling asleep, â€¦                    </div>
+                        At Interventional Psychiatry of Arizona, we know that sleep is one of the most powerful tools for mental health and overall well-being. Yet, many people struggle with falling asleep, …                    </div>
 <div class="readMore">
 <a href="/sleep-hygiene-building-healthy-habits-for-better-rest/" title="Sleep Hygiene: Building Healthy Habits for Better Rest">
                 [Continue Reading...]            </a>
@@ -165,7 +165,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/adhd-in-females-vs-males-understanding-the-differences/" title="ADHD in Females vs. Males: Understanding the Differences">ADHD in Females vs. Males: Understanding the Differences</a></h3>
 <div class="front-view-content">
-                        Attention-Deficit/Hyperactivity Disorder (ADHD) is one of the most common neurodevelopmental conditions, affecting people across all ages and backgrounds. However, ADHD often looks different in females compared to males, leading â€¦                    </div>
+                        Attention-Deficit/Hyperactivity Disorder (ADHD) is one of the most common neurodevelopmental conditions, affecting people across all ages and backgrounds. However, ADHD often looks different in females compared to males, leading …                    </div>
 <div class="readMore">
 <a href="/adhd-in-females-vs-males-understanding-the-differences/" title="ADHD in Females vs. Males: Understanding the Differences">
                 [Continue Reading...]            </a>
@@ -184,7 +184,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/the-benefits-of-journaling-to-track-progress-in-treatment/" title="The Benefits of Journaling to Track Progress in Treatment">The Benefits of Journaling to Track Progress in Treatment</a></h3>
 <div class="front-view-content">
-                        At Interventional Psychiatry of Arizona, we believe that healing is a journey—and keeping track of that journey can be just as important as the treatments themselves. Journaling is a â€¦                    </div>
+                        At Interventional Psychiatry of Arizona, we believe that healing is a journey—and keeping track of that journey can be just as important as the treatments themselves. Journaling is a …                    </div>
 <div class="readMore">
 <a href="/the-benefits-of-journaling-to-track-progress-in-treatment/" title="The Benefits of Journaling to Track Progress in Treatment">
                 [Continue Reading...]            </a>
@@ -203,7 +203,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/tms-for-teens-a-promising-alternative-to-medications-for-depression/" title="TMS for Teens: A Promising Alternative to Medications for Depression">TMS for Teens: A Promising Alternative to Medications for Depression</a></h3>
 <div class="front-view-content">
-                        Depression among teens is a growing concern, with many young people struggling to find relief through traditional treatments. While medications can be effective for some, they often come with â€¦                    </div>
+                        Depression among teens is a growing concern, with many young people struggling to find relief through traditional treatments. While medications can be effective for some, they often come with …                    </div>
 <div class="readMore">
 <a href="/tms-for-teens-a-promising-alternative-to-medications-for-depression/" title="TMS for Teens: A Promising Alternative to Medications for Depression">
                 [Continue Reading...]            </a>
@@ -222,7 +222,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/how-social-media-affects-the-minds-of-teens/" title="How Social Media Affects the Minds of Teens">How Social Media Affects the Minds of Teens</a></h3>
 <div class="front-view-content">
-                        In today’s digital world, social media is nearly inseparable from the lives of teenagers. While it offers opportunities for connection, creativity, and learning, it can also pose risks to â€¦                    </div>
+                        In today’s digital world, social media is nearly inseparable from the lives of teenagers. While it offers opportunities for connection, creativity, and learning, it can also pose risks to …                    </div>
 <div class="readMore">
 <a href="/how-social-media-affects-the-minds-of-teens/" title="How Social Media Affects the Minds of Teens">
                 [Continue Reading...]            </a>
@@ -241,7 +241,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-half post-half">
 <h3 class="title front-view-title"><a href="/depression-in-teens-what-parents-need-to-know/" title="Depression in Teens: What Parents Need to Know">Depression in Teens: What Parents Need to Know</a></h3>
 <div class="front-view-content">
-                        Childhood and adolescence are times of growth, exploration, and change. But for many young people, these stages can also bring struggles with mental health. Depression in teens is more â€¦                    </div>
+                        Childhood and adolescence are times of growth, exploration, and change. But for many young people, these stages can also bring struggles with mental health. Depression in teens is more …                    </div>
 <div class="readMore">
 <a href="/depression-in-teens-what-parents-need-to-know/" title="Depression in Teens: What Parents Need to Know">
                 [Continue Reading...]            </a>
@@ -252,8 +252,8 @@ require_once __DIR__ . '/includes/header.php';
 </article>
 <div class="pagination pagination-previous-next">
 <ul>
-<li class="nav-previous"><a href="/category/blog/page/2/"><i class="fa fa-angle-left"></i> Previous</a></li>
-<li class="nav-next"></li>
+<li class="nav-previous"></li>
+<li class="nav-next"><a href="/category/blog/page/2/">Next <i class="fa fa-angle-right"></i></a></li>
 </ul>
 </div>
 </div>

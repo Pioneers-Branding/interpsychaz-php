@@ -5,7 +5,7 @@ $pageDescription = 'The Fast-Acting Relief of Spravato for Treatment-Resistant D
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/the-fast-acting-relief-of-spravato-for-treatment-resistant-depression-in-phoenix-az/';
-$hideVisitUs = false;
+$hideVisitUs = true; // page renders its own visit-us-today section below
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
@@ -52,7 +52,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
 <h2><img alt="" class="aligncenter size-large wp-image-298" data-lazy-sizes="(max-width: 680px) 100vw, 680px" data-lazy-src="/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-1024x576.webp" data-lazy-srcset="http://interpsychaz.com/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-1024x576.webp 1024w, http://interpsychaz.com/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-300x169.webp 300w, http://interpsychaz.com/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-768x432.webp 768w, http://interpsychaz.com/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-1536x864.webp 1536w, http://interpsychaz.com/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-2048x1152.webp 2048w" decoding="async" fetchpriority="high" height="383" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20680%20383'%3E%3C/svg%3E" width="680"/><noscript><img alt="" class="aligncenter size-large wp-image-298" decoding="async" fetchpriority="high" height="383" sizes="(max-width: 680px) 100vw, 680px" src="/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-1024x576.webp" srcset="/wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-1024x576.webp 1024w, /wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-300x169.webp 300w, /wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-768x432.webp 768w, /wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-1536x864.webp 1536w, /wp-content/uploads/2025/03/Blog-Banners-1-2024-03-12T180754.874.png-2048x1152.webp 2048w" width="680"/></noscript>Spravato Overview</h2>
-<p>If you or a loved one in Phoenix, AZ is struggling with <a href="/post/treatment-resistant-depression/">treatment-resistant depression</a>, Spravato (<a href="/treatments/spravato/">Esketamine</a>) Nasal Spray could offer the fast-acting relief you’ve been searching for. This unique medication has a mechanism that provides relief in as little as 24 hours, offering hope for those who have not found success with other treatments. When used alongside an oral antidepressant, Spravato has shown to be effective in providing relief from the challenging symptoms of depression.</p>
+<p>If you or a loved one in Phoenix, AZ is struggling with <a href="/treatment-resistant-depression/">treatment-resistant depression</a>, Spravato (<a href="/treatments/spravato/">Esketamine</a>) Nasal Spray could offer the fast-acting relief you’ve been searching for. This unique medication has a mechanism that provides relief in as little as 24 hours, offering hope for those who have not found success with other treatments. When used alongside an oral antidepressant, Spravato has shown to be effective in providing relief from the challenging symptoms of depression.</p>
 <h2>Spravato (Esketamine) Nasal Spray in Phoenix, AZ</h2>
 <h3>Fast-Acting Relief</h3>
 <ul>
@@ -79,7 +79,7 @@ require_once __DIR__ . '/includes/header.php';
 </ul>
 <h3>Long-Term Efficacy</h3>
 <ul>
-<li aria-level="1" style="font-weight: 400;">In addition to its rapid relief benefits, Spravato also exhibits long-term <a href="/post/is-electroconvulsive-therapy-ect-effective-learn-more">efficacy</a> in the treatment of depression. By consistently administering Spravato as part of a comprehensive treatment plan, individuals may experience sustained improvement in their depressive symptoms over an extended period.</li>
+<li aria-level="1" style="font-weight: 400;">In addition to its rapid relief benefits, Spravato also exhibits long-term <a href="/is-electroconvulsive-therapy-ect-effective-learn-more/">efficacy</a> in the treatment of depression. By consistently administering Spravato as part of a comprehensive treatment plan, individuals may experience sustained improvement in their depressive symptoms over an extended period.</li>
 <li aria-level="1" style="font-weight: 400;">This long-term efficacy is particularly valuable for those grappling with treatment-resistant depression, where finding effective and enduring relief can be incredibly challenging. Spravato’s ability to address the persistent nature of treatment-resistant depression makes it a promising option for individuals seeking lasting solutions to their mental health struggles.</li>
 </ul>
 <p>Spravato provides both rapid relief and long-term efficacy for individuals battling treatment-resistant depression. Its unique mechanism akin to ketamine offers swift results while also addressing the persistent challenges associated with this condition.</p>

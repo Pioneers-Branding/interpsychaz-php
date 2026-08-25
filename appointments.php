@@ -5,7 +5,7 @@ $pageDescription = 'Appointments -';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/appointments/';
-$hideVisitUs = true;
+$hideVisitUs = false;
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';

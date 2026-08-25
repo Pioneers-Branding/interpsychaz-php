@@ -7,6 +7,7 @@ $pageOgType = $pageOgType ?? 'website';
 $pageCanonical = $pageCanonical ?? SITE_URL . $_SERVER['REQUEST_URI'];
 $pageBreadcrumb = $pageBreadcrumb ?? [['name' => 'Home', 'url' => SITE_URL . '/']];
 $pageSchemaType = $pageSchemaType ?? 'WebPage';
+$pageRobots = $pageRobots ?? 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en-US">
@@ -379,7 +380,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta content="<?php echo SITE_NAME; ?>" itemprop="name"/>
 <meta content="<?php echo SITE_URL; ?>" itemprop="url"/>
 <meta content="/wp-content/uploads/2025/03/az-logo-white.png.png.webp" property="og:image"/>
-<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<meta content="<?php echo $pageRobots; ?>" name="robots"/>
 <script>document.documentElement.className = document.documentElement.className.replace( /\bno-js\b/,'js' );</script>
 <title><?php echo $pageTitle; ?></title>
 <link as="style" href="/_external/fonts.googleapis.com/css_54cf8c19.css" rel="preload"/>
@@ -575,9 +576,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             margin-left: 3px;
         }
 </style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Jost:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link href="/wp-content/cache/min/1/wp-content/plugins/dmm-consent-guard/assets/css/banner.css" id="dmm-cg-banner-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/content/css/ada.css" id="ada_css-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/cache/min/1/wp-content/themes/blossom-child/style.css" id="schema-stylesheet-css" media="all" rel="stylesheet"/>
@@ -588,6 +586,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link href="/wp-content/cache/min/1/wp-content/themes/blossom-child/assets/slick.css" id="slickcss-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/content/css/content-style.css" id="content-css-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/theme-specific/testimonials/slick.css" id="wda_testimonials-css" media="all" rel="stylesheet"/>
+<?php
+// Page-specific stylesheets. WordPress enqueued these only on the pages that use
+// them; the static port has to do the same or those pages render unstyled.
+$pageOnlyStyles = [
+    'meet-our-team'                  => ['wda_staff_grid-css' => '/wp-content/cache/min/1/wp-content/themes/mts_schema/theme-specific/doctors/doctor-grid.css'],
+    'for-providers__refer-a-patient' => ['dashicons-css'      => '/wp-content/cache/min/1/wp-includes/css/dashicons.min.css'],
+];
+foreach (($pageOnlyStyles[$currentPage] ?? []) as $id => $href):
+?>
+<link href="<?php echo $href; ?>" id="<?php echo $id; ?>" media="all" rel="stylesheet"/>
+<?php endforeach; ?>
 <style id="slickcss-inline-css">
 	:root {
 	    --pColor: #4b4d97;
@@ -664,109 +673,10 @@ div#gform_wrapper_2 .gform_button {
 <link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/css/slick.css" id="slick-main-css-css" media="all" rel="stylesheet"/>
 <style id="site-master-fixes-css">
 /* ==========================================================================
-   1. GLOBAL & INNER PAGE TYPOGRAPHY (Matching Original Website)
+   1. PAGE-LEVEL COMPONENT STYLES
+   Typography is intentionally NOT overridden here: the original site uses the
+   theme fonts (Roboto body / Jost headings) set in <style id="wp-custom-fonts">.
    ========================================================================== */
-body, p, .dm-service-section p, .post-content p, .article p, article p {
-    font-family: "Times New Roman", Times, Georgia, serif !important;
-    font-size: 18px !important;
-    line-height: 1.65 !important;
-    color: #000000 !important;
-    font-weight: 400 !important;
-}
-
-h1, h2, h3, h4, h5, h6,
-.page-title, .entry-title, .single-title {
-    font-family: "Cinzel", "Times New Roman", Times, Georgia, serif !important;
-    letter-spacing: 0.5px !important;
-}
-
-.dm-service-section h3,
-.post-content h3,
-article h3,
-html h3 {
-    color: #ea8529 !important;
-    font-family: "Cinzel", "Times New Roman", Times, Georgia, serif !important;
-    font-size: 26px !important;
-    font-weight: 700 !important;
-    margin-top: 0 !important;
-    margin-bottom: 16px !important;
-    text-transform: none !important;
-    line-height: 1.3 !important;
-}
-
-.dm-service-section ul,
-.post-content ul,
-.article ul,
-article ul {
-    font-family: "Times New Roman", Times, Georgia, serif !important;
-    font-size: 18px !important;
-    line-height: 1.6 !important;
-    color: #000000 !important;
-    padding-left: 0 !important;
-    margin-bottom: 20px !important;
-}
-
-.dm-half li,
-.dm-service-section li,
-article ul li {
-    list-style: none !important;
-    position: relative !important;
-    padding-left: 30px !important;
-    margin-bottom: 8px !important;
-    font-size: 18px !important;
-    line-height: 1.5 !important;
-}
-
-.dm-half li:before,
-.dm-service-section li:before,
-article ul li:before {
-    content: "\f14a" !important;
-    font-family: "Font Awesome 5" !important;
-    font-weight: 900 !important;
-    position: absolute !important;
-    left: 0 !important;
-    top: 2px !important;
-    color: #000000 !important;
-    font-size: 18px !important;
-}
-
-/* Call to Action Buttons */
-a.btn,
-.btn,
-.dm-service-section a.btn,
-html .btn {
-    background-color: #ea8529 !important;
-    background: #ea8529 !important;
-    color: #ffffff !important;
-    font-family: 'Roboto', sans-serif !important;
-    font-weight: 700 !important;
-    font-size: 14px !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.5px !important;
-    border-radius: 25px !important;
-    padding: 13px 26px !important;
-    display: inline-block !important;
-    margin-top: 15px !important;
-    box-shadow: 0 4px 12px rgba(234, 133, 41, 0.35) !important;
-    text-decoration: none !important;
-    border: none !important;
-    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
-}
-a.btn:hover,
-.btn:hover,
-.dm-service-section a.btn:hover {
-    background-color: #ef7136 !important;
-    color: #ffffff !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 16px rgba(234, 133, 41, 0.45) !important;
-}
-a.btn i,
-.btn i,
-.dm-service-section a.btn i {
-    margin-right: 8px !important;
-    font-size: 15px !important;
-    display: inline-block !important;
-}
 
 /* Responsive YouTube Player with Red Play Button */
 .rll-youtube-player {
@@ -1082,7 +992,7 @@ a.btn i,
     .page-header .page-title,
     section.page-header * {
         color: #ffffff !important;
-        font-family: "Cinzel", "Times New Roman", Times, Georgia, serif !important;
+        font-family: 'Jost', sans-serif !important;
         font-size: 26px !important;
         font-weight: 700 !important;
         text-transform: uppercase !important;
@@ -1115,8 +1025,13 @@ a.btn i,
         border: none !important;
         position: static !important;
         width: 100% !important;
-        display: block !important;
         padding: 0 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        /* `display` deliberately has no !important: the theme's toggle-caret uses
+           slideToggle(), which animates via an inline display style. Forcing
+           display:block here left every submenu stuck open and the +/- inert. */
+        display: none;
     }
     .navigation.mobile-menu-wrapper ul.sub-menu li a {
         color: #cccccc !important;
@@ -1164,7 +1079,7 @@ a.btn i,
         z-index: 10 !important;
         padding: 0 !important;
     }
-    .homepage .carousel-caption h2 {
+    .homepage .carousel-caption :is(h1,h2) {
         font-family: 'Jost', serif !important;
         font-size: 34px !important;
         font-weight: 600 !important;

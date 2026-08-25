@@ -5,7 +5,7 @@ $pageDescription = 'Revolutionizing Mental Health with TMS Therapy in Phoenix, A
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/revolutionizing-mental-health-with-tms-therapy-in-phoenix-az/';
-$hideVisitUs = false;
+$hideVisitUs = true; // page renders its own visit-us-today section below
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
@@ -55,13 +55,13 @@ require_once __DIR__ . '/includes/header.php';
 <h3>Understanding TMS Therapy</h3>
 <p>Transcranial magnetic stimulation (TMS) therapy is a groundbreaking non-invasive mental health treatment. Utilizing FDA-approved repetitive transcranial magnetic stimulation (rTMS) technology offers relief from conditions like depression, anxiety, OCD, and PTSD. In Phoenix, AZ, individuals can access this innovative therapy with minimal side effects and the potential for insurance coverage.</p>
 <ul>
-<li aria-level="1" style="font-weight: 400;"><a href="/post/tms-therapy-a-revolutionary-treatment-for-depression-and-anxiety">Non-invasive treatment</a> option</li>
+<li aria-level="1" style="font-weight: 400;"><a href="/tms-therapy-a-revolutionary-treatment-for-depression-and-anxiety/">Non-invasive treatment</a> option</li>
 <li aria-level="1" style="font-weight: 400;">Utilizes FDA-approved rTMS technology</li>
 <li aria-level="1" style="font-weight: 400;">Provides relief from depression, anxiety, OCD, and PTSD</li>
 </ul>
 <h2>Understanding TMS Therapy</h2>
 <h3>What is TMS Therapy?</h3>
-<p>TMS Therapy, commonly referred to as transcranial magnetic stimulation, is a non-invasive treatment that targets various mental health conditions. This innovative therapy utilizes magnetic pulses to stimulate brain cells associated with <a href="/post/tms-therapy-a-revolutionary-treatment-for-depression-and-anxiety">mood regulation</a>. By directly influencing the brain’s <a href="/post/tms-therapy-a-revolutionary-treatment-for-depression-and-anxiety">neural activity</a>, TMS Therapy presents a hopeful solution for individuals grappling with depression, anxiety, OCD, and PTSD.</p>
+<p>TMS Therapy, commonly referred to as transcranial magnetic stimulation, is a non-invasive treatment that targets various mental health conditions. This innovative therapy utilizes magnetic pulses to stimulate brain cells associated with <a href="/tms-therapy-a-revolutionary-treatment-for-depression-and-anxiety/">mood regulation</a>. By directly influencing the brain’s <a href="/tms-therapy-a-revolutionary-treatment-for-depression-and-anxiety/">neural activity</a>, TMS Therapy presents a hopeful solution for individuals grappling with depression, anxiety, OCD, and PTSD.</p>
 <h3>How Does TMS Therapy Work?</h3>
 <p>The revolutionary rTMS technology used in TMS Therapy works by specifically targeting areas of the brain associated with mental health conditions. By delivering magnetic pulses to these targeted areas, the therapy aims to alleviate symptoms of depression, anxiety, OCD, and PTSD. One of the key advantages of this treatment is its painless nature and the fact that it does not require anesthesia.</p>
 <p>By leveraging rTMS technology in Phoenix, AZ, individuals can access a non-invasive and practical approach to managing their mental well-being.</p>

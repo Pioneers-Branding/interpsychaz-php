@@ -5,7 +5,7 @@ $pageDescription = 'Obsessive Compulsive Disorder: When Your Thoughts Take Over 
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/obsessive-compulsive-disorder-when-your-thoughts-take-over/';
-$hideVisitUs = false;
+$hideVisitUs = true; // page renders its own visit-us-today section below
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
@@ -57,7 +57,7 @@ require_once __DIR__ . '/includes/header.php';
 <p><strong>Symptoms of OCD</strong></p>
 <p>People with OCD may have either obsessions or compulsions, or both. Obsessions are intrusive, unwanted thoughts, images, or urges that repeatedly occur in your mind. You may try to ignore them or get rid of them by performing a compulsion. Compulsions are repetitive behaviors that you feel you have to do to relieve your anxiety caused by the obsessions. These compulsions are usually not realistically connected to what’s causing your obsession. For example, if you’re obsessed with germs and contamination, you may wash your hands over and over again throughout the day.</p>
 <p><strong>Treatment for OCD</strong></p>
-<p>If you have symptoms of OCD, talk to your doctor or a mental health provider. Treatment for OCD often includes medication and <a href="/category/cbt/">cognitive behavioral therapy (CBT)</a>. Medication can help reduce the intensity of your symptoms, while CBT can help you learn how to better manage your condition. In some cases, exposure and response prevention (ERP) may also be recommended as part of your treatment plan. ERP is a specific type of CBT that involves gradually exposing yourself to situations that trigger your obsessions and learning how to resist performing compulsions in response.</p>
+<p>If you have symptoms of OCD, talk to your doctor or a mental health provider. Treatment for OCD often includes medication and <a href="/obsessive-compulsive-disorder-ocd/">cognitive behavioral therapy (CBT)</a>. Medication can help reduce the intensity of your symptoms, while CBT can help you learn how to better manage your condition. In some cases, exposure and response prevention (ERP) may also be recommended as part of your treatment plan. ERP is a specific type of CBT that involves gradually exposing yourself to situations that trigger your obsessions and learning how to resist performing compulsions in response.</p>
 <p><strong>Conclusion:</strong></p>
 <p>If you have symptoms of OCD, don’t hesitate to reach out for help. There are many effective treatments available that can help improve your quality of life. With proper treatment, you can learn how to better manage your condition and live a fulfilling life despite your challenges.</p>
  </div>

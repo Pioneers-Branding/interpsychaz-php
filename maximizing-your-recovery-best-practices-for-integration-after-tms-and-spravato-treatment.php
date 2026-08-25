@@ -5,7 +5,7 @@ $pageDescription = 'Maximizing Your Recovery: Best Practices for Integration Aft
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/maximizing-your-recovery-best-practices-for-integration-after-tms-and-spravato-treatment/';
-$hideVisitUs = false;
+$hideVisitUs = true; // page renders its own visit-us-today section below
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
