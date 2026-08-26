@@ -683,7 +683,7 @@ require_once __DIR__ . '/includes/header.php';
 						<p class="gform_required_legend">"<span
 								class="gfield_required gfield_required_asterisk">*</span>" indicates required fields</p>
 					</div>
-					<form action="/" data-formid="2" enctype="multipart/form-data" id="gform_2" method="post"
+					<form action="https://app.formester.com/forms/YZQjRMoVv/submissions" data-formid="2" enctype="multipart/form-data" id="gform_2" method="post"
 						novalidate="">
 						<div class="gform-body gform_body">
 							<div class="gform_fields top_label form_sublabel_below description_below validation_below"
@@ -692,7 +692,7 @@ require_once __DIR__ . '/includes/header.php';
 									id="field_2_9"><label class="gfield_label gform-field-label" for="input_2_9"><span
 											class="gform-field-label__text">Email</span></label>
 									<div class="ginput_container"><input autocomplete="new-password" id="input_2_9"
-											name="input_9" type="text" value="" /></div>
+											name="Email" type="text" value="" /></div>
 									<div class="gfield_description" id="gfield_description_2_9">This field is for
 										validation purposes and should be left unchanged.</div>
 								</div>
@@ -706,7 +706,7 @@ require_once __DIR__ . '/includes/header.php';
 											class="gfield_required"><span
 												class="gfield_required gfield_required_asterisk">*</span></span></label>
 									<div class="ginput_container ginput_container_text"><input aria-invalid="false"
-											aria-required="true" class="medium" id="input_2_1" name="input_1"
+											aria-required="true" class="medium" id="input_2_1" name="Name"
 											type="text" value="" /></div>
 								</div>
 								<div class="gfield gfield--type-phone gfield--input-type-phone gfield--phone-format-standard gf_right_half gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"
@@ -716,7 +716,7 @@ require_once __DIR__ . '/includes/header.php';
 												class="gfield_required gfield_required_asterisk">*</span></span></label>
 									<div class="ginput_container ginput_container_phone"><input aria-invalid="false"
 											aria-required="true" class="medium" data-mask="(999) 999-9999"
-											id="input_2_2" name="input_2" placeholder="(999) 999-9999" type="tel"
+											id="input_2_2" name="Phone" placeholder="(999) 999-9999" type="tel"
 											value="" /></div>
 								</div>
 								<div class="gfield gfield--type-email gfield--input-type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"
@@ -726,7 +726,7 @@ require_once __DIR__ . '/includes/header.php';
 												class="gfield_required gfield_required_asterisk">*</span></span></label>
 									<div class="ginput_container ginput_container_email">
 										<input aria-invalid="false" aria-required="true" class="large" id="input_2_3"
-											name="input_3" type="email" value="" />
+											name="Email" type="email" value="" />
 									</div>
 								</div>
 								<div class="gfield gfield--type-textarea gfield--input-type-textarea gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"
@@ -736,7 +736,7 @@ require_once __DIR__ . '/includes/header.php';
 												class="gfield_required gfield_required_asterisk">*</span></span></label>
 									<div class="ginput_container ginput_container_textarea"><textarea
 											aria-invalid="false" aria-required="true" class="textarea small" cols="50"
-											id="input_2_4" name="input_4" rows="10"></textarea></div>
+											id="input_2_4" name="Message" rows="10"></textarea></div>
 								</div>
 								<div class="gfield gfield--type-multiselect gfield--input-type-multiselect gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"
 									id="field_2_8"><label class="gfield_label gform-field-label" for="input_2_8"><span
@@ -745,7 +745,7 @@ require_once __DIR__ . '/includes/header.php';
 												class="gfield_required gfield_required_asterisk">*</span></span></label>
 									<div class="ginput_container ginput_container_multiselect"><select
 											aria-invalid="false" aria-required="true" class="large gfield_select"
-											id="input_2_8" multiple="multiple" name="input_8[]" size="7">
+											id="input_2_8" name="Reason_for_inquiry[]">
 											<option value="Medication Management">Medication Management</option>
 											<option value="TMS">TMS</option>
 											<option value="Spravato (nasal esketamine)">Spravato (nasal esketamine)
@@ -763,14 +763,14 @@ require_once __DIR__ . '/includes/header.php';
 										<div class="gfield_radio" id="input_2_6">
 											<div class="gchoice gchoice_2_6_0">
 												<input aria-describedby="gfield_description_2_6"
-													class="gfield-choice-input" id="choice_2_6_0" name="input_6"
+													class="gfield-choice-input" id="choice_2_6_0" name="SMS_Opt_in_or_Opt_out"
 													onchange="gformToggleRadioOther( this )" type="radio"
 													value="Opt into receiving SMS" />
 												<label class="gform-field-label gform-field-label--type-inline"
 													for="choice_2_6_0" id="label_2_6_0">Opt into receiving SMS</label>
 											</div>
 											<div class="gchoice gchoice_2_6_1">
-												<input class="gfield-choice-input" id="choice_2_6_1" name="input_6"
+												<input class="gfield-choice-input" id="choice_2_6_1" name="SMS_Opt_in_or_Opt_out"
 													onchange="gformToggleRadioOther( this )" type="radio"
 													value="Opt out of receiving SMS" />
 												<label class="gform-field-label gform-field-label--type-inline"
@@ -789,27 +789,18 @@ require_once __DIR__ . '/includes/header.php';
 								</fieldset>
 							</div>
 						</div>
-						<div class="gform-footer gform_footer top_label"> <button class="gform_button button"
-								data-submission-type="submit" id="gform_submit_button_2"
-								onclick="gform.submission.handleButtonClick(this);" type="submit">Submit</button>
-							<input class="gform_hidden" data-js="gform_submission_method_2"
-								name="gform_submission_method" type="hidden" value="postback" />
-							<input class="gform_hidden" data-js="gform_theme_2" id="gform_theme_2" name="gform_theme"
-								type="hidden" value="gravity-theme" />
-							<input class="gform_hidden" data-js="gform_style_settings_2" id="gform_style_settings_2"
-								name="gform_style_settings" type="hidden" value="[]" />
-							<input class="gform_hidden" name="is_submit_2" type="hidden" value="1" />
-							<input class="gform_hidden" name="gform_submit" type="hidden" value="2" />
-							<input class="gform_hidden" data-currency="USD" name="gform_currency" type="hidden"
-								value="FKZdfiv50dyv8e6b2+1p5k9XBJyWhPUy/XcB8VNGabds9gwuq0xYt3FPBdBDnUqnxpa4Btqww5I9IQpNjTzUi0a8lRRRdBYRh1vQCZQdKHF433Q=" />
-							<input class="gform_hidden" name="gform_unique_id" type="hidden" value="" />
-							<input class="gform_hidden" name="state_2" type="hidden"
-								value="WyJ7XCJnZm9ybV9zdWJtaXNzaW9uX21ldGhvZFwiOltcIjUzMjlkZTU3NjU0NzFiY2YyYzA4ZGE1OGRmZGQyYWU2XCIsXCJiNmQ0OWQ1NTZiZTM0NDllOTY4YTk4Y2NmNGFkZThmY1wiXSxcImdmb3JtX3RoZW1lXCI6XCJmODhkNWIyNDJiZTViODFmZmQ0NjE5MGNhZDk2MzRhZlwiLFwiZ2Zvcm1fc3R5bGVfc2V0dGluZ3NcIjpcImJlNTE1ZTg3MzEwNDNkOWQ1YjUxOTY1YTAyYmFmMGUxXCIsXCJmb3JtX2lkXCI6XCI2MjZiODUxZGU4MDVmOTZmNGJiM2QzMTVjMzAwOGM0NFwiLFwidXJsXCI6XCIwZTFkM2Y0ODg5YzVhNTkyNzNkOWQwZjQ0YmJmMjIwZFwiLFwic3RhdGVfdGltZXN0YW1wXCI6XCJiMjljZjc0NGNmMWRmOTAyYTcyYTcwNjUwNWMwMDQzOFwifSIsIjYwNDRjZGYwM2UyZmEwYzg4ZWNkNTFjNjc1MWRlOWVkIiwxNzg2OTM5MTI1XQ==" />
-							<input autocomplete="off" class="gform_hidden" id="gform_target_page_number_2"
-								name="gform_target_page_number_2" type="hidden" value="0" />
-							<input autocomplete="off" class="gform_hidden" id="gform_source_page_number_2"
-								name="gform_source_page_number_2" type="hidden" value="1" />
-							<input name="gform_field_values" type="hidden" value="" />
+						<div class="gform-footer gform_footer top_label"> <button class="gform_button button" data-submission-type="submit" id="gform_submit_button_2" type="submit">Submit</button>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
 						</div>
 					</form>
 				</div>
