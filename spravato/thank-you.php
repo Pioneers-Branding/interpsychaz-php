@@ -125,7 +125,7 @@ tailwind.config = {
 
   <a href="<?= $BASE ?>/" class="rise inline-block" aria-label="Interventional Psychiatry of Arizona — home">
     <img src="<?= $LOGO_LIGHT ?>" alt="Interventional Psychiatry of Arizona — Building Strong Minds"
-         width="545" height="228" class="h-14 w-auto">
+         width="545" height="228" class="h-16 w-auto">
   </a>
 
   <div class="glass rise mt-9 w-full max-w-xl rounded-[28px] p-8 sm:p-10 text-center" style="animation-delay:.08s">

@@ -18,26 +18,30 @@ rename the folder, nothing needs changing** — `$BASE` follows it.
 | `spravato-logo.webp` | SPRAVATO® wordmark, shown once beside the mechanism section |
 | `favicon-32.png`, `favicon-180.png` | Browser tab and iOS home-screen icon |
 
-## SPRAVATO® imagery
+## Photography — `ambience/` and the SPRAVATO® slots
 
-| File | Where it appears |
-|---|---|
-| `spravato-esketamine.jpg` | "How it works" section — the nasal spray device |
-| `spravato-treatment-session.webp` | "What one session actually looks like" card |
+| File | Slot | Where it appears |
+|---|---|---|
+| `ambience/hero-happy-patient.jpg` | `hero` | Hero background — 1920 × 1280, the only image loaded eagerly. The subject is centred, so the hero uses two overlays: a flat tint plus a left-to-right gradient that darkens behind the headline and the form but stays light through the middle. Swapping in a photo with a differently placed subject means re-tuning that gradient |
+| `ambience/hero-brain.webp` | — | The previous hero (1920 × 1440 brain render). Unused; kept in case you want it back |
+| `ambience/why-patient-trust-us.webp` | `care` | Hero — the small patient card under the buttons |
+| `ambience/spravato-image.webp` | `device` | "How it works" — the real SPRAVATO® 28 mg device in a patient's hand. Portrait (578 × 661), so its frame stays portrait and is width-capped on phones |
+| `ambience/hero-bg-inter.webp` | — | No longer on the landing page; still the background of `thank-you.php`. Do not delete |
+| `spravato-treatment-session.webp` | `session` | Clinic gallery, large tile — self-administering the nasal spray |
+| `ambience/inter-a-1.webp` | `room` | Clinic gallery — the monitoring room |
+| `ambience/inter-a-3.png` | `reception` | Clinic gallery — reception |
+| `ambience/inter-a-2.webp` | `tms` | Clinic gallery — the TMS room |
 
-## Practice photography — `ambience/`
+The gallery's `lg` spans total 12 per row (5 + 4 + 3, then the row-spanning tile plus 7).
+Adding or removing a tile means re-balancing those spans in the `$gallery` array.
 
-| File | Where it appears |
-|---|---|
-| `hero-bg-inter.webp` | Hero background — neuron/synapse render |
-| `inter-a-1.webp` | Our clinic gallery, large tile — the monitoring room |
-| `inter-a-3.png` | Our clinic gallery — reception |
-| `why-patient-trust-us.webp` | Our clinic gallery — a clinician with a patient |
-| `inter-a-2.webp` | Our clinic gallery, wide tile — the TMS room |
+**Not currently placed:** `spravato-esketamine.jpg` (1280 × 853) — a woman sitting with
+her head in her hands. Kept in case you want a "who this is for" image; if you place it,
+write alt text that describes what it actually shows.
 
-**Worth re-exporting:** `hero-bg-inter.webp` is 680 × 453, which the full-bleed hero
-scales up roughly 3×. A ≥ 2000 px wide version would sharpen the most prominent image
-on the page.
+**Worth re-exporting:** `hero-bg-inter.webp` is only 680 × 453. It is fine at the size
+the mechanism section renders it, but do not promote it back to the hero without a
+larger export.
 
 ## Insurance carrier logos — `insurance/`
 
