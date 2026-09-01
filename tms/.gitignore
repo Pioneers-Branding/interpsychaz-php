@@ -1,0 +1,9 @@
+# Local preview scratch
+.preview.html
+
+# OS noise
+Thumbs.db
+.DS_Store
+
+# Editor temp artifacts
+*.tmp.*
