@@ -5495,7 +5495,7 @@ div#regular-header .container-wide {
 
 .carousel-caption {
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     width: 100%;
     z-index: 1;
@@ -5514,7 +5514,9 @@ div#regular-header .container-wide {
     letter-spacing: 1px
 }
 
+.carousel-caption p,
 .carousel-caption :is(h1, h2) p {
+    color: #fff !important;
     font-weight: 300;
     line-height: 1.5;
     font-size: 24px;
@@ -6761,10 +6763,11 @@ body:not(.home) header#site-header {
 }
 
 .carousel-caption :is(h1, h2) {
-    font-size: 80px;
-    font-weight: 400 !important;
-    line-height: 1.2;
-    margin-bottom: 30px
+    font-size: 38px;
+    font-weight: 600 !important;
+    line-height: 1.25;
+    white-space: nowrap;
+    margin-bottom: 16px
 }
 
 .video_holder a.btn {
@@ -7273,7 +7276,7 @@ html a.btn:hover {
     }
 
     .carousel-caption :is(h1, h2) {
-        font-size: 40px
+        font-size: 26px
     }
 
     .carousel-caption :is(h1, h2) strong {

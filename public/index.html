@@ -650,6 +650,59 @@ div#gform_wrapper_2 .gform_button {
 <link href="/wp-content/plugins/gravityforms/assets/css/dist/theme.min.css" id="gform_theme-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/css/slick.css" id="slick-main-css-css" media="all" rel="stylesheet"/>
 <style id="site-master-fixes-css">
+/* Hero Banner Carousel Typography & Layout */
+.carousel-caption,
+.homepage .carousel-caption,
+.video_holder .carousel-caption {
+    position: absolute !important;
+    top: 60% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 95% !important;
+    max-width: 1250px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    z-index: 10 !important;
+    padding: 0 15px !important;
+    box-sizing: border-box !important;
+}
+
+.carousel-caption h1,
+.carousel-caption :is(h1, h2),
+.homepage .carousel-caption :is(h1, h2) {
+    font-family: 'Jost', 'Roboto', sans-serif !important;
+    font-size: clamp(22px, 2.7vw, 38px) !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    line-height: 1.25 !important;
+    margin: 0 auto 16px auto !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.75) !important;
+    letter-spacing: -0.2px !important;
+}
+
+.carousel-caption p,
+.video_holder .carousel-caption p,
+.homepage .carousel-caption p {
+    color: #ffffff !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: clamp(15px, 1.4vw, 18px) !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    max-width: 820px !important;
+    margin: 0 auto 24px auto !important;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.75) !important;
+    opacity: 0.95 !important;
+}
+
+.carousel-caption a.btn,
+.video_holder a.btn {
+    font-size: 15px !important;
+    padding: 13px 32px !important;
+    letter-spacing: 0.5px !important;
+}
+
 /* ==========================================================================
    1. PAGE-LEVEL COMPONENT STYLES
    Typography is intentionally NOT overridden here: the original site uses the
@@ -1059,10 +1112,10 @@ div#gform_wrapper_2 .gform_button {
     }
     .homepage .carousel-caption :is(h1,h2) {
         font-family: 'Jost', serif !important;
-        font-size: 34px !important;
+        font-size: clamp(22px, 5.5vw, 28px) !important;
         font-weight: 600 !important;
         color: #ffffff !important;
-        line-height: 1.2 !important;
+        line-height: 1.25 !important;
         margin-bottom: 15px !important;
         text-shadow: 0 2px 10px rgba(0,0,0,0.8) !important;
     }
@@ -1276,7 +1329,7 @@ window.addEventListener('DOMContentLoaded', function() {
 <source src="/wp-content/uploads/2025/06/UntitledCOMPRESSED.mp4" type="video/mp4"/>
 </video>
 <div class="carousel-caption">
-<h1 class="wow fadeIn">Breakthrough Treatments </h1><p>Learn how Interventional Psychiatry can offer new solutions for depression, anxiety, and other mental health challenges</p>
+<h1 class="wow fadeIn">TMS Therapy & Psychiatric Care in Phoenix, AZ</h1><p style="color: #ffffff !important;">Learn how Interventional Psychiatry can offer new solutions for depression, anxiety, and other mental health challenges</p>
 <a class="btn fadeInUp wow" href="/appointments/"> Request An Appointment Today! </a>
 </div>
 </div>

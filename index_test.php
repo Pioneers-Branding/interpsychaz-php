@@ -28,7 +28,7 @@ require_once __DIR__ . '/includes/header.php';
 				<source src="/wp-content/uploads/2025/06/UntitledCOMPRESSED.mp4" type="video/mp4" />
 			</video>
 			<div class="carousel-caption">
-				<h1 class="wow fadeIn">Breakthrough Treatments </h1>
+				<h1 class="wow fadeIn">TMS Therapy & Psychiatric Care in Phoenix, AZ</h1>
 				<p style="color: #fff !important">Learn how Interventional Psychiatry can offer new solutions for
 					depression,
 					anxiety, and other mental health challenges</p>
