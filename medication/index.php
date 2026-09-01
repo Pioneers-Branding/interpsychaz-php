@@ -537,7 +537,6 @@ tailwind.config = {
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
             </button>
 
-            <p id="formNote" class="hidden mt-4 rounded-xl border border-accent-400/30 bg-accent-500/15 px-4 py-3 text-[14px] text-cream/85"></p>
 
             <p class="mt-4 flex items-start gap-2.5 text-[11.5px] sm:text-[12px] leading-relaxed text-cream/55">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-4 w-4 shrink-0 mt-px"><rect x="4.5" y="10" width="15" height="10" rx="2"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></svg>
@@ -1390,53 +1389,37 @@ document.querySelectorAll('.js-photo').forEach(im => {
 });
 
 /* ---------- appointment form ----------
-   Posts to Formester over fetch so the visitor stays on the page. If that call
-   can't be confirmed — CORS, offline, an endpoint change — the form falls back
-   to a normal browser POST, which always reaches Formester. */
+   Submits natively, so Formester records exactly one entry and the browser
+   lands on the confirmation page. Set that redirect on the Formester form.
+
+   This used to POST over fetch to keep the visitor on the page, falling back to
+   form.submit() when the call could not be confirmed. Formester sends no
+   Access-Control-Allow-Origin header, so the fetch always rejected — but only
+   *after* the POST had already been recorded. The fallback then posted a second
+   time and every enquiry arrived twice. Do not reintroduce that pattern without
+   CORS support on the endpoint. */
 (() => {
   const form = document.getElementById('contactForm');
   if (!form) return;
-  const note = document.getElementById('formNote');
-  const btn  = form.querySelector('button[type="submit"]');
-  const btnLabel = btn.innerHTML;
+  const btn = form.querySelector('button[type="submit"]');
+  let sent = false;
 
-  const say = (text, ok) => {
-    note.textContent = text;
-    note.classList.remove('hidden');
-    note.classList.toggle('border-accent-400/30', ok);
-    note.classList.toggle('bg-accent-500/15', ok);
-    note.classList.toggle('border-red-400/40', !ok);
-    note.classList.toggle('bg-red-500/15', !ok);
-  };
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
+  form.addEventListener('submit', (e) => {
     /* Bots fill the hidden field; drop those without telling them why. */
-    if (form.elements.company && form.elements.company.value) return;
-
-    btn.disabled = true;
-    btn.classList.add('opacity-70');
-    btn.textContent = 'Sending…';
-
-    try {
-      const res = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' },
-      });
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-
-      form.reset();
-      say('Thank you — we have your request. A member of our team will check your benefits and reach out within one business day.', true);
-      btn.innerHTML = btnLabel;
-      btn.disabled = false;
-      btn.classList.remove('opacity-70');
-    } catch (err) {
-      /* Couldn't confirm it landed — hand the submission to the browser, which
-         posts it for real even when fetch is blocked. */
-      form.submit();
+    if (form.elements.company && form.elements.company.value) {
+      e.preventDefault();
+      return;
     }
+    /* An impatient second click would file a duplicate of its own. */
+    if (sent) { e.preventDefault(); return; }
+    sent = true;
+    /* Deferred, so the button is still enabled while the browser serialises
+       the form — a disabled control is omitted from the payload. */
+    setTimeout(() => {
+      btn.disabled = true;
+      btn.classList.add('opacity-70');
+      btn.textContent = 'Sending…';
+    }, 0);
   });
 })();
 </script>
