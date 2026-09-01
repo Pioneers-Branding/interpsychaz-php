@@ -1,13 +1,13 @@
 <?php
 /**
- * Interventional Psychiatry of Arizona — SPRAVATO® landing page.
+ * Interventional Psychiatry of Arizona — Medication Management landing page.
  *
  * Single-file, conversion-focused page. Tailwind CSS (CDN) + vanilla JS.
- * Copy is drawn from the practice's own Spravato pages on interpsychaz.com.
+ * Copy is drawn from the practice's own medication management pages on
+ * interpsychaz.com.
  *
- * SPRAVATO® is a registered trademark of Janssen Pharmaceuticals, Inc. It is used
- * here to identify the treatment offered at this REMS-certified practice. See the
- * trademark notice in the footer.
+ * Built to match spravato/index.php — same tokens, same helpers, same
+ * responsive patterns. Fixes to one are usually worth porting to the other.
  */
 $PHONE_DISPLAY = '(602) 824-8404';
 $PHONE_LINK    = '+16028248404';
@@ -15,26 +15,20 @@ $ADDRESS_L1    = '2122 E. Highland Ave, Suite 335';
 $ADDRESS_L2    = 'Phoenix, AZ 85016';
 $YEAR          = date('Y');
 $MAPS_QUERY    = urlencode($ADDRESS_L1 . ', ' . $ADDRESS_L2);
-$FORM_ENDPOINT = 'https://app.formester.com/forms/thRvisL2m/submissions';
-
-/* The registered mark, set small and raised, so the brand reads correctly in
-   display type without shouting. Body copy uses a plain "SPRAVATO®". */
-$RX  = '<sup class="align-super text-[0.42em] font-normal">&reg;</sup>';
-$SPR = 'SPRAVATO' . $RX;
+/* TODO: swap in a dedicated Formester form for this page so its leads are
+   separated from the general enquiry form. */
+$FORM_ENDPOINT = 'https://app.formester.com/forms/RHUbxZYz6/submissions';
 
 /* This page carries no outbound links. Every click either scrolls to the form,
    dials the practice, or submits — nothing hands the visitor an exit. */
 
-/* ─── IMAGERY ────────────────────────────────────────────────────────────────
- * Every photo slot is declared once, here. A slot falls back to a licensed
- * stock placeholder until a real file exists at assets/img/<file>.
- */
+/* ─── IMAGERY ──────────────────────────────────────────────────────────────── */
 $IMG_DIR = 'assets/img';
 
-/* The URL path this folder is served from — "/spravato" normally, "" if the
-   folder's contents are deployed at the domain root. Assets are emitted against
-   it rather than relatively, because a relative path silently resolves to the
-   site root when the page is reached without a trailing slash (/spravato). */
+/* The URL path this folder is served from — "/medication-management" normally,
+   "" if the folder's contents are deployed at the domain root. Assets are
+   emitted against it rather than relatively, because a relative path silently
+   resolves to the site root when the page is reached without a trailing slash. */
 $BASE = (function (): string {
   $dir  = basename(__DIR__);
   $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
@@ -45,18 +39,19 @@ $asset = function (string $rel) use ($IMG_DIR, $BASE): string {
   $p = $IMG_DIR . '/' . $rel;
   return $BASE . '/' . (is_file(__DIR__ . '/' . $p) ? $p . '?v=' . filemtime(__DIR__ . '/' . $p) : $p);
 };
-$LOGO_LIGHT    = $asset('interpsychaz-logo.webp');       // white — dark backgrounds
-$LOGO_DARK     = $asset('interpsychaz-logo-dark.webp');  // indigo — light backgrounds
-$SPRAVATO_MARK = $asset('spravato-logo.webp');           // SPRAVATO® brand lockup
+$LOGO_LIGHT = $asset('interpsychaz-logo.webp');       // white — dark backgrounds
+$LOGO_DARK  = $asset('interpsychaz-logo-dark.webp');  // indigo — light backgrounds
 
 $IMG = [
-  'hero'      => ['file'=>'ambience/hero-happy-patient.jpg',  'id'=>'photo-1559757148-5c350d0d3c56', 'alt'=>'A woman standing at the shore with her arms raised and her face turned to the sun, smiling'],
-  'device'    => ['file'=>'ambience/spravato-image.webp',     'id'=>'photo-1631549916768-4119b2e5f926', 'alt'=>'A patient holding the SPRAVATO 28 mg esketamine nasal spray device up to their nose'],
-  'session'   => ['file'=>'spravato-treatment-session.webp',  'id'=>'photo-1512678080530-7760d81faba6', 'alt'=>'A woman self-administering an esketamine nasal spray'],
-  /* Practice photography — the rooms a patient actually walks into. */
-  'room'      => ['file'=>'ambience/inter-a-1.webp',           'id'=>'photo-1512678080530-7760d81faba6', 'alt'=>'Our monitoring room, with recliners, vitals equipment and privacy screens'],
-  'reception' => ['file'=>'ambience/inter-a-3.png',            'id'=>'photo-1519494026892-80bbd2d6fd0d', 'alt'=>'The front desk and reception area at our Phoenix office'],
-  'care'      => ['file'=>'ambience/why-patient-trust-us.webp','id'=>'photo-1584515933487-779824d29309', 'alt'=>'A clinician with a patient during a treatment session at our Phoenix practice'],
+  'hero'    => ['file'=>'ambience/hero-medication.jpg',       'id'=>'photo-1563213126-a4273aed2016', 'alt'=>'A weekly pill organiser being filled, one compartment at a time'],
+  'care'    => ['file'=>'ambience/why-patient-trust-us.webp', 'id'=>'photo-1584515933487-779824d29309', 'alt'=>'A clinician with a patient during a visit at our Phoenix practice'],
+  'regimen' => ['file'=>'pills-in-hand.jpg',                  'id'=>'photo-1584308666744-24d5c474f2ae', 'alt'=>'A hand holding four different tablets and capsules'],
+  'review'  => ['file'=>'medication-review.jpg',              'id'=>'photo-1631549916768-4119b2e5f926', 'alt'=>'A blister pack and a single tablet resting on a desk'],
+  'consult' => ['file'=>'ambience/consultation.jpg',          'id'=>'photo-1573497491208-6b1acb260507', 'alt'=>'A clinician talking with a patient, notes in hand, during an appointment'],
+  /* Practice photography. These sources top out around 680px, so they are only
+     ever rendered in the small tiles of the ambience rail. */
+  'reception' => ['file'=>'ambience/inter-a-3.png',            'id'=>'photo-1519494026892-80bbd2d6fd0d', 'alt'=>'A member of our team at the front desk of our Phoenix office'],
+  'room'      => ['file'=>'ambience/inter-a-1.webp',           'id'=>'photo-1512678080530-7760d81faba6', 'alt'=>'Our treatment room, with recliners, vitals equipment and privacy screens'],
   'tms'       => ['file'=>'ambience/inter-a-2.webp',           'id'=>'photo-1666214280557-f1b5022eb634', 'alt'=>'Our TMS treatment room, with the Magstim chair and stimulator'],
 ];
 
@@ -101,49 +96,50 @@ $insurers = [
 ];
 
 /* ─── COMPARISON ─────────────────────────────────────────────────────────────
- * One source of truth, rendered twice: as stacked cards on phones and as a
- * table from lg up. Whichever is hidden is display:none, so assistive tech and
- * the page's text content only ever see one of them.
+ * One source of truth, rendered twice: stacked cards on phones, a table from lg
+ * up. The comparison is against the standard 15-minute med-check format, not
+ * against any particular practice.
  */
 $compareCols = [
-  ['SPRAVATO&reg;',        'Esketamine nasal spray'],
-  ['Oral antidepressants', 'SSRIs, SNRIs and others'],
-  ['ECT',                  'Electroconvulsive therapy'],
+  ['Here',                'Medication management at IPA'],
+  ['A 15-minute med check', 'The standard refill appointment'],
 ];
 $compareRows = [
-  ['Time to relief',     ['Hours to days',                      'Typically 6–12 weeks per trial', 'Over a course of sessions']],
-  ['How it is given',    ['A nasal spray you self-administer',  'A pill you take daily at home',  'Anesthesia and an induced seizure']],
-  ['Sedation',           ['None — you stay awake',              'None',                           'General anesthesia every session']],
-  ['What it targets',    ['Glutamate and NMDA receptors',       'Serotonin and norepinephrine',   'Whole-brain seizure activity']],
-  ['Memory effects',     ['Not typical',                        'Not typical',                    'Memory loss is a known risk']],
-  ['Time at the clinic', ['~2 hours of monitoring per session', 'None — taken at home',           'A half day, plus recovery time']],
-  ['Driving afterward',  ['Not until the next day',             'Unrestricted',                   'Not the same day']],
+  ['First appointment',    ['90 minutes',                                        '15 minutes']],
+  ['Every follow-up',      ['30 minutes',                                        '10 to 15 minutes']],
+  ['What gets reviewed',   ['Your history, every prescription, and how you are actually doing', 'The prescription in front of you']],
+  ['Side effects',         ['Asked about directly, at every visit',              'Raised only if you bring them up']],
+  ['Drug interactions',    ['Reviewed across your whole regimen',                'Usually flagged by the pharmacy']],
+  ['Coming off a drug',    ['A legitimate goal we will plan and taper for',      'Rarely on the agenda']],
+  ['Where',                ['In person, or telehealth anywhere in Arizona',      'In office']],
 ];
 
-/* FAQ copy is plain text — it is rendered on the page and re-used verbatim in the
-   FAQPage structured data below, so it must not carry markup. */
+/* FAQ copy is plain text — it is rendered on the page and re-used verbatim in
+   the FAQPage structured data below, so it must not carry markup. */
 $faqs = [
-  ['Is SPRAVATO® covered by my insurance?',
-   'For most patients, yes. The majority of commercial plans, Medicare and many Medicaid programs — including Arizona’s AHCCCS — cover SPRAVATO® for treatment-resistant depression. Coverage is not automatic: insurers require a prior authorization first. Our care coordinators handle that paperwork and talk to your insurer directly.'],
+  ['Do you take my insurance?',
+   'Interventional Psychiatry of Arizona works with most major insurance plans. Coverage and copays vary by plan, so our team verifies your benefits before your first appointment and tells you what you will owe.'],
   ['Will I owe anything out of pocket?',
-   'There are two parts to the bill: the medication itself, and the two-hour observation visit, which is billed under your medical benefits. After insurance you may still owe a deductible, copay or coinsurance. We verify your benefits and tell you what your policy covers before treatment begins. Manufacturer savings programs may also apply for eligible patients with commercial insurance, and our team can check whether you qualify.'],
-  ['How quickly does SPRAVATO® work?',
-   'Much faster than a standard antidepressant. Where oral medications typically take weeks or months to show an effect, many patients notice a reduction in symptoms within 24 hours to a few days of their first treatment. That speed is why it is used for severe depression and for depressive symptoms with suicidal thoughts.'],
-  ['What happens during a treatment session?',
-   'You self-administer the nasal spray under the direct supervision of our staff, then stay with us for a two-hour monitoring period in a private room with a recliner. Vital signs are checked throughout. Most side effects appear during that window and resolve the same day.'],
-  ['Can I drive myself home?',
-   'No. You will need someone to drive you, and you should not drive or operate machinery until the next day, after a full night’s sleep. We will tell you this again at scheduling so you can plan the day.'],
-  ['What are the common side effects?',
-   'Dissociation, dizziness, fatigue, nausea or vomiting, a feeling of being drunk or euphoric, anxiety or numbness, and a spinning sensation. They usually begin shortly after the dose and resolve the same day, which is what the monitoring period is for.'],
-  ['How long does approval take, and what if I am denied?',
-   'Prior authorization usually takes three days to two weeks. Denials do happen, most often because of missing documentation — if that happens, our team files the appeal on your behalf with the additional clinical evidence.'],
+   'That depends on your plan — a deductible, copay or coinsurance may still apply. Our team verifies your benefits before your first appointment and tells you what your policy covers, so there are no surprises. Self-pay options are available; ask us on the first call.'],
+  ['Why is the first appointment 90 minutes?',
+   'Because a medication plan is only as good as the history behind it. The initial evaluation covers your mental health history, every medication you have tried and are currently taking, medical factors, side effects and your goals. That is what lets us tailor a plan rather than guess at one.'],
+  ['Can I do this by telehealth?',
+   'Yes. Evaluations, medication management and follow-up visits can be done virtually anywhere in Arizona. Some patients do the first appointment in person and everything after that from home.'],
   ['Do I need a referral to be seen?',
-   'No referral is needed to schedule with us. If you already have a therapist or primary care provider, we are glad to coordinate so everyone stays aligned.'],
+   'No referral is required to schedule with us. If you are already working with a therapist or primary care provider, we are glad to coordinate so everyone stays aligned.'],
+  ['Can you take over prescriptions I am already on?',
+   'Yes. Taking over an existing regimen — including a complicated one built up over years, or one started by a provider you no longer see — is routine for us. Bring your current bottles or a pharmacy list to the first visit.'],
+  ['What if I want to come off a medication rather than add one?',
+   'That is a legitimate goal and we plan for it. Stopping a psychiatric medication safely usually means a structured taper with monitoring, not simply stopping — which is exactly the kind of thing regular follow-ups are for.'],
+  ['What conditions do you prescribe for?',
+   'Depression and treatment-resistant depression, anxiety and panic, bipolar disorder, PTSD and trauma, OCD, schizophrenia and psychosis including long-acting injectables, ADHD, insomnia, substance use, and geriatric psychiatry.'],
 ];
 
 /* Verbatim Google reviews. Dates are the month each was posted, so they don't
    drift the way "2 months ago" would. */
 $reviews = [
+  ['John Jakob', 'JJ', '4 reviews', 'July 2026', 'Jessica Cruz, NP',
+   'My initial. appointment was with Nurse Practitioner Jessica Cruz. It was very worthwhile. NP Cruz is very welcoming yet very nonjudgemental and professional. She welcomes questions and thoroughly answers them. Her professional knowledge is very thorough. I was in the pharmaceutical industry for over 25 years and have dealt with many medical professionals in almost all specialties. NP Cruz impressed me as a top notch practitioner. At the end of that initial session I realized that my situation would be much improved with a bit of time and patience.'],
   ['Gary Johnson', 'GJ', '10 reviews', 'June 2026', 'Dr. Gomez',
    'Dr. Gomez is incredible. He took the time to really understand my situation, medical history, and what I was trying to accomplish. He was empathetic, caring, and listened without judgement. I highly recommend him and his staff.'],
   ['Michael Stella', 'MS', 'Local Guide · 26 reviews', 'May 2026', 'Jessica Cruz, NP',
@@ -152,8 +148,6 @@ $reviews = [
    'Dr. Gomez is SO kind, thoughtful and smart. He really listens and is so helpful. His office staff is competent and very caring. I highly recommend Dr. Gomez.'],
   ['Logan', 'L', '7 reviews', 'April 2026', 'Our team',
    'I’ve had a wonderful experience with all staff members. The whole office has been helpful, especially with handling any insurance issues that have surfaced. I’m grateful to have found this office and its staff and I would highly recommend the facility to others!'],
-  ['Benjamin Ernyei', 'BE', 'Local Guide · 13 reviews', 'November 2025', 'Dr. Gomez',
-   'Dr Gomez and the staff at Interventional Psychiatry of AZ have been my best choice in care in the past couple years. Dr Gomez always listens to my issues and has made several recommendations in my care and treatment for my mental health best concerns. His staff is very supportive and I have always recommended Dr Gomez to anyone looking for an excellent, respectful, and supportive psychiatrist.'],
   ['Walker Eltife', 'WE', '5 reviews', 'September 2025', 'Dr. Gomez',
    'Dr. Gomez is an amazing man and doctor. He took me on when I moved to Arizona. I was patient of his for roughly 3 years he was always professional, compassionate, insightful and understanding. He played a huge part in helping me continue my sobriety while in Arizona. His staff is informative and kind as well and is always quick to lend a hand or answer any questions. I would send my own family Dr Gomez.'],
 ];
@@ -175,10 +169,10 @@ $reviews = [
   gtag('config', 'AW-11337249981');
 </script>
 
-<title>SPRAVATO&reg; (Esketamine) Nasal Spray in Phoenix, AZ | Interventional Psychiatry of Arizona</title>
-<meta name="description" content="REMS-certified SPRAVATO® (esketamine) nasal spray for treatment-resistant depression in Phoenix, AZ. Relief for some patients within 24 hours. Most insurance accepted — we handle the prior authorization. Call (602) 824-8404.">
-<meta property="og:title" content="SPRAVATO® (Esketamine) for Treatment-Resistant Depression | Phoenix, AZ">
-<meta property="og:description" content="If two antidepressants haven’t worked, SPRAVATO® works differently — and faster. REMS-certified treatment center in Phoenix. Most insurance accepted.">
+<title>Psychiatric Medication Management in Phoenix, AZ | Interventional Psychiatry of Arizona</title>
+<meta name="description" content="Unhurried psychiatric medication management in Phoenix, AZ. A 90-minute initial evaluation, 30-minute follow-ups, in person or by telehealth across Arizona. Most insurance accepted, benefits verified before your first visit. Call (602) 824-8404.">
+<meta property="og:title" content="Medication Management in Phoenix, AZ | Interventional Psychiatry of Arizona">
+<meta property="og:description" content="Ninety minutes for your first appointment — because a medication plan is only as good as the history behind it. Most insurance accepted.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="<?= $absolute($img('hero', 1200)) ?>">
 <meta name="twitter:card" content="summary_large_image">
@@ -250,9 +244,9 @@ tailwind.config = {
   .reveal { opacity:0; transform:translateY(18px); transition:opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
   .reveal.in { opacity:1; transform:none; }
 
-  /* ── Glass eligibility card ──────────────────────────────────────────────
-     Frosted panel over the hero artwork: a light gradient sheet for the glass
-     itself, a tinted base so type stays legible, and an inset top highlight. */
+  /* ── Glass appointment card ──────────────────────────────────────────────
+     Frosted panel over the hero photograph: a light gradient sheet for the
+     glass itself, a tinted base so type stays legible, and an inset highlight. */
   .glass{
     background: linear-gradient(160deg, rgba(255,255,255,.14), rgba(255,255,255,.05)), rgba(38,40,88,.55);
     backdrop-filter: blur(22px) saturate(150%);
@@ -307,8 +301,7 @@ tailwind.config = {
 
   /* ── Sticky mobile action bar ────────────────────────────────────────────
      The two things a visitor on a phone actually wants — call, or start the
-     eligibility check — stay one thumb away once the hero form scrolls off.
-     Padded for the iOS home indicator. */
+     request — stay one thumb away once the hero form scrolls off. */
   #stickyBar{
     transform:translateY(130%);
     transition:transform .35s cubic-bezier(.2,.7,.2,1);
@@ -331,7 +324,7 @@ tailwind.config = {
 <!-- ══════════════════ TOP BAR ══════════════════ -->
 <div class="hidden md:block bg-brand-950 text-brand-200/80 text-[13px]">
   <div class="mx-auto max-w-8xl px-6 lg:px-10 h-10 flex items-center justify-between gap-6">
-    <p class="text-white/60 truncate">REMS-certified SPRAVATO&reg; treatment center &middot; Now accepting new patients in Phoenix</p>
+    <p class="text-white/60 truncate">Board-certified psychiatry &middot; In person in Phoenix or by telehealth across Arizona</p>
     <div class="flex items-center gap-5 shrink-0 text-white/60">
       <span class="hidden lg:inline">Mon–Fri · 8am–5pm</span>
       <span class="hidden lg:inline h-3 w-px bg-white/20"></span>
@@ -353,22 +346,22 @@ tailwind.config = {
       </a>
 
       <div class="hidden lg:flex items-center gap-0.5 xl:gap-1 whitespace-nowrap text-[15px] text-brand-900/75">
-        <a href="#qualify"   class="nav-link px-3 py-2 rounded-lg hover:bg-sand hover:text-brand-900 transition">Do I qualify?</a>
-        <a href="#science"   class="nav-link px-3 py-2 rounded-lg hover:bg-sand hover:text-brand-900 transition">How it works</a>
-        <a href="#process"   class="nav-link px-3 py-2 rounded-lg hover:bg-sand hover:text-brand-900 transition">Treatment</a>
+        <a href="#signs"     class="nav-link px-3 py-2 rounded-lg hover:bg-sand hover:text-brand-900 transition">Is this you?</a>
+        <a href="#what"      class="nav-link px-3 py-2 rounded-lg hover:bg-sand hover:text-brand-900 transition">What we manage</a>
+        <a href="#process"   class="nav-link px-3 py-2 rounded-lg hover:bg-sand hover:text-brand-900 transition">Your first visit</a>
         <a href="#insurance" class="nav-link px-3 py-2 rounded-lg hover:bg-sand hover:text-brand-900 transition">Insurance</a>
         <a href="#faq"       class="nav-link px-3 py-2 rounded-lg hover:bg-sand hover:text-brand-900 transition">FAQ</a>
       </div>
 
       <div class="flex items-center gap-2 sm:gap-3">
         <!-- Phones get a tap-to-call button; the long CTA would overflow the bar,
-             and the sticky footer already carries the eligibility action. -->
+             and the sticky footer already carries the booking action. -->
         <a href="tel:<?= $PHONE_LINK ?>" aria-label="Call <?= $PHONE_DISPLAY ?>"
            class="nav-cta sm:hidden grid place-items-center h-11 w-11 rounded-full bg-brand-900 text-cream">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-[18px] w-[18px]"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
         </a>
-        <a href="#eligibility" class="nav-cta hidden sm:inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-brand-900 px-5 py-2.5 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shadow-sm hover:shadow-md">
-          Check my eligibility
+        <a href="#book" class="nav-cta hidden sm:inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-brand-900 px-5 py-2.5 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shadow-sm hover:shadow-md">
+          Request an appointment
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
         </a>
         <button id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"
@@ -381,13 +374,12 @@ tailwind.config = {
     <!-- mobile drawer -->
     <div id="mobileMenu" class="lg:hidden hidden pb-5">
       <div class="nav-drawer grid gap-1 text-[16px] text-brand-900/80 border-t border-black/5 pt-4">
-        <a href="#qualify"     class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Do I qualify?</a>
-        <a href="#science"     class="nav-link px-3 py-3 rounded-lg hover:bg-sand">How it works</a>
-        <a href="#process"     class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Your treatment</a>
-        <a href="#insurance"   class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Insurance</a>
-        <a href="#safety"      class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Safety</a>
-        <a href="#faq"         class="nav-link px-3 py-3 rounded-lg hover:bg-sand">FAQ</a>
-        <a href="#eligibility" class="mt-1 px-3 py-3 rounded-lg bg-accent-500 text-center font-medium text-white">Check my eligibility</a>
+        <a href="#signs"   class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Is this you?</a>
+        <a href="#what"    class="nav-link px-3 py-3 rounded-lg hover:bg-sand">What we manage</a>
+        <a href="#process" class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Your first visit</a>
+        <a href="#insurance" class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Insurance</a>
+        <a href="#faq"     class="nav-link px-3 py-3 rounded-lg hover:bg-sand">FAQ</a>
+        <a href="#book"    class="mt-1 px-3 py-3 rounded-lg bg-accent-500 text-center font-medium text-white">Request an appointment</a>
       </div>
     </div>
   </nav>
@@ -397,11 +389,10 @@ tailwind.config = {
 <section id="top" class="relative overflow-hidden bg-brand-950 -mt-[68px] sm:-mt-[80px] pt-[68px] sm:pt-[80px]">
   <img src="<?= $img('hero', 2000) ?>" alt="<?= $alt('hero') ?>" fetchpriority="high" decoding="async"
        class="js-photo pointer-events-none absolute inset-0 h-full w-full object-cover object-center">
-  <!-- Two overlays rather than one: a flat tint to sit the brand over the photo, then
-       a left-to-right gradient that darkens behind the headline and behind the form
-       while staying light through the middle, where the subject is. -->
-  <div class="pointer-events-none absolute inset-0 bg-brand-950/55"></div>
-  <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-brand-950/55 via-brand-950/5 to-brand-950/45"></div>
+  <!-- Two overlays: a flat tint to sit the brand over the photograph, then a
+       left-to-right gradient that darkens behind the headline and the form. -->
+  <div class="pointer-events-none absolute inset-0 bg-brand-950/70"></div>
+  <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-brand-950/50 via-brand-950/10 to-brand-950/40"></div>
 
   <div class="relative mx-auto max-w-8xl px-5 sm:px-6 lg:px-10 pt-8 pb-12 lg:pt-12 lg:pb-16">
     <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-center">
@@ -412,23 +403,23 @@ tailwind.config = {
             <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-400 opacity-75"></span>
             <span class="relative inline-flex h-2 w-2 rounded-full bg-accent-400"></span>
           </span>
-          REMS-certified SPRAVATO&reg; center · Phoenix, AZ
+          Medication management · Phoenix &amp; telehealth statewide
         </div>
 
-        <h1 class="mt-5 sm:mt-7 font-display text-[2rem] leading-[1.08] min-[400px]:text-[2.3rem] sm:text-[2.9rem] lg:text-[3.1rem] xl:text-[3.6rem] tracking-tightest text-cream font-light">
-          Two antidepressants<br class="hidden min-[400px]:block"> haven't worked.
-          <span class="italic text-accent-400"><?= $SPR ?> works differently.</span>
+        <h1 class="mt-5 sm:mt-7 font-display text-[2rem] leading-[1.08] min-[400px]:text-[2.3rem] sm:text-[2.9rem] lg:text-[3.1rem] xl:text-[3.5rem] tracking-tightest text-cream font-light">
+          Ninety minutes for your first appointment.
+          <span class="italic text-accent-400">That is the whole point.</span>
         </h1>
 
         <p class="mt-5 max-w-lg text-[15.5px] sm:text-[16.5px] lg:text-[17.5px] leading-relaxed text-cream/70 font-light">
-          SPRAVATO&reg; (esketamine) is the first prescription nasal spray used alongside an oral
-          antidepressant to treat severe, treatment-resistant depression. Many patients feel a shift
-          within 24 hours, not weeks.
+          Every person responds to medication differently. We review your full history, every
+          prescription you are on, and how you are actually doing — then build the plan around
+          that, rather than around the clock.
         </p>
 
         <div class="mt-7 flex flex-col sm:flex-row gap-3">
-          <a href="#eligibility" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20">
-            Check if I qualify
+          <a href="#book" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20">
+            Request an appointment
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
           </a>
           <a href="tel:<?= $PHONE_LINK ?>" class="inline-flex items-center justify-center gap-2.5 rounded-full border border-white/20 bg-white/5 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-cream hover:bg-white/10 transition backdrop-blur">
@@ -439,34 +430,34 @@ tailwind.config = {
         </div>
 
         <!-- A real photograph from the practice, at a size where the 680px source
-             still looks sharp — the treatment is a person in a room, not a diagram. -->
+             still looks sharp. -->
         <figure class="mt-7 flex items-center gap-4 max-w-lg rounded-2xl border border-white/12 bg-white/[0.07] p-2.5 backdrop-blur">
           <img src="<?= $img('care', 600) ?>" alt="<?= $alt('care') ?>" loading="lazy" decoding="async"
                class="js-photo h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem] shrink-0 rounded-xl object-cover">
           <figcaption class="pr-1 text-[13.5px] sm:text-[14px] leading-snug text-cream/70">
-            A nasal spray you take yourself, here in our Phoenix office — with a clinician beside you
-            the whole time.
+            Appointments built for a real conversation — about sleep, work, side effects and what
+            you actually want to change.
           </figcaption>
         </figure>
 
         <dl class="mt-5 grid grid-cols-3 gap-3 sm:gap-6 max-w-lg border-t border-white/10 pt-5">
           <div>
-            <dt class="font-display text-2xl sm:text-3xl text-cream font-light">24 hrs</dt>
-            <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Relief can begin this fast</dd>
+            <dt class="font-display text-2xl sm:text-3xl text-cream font-light">90 min</dt>
+            <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Initial psychiatric evaluation</dd>
           </div>
           <div>
-            <dt class="font-display text-2xl sm:text-3xl text-cream font-light">2 hrs</dt>
-            <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Monitored, every session</dd>
+            <dt class="font-display text-2xl sm:text-3xl text-cream font-light">30 min</dt>
+            <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Every follow-up, not ten</dd>
           </div>
           <div>
             <dt class="font-display text-2xl sm:text-3xl text-cream font-light">Most</dt>
-            <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Insurance accepted &amp; verified</dd>
+            <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Insurance plans accepted</dd>
           </div>
         </dl>
       </div>
 
-      <!-- eligibility form -->
-      <div id="eligibility" class="lg:col-span-6 reveal scroll-mt-24 sm:scroll-mt-28" style="transition-delay:.12s">
+      <!-- appointment request form -->
+      <div id="book" class="lg:col-span-6 reveal scroll-mt-20 sm:scroll-mt-28" style="transition-delay:.12s">
         <div class="relative">
           <div class="pointer-events-none absolute -inset-3 sm:-inset-4 rounded-[32px] bg-gradient-to-br from-accent-400/20 via-transparent to-brand-500/20 blur-2xl"></div>
 
@@ -475,27 +466,29 @@ tailwind.config = {
 
             <div class="flex items-start justify-between gap-4">
               <div>
-                <h2 class="font-display text-[22px] sm:text-[27px] leading-tight tracking-tight text-cream">Check your SPRAVATO&reg; eligibility</h2>
+                <h2 class="font-display text-[22px] sm:text-[27px] leading-tight tracking-tight text-cream">Request an appointment</h2>
                 <p class="mt-2 text-[14px] sm:text-[14.5px] leading-relaxed text-cream/60">
-                  Two questions and your contact details. We verify your benefits and call you back
-                  within one business day.
+                  Tell us where you are with medication right now. We verify your benefits and call
+                  you back within one business day.
                 </p>
               </div>
               <span class="hidden sm:grid place-items-center h-11 w-11 shrink-0 rounded-2xl bg-white/10 ring-1 ring-white/15 text-accent-400">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-5 w-5"><path d="M12 3l7.5 3v5.5c0 4.4-3.1 8.2-7.5 9.5-4.4-1.3-7.5-5.1-7.5-9.5V6L12 3Z"/><path d="M9.5 12l1.8 1.8L15 10"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-5 w-5"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>
               </span>
             </div>
 
             <div class="mt-5 sm:mt-6 grid sm:grid-cols-2 gap-3 sm:gap-3.5">
               <div class="sm:col-span-2">
-                <label for="tried" class="block text-[12.5px] font-medium text-cream/60 mb-1.5">How many antidepressants have you tried without enough relief?</label>
-                <select id="tried" name="Antidepressants tried" class="glass-field w-full appearance-none rounded-xl px-4 py-3 pr-10 outline-none"
+                <label for="situation" class="block text-[12.5px] font-medium text-cream/60 mb-1.5">Where are you with medication right now?</label>
+                <select id="situation" name="Current situation" class="glass-field w-full appearance-none rounded-xl px-4 py-3 pr-10 outline-none"
                         style="background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23FBF9F6' stroke-opacity='.6' stroke-width='2'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E&quot;);background-repeat:no-repeat;background-position:right 1rem center">
                   <?php foreach ([
-                    'Two or more — none have worked well enough',
-                    'One so far',
-                    'None yet — I’m just starting to look',
-                    'I’m not sure',
+                    'I’m on medication and it isn’t working well enough',
+                    'I need a new prescriber to take over my prescriptions',
+                    'The side effects are the problem',
+                    'I want to come off something, safely',
+                    'I’ve never been on medication — starting from scratch',
+                    'I’d like a second opinion',
                   ] as $opt): ?>
                   <option><?= $opt ?></option>
                   <?php endforeach; ?>
@@ -511,7 +504,7 @@ tailwind.config = {
                   <?php endforeach; ?>
                   <option>AHCCCS / Arizona Medicaid</option>
                   <option>Another plan</option>
-                  <option>No insurance / self-pay</option>
+                  <option>No insurance — cash pay</option>
                 </select>
               </div>
               <div>
@@ -536,11 +529,11 @@ tailwind.config = {
             <div class="hidden" aria-hidden="true">
               <label>Do not fill this in <input type="text" name="company" tabindex="-1" autocomplete="off"></label>
             </div>
-            <input type="hidden" name="Source" value="Spravato landing page">
-            <input type="hidden" name="Interested in" value="Spravato (nasal esketamine)">
+            <input type="hidden" name="Source" value="Medication management landing page">
+            <input type="hidden" name="Interested in" value="Medication Management">
 
             <button type="submit" class="group mt-5 w-full inline-flex items-center justify-center gap-2.5 rounded-full bg-cream px-6 py-4 text-[15.5px] font-medium text-brand-900 hover:bg-white transition shadow-lg shadow-black/25">
-              Check my eligibility
+              Request an appointment
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
             </button>
 
@@ -563,10 +556,10 @@ tailwind.config = {
       <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-4">
         <?php
         $trust = [
-          ['REMS-certified',    'Protocol-driven monitoring'],
-          ['FDA-approved',      'For TRD and MDD with SI'],
-          ['Insurance handled', 'We file the authorization'],
-          ['Board-certified',   '15+ years in practice'],
+          ['Board-certified',   '15+ years of psychiatric practice'],
+          ['No referral needed', 'Book directly with us'],
+          ['Telehealth ready',  'Anywhere in Arizona'],
+          ['Insurance verified', 'Before your first appointment'],
         ];
         foreach ($trust as [$t, $s]): ?>
         <div class="flex items-start gap-2.5">
@@ -584,239 +577,236 @@ tailwind.config = {
   </div>
 </section>
 
-<!-- ══════════════════ DO I QUALIFY ══════════════════ -->
-<section id="qualify" class="py-12 sm:py-14 lg:py-20 scroll-mt-24">
+<!-- ══════════════════ IS THIS YOU ══════════════════ -->
+<section id="signs" class="py-12 sm:py-14 lg:py-20 scroll-mt-24">
   <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
 
     <div class="max-w-3xl reveal">
-      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Do I qualify?</p>
+      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Is this you?</p>
       <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-        <?= $SPR ?> is for a specific kind of depression.
+        Four reasons people book a medication review.
       </h2>
       <p class="mt-4 text-[15.5px] sm:text-[17px] leading-relaxed text-brand-900/60 font-light">
-        It is approved for two groups of adults with major depressive disorder — and about 30% of
-        people diagnosed with depression fall into treatment-resistant territory.
+        None of them require anything to have gone dramatically wrong. Most of the time it is just
+        that nobody has had the time to look at the whole picture in a while.
       </p>
     </div>
 
-    <div class="mt-8 sm:mt-10 grid sm:grid-cols-3 gap-3.5 sm:gap-5">
+    <div class="mt-8 sm:mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-5">
       <?php
-      $criteria = [
-        ['Treatment-resistant depression',
-         'An adult with major depressive disorder that has not responded to standard antidepressant treatment.'],
-        ['Two or more antidepressants tried',
-         'No adequate response to at least two different antidepressants during your current episode — usually six weeks each. This is the criterion insurers check.'],
-        ['Depression with suicidal thoughts',
-         'Depressive symptoms alongside suicidal thoughts or actions, where waiting weeks for a medication to work is not an option.'],
+      $signs = [
+        ['It works, but not enough',
+         'The worst days are gone, but you would not call it better. That gap is worth treating, not tolerating.',
+         'M4 14a8 8 0 0 1 16 0M12 14v6M9 20h6'],
+        ['The side effects are the problem',
+         'Weight, sleep, libido, flatness. You stopped mentioning them because nothing changed when you did.',
+         'M12 9v4.5M12 17h.01M10.3 3.9 2.6 17.3A2 2 0 0 0 4.3 20.3h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z'],
+        ['The regimen just grew',
+         'One drug added at a time, over years, by different prescribers — and nobody has reviewed the whole list since.',
+         'M4 7h16v12H4V7Zm4-3h8v3H8V4Zm-1 8h10M7 15h6'],
+        ['You want off something',
+         'Stopping safely takes a structured taper and monitoring. It is a real goal, and we will plan for it.',
+         'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z M8.5 8.5l7 7'],
       ];
-      foreach ($criteria as $i => [$h, $p]): ?>
-      <article class="reveal flex gap-4 sm:block rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]"
+      foreach ($signs as $i => [$h, $p, $icon]): ?>
+      <article class="reveal flex gap-4 sm:block rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-6 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]"
                style="transition-delay:<?= $i * 60 ?>ms">
-        <span class="grid place-items-center h-9 w-9 sm:h-11 sm:w-11 shrink-0 rounded-xl sm:rounded-2xl bg-accent-50 text-accent-600 ring-1 ring-accent-200">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="h-4 w-4 sm:h-5 sm:w-5"><path d="M5 13l4 4L19 7"/></svg>
+        <span class="grid place-items-center h-10 w-10 sm:h-11 sm:w-11 shrink-0 rounded-xl sm:rounded-2xl bg-accent-50 text-accent-600 ring-1 ring-accent-200">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-[18px] w-[18px] sm:h-5 sm:w-5"><path d="<?= $icon ?>"/></svg>
         </span>
         <div class="min-w-0">
-          <h3 class="sm:mt-5 font-display text-[19px] sm:text-[22px] leading-snug tracking-tight text-brand-900"><?= $h ?></h3>
-          <p class="mt-2 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/60"><?= $p ?></p>
+          <h3 class="sm:mt-5 font-display text-[19px] sm:text-[21px] leading-snug tracking-tight text-brand-900"><?= $h ?></h3>
+          <p class="mt-2 text-[14.5px] leading-relaxed text-brand-900/60"><?= $p ?></p>
         </div>
       </article>
       <?php endforeach; ?>
     </div>
 
-    <div class="reveal mt-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-black/[0.07] bg-white px-5 sm:px-7 py-5">
+    <!-- conditions, as a compact chip row rather than its own band -->
+    <div class="reveal mt-6 rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
+      <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+        <h3 class="font-display text-[19px] sm:text-[21px] tracking-tight text-brand-900">What we prescribe for</h3>
+        <p class="text-[13.5px] text-brand-900/45">Adults, teens and geriatric patients</p>
+      </div>
+      <ul class="mt-4 flex flex-wrap gap-1.5 sm:gap-2">
+        <?php foreach ([
+          'Depression','Treatment-resistant depression','Anxiety &amp; panic','Bipolar disorder',
+          'PTSD &amp; trauma','OCD','Schizophrenia &amp; psychosis','Long-acting injectables',
+          'ADHD','Insomnia','Substance use','Geriatric psychiatry',
+        ] as $c): ?>
+        <li class="rounded-full bg-sand px-3 py-1.5 text-[13px] text-brand-900/70"><?= $c ?></li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
+
+    <div class="reveal mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-black/[0.07] bg-white px-5 sm:px-7 py-5">
       <p class="text-[15px] sm:text-[16px] leading-relaxed text-brand-900/65">
-        <span class="text-brand-900 font-medium">Not sure whether you meet the criteria?</span>
-        That is exactly what the first call is for.
+        <span class="text-brand-900 font-medium">Not sure it is worth switching?</span>
+        One call, and we will tell you honestly either way.
       </p>
-      <a href="#eligibility" class="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-900 px-6 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shrink-0">
-        Check my eligibility
+      <a href="#book" class="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-900 px-6 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shrink-0">
+        Request an appointment
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════ HOW IT WORKS + HOW IT COMPARES ══════════════════ -->
-<section id="science" class="bg-white border-y border-black/5 scroll-mt-24">
+<!-- ══════════════════ WHAT WE MANAGE + COMPARISON ══════════════════ -->
+<section id="what" class="bg-white border-y border-black/5 scroll-mt-24">
   <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10 py-12 sm:py-14 lg:py-20">
 
     <div class="grid lg:grid-cols-12 gap-8 lg:gap-14 items-center">
       <div class="lg:col-span-7 reveal">
-        <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">How it works</p>
+        <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">What we manage</p>
         <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-          A different target in the brain.
+          The whole regimen, not the last prescription.
         </h2>
         <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-brand-900/60 font-light max-w-xl">
-          Standard antidepressants work on serotonin and norepinephrine, and take weeks to build an
-          effect. SPRAVATO&reg; acts on the brain's glutamate system instead — which is why it moves
-          so much faster.
+          A comprehensive medication management plan keeps every part of your treatment under
+          review — and adjusts it as your response changes.
         </p>
 
-        <!-- The mechanism as a sequence: each step follows from the one before it,
-             so the cards are numbered and joined by a rule on wide screens. -->
-        <ol class="relative mt-8 grid sm:grid-cols-3 gap-3.5 sm:gap-4">
-          <div class="hidden sm:block absolute top-[2.4rem] left-[12%] right-[12%] h-px bg-black/10"></div>
+        <ol class="mt-8 grid sm:grid-cols-2 gap-3.5 sm:gap-4">
           <?php
-          $mechanism = [
-            ['Blocks NMDA receptors', 'The doorways controlling glutamate flow. When they are overactive, mood and thinking suffer; esketamine restores the balance.',
-             'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z M5.6 5.6l12.8 12.8'],
-            ['Rebuilds connections',  'Depression damages the connections between neurons. Esketamine promotes neuroplasticity, so improvement can hold rather than fade.',
+          $manage = [
+            ['Drug interactions',   'Checked across every prescription you are taking, not just the ones we wrote.',
              'M7 5.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M21 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M14 18.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M6.6 7.1l10 1.6 M18.4 11.2 13.3 17'],
-            ['Works with your meds',  'It is prescribed alongside an oral antidepressant, not instead of one — and only ever given under medical supervision.',
-             'M10.5 3.5a5 5 0 0 1 7 7l-7 7a5 5 0 0 1-7-7l7-7Z M7 7l7 7'],
+            ['Side effects',        'Identified early and actively managed, rather than treated as the price of feeling better.',
+             'M12 9v4.5M12 17h.01M10.3 3.9 2.6 17.3A2 2 0 0 0 4.3 20.3h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z'],
+            ['Dosage adjustments',  'Tuned to what is actually happening for you — the effective dose is rarely the starting one.',
+             'M5 12h14M5 6h14M5 18h14 M9 4v4M15 10v4M11 16v4'],
+            ['Ongoing evaluation',  'Tracked at every visit so a plan that stops working gets changed, not repeated.',
+             'M12 7v5l3 2M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z'],
           ];
-          foreach ($mechanism as $i => [$h, $p, $icon]): ?>
-          <li class="reveal relative flex gap-4 sm:block rounded-2xl border border-black/[0.07] bg-cream p-5 sm:p-6" style="transition-delay:<?= $i * 60 ?>ms">
-            <span class="relative grid place-items-center h-10 w-10 sm:h-12 sm:w-12 shrink-0 rounded-full bg-white text-brand-700 ring-1 ring-black/[0.07] shadow-sm">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-[18px] w-[18px] sm:h-5 sm:w-5"><path d="<?= $icon ?>"/></svg>
+          foreach ($manage as $i => [$h, $p, $icon]): ?>
+          <li class="reveal flex gap-4 rounded-2xl border border-black/[0.07] bg-cream p-5" style="transition-delay:<?= $i * 60 ?>ms">
+            <span class="relative grid place-items-center h-10 w-10 shrink-0 rounded-full bg-white text-brand-700 ring-1 ring-black/[0.07] shadow-sm">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-[18px] w-[18px]"><path d="<?= $icon ?>"/></svg>
               <span class="absolute -top-1 -right-1 grid place-items-center h-4 w-4 rounded-full bg-accent-500 text-[10px] font-semibold text-white"><?= $i + 1 ?></span>
             </span>
             <div class="min-w-0">
-              <h3 class="sm:mt-4 font-display text-[18px] sm:text-[19px] leading-snug tracking-tight text-brand-900"><?= $h ?></h3>
+              <h3 class="font-display text-[18px] sm:text-[19px] leading-snug tracking-tight text-brand-900"><?= $h ?></h3>
               <p class="mt-1.5 text-[14px] leading-relaxed text-brand-900/60"><?= $p ?></p>
             </div>
           </li>
           <?php endforeach; ?>
         </ol>
-
-        <!-- The whole argument in one picture: how long each takes to do anything. -->
-        <div class="reveal mt-4 rounded-2xl border border-black/[0.07] bg-cream p-5 sm:p-6">
-          <p class="text-[11.5px] uppercase tracking-[0.16em] text-brand-900/40">Time to first relief</p>
-          <div class="mt-4 space-y-3.5">
-            <?php
-            $speed = [
-              ['SPRAVATO&reg;',        '24 hours to a few days', '12%',  true],
-              ['Oral antidepressant', '6 to 12 weeks',          '100%', false],
-            ];
-            foreach ($speed as [$who, $when, $width, $lead]): ?>
-            <div>
-              <div class="flex items-baseline justify-between gap-3">
-                <p class="text-[14.5px] font-medium <?= $lead ? 'text-brand-900' : 'text-brand-900/55' ?>"><?= $who ?></p>
-                <p class="text-[13.5px] font-medium <?= $lead ? 'text-accent-600' : 'text-brand-900/40' ?>"><?= $when ?></p>
-              </div>
-              <div class="mt-1.5 h-2 rounded-full bg-brand-900/[0.07] overflow-hidden">
-                <div class="h-full rounded-full <?= $lead ? 'bg-accent-500' : 'bg-brand-500/45' ?>" style="width:<?= $width ?>"></div>
-              </div>
-            </div>
-            <?php endforeach; ?>
-          </div>
-          <p class="mt-3.5 text-[12px] text-brand-900/40">Illustrative, not to scale. Individual response varies.</p>
-        </div>
       </div>
 
       <div class="reveal lg:col-span-5">
-        <!-- The source is portrait (578 × 661), so the frame stays portrait and is
-             capped on phones rather than cropped to a landscape band. -->
-        <figure class="mx-auto max-w-[15rem] sm:max-w-[19rem] lg:max-w-none overflow-hidden rounded-2xl sm:rounded-3xl ring-1 ring-black/5">
-          <img src="<?= $img('device', 900) ?>" alt="<?= $alt('device') ?>" loading="lazy" decoding="async"
-               class="js-photo aspect-[7/8] w-full object-cover">
+        <figure class="overflow-hidden rounded-2xl sm:rounded-3xl ring-1 ring-black/5">
+          <img src="<?= $img('regimen', 1000) ?>" alt="<?= $alt('regimen') ?>" loading="lazy" decoding="async"
+               class="js-photo aspect-[16/11] lg:aspect-[4/3] w-full object-cover">
         </figure>
-        <div class="mt-3.5 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-black/[0.07] bg-cream px-5 py-4">
-          <img src="<?= $SPRAVATO_MARK ?>" alt="SPRAVATO (esketamine) CIII nasal spray"
-               width="268" height="90" loading="lazy" class="js-photo h-7 w-auto">
-          <p class="text-[12.5px] leading-snug text-brand-900/50 max-w-[13rem]">Dispensed only through REMS-certified centers. We are one.</p>
+        <div class="mt-3.5 rounded-2xl border border-black/[0.07] bg-cream px-5 py-4">
+          <p class="text-[14px] leading-relaxed text-brand-900/60">
+            <span class="font-medium text-brand-900">Bring your bottles.</span>
+            Or a pharmacy printout. Taking over a regimen that grew over years — including one
+            started by a provider you no longer see — is routine for us.
+          </p>
         </div>
       </div>
     </div>
 
     <!-- ── comparison ──────────────────────────────────────────────────────────
-         Kept dark, because the highlighted SPRAVATO® column needs the contrast —
-         but contained as a panel rather than a second full-width blue band. -->
+         Kept dark, because the highlighted column needs the contrast — but
+         contained as a panel rather than a second full-width blue band. -->
     <div class="relative overflow-hidden mt-10 sm:mt-12 rounded-[24px] sm:rounded-[28px] bg-brand-950 text-cream grain p-5 sm:p-8 lg:p-10 reveal">
       <div class="pointer-events-none absolute -right-32 -top-24 h-[24rem] w-[24rem] rounded-full bg-brand-600/40 blur-[110px]"></div>
       <div class="relative">
-      <h3 class="font-display text-[1.6rem] sm:text-[2rem] leading-tight tracking-tightest font-light">
-        Faster than pills. Gentler than ECT.
-      </h3>
-      <p class="mt-3 text-[15px] sm:text-[15.5px] leading-relaxed text-cream/60 font-light max-w-2xl">
-        All three treat depression that hasn't responded to standard care. They differ in how fast
-        they work, what a session costs you in time, and what you feel afterward.
-      </p>
-
-      <!-- Phones and tablets: one card per attribute, so nothing scrolls sideways. -->
-      <div class="mt-7 grid gap-3 sm:grid-cols-2 lg:hidden">
-        <?php foreach ($compareRows as [$label, $values]): ?>
-        <div class="overflow-hidden rounded-2xl border border-white/12 bg-white/[0.03]">
-          <p class="px-4 pt-3.5 pb-2.5 text-[11.5px] uppercase tracking-[0.16em] text-cream/45"><?= $label ?></p>
-          <div class="border-t border-white/10">
-            <?php foreach ($compareCols as $c => [$colName, $colSub]):
-              $lead = $c === 0; ?>
-            <div class="flex items-start gap-2.5 px-4 py-3 <?= $lead ? 'bg-accent-500/15' : 'border-t border-white/[0.07]' ?>">
-              <?php if ($lead): ?>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" class="mt-[3px] h-3.5 w-3.5 shrink-0 text-accent-400"><path d="M5 13l4 4L19 7"/></svg>
-              <?php else: ?>
-              <span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-cream/25"></span>
-              <?php endif; ?>
-              <div class="min-w-0">
-                <p class="text-[11.5px] uppercase tracking-[0.12em] <?= $lead ? 'text-accent-400' : 'text-cream/35' ?>"><?= $colName ?></p>
-                <p class="mt-0.5 text-[14.5px] leading-snug <?= $lead ? 'text-cream' : 'text-cream/60' ?>"><?= $values[$c] ?></p>
-              </div>
-            </div>
-            <?php endforeach; ?>
-          </div>
-        </div>
-        <?php endforeach; ?>
-      </div>
-
-      <!-- Large screens: the real table, where all three columns fit at once. -->
-      <table class="hidden lg:table w-full mt-8 border-separate border-spacing-0 text-left">
-        <caption class="sr-only">SPRAVATO® compared with oral antidepressants and electroconvulsive therapy</caption>
-        <thead>
-          <tr>
-            <th scope="col" class="w-[22%] pb-5 pr-6"><span class="sr-only">Attribute</span></th>
-            <?php foreach ($compareCols as $c => [$colName, $colSub]): ?>
-            <th scope="col" class="w-[26%] px-6 pb-5 align-bottom <?= $c === 0 ? 'rounded-t-2xl bg-accent-500/15 pt-6' : '' ?>">
-              <span class="block font-display text-[22px] tracking-tight <?= $c === 0 ? 'text-cream' : 'text-cream/80' ?>"><?= $c === 0 ? $SPR : $colName ?></span>
-              <span class="mt-1 block text-[12.5px] <?= $c === 0 ? 'text-accent-400' : 'text-cream/40' ?>"><?= $colSub ?></span>
-            </th>
-            <?php endforeach; ?>
-          </tr>
-        </thead>
-        <tbody class="align-top">
-          <?php foreach ($compareRows as $i => [$label, $values]):
-            $last = $i === count($compareRows) - 1; ?>
-          <tr>
-            <th scope="row" class="border-t border-white/10 py-5 pr-6 text-[14.5px] font-medium text-cream/55"><?= $label ?></th>
-            <?php foreach ($values as $c => $v): ?>
-            <td class="border-t border-white/10 px-6 py-5 text-[15px] <?= $c === 0 ? 'bg-accent-500/15 text-cream ' . ($last ? 'rounded-b-2xl' : '') : 'text-cream/60' ?>">
-              <?php if ($c === 0): ?>
-              <span class="flex items-start gap-2.5">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" class="mt-1 h-3.5 w-3.5 shrink-0 text-accent-400"><path d="M5 13l4 4L19 7"/></svg>
-                <?= $v ?>
-              </span>
-              <?php else: ?>
-              <?= $v ?>
-              <?php endif; ?>
-            </td>
-            <?php endforeach; ?>
-          </tr>
-          <?php endforeach; ?>
-        </tbody>
-      </table>
-
-      <div class="mt-7 flex flex-col sm:flex-row sm:items-center gap-4">
-        <a href="#eligibility" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-6 py-3.5 text-[15px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20 shrink-0">
-          See if it's right for me
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
-        </a>
-        <p class="text-[14px] leading-relaxed text-cream/45 max-w-md">
-          We also offer TMS, ECT and medication management — so if SPRAVATO&reg; isn't the right fit,
-          you don't start over somewhere else.
+        <h3 class="font-display text-[1.6rem] sm:text-[2rem] leading-tight tracking-tightest font-light">
+          Why the appointment length matters.
+        </h3>
+        <p class="mt-3 text-[15px] sm:text-[15.5px] leading-relaxed text-cream/60 font-light max-w-2xl">
+          The standard psychiatric refill visit runs about fifteen minutes. Here is what changes
+          when it doesn't.
         </p>
-      </div>
+
+        <!-- Phones and tablets: one card per row, so nothing scrolls sideways. -->
+        <div class="mt-7 grid gap-3 sm:grid-cols-2 lg:hidden">
+          <?php foreach ($compareRows as [$label, $values]): ?>
+          <div class="overflow-hidden rounded-2xl border border-white/12 bg-white/[0.03]">
+            <p class="px-4 pt-3.5 pb-2.5 text-[11.5px] uppercase tracking-[0.16em] text-cream/45"><?= $label ?></p>
+            <div class="border-t border-white/10">
+              <?php foreach ($compareCols as $c => [$colName, $colSub]):
+                $lead = $c === 0; ?>
+              <div class="flex items-start gap-2.5 px-4 py-3 <?= $lead ? 'bg-accent-500/15' : 'border-t border-white/[0.07]' ?>">
+                <?php if ($lead): ?>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" class="mt-[3px] h-3.5 w-3.5 shrink-0 text-accent-400"><path d="M5 13l4 4L19 7"/></svg>
+                <?php else: ?>
+                <span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-cream/25"></span>
+                <?php endif; ?>
+                <div class="min-w-0">
+                  <p class="text-[11.5px] uppercase tracking-[0.12em] <?= $lead ? 'text-accent-400' : 'text-cream/35' ?>"><?= $colName ?></p>
+                  <p class="mt-0.5 text-[14.5px] leading-snug <?= $lead ? 'text-cream' : 'text-cream/60' ?>"><?= $values[$c] ?></p>
+                </div>
+              </div>
+              <?php endforeach; ?>
+            </div>
+          </div>
+          <?php endforeach; ?>
+        </div>
+
+        <!-- Large screens: the real table, where both columns fit at once. -->
+        <table class="hidden lg:table w-full mt-8 border-separate border-spacing-0 text-left">
+          <caption class="sr-only">Medication management at Interventional Psychiatry of Arizona compared with a standard 15-minute med check</caption>
+          <thead>
+            <tr>
+              <th scope="col" class="w-[24%] pb-5 pr-6"><span class="sr-only">Attribute</span></th>
+              <?php foreach ($compareCols as $c => [$colName, $colSub]): ?>
+              <th scope="col" class="w-[38%] px-6 pb-5 align-bottom <?= $c === 0 ? 'rounded-t-2xl bg-accent-500/15 pt-6' : '' ?>">
+                <span class="block font-display text-[22px] tracking-tight <?= $c === 0 ? 'text-cream' : 'text-cream/80' ?>"><?= $colName ?></span>
+                <span class="mt-1 block text-[12.5px] <?= $c === 0 ? 'text-accent-400' : 'text-cream/40' ?>"><?= $colSub ?></span>
+              </th>
+              <?php endforeach; ?>
+            </tr>
+          </thead>
+          <tbody class="align-top">
+            <?php foreach ($compareRows as $i => [$label, $values]):
+              $last = $i === count($compareRows) - 1; ?>
+            <tr>
+              <th scope="row" class="border-t border-white/10 py-5 pr-6 text-[14.5px] font-medium text-cream/55"><?= $label ?></th>
+              <?php foreach ($values as $c => $v): ?>
+              <td class="border-t border-white/10 px-6 py-5 text-[15px] <?= $c === 0 ? 'bg-accent-500/15 text-cream ' . ($last ? 'rounded-b-2xl' : '') : 'text-cream/60' ?>">
+                <?php if ($c === 0): ?>
+                <span class="flex items-start gap-2.5">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" class="mt-1 h-3.5 w-3.5 shrink-0 text-accent-400"><path d="M5 13l4 4L19 7"/></svg>
+                  <?= $v ?>
+                </span>
+                <?php else: ?>
+                <?= $v ?>
+                <?php endif; ?>
+              </td>
+              <?php endforeach; ?>
+            </tr>
+            <?php endforeach; ?>
+          </tbody>
+        </table>
+
+        <div class="mt-7 flex flex-col sm:flex-row sm:items-center gap-4">
+          <a href="#book" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-6 py-3.5 text-[15px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20 shrink-0">
+            Request an appointment
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+          </a>
+          <p class="text-[14px] leading-relaxed text-cream/45 max-w-md">
+            And if medication alone turns out not to be the answer, TMS, SPRAVATO&reg; and ECT are
+            in the same practice — no referral maze, no starting over.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════ YOUR TREATMENT + THE CLINIC ══════════════════ -->
+<!-- ══════════════════ YOUR FIRST VISIT ══════════════════ -->
 <section id="process" class="py-12 sm:py-14 lg:py-20 border-b border-black/5 scroll-mt-24">
   <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
 
     <div class="max-w-2xl reveal">
-      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Your treatment</p>
+      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Your first visit</p>
       <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-        From first call to first dose.
+        What the ninety minutes are for.
       </h2>
     </div>
 
@@ -825,14 +815,14 @@ tailwind.config = {
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-7">
         <?php
         $steps = [
-          ['Consultation &amp; evaluation',
-           'A full psychiatric evaluation — history, every medication tried, medical factors and a baseline depression score. Also where we screen for what rules SPRAVATO® out.'],
-          ['Insurance &amp; authorization',
-           'We file the prior authorization and talk to your insurer. Approval typically takes three days to two weeks; if denied, we file the appeal.'],
-          ['Induction — weeks 1 to 4',
-           'Two sessions per week for the first month, alongside your oral antidepressant. Many patients notice a change in the first days.'],
-          ['Maintenance &amp; follow-up',
-           'Once you are responding, sessions taper to a maintenance schedule set by how you are actually doing — tracked at every visit.'],
+          ['A short first call',
+           'Tell us briefly what you are on and what isn’t working. We confirm we are the right fit and check your insurance benefits before you commit to anything.'],
+          ['The 90-minute evaluation',
+           'Your full history, every medication you have tried and are taking now, medical factors, side effects and what you want to be different. In person or by telehealth.'],
+          ['A plan you understand',
+           'What we are changing, why, what to expect and when. Including what we are stopping — not every plan adds something.'],
+          ['30-minute follow-ups',
+           'Long enough to talk about how it is actually going. We adjust as we track your response rather than waiting months to reassess.'],
         ];
         foreach ($steps as $i => [$h, $p]): ?>
         <div class="reveal relative flex gap-4 lg:block" style="transition-delay:<?= $i * 70 ?>ms">
@@ -848,63 +838,64 @@ tailwind.config = {
       </div>
     </div>
 
-    <!-- what one session looks like — a compact strip rather than its own band -->
-    <div class="reveal mt-10 rounded-2xl sm:rounded-3xl bg-sand/70 p-5 sm:p-7">
-      <h3 class="font-display text-[20px] sm:text-[23px] tracking-tight text-brand-900">What one session actually looks like</h3>
-      <ul class="mt-5 grid sm:grid-cols-3 gap-5 sm:gap-6">
-        <?php
-        $session = [
-          ['You self-administer', 'The nasal spray, under the direct supervision of our trained staff.',
-           'M12 3c3 3.5 5 6.4 5 9a5 5 0 0 1-10 0c0-2.6 2-5.5 5-9Z'],
-          ['Two-hour monitoring', 'In a private room with a recliner. Vital signs checked throughout; most side effects resolve inside this window.',
-           'M12 7v5l3 2M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z'],
-          ['Arrange a ride home',  'No driving or operating machinery until the next day, after a full night’s sleep.',
-           'M5 16h14M6.5 16V11l1.6-4h7.8l1.6 4v5M8 19v-3M16 19v-3'],
-        ];
-        foreach ($session as [$h, $p, $icon]): ?>
-        <li class="flex gap-3.5 sm:block">
-          <span class="grid place-items-center h-9 w-9 sm:h-10 sm:w-10 shrink-0 rounded-xl bg-white text-brand-800 ring-1 ring-black/5">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 sm:h-5 sm:w-5"><path d="<?= $icon ?>"/></svg>
-          </span>
-          <div class="min-w-0">
-            <p class="sm:mt-3.5 text-[15px] font-medium text-brand-900"><?= $h ?></p>
+    <div class="reveal mt-10 grid lg:grid-cols-12 gap-6 lg:gap-10 items-center rounded-2xl sm:rounded-[28px] bg-sand/70 p-5 sm:p-7 lg:p-8">
+      <div class="lg:col-span-5">
+        <figure class="overflow-hidden rounded-xl sm:rounded-2xl ring-1 ring-black/5">
+          <img src="<?= $img('consult', 1000) ?>" alt="<?= $alt('consult') ?>" loading="lazy" decoding="async"
+               class="js-photo aspect-[16/10] w-full object-cover">
+        </figure>
+      </div>
+      <div class="lg:col-span-7">
+        <h3 class="font-display text-[20px] sm:text-[24px] tracking-tight text-brand-900">Bring these, and the first visit does more</h3>
+        <ul class="mt-5 grid sm:grid-cols-3 gap-4 sm:gap-5">
+          <?php
+          $bring = [
+            ['Your current bottles', 'Or a printout from your pharmacy — names and doses.'],
+            ['What you have tried',  'Anything you stopped, and why, even years ago.'],
+            ['One thing to change',  'The symptom that would matter most to you if it lifted.'],
+          ];
+          foreach ($bring as [$h, $p]): ?>
+          <li>
+            <div class="h-px w-8 bg-accent-500"></div>
+            <p class="mt-3 text-[15px] font-medium text-brand-900"><?= $h ?></p>
             <p class="mt-1 text-[14px] leading-relaxed text-brand-900/55"><?= $p ?></p>
-          </div>
-        </li>
-        <?php endforeach; ?>
-      </ul>
+          </li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
     </div>
 
-    <!-- the practice itself -->
-    <?php
-    /* Spans total 12 per row: 5+4+3, then the row-spanning tile plus 7. */
-    $gallery = [
-      ['session',   'Self-administered, supervised',  'lg:col-span-5 lg:row-span-2'],
-      ['room',      'The monitoring room',            'lg:col-span-4'],
-      ['reception', 'Reception, never a crowd',       'lg:col-span-3'],
-      ['tms',       'TMS and ECT down the same hall', 'lg:col-span-7'],
-    ];
-    ?>
+    <!-- ── the practice itself ──────────────────────────────────────────────
+         A rail of modest tiles rather than a big collage: these sources top out
+         at 680px (and reception at 141px), so a full-width grid would upscale
+         them into mush. At this size they stay sharp, and it costs one row. -->
     <div class="reveal mt-10">
       <div class="flex flex-wrap items-end justify-between gap-3">
-        <h3 class="font-display text-[20px] sm:text-[23px] tracking-tight text-brand-900">Our Phoenix clinic</h3>
+        <h3 class="font-display text-[20px] sm:text-[23px] tracking-tight text-brand-900">A look at our Phoenix office</h3>
         <p class="text-[13.5px] text-brand-900/45"><?= $ADDRESS_L1 ?>, <?= $ADDRESS_L2 ?></p>
       </div>
-      <div class="mt-4 grid grid-cols-2 gap-2.5 sm:gap-3 lg:grid-cols-12 lg:auto-rows-[10.5rem]">
-        <?php foreach ($gallery as $i => [$slot, $caption, $span]): ?>
-        <figure class="group relative overflow-hidden rounded-xl sm:rounded-2xl ring-1 ring-black/5 aspect-[4/3] lg:aspect-auto <?= $i === 0 ? 'col-span-2 lg:col-span-5' : '' ?> <?= $span ?>">
-          <img src="<?= $img($slot, 900) ?>" alt="<?= $alt($slot) ?>" loading="lazy" decoding="async"
-               class="js-photo h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]">
+      <div class="slider mt-4 flex gap-3 overflow-x-auto snap-x pb-1 -mx-5 px-5 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0">
+        <?php
+        $ambience = [
+          ['care',      'Time to actually be heard'],
+          ['reception', 'Reception, never a crowd'],
+          ['room',      'Our treatment rooms'],
+          ['tms',       'TMS and ECT down the same hall'],
+        ];
+        foreach ($ambience as [$slot, $caption]): ?>
+        <figure class="group relative snap-start shrink-0 w-[11.5rem] sm:w-[13.5rem] overflow-hidden rounded-xl sm:rounded-2xl ring-1 ring-black/5 aspect-[4/3]">
+          <img src="<?= $img($slot, 500) ?>" alt="<?= $alt($slot) ?>" loading="lazy" decoding="async"
+               class="js-photo h-full w-full object-cover transition duration-700 group-hover:scale-[1.05]">
           <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/10 to-transparent"></div>
-          <figcaption class="absolute inset-x-0 bottom-0 p-3 sm:p-4 text-[12.5px] sm:text-[14px] font-medium leading-snug text-cream"><?= $caption ?></figcaption>
+          <figcaption class="absolute inset-x-0 bottom-0 p-3 text-[12.5px] font-medium leading-snug text-cream"><?= $caption ?></figcaption>
         </figure>
         <?php endforeach; ?>
       </div>
     </div>
 
     <div class="reveal mt-8 text-center">
-      <a href="#eligibility" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-7 py-4 text-[15.5px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20">
-        Start with an eligibility check
+      <a href="#book" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-7 py-4 text-[15.5px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20">
+        Request an appointment
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
       </a>
       <p class="mt-3.5 text-[13.5px] text-brand-900/45">
@@ -914,7 +905,7 @@ tailwind.config = {
   </div>
 </section>
 
-<!-- ══════════════════ INSURANCE & COST ══════════════════ -->
+<!-- ══════════════════ INSURANCE ══════════════════ -->
 <section id="insurance" class="py-12 sm:py-14 lg:py-20 bg-white border-b border-black/5 scroll-mt-24">
   <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
 
@@ -922,21 +913,45 @@ tailwind.config = {
       <div class="lg:col-span-7">
         <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Insurance</p>
         <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[2.9rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-          Covered by most plans — with a form we fill in.
+          Chances are, we take your plan.
         </h2>
       </div>
       <div class="lg:col-span-5">
         <p class="text-[15.5px] sm:text-[16px] leading-relaxed text-brand-900/60 font-light">
-          The vast majority of commercial plans, Medicare and many Medicaid programs cover
-          SPRAVATO&reg;. What stands between you and approval is a prior authorization — and our care
-          coordinators handle that, start to finish.
+          Interventional Psychiatry of Arizona works with most major insurance plans. Our team
+          verifies your benefits before your first appointment, so you know where you stand before
+          anything begins.
         </p>
       </div>
     </div>
 
+    <div class="mt-8 grid sm:grid-cols-3 gap-3.5 sm:gap-5">
+      <?php
+      $coverage = [
+        ['We check it for you',   'Tell us the carrier on the form and our team verifies your benefits before you book anything.',
+         'M12 3l7.5 3v5.5c0 4.4-3.1 8.2-7.5 9.5-4.4-1.3-7.5-5.1-7.5-9.5V6L12 3Z M9.5 12l1.8 1.8L15 10'],
+        ['Prior authorizations',  'Where a plan requires one, we handle the paperwork and talk to your insurer directly.',
+         'M4 7h16v12H4V7Zm4-3h8v3H8V4Zm-1 8h10M7 15h6'],
+        ['Self-pay welcome',      'Not using insurance? Self-pay options are available — ask us on the first call.',
+         'M12 7v10M9 9.5c0-1 1.3-1.7 3-1.7s3 .8 3 1.9-1.3 1.6-3 1.9-3 .8-3 1.9 1.3 1.9 3 1.9 3-.7 3-1.7'],
+      ];
+      foreach ($coverage as $i => [$h, $p, $icon]): ?>
+      <div class="reveal flex gap-4 sm:block rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-cream p-5 sm:p-7" style="transition-delay:<?= $i * 60 ?>ms">
+        <span class="grid place-items-center h-9 w-9 sm:h-11 sm:w-11 shrink-0 rounded-xl sm:rounded-2xl bg-white text-brand-800 ring-1 ring-black/5">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 sm:h-5 sm:w-5"><path d="<?= $icon ?>"/></svg>
+        </span>
+        <div class="min-w-0">
+          <h3 class="sm:mt-5 font-display text-[19px] sm:text-[21px] tracking-tight text-brand-900"><?= $h ?></h3>
+          <p class="mt-2 text-[14.5px] leading-relaxed text-brand-900/60"><?= $p ?></p>
+        </div>
+      </div>
+      <?php endforeach; ?>
+    </div>
+
     <!-- A rail on phones, a wrapped wall from lg — 17 logos would otherwise be
          nine rows of vertical scroll on a handset. -->
-    <div class="slider reveal mt-8 flex gap-2.5 sm:gap-3 overflow-x-auto snap-x pb-1 -mx-5 px-5 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0 lg:flex-wrap lg:overflow-visible">
+    <p class="reveal mt-9 text-[11.5px] uppercase tracking-[0.16em] text-brand-900/40">Plans we work with</p>
+    <div class="slider reveal mt-4 flex gap-2.5 sm:gap-3 overflow-x-auto snap-x pb-1 -mx-5 px-5 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0 lg:flex-wrap lg:overflow-visible">
       <?php foreach ($insurers as $i => [$carrier, $file]):
         $path   = $IMG_DIR . '/insurance/' . $file;
         $exists = is_file(__DIR__ . '/' . $path);
@@ -953,130 +968,70 @@ tailwind.config = {
     </div>
     <p class="lg:hidden mt-2.5 text-[12px] text-brand-900/35">Swipe to see all 17 plans →</p>
 
-    <!-- the money questions, answered before they have to ask -->
-    <div class="mt-8 grid sm:grid-cols-3 gap-3.5 sm:gap-5">
-      <?php
-      $cost = [
-        ['We file the authorization',
-         'Approval typically takes three days to two weeks. We handle the paperwork and talk to your insurer directly, so the wait is on us rather than on you.',
-         'M4 7h16v12H4V7Zm4-3h8v3H8V4Zm-1 8h10M7 15h6'],
-        ['Benefits verified first',
-         'We confirm what your policy covers — the medication and the observation visit are billed separately — before anything begins. Manufacturer savings programs may apply; we will check.',
-         'M12 3l7.5 3v5.5c0 4.4-3.1 8.2-7.5 9.5-4.4-1.3-7.5-5.1-7.5-9.5V6L12 3Z M9.5 12l1.8 1.8L15 10'],
-        ['Medicare &amp; AHCCCS too',
-         'Medicare Part B generally covers SPRAVATO® and the observation visits in an outpatient setting. Most Medicaid programs, including Arizona’s AHCCCS, cover it — with prior authorization.',
-         'M12 3l7.5 3v5.5c0 4.4-3.1 8.2-7.5 9.5-4.4-1.3-7.5-5.1-7.5-9.5V6L12 3Z'],
-      ];
-      foreach ($cost as $i => [$h, $p, $icon]): ?>
-      <div class="reveal flex gap-4 sm:block rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7" style="transition-delay:<?= $i * 60 ?>ms">
-        <span class="grid place-items-center h-9 w-9 sm:h-11 sm:w-11 shrink-0 rounded-xl sm:rounded-2xl bg-sand text-brand-800">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 sm:h-5 sm:w-5"><path d="<?= $icon ?>"/></svg>
-        </span>
-        <div class="min-w-0">
-          <h3 class="sm:mt-5 font-display text-[19px] sm:text-[21px] tracking-tight text-brand-900"><?= $h ?></h3>
-          <p class="mt-2 text-[14.5px] leading-relaxed text-brand-900/60"><?= $p ?></p>
-        </div>
-      </div>
-      <?php endforeach; ?>
-    </div>
-
-    <div class="reveal mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl bg-sand/70 px-5 sm:px-6 py-5">
+    <div class="reveal mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl bg-sand/70 px-5 sm:px-6 py-5">
       <p class="text-[14.5px] leading-relaxed text-brand-900/60">
-        <span class="font-medium text-brand-900">Denied before, or worried you will be?</span>
-        Denials are usually a documentation problem, not a verdict. We file the appeal.
+        <span class="font-medium text-brand-900">Not sure whether your plan is in-network?</span>
+        Tell us the carrier and we will check it for you before you book.
       </p>
       <a href="tel:<?= $PHONE_LINK ?>" class="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-900 px-6 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shrink-0">
         Verify my coverage
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
       </a>
     </div>
+
+    <p class="mt-5 text-[11.5px] leading-relaxed text-brand-900/30 max-w-4xl">
+      Plan participation and coverage vary by plan and can change. Carrier names and logos are the
+      property of their respective owners and are shown solely to indicate plans accepted at this
+      practice; their use does not imply endorsement or affiliation.
+    </p>
   </div>
 </section>
 
-<!-- ══════════════════ SAFETY ══════════════════ -->
-<section id="safety" class="py-12 sm:py-14 lg:py-20 bg-sand/60 border-y border-black/5 scroll-mt-24">
+<!-- ══════════════════ WHY PATIENTS SWITCH ══════════════════ -->
+<section class="py-12 sm:py-14 lg:py-20 bg-sand/60 border-b border-black/5">
   <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
     <div class="grid lg:grid-cols-12 gap-8 lg:gap-14">
 
       <div class="lg:col-span-5 reveal">
-        <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Safety</p>
+        <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Why patients switch</p>
         <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] lg:text-[2.7rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-          Why it is only given in a clinic.
+          A different kind of psychiatric practice.
         </h2>
         <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-brand-900/60 font-light">
-          SPRAVATO&reg; can cause dissociation and raise blood pressure, so it is dispensed only
-          through a REMS-certified center. We are one — trained staff, strict protocols, and a
-          monitoring period that is not optional.
+          We built this clinic around the patients who are hardest to help — and around the belief
+          that complex cases deserve more time, not less.
         </p>
-
-        <ul class="mt-6 space-y-2.5">
-          <?php
-          $rems = [
-            ['Direct supervision',      'A clinician is with you while you self-administer.'],
-            ['Two-hour monitoring',     'After every dose, with vital signs observed.'],
-            ['Transportation required', 'No driving until the next day, after a full night’s rest.'],
-          ];
-          foreach ($rems as [$h, $p]): ?>
-          <li class="flex items-start gap-3 rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 sm:px-5 py-3.5">
-            <span class="mt-0.5 grid place-items-center h-5 w-5 shrink-0 rounded-full bg-brand-900/[0.07] text-brand-700">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="h-2.5 w-2.5"><path d="M5 13l4 4L19 7"/></svg>
-            </span>
-            <div class="min-w-0">
-              <p class="text-[14.5px] font-medium text-brand-900"><?= $h ?></p>
-              <p class="mt-0.5 text-[13.5px] leading-snug text-brand-900/55"><?= $p ?></p>
-            </div>
-          </li>
-          <?php endforeach; ?>
-        </ul>
+        <figure class="mt-6 overflow-hidden rounded-2xl ring-1 ring-black/5">
+          <img src="<?= $img('review', 900) ?>" alt="<?= $alt('review') ?>" loading="lazy" decoding="async"
+               class="js-photo aspect-[16/10] w-full object-cover">
+        </figure>
       </div>
 
-      <div class="lg:col-span-7 reveal grid sm:grid-cols-2 gap-3.5 sm:gap-5 content-start" style="transition-delay:.08s">
-
-        <div class="rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
-          <h3 class="font-display text-[20px] sm:text-[22px] tracking-tight text-brand-900">Common side effects</h3>
-          <p class="mt-2 text-[14px] leading-relaxed text-brand-900/55">
-            These usually begin shortly after the dose and resolve the same day — which is exactly
-            what the monitoring period is for.
-          </p>
-          <ul class="mt-4 flex flex-wrap gap-1.5 sm:gap-2">
-            <?php foreach ([
-              'Dissociation','Dizziness','Fatigue','Nausea','Feeling drunk or euphoric',
-              'Anxiety or numbness','Spinning sensation','Raised blood pressure','Sedation',
-            ] as $se): ?>
-            <li class="rounded-full bg-sand px-3 py-1.5 text-[12.5px] text-brand-900/70"><?= $se ?></li>
-            <?php endforeach; ?>
-          </ul>
+      <div class="lg:col-span-7 reveal grid sm:grid-cols-2 gap-x-10 gap-y-8 content-start" style="transition-delay:.08s">
+        <?php
+        $why = [
+          ['Time to actually be heard', 'Appointments are built for real conversation. We ask about sleep, work, relationships and side effects — not just a symptom checklist.'],
+          ['Complex cases welcome',     'Serious mental illness, co-occurring substance use, geriatric complexity and prior treatment failures are the work we do every day.'],
+          ['Every option under one roof','If medication alone isn’t enough, TMS, SPRAVATO® and ECT are coordinated by the same team who already know your story.'],
+          ['Insurance-forward',         'Most major plans are accepted, and our team verifies benefits and handles prior authorizations before treatment begins.'],
+        ];
+        foreach ($why as $i => [$h, $p]): ?>
+        <div>
+          <div class="h-px w-10 bg-accent-500"></div>
+          <h3 class="mt-4 font-display text-[20px] sm:text-[22px] tracking-tight text-brand-900"><?= $h ?></h3>
+          <p class="mt-2 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/60"><?= $p ?></p>
         </div>
+        <?php endforeach; ?>
 
-        <div class="rounded-2xl sm:rounded-3xl border border-accent-200 bg-accent-50/60 p-5 sm:p-7">
-          <h3 class="font-display text-[20px] sm:text-[22px] tracking-tight text-brand-900">Who should not take it</h3>
-          <p class="mt-2 text-[14px] leading-relaxed text-brand-900/55">
-            Your evaluation screens for all of these before anything is prescribed.
-          </p>
-          <ul class="mt-4 space-y-2.5">
-            <?php foreach ([
-              'Aneurysms or blood vessel disease',
-              'Abnormal blood vessel connections (AVM)',
-              'A history of bleeding in the brain',
-              'An allergy to esketamine or ketamine',
-            ] as $contra): ?>
-            <li class="flex items-start gap-2.5 text-[14px] leading-relaxed text-brand-900/70">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-1 h-3.5 w-3.5 shrink-0 text-accent-600"><path d="M5 5l14 14M19 5 5 19"/></svg>
-              <?= $contra ?>
-            </li>
-            <?php endforeach; ?>
-          </ul>
+        <div class="sm:col-span-2 flex flex-wrap items-center gap-4 border-t border-black/10 pt-7">
+          <a href="#book" class="group inline-flex items-center gap-2 rounded-full bg-brand-900 px-7 py-3.5 text-[15px] font-medium text-cream hover:bg-brand-800 transition">
+            Request an appointment
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+          </a>
+          <p class="text-[14px] text-brand-900/50">One conversation, and an honest answer either way.</p>
         </div>
-
-        <p class="sm:col-span-2 rounded-2xl bg-brand-900 px-5 sm:px-7 py-5 text-[14px] leading-relaxed text-cream/75">
-          SPRAVATO&reg; is not a pain reliever or an anesthetic, and it is never taken home. Tell your
-          provider about every condition and medication you are on — that is how we judge whether it
-          is safe for you specifically. This page is general information, not medical advice, and not
-          a substitute for the full Prescribing Information and Medication Guide your clinician will
-          review with you.
-        </p>
-
       </div>
+
     </div>
   </div>
 </section>
@@ -1126,8 +1081,8 @@ tailwind.config = {
         <?php endforeach; ?>
       </div>
       <p class="mt-3 text-[12px] leading-relaxed text-brand-900/35 max-w-3xl">
-        Reviews are reproduced as published by their authors on Google and describe care at this
-        practice generally, not SPRAVATO&reg; treatment specifically. Individual results vary.
+        Reviews are reproduced as published by their authors on Google. Patient experiences vary;
+        testimonials reflect individual results and are not a guarantee of outcome.
       </p>
     </div>
 
@@ -1143,8 +1098,8 @@ tailwind.config = {
           <p class="text-[11.5px] uppercase tracking-[0.16em] text-brand-900/40">Ask us directly</p>
           <a href="tel:<?= $PHONE_LINK ?>" class="mt-1.5 block font-display text-[24px] sm:text-[26px] tracking-tight text-brand-900 hover:text-accent-600 transition"><?= $PHONE_DISPLAY ?></a>
           <p class="mt-1 text-[13.5px] text-brand-900/45">Monday to Friday, 8am–5pm</p>
-          <a href="#eligibility" class="group mt-4 inline-flex items-center gap-2 rounded-full bg-brand-900 px-5 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition">
-            Check my eligibility
+          <a href="#book" class="group mt-4 inline-flex items-center gap-2 rounded-full bg-brand-900 px-5 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition">
+            Request an appointment
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -1182,11 +1137,11 @@ tailwind.config = {
       <div class="lg:col-span-6 reveal">
         <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-400 font-semibold">Get started</p>
         <h2 class="mt-3 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[2.9rem] leading-[1.1] tracking-tightest font-light">
-          You have waited long enough.
+          Let's find what finally works.
         </h2>
         <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-cream/65 font-light max-w-md">
-          Prior authorization takes three days to two weeks. The sooner we start it, the sooner you
-          can start treatment — and the first conversation costs you nothing.
+          It starts with a conversation — no commitment, no pressure, and an honest answer about
+          whether we are the right fit for you.
         </p>
 
         <div class="mt-7 flex flex-col sm:flex-row gap-3">
@@ -1194,8 +1149,8 @@ tailwind.config = {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
             Call <?= $PHONE_DISPLAY ?>
           </a>
-          <a href="#eligibility" class="group inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-cream hover:bg-white/10 transition backdrop-blur">
-            Check my eligibility
+          <a href="#book" class="group inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-cream hover:bg-white/10 transition backdrop-blur">
+            Request an appointment
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:-translate-y-0.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
           </a>
         </div>
@@ -1236,8 +1191,8 @@ tailwind.config = {
         <img src="<?= $LOGO_LIGHT ?>" alt="Interventional Psychiatry of Arizona — Building Strong Minds"
              width="545" height="228" loading="lazy" class="h-14 sm:h-16 w-auto">
         <p class="mt-5 text-[14px] leading-relaxed max-w-sm">
-          A REMS-certified SPRAVATO&reg; treatment center in Phoenix — alongside TMS, ECT,
-          medication management and psychotherapy.
+          Psychiatric medication management in Phoenix and across Arizona — alongside TMS,
+          SPRAVATO&reg;, ECT and psychotherapy, delivered by a team that stays with you.
         </p>
         <a href="tel:<?= $PHONE_LINK ?>" class="mt-5 inline-flex items-center gap-2.5 rounded-full bg-accent-500 px-5 py-3 text-[14.5px] font-medium text-white hover:bg-accent-600 transition">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
@@ -1248,12 +1203,12 @@ tailwind.config = {
       <div class="lg:col-span-3">
         <p class="text-[11.5px] uppercase tracking-[0.18em] text-cream/35">On this page</p>
         <ul class="mt-4 space-y-2.5 text-[14px]">
-          <li><a href="#qualify"   class="hover:text-accent-400 transition">Do I qualify?</a></li>
-          <li><a href="#science"   class="hover:text-accent-400 transition">How it works</a></li>
-          <li><a href="#process"   class="hover:text-accent-400 transition">Your treatment</a></li>
+          <li><a href="#signs"   class="hover:text-accent-400 transition">Is this you?</a></li>
+          <li><a href="#what"    class="hover:text-accent-400 transition">What we manage</a></li>
+          <li><a href="#process" class="hover:text-accent-400 transition">Your first visit</a></li>
           <li><a href="#insurance" class="hover:text-accent-400 transition">Insurance</a></li>
-          <li><a href="#safety"    class="hover:text-accent-400 transition">Safety</a></li>
-          <li><a href="#faq"       class="hover:text-accent-400 transition">FAQ</a></li>
+          <li><a href="#faq"     class="hover:text-accent-400 transition">FAQ</a></li>
+          <li><a href="#book"    class="hover:text-accent-400 transition">Request an appointment</a></li>
         </ul>
       </div>
 
@@ -1262,6 +1217,7 @@ tailwind.config = {
         <ul class="mt-4 space-y-2.5 text-[14px]">
           <li><?= $ADDRESS_L1 ?><br><?= $ADDRESS_L2 ?></li>
           <li class="text-cream/40">Mon–Fri · 8am–5pm</li>
+          <li class="text-cream/40">Telehealth across Arizona</li>
         </ul>
       </div>
     </div>
@@ -1272,17 +1228,11 @@ tailwind.config = {
     </div>
 
     <p class="mt-6 text-[11.5px] leading-relaxed text-cream/25 max-w-4xl">
-      Savings program eligibility, benefits and plan participation are set by the program sponsor
-      and your insurer and can change; restrictions apply. Coverage varies by plan and by
-      treatment. Carrier names and logos are the property of their respective owners and are shown
-      solely to indicate plans accepted at this practice; their use does not imply endorsement or
-      affiliation. SPRAVATO&reg; and SPRAVATO withMe are trademarks of Janssen Pharmaceuticals, Inc.,
-      used here only to identify the treatment offered at this practice — Interventional Psychiatry of
-      Arizona is an independent REMS-certified provider, not affiliated with, endorsed by or sponsored
-      by Janssen Pharmaceuticals, Inc. or Johnson &amp; Johnson. The content on this page is for
-      general informational purposes only and is not a substitute for professional medical advice,
-      diagnosis or treatment, nor for the full Prescribing Information, Boxed Warning and Medication
-      Guide for SPRAVATO&reg;.
+      Plan participation and coverage vary by plan and can change. SPRAVATO&reg; is a
+      registered trademark of Janssen Pharmaceuticals, Inc., referenced here only to identify a
+      treatment offered at this practice. The content on this page is for general informational
+      purposes only and is not a substitute for professional medical advice, diagnosis or treatment.
+      Never start, stop or change a prescribed medication without speaking to your prescriber.
     </p>
   </div>
 </footer>
@@ -1294,8 +1244,8 @@ tailwind.config = {
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
       Call
     </a>
-    <a href="#eligibility" class="flex-[1.5] inline-flex items-center justify-center gap-2 rounded-full bg-accent-500 px-4 py-3.5 text-[14.5px] font-medium text-white">
-      Check my eligibility
+    <a href="#book" class="flex-[1.5] inline-flex items-center justify-center gap-2 rounded-full bg-accent-500 px-4 py-3.5 text-[14.5px] font-medium text-white">
+      Request an appointment
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
     </a>
   </div>
@@ -1324,8 +1274,8 @@ $schema = [
       'medicalSpecialty' => 'Psychiatric',
       'availableService' => [
         '@type'       => 'MedicalTherapy',
-        'name'        => 'SPRAVATO® (esketamine) nasal spray',
-        'description' => 'REMS-certified esketamine nasal spray treatment, used alongside an oral antidepressant, for adults with treatment-resistant depression and for depressive symptoms with suicidal thoughts or actions.',
+        'name'        => 'Psychiatric medication management',
+        'description' => 'Personalised psychiatric medication management — a 90-minute initial evaluation and 30-minute follow-ups covering drug interactions, side effects, dosage adjustment and ongoing evaluation, in person in Phoenix or by telehealth across Arizona.',
       ],
     ],
     [
@@ -1374,7 +1324,7 @@ mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => 
    the same viewport just split attention. */
 (() => {
   const bar  = document.getElementById('stickyBar');
-  const form = document.getElementById('eligibility');
+  const form = document.getElementById('book');
   if (!bar || !form) return;
   new IntersectionObserver(
     ([e]) => bar.classList.toggle('show', !e.isIntersecting),
@@ -1439,7 +1389,7 @@ document.querySelectorAll('.js-photo').forEach(im => {
   im.addEventListener('error', () => im.remove(), { once: true });
 });
 
-/* ---------- eligibility form ----------
+/* ---------- appointment form ----------
    Posts to Formester over fetch so the visitor stays on the page. If that call
    can't be confirmed — CORS, offline, an endpoint change — the form falls back
    to a normal browser POST, which always reaches Formester. */
@@ -1478,7 +1428,7 @@ document.querySelectorAll('.js-photo').forEach(im => {
       if (!res.ok) throw new Error('HTTP ' + res.status);
 
       form.reset();
-      say('Thank you — we have your request. A member of our team will review your eligibility and reach out within one business day.', true);
+      say('Thank you — we have your request. A member of our team will check your benefits and reach out within one business day.', true);
       btn.innerHTML = btnLabel;
       btn.disabled = false;
       btn.classList.remove('opacity-70');
