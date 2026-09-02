@@ -319,6 +319,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://interpsychaz.com/medication/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://interpsychaz.com/meet-our-team/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -401,6 +407,12 @@
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://interpsychaz.com/psychiatrist/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://interpsychaz.com/revolutionizing-mental-health-with-tms-therapy-in-phoenix-az/</loc>
