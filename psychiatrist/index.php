@@ -15,10 +15,13 @@
  */
 $PHONE_DISPLAY = '(602) 824-8404';
 $PHONE_LINK    = '+16028248404';
-$ADDRESS_L1    = '2122 E. Highland Ave, Suite 335';
+$ADDRESS_L1    = '2929 E Camelback Rd #119';
 $ADDRESS_L2    = 'Phoenix, AZ 85016';
 $YEAR          = date('Y');
-$MAPS_QUERY    = urlencode($ADDRESS_L1 . ', ' . $ADDRESS_L2);
+/* Geocoding only — the unit number is stripped so Google resolves the
+   building cleanly; "#" is the character most likely to break the lookup.
+   The address shown on the page keeps the suite. */
+$MAPS_QUERY    = urlencode(trim(preg_replace('/\s*#\S+/', '', $ADDRESS_L1)) . ', ' . $ADDRESS_L2);
 
 /* Dedicated Formester form for this page, so its leads stay separate from the
    general enquiry form. The hidden "Source" and "Interested in" fields below

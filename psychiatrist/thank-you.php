@@ -5,7 +5,7 @@
  */
 $PHONE_DISPLAY = '(602) 824-8404';
 $PHONE_LINK    = '+16028248404';
-$ADDRESS_L1    = '2122 E. Highland Ave, Suite 335';
+$ADDRESS_L1    = '2929 E Camelback Rd #119';
 $ADDRESS_L2    = 'Phoenix, AZ 85016';
 $YEAR          = date('Y');
 $IMG_DIR       = 'assets/img';
