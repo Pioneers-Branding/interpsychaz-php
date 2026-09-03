@@ -14,16 +14,22 @@ $PHONE_LINK    = '+16028248404';
 $ADDRESS_L1    = '2929 E Camelback Rd #119';
 $ADDRESS_L2    = 'Phoenix, AZ 85016';
 $YEAR          = date('Y');
-/* Geocoding only — the unit number is stripped so Google resolves the
-   building cleanly; "#" is the character most likely to break the lookup.
-   The address shown on the page keeps the suite. */
-$MAPS_QUERY    = urlencode(trim(preg_replace('/\s*#\S+/', '', $ADDRESS_L1)) . ', ' . $ADDRESS_L2);
+/* The practice's own Google Business listing, rather than a geocode of the
+   address string. $MAPS_CID is the listing id decoded from the short link
+   below (0x53193372ee4a5f6c), so the embed always resolves to the real
+   place — name, hours and reviews included — and cannot drift if the
+   address text is edited. $MAPS_LINK is that short link, used for the
+   directions link in the contact block. */
+$MAPS_CID      = '5987873748282924908';
+$MAPS_LINK     = 'https://maps.app.goo.gl/4DGBt44Sru7zcEqH7';
 /* Dedicated Formester form for this page, so its leads stay separate from the
    general enquiry form. */
 $FORM_ENDPOINT = 'https://app.formester.com/forms/aWfLkmS9m/submissions';
 
-/* This page carries no outbound links. Every click either scrolls to the form,
-   dials the practice, or submits — nothing hands the visitor an exit. */
+/* Every click scrolls to the form, dials the practice, or submits. The one
+   deliberate exception is the directions link on the address in the contact
+   block: for a clinic people have to physically attend, "where is it" is a
+   conversion question, not an exit. It opens in a new tab. */
 
 /* ─── IMAGERY ──────────────────────────────────────────────────────────────── */
 $IMG_DIR = 'assets/img';
@@ -1168,13 +1174,18 @@ tailwind.config = {
         <div class="overflow-hidden rounded-2xl border border-white/12 bg-white/[0.04]">
           <iframe
             title="Map to Interventional Psychiatry of Arizona, <?= $ADDRESS_L1 ?>, <?= $ADDRESS_L2 ?>"
-            src="https://www.google.com/maps?q=<?= $MAPS_QUERY ?>&output=embed"
+            src="https://www.google.com/maps?cid=<?= $MAPS_CID ?>&output=embed"
             class="block h-52 sm:h-60 w-full grayscale-[0.3] contrast-[1.05]"
             loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
           <div class="flex flex-wrap items-center justify-between gap-3 px-5 sm:px-6 py-4">
-            <p class="text-[14px] leading-snug text-cream/70">
+            <a href="<?= $MAPS_LINK ?>" target="_blank" rel="noopener noreferrer"
+               class="group block text-[14px] leading-snug text-cream/70 hover:text-cream transition">
               <span class="text-cream"><?= $ADDRESS_L1 ?></span><br><?= $ADDRESS_L2 ?>
-            </p>
+              <span class="mt-1.5 flex items-center gap-1.5 text-[13px] text-accent-400">
+                Get directions
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3 w-3 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+              </span>
+            </a>
             <p class="text-[14px] leading-snug text-cream/45 shrink-0">Mon–Fri<br>8am–5pm</p>
           </div>
         </div>
