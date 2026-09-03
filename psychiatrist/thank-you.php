@@ -41,12 +41,14 @@ $HERO_BG    = $asset('ambience/hero-consult.jpg');
   gtag('config', 'G-7TQS8BS5C3');
 </script>
 
-<!-- TODO: this page has no Google Ads conversion snippet yet.
-     Paste the event snippet for its OWN conversion action here once one exists.
-     Deliberately left blank rather than copied from a sibling page: reusing
-     another page's label files these leads under that treatment's conversion
-     action, which is the bug that had TMS leads counting as Medication.
-     The send_to value takes the form AW-11337249981/<label for this page>. -->
+<!-- Event snippet for Submit lead form psychiatrist conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11337249981/JbXACOmu7-wcEL3pgp4q',
+      'value': 1.0,
+      'currency': 'USD'
+  });
+</script>
 
 <title>Thank you | Interventional Psychiatry of Arizona</title>
 <meta name="description" content="Your appointment request has been received. A member of our team will reach out within one business day.">
