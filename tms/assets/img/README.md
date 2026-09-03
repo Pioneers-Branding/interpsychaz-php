@@ -29,7 +29,7 @@ needs changing** — `$BASE` follows it.
 |---|---|---|
 | `ambience/hero-tms.jpg` | `hero` | Hero background, and the fixed background on `thank-you.php`. 1900 × 1425, the only image loaded eagerly |
 | `ambience/magstim-coil.jpg` | `coil` | "How it works" — a patient with the Magstim coil in position. 1400 × 787 |
-| `tms-session.jpg` | `session` | "A session" — a patient reclined in the chair with the coil in position. 810 × 608 |
+| `tms-session.jpg` | `session` | "A session" — a patient reclined in the chair with the coil in position. 533 × 400 |
 | `ambience/evaluation.jpg` | `evaluation` | "Is TMS for me?" — a clinician listening during a consultation |
 | `ambience/why-patient-trust-us.webp` | `care` | Hero card, and the last tile of the practice rail |
 | `ambience/inter-a-2.webp` | `chair` | Practice rail — our Magstim chair and stimulator |
@@ -45,19 +45,27 @@ those two numbers**, or the lower-left copy washes out against the photo.
 
 **`tms-session.jpg` is deliberately cropped, and the framing is constrained.** The
 source (`public/wp-content/uploads/2025/04/Magstim-TMS-Clinical-Treatment-Service.jpg`,
-1920 × 1080) carries a large Magstim watermark across its bottom-right quadrant: the
-arc reaches down to roughly y≈950 at x≈1160, so **nothing right of x≈1113 is usable** at
-full height. The patient's head and coil sit at x≈985–1115 — right against that limit —
-which is why the coil grazes the right edge of the frame and cannot be given more room.
+1920 × 1080) carries a large Magstim watermark over its bottom-right quadrant. The
+watermark is a circle whose leftmost point sits at roughly (1158, 930); it curves up and
+to the right, passing (1216, 700), (1287, 600) and (1417, 500). A translucent `m`
+letterform starts near x≈1265, y≈760. **The higher the crop's bottom edge, the further
+right it may extend** — that circle is the only thing setting the right limit.
 
-The watermark arc runs diagonally: it sits at roughly (1170, 910) and climbs to
-(1690, 445), so the further right you crop, the higher the bottom edge has to stay.
-The current crop is `sips -c 608 810 --cropOffset 295 355` — right edge x=1165, bottom
-y=903 — which clears the arc by about 20 px and is the widest framing that fits the
-coil inside the frame with any margin. Two earlier cuts
-(`-c 800 1060 --cropOffset 230 55` and `-c 701 935 --cropOffset 322 178`) stopped at
-x≈1113 and left the coil grazing the right edge. If you re-crop, keep the bottom-right
-corner below the arc and check that edge in the result.
+The patient's head and the coil sit at x≈1050–1140, so the usable margin to her right is
+small at any bottom edge below y≈800. **She cannot be placed dead-centre in a frame that
+also keeps the chair**: centring her head would need as much empty space to her right as
+her body occupies to her left, and the watermark owns all of it.
+
+The current crop is `sips -c 400 533 --cropOffset 380 642` — the box x 642–1175,
+y 380–780 — which puts her a little right of centre with the chair, her hands and the
+coil all inside the frame, and clears the arc by roughly 10 px at the bottom-right
+corner. It is small (533 px) because the framing, not the source, is the limit; the slot
+renders at about 534 CSS px, so it is a 1× image rather than the 1.5× the old crop gave.
+
+Earlier cuts, all of which left her head jammed against the right edge:
+`-c 608 810 --cropOffset 295 355`, `-c 800 1060 --cropOffset 230 55` and
+`-c 701 935 --cropOffset 322 178`. If you re-crop, keep the bottom-right corner clear of
+the arc and check that corner in the result.
 
 **Why the ambience photos live in a small rail:** these practice sources top out at
 680 px wide, and `inter-a-3.png` is only 141 × 176. At the rail's tile size (11.5–13.5 rem)

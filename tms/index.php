@@ -123,8 +123,9 @@ $compareCols = [
 $compareRows = [
   ['How it is given',    ['Magnetic pulses through the scalp, in a chair', 'A pill you take daily at home',        'Anesthesia and an induced seizure']],
   ['Sedation',           ['None — you stay awake throughout',              'None',                                 'General anesthesia every session']],
-  ['What it reaches',    ['The mood circuits being targeted, and little else', 'Your whole body, through the bloodstream', 'Whole-brain seizure activity']],
-  ['Typical side effects',['Scalp discomfort or headache, usually early on', 'Weight, sleep, libido, flatness',      'Confusion and memory effects after each session']],
+  ['What it reaches',    ['Targeted areas of the brain involved in mood regulation
+', 'Your whole body, through the bloodstream', 'A controlled seizure is induced under general anesthesia']],
+  ['Typical side effects',['Scalp discomfort or headache, usually early on', 'Side effects vary and may include changes in sleep, weight or sexual function',      'Confusion and memory effects after each session']],
   ['Driving afterward',  ['Yes — you drive yourself home',                 'Unrestricted',                         'Not the same day']],
 ];
 
@@ -134,7 +135,7 @@ $faqs = [
   ['Is TMS covered by my insurance?',
    'Most insurance providers, including Medicare, cover TMS for depression, and Medicaid covers it in some states. Coverage is not automatic: insurers require a prior authorization first, and most require that you have already tried antidepressant medication and psychotherapy. Our team handles that approval process and talks to your insurer directly, so you know where you stand before treatment begins.'],
   ['How many sessions will I need?',
-   'The standard FDA-approved course is 30 to 36 sessions, given five days a week over about four to six weeks. The final six sessions are usually tapered over another two to three weeks — three one week, two the next, then one. Your psychiatrist tailors the plan to how you respond.'],
+   'The standard FDA-Cleared course is 30 to 36 sessions, given five days a week over about four to six weeks. The final six sessions are usually tapered over another two to three weeks — three one week, two the next, then one. Your psychiatrist tailors the plan to how you respond.'],
   ['How long is a single session?',
    'It depends on the protocol. Standard rTMS on our Magstim Horizon 3 system runs about 37.5 minutes, an accelerated protocol runs about 19 minutes, and intermittent theta burst stimulation — which is FDA-cleared — takes as little as three minutes. Your physician chooses the protocol that fits your case.'],
   ['Will I be sedated? Can I drive myself home?',
@@ -186,7 +187,7 @@ $reviews = [
 </script>
 
 <title>TMS Therapy for Depression in Phoenix, AZ | Interventional Psychiatry of Arizona</title>
-<meta name="description" content="FDA-approved TMS therapy for depression in Phoenix, AZ. No medication, no sedation, drive yourself home — sessions from as little as 3 minutes on our Magstim Horizon 3 system. Covered by most insurance and Medicare; we handle the prior authorization. Call (602) 824-8404.">
+<meta name="description" content="FDA-Cleared TMS therapy for depression in Phoenix, AZ. No medication, no sedation, drive yourself home — sessions from as little as 3 minutes on our Magstim Horizon 3 system. Covered by most insurance and Medicare; we handle the prior authorization. Call (602) 824-8404.">
 <meta property="og:title" content="TMS Therapy for Depression in Phoenix, AZ | Interventional Psychiatry of Arizona">
 <meta property="og:description" content="You've tried the medications. This is what comes next — drug-free, non-invasive TMS, covered by most insurance and Medicare.">
 <meta property="og:type" content="website">
@@ -340,7 +341,7 @@ tailwind.config = {
 <!-- ══════════════════ TOP BAR ══════════════════ -->
 <div class="hidden md:block bg-brand-950 text-brand-200/80 text-[13px]">
   <div class="mx-auto max-w-8xl px-6 lg:px-10 h-10 flex items-center justify-between gap-6">
-    <p class="text-white/60 truncate">FDA-approved TMS &middot; Magstim Horizon 3&reg; with StimGuide&reg; navigation &middot; Phoenix, AZ</p>
+    <p class="text-white/60 truncate">FDA-Cleared TMS &middot; Magstim Horizon 3&reg; with StimGuide&reg; navigation &middot; Phoenix, AZ</p>
     <div class="flex items-center gap-5 shrink-0 text-white/60">
       <span class="hidden lg:inline">Mon–Fri · 8am–5pm</span>
       <span class="hidden lg:inline h-3 w-px bg-white/20"></span>
@@ -432,7 +433,7 @@ tailwind.config = {
         </h1>
 
         <p class="mt-5 max-w-lg text-[15.5px] sm:text-[16.5px] lg:text-[17.5px] leading-relaxed text-cream/70 font-light">
-          TMS is FDA-approved, drug-free and non-invasive. You sit awake in a chair while
+          TMS is FDA-Cleared, drug-free and non-invasive. You sit awake in a chair while
           magnetic pulses reach the mood circuits antidepressants keep missing — then you get up
           and drive yourself home.
         </p>
@@ -575,9 +576,9 @@ tailwind.config = {
       <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-4">
         <?php
         $trust = [
-          ['FDA-approved',      'In clinical use since 2008'],
+          ['FDA-Cleared',      'In clinical use since 2008'],
           ['No referral needed', 'Book directly with us'],
-          ['Physician-supervised', 'Every session, start to finish'],
+          ['Clinically supervised', 'Treatment delivered by a trained clinical team'],
           ['We do the paperwork', 'Prior authorization handled for you'],
         ];
         foreach ($trust as [$t, $s]): ?>
@@ -607,8 +608,7 @@ tailwind.config = {
           Four reasons people ask us about TMS.
         </h2>
         <p class="mt-4 text-[15.5px] sm:text-[17px] leading-relaxed text-brand-900/60 font-light">
-          TMS is for adults with major depressive disorder who have not responded to antidepressants.
-          If one of these sounds like your last few years, you are the person it was designed for.
+         TMS may be an option for adults with major depressive disorder who have not experienced adequate improvement with antidepressant treatment. If any of these experiences sound familiar, TMS may be worth discussing with our clinical team.
         </p>
       </div>
       <figure class="lg:col-span-5 overflow-hidden rounded-2xl sm:rounded-3xl ring-1 ring-black/5">
@@ -620,17 +620,17 @@ tailwind.config = {
     <div class="mt-8 sm:mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-5">
       <?php
       $signs = [
-        ['Two to four drugs, no result',
-         'You have worked through the list — different classes, different doses — and the depression is still there. This is the criterion insurers look for.',
+        ['Multiple antidepressants, without enough relief',
+         'Many insurers require documentation of previous antidepressant treatment before authorizing TMS.',
          'M4 7h16v12H4V7Zm4-3h8v3H8V4Zm-1 8h10M7 15h6'],
-        ['The side effects were the dealbreaker',
-         'Weight, sleep, libido, flatness. TMS is not systemic — it does not travel through your bloodstream, so it does not bring those with it.',
+        ['Side effects made treatment difficult',
+         'Antidepressant side effects can vary and may include changes in sleep, weight or sexual function. TMS is a non-systemic treatment and does not circulate through the bloodstream like medication.',
          'M12 9v4.5M12 17h.01M10.3 3.9 2.6 17.3A2 2 0 0 0 4.3 20.3h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z'],
         ['You want something drug-free',
          'No pill, no infusion, nothing to metabolise. Magnetic pulses, a chair, and a clinician who stays in the room with you.',
          'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z M8.5 8.5l7 7'],
-        ['You need something short of ECT',
-         'No anesthesia, no induced seizure, no memory loss as a known effect. We offer both, so we will tell you honestly which one your case calls for.',
+        ['You are exploring a non-invasive treatment option',
+         'TMS does not require anesthesia and does not intentionally induce a seizure. Because our practice offers multiple treatment options, our clinical team can help determine which approach may be appropriate for you.',
          'M12 21s-7-4.4-7-10a4.5 4.5 0 0 1 8.5-2.1A4.5 4.5 0 0 1 22 11c0 5.6-7 10-7 10'],
       ];
       foreach ($signs as $i => [$h, $p, $icon]): ?>
@@ -656,20 +656,20 @@ tailwind.config = {
       </div>
       <ul class="mt-4 flex flex-wrap gap-1.5 sm:gap-2">
         <?php foreach ([
-          'Major depressive disorder','Treatment-resistant depression','Anxious depression',
+          'Major depressive disorder','Adolescent Depression 16+','Anxious depression','OCD',
         ] as $c): ?>
         <li class="rounded-full bg-accent-50 px-3 py-1.5 text-[13px] text-accent-600 ring-1 ring-accent-200"><?= $c ?></li>
         <?php endforeach; ?>
         <?php foreach ([
-          'OCD','PTSD','Panic disorder','Chronic pain','Postpartum depression','Smoking cessation',
+          'PTSD','Panic disorder','Chronic pain','Postpartum depression','Smoking cessation',
         ] as $c): ?>
         <li class="rounded-full bg-sand px-3 py-1.5 text-[13px] text-brand-900/70"><?= $c ?></li>
         <?php endforeach; ?>
       </ul>
       <p class="mt-4 text-[13.5px] leading-relaxed text-brand-900/50">
-        The <span class="text-accent-600 font-medium">highlighted</span> conditions are the FDA-approved indication
-        that most plans and Medicare pay for. The rest have research-backed protocols but are often off-label —
-        we will help you apply, and tell you upfront what the answer is likely to be.
+  Highlighted conditions represent FDA-cleared indications for the Magstim Horizon 3.0 system. Other conditions shown may involve off-label use of TMS and require individual clinical evaluation. Insurance coverage varies by diagnosis and health plan.
+
+
       </p>
     </div>
 
@@ -694,22 +694,20 @@ tailwind.config = {
       <div class="lg:col-span-7 reveal">
         <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">How it works</p>
         <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-          Physical therapy, for the brain.
+          Targeted stimulation, delivered over time.
         </h2>
         <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-brand-900/60 font-light max-w-xl">
-          TMS uses the same magnetic technology as an MRI to stimulate the prefrontal cortex — the
-          region that runs underactive in depression. You would not rehabilitate an injury in one
-          physiotherapy session, and the brain is no different: the change comes from repetition.
+          TMS uses magnetic pulses to stimulate targeted areas of the brain involved in mood regulation. Treatment is delivered over a series of sessions, with each session following a protocol selected for your individual treatment plan.
         </p>
 
         <ol class="mt-8 grid sm:grid-cols-2 gap-3.5 sm:gap-4">
           <?php
           $how = [
-            ['We map your head',    'A physician maps your scalp to find the treatment area, then runs a motor threshold test to set the intensity to you specifically.',
+            ['We map your head',    'Your treatment area is carefully mapped, and a motor threshold test helps determine the appropriate treatment intensity for you.',
              'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z M12 8v4l3 2'],
             ['Pulses, not chemistry','Focused magnetic pulses pass painlessly through the scalp to the mood circuits underneath. Nothing enters your bloodstream.',
              'M13 2 4.5 13.5H11l-.5 8.5L19.5 10.5H13L13 2Z'],
-            ['Repetition builds it', 'Each session builds on the last, gradually restoring activity in an underactive region. That is why a full course matters.',
+            ['Repetition builds it', 'TMS is delivered as a series of sessions designed to repeatedly stimulate the targeted brain region over the course of treatment.',
              'M4 17V9M9 17V5M14 17v-6M19 17V7'],
             ['Same spot, every time','StimGuide&reg; 3-D navigation holds the coil to the same contact, position, tilt and rotation at every single session.',
              'M12 21s-7-5.2-7-10a7 7 0 1 1 14 0c0 4.8-7 10-7 10Z M12 11h.01'],
@@ -879,8 +877,8 @@ tailwind.config = {
           $steps = [
             ['You arrive and sit down',   'Metal objects come off — jewellery, watch, cards. You are given earplugs, because the device clicks while it works.'],
             ['The coil is positioned',    'It rests lightly against your head, guided to the exact spot mapped for you at your first visit.'],
-            ['The pulses run',            'You feel a tapping at the treatment site. Three minutes to thirty-seven, depending on your protocol. A technician is with you throughout, supervised by your physician.'],
-            ['You get up and go',         'No grogginess, no observation period, no ride home to arrange. Straight back to work, the school run, or the rest of your day.'],
+            ['The pulses run',            'Treatment time varies by protocol, with some sessions lasting as little as approximately three minutes.'],
+            ['You get up and go',         'TMS does not require sedation or anesthesia, and patients can typically resume normal daily activities after treatment, including driving.'],
           ];
           foreach ($steps as $i => [$h, $p]): ?>
           <li class="reveal flex gap-4 sm:gap-5" style="transition-delay:<?= $i * 70 ?>ms">
@@ -904,8 +902,7 @@ tailwind.config = {
       <div class="lg:col-span-4">
         <h3 class="font-display text-[20px] sm:text-[24px] tracking-tight text-brand-900">The full course, plainly</h3>
         <p class="mt-3 text-[14.5px] leading-relaxed text-brand-900/60">
-          We would rather you hear this now than in week two. TMS is a commitment of weeks, not a
-          single appointment — and finishing it is what makes the change hold.
+          TMS is typically delivered as a course of treatment rather than a single appointment. Your treatment schedule will be determined by your prescribed protocol and clinical response.
         </p>
         <dl class="mt-5 grid grid-cols-3 gap-4 border-t border-black/10 pt-5">
           <?php
@@ -923,8 +920,7 @@ tailwind.config = {
           <?php endforeach; ?>
         </dl>
         <p class="mt-5 text-[13.5px] leading-relaxed text-brand-900/45">
-          Miss one? It is added to the end of the course. It does not undo your progress.
-        </p>
+If you need to miss a session, contact our team. We will work with you to adjust your treatment schedule as appropriate.        </p>
       </div>
 
       <div class="lg:col-span-8">
@@ -964,7 +960,7 @@ tailwind.config = {
         <?php
         $ambience = [
           ['chair',      'Our Magstim chair and stimulator'],
-          ['reception',  'Reception, never a crowd'],
+          ['reception',  'A comfortable reception area'],
           ['room',       'Our treatment rooms'],
           ['care',       'A team that knows your case'],
         ];
@@ -999,7 +995,7 @@ tailwind.config = {
       <div class="lg:col-span-7">
         <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Insurance</p>
         <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[2.9rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-          Most plans cover TMS. Medicare does too.
+          Many insurance plans cover TMS, including Medicare for eligible patients.
         </h2>
       </div>
       <div class="lg:col-span-5">
@@ -1015,9 +1011,9 @@ tailwind.config = {
       $coverage = [
         ['We verify it first',   'Tell us your carrier on the form and our team checks your TMS benefits before you commit to a course.',
          'M12 3l7.5 3v5.5c0 4.4-3.1 8.2-7.5 9.5-4.4-1.3-7.5-5.1-7.5-9.5V6L12 3Z M9.5 12l1.8 1.8L15 10'],
-        ['We file the prior auth', 'Insurers almost always require one for TMS. We assemble the documentation and talk to your insurer directly.',
+        ['We file the prior auth', 'Many insurance plans require prior authorization for TMS. We assemble the documentation and talk to your insurer directly.',
          'M4 7h16v12H4V7Zm4-3h8v3H8V4Zm-1 8h10M7 15h6'],
-        ['You hear the number first', 'Deductible, copay or coinsurance — you get told what a course will cost you before session one, not after.',
+        ['You hear the number first', 'We review your available benefit information, including applicable deductible, copay or coinsurance, before treatment begins.',
          'M12 7v10M9 9.5c0-1 1.3-1.7 3-1.7s3 .8 3 1.9-1.3 1.6-3 1.9-3 .8-3 1.9 1.3 1.9 3 1.9 3-.7 3-1.7'],
       ];
       foreach ($coverage as $i => [$h, $p, $icon]): ?>
@@ -1321,7 +1317,7 @@ $schema = [
       'availableService' => [
         '@type'       => 'MedicalTherapy',
         'name'        => 'Transcranial magnetic stimulation (TMS) therapy',
-        'description' => 'FDA-approved transcranial magnetic stimulation for adults with major depressive disorder that has not responded to antidepressants. Non-invasive, drug-free and delivered without sedation on a Magstim Horizon 3 system, with rTMS, accelerated and 3-minute intermittent theta burst protocols. A standard course is 30 to 36 sessions over four to six weeks, in person in Phoenix, Arizona.',
+        'description' => 'FDA-Cleared transcranial magnetic stimulation for adults with major depressive disorder that has not responded to antidepressants. Non-invasive, drug-free and delivered without sedation on a Magstim Horizon 3 system, with rTMS, accelerated and 3-minute intermittent theta burst protocols. A standard course is 30 to 36 sessions over four to six weeks, in person in Phoenix, Arizona.',
       ],
     ],
     [
