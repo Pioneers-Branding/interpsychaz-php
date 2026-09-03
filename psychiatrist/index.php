@@ -95,11 +95,11 @@ $teamImg = function (string $file) use ($IMG_DIR, $BASE): string {
 };
 $team = [
   ['Gerhard Gómez, M.D.', 'Adult Interventional Psychiatrist', 'gomez.jpg',
-   'Board-certified in Adult Psychiatry by the American Board of Psychiatry and Neurology. Chief resident at Banner University of Arizona Medical Center, and founder of this practice in 2009. He also provides ECT on staff at Honor Health Tempe.',
+   'Board-certified in Adult Psychiatry by the American Board of Psychiatry and Neurology. Chief resident at Banner University of Arizona Medical Center, and founder of this practice in 2009. He also provides ECT on staff at HonorHealth Tempe.',
    ['Interventional', 'Geriatric', 'Addiction', 'Forensic', 'Speaks Spanish']],
   ['Michael Jacobson, PA-C', 'Physician Assistant', 'jacobson.jpg',
    'Board-certified by the National Commission on Certification of Physician Assistants, and a clinical trial investigator in depression, bipolar disorder and schizophrenia. He treats patients across the whole lifespan.',
-   ['Children &amp; teens', 'Adults', 'Geriatric', 'ADHD', 'Autism spectrum']],
+   ['Adolescents 16+', 'Adults', 'Geriatric', 'ADHD', 'Autism spectrum']],
   ['Nina Gómez, DNP-PMHNP', 'Psychiatric Nurse Practitioner', 'nina-gomez.jpg',
    'Board-certified, with a Doctor of Nursing Practice from Arizona State University and over twelve years serving the Phoenix community. Her work centres on people whose needs are complex.',
    ['Serious mental illness', 'Substance use', 'Crisis care', 'Geriatric']],
@@ -139,19 +139,19 @@ $faqs = [
   ['Do you take my insurance?',
    'Interventional Psychiatry of Arizona works with most major insurance plans, including Medicare. Coverage and copays vary by plan, so our team verifies your benefits before your first appointment and tells you what you will owe. Self-pay options are available too.'],
   ['How long will I wait for a first appointment?',
-   'Call us and we will tell you honestly what is open. Our team checks your benefits on that first call, so the scheduling and the insurance question get answered together rather than one after the other.'],
+   'Interventional Psychiatry of Arizona works with many major insurance plans, including Medicare. Coverage and patient costs vary by plan, so our team verifies your available benefits before your first appointment and reviews your expected patient responsibility. Self-pay options are available too.'],
   ['What happens at the first appointment?',
    'It runs ninety minutes. We go through your mental health history, every medication you have tried and are taking now, medical factors, side effects and what you actually want to be different. That is what a plan gets built from.'],
   ['Can I be seen by telehealth?',
-   'Yes. Evaluations, medication management and follow-up visits can be done virtually anywhere in Arizona. Some patients do the first appointment in person and everything after that from home. Procedures such as TMS and ECT are done in person.'],
+   'Yes. Telehealth appointments are available to eligible patients located in Arizona. The availability of telehealth may depend on your clinical needs and the type of care you are receiving. Treatments and procedures such as TMS, SPRAVATO® and ECT require in-person care.'],
   ['What conditions do you treat?',
    'Depression and treatment-resistant depression, anxiety and panic, bipolar disorder, PTSD and trauma, OCD, schizophrenia and psychosis including long-acting injectables, ADHD, insomnia, substance use, anger, and geriatric psychiatry.'],
   ['Do you see children or teenagers?',
    'We see adolescents and adults, and our physician assistant has experience across the whole lifespan including children. Tell us the age on your first call and we will tell you straight away whether we are the right practice.'],
   ['I have already tried several medications. Is it worth coming in?',
-   'That is much of what we do. This practice was built around treatment-resistant cases: when medication is not enough, TMS, SPRAVATO and ECT are all delivered here by the same team, so you are not starting over somewhere new.'],
-  ['Can you take over prescriptions I am already on?',
-   'Yes. Taking over an existing regimen — including a complicated one built up over years, or one started by a provider you no longer see — is routine. Bring your current bottles or a pharmacy list to the first visit.'],
+   'Yes. Our practice has experience evaluating patients whose symptoms have not adequately responded to previous treatments. Depending on your diagnosis, treatment history and clinical needs, options may include medication management, TMS, SPRAVATO® or ECT. Your clinician will review your history and discuss which options may be appropriate for you.'],
+  ['Can you take over Spravato® prescriptions I am already on?',
+   'Our clinicians can review your current medication regimen during your evaluation and determine whether continuing, adjusting or changing your prescriptions is clinically appropriate. Please bring an up-to-date medication or pharmacy list to your first visit.'],
 ];
 
 /* Verbatim Google reviews. Dates are the month each was posted, so they don't
@@ -435,9 +435,7 @@ tailwind.config = {
         </h1>
 
         <p class="mt-5 max-w-lg text-[15.5px] sm:text-[16.5px] lg:text-[17.5px] leading-relaxed text-cream/70 font-light">
-          Board-certified psychiatry in Phoenix, with a ninety-minute first appointment and no
-          referral needed. If medication isn't the answer, TMS, SPRAVATO&reg; and ECT are all
-          delivered here — by the same team who already know your story.
+       Board-certified psychiatric care in Phoenix, with comprehensive initial evaluations and no referral needed to get started. If medication alone isn't enough, our team can also evaluate whether treatments such as TMS, SPRAVATO® or ECT may be appropriate.
         </p>
 
         <div class="mt-7 flex flex-col sm:flex-row gap-3">
@@ -462,8 +460,8 @@ tailwind.config = {
             <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Referral needed to book</dd>
           </div>
           <div>
-            <dt class="font-display text-2xl sm:text-3xl text-cream font-light">Most</dt>
-            <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Insurance plans, and Medicare</dd>
+            <dt class="font-display text-2xl sm:text-3xl text-cream font-light">Many</dt>
+            <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Major insurance plans, including Medicare</dd>
           </div>
         </dl>
       </div>
@@ -603,8 +601,7 @@ tailwind.config = {
         You will know who you are seeing.
       </h2>
       <p class="mt-4 text-[15.5px] sm:text-[17px] leading-relaxed text-brand-900/60 font-light">
-        A small, board-certified team — not a rotating roster. Tell us what is going on and we will
-        match you to the clinician whose work fits it.
+     A small, experienced clinical team — not a rotating roster. Tell us what is going on and we will match you to the clinician whose work fits it.
       </p>
     </div>
 
@@ -653,18 +650,16 @@ tailwind.config = {
       <div class="lg:col-span-6 reveal">
         <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">What we treat</p>
         <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-          Including the cases other practices pass on.
+          Experienced care for complex psychiatric needs.
         </h2>
         <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-brand-900/60 font-light max-w-xl">
-          This clinic was built around the patients who are hardest to help. Serious mental illness,
-          co-occurring substance use, geriatric complexity and prior treatment failures are the work
-          we do every day — not the exception.
+          This practice is experienced in treating complex psychiatric conditions, including serious mental illness, co-occurring substance use, geriatric psychiatric needs and conditions that have not adequately responded to previous treatment.
         </p>
         <ul class="mt-7 flex flex-wrap gap-1.5 sm:gap-2">
           <?php foreach ([
             'Depression','Treatment-resistant depression','Anxiety &amp; panic','Bipolar disorder',
-            'PTSD &amp; trauma','OCD','Schizophrenia &amp; psychosis','Long-acting injectables',
-            'ADHD','Insomnia','Substance use','Anger','Geriatric psychiatry',
+            'PTSD &amp; trauma','OCD','Schizophrenia &amp; psychosis',
+            'ADHD','Insomnia','Substance use','Anger Management','Geriatric psychiatry',
           ] as $c): ?>
           <li class="rounded-full bg-cream px-3 py-1.5 text-[13px] text-brand-900/70 ring-1 ring-black/[0.05]"><?= $c ?></li>
           <?php endforeach; ?>
@@ -696,18 +691,18 @@ tailwind.config = {
           Four treatments, one practice, one team.
         </h3>
         <p class="mt-3 text-[15px] sm:text-[15.5px] leading-relaxed text-cream/60 font-light max-w-2xl">
-          Most psychiatry practices can offer you the first of these. When it isn't enough, they
-          refer you out and you start again with strangers. Here, the next step is a conversation,
-          not a waitlist.
+         Medication management is one option, but it isn't the only one. When appropriate, our team can also evaluate patients for interventional treatments including TMS, SPRAVATO® and ECT.
+
+
         </p>
 
         <ol class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4">
           <?php
           $ladder = [
-            ['Medication management', 'The starting point for most people. A 90-minute evaluation, then 30-minute follow-ups — long enough to talk about how it is actually going.'],
-            ['TMS therapy',           'Magnetic stimulation for depression that medication has not lifted. Drug-free, no sedation, and you drive yourself home. Sessions from three minutes.'],
+            ['Medication management', 'Comprehensive psychiatric evaluation and medication management, with ongoing follow-up to monitor response, side effects and treatment goals.'],
+            ['TMS therapy',           'Non-invasive magnetic stimulation for depression that has not adequately responded to prior treatment. TMS does not require sedation, and patients can typically drive themselves home after treatment. Session duration varies by prescribed protocol, with some protocols lasting as little as approximately three minutes.'],
             ['SPRAVATO&reg;',         'Esketamine nasal spray for treatment-resistant depression, given here under supervision at a REMS-certified center.'],
-            ['ECT',                   'For severe or urgent cases, provided by Dr. Gómez on staff at Honor Health Tempe. Still the most effective treatment there is for some presentations.'],
+            ['ECT',                   'For severe or urgent cases, provided by Dr. Gómez on staff at Honor Health Tempe. For certain severe psychiatric conditions, ECT may be considered when rapid or substantial clinical improvement is needed. Dr. Gómez provides ECT at HonorHealth Tempe Medical Center.'],
           ];
           foreach ($ladder as $i => [$h, $p]): ?>
           <li class="rounded-2xl border border-white/12 bg-white/[0.04] p-5">
@@ -783,9 +778,9 @@ tailwind.config = {
       <div class="slider mt-4 flex gap-3 overflow-x-auto snap-x pb-1 -mx-5 px-5 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0">
         <?php
         $ambience = [
-          ['reception', 'Reception, never a crowd'],
+          ['reception', 'A comfortable reception area'],
           ['room',      'Our treatment rooms'],
-          ['chair',     'TMS, down the same hall'],
+          ['chair',     'Our TMS treatment area'],
           ['care',      'Time to actually be heard'],
         ];
         foreach ($ambience as [$slot, $caption]): ?>
@@ -819,7 +814,7 @@ tailwind.config = {
       <div class="lg:col-span-7">
         <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Insurance</p>
         <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[2.9rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-          Chances are, we take your plan.
+          We work with many major insurance plans.
         </h2>
       </div>
       <div class="lg:col-span-5">
