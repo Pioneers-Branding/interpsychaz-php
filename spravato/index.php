@@ -122,10 +122,10 @@ $compareCols = [
 $compareRows = [
   ['Time to relief',     ['Hours to days',                      'Typically 6–12 weeks per trial', 'Over a course of sessions']],
   ['How it is given',    ['A nasal spray you self-administer',  'A pill you take daily at home',  'Anesthesia and an induced seizure']],
-  ['Sedation',           ['None — you stay awake',              'None',                           'General anesthesia every session']],
-  ['What it targets',    ['Glutamate and NMDA receptors',       'Serotonin and norepinephrine',   'Whole-brain seizure activity']],
+  ['Sedation',           ['None — Sedation can occur; patients are monitored after administration',              'None',                           'General anesthesia every session']],
+  ['What it targets',    ['Glutamate and NMDA receptors',       'Serotonin and norepinephrine',   'A controlled seizure is induced under general anesthesia']],
   ['Memory effects',     ['Not typical',                        'Not typical',                    'Memory loss is a known risk']],
-  ['Time at the clinic', ['~2 hours of monitoring per session', 'None — taken at home',           'A half day, plus recovery time']],
+  ['Time at the clinic', ['~2 hours of monitoring per session', 'None — taken at home',           'Varies by treatment setting']],
   ['Driving afterward',  ['Not until the next day',             'Unrestricted',                   'Not the same day']],
 ];
 
@@ -139,15 +139,15 @@ $faqs = [
   ['How quickly does SPRAVATO® work?',
    'Much faster than a standard antidepressant. Where oral medications typically take weeks or months to show an effect, many patients notice a reduction in symptoms within 24 hours to a few days of their first treatment. That speed is why it is used for severe depression and for depressive symptoms with suicidal thoughts.'],
   ['What happens during a treatment session?',
-   'You self-administer the nasal spray under the direct supervision of our staff, then stay with us for a two-hour monitoring period in a private room with a recliner. Vital signs are checked throughout. Most side effects appear during that window and resolve the same day.'],
+   'Response to SPRAVATO® varies. Some patients may experience improvement earlier in treatment, while others may require multiple treatment sessions before noticing a change. Your clinical team will monitor your symptoms throughout treatment and evaluate your individual response.'],
   ['Can I drive myself home?',
-   'No. You will need someone to drive you, and you should not drive or operate machinery until the next day, after a full night’s sleep. We will tell you this again at scheduling so you can plan the day.'],
+   'You self-administer SPRAVATO® nasal spray under the supervision of a healthcare provider at our REMS-certified treatment center. After administration, you will be monitored for at least two hours. Your healthcare provider will monitor you for potential side effects and determine when you are clinically stable and ready to leave. You will need to arrange transportation home and should not drive or operate machinery until the next day, after a full night’s sleep.'],
   ['What are the common side effects?',
    'Dissociation, dizziness, fatigue, nausea or vomiting, a feeling of being drunk or euphoric, anxiety or numbness, and a spinning sensation. They usually begin shortly after the dose and resolve the same day, which is what the monitoring period is for.'],
   ['How long does approval take, and what if I am denied?',
    'Prior authorization usually takes three days to two weeks. Denials do happen, most often because of missing documentation — if that happens, our team files the appeal on your behalf with the additional clinical evidence.'],
   ['Do I need a referral to be seen?',
-   'No referral is needed to schedule with us. If you already have a therapist or primary care provider, we are glad to coordinate so everyone stays aligned.'],
+   'Prior authorization timelines vary by insurance plan. If authorization is denied, our team will review the reason and discuss available next steps, including submitting additional documentation or an appeal when appropriate.'],
 ];
 
 /* Verbatim Google reviews. Dates are the month each was posted, so they don't
@@ -430,9 +430,7 @@ tailwind.config = {
         </h1>
 
         <p class="mt-5 max-w-lg text-[15.5px] sm:text-[16.5px] lg:text-[17.5px] leading-relaxed text-cream/70 font-light">
-          SPRAVATO&reg; (esketamine) is the first prescription nasal spray used alongside an oral
-          antidepressant to treat severe, treatment-resistant depression. Many patients feel a shift
-          within 24 hours, not weeks.
+          SPRAVATO® (esketamine) is an FDA-approved prescription nasal spray for adults with treatment-resistant depression. It may be used alone or in conjunction with an oral antidepressant.
         </p>
 
         <div class="mt-7 flex flex-col sm:flex-row gap-3">
@@ -572,7 +570,7 @@ tailwind.config = {
         <?php
         $trust = [
           ['REMS-certified',    'Protocol-driven monitoring'],
-          ['FDA-approved',      'For TRD and MDD with SI'],
+          ['FDA-approved',      'For treatment-resistant depression'],
           ['Insurance handled', 'We file the authorization'],
           ['Board-certified',   '15+ years in practice'],
         ];
@@ -602,8 +600,7 @@ tailwind.config = {
         <?= $SPR ?> is for a specific kind of depression.
       </h2>
       <p class="mt-4 text-[15.5px] sm:text-[17px] leading-relaxed text-brand-900/60 font-light">
-        It is approved for two groups of adults with major depressive disorder — and about 30% of
-        people diagnosed with depression fall into treatment-resistant territory.
+        SPRAVATO® is FDA-approved for adults with treatment-resistant depression (TRD), a form of depression that has not adequately responded to previous antidepressant treatment.
       </p>
     </div>
 
@@ -611,11 +608,13 @@ tailwind.config = {
       <?php
       $criteria = [
         ['Treatment-resistant depression',
-         'An adult with major depressive disorder that has not responded to standard antidepressant treatment.'],
+         'Adults with treatment-resistant depression (TRD), meaning depression that has not adequately responded to previous antidepressant treatment.'],
         ['Two or more antidepressants tried',
-         'No adequate response to at least two different antidepressants during your current episode — usually six weeks each. This is the criterion insurers check.'],
-        ['Depression with suicidal thoughts',
-         'Depressive symptoms alongside suicidal thoughts or actions, where waiting weeks for a medication to work is not an option.'],
+         'Treatment history is reviewed as part of determining whether SPRAVATO® may be appropriate. Insurance authorization requirements vary by plan.'],
+        ['A clinical evaluation',
+         'Your diagnosis, treatment history, current medications and overall health are reviewed to determine whether SPRAVATO® may be appropriate for you.
+
+'],
       ];
       foreach ($criteria as $i => [$h, $p]): ?>
       <article class="reveal flex gap-4 sm:block rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]"
@@ -655,9 +654,7 @@ tailwind.config = {
           A different target in the brain.
         </h2>
         <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-brand-900/60 font-light max-w-xl">
-          Standard antidepressants work on serotonin and norepinephrine, and take weeks to build an
-          effect. SPRAVATO&reg; acts on the brain's glutamate system instead — which is why it moves
-          so much faster.
+    SPRAVATO® works differently from many traditional antidepressants. Esketamine acts primarily on the glutamate system as a noncompetitive antagonist of the NMDA receptor.
         </p>
 
         <!-- The mechanism as a sequence: each step follows from the one before it,
@@ -666,11 +663,13 @@ tailwind.config = {
           <div class="hidden sm:block absolute top-[2.4rem] left-[12%] right-[12%] h-px bg-black/10"></div>
           <?php
           $mechanism = [
-            ['Blocks NMDA receptors', 'The doorways controlling glutamate flow. When they are overactive, mood and thinking suffer; esketamine restores the balance.',
+            ['Blocks NMDA receptors', 'Esketamine is a noncompetitive antagonist of the NMDA receptor, a receptor involved in glutamate signaling in the brain.',
              'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z M5.6 5.6l12.8 12.8'],
-            ['Rebuilds connections',  'Depression damages the connections between neurons. Esketamine promotes neuroplasticity, so improvement can hold rather than fade.',
+            ['Different mechanism of action',  'SPRAVATO® acts on the brains glutamate system, which differs from the primary mechanisms of many traditional antidepressants.',
              'M7 5.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M21 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M14 18.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M6.6 7.1l10 1.6 M18.4 11.2 13.3 17'],
-            ['Works with your meds',  'It is prescribed alongside an oral antidepressant, not instead of one — and only ever given under medical supervision.',
+            ['Your treatment plan',  'For treatment-resistant depression, SPRAVATO® may be prescribed alone or in conjunction with an oral antidepressant. Your clinician will determine the appropriate treatment plan based on your individual needs.
+
+',
              'M10.5 3.5a5 5 0 0 1 7 7l-7 7a5 5 0 0 1-7-7l7-7Z M7 7l7 7'],
           ];
           foreach ($mechanism as $i => [$h, $p, $icon]): ?>
@@ -734,7 +733,7 @@ tailwind.config = {
       <div class="pointer-events-none absolute -right-32 -top-24 h-[24rem] w-[24rem] rounded-full bg-brand-600/40 blur-[110px]"></div>
       <div class="relative">
       <h3 class="font-display text-[1.6rem] sm:text-[2rem] leading-tight tracking-tightest font-light">
-        Faster than pills. Gentler than ECT.
+        How SPRAVATO® compares with other treatment approaches.
       </h3>
       <p class="mt-3 text-[15px] sm:text-[15.5px] leading-relaxed text-cream/60 font-light max-w-2xl">
         All three treat depression that hasn't responded to standard care. They differ in how fast
@@ -836,9 +835,9 @@ tailwind.config = {
           ['Consultation &amp; evaluation',
            'A full psychiatric evaluation — history, every medication tried, medical factors and a baseline depression score. Also where we screen for what rules SPRAVATO® out.'],
           ['Insurance &amp; authorization',
-           'We file the prior authorization and talk to your insurer. Approval typically takes three days to two weeks; if denied, we file the appeal.'],
+           'Authorization timing varies by insurance plan. Our team submits the required documentation and works directly with your insurer throughout the process. If authorization is denied, we can review available next steps, including an appeal when appropriate.'],
           ['Induction — weeks 1 to 4',
-           'Two sessions per week for the first month, alongside your oral antidepressant. Many patients notice a change in the first days.'],
+           'Treatment is typically given twice weekly during the initial four-week induction phase. Your prescribed medication regimen will depend on your diagnosis and individualized treatment plan. Your clinical team will monitor your symptoms and response throughout treatment. Individual response and timing vary.'],
           ['Maintenance &amp; follow-up',
            'Once you are responding, sessions taper to a maintenance schedule set by how you are actually doing — tracked at every visit.'],
         ];
@@ -864,7 +863,7 @@ tailwind.config = {
         $session = [
           ['You self-administer', 'The nasal spray, under the direct supervision of our trained staff.',
            'M12 3c3 3.5 5 6.4 5 9a5 5 0 0 1-10 0c0-2.6 2-5.5 5-9Z'],
-          ['Two-hour monitoring', 'In a private room with a recliner. Vital signs checked throughout; most side effects resolve inside this window.',
+          ['At least two hours of monitoring', 'In a private room with a recliner. Vital signs checked throughout; most side effects resolve inside this window.',
            'M12 7v5l3 2M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z'],
           ['Arrange a ride home',  'No driving or operating machinery until the next day, after a full night’s sleep.',
            'M5 16h14M6.5 16V11l1.6-4h7.8l1.6 4v5M8 19v-3M16 19v-3'],
@@ -889,8 +888,8 @@ tailwind.config = {
     $gallery = [
       ['session',   'Self-administered, supervised',  'lg:col-span-5 lg:row-span-2'],
       ['room',      'The monitoring room',            'lg:col-span-4'],
-      ['reception', 'Reception, never a crowd',       'lg:col-span-3'],
-      ['tms',       'TMS and ECT down the same hall', 'lg:col-span-7'],
+      ['reception', 'Our reception area',       'lg:col-span-3'],
+      ['tms',       'Our TMS treatment area', 'lg:col-span-7'],
     ];
     ?>
     <div class="reveal mt-10">
@@ -930,14 +929,12 @@ tailwind.config = {
       <div class="lg:col-span-7">
         <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Insurance</p>
         <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[2.9rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-          Covered by most plans — with a form we fill in.
+          SPRAVATO® is covered by many insurance plans.
         </h2>
       </div>
       <div class="lg:col-span-5">
         <p class="text-[15.5px] sm:text-[16px] leading-relaxed text-brand-900/60 font-light">
-          The vast majority of commercial plans, Medicare and many Medicaid programs cover
-          SPRAVATO&reg;. What stands between you and approval is a prior authorization — and our care
-          coordinators handle that, start to finish.
+Many commercial insurance plans, Medicare and some Medicaid plans may provide coverage for SPRAVATO®, subject to eligibility, plan requirements and prior authorization.
         </p>
       </div>
     </div>
@@ -971,8 +968,8 @@ tailwind.config = {
         ['Benefits verified first',
          'We confirm what your policy covers — the medication and the observation visit are billed separately — before anything begins. Manufacturer savings programs may apply; we will check.',
          'M12 3l7.5 3v5.5c0 4.4-3.1 8.2-7.5 9.5-4.4-1.3-7.5-5.1-7.5-9.5V6L12 3Z M9.5 12l1.8 1.8L15 10'],
-        ['Medicare &amp; AHCCCS too',
-         'Medicare Part B generally covers SPRAVATO® and the observation visits in an outpatient setting. Most Medicaid programs, including Arizona’s AHCCCS, cover it — with prior authorization.',
+        ['Medicare &amp; AHCCCS ',
+         'Coverage may be available through Medicare and certain AHCCCS plans for eligible patients. Coverage requirements and prior authorization vary by plan. Our team will verify your benefits before treatment.',
          'M12 3l7.5 3v5.5c0 4.4-3.1 8.2-7.5 9.5-4.4-1.3-7.5-5.1-7.5-9.5V6L12 3Z'],
       ];
       foreach ($cost as $i => [$h, $p, $icon]): ?>
@@ -991,7 +988,7 @@ tailwind.config = {
     <div class="reveal mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl bg-sand/70 px-5 sm:px-6 py-5">
       <p class="text-[14.5px] leading-relaxed text-brand-900/60">
         <span class="font-medium text-brand-900">Denied before, or worried you will be?</span>
-        Denials are usually a documentation problem, not a verdict. We file the appeal.
+If coverage is denied, our team will review the reason and discuss available next steps, including an appeal when appropriate.
       </p>
       <a href="tel:<?= $PHONE_LINK ?>" class="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-900 px-6 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shrink-0">
         Verify my coverage
@@ -1012,9 +1009,7 @@ tailwind.config = {
           Why it is only given in a clinic.
         </h2>
         <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-brand-900/60 font-light">
-          SPRAVATO&reg; can cause dissociation and raise blood pressure, so it is dispensed only
-          through a REMS-certified center. We are one — trained staff, strict protocols, and a
-          monitoring period that is not optional.
+         SPRAVATO® can cause sedation, dissociation, respiratory depression and increases in blood pressure, and it carries a risk of abuse and misuse. Because of these risks, it is available only through the SPRAVATO® REMS program and requires monitoring by a healthcare provider after administration.
         </p>
 
         <ul class="mt-6 space-y-2.5">
