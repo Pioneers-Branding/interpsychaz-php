@@ -104,7 +104,7 @@ $team = [
    'Board-certified, with a Doctor of Nursing Practice from Arizona State University and over twelve years serving the Phoenix community. Her work centres on people whose needs are complex.',
    ['Serious mental illness', 'Substance use', 'Crisis care', 'Geriatric']],
   ['Jessica Cruz, PMHNP', 'Psychiatric Mental Health Nurse Practitioner', 'cruz.jpg',
-   'Combines medication management, supportive therapy and evidence-based practice, with advanced psychiatric training from Herzing University and a background in behavioral health and acute care nursing.',
+   'Combines ongoing psychiatric care, supportive therapy and evidence-based practice, with advanced psychiatric training from Herzing University and a background in behavioral health and acute care nursing.',
    ['Depression', 'Anxiety', 'Trauma', 'TMS']],
 ];
 
@@ -141,17 +141,15 @@ $faqs = [
   ['How long will I wait for a first appointment?',
    'Interventional Psychiatry of Arizona works with many major insurance plans, including Medicare. Coverage and patient costs vary by plan, so our team verifies your available benefits before your first appointment and reviews your expected patient responsibility. Self-pay options are available too.'],
   ['What happens at the first appointment?',
-   'It runs ninety minutes. We go through your mental health history, every medication you have tried and are taking now, medical factors, side effects and what you actually want to be different. That is what a plan gets built from.'],
+   'It runs ninety minutes. We go through your mental health history, your treatment history, medical factors, side effects and what you actually want to be different. That is what a plan gets built from.'],
   ['Can I be seen by telehealth?',
    'Yes. Telehealth appointments are available to eligible patients located in Arizona. The availability of telehealth may depend on your clinical needs and the type of care you are receiving. Treatments and procedures such as TMS, SPRAVATO® and ECT require in-person care.'],
   ['What conditions do you treat?',
    'Depression and treatment-resistant depression, anxiety and panic, bipolar disorder, PTSD and trauma, OCD, schizophrenia and psychosis including long-acting injectables, ADHD, insomnia, substance use, anger, and geriatric psychiatry.'],
   ['Do you see children or teenagers?',
    'We see adolescents and adults, and our physician assistant has experience across the whole lifespan including children. Tell us the age on your first call and we will tell you straight away whether we are the right practice.'],
-  ['I have already tried several medications. Is it worth coming in?',
-   'Yes. Our practice has experience evaluating patients whose symptoms have not adequately responded to previous treatments. Depending on your diagnosis, treatment history and clinical needs, options may include medication management, TMS, SPRAVATO® or ECT. Your clinician will review your history and discuss which options may be appropriate for you.'],
-  ['Can you take over Spravato® prescriptions I am already on?',
-   'Our clinicians can review your current medication regimen during your evaluation and determine whether continuing, adjusting or changing your prescriptions is clinically appropriate. Please bring an up-to-date medication or pharmacy list to your first visit.'],
+  ["What if my current treatment isn't helping?",
+   'Our practice has experience with symptoms that have not adequately responded to previous treatment. Your clinician will review your history and what has already been tried, then discuss which approaches may be appropriate. Depending on your diagnosis and clinical needs, those may include a change to your current plan, or an evaluation for TMS, SPRAVATO® or ECT.'],
 ];
 
 /* Verbatim Google reviews. Dates are the month each was posted, so they don't
@@ -189,9 +187,9 @@ $reviews = [
 </script>
 
 <title>Psychiatrist in Phoenix, AZ | Interventional Psychiatry of Arizona</title>
-<meta name="description" content="Board-certified psychiatrists in Phoenix, AZ, accepting new patients — no referral needed. A 90-minute first appointment, in person or by telehealth across Arizona, and every treatment from medication to TMS, SPRAVATO and ECT under one roof. Most insurance and Medicare accepted. Call (602) 824-8404.">
+<meta name="description" content="Board-certified psychiatrists in Phoenix, AZ, accepting new patients — no referral needed. A 90-minute first appointment, in person or by telehealth across Arizona, and every treatment from ongoing psychiatric care to TMS, SPRAVATO and ECT under one roof. Most insurance and Medicare accepted. Call (602) 824-8404.">
 <meta property="og:title" content="Psychiatrist in Phoenix, AZ | Interventional Psychiatry of Arizona">
-<meta property="og:description" content="A psychiatry practice that doesn't run out of options — medication, TMS, SPRAVATO® and ECT, delivered by the same team. No referral needed.">
+<meta property="og:description" content="A psychiatry practice that doesn't run out of options — ongoing psychiatric care, TMS, SPRAVATO® and ECT, all from the same team. No referral needed.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="<?= $absolute($img('hero', 1200)) ?>">
 <meta name="twitter:card" content="summary_large_image">
@@ -435,7 +433,7 @@ tailwind.config = {
         </h1>
 
         <p class="mt-5 max-w-lg text-[15.5px] sm:text-[16.5px] lg:text-[17.5px] leading-relaxed text-cream/70 font-light">
-       Board-certified psychiatric care in Phoenix, with comprehensive initial evaluations and no referral needed to get started. If medication alone isn't enough, our team can also evaluate whether treatments such as TMS, SPRAVATO® or ECT may be appropriate.
+       Board-certified psychiatric care in Phoenix, with comprehensive initial evaluations and no referral needed to get started. When first-line treatment isn't enough, our team can also evaluate whether TMS, SPRAVATO® or ECT may be appropriate.
         </p>
 
         <div class="mt-7 flex flex-col sm:flex-row gap-3">
@@ -691,7 +689,7 @@ tailwind.config = {
           Four treatments, one practice, one team.
         </h3>
         <p class="mt-3 text-[15px] sm:text-[15.5px] leading-relaxed text-cream/60 font-light max-w-2xl">
-         Medication management is one option, but it isn't the only one. When appropriate, our team can also evaluate patients for interventional treatments including TMS, SPRAVATO® and ECT.
+         Your treatment plan is based on your evaluation, individual needs and clinical considerations. When appropriate, our team can also evaluate patients for interventional treatments including TMS, SPRAVATO® and ECT.
 
 
         </p>
@@ -699,10 +697,10 @@ tailwind.config = {
         <ol class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4">
           <?php
           $ladder = [
-            ['Medication management', 'Comprehensive psychiatric evaluation and medication management, with ongoing follow-up to monitor response, side effects and treatment goals.'],
-            ['TMS therapy',           'Non-invasive magnetic stimulation for depression that has not adequately responded to prior treatment. TMS does not require sedation, and patients can typically drive themselves home after treatment. Session duration varies by prescribed protocol, with some protocols lasting as little as approximately three minutes.'],
+            ['Ongoing psychiatric care', 'Follow-up care to review your progress and adjust your treatment plan as needed.'],
+            ['TMS therapy',           'Non-invasive magnetic stimulation for depression that has not adequately responded to prior treatment. TMS does not require sedation, and patients can typically drive themselves home after treatment. Session duration varies by treatment protocol, with some protocols lasting as little as approximately three minutes.'],
             ['SPRAVATO&reg;',         'Esketamine nasal spray for treatment-resistant depression, given here under supervision at a REMS-certified center.'],
-            ['ECT',                   'For severe or urgent cases, provided by Dr. Gómez on staff at Honor Health Tempe. For certain severe psychiatric conditions, ECT may be considered when rapid or substantial clinical improvement is needed. Dr. Gómez provides ECT at HonorHealth Tempe Medical Center.'],
+            ['ECT',                   'For certain severe psychiatric conditions, ECT may be considered when other treatments have not produced an adequate response, or when a higher level of care is clinically indicated. Dr. Gómez provides ECT at HonorHealth Tempe Medical Center.'],
           ];
           foreach ($ladder as $i => [$h, $p]): ?>
           <li class="rounded-2xl border border-white/12 bg-white/[0.04] p-5">
@@ -749,7 +747,7 @@ tailwind.config = {
           ['The evaluation',
            'Ninety minutes covering your history, everything you have tried, medical factors, side effects and what you want to be different. In person or by telehealth.'],
           ['A plan you understand',
-           'What we are recommending, why, what to expect and when — including what we are not doing. Not every plan starts with a prescription.'],
+           'What we are recommending, why, what to expect and when — including what we are not doing.'],
           ['Follow-ups that follow up',
            'Thirty minutes each, long enough to talk about how it is actually going. If the plan stops working, we change it rather than repeat it.'],
         ];
@@ -1026,8 +1024,8 @@ tailwind.config = {
         <img src="<?= $LOGO_LIGHT ?>" alt="Interventional Psychiatry of Arizona — Building Strong Minds"
              width="545" height="228" loading="lazy" class="h-14 sm:h-16 w-auto">
         <p class="mt-5 text-[14px] leading-relaxed max-w-sm">
-          Board-certified psychiatry in Phoenix and across Arizona — medication management, TMS,
-          SPRAVATO&reg;, ECT and psychotherapy, delivered by a team that stays with you.
+          Board-certified psychiatry in Phoenix and across Arizona — ongoing psychiatric care, TMS,
+          SPRAVATO&reg;, ECT and psychotherapy, provided by a team that stays with you.
         </p>
         <a href="tel:<?= $PHONE_LINK ?>" class="mt-5 inline-flex items-center gap-2.5 rounded-full bg-accent-500 px-5 py-3 text-[14.5px] font-medium text-white hover:bg-accent-600 transition">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
@@ -1114,7 +1112,7 @@ $schema = [
         'jobTitle' => $m[1],
       ], $team),
       'availableService' => [
-        ['@type' => 'MedicalTherapy', 'name' => 'Psychiatric evaluation and medication management'],
+        ['@type' => 'MedicalTherapy', 'name' => 'Psychiatric evaluation and ongoing care'],
         ['@type' => 'MedicalTherapy', 'name' => 'Transcranial magnetic stimulation (TMS)'],
         ['@type' => 'MedicalTherapy', 'name' => 'SPRAVATO (esketamine) treatment'],
         ['@type' => 'MedicalTherapy', 'name' => 'Electroconvulsive therapy (ECT)'],
