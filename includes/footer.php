@@ -16,68 +16,70 @@
                 </div>
                 <div class="dm-half">
                     <h3> Have Questions? <br /> We’ll Reply Quickly. </h3>
-                    <div class="gform_wrapper gform_wrapper_2" id="gform_wrapper_2" data-form-id="2">
-                        <div class="gform_anchor" id="gf_2"></div>
-                        <form method="post" enctype="multipart/form-data" id="gform_2" action="https://app.formester.com/forms/YZQjRMoVv/submissions">
-                            <div class="gform_body gform-body gform_fields">
-                                <div class="gform_field gform_field gfield" id="field_2_1">
-                                    <label class="gfield_label gform-field-label" for="input_2_1">Name <span
-                                            class="gfield_required">*</span></label>
-                                    <div class="ginput_container ginput_container_text"><input name="Name" id="input_2_1"
-                                            type="text" value="" class="medium" tabindex="5" placeholder="Enter Name"
-                                            required="required" /></div>
-                                </div>
-                                <div class="gform_field gform_field gfield" id="field_2_2">
-                                    <label class="gfield_label gform-field-label" for="input_2_2">Phone <span
-                                            class="gfield_required">*</span></label>
-                                    <div class="ginput_container ginput_container_phone"><input name="Phone" id="input_2_2"
-                                            type="tel" value="" class="medium" tabindex="6" placeholder="Enter Phone"
-                                            required="required" /></div>
-                                </div>
-                                <div class="gform_field gform_field gfield" id="field_2_3">
-                                    <label class="gfield_label gform-field-label" for="input_2_3">Email <span
-                                            class="gfield_required">*</span></label>
-                                    <div class="ginput_container ginput_container_email"><input name="Email" id="input_2_3"
-                                            type="email" value="" class="medium" tabindex="7" placeholder="Enter Email"
-                                            required="required" /></div>
-                                </div>
-                                <div class="gform_field gform_field gfield" id="field_2_4">
-                                    <label class="gfield_label gform-field-label" for="input_2_4">Message</label>
-                                    <div class="ginput_container ginput_container_textarea"><textarea name="Message"
-                                            id="input_2_4" class="textarea medium" tabindex="8" rows="5" cols="50"
-                                            placeholder="Enter Message"></textarea></div>
-                                </div>
-                                <div class="gform_field gform_field gfield" id="field_2_5">
-                                    <label class="gfield_label gform-field-label">Reason for Inquiry <span
-                                            class="gfield_required">*</span></label>
-                                    <div class="ginput_container ginput_container_select">
-                                        <select name="Reason_for_Inquiry[]" id="input_2_5" class="medium gfield_select"
-                                            tabindex="9">
-                                            <option value="General Inquiry">General Inquiry</option>
-                                            <option value="New Patient">New Patient</option>
-                                            <option value="TMS">TMS</option>
-                                            <option value="Spravato">Spravato</option>
-                                            <option value="Medication Management">Medication Management</option>
-                                            <option value="ECT">ECT</option>
-                                        </select>
+                    <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">
+                        <div class="gform_heading">
+                            <p class="gform_required_legend">"<span class="gfield_required gfield_required_asterisk">*</span>" indicates required fields</p>
+                        </div>
+                        <form action="https://app.formester.com/forms/YZQjRMoVv/submissions" data-formid="2" enctype="multipart/form-data" id="gform_2" method="post" novalidate="">
+                            <div class="gform-body gform_body">
+                                <div class="gform_fields top_label form_sublabel_below description_below validation_below" id="gform_fields_2">
+                                    <div class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_9">
+                                        <label class="gfield_label gform-field-label" for="input_2_9"><span class="gform-field-label__text">Facebook</span></label>
+                                        <div class="ginput_container"><input autocomplete="new-password" id="input_2_9" name="Facebook" type="text" value=""/></div>
+                                        <div class="gfield_description" id="gfield_description_2_9">This field is for validation purposes and should be left unchanged.</div>
                                     </div>
-                                </div>
-                                <div class="gform_field gform_field gfield" id="field_2_6">
-                                    <label class="gfield_label gform-field-label">SMS Opt-in</label>
-                                    <div class="ginput_container ginput_container_radio">
-                                        <span class="gfield_radio gform-field-radio"><input type="radio" name="SMS_Opt_in"
-                                                value="Yes" id="choice_2_6_0" tabindex="10" /><label for="choice_2_6_0"
-                                                class="gfield_radio_label">Yes</label><input type="radio" name="SMS_Opt_in"
-                                                value="No" id="choice_2_6_1" tabindex="11" checked="checked" /><label
-                                                for="choice_2_6_1" class="gfield_radio_label">No</label></span>
+                                    <div class="gfield gfield--type-html gfield--input-type-html gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_5">Please use this form for general information purposes only. DO NOT send personal health information through this form. Specific patient care must be addressed during your appointment.</div>
+                                    <div class="gfield gfield--type-text gfield--input-type-text gf_left_half gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_1">
+                                        <label class="gfield_label gform-field-label" for="input_2_1"><span class="gform-field-label__text">Name</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                        <div class="ginput_container ginput_container_text"><input aria-invalid="false" aria-required="true" class="medium" id="input_2_1" name="Name" type="text" value=""/></div>
                                     </div>
+                                    <div class="gfield gfield--type-phone gfield--input-type-phone gfield--phone-format-standard gf_right_half gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_2">
+                                        <label class="gfield_label gform-field-label" for="input_2_2"><span class="gform-field-label__text">Phone</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                        <div class="ginput_container ginput_container_phone"><input aria-invalid="false" aria-required="true" class="medium" data-mask="(999) 999-9999" id="input_2_2" name="Phone" placeholder="(999) 999-9999" type="tel" value=""/></div>
+                                    </div>
+                                    <div class="gfield gfield--type-email gfield--input-type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_3">
+                                        <label class="gfield_label gform-field-label" for="input_2_3"><span class="gform-field-label__text">Email</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                        <div class="ginput_container ginput_container_email"><input aria-invalid="false" aria-required="true" class="large" id="input_2_3" name="Email" type="email" value=""/></div>
+                                    </div>
+                                    <div class="gfield gfield--type-textarea gfield--input-type-textarea gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_4">
+                                        <label class="gfield_label gform-field-label" for="input_2_4"><span class="gform-field-label__text">Message</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                        <div class="ginput_container ginput_container_textarea"><textarea aria-invalid="false" aria-required="true" class="textarea small" cols="50" id="input_2_4" name="Message" rows="10"></textarea></div>
+                                    </div>
+                                    <div class="gfield gfield--type-multiselect gfield--input-type-multiselect gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_8">
+                                        <label class="gfield_label gform-field-label" for="input_2_8"><span class="gform-field-label__text">Reason for inquiry</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                        <div class="ginput_container ginput_container_multiselect">
+                                            <select aria-invalid="false" aria-required="true" class="large gfield_select" id="input_2_8" name="Reason_for_inquiry[]">
+                                                <option value="Medication Management">Medication Management</option>
+                                                <option value="TMS">TMS</option>
+                                                <option value="Spravato (nasal esketamine)">Spravato (nasal esketamine)</option>
+                                                <option value="ECT">ECT</option>
+                                                <option value="ADHD Assessment/Treatment">ADHD Assessment/Treatment</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <fieldset class="gfield gfield--type-radio gfield--type-choice gfield--input-type-radio field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible gfield--choice-align-vertical" id="field_2_6">
+                                        <legend class="gfield_label gform-field-label"><span class="gform-field-label__text">SMS Opt-in or Opt-out</span></legend>
+                                        <div class="ginput_container ginput_container_radio">
+                                            <div class="gfield_radio" id="input_2_6">
+                                                <div class="gchoice gchoice_2_6_0">
+                                                    <input aria-describedby="gfield_description_2_6" class="gfield-choice-input" id="choice_2_6_0" name="SMS_Opt_in_or_Opt_out" type="radio" value="Opt into receiving SMS"/>
+                                                    <label class="gform-field-label gform-field-label--type-inline" for="choice_2_6_0" id="label_2_6_0">Opt into receiving SMS</label>
+                                                </div>
+                                                <div class="gchoice gchoice_2_6_1">
+                                                    <input class="gfield-choice-input" id="choice_2_6_1" name="SMS_Opt_in_or_Opt_out" type="radio" value="Opt out of receiving SMS"/>
+                                                    <label class="gform-field-label gform-field-label--type-inline" for="choice_2_6_1" id="label_2_6_1">Opt out of receiving SMS</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gfield_description" id="gfield_description_2_6">
+                                            <p>By providing my phone number, I consent to receive SMS text messages for appointment reminders, marketing messages, and general two-way communication. Msg frequency varies. Msg&amp;data rates may apply. Reply HELP for support. Reply STOP to opt out.  <a href="/privacy-policy/">Privacy Policy</a> | <a href="/terms-and-conditions/">Terms and Conditions</a></p>
+                                        </div>
+                                    </fieldset>
                                 </div>
                             </div>
-                            <div class="gform_footer">
-                                <input type="submit" id="gform_submit_button_2" class="gform_button button"
-                                    value="Send Message" tabindex="12" />
+                            <div class="gform-footer gform_footer top_label">
+                                <button class="gform_button button" data-submission-type="submit" id="gform_submit_button_2" type="submit">Submit</button>
                             </div>
-
                         </form>
                     </div>
                 </div>

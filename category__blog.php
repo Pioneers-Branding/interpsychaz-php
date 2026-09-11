@@ -24,6 +24,26 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
+<a class="post-image post-image-left schema-featured" href="/what-are-the-symptoms-of-adhd/" id="post-image-thumbnail" title="What Are the Symptoms of ADHD? Signs, Types &amp; Diagnosis">
+<div class="post-image-thumbnail"><img alt="What Are the Symptoms of ADHD? Signs, Types &amp; Diagnosis" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" fetchpriority="high" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2026/09/what-are-the-symptoms-of-adhd-thumbnail.jpg" srcset="/wp-content/uploads/2026/09/what-are-the-symptoms-of-adhd-thumbnail.jpg 800w" title="" width="800"/></div> </a>
+</div>
+<div class="dm-half post-half">
+<p style="font-size:12px; color:#666; margin-bottom:5px;">September 11, 2026</p>
+<h3 class="title front-view-title"><a href="/what-are-the-symptoms-of-adhd/" title="What Are the Symptoms of ADHD? Signs, Types &amp; Diagnosis">What Are the Symptoms of ADHD? Signs, Types &amp; Diagnosis</a></h3>
+<div class="front-view-content">
+                        Learn about common ADHD symptoms in children, teens, and adults. Discover the differences between inattentive, hyperactive, and combined ADHD, plus diagnostic evaluations and treatment options in Phoenix, AZ.                    </div>
+<div class="readMore">
+<a href="/what-are-the-symptoms-of-adhd/" title="What Are the Symptoms of ADHD? Signs, Types &amp; Diagnosis">
+                [Continue Reading...]            </a>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="dm-post excerpt">
+<div class="blog-article">
+<div class="dm-flex">
+<div class="dm-half post-image">
 <a class="post-image post-image-left schema-featured" href="/is-spravato-covered-by-insurance/" id="post-image-thumbnail" title="Is Spravato Covered by Insurance? Costs &amp; Coverage Guide">
 <div class="post-image-thumbnail"><img alt="Is Spravato Covered by Insurance?" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" fetchpriority="high" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2026/08/spravato_insurance_thumbnail.png" srcset="/wp-content/uploads/2026/08/spravato_insurance_thumbnail.png 800w" title="" width="800"/></div> </a>
 </div>
