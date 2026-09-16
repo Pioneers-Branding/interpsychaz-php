@@ -149,6 +149,25 @@
                         <?php echo SITE_PHONE; ?> </a>
                 </p>
             </div>
+            <div class="dm-fourth">
+                <h3>
+                    Areas We Serve
+                </h3>
+                <details class="footer-locations">
+                    <summary style="cursor: pointer; padding: 5px 0; color: white !important;">View Locations <i class="fa fa-caret-down"></i></summary>
+                    <ul style="list-style: none; padding-left: 0; margin-top: 10px; line-height: 1.8;">
+                        <li><a href="/locations/scottsdale-az/" style="color:white !important; text-decoration:none;">Scottsdale, AZ</a></li>
+                        <li><a href="/locations/tempe-az/" style="color:white !important; text-decoration:none;">Tempe, AZ</a></li>
+                        <li><a href="/locations/glendale-az/" style="color:white !important; text-decoration:none;">Glendale, AZ</a></li>
+                        <li><a href="/locations/mesa-az/" style="color:white !important; text-decoration:none;">Mesa, AZ</a></li>
+                        <li><a href="/locations/chandler-az/" style="color:white !important; text-decoration:none;">Chandler, AZ</a></li>
+                        <li><a href="/locations/gilbert-az/" style="color:white !important; text-decoration:none;">Gilbert, AZ</a></li>
+                        <li><a href="/locations/peoria-az/" style="color:white !important; text-decoration:none;">Peoria, AZ</a></li>
+                        <li><a href="/locations/surprise-az/" style="color:white !important; text-decoration:none;">Surprise, AZ</a></li>
+                        <li><a href="/locations/paradise-valley-az/" style="color:white !important; text-decoration:none;">Paradise Valley, AZ</a></li>
+                    </ul>
+                </details>
+            </div>
         </div>
         <div class="dm-full footer-creds">
             <div class="container">
