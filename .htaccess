@@ -18,6 +18,9 @@ RewriteRule ^for-providers__refer-a-patient/?$ for-providers__refer-a-patient.ph
 RewriteRule ^category__blog/?$ category__blog.php [L,QSA]
 RewriteRule ^category__blog__page__([0-9]+)/?$ category__blog__page__$1.php [L,QSA]
 
+# Locations
+RewriteRule ^locations/([a-zA-Z0-9_-]+)/?$ locations/$1.php [L,QSA]
+
 # Services and Treatments
 RewriteRule ^services/tms-therapy/?$ services__tms-therapy.php [L,QSA]
 RewriteRule ^services/electroconvulsive-therapy-ect/?$ services__electroconvulsive-therapy-ect.php [L,QSA]

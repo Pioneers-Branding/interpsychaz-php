@@ -153,18 +153,24 @@
                 <h3>
                     Areas We Serve
                 </h3>
-                <details class="footer-locations">
-                    <summary style="cursor: pointer; padding: 5px 0; color: white !important;">View Locations <i class="fa fa-caret-down"></i></summary>
+                <style>
+                    .footer-locations summary::-webkit-details-marker { display: none; }
+                    .footer-locations summary { list-style: none; outline: none; user-select: none; }
+                    .footer-loc-link { color: #ffffff !important; text-decoration: none; transition: color 0.2s ease, padding-left 0.2s ease; display: inline-block; }
+                    .footer-loc-link:hover, .footer-loc-link:focus { color: #ef7136 !important; text-decoration: underline; padding-left: 3px; }
+                </style>
+                <details class="footer-locations" open>
+                    <summary style="cursor: pointer; padding: 5px 0; color: white !important; font-weight: 500;">View Locations <i class="fa fa-caret-down"></i></summary>
                     <ul style="list-style: none; padding-left: 0; margin-top: 10px; line-height: 1.8;">
-                        <li><a href="/locations/scottsdale-az/" style="color:white !important; text-decoration:none;">Scottsdale, AZ</a></li>
-                        <li><a href="/locations/tempe-az/" style="color:white !important; text-decoration:none;">Tempe, AZ</a></li>
-                        <li><a href="/locations/glendale-az/" style="color:white !important; text-decoration:none;">Glendale, AZ</a></li>
-                        <li><a href="/locations/mesa-az/" style="color:white !important; text-decoration:none;">Mesa, AZ</a></li>
-                        <li><a href="/locations/chandler-az/" style="color:white !important; text-decoration:none;">Chandler, AZ</a></li>
-                        <li><a href="/locations/gilbert-az/" style="color:white !important; text-decoration:none;">Gilbert, AZ</a></li>
-                        <li><a href="/locations/peoria-az/" style="color:white !important; text-decoration:none;">Peoria, AZ</a></li>
-                        <li><a href="/locations/surprise-az/" style="color:white !important; text-decoration:none;">Surprise, AZ</a></li>
-                        <li><a href="/locations/paradise-valley-az/" style="color:white !important; text-decoration:none;">Paradise Valley, AZ</a></li>
+                        <li><a href="/locations/scottsdale-az/" class="footer-loc-link">Scottsdale, AZ</a></li>
+                        <li><a href="/locations/tempe-az/" class="footer-loc-link">Tempe, AZ</a></li>
+                        <li><a href="/locations/glendale-az/" class="footer-loc-link">Glendale, AZ</a></li>
+                        <li><a href="/locations/mesa-az/" class="footer-loc-link">Mesa, AZ</a></li>
+                        <li><a href="/locations/chandler-az/" class="footer-loc-link">Chandler, AZ</a></li>
+                        <li><a href="/locations/gilbert-az/" class="footer-loc-link">Gilbert, AZ</a></li>
+                        <li><a href="/locations/peoria-az/" class="footer-loc-link">Peoria, AZ</a></li>
+                        <li><a href="/locations/surprise-az/" class="footer-loc-link">Surprise, AZ</a></li>
+                        <li><a href="/locations/paradise-valley-az/" class="footer-loc-link">Paradise Valley, AZ</a></li>
                     </ul>
                 </details>
             </div>

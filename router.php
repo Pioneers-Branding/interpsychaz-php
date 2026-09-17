@@ -79,7 +79,12 @@ if ($cleanSlug === 'for-providers/refer-a-patient' || $cleanSlug === 'refer-a-pa
     $candidates[] = __DIR__ . '/for-providers__refer-a-patient.php';
 }
 
-// (d) Services & Treatments prefixes:
+// (d) Locations, Services & Treatments prefixes:
+if (strpos($cleanSlug, 'locations/') === 0) {
+    $sub = substr($cleanSlug, 10);
+    $candidates[] = __DIR__ . '/locations/' . $sub . '.php';
+    $candidates[] = __DIR__ . '/' . $sub . '.php';
+}
 if (strpos($cleanSlug, 'services/') === 0) {
     $sub = substr($cleanSlug, 9);
     $candidates[] = __DIR__ . '/services__' . $sub . '.php';
