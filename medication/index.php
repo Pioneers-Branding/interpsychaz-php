@@ -111,37 +111,36 @@ $insurers = [
  */
 $compareCols = [
   ['Here',                'Medication management at IPA'],
-  ['A 15-minute med check', 'The standard refill appointment'],
 ];
 $compareRows = [
-  ['First appointment',    ['90 minutes',                                        '15 minutes']],
-  ['Every follow-up',      ['30 minutes',                                        '10 to 15 minutes']],
-  ['What gets reviewed',   ['Your history, every prescription, and how you are actually doing', 'The prescription in front of you']],
-  ['Side effects',         ['Asked about directly, at every visit',              'Raised only if you bring them up']],
-  ['Drug interactions',    ['Reviewed across your whole regimen',                'Usually flagged by the pharmacy']],
-  ['Coming off a drug',    ['A legitimate goal we will plan and taper for',      'Rarely on the agenda']],
-  ['Where',                ['In person, or telehealth anywhere in Arizona',      'In office']],
+  ['First appointment',    ['90 minutes']],
+  ['Every follow-up',      ['Typically 30 minutes']],
+  ['Medication review',    ['Current medications and treatment history']],
+  ['Side effects',         ['Discussed as part of treatment monitoring']],
+  ['Drug interactions',    ['Medication regimen reviewed']],
+  ['Medication changes',   ['Discussed based on your goals and clinical needs']],
+  ['Where',                ['In person or telehealth across Arizona']],
 ];
 
 /* FAQ copy is plain text — it is rendered on the page and re-used verbatim in
    the FAQPage structured data below, so it must not carry markup. */
 $faqs = [
   ['Do you take my insurance?',
-   'Interventional Psychiatry of Arizona works with most major insurance plans. Coverage and copays vary by plan, so our team verifies your benefits before your first appointment and tells you what you will owe.'],
+   'Interventional Psychiatry of Arizona works with many major insurance plans. Coverage and patient responsibility vary by plan. Our team can verify your benefits before your first appointment and review the available coverage information with you.'],
   ['Will I owe anything out of pocket?',
    'That depends on your plan — a deductible, copay or coinsurance may still apply. Our team verifies your benefits before your first appointment and tells you what your policy covers, so there are no surprises. Self-pay options are available; ask us on the first call.'],
   ['Why is the first appointment 90 minutes?',
-   'Because a medication plan is only as good as the history behind it. The initial evaluation covers your mental health history, every medication you have tried and are currently taking, medical factors, side effects and your goals. That is what lets us tailor a plan rather than guess at one.'],
+   'Because a medication plan is only as good as the history behind it. The initial evaluation covers your mental health history, every medication you have tried and are currently taking, medical factors, side effects and your goals. This allows your clinician to develop an individualized treatment plan based on a more complete clinical picture.'],
   ['Can I do this by telehealth?',
-   'Yes. Evaluations, medication management and follow-up visits can be done virtually anywhere in Arizona. Some patients do the first appointment in person and everything after that from home.'],
+   'Yes. Evaluations, medication management and follow-up visits may be available by telehealth for patients located in Arizona.'],
   ['Do I need a referral to be seen?',
-   'No referral is required to schedule with us. If you are already working with a therapist or primary care provider, we are glad to coordinate so everyone stays aligned.'],
+   'No referral is required to schedule with us, although individual insurance plan requirements may vary. If you are already working with a therapist or primary care provider, we are glad to coordinate so everyone stays aligned.'],
   ['Can you take over prescriptions I am already on?',
-   'Yes. Taking over an existing regimen — including a complicated one built up over years, or one started by a provider you no longer see — is routine for us. Bring your current bottles or a pharmacy list to the first visit.'],
+   'Our clinicians can review your current medication regimen and discuss whether continuing or adjusting those medications is clinically appropriate. Bring your current medication bottles or a pharmacy medication list to your first visit.'],
   ['What if I want to come off a medication rather than add one?',
-   'That is a legitimate goal and we plan for it. Stopping a psychiatric medication safely usually means a structured taper with monitoring, not simply stopping — which is exactly the kind of thing regular follow-ups are for.'],
-  ['What conditions do you prescribe for?',
-   'Depression and treatment-resistant depression, anxiety and panic, bipolar disorder, PTSD and trauma, OCD, schizophrenia and psychosis including long-acting injectables, ADHD, insomnia, substance use, and geriatric psychiatry.'],
+   'Reducing or discontinuing a medication may be appropriate depending on your individual circumstances. Your clinician can discuss your goals and, when appropriate, develop a monitored tapering plan rather than stopping medication abruptly.'],
+  ['What conditions do you treat?',
+   'Our team provides psychiatric evaluation and medication management for conditions including depression, treatment-resistant depression, anxiety and panic disorders, bipolar disorder, PTSD, OCD, schizophrenia and other psychotic disorders, ADHD, insomnia and substance use disorders. We also provide care for patients with complex medication needs and geriatric psychiatric concerns'],
 ];
 
 /* Verbatim Google reviews. Dates are the month each was posted, so they don't
@@ -566,7 +565,7 @@ tailwind.config = {
         $trust = [
           ['Board-certified',   '15+ years of psychiatric practice'],
           ['No referral needed', 'Book directly with us'],
-          ['Telehealth ready',  'Anywhere in Arizona'],
+          ['Telehealth available',  'Anywhere in Arizona'],
           ['Insurance verified', 'Before your first appointment'],
         ];
         foreach ($trust as [$t, $s]): ?>
@@ -595,8 +594,7 @@ tailwind.config = {
         Four reasons people book a medication review.
       </h2>
       <p class="mt-4 text-[15.5px] sm:text-[17px] leading-relaxed text-brand-900/60 font-light">
-        None of them require anything to have gone dramatically wrong. Most of the time it is just
-        that nobody has had the time to look at the whole picture in a while.
+        Medication needs can change over time. Sometimes what is needed is a fresh look at the full picture — your medications, symptoms, side effects and goals.
       </p>
     </div>
 
@@ -607,13 +605,13 @@ tailwind.config = {
          'The worst days are gone, but you would not call it better. That gap is worth treating, not tolerating.',
          'M4 14a8 8 0 0 1 16 0M12 14v6M9 20h6'],
         ['The side effects are the problem',
-         'Weight, sleep, libido, flatness. You stopped mentioning them because nothing changed when you did.',
+         'Weight, sleep, libido, emotional flatness. Side effects deserve to be considered as part of the overall treatment plan.',
          'M12 9v4.5M12 17h.01M10.3 3.9 2.6 17.3A2 2 0 0 0 4.3 20.3h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z'],
         ['The regimen just grew',
-         'One drug added at a time, over years, by different prescribers — and nobody has reviewed the whole list since.',
+         'One medication added at a time, sometimes over years or across different prescribers. A comprehensive review can help make sure the full regimen still makes sense together.',
          'M4 7h16v12H4V7Zm4-3h8v3H8V4Zm-1 8h10M7 15h6'],
-        ['You want off something',
-         'Stopping safely takes a structured taper and monitoring. It is a real goal, and we will plan for it.',
+        ['You want to reduce or stop a medication',
+         'When clinically appropriate, reducing or stopping a psychiatric medication may involve a structured taper and ongoing monitoring. We can discuss your goals and develop a plan with you.',
          'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z M8.5 8.5l7 7'],
       ];
       foreach ($signs as $i => [$h, $p, $icon]): ?>
@@ -633,14 +631,14 @@ tailwind.config = {
     <!-- conditions, as a compact chip row rather than its own band -->
     <div class="reveal mt-6 rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
       <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-        <h3 class="font-display text-[19px] sm:text-[21px] tracking-tight text-brand-900">What we prescribe for</h3>
-        <p class="text-[13.5px] text-brand-900/45">Adults, teens and geriatric patients</p>
+        <h3 class="font-display text-[19px] sm:text-[21px] tracking-tight text-brand-900">Conditions we treat</h3>
+        <p class="text-[13.5px] text-brand-900/45">Adults, young adults and geriatric patients</p>
       </div>
       <ul class="mt-4 flex flex-wrap gap-1.5 sm:gap-2">
         <?php foreach ([
-          'Depression','Treatment-resistant depression','Anxiety &amp; panic','Bipolar disorder',
-          'PTSD &amp; trauma','OCD','Schizophrenia &amp; psychosis','Long-acting injectables',
-          'ADHD','Insomnia','Substance use','Geriatric psychiatry',
+          'Depression','Treatment-resistant depression','Anxiety & Panic Disorders','Bipolar disorder',
+          'PTSD &amp; trauma','OCD','Schizophrenia &amp; psychosis',
+          'ADHD','Insomnia','Substance use',
         ] as $c): ?>
         <li class="rounded-full bg-sand px-3 py-1.5 text-[13px] text-brand-900/70"><?= $c ?></li>
         <?php endforeach; ?>
@@ -678,13 +676,13 @@ tailwind.config = {
         <ol class="mt-8 grid sm:grid-cols-2 gap-3.5 sm:gap-4">
           <?php
           $manage = [
-            ['Drug interactions',   'Checked across every prescription you are taking, not just the ones we wrote.',
+            ['Drug interactions',   'Reviewed across your medication regimen, including medications prescribed by other providers.',
              'M7 5.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M21 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M14 18.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M6.6 7.1l10 1.6 M18.4 11.2 13.3 17'],
-            ['Side effects',        'Identified early and actively managed, rather than treated as the price of feeling better.',
+            ['Side effects',        'Reviewed throughout treatment and addressed as part of your medication plan.',
              'M12 9v4.5M12 17h.01M10.3 3.9 2.6 17.3A2 2 0 0 0 4.3 20.3h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z'],
-            ['Dosage adjustments',  'Tuned to what is actually happening for you — the effective dose is rarely the starting one.',
+            ['Dosage adjustments',  'Adjusted when clinically appropriate based on your response, symptoms and side effects.',
              'M5 12h14M5 6h14M5 18h14 M9 4v4M15 10v4M11 16v4'],
-            ['Ongoing evaluation',  'Tracked at every visit so a plan that stops working gets changed, not repeated.',
+            ['Ongoing evaluation',  'Your response is reviewed at follow-up visits so your treatment plan can be adjusted when clinically appropriate.',
              'M12 7v5l3 2M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z'],
           ];
           foreach ($manage as $i => [$h, $p, $icon]): ?>
@@ -710,8 +708,7 @@ tailwind.config = {
         <div class="mt-3.5 rounded-2xl border border-black/[0.07] bg-cream px-5 py-4">
           <p class="text-[14px] leading-relaxed text-brand-900/60">
             <span class="font-medium text-brand-900">Bring your bottles.</span>
-            Or a pharmacy printout. Taking over a regimen that grew over years — including one
-            started by a provider you no longer see — is routine for us.
+            Or bring a current medication list or pharmacy printout. This helps our team accurately review medications prescribed now or in the past.
           </p>
         </div>
       </div>
@@ -727,8 +724,7 @@ tailwind.config = {
           Why the appointment length matters.
         </h3>
         <p class="mt-3 text-[15px] sm:text-[15.5px] leading-relaxed text-cream/60 font-light max-w-2xl">
-          The standard psychiatric refill visit runs about fifteen minutes. Here is what changes
-          when it doesn't.
+A longer medication-management visit creates more time to review the factors that can affect your treatment plan. Here's what we make time for.
         </p>
 
         <!-- Phones and tablets: one card per row, so nothing scrolls sideways. -->
@@ -756,14 +752,14 @@ tailwind.config = {
           <?php endforeach; ?>
         </div>
 
-        <!-- Large screens: the real table, where both columns fit at once. -->
+        <!-- Large screens: overview table of medication management at IPA. -->
         <table class="hidden lg:table w-full mt-8 border-separate border-spacing-0 text-left">
-          <caption class="sr-only">Medication management at Interventional Psychiatry of Arizona compared with a standard 15-minute med check</caption>
+          <caption class="sr-only">Medication management at Interventional Psychiatry of Arizona</caption>
           <thead>
             <tr>
-              <th scope="col" class="w-[24%] pb-5 pr-6"><span class="sr-only">Attribute</span></th>
+              <th scope="col" class="w-[28%] pb-5 pr-6"><span class="sr-only">Attribute</span></th>
               <?php foreach ($compareCols as $c => [$colName, $colSub]): ?>
-              <th scope="col" class="w-[38%] px-6 pb-5 align-bottom <?= $c === 0 ? 'rounded-t-2xl bg-accent-500/15 pt-6' : '' ?>">
+              <th scope="col" class="w-[72%] px-6 pb-5 align-bottom <?= $c === 0 ? 'rounded-t-2xl bg-accent-500/15 pt-6' : '' ?>">
                 <span class="block font-display text-[22px] tracking-tight <?= $c === 0 ? 'text-cream' : 'text-cream/80' ?>"><?= $colName ?></span>
                 <span class="mt-1 block text-[12.5px] <?= $c === 0 ? 'text-accent-400' : 'text-cream/40' ?>"><?= $colSub ?></span>
               </th>
@@ -798,8 +794,7 @@ tailwind.config = {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
           </a>
           <p class="text-[14px] leading-relaxed text-cream/45 max-w-md">
-            And if medication alone turns out not to be the answer, TMS, SPRAVATO&reg; and ECT are
-            in the same practice — no referral maze, no starting over.
+           If medication alone is not providing enough improvement, additional treatment options including TMS, SPRAVATO® and ECT are available within the practice.
           </p>
         </div>
       </div>
@@ -824,13 +819,13 @@ tailwind.config = {
         <?php
         $steps = [
           ['A short first call',
-           'Tell us briefly what you are on and what isn’t working. We confirm we are the right fit and check your insurance benefits before you commit to anything.'],
+           'Tell us briefly what you&#8217;re looking for help with and your current medication situation. We can discuss whether our services may be a good fit and verify your insurance benefits before scheduling.'],
           ['The 90-minute evaluation',
-           'Your full history, every medication you have tried and are taking now, medical factors, side effects and what you want to be different. In person or by telehealth.'],
+           'We review your history, medications you have tried and are currently taking, relevant medical factors, side effects and your treatment goals. Available in person or by telehealth.'],
           ['A plan you understand',
-           'What we are changing, why, what to expect and when. Including what we are stopping — not every plan adds something.'],
+           'We explain what we recommend, why we recommend it and what to expect. When clinically appropriate, the plan may include reducing or discontinuing a medication rather than adding another.'],
           ['30-minute follow-ups',
-           'Long enough to talk about how it is actually going. We adjust as we track your response rather than waiting months to reassess.'],
+           'Follow-up visits give us time to review how you&rsquo;re responding, discuss side effects or concerns and adjust the treatment plan when appropriate.'],
         ];
         foreach ($steps as $i => [$h, $p]): ?>
         <div class="reveal relative flex gap-4 lg:block" style="transition-delay:<?= $i * 70 ?>ms">
@@ -860,7 +855,7 @@ tailwind.config = {
           $bring = [
             ['Your current bottles', 'Or a printout from your pharmacy — names and doses.'],
             ['What you have tried',  'Anything you stopped, and why, even years ago.'],
-            ['One thing to change',  'The symptom that would matter most to you if it lifted.'],
+            ['One thing to change',  'The symptom or concern you would most like treatment to improve.'],
           ];
           foreach ($bring as [$h, $p]): ?>
           <li>
@@ -886,9 +881,9 @@ tailwind.config = {
         <?php
         $ambience = [
           ['care',      'Time to actually be heard'],
-          ['reception', 'Reception, never a crowd'],
+          ['reception', 'A comfortable reception area'],
           ['room',      'Our treatment rooms'],
-          ['tms',       'TMS and ECT down the same hall'],
+          ['tms',       'Our TMS treatment area'],
         ];
         foreach ($ambience as [$slot, $caption]): ?>
         <figure class="group relative snap-start shrink-0 w-[11.5rem] sm:w-[13.5rem] overflow-hidden rounded-xl sm:rounded-2xl ring-1 ring-black/5 aspect-[4/3]">
@@ -921,14 +916,12 @@ tailwind.config = {
       <div class="lg:col-span-7">
         <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Insurance</p>
         <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[2.9rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-          Chances are, we take your plan.
+        We work with many major insurance plans.
         </h2>
       </div>
       <div class="lg:col-span-5">
         <p class="text-[15.5px] sm:text-[16px] leading-relaxed text-brand-900/60 font-light">
-          Interventional Psychiatry of Arizona works with most major insurance plans. Our team
-          verifies your benefits before your first appointment, so you know where you stand before
-          anything begins.
+         Interventional Psychiatry of Arizona works with many major insurance plans. Our team verifies your benefits before your first appointment so you can better understand your coverage before care begins.
         </p>
       </div>
     </div>
@@ -1006,8 +999,7 @@ tailwind.config = {
           A different kind of psychiatric practice.
         </h2>
         <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-brand-900/60 font-light">
-          We built this clinic around the patients who are hardest to help — and around the belief
-          that complex cases deserve more time, not less.
+          We built this clinic to provide thoughtful care for patients with complex treatment needs — and around the belief that complex cases deserve more time, not less.
         </p>
         <figure class="mt-6 overflow-hidden rounded-2xl ring-1 ring-black/5">
           <img src="<?= $img('review', 900) ?>" alt="<?= $alt('review') ?>" loading="lazy" decoding="async"
@@ -1019,9 +1011,9 @@ tailwind.config = {
         <?php
         $why = [
           ['Time to actually be heard', 'Appointments are built for real conversation. We ask about sleep, work, relationships and side effects — not just a symptom checklist.'],
-          ['Complex cases welcome',     'Serious mental illness, co-occurring substance use, geriatric complexity and prior treatment failures are the work we do every day.'],
-          ['Every option under one roof','If medication alone isn’t enough, TMS, SPRAVATO® and ECT are coordinated by the same team who already know your story.'],
-          ['Insurance-forward',         'Most major plans are accepted, and our team verifies benefits and handles prior authorizations before treatment begins.'],
+          ['Complex cases welcome',     'Our team works with complex psychiatric needs, including serious mental illness, co-occurring substance use, geriatric complexity and conditions that have not responded adequately to previous treatment.'],
+          ['Every option under one roof','If medication alone isn’t providing enough improvement, additional treatment options including TMS, SPRAVATO® and ECT are available within the practice and can be coordinated as part of your care.'],
+          ['Insurance-forward',         'We work with many major insurance plans, and our team can verify benefits and assist with prior authorization requirements when applicable.'],
         ];
         foreach ($why as $i => [$h, $p]): ?>
         <div>
@@ -1145,7 +1137,7 @@ tailwind.config = {
       <div class="lg:col-span-6 reveal">
         <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-400 font-semibold">Get started</p>
         <h2 class="mt-3 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[2.9rem] leading-[1.1] tracking-tightest font-light">
-          Let's find what finally works.
+         Let's find the right next step.
         </h2>
         <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-cream/65 font-light max-w-md">
           It starts with a conversation — no commitment, no pressure, and an honest answer about
@@ -1204,8 +1196,7 @@ tailwind.config = {
         <img src="<?= $LOGO_LIGHT ?>" alt="Interventional Psychiatry of Arizona — Building Strong Minds"
              width="545" height="228" loading="lazy" class="h-14 sm:h-16 w-auto">
         <p class="mt-5 text-[14px] leading-relaxed max-w-sm">
-          Psychiatric medication management in Phoenix and across Arizona — alongside TMS,
-          SPRAVATO&reg;, ECT and psychotherapy, delivered by a team that stays with you.
+          Psychiatric medication management in Phoenix and by telehealth across Arizona, with additional treatment options including TMS, SPRAVATO®, ECT and psychotherapy.
         </p>
         <a href="tel:<?= $PHONE_LINK ?>" class="mt-5 inline-flex items-center gap-2.5 rounded-full bg-accent-500 px-5 py-3 text-[14.5px] font-medium text-white hover:bg-accent-600 transition">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
