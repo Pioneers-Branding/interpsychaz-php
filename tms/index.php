@@ -378,7 +378,7 @@ tailwind.config = {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-[18px] w-[18px]"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
         </a>
         <a href="#book" class="nav-cta hidden sm:inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-brand-900 px-5 py-2.5 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shadow-sm hover:shadow-md">
-          See if I qualify
+          See If I Qualify
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
         </a>
         <button id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"
@@ -396,7 +396,7 @@ tailwind.config = {
         <a href="#session"   class="nav-link px-3 py-3 rounded-lg hover:bg-sand">A session</a>
         <a href="#insurance" class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Insurance</a>
         <a href="#faq"       class="nav-link px-3 py-3 rounded-lg hover:bg-sand">FAQ</a>
-        <a href="#book"      class="mt-1 px-3 py-3 rounded-lg bg-accent-500 text-center font-medium text-white">See if I qualify</a>
+        <a href="#book"      class="mt-1 px-3 py-3 rounded-lg bg-accent-500 text-center font-medium text-white">See If I Qualify</a>
       </div>
     </div>
   </nav>
@@ -440,12 +440,12 @@ tailwind.config = {
 
         <div class="mt-7 flex flex-col sm:flex-row gap-3">
           <a href="#book" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20">
-            See if I qualify
+            See If I Qualify
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
           </a>
           <a href="tel:<?= $PHONE_LINK ?>" class="inline-flex items-center justify-center gap-2.5 rounded-full border border-white/20 bg-white/5 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-cream hover:bg-white/10 transition backdrop-blur">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
-            <span class="sm:hidden">Call us</span>
+            <span class="sm:hidden">Call Us</span>
             <span class="hidden sm:inline">Call <?= $PHONE_DISPLAY ?></span>
           </a>
         </div>
@@ -554,7 +554,7 @@ tailwind.config = {
             <input type="hidden" name="Interested in" value="TMS">
 
             <button type="submit" class="group mt-5 w-full inline-flex items-center justify-center gap-2.5 rounded-full bg-cream px-6 py-4 text-[15.5px] font-medium text-brand-900 hover:bg-white transition shadow-lg shadow-black/25">
-              Check my eligibility
+              Check My Eligibility
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
             </button>
 
@@ -679,7 +679,7 @@ tailwind.config = {
         That is exactly what the first call is for — and it is free.
       </p>
       <a href="#book" class="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-900 px-6 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shrink-0">
-        Check my eligibility
+        Check My Eligibility
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -833,7 +833,7 @@ tailwind.config = {
 
         <div class="mt-7 flex flex-col sm:flex-row sm:items-center gap-4">
           <a href="#book" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-6 py-3.5 text-[15px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20 shrink-0">
-            See if I qualify
+            See If I Qualify
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
           </a>
           <p class="text-[14px] leading-relaxed text-cream/45 max-w-md">
@@ -977,7 +977,7 @@ If you need to miss a session, contact our team. We will work with you to adjust
 
     <div class="reveal mt-8 text-center">
       <a href="#book" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-7 py-4 text-[15.5px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20">
-        See if I qualify
+        See If I Qualify
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
       </a>
       <p class="mt-3.5 text-[13.5px] text-brand-900/45">
@@ -1055,7 +1055,7 @@ If you need to miss a session, contact our team. We will work with you to adjust
         Tell us the carrier and we will find out for you, before you decide anything.
       </p>
       <a href="tel:<?= $PHONE_LINK ?>" class="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-900 px-6 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shrink-0">
-        Verify my coverage
+        Verify My Coverage
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -1105,7 +1105,7 @@ If you need to miss a session, contact our team. We will work with you to adjust
             <svg viewBox="0 0 24 24" class="ml-auto h-5 w-5 shrink-0 text-accent-400/50" fill="currentColor"><path d="M9.5 6C6.5 7.5 5 10.2 5 14v4h6v-6H8.2c.2-2 1.2-3.4 3-4.3L9.5 6Zm9 0C15.5 7.5 14 10.2 14 14v4h6v-6h-2.8c.2-2 1.2-3.4 3-4.3L18.5 6Z"/></svg>
           </div>
           <blockquote class="quote mt-4 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/70 font-light"><?= $body ?></blockquote>
-          <button type="button" class="q-more mt-2.5 self-start text-[13.5px] font-medium text-accent-600 hover:underline">Read full review</button>
+          <button type="button" class="q-more mt-2.5 self-start text-[13.5px] font-medium text-accent-600 hover:underline">Read Full Review</button>
           <figcaption class="mt-auto pt-5 flex items-center justify-between gap-3">
             <span class="text-[12px] text-brand-900/40">Google review</span>
             <span class="rounded-full bg-sand px-2.5 py-1 text-[11.5px] text-brand-900/60 shrink-0"><?= $tag ?></span>
@@ -1133,7 +1133,7 @@ If you need to miss a session, contact our team. We will work with you to adjust
           <a href="tel:<?= $PHONE_LINK ?>" class="mt-1.5 block font-display text-[24px] sm:text-[26px] tracking-tight text-brand-900 hover:text-accent-600 transition"><?= $PHONE_DISPLAY ?></a>
           <p class="mt-1 text-[13.5px] text-brand-900/45">Monday to Friday, 8am–5pm</p>
           <a href="#book" class="group mt-4 inline-flex items-center gap-2 rounded-full bg-brand-900 px-5 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition">
-            See if I qualify
+            See If I Qualify
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -1184,7 +1184,7 @@ If you need to miss a session, contact our team. We will work with you to adjust
             Call <?= $PHONE_DISPLAY ?>
           </a>
           <a href="#book" class="group inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-cream hover:bg-white/10 transition backdrop-blur">
-            See if I qualify
+            See If I Qualify
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:-translate-y-0.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
           </a>
         </div>
@@ -1208,7 +1208,7 @@ If you need to miss a session, contact our team. We will work with you to adjust
                class="group block text-[14px] leading-snug text-cream/70 hover:text-cream transition">
               <span class="text-cream"><?= $ADDRESS_L1 ?></span><br><?= $ADDRESS_L2 ?>
               <span class="mt-1.5 flex items-center gap-1.5 text-[13px] text-accent-400">
-                Get directions
+                Get Directions
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3 w-3 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
               </span>
             </a>
@@ -1247,7 +1247,7 @@ If you need to miss a session, contact our team. We will work with you to adjust
           <li><a href="#session"   class="hover:text-accent-400 transition">A session</a></li>
           <li><a href="#insurance" class="hover:text-accent-400 transition">Insurance</a></li>
           <li><a href="#faq"       class="hover:text-accent-400 transition">FAQ</a></li>
-          <li><a href="#book"      class="hover:text-accent-400 transition">See if I qualify</a></li>
+          <li><a href="#book"      class="hover:text-accent-400 transition">See If I Qualify</a></li>
         </ul>
       </div>
 
@@ -1287,7 +1287,7 @@ If you need to miss a session, contact our team. We will work with you to adjust
       Call
     </a>
     <a href="#book" class="flex-[1.5] inline-flex items-center justify-center gap-2 rounded-full bg-accent-500 px-4 py-3.5 text-[14.5px] font-medium text-white">
-      See if I qualify
+      See If I Qualify
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
     </a>
   </div>
@@ -1411,14 +1411,14 @@ document.querySelectorAll('.faq-btn').forEach(btn => {
   window.addEventListener('resize', sync);
   sync();
 
-  /* Only offer "Read full review" on the reviews that are actually clipped. */
+  /* Only offer "Read Full Review" on the reviews that are actually clipped. */
   track.querySelectorAll('.t-card').forEach(card => {
     const quote = card.querySelector('.quote');
     const more  = card.querySelector('.q-more');
     if (quote.scrollHeight > quote.clientHeight + 2) card.classList.add('q-clamped');
     more.addEventListener('click', () => {
       card.classList.toggle('q-open');
-      more.textContent = card.classList.contains('q-open') ? 'Show less' : 'Read full review';
+      more.textContent = card.classList.contains('q-open') ? 'Show Less' : 'Read Full Review';
       sync();
     });
   });

@@ -122,7 +122,7 @@ $compareCols = [
 $compareRows = [
   ['Time to relief',     ['Hours to days',                      'Typically 6–12 weeks per trial', 'Over a course of sessions']],
   ['How it is given',    ['A nasal spray you self-administer',  'A pill you take daily at home',  'Anesthesia and an induced seizure']],
-  ['Sedation',           ['None — Sedation can occur; patients are monitored after administration',              'None',                           'General anesthesia every session']],
+  ['Sedation',           ['Sedation can occur; patients are monitored after administration',              'None',                           'General anesthesia every session']],
   ['What it targets',    ['Glutamate and NMDA receptors',       'Serotonin and norepinephrine',   'A controlled seizure is induced under general anesthesia']],
   ['Memory effects',     ['Not typical',                        'Not typical',                    'Memory loss is a known risk']],
   ['Time at the clinic', ['~2 hours of monitoring per session', 'None — taken at home',           'Varies by treatment setting']],
@@ -135,19 +135,20 @@ $faqs = [
   ['Is SPRAVATO® covered by my insurance?',
    'For most patients, yes. The majority of commercial plans, Medicare and many Medicaid programs — including Arizona’s AHCCCS — cover SPRAVATO® for treatment-resistant depression. Coverage is not automatic: insurers require a prior authorization first. Our care coordinators handle that paperwork and talk to your insurer directly.'],
   ['Will I owe anything out of pocket?',
-   'There are two parts to the bill: the medication itself, and the two-hour observation visit, which is billed under your medical benefits. After insurance you may still owe a deductible, copay or coinsurance. We verify your benefits and tell you what your policy covers before treatment begins. Manufacturer savings programs may also apply for eligible patients with commercial insurance, and our team can check whether you qualify.'],
+   'Your out-of-pocket cost depends on your insurance plan and may include a deductible, copay or coinsurance for the medication and treatment-related services. Before treatment begins, our team will verify your benefits and review your expected patient responsibility with you.
+Eligible patients with commercial insurance may also qualify for manufacturer savings or rebate programs that can help with certain SPRAVATO® medication and treatment-observation costs. Our team can help you determine whether you may be eligible.'],
   ['How quickly does SPRAVATO® work?',
-   'Much faster than a standard antidepressant. Where oral medications typically take weeks or months to show an effect, many patients notice a reduction in symptoms within 24 hours to a few days of their first treatment. That speed is why it is used for severe depression and for depressive symptoms with suicidal thoughts.'],
-  ['What happens during a treatment session?',
    'Response to SPRAVATO® varies. Some patients may experience improvement earlier in treatment, while others may require multiple treatment sessions before noticing a change. Your clinical team will monitor your symptoms throughout treatment and evaluate your individual response.'],
-  ['Can I drive myself home?',
+  ['What happens during a treatment session?',
    'You self-administer SPRAVATO® nasal spray under the supervision of a healthcare provider at our REMS-certified treatment center. After administration, you will be monitored for at least two hours. Your healthcare provider will monitor you for potential side effects and determine when you are clinically stable and ready to leave. You will need to arrange transportation home and should not drive or operate machinery until the next day, after a full night’s sleep.'],
+  ['Can I drive myself home?',
+   'No. You will need to arrange transportation home after each SPRAVATO® treatment. You should not drive or operate machinery until the next day, after a full night’s sleep. Your healthcare provider will determine when you are clinically stable and ready to leave the treatment center.'],
   ['What are the common side effects?',
    'Dissociation, dizziness, fatigue, nausea or vomiting, a feeling of being drunk or euphoric, anxiety or numbness, and a spinning sensation. They usually begin shortly after the dose and resolve the same day, which is what the monitoring period is for.'],
   ['How long does approval take, and what if I am denied?',
    'Prior authorization usually takes three days to two weeks. Denials do happen, most often because of missing documentation — if that happens, our team files the appeal on your behalf with the additional clinical evidence.'],
   ['Do I need a referral to be seen?',
-   'Prior authorization timelines vary by insurance plan. If authorization is denied, our team will review the reason and discuss available next steps, including submitting additional documentation or an appeal when appropriate.'],
+   'No referral is required to schedule an appointment with Interventional Psychiatry of Arizona. However, referral or authorization requirements may vary depending on your insurance plan and the services you receive. Our team can verify your benefits and any applicable requirements before your appointment.'],
 ];
 
 /* Verbatim Google reviews. Dates are the month each was posted, so they don't
@@ -377,7 +378,7 @@ tailwind.config = {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-[18px] w-[18px]"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
         </a>
         <a href="#eligibility" class="nav-cta hidden sm:inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-brand-900 px-5 py-2.5 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shadow-sm hover:shadow-md">
-          Check my eligibility
+          Check My Eligibility
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
         </a>
         <button id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"
@@ -396,7 +397,7 @@ tailwind.config = {
         <a href="#insurance"   class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Insurance</a>
         <a href="#safety"      class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Safety</a>
         <a href="#faq"         class="nav-link px-3 py-3 rounded-lg hover:bg-sand">FAQ</a>
-        <a href="#eligibility" class="mt-1 px-3 py-3 rounded-lg bg-accent-500 text-center font-medium text-white">Check my eligibility</a>
+        <a href="#eligibility" class="mt-1 px-3 py-3 rounded-lg bg-accent-500 text-center font-medium text-white">Check My Eligibility</a>
       </div>
     </div>
   </nav>
@@ -435,12 +436,12 @@ tailwind.config = {
 
         <div class="mt-7 flex flex-col sm:flex-row gap-3">
           <a href="#eligibility" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20">
-            Check if I qualify
+            Check If I Qualify
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
           </a>
           <a href="tel:<?= $PHONE_LINK ?>" class="inline-flex items-center justify-center gap-2.5 rounded-full border border-white/20 bg-white/5 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-cream hover:bg-white/10 transition backdrop-blur">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
-            <span class="sm:hidden">Call us</span>
+            <span class="sm:hidden">Call Us</span>
             <span class="hidden sm:inline">Call <?= $PHONE_DISPLAY ?></span>
           </a>
         </div>
@@ -547,7 +548,7 @@ tailwind.config = {
             <input type="hidden" name="Interested in" value="Spravato (nasal esketamine)">
 
             <button type="submit" class="group mt-5 w-full inline-flex items-center justify-center gap-2.5 rounded-full bg-cream px-6 py-4 text-[15.5px] font-medium text-brand-900 hover:bg-white transition shadow-lg shadow-black/25">
-              Check my eligibility
+              Check My Eligibility
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
             </button>
 
@@ -636,7 +637,7 @@ tailwind.config = {
         That is exactly what the first call is for.
       </p>
       <a href="#eligibility" class="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-900 px-6 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shrink-0">
-        Check my eligibility
+        Check My Eligibility
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -803,7 +804,7 @@ tailwind.config = {
 
       <div class="mt-7 flex flex-col sm:flex-row sm:items-center gap-4">
         <a href="#eligibility" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-6 py-3.5 text-[15px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20 shrink-0">
-          See if it's right for me
+          See If It's Right for Me
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
         </a>
         <p class="text-[14px] leading-relaxed text-cream/45 max-w-md">
@@ -911,7 +912,7 @@ tailwind.config = {
 
     <div class="reveal mt-8 text-center">
       <a href="#eligibility" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-7 py-4 text-[15.5px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20">
-        Start with an eligibility check
+        Start With an Eligibility Check
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
       </a>
       <p class="mt-3.5 text-[13.5px] text-brand-900/45">
@@ -991,7 +992,7 @@ Many commercial insurance plans, Medicare and some Medicaid plans may provide co
 If coverage is denied, our team will review the reason and discuss available next steps, including an appeal when appropriate.
       </p>
       <a href="tel:<?= $PHONE_LINK ?>" class="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-900 px-6 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shrink-0">
-        Verify my coverage
+        Verify My Coverage
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -1120,7 +1121,7 @@ If coverage is denied, our team will review the reason and discuss available nex
             <svg viewBox="0 0 24 24" class="ml-auto h-5 w-5 shrink-0 text-accent-400/50" fill="currentColor"><path d="M9.5 6C6.5 7.5 5 10.2 5 14v4h6v-6H8.2c.2-2 1.2-3.4 3-4.3L9.5 6Zm9 0C15.5 7.5 14 10.2 14 14v4h6v-6h-2.8c.2-2 1.2-3.4 3-4.3L18.5 6Z"/></svg>
           </div>
           <blockquote class="quote mt-4 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/70 font-light"><?= $body ?></blockquote>
-          <button type="button" class="q-more mt-2.5 self-start text-[13.5px] font-medium text-accent-600 hover:underline">Read full review</button>
+          <button type="button" class="q-more mt-2.5 self-start text-[13.5px] font-medium text-accent-600 hover:underline">Read Full Review</button>
           <figcaption class="mt-auto pt-5 flex items-center justify-between gap-3">
             <span class="text-[12px] text-brand-900/40">Google review</span>
             <span class="rounded-full bg-sand px-2.5 py-1 text-[11.5px] text-brand-900/60 shrink-0"><?= $tag ?></span>
@@ -1147,7 +1148,7 @@ If coverage is denied, our team will review the reason and discuss available nex
           <a href="tel:<?= $PHONE_LINK ?>" class="mt-1.5 block font-display text-[24px] sm:text-[26px] tracking-tight text-brand-900 hover:text-accent-600 transition"><?= $PHONE_DISPLAY ?></a>
           <p class="mt-1 text-[13.5px] text-brand-900/45">Monday to Friday, 8am–5pm</p>
           <a href="#eligibility" class="group mt-4 inline-flex items-center gap-2 rounded-full bg-brand-900 px-5 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition">
-            Check my eligibility
+            Check My Eligibility
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -1198,7 +1199,7 @@ If coverage is denied, our team will review the reason and discuss available nex
             Call <?= $PHONE_DISPLAY ?>
           </a>
           <a href="#eligibility" class="group inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-cream hover:bg-white/10 transition backdrop-blur">
-            Check my eligibility
+            Check My Eligibility
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:-translate-y-0.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
           </a>
         </div>
@@ -1222,7 +1223,7 @@ If coverage is denied, our team will review the reason and discuss available nex
                class="group block text-[14px] leading-snug text-cream/70 hover:text-cream transition">
               <span class="text-cream"><?= $ADDRESS_L1 ?></span><br><?= $ADDRESS_L2 ?>
               <span class="mt-1.5 flex items-center gap-1.5 text-[13px] text-accent-400">
-                Get directions
+                Get Directions
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3 w-3 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
               </span>
             </a>
@@ -1303,7 +1304,7 @@ If coverage is denied, our team will review the reason and discuss available nex
       Call
     </a>
     <a href="#eligibility" class="flex-[1.5] inline-flex items-center justify-center gap-2 rounded-full bg-accent-500 px-4 py-3.5 text-[14.5px] font-medium text-white">
-      Check my eligibility
+      Check My Eligibility
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
     </a>
   </div>
@@ -1427,14 +1428,14 @@ document.querySelectorAll('.faq-btn').forEach(btn => {
   window.addEventListener('resize', sync);
   sync();
 
-  /* Only offer "Read full review" on the reviews that are actually clipped. */
+  /* Only offer "Read Full Review" on the reviews that are actually clipped. */
   track.querySelectorAll('.t-card').forEach(card => {
     const quote = card.querySelector('.quote');
     const more  = card.querySelector('.q-more');
     if (quote.scrollHeight > quote.clientHeight + 2) card.classList.add('q-clamped');
     more.addEventListener('click', () => {
       card.classList.toggle('q-open');
-      more.textContent = card.classList.contains('q-open') ? 'Show less' : 'Read full review';
+      more.textContent = card.classList.contains('q-open') ? 'Show Less' : 'Read Full Review';
       sync();
     });
   });

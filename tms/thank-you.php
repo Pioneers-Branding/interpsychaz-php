@@ -167,7 +167,7 @@ tailwind.config = {
       </a>
       <a href="<?= $BASE ?>/" class="group flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-7 py-4 text-[15.5px] font-medium text-cream hover:bg-white/10 transition backdrop-blur">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:-translate-x-0.5"><path d="M19 12H6M13 5l-7 7 7 7"/></svg>
-        Back to the page
+        Back to the Page
       </a>
     </div>
 
