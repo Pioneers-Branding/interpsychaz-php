@@ -51,6 +51,31 @@ require_once __DIR__ . '/includes/header.php';
 </div>
 </div>
 </article>
+	<section class="gumlet-video-section">
+		<div class="container">
+			<h2>Hear From Our Patients</h2>
+			<div class="gumlet-video-grid">
+				<div class="gumlet-video-frame">
+					<iframe loading="lazy" title="Gumlet video player"
+						src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a20f"
+						referrerpolicy="origin"
+						allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"></iframe>
+				</div>
+				<div class="gumlet-video-frame">
+					<iframe loading="lazy" title="Gumlet video player"
+						src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a210"
+						referrerpolicy="origin"
+						allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"></iframe>
+				</div>
+				<div class="gumlet-video-frame">
+					<iframe loading="lazy" title="Gumlet video player"
+						src="https://play.gumlet.io/embed/6ab227442394588e66b49ee3"
+						referrerpolicy="origin"
+						allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
 <!--< ?php get_sidebar(); ?>-->
 </div><!--#page-->
 
