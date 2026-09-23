@@ -24,7 +24,9 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_page">
 <div class="post-content">
 <div class="container">
+<!-- CharmHealth booking embed disabled: retained for future re-enabling.
 <p><iframe data-lazy-src="https://ehr.charmtracker.com/publicCal.sas?method=getCal&amp;digest=0eb704edbb1dec44faefa8d09f1213a0f2ab9a20247c048016a0a481fcca5433c791341ca9a05ba458dacd7d1a8bb91aa0ae868b6eb0918a" data-rocket-lazyload="fitvidscompatible" frameborder="0" height="1000" loading="lazy" src="about:blank" style="overflow: hidden;" width="100%"><span class="mce_SELRES_start" data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;">ï»¿</span></iframe><noscript><iframe frameborder="0" height="1000" src="https://ehr.charmtracker.com/publicCal.sas?method=getCal&amp;digest=0eb704edbb1dec44faefa8d09f1213a0f2ab9a20247c048016a0a481fcca5433c791341ca9a05ba458dacd7d1a8bb91aa0ae868b6eb0918a" style="overflow: hidden;" width="100%"><span class="mce_SELRES_start" data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;">ï»¿</span></iframe></noscript></p>
+-->
 </div>
 </div>
 </div>

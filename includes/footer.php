@@ -182,7 +182,7 @@
     </div>
 </footer>
 </div>
-<!--Start of Tawk.to Script-->
+<!-- Tawk.to disabled: retained for future re-enabling.
 <script>
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     (function () {
@@ -194,7 +194,7 @@
         s0.parentNode.insertBefore(s1, s0);
     })();
 </script>
-<!--End of Tawk.to Script-->
+-->
 <div aria-labelledby="dmm-cg-title" class="dmm-cg dmm-cg--notice" hidden="" id="dmm-cg" role="region">
     <div class="dmm-cg__panel">
         <div class="dmm-cg__notice">

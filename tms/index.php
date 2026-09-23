@@ -27,10 +27,8 @@ $YEAR          = date('Y');
 $MAPS_CID      = '5987873748282924908';
 $MAPS_LINK     = 'https://maps.app.goo.gl/4DGBt44Sru7zcEqH7';
 
-/* Dedicated Formester form for this page, so TMS leads stay separate from the
-   general enquiry form. The hidden "Source" and "Interested in" fields below
-   travel with every submission. */
-$FORM_ENDPOINT = 'https://app.formester.com/forms/3NQxBAiRe/submissions';
+/* Shared Formester inbox; the hidden leadsource field identifies this LP. */
+$FORM_ENDPOINT = 'https://app.formester.com/forms/thRvisL2m/submissions';
 
 /* Every click scrolls to the form, dials the practice, or submits. The one
    deliberate exception is the directions link on the address in the contact
@@ -551,6 +549,7 @@ tailwind.config = {
               <label>Do not fill this in <input type="text" name="company" tabindex="-1" autocomplete="off"></label>
             </div>
             <input type="hidden" name="Source" value="TMS therapy landing page">
+            <input type="hidden" name="leadsource" value="tms">
             <input type="hidden" name="Interested in" value="TMS">
 
             <button type="submit" class="group mt-5 w-full inline-flex items-center justify-center gap-2.5 rounded-full bg-cream px-6 py-4 text-[15.5px] font-medium text-brand-900 hover:bg-white transition shadow-lg shadow-black/25">
@@ -1066,6 +1065,40 @@ If you need to miss a session, contact our team. We will work with you to adjust
       and are shown solely to indicate plans accepted at this practice; their use does not imply
       endorsement or affiliation.
     </p>
+  </div>
+</section>
+
+<!-- ══════════════════ VIDEO TESTIMONIALS ══════════════════ -->
+<section id="video-testimonials" aria-labelledby="video-testimonials-heading" class="bg-sand py-12 sm:py-14 lg:py-20 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+    <div class="text-center">
+      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Patient experiences</p>
+      <h2 id="video-testimonials-heading" class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] leading-[1.1] tracking-tightest text-brand-900 font-light">Hear From Our Patients</h2>
+    </div>
+    <div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 1" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a20f"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 2" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a210"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 3" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227442394588e66b49ee3"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+    <p class="mt-5 text-center text-[12px] leading-relaxed text-brand-700">Patient experiences vary. Testimonials reflect individual experiences and are not a guarantee of outcome.</p>
   </div>
 </section>
 
