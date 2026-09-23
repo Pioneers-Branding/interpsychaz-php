@@ -110,26 +110,6 @@ $insurers = [
   ['Wellcare By Allwell',               'wellcare-allwell.png'],
 ];
 
-/* ─── COMPARISON ─────────────────────────────────────────────────────────────
- * One source of truth, rendered twice: as stacked cards on phones and as a
- * table from lg up. Whichever is hidden is display:none, so assistive tech and
- * the page's text content only ever see one of them.
- */
-$compareCols = [
-  ['SPRAVATO&reg;',        'Esketamine nasal spray'],
-  ['Oral antidepressants', 'SSRIs, SNRIs and others'],
-  ['ECT',                  'Electroconvulsive therapy'],
-];
-$compareRows = [
-  ['Time to relief',     ['Hours to days',                      'Typically 6–12 weeks per trial', 'Over a course of sessions']],
-  ['How it is given',    ['A nasal spray you self-administer',  'A pill you take daily at home',  'Anesthesia and an induced seizure']],
-  ['Sedation',           ['Sedation can occur; patients are monitored after administration',              'None',                           'General anesthesia every session']],
-  ['What it targets',    ['Glutamate and NMDA receptors',       'Serotonin and norepinephrine',   'A controlled seizure is induced under general anesthesia']],
-  ['Memory effects',     ['Not typical',                        'Not typical',                    'Memory loss is a known risk']],
-  ['Time at the clinic', ['~2 hours of monitoring per session', 'None — taken at home',           'Varies by treatment setting']],
-  ['Driving afterward',  ['Not until the next day',             'Unrestricted',                   'Not the same day']],
-];
-
 /* FAQ copy is plain text — it is rendered on the page and re-used verbatim in the
    FAQPage structured data below, so it must not carry markup. */
 $faqs = [
@@ -427,12 +407,11 @@ tailwind.config = {
         </div>
 
         <h1 class="mt-5 sm:mt-7 font-display text-[2rem] leading-[1.08] min-[400px]:text-[2.3rem] sm:text-[2.9rem] lg:text-[3.1rem] xl:text-[3.6rem] tracking-tightest text-cream font-light">
-          Two antidepressants<br class="hidden min-[400px]:block"> haven't worked.
-          <span class="italic text-accent-400"><?= $SPR ?> works differently.</span>
+          SPRAVATO&reg; Treatment <span class="italic text-accent-400">in Phoenix.</span>
         </h1>
 
         <p class="mt-5 max-w-lg text-[15.5px] sm:text-[16.5px] lg:text-[17.5px] leading-relaxed text-cream/70 font-light">
-          SPRAVATO® (esketamine) is an FDA-approved prescription nasal spray for adults with treatment-resistant depression. It may be used alone or in conjunction with an oral antidepressant.
+          If two or more antidepressants have not provided enough relief, our team can evaluate whether supervised SPRAVATO&reg; treatment may be appropriate.
         </p>
 
         <div class="mt-7 flex flex-col sm:flex-row gap-3">
@@ -447,18 +426,8 @@ tailwind.config = {
           </a>
         </div>
 
-        <!-- A real photograph from the practice, at a size where the 680px source
-             still looks sharp — the treatment is a person in a room, not a diagram. -->
-        <figure class="mt-7 flex items-center gap-4 max-w-lg rounded-2xl border border-white/12 bg-white/[0.07] p-2.5 backdrop-blur">
-          <img src="<?= $img('care', 600) ?>" alt="<?= $alt('care') ?>" loading="lazy" decoding="async"
-               class="js-photo h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem] shrink-0 rounded-xl object-cover">
-          <figcaption class="pr-1 text-[13.5px] sm:text-[14px] leading-snug text-cream/70">
-            A nasal spray you take yourself, here in our Phoenix office — with a clinician beside you
-            the whole time.
-          </figcaption>
-        </figure>
-
-        <dl class="mt-5 grid grid-cols-3 gap-3 sm:gap-6 max-w-lg border-t border-white/10 pt-5">
+        <p class="mt-4 text-[13px] leading-relaxed text-cream/80 lg:hidden">Phoenix, AZ · Insurance benefits verified before treatment.</p>
+        <dl class="mt-5 hidden lg:grid grid-cols-3 gap-3 sm:gap-6 max-w-lg border-t border-white/10 pt-5">
           <div>
             <dt class="font-display text-2xl sm:text-3xl text-cream font-light">24 hrs</dt>
             <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Relief can begin this fast</dd>
@@ -593,6 +562,53 @@ tailwind.config = {
   </div>
 </section>
 
+<!-- ══════════════════ VIDEO TESTIMONIALS ══════════════════ -->
+<section id="video-testimonials" aria-labelledby="video-testimonials-heading" class="bg-sand py-12 sm:py-14 lg:py-20 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+    <div class="text-center">
+      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Patient experiences</p>
+      <h2 id="video-testimonials-heading" class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] leading-[1.1] tracking-tightest text-brand-900 font-light">Hear From Our Patients</h2>
+    </div>
+    <div class="mt-7 mx-auto max-w-3xl">
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 1" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab419de6cc97c47e4fb1b3e?background=false&amp;autoplay=false&amp;loop=false&amp;disable_player_controls=true"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+    <details class="mt-5 rounded-2xl border border-black/10 bg-white p-4 sm:p-5">
+      <summary class="cursor-pointer font-medium text-brand-900">Watch three more patient stories</summary>
+      <div class="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 2" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227442394588e66b49ee3"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 3" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a210"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 4" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a20f"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      </div>
+    </details>
+    <p class="mt-5 text-center text-[12px] leading-relaxed text-brand-700">Patient experiences vary. Testimonials reflect individual experiences and are not a guarantee of outcome.</p>
+  </div>
+</section>
+
+
 <!-- ══════════════════ DO I QUALIFY ══════════════════ -->
 <section id="qualify" class="py-12 sm:py-14 lg:py-20 scroll-mt-24">
   <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
@@ -647,175 +663,25 @@ tailwind.config = {
 </section>
 
 <!-- ══════════════════ HOW IT WORKS + HOW IT COMPARES ══════════════════ -->
-<section id="science" class="bg-white border-y border-black/5 scroll-mt-24">
-  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10 py-12 sm:py-14 lg:py-20">
-
-    <div class="grid lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-      <div class="lg:col-span-7 reveal">
-        <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">How it works</p>
-        <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-          A different target in the brain.
-        </h2>
-        <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-brand-900/60 font-light max-w-xl">
-    SPRAVATO® works differently from many traditional antidepressants. Esketamine acts primarily on the glutamate system as a noncompetitive antagonist of the NMDA receptor.
-        </p>
-
-        <!-- The mechanism as a sequence: each step follows from the one before it,
-             so the cards are numbered and joined by a rule on wide screens. -->
-        <ol class="relative mt-8 grid sm:grid-cols-3 gap-3.5 sm:gap-4">
-          <div class="hidden sm:block absolute top-[2.4rem] left-[12%] right-[12%] h-px bg-black/10"></div>
-          <?php
-          $mechanism = [
-            ['Blocks NMDA receptors', 'Esketamine is a noncompetitive antagonist of the NMDA receptor, a receptor involved in glutamate signaling in the brain.',
-             'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z M5.6 5.6l12.8 12.8'],
-            ['Different mechanism of action',  'SPRAVATO® acts on the brains glutamate system, which differs from the primary mechanisms of many traditional antidepressants.',
-             'M7 5.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M21 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M14 18.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M6.6 7.1l10 1.6 M18.4 11.2 13.3 17'],
-            ['Your treatment plan',  'For treatment-resistant depression, SPRAVATO® may be prescribed alone or in conjunction with an oral antidepressant. Your clinician will determine the appropriate treatment plan based on your individual needs.
-
-',
-             'M10.5 3.5a5 5 0 0 1 7 7l-7 7a5 5 0 0 1-7-7l7-7Z M7 7l7 7'],
-          ];
-          foreach ($mechanism as $i => [$h, $p, $icon]): ?>
-          <li class="reveal relative flex gap-4 sm:block rounded-2xl border border-black/[0.07] bg-cream p-5 sm:p-6" style="transition-delay:<?= $i * 60 ?>ms">
-            <span class="relative grid place-items-center h-10 w-10 sm:h-12 sm:w-12 shrink-0 rounded-full bg-white text-brand-700 ring-1 ring-black/[0.07] shadow-sm">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-[18px] w-[18px] sm:h-5 sm:w-5"><path d="<?= $icon ?>"/></svg>
-              <span class="absolute -top-1 -right-1 grid place-items-center h-4 w-4 rounded-full bg-accent-500 text-[10px] font-semibold text-white"><?= $i + 1 ?></span>
-            </span>
-            <div class="min-w-0">
-              <h3 class="sm:mt-4 font-display text-[18px] sm:text-[19px] leading-snug tracking-tight text-brand-900"><?= $h ?></h3>
-              <p class="mt-1.5 text-[14px] leading-relaxed text-brand-900/60"><?= $p ?></p>
-            </div>
-          </li>
-          <?php endforeach; ?>
-        </ol>
-
-        <!-- The whole argument in one picture: how long each takes to do anything. -->
-        <div class="reveal mt-4 rounded-2xl border border-black/[0.07] bg-cream p-5 sm:p-6">
-          <p class="text-[11.5px] uppercase tracking-[0.16em] text-brand-900/40">Time to first relief</p>
-          <div class="mt-4 space-y-3.5">
-            <?php
-            $speed = [
-              ['SPRAVATO&reg;',        '24 hours to a few days', '12%',  true],
-              ['Oral antidepressant', '6 to 12 weeks',          '100%', false],
-            ];
-            foreach ($speed as [$who, $when, $width, $lead]): ?>
-            <div>
-              <div class="flex items-baseline justify-between gap-3">
-                <p class="text-[14.5px] font-medium <?= $lead ? 'text-brand-900' : 'text-brand-900/55' ?>"><?= $who ?></p>
-                <p class="text-[13.5px] font-medium <?= $lead ? 'text-accent-600' : 'text-brand-900/40' ?>"><?= $when ?></p>
-              </div>
-              <div class="mt-1.5 h-2 rounded-full bg-brand-900/[0.07] overflow-hidden">
-                <div class="h-full rounded-full <?= $lead ? 'bg-accent-500' : 'bg-brand-500/45' ?>" style="width:<?= $width ?>"></div>
-              </div>
-            </div>
-            <?php endforeach; ?>
-          </div>
-          <p class="mt-3.5 text-[12px] text-brand-900/40">Illustrative, not to scale. Individual response varies.</p>
-        </div>
+<section id="science" class="py-12 sm:py-14 bg-white border-y border-black/5 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+    <h2 class="font-display text-[1.9rem] sm:text-[2.4rem] leading-tight text-brand-900 font-light">A different treatment approach.</h2>
+    <p class="mt-4 max-w-3xl text-[16px] leading-relaxed text-brand-900/70">SPRAVATO&reg; is esketamine nasal spray, given under clinical supervision. Its mechanism differs from many traditional antidepressants.</p>
+    <div class="mt-7 grid gap-4 sm:grid-cols-3">
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">Clinical evaluation</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Your team reviews previous treatments and whether SPRAVATO&reg; is appropriate.</p>
       </div>
-
-      <div class="reveal lg:col-span-5">
-        <!-- The source is portrait (578 × 661), so the frame stays portrait and is
-             capped on phones rather than cropped to a landscape band. -->
-        <figure class="mx-auto max-w-[15rem] sm:max-w-[19rem] lg:max-w-none overflow-hidden rounded-2xl sm:rounded-3xl ring-1 ring-black/5">
-          <img src="<?= $img('device', 900) ?>" alt="<?= $alt('device') ?>" loading="lazy" decoding="async"
-               class="js-photo aspect-[7/8] w-full object-cover">
-        </figure>
-        <div class="mt-3.5 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-black/[0.07] bg-cream px-5 py-4">
-          <img src="<?= $SPRAVATO_MARK ?>" alt="SPRAVATO (esketamine) CIII nasal spray"
-               width="268" height="90" loading="lazy" class="js-photo h-7 w-auto">
-          <p class="text-[12.5px] leading-snug text-brand-900/50 max-w-[13rem]">Dispensed only through REMS-certified centers. We are one.</p>
-        </div>
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">Supervised sessions</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Treatment takes place in our clinic, with at least two hours of monitoring.</p>
+      </div>
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">Plan your ride</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Arrange transportation home. Do not drive until the next day after a full night’s sleep.</p>
       </div>
     </div>
-
-    <!-- ── comparison ──────────────────────────────────────────────────────────
-         Kept dark, because the highlighted SPRAVATO® column needs the contrast —
-         but contained as a panel rather than a second full-width blue band. -->
-    <div class="relative overflow-hidden mt-10 sm:mt-12 rounded-[24px] sm:rounded-[28px] bg-brand-950 text-cream grain p-5 sm:p-8 lg:p-10 reveal">
-      <div class="pointer-events-none absolute -right-32 -top-24 h-[24rem] w-[24rem] rounded-full bg-brand-600/40 blur-[110px]"></div>
-      <div class="relative">
-      <h3 class="font-display text-[1.6rem] sm:text-[2rem] leading-tight tracking-tightest font-light">
-        How SPRAVATO® compares with other treatment approaches.
-      </h3>
-      <p class="mt-3 text-[15px] sm:text-[15.5px] leading-relaxed text-cream/60 font-light max-w-2xl">
-        All three treat depression that hasn't responded to standard care. They differ in how fast
-        they work, what a session costs you in time, and what you feel afterward.
-      </p>
-
-      <!-- Phones and tablets: one card per attribute, so nothing scrolls sideways. -->
-      <div class="mt-7 grid gap-3 sm:grid-cols-2 lg:hidden">
-        <?php foreach ($compareRows as [$label, $values]): ?>
-        <div class="overflow-hidden rounded-2xl border border-white/12 bg-white/[0.03]">
-          <p class="px-4 pt-3.5 pb-2.5 text-[11.5px] uppercase tracking-[0.16em] text-cream/45"><?= $label ?></p>
-          <div class="border-t border-white/10">
-            <?php foreach ($compareCols as $c => [$colName, $colSub]):
-              $lead = $c === 0; ?>
-            <div class="flex items-start gap-2.5 px-4 py-3 <?= $lead ? 'bg-accent-500/15' : 'border-t border-white/[0.07]' ?>">
-              <?php if ($lead): ?>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" class="mt-[3px] h-3.5 w-3.5 shrink-0 text-accent-400"><path d="M5 13l4 4L19 7"/></svg>
-              <?php else: ?>
-              <span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-cream/25"></span>
-              <?php endif; ?>
-              <div class="min-w-0">
-                <p class="text-[11.5px] uppercase tracking-[0.12em] <?= $lead ? 'text-accent-400' : 'text-cream/35' ?>"><?= $colName ?></p>
-                <p class="mt-0.5 text-[14.5px] leading-snug <?= $lead ? 'text-cream' : 'text-cream/60' ?>"><?= $values[$c] ?></p>
-              </div>
-            </div>
-            <?php endforeach; ?>
-          </div>
-        </div>
-        <?php endforeach; ?>
-      </div>
-
-      <!-- Large screens: the real table, where all three columns fit at once. -->
-      <table class="hidden lg:table w-full mt-8 border-separate border-spacing-0 text-left">
-        <caption class="sr-only">SPRAVATO® compared with oral antidepressants and electroconvulsive therapy</caption>
-        <thead>
-          <tr>
-            <th scope="col" class="w-[22%] pb-5 pr-6"><span class="sr-only">Attribute</span></th>
-            <?php foreach ($compareCols as $c => [$colName, $colSub]): ?>
-            <th scope="col" class="w-[26%] px-6 pb-5 align-bottom <?= $c === 0 ? 'rounded-t-2xl bg-accent-500/15 pt-6' : '' ?>">
-              <span class="block font-display text-[22px] tracking-tight <?= $c === 0 ? 'text-cream' : 'text-cream/80' ?>"><?= $c === 0 ? $SPR : $colName ?></span>
-              <span class="mt-1 block text-[12.5px] <?= $c === 0 ? 'text-accent-400' : 'text-cream/40' ?>"><?= $colSub ?></span>
-            </th>
-            <?php endforeach; ?>
-          </tr>
-        </thead>
-        <tbody class="align-top">
-          <?php foreach ($compareRows as $i => [$label, $values]):
-            $last = $i === count($compareRows) - 1; ?>
-          <tr>
-            <th scope="row" class="border-t border-white/10 py-5 pr-6 text-[14.5px] font-medium text-cream/55"><?= $label ?></th>
-            <?php foreach ($values as $c => $v): ?>
-            <td class="border-t border-white/10 px-6 py-5 text-[15px] <?= $c === 0 ? 'bg-accent-500/15 text-cream ' . ($last ? 'rounded-b-2xl' : '') : 'text-cream/60' ?>">
-              <?php if ($c === 0): ?>
-              <span class="flex items-start gap-2.5">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" class="mt-1 h-3.5 w-3.5 shrink-0 text-accent-400"><path d="M5 13l4 4L19 7"/></svg>
-                <?= $v ?>
-              </span>
-              <?php else: ?>
-              <?= $v ?>
-              <?php endif; ?>
-            </td>
-            <?php endforeach; ?>
-          </tr>
-          <?php endforeach; ?>
-        </tbody>
-      </table>
-
-      <div class="mt-7 flex flex-col sm:flex-row sm:items-center gap-4">
-        <a href="#eligibility" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-6 py-3.5 text-[15px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20 shrink-0">
-          See If It's Right for Me
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
-        </a>
-        <p class="text-[14px] leading-relaxed text-cream/45 max-w-md">
-          We also offer TMS, ECT and medication management — so if SPRAVATO&reg; isn't the right fit,
-          you don't start over somewhere else.
-        </p>
-      </div>
-      </div>
-    </div>
+    <a href="#eligibility" class="mt-7 inline-flex rounded-full bg-brand-900 px-6 py-3 text-[15px] font-medium text-cream hover:bg-brand-800 transition">Check Eligibility</a>
   </div>
 </section>
 
@@ -1087,39 +953,6 @@ If coverage is denied, our team will review the reason and discuss available nex
   </div>
 </section>
 
-<!-- ══════════════════ VIDEO TESTIMONIALS ══════════════════ -->
-<section id="video-testimonials" aria-labelledby="video-testimonials-heading" class="bg-sand py-12 sm:py-14 lg:py-20 scroll-mt-24">
-  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
-    <div class="text-center">
-      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Patient experiences</p>
-      <h2 id="video-testimonials-heading" class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] leading-[1.1] tracking-tightest text-brand-900 font-light">Hear From Our Patients</h2>
-    </div>
-    <div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
-      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
-        <iframe loading="lazy" title="Patient video testimonial 1" class="absolute inset-0 h-full w-full border-0"
-                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a20f"
-                referrerpolicy="origin"
-                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
-                allowfullscreen></iframe>
-      </div>
-      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
-        <iframe loading="lazy" title="Patient video testimonial 2" class="absolute inset-0 h-full w-full border-0"
-                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a210"
-                referrerpolicy="origin"
-                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
-                allowfullscreen></iframe>
-      </div>
-      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
-        <iframe loading="lazy" title="Patient video testimonial 3" class="absolute inset-0 h-full w-full border-0"
-                src="https://play.gumlet.io/embed/6ab227442394588e66b49ee3"
-                referrerpolicy="origin"
-                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
-                allowfullscreen></iframe>
-      </div>
-    </div>
-    <p class="mt-5 text-center text-[12px] leading-relaxed text-brand-700">Patient experiences vary. Testimonials reflect individual experiences and are not a guarantee of outcome.</p>
-  </div>
-</section>
 
 <!-- ══════════════════ REVIEWS + FAQ ══════════════════ -->
 <section id="faq" class="py-12 sm:py-14 lg:py-20 scroll-mt-24">
@@ -1146,7 +979,7 @@ If coverage is denied, our team will review the reason and discuss available nex
 
       <div id="tTrack" tabindex="0" role="region" aria-label="Patient reviews from Google"
            class="slider mt-6 flex gap-3.5 sm:gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth -mx-5 px-5 sm:-mx-6 sm:px-6 lg:-mx-2 lg:px-2 pb-2 outline-none">
-        <?php foreach ($reviews as [$name, $initials, $meta, $when, $tag, $body]): ?>
+        <?php foreach (array_slice($reviews, 0, 3) as [$name, $initials, $meta, $when, $tag, $body]): ?>
         <figure class="t-card snap-start shrink-0 flex flex-col w-[85%] sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
           <div class="flex items-start gap-3">
             <span class="grid place-items-center h-10 w-10 shrink-0 rounded-full bg-brand-900/[0.07] font-display text-[14px] text-brand-800"><?= $initials ?></span>

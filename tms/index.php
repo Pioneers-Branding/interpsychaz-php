@@ -108,25 +108,6 @@ $insurers = [
   ['Wellcare By Allwell',               'wellcare-allwell.png'],
 ];
 
-/* ─── COMPARISON ─────────────────────────────────────────────────────────────
- * One source of truth, rendered twice: stacked cards on phones, a table from lg
- * up. The three columns are the three real options in front of someone whose
- * antidepressants have stopped working.
- */
-$compareCols = [
-  ['TMS',                  'Transcranial magnetic stimulation'],
-  ['Another antidepressant', 'A different pill, another trial'],
-  ['ECT',                  'Electroconvulsive therapy'],
-];
-$compareRows = [
-  ['How it is given',    ['Magnetic pulses through the scalp, in a chair', 'A pill you take daily at home',        'Anesthesia and an induced seizure']],
-  ['Sedation',           ['None — you stay awake throughout',              'None',                                 'General anesthesia every session']],
-  ['What it reaches',    ['Targeted areas of the brain involved in mood regulation
-', 'Your whole body, through the bloodstream', 'A controlled seizure is induced under general anesthesia']],
-  ['Typical side effects',['Scalp discomfort or headache, usually early on', 'Side effects vary and may include changes in sleep, weight or sexual function',      'Confusion and memory effects after each session']],
-  ['Driving afterward',  ['Yes — you drive yourself home',                 'Unrestricted',                         'Not the same day']],
-];
-
 /* FAQ copy is plain text — it is rendered on the page and re-used verbatim in
    the FAQPage structured data below, so it must not carry markup. */
 $faqs = [
@@ -426,14 +407,11 @@ tailwind.config = {
         </div>
 
         <h1 class="mt-5 sm:mt-7 font-display text-[2rem] leading-[1.08] min-[400px]:text-[2.3rem] sm:text-[2.9rem] lg:text-[3.1rem] xl:text-[3.5rem] tracking-tightest text-cream font-light">
-          You've tried the medications.
-          <span class="italic text-accent-400">This is what comes next.</span>
+          TMS Therapy for Depression <span class="italic text-accent-400">in Phoenix.</span>
         </h1>
 
         <p class="mt-5 max-w-lg text-[15.5px] sm:text-[16.5px] lg:text-[17.5px] leading-relaxed text-cream/70 font-light">
-          TMS is FDA-Cleared, drug-free and non-invasive. You sit awake in a chair while
-          magnetic pulses reach the mood circuits antidepressants keep missing — then you get up
-          and drive yourself home.
+          Explore a non-invasive treatment option when depression medications have not helped enough. Our team reviews your treatment history and insurance benefits.
         </p>
 
         <div class="mt-7 flex flex-col sm:flex-row gap-3">
@@ -448,18 +426,8 @@ tailwind.config = {
           </a>
         </div>
 
-        <!-- A real photograph from the practice, at a size where the 680px source
-             still looks sharp. -->
-        <figure class="mt-7 flex items-center gap-4 max-w-lg rounded-2xl border border-white/12 bg-white/[0.07] p-2.5 backdrop-blur">
-          <img src="<?= $img('care', 600) ?>" alt="<?= $alt('care') ?>" loading="lazy" decoding="async"
-               class="js-photo h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem] shrink-0 rounded-xl object-cover">
-          <figcaption class="pr-1 text-[13.5px] sm:text-[14px] leading-snug text-cream/70">
-            Most plans and Medicare cover TMS for depression. We handle the prior authorization
-            and tell you what you'll owe before anything starts.
-          </figcaption>
-        </figure>
-
-        <dl class="mt-5 grid grid-cols-3 gap-3 sm:gap-6 max-w-lg border-t border-white/10 pt-5">
+        <p class="mt-4 text-[13px] leading-relaxed text-cream/80 lg:hidden">Phoenix, AZ · Insurance benefits verified before treatment.</p>
+        <dl class="mt-5 hidden lg:grid grid-cols-3 gap-3 sm:gap-6 max-w-lg border-t border-white/10 pt-5">
           <div>
             <dt class="font-display text-2xl sm:text-3xl text-cream font-light">3 min</dt>
             <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Our shortest FDA-cleared protocol</dd>
@@ -596,6 +564,53 @@ tailwind.config = {
   </div>
 </section>
 
+<!-- ══════════════════ VIDEO TESTIMONIALS ══════════════════ -->
+<section id="video-testimonials" aria-labelledby="video-testimonials-heading" class="bg-sand py-12 sm:py-14 lg:py-20 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+    <div class="text-center">
+      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Patient experiences</p>
+      <h2 id="video-testimonials-heading" class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] leading-[1.1] tracking-tightest text-brand-900 font-light">Hear From Our Patients</h2>
+    </div>
+    <div class="mt-7 mx-auto max-w-3xl">
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 1" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab419de6cc97c47e4fb1b3e?background=false&amp;autoplay=false&amp;loop=false&amp;disable_player_controls=true"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+    <details class="mt-5 rounded-2xl border border-black/10 bg-white p-4 sm:p-5">
+      <summary class="cursor-pointer font-medium text-brand-900">Watch three more patient stories</summary>
+      <div class="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 2" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227442394588e66b49ee3"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 3" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a210"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 4" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a20f"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      </div>
+    </details>
+    <p class="mt-5 text-center text-[12px] leading-relaxed text-brand-700">Patient experiences vary. Testimonials reflect individual experiences and are not a guarantee of outcome.</p>
+  </div>
+</section>
+
+
 <!-- ══════════════════ IS TMS FOR ME ══════════════════ -->
 <section id="qualify" class="py-12 sm:py-14 lg:py-20 scroll-mt-24">
   <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
@@ -686,162 +701,25 @@ tailwind.config = {
 </section>
 
 <!-- ══════════════════ HOW IT WORKS + HOW IT COMPARES ══════════════════ -->
-<section id="how" class="bg-white border-y border-black/5 scroll-mt-24">
-  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10 py-12 sm:py-14 lg:py-20">
-
-    <div class="grid lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-      <div class="lg:col-span-7 reveal">
-        <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">How it works</p>
-        <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-          Targeted stimulation, delivered over time.
-        </h2>
-        <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-brand-900/60 font-light max-w-xl">
-          TMS uses magnetic pulses to stimulate targeted areas of the brain involved in mood regulation. Treatment is delivered over a series of sessions, with each session following a protocol selected for your individual treatment plan.
-        </p>
-
-        <ol class="mt-8 grid sm:grid-cols-2 gap-3.5 sm:gap-4">
-          <?php
-          $how = [
-            ['We map your head',    'Your treatment area is carefully mapped, and a motor threshold test helps determine the appropriate treatment intensity for you.',
-             'M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z M12 8v4l3 2'],
-            ['Pulses, not chemistry','Focused magnetic pulses pass painlessly through the scalp to the mood circuits underneath. Nothing enters your bloodstream.',
-             'M13 2 4.5 13.5H11l-.5 8.5L19.5 10.5H13L13 2Z'],
-            ['Repetition builds it', 'TMS is delivered as a series of sessions designed to repeatedly stimulate the targeted brain region over the course of treatment.',
-             'M4 17V9M9 17V5M14 17v-6M19 17V7'],
-            ['Same spot, every time','StimGuide&reg; 3-D navigation holds the coil to the same contact, position, tilt and rotation at every single session.',
-             'M12 21s-7-5.2-7-10a7 7 0 1 1 14 0c0 4.8-7 10-7 10Z M12 11h.01'],
-          ];
-          foreach ($how as $i => [$h, $p, $icon]): ?>
-          <li class="reveal flex gap-4 rounded-2xl border border-black/[0.07] bg-cream p-5" style="transition-delay:<?= $i * 60 ?>ms">
-            <span class="relative grid place-items-center h-10 w-10 shrink-0 rounded-full bg-white text-brand-700 ring-1 ring-black/[0.07] shadow-sm">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-[18px] w-[18px]"><path d="<?= $icon ?>"/></svg>
-              <span class="absolute -top-1 -right-1 grid place-items-center h-4 w-4 rounded-full bg-accent-500 text-[10px] font-semibold text-white"><?= $i + 1 ?></span>
-            </span>
-            <div class="min-w-0">
-              <h3 class="font-display text-[18px] sm:text-[19px] leading-snug tracking-tight text-brand-900"><?= $h ?></h3>
-              <p class="mt-1.5 text-[14px] leading-relaxed text-brand-900/60"><?= $p ?></p>
-            </div>
-          </li>
-          <?php endforeach; ?>
-        </ol>
+<section id="how" class="py-12 sm:py-14 bg-white border-y border-black/5 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+    <h2 class="font-display text-[1.9rem] sm:text-[2.4rem] leading-tight text-brand-900 font-light">How TMS works.</h2>
+    <p class="mt-4 max-w-3xl text-[16px] leading-relaxed text-brand-900/70">TMS uses magnetic pulses to stimulate brain areas involved in mood regulation. Your clinician determines whether it is appropriate for you.</p>
+    <div class="mt-7 grid gap-4 sm:grid-cols-3">
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">Personalized setup</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Initial mapping helps determine coil placement and treatment intensity.</p>
       </div>
-
-      <div class="reveal lg:col-span-5">
-        <figure class="overflow-hidden rounded-2xl sm:rounded-3xl ring-1 ring-black/5">
-          <img src="<?= $img('coil', 1400) ?>" alt="<?= $alt('coil') ?>" loading="lazy" decoding="async"
-               class="js-photo aspect-[16/11] lg:aspect-[4/3] w-full object-cover">
-        </figure>
-        <div class="mt-3.5 rounded-2xl border border-black/[0.07] bg-cream px-5 py-5">
-          <p class="text-[11.5px] uppercase tracking-[0.16em] text-brand-900/40">On our Magstim Horizon 3&reg; system</p>
-          <ul class="mt-3.5 space-y-2.5">
-            <?php foreach ([
-              ['iTBS',        '3 minutes',    'Intermittent theta burst, FDA-cleared'],
-              ['Accelerated', '19 minutes',   'A shortened rTMS course'],
-              ['Standard rTMS','37.5 minutes','The classic protocol'],
-            ] as $i => [$name, $time, $note]): ?>
-            <li class="flex items-baseline gap-3">
-              <!-- Fixed column so the three durations line up; nowrap because
-                   "37.5 minutes" otherwise breaks across two lines. -->
-              <span class="font-display text-[19px] tracking-tight whitespace-nowrap <?= $i === 0 ? 'text-accent-600' : 'text-brand-900' ?> w-[6.9rem] shrink-0"><?= $time ?></span>
-              <span class="min-w-0 text-[13.5px] leading-snug text-brand-900/60"><span class="font-medium text-brand-900/80"><?= $name ?></span> — <?= $note ?></span>
-            </li>
-            <?php endforeach; ?>
-          </ul>
-          <p class="mt-4 text-[13.5px] leading-relaxed text-brand-900/50">
-            Three durations, one machine. Your physician picks the protocol your case calls for —
-            not the one the equipment forces.
-          </p>
-        </div>
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">Awake during treatment</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">No sedation is required. Patients can typically drive home after a session.</p>
+      </div>
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">A course of care</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Treatment takes multiple visits. Your protocol and response determine the schedule.</p>
       </div>
     </div>
-
-    <!-- ── comparison ──────────────────────────────────────────────────────────
-         Kept dark, because the highlighted column needs the contrast — but
-         contained as a panel rather than a second full-width blue band. -->
-    <div class="relative overflow-hidden mt-10 sm:mt-12 rounded-[24px] sm:rounded-[28px] bg-brand-950 text-cream grain p-5 sm:p-8 lg:p-10 reveal">
-      <div class="pointer-events-none absolute -right-32 -top-24 h-[24rem] w-[24rem] rounded-full bg-brand-600/40 blur-[110px]"></div>
-      <div class="relative">
-        <h3 class="font-display text-[1.6rem] sm:text-[2rem] leading-tight tracking-tightest font-light">
-          The three things people weigh up.
-        </h3>
-        <p class="mt-3 text-[15px] sm:text-[15.5px] leading-relaxed text-cream/60 font-light max-w-2xl">
-          When antidepressants stop working there are really three options in front of you. Here is
-          how they differ in practice.
-        </p>
-
-        <!-- Phones and tablets: one card per row, so nothing scrolls sideways. -->
-        <div class="mt-7 grid gap-3 sm:grid-cols-2 lg:hidden">
-          <?php foreach ($compareRows as [$label, $values]): ?>
-          <div class="overflow-hidden rounded-2xl border border-white/12 bg-white/[0.03]">
-            <p class="px-4 pt-3.5 pb-2.5 text-[11.5px] uppercase tracking-[0.16em] text-cream/45"><?= $label ?></p>
-            <div class="border-t border-white/10">
-              <?php foreach ($compareCols as $c => [$colName, $colSub]):
-                $lead = $c === 0; ?>
-              <div class="flex items-start gap-2.5 px-4 py-3 <?= $lead ? 'bg-accent-500/15' : 'border-t border-white/[0.07]' ?>">
-                <?php if ($lead): ?>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" class="mt-[3px] h-3.5 w-3.5 shrink-0 text-accent-400"><path d="M5 13l4 4L19 7"/></svg>
-                <?php else: ?>
-                <span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-cream/25"></span>
-                <?php endif; ?>
-                <div class="min-w-0">
-                  <p class="text-[11.5px] uppercase tracking-[0.12em] <?= $lead ? 'text-accent-400' : 'text-cream/35' ?>"><?= $colName ?></p>
-                  <p class="mt-0.5 text-[14.5px] leading-snug <?= $lead ? 'text-cream' : 'text-cream/60' ?>"><?= $values[$c] ?></p>
-                </div>
-              </div>
-              <?php endforeach; ?>
-            </div>
-          </div>
-          <?php endforeach; ?>
-        </div>
-
-        <!-- Large screens: the real table, where all three columns fit at once. -->
-        <table class="hidden lg:table w-full mt-8 border-separate border-spacing-0 text-left">
-          <caption class="sr-only">TMS compared with another antidepressant trial and with electroconvulsive therapy</caption>
-          <thead>
-            <tr>
-              <th scope="col" class="w-[22%] pb-5 pr-6"><span class="sr-only">Attribute</span></th>
-              <?php foreach ($compareCols as $c => [$colName, $colSub]): ?>
-              <th scope="col" class="w-[26%] px-6 pb-5 align-bottom <?= $c === 0 ? 'rounded-t-2xl bg-accent-500/15 pt-6' : '' ?>">
-                <span class="block font-display text-[22px] tracking-tight <?= $c === 0 ? 'text-cream' : 'text-cream/80' ?>"><?= $colName ?></span>
-                <span class="mt-1 block text-[12.5px] <?= $c === 0 ? 'text-accent-400' : 'text-cream/40' ?>"><?= $colSub ?></span>
-              </th>
-              <?php endforeach; ?>
-            </tr>
-          </thead>
-          <tbody class="align-top">
-            <?php foreach ($compareRows as $i => [$label, $values]):
-              $last = $i === count($compareRows) - 1; ?>
-            <tr>
-              <th scope="row" class="border-t border-white/10 py-5 pr-6 text-[14.5px] font-medium text-cream/55"><?= $label ?></th>
-              <?php foreach ($values as $c => $v): ?>
-              <td class="border-t border-white/10 px-6 py-5 text-[15px] <?= $c === 0 ? 'bg-accent-500/15 text-cream ' . ($last ? 'rounded-b-2xl' : '') : 'text-cream/60' ?>">
-                <?php if ($c === 0): ?>
-                <span class="flex items-start gap-2.5">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" class="mt-1 h-3.5 w-3.5 shrink-0 text-accent-400"><path d="M5 13l4 4L19 7"/></svg>
-                  <?= $v ?>
-                </span>
-                <?php else: ?>
-                <?= $v ?>
-                <?php endif; ?>
-              </td>
-              <?php endforeach; ?>
-            </tr>
-            <?php endforeach; ?>
-          </tbody>
-        </table>
-
-        <div class="mt-7 flex flex-col sm:flex-row sm:items-center gap-4">
-          <a href="#book" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-6 py-3.5 text-[15px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20 shrink-0">
-            See If I Qualify
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
-          </a>
-          <p class="text-[14px] leading-relaxed text-cream/45 max-w-md">
-            All three sit in this one practice — TMS, medication management, SPRAVATO&reg; and ECT.
-            Whichever you end up needing, you are not starting over with strangers.
-          </p>
-        </div>
-      </div>
-    </div>
+    <a href="#book" class="mt-7 inline-flex rounded-full bg-brand-900 px-6 py-3 text-[15px] font-medium text-cream hover:bg-brand-800 transition">Request a Call</a>
   </div>
 </section>
 
@@ -867,8 +745,7 @@ tailwind.config = {
           What actually happens.
         </h2>
         <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-brand-900/60 font-light max-w-xl">
-          No gown, no IV, no recovery room. The first visit takes longer because of the mapping —
-          after that, a session is short enough to fit inside a lunch break.
+          Your first visit includes mapping. Later visit lengths depend on your prescribed protocol.
         </p>
 
         <ol class="mt-8 space-y-3.5">
@@ -897,13 +774,13 @@ tailwind.config = {
     <!-- ── the course, and the honest timeline ─────────────────────────────
          The commitment is the real objection. Naming it plainly, next to what
          each stage feels like, does better than burying it in the FAQ. -->
-    <div class="reveal mt-10 grid lg:grid-cols-12 gap-6 lg:gap-10 rounded-2xl sm:rounded-[28px] bg-sand/70 p-5 sm:p-7 lg:p-9">
-      <div class="lg:col-span-4">
+    <div class="reveal mt-10 grid lg:grid-cols-5 gap-6 lg:gap-8 items-start rounded-2xl sm:rounded-[28px] bg-sand/70 p-5 sm:p-7 lg:p-9">
+      <div class="lg:col-span-3">
         <h3 class="font-display text-[20px] sm:text-[24px] tracking-tight text-brand-900">The full course, plainly</h3>
         <p class="mt-3 text-[14.5px] leading-relaxed text-brand-900/60">
           TMS is typically delivered as a course of treatment rather than a single appointment. Your treatment schedule will be determined by your prescribed protocol and clinical response.
         </p>
-        <dl class="mt-5 grid grid-cols-3 gap-4 border-t border-black/10 pt-5">
+        <dl class="mt-5 grid grid-cols-1 min-[400px]:grid-cols-3 gap-3">
           <?php
           /* Numerals only — a unit in the number ("4–6 wks") wraps to two lines
              in a third of a phone-width panel. The unit lives in the label. */
@@ -912,38 +789,19 @@ tailwind.config = {
             ['5',     'days a week, Monday to Friday'],
             ['4–6',   'weeks, plus a 2–3 week taper'],
           ] as [$n, $l]): ?>
-          <div>
+          <div class="rounded-xl bg-white p-4 border border-black/5">
             <dt class="font-display text-[22px] sm:text-[25px] leading-none text-brand-900 font-light"><?= $n ?></dt>
-            <dd class="mt-1.5 text-[12.5px] leading-snug text-brand-900/50"><?= $l ?></dd>
+            <dd class="mt-1.5 text-[12.5px] leading-snug text-brand-900/70"><?= $l ?></dd>
           </div>
           <?php endforeach; ?>
         </dl>
-        <p class="mt-5 text-[13.5px] leading-relaxed text-brand-900/45">
+        <p class="mt-5 text-[13.5px] leading-relaxed text-brand-900/60">
 If you need to miss a session, contact our team. We will work with you to adjust your treatment schedule as appropriate.        </p>
       </div>
 
-      <div class="lg:col-span-8">
-        <p class="text-[11.5px] uppercase tracking-[0.16em] text-brand-900/40">When you will feel it</p>
-        <div class="mt-4 grid sm:grid-cols-3 gap-4 sm:gap-5">
-          <?php
-          $timeline = [
-            ['Weeks 1–2',  'Sessions 1–10',  'Small things first — sleeping better, a little more energy. Big mood shifts are not the norm this early. Any scalp discomfort usually settles here too.'],
-            ['Weeks 3–4',  'Sessions 11–20', 'This is where it usually becomes noticeable. Getting out of bed is easier, anxiety eases, thinking clears. Family often spots it before you do.'],
-            ['Weeks 5–6',  'Sessions 21–36', 'The largest changes tend to land here, as the sessions accumulate. Finish the course even if you already feel better — that is what makes it stick.'],
-          ];
-          foreach ($timeline as $i => [$when, $which, $what]): ?>
-          <div class="reveal rounded-2xl bg-white border border-black/[0.07] p-5" style="transition-delay:<?= $i * 70 ?>ms">
-            <div class="h-px w-8 bg-accent-500"></div>
-            <p class="mt-3 font-display text-[19px] tracking-tight text-brand-900"><?= $when ?></p>
-            <p class="mt-0.5 text-[12.5px] text-brand-900/40"><?= $which ?></p>
-            <p class="mt-2.5 text-[14px] leading-relaxed text-brand-900/60"><?= $what ?></p>
-          </div>
-          <?php endforeach; ?>
-        </div>
-        <p class="mt-4 text-[12.5px] leading-relaxed text-brand-900/40">
-          A typical course of treatment. Individual response varies, and your psychiatrist will
-          track yours and adjust the plan rather than run it on a calendar.
-        </p>
+      <div class="lg:col-span-2 rounded-2xl bg-white border border-black/5 p-5 sm:p-6">
+        <h3 class="font-display text-xl text-brand-900">Progress is individual.</h3>
+        <p class="mt-3 text-[15px] leading-relaxed text-brand-900/70">Your psychiatrist tracks your response throughout the course and adjusts your plan as needed. Improvement and timing vary; results are not guaranteed.</p>
       </div>
     </div>
 
@@ -1068,39 +926,6 @@ If you need to miss a session, contact our team. We will work with you to adjust
   </div>
 </section>
 
-<!-- ══════════════════ VIDEO TESTIMONIALS ══════════════════ -->
-<section id="video-testimonials" aria-labelledby="video-testimonials-heading" class="bg-sand py-12 sm:py-14 lg:py-20 scroll-mt-24">
-  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
-    <div class="text-center">
-      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Patient experiences</p>
-      <h2 id="video-testimonials-heading" class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] leading-[1.1] tracking-tightest text-brand-900 font-light">Hear From Our Patients</h2>
-    </div>
-    <div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
-      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
-        <iframe loading="lazy" title="Patient video testimonial 1" class="absolute inset-0 h-full w-full border-0"
-                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a20f"
-                referrerpolicy="origin"
-                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
-                allowfullscreen></iframe>
-      </div>
-      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
-        <iframe loading="lazy" title="Patient video testimonial 2" class="absolute inset-0 h-full w-full border-0"
-                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a210"
-                referrerpolicy="origin"
-                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
-                allowfullscreen></iframe>
-      </div>
-      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
-        <iframe loading="lazy" title="Patient video testimonial 3" class="absolute inset-0 h-full w-full border-0"
-                src="https://play.gumlet.io/embed/6ab227442394588e66b49ee3"
-                referrerpolicy="origin"
-                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
-                allowfullscreen></iframe>
-      </div>
-    </div>
-    <p class="mt-5 text-center text-[12px] leading-relaxed text-brand-700">Patient experiences vary. Testimonials reflect individual experiences and are not a guarantee of outcome.</p>
-  </div>
-</section>
 
 <!-- ══════════════════ REVIEWS + FAQ ══════════════════ -->
 <section id="faq" class="py-12 sm:py-14 lg:py-20 scroll-mt-24">
@@ -1127,7 +952,7 @@ If you need to miss a session, contact our team. We will work with you to adjust
 
       <div id="tTrack" tabindex="0" role="region" aria-label="Patient reviews from Google"
            class="slider mt-6 flex gap-3.5 sm:gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth -mx-5 px-5 sm:-mx-6 sm:px-6 lg:-mx-2 lg:px-2 pb-2 outline-none">
-        <?php foreach ($reviews as [$name, $initials, $meta, $when, $tag, $body]): ?>
+        <?php foreach (array_slice($reviews, 0, 3) as [$name, $initials, $meta, $when, $tag, $body]): ?>
         <figure class="t-card snap-start shrink-0 flex flex-col w-[85%] sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
           <div class="flex items-start gap-3">
             <span class="grid place-items-center h-10 w-10 shrink-0 rounded-full bg-brand-900/[0.07] font-display text-[14px] text-brand-800"><?= $initials ?></span>

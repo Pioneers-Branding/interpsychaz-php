@@ -103,24 +103,6 @@ $insurers = [
   ['Wellcare By Allwell',               'wellcare-allwell.png'],
 ];
 
-/* ─── COMPARISON ─────────────────────────────────────────────────────────────
- * One source of truth, rendered twice: stacked cards on phones, a table from lg
- * up. The comparison is against the standard 15-minute med-check format, not
- * against any particular practice.
- */
-$compareCols = [
-  ['Here',                'Medication management at IPA'],
-];
-$compareRows = [
-  ['First appointment',    ['90 minutes']],
-  ['Every follow-up',      ['Typically 30 minutes']],
-  ['Medication review',    ['Current medications and treatment history']],
-  ['Side effects',         ['Discussed as part of treatment monitoring']],
-  ['Drug interactions',    ['Medication regimen reviewed']],
-  ['Medication changes',   ['Discussed based on your goals and clinical needs']],
-  ['Where',                ['In person or telehealth across Arizona']],
-];
-
 /* FAQ copy is plain text — it is rendered on the page and re-used verbatim in
    the FAQPage structured data below, so it must not carry markup. */
 $faqs = [
@@ -414,14 +396,11 @@ tailwind.config = {
         </div>
 
         <h1 class="mt-5 sm:mt-7 font-display text-[2rem] leading-[1.08] min-[400px]:text-[2.3rem] sm:text-[2.9rem] lg:text-[3.1rem] xl:text-[3.5rem] tracking-tightest text-cream font-light">
-          Ninety minutes for your first appointment.
-          <span class="italic text-accent-400">That is the whole point.</span>
+          Psychiatric Medication Management <span class="italic text-accent-400">in Phoenix.</span>
         </h1>
 
         <p class="mt-5 max-w-lg text-[15.5px] sm:text-[16.5px] lg:text-[17.5px] leading-relaxed text-cream/70 font-light">
-          Every person responds to medication differently. We review your full history, every
-          prescription you are on, and how you are actually doing — then build the plan around
-          that, rather than around the clock.
+          A 90-minute first evaluation to review your medications, side effects, and goals. In-person and telehealth appointments, with 30-minute follow-ups.
         </p>
 
         <div class="mt-7 flex flex-col sm:flex-row gap-3">
@@ -436,18 +415,8 @@ tailwind.config = {
           </a>
         </div>
 
-        <!-- A real photograph from the practice, at a size where the 680px source
-             still looks sharp. -->
-        <figure class="mt-7 flex items-center gap-4 max-w-lg rounded-2xl border border-white/12 bg-white/[0.07] p-2.5 backdrop-blur">
-          <img src="<?= $img('care', 600) ?>" alt="<?= $alt('care') ?>" loading="lazy" decoding="async"
-               class="js-photo h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem] shrink-0 rounded-xl object-cover">
-          <figcaption class="pr-1 text-[13.5px] sm:text-[14px] leading-snug text-cream/70">
-            Appointments built for a real conversation — about sleep, work, side effects and what
-            you actually want to change.
-          </figcaption>
-        </figure>
-
-        <dl class="mt-5 grid grid-cols-3 gap-3 sm:gap-6 max-w-lg border-t border-white/10 pt-5">
+        <p class="mt-4 text-[13px] leading-relaxed text-cream/80 lg:hidden">Phoenix, AZ · Insurance benefits verified before treatment.</p>
+        <dl class="mt-5 hidden lg:grid grid-cols-3 gap-3 sm:gap-6 max-w-lg border-t border-white/10 pt-5">
           <div>
             <dt class="font-display text-2xl sm:text-3xl text-cream font-light">90 min</dt>
             <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Initial psychiatric evaluation</dd>
@@ -584,6 +553,53 @@ tailwind.config = {
   </div>
 </section>
 
+<!-- ══════════════════ VIDEO TESTIMONIALS ══════════════════ -->
+<section id="video-testimonials" aria-labelledby="video-testimonials-heading" class="bg-sand py-12 sm:py-14 lg:py-20 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+    <div class="text-center">
+      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Patient experiences</p>
+      <h2 id="video-testimonials-heading" class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] leading-[1.1] tracking-tightest text-brand-900 font-light">Hear From Our Patients</h2>
+    </div>
+    <div class="mt-7 mx-auto max-w-3xl">
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 1" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab419de6cc97c47e4fb1b3e?background=false&amp;autoplay=false&amp;loop=false&amp;disable_player_controls=true"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+    <details class="mt-5 rounded-2xl border border-black/10 bg-white p-4 sm:p-5">
+      <summary class="cursor-pointer font-medium text-brand-900">Watch three more patient stories</summary>
+      <div class="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 2" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227442394588e66b49ee3"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 3" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a210"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 4" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a20f"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      </div>
+    </details>
+    <p class="mt-5 text-center text-[12px] leading-relaxed text-brand-700">Patient experiences vary. Testimonials reflect individual experiences and are not a guarantee of outcome.</p>
+  </div>
+</section>
+
+
 <!-- ══════════════════ IS THIS YOU ══════════════════ -->
 <section id="signs" class="py-12 sm:py-14 lg:py-20 scroll-mt-24">
   <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
@@ -659,252 +675,48 @@ tailwind.config = {
 </section>
 
 <!-- ══════════════════ WHAT WE MANAGE + COMPARISON ══════════════════ -->
-<section id="what" class="bg-white border-y border-black/5 scroll-mt-24">
-  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10 py-12 sm:py-14 lg:py-20">
-
-    <div class="grid lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-      <div class="lg:col-span-7 reveal">
-        <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">What we manage</p>
-        <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-          The whole regimen, not the last prescription.
-        </h2>
-        <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-brand-900/60 font-light max-w-xl">
-          A comprehensive medication management plan keeps every part of your treatment under
-          review — and adjusts it as your response changes.
-        </p>
-
-        <ol class="mt-8 grid sm:grid-cols-2 gap-3.5 sm:gap-4">
-          <?php
-          $manage = [
-            ['Drug interactions',   'Reviewed across your medication regimen, including medications prescribed by other providers.',
-             'M7 5.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M21 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M14 18.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z M6.6 7.1l10 1.6 M18.4 11.2 13.3 17'],
-            ['Side effects',        'Reviewed throughout treatment and addressed as part of your medication plan.',
-             'M12 9v4.5M12 17h.01M10.3 3.9 2.6 17.3A2 2 0 0 0 4.3 20.3h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z'],
-            ['Dosage adjustments',  'Adjusted when clinically appropriate based on your response, symptoms and side effects.',
-             'M5 12h14M5 6h14M5 18h14 M9 4v4M15 10v4M11 16v4'],
-            ['Ongoing evaluation',  'Your response is reviewed at follow-up visits so your treatment plan can be adjusted when clinically appropriate.',
-             'M12 7v5l3 2M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z'],
-          ];
-          foreach ($manage as $i => [$h, $p, $icon]): ?>
-          <li class="reveal flex gap-4 rounded-2xl border border-black/[0.07] bg-cream p-5" style="transition-delay:<?= $i * 60 ?>ms">
-            <span class="relative grid place-items-center h-10 w-10 shrink-0 rounded-full bg-white text-brand-700 ring-1 ring-black/[0.07] shadow-sm">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-[18px] w-[18px]"><path d="<?= $icon ?>"/></svg>
-              <span class="absolute -top-1 -right-1 grid place-items-center h-4 w-4 rounded-full bg-accent-500 text-[10px] font-semibold text-white"><?= $i + 1 ?></span>
-            </span>
-            <div class="min-w-0">
-              <h3 class="font-display text-[18px] sm:text-[19px] leading-snug tracking-tight text-brand-900"><?= $h ?></h3>
-              <p class="mt-1.5 text-[14px] leading-relaxed text-brand-900/60"><?= $p ?></p>
-            </div>
-          </li>
-          <?php endforeach; ?>
-        </ol>
+<section id="what" class="py-12 sm:py-14 bg-white border-y border-black/5 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+    <h2 class="font-display text-[1.9rem] sm:text-[2.4rem] leading-tight text-brand-900 font-light">A review of your whole medication plan.</h2>
+    <p class="mt-4 max-w-3xl text-[16px] leading-relaxed text-brand-900/70">We consider your history, current prescriptions, side effects, and treatment goals together.</p>
+    <div class="mt-7 grid gap-4 sm:grid-cols-3">
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">Medication review</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Review drug interactions, doses, and what has or has not helped.</p>
       </div>
-
-      <div class="reveal lg:col-span-5">
-        <figure class="overflow-hidden rounded-2xl sm:rounded-3xl ring-1 ring-black/5">
-          <img src="<?= $img('regimen', 1000) ?>" alt="<?= $alt('regimen') ?>" loading="lazy" decoding="async"
-               class="js-photo aspect-[16/11] lg:aspect-[4/3] w-full object-cover">
-        </figure>
-        <div class="mt-3.5 rounded-2xl border border-black/[0.07] bg-cream px-5 py-4">
-          <p class="text-[14px] leading-relaxed text-brand-900/60">
-            <span class="font-medium text-brand-900">Bring your bottles.</span>
-            Or bring a current medication list or pharmacy printout. This helps our team accurately review medications prescribed now or in the past.
-          </p>
-        </div>
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">A shared plan</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Understand your options, including medication changes when clinically appropriate.</p>
+      </div>
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">Ongoing support</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">30-minute follow-ups to review progress and adjust your plan.</p>
       </div>
     </div>
-
-    <!-- ── comparison ──────────────────────────────────────────────────────────
-         Kept dark, because the highlighted column needs the contrast — but
-         contained as a panel rather than a second full-width blue band. -->
-    <div class="relative overflow-hidden mt-10 sm:mt-12 rounded-[24px] sm:rounded-[28px] bg-brand-950 text-cream grain p-5 sm:p-8 lg:p-10 reveal">
-      <div class="pointer-events-none absolute -right-32 -top-24 h-[24rem] w-[24rem] rounded-full bg-brand-600/40 blur-[110px]"></div>
-      <div class="relative">
-        <h3 class="font-display text-[1.6rem] sm:text-[2rem] leading-tight tracking-tightest font-light">
-          Why the appointment length matters.
-        </h3>
-        <p class="mt-3 text-[15px] sm:text-[15.5px] leading-relaxed text-cream/60 font-light max-w-2xl">
-A longer medication-management visit creates more time to review the factors that can affect your treatment plan. Here's what we make time for.
-        </p>
-
-        <!-- Phones and tablets: one card per row, so nothing scrolls sideways. -->
-        <div class="mt-7 grid gap-3 sm:grid-cols-2 lg:hidden">
-          <?php foreach ($compareRows as [$label, $values]): ?>
-          <div class="overflow-hidden rounded-2xl border border-white/12 bg-white/[0.03]">
-            <p class="px-4 pt-3.5 pb-2.5 text-[11.5px] uppercase tracking-[0.16em] text-cream/45"><?= $label ?></p>
-            <div class="border-t border-white/10">
-              <?php foreach ($compareCols as $c => [$colName, $colSub]):
-                $lead = $c === 0; ?>
-              <div class="flex items-start gap-2.5 px-4 py-3 <?= $lead ? 'bg-accent-500/15' : 'border-t border-white/[0.07]' ?>">
-                <?php if ($lead): ?>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" class="mt-[3px] h-3.5 w-3.5 shrink-0 text-accent-400"><path d="M5 13l4 4L19 7"/></svg>
-                <?php else: ?>
-                <span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-cream/25"></span>
-                <?php endif; ?>
-                <div class="min-w-0">
-                  <p class="text-[11.5px] uppercase tracking-[0.12em] <?= $lead ? 'text-accent-400' : 'text-cream/35' ?>"><?= $colName ?></p>
-                  <p class="mt-0.5 text-[14.5px] leading-snug <?= $lead ? 'text-cream' : 'text-cream/60' ?>"><?= $values[$c] ?></p>
-                </div>
-              </div>
-              <?php endforeach; ?>
-            </div>
-          </div>
-          <?php endforeach; ?>
-        </div>
-
-        <!-- Large screens: overview table of medication management at IPA. -->
-        <table class="hidden lg:table w-full mt-8 border-separate border-spacing-0 text-left">
-          <caption class="sr-only">Medication management at Interventional Psychiatry of Arizona</caption>
-          <thead>
-            <tr>
-              <th scope="col" class="w-[28%] pb-5 pr-6"><span class="sr-only">Attribute</span></th>
-              <?php foreach ($compareCols as $c => [$colName, $colSub]): ?>
-              <th scope="col" class="w-[72%] px-6 pb-5 align-bottom <?= $c === 0 ? 'rounded-t-2xl bg-accent-500/15 pt-6' : '' ?>">
-                <span class="block font-display text-[22px] tracking-tight <?= $c === 0 ? 'text-cream' : 'text-cream/80' ?>"><?= $colName ?></span>
-                <span class="mt-1 block text-[12.5px] <?= $c === 0 ? 'text-accent-400' : 'text-cream/40' ?>"><?= $colSub ?></span>
-              </th>
-              <?php endforeach; ?>
-            </tr>
-          </thead>
-          <tbody class="align-top">
-            <?php foreach ($compareRows as $i => [$label, $values]):
-              $last = $i === count($compareRows) - 1; ?>
-            <tr>
-              <th scope="row" class="border-t border-white/10 py-5 pr-6 text-[14.5px] font-medium text-cream/55"><?= $label ?></th>
-              <?php foreach ($values as $c => $v): ?>
-              <td class="border-t border-white/10 px-6 py-5 text-[15px] <?= $c === 0 ? 'bg-accent-500/15 text-cream ' . ($last ? 'rounded-b-2xl' : '') : 'text-cream/60' ?>">
-                <?php if ($c === 0): ?>
-                <span class="flex items-start gap-2.5">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" class="mt-1 h-3.5 w-3.5 shrink-0 text-accent-400"><path d="M5 13l4 4L19 7"/></svg>
-                  <?= $v ?>
-                </span>
-                <?php else: ?>
-                <?= $v ?>
-                <?php endif; ?>
-              </td>
-              <?php endforeach; ?>
-            </tr>
-            <?php endforeach; ?>
-          </tbody>
-        </table>
-
-        <div class="mt-7 flex flex-col sm:flex-row sm:items-center gap-4">
-          <a href="#book" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-6 py-3.5 text-[15px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20 shrink-0">
-            Request an Appointment
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
-          </a>
-          <p class="text-[14px] leading-relaxed text-cream/45 max-w-md">
-           If medication alone is not providing enough improvement, additional treatment options including TMS, SPRAVATO® and ECT are available within the practice.
-          </p>
-        </div>
-      </div>
-    </div>
+    <a href="#book" class="mt-7 inline-flex rounded-full bg-brand-900 px-6 py-3 text-[15px] font-medium text-cream hover:bg-brand-800 transition">Request a Call</a>
   </div>
 </section>
 
 <!-- ══════════════════ YOUR FIRST VISIT ══════════════════ -->
-<section id="process" class="py-12 sm:py-14 lg:py-20 border-b border-black/5 scroll-mt-24">
+<section id="process" class="py-12 sm:py-14 bg-white border-y border-black/5 scroll-mt-24">
   <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
-
-    <div class="max-w-2xl reveal">
-      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Your first visit</p>
-      <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-        What the ninety minutes are for.
-      </h2>
-    </div>
-
-    <div class="relative mt-8 sm:mt-10">
-      <div class="hidden lg:block absolute top-6 left-0 right-0 h-px bg-gradient-to-r from-transparent via-black/10 to-transparent"></div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-7">
-        <?php
-        $steps = [
-          ['A short first call',
-           'Tell us briefly what you&#8217;re looking for help with and your current medication situation. We can discuss whether our services may be a good fit and verify your insurance benefits before scheduling.'],
-          ['The 90-minute evaluation',
-           'We review your history, medications you have tried and are currently taking, relevant medical factors, side effects and your treatment goals. Available in person or by telehealth.'],
-          ['A plan you understand',
-           'We explain what we recommend, why we recommend it and what to expect. When clinically appropriate, the plan may include reducing or discontinuing a medication rather than adding another.'],
-          ['30-minute follow-ups',
-           'Follow-up visits give us time to review how you&rsquo;re responding, discuss side effects or concerns and adjust the treatment plan when appropriate.'],
-        ];
-        foreach ($steps as $i => [$h, $p]): ?>
-        <div class="reveal relative flex gap-4 lg:block" style="transition-delay:<?= $i * 70 ?>ms">
-          <span class="relative z-10 grid place-items-center h-11 w-11 lg:h-12 lg:w-12 shrink-0 rounded-2xl bg-brand-900 text-cream font-display text-lg font-light shadow-lg shadow-brand-900/15">
-            <?= $i + 1 ?>
-          </span>
-          <div class="min-w-0">
-            <h3 class="lg:mt-5 font-display text-[19px] sm:text-[21px] leading-snug tracking-tight text-brand-900"><?= $h ?></h3>
-            <p class="mt-2 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/60"><?= $p ?></p>
-          </div>
-        </div>
-        <?php endforeach; ?>
+    <h2 class="font-display text-[1.9rem] sm:text-[2.4rem] leading-tight text-brand-900 font-light">Your first appointment, in three steps.</h2>
+    <p class="mt-4 max-w-3xl text-[16px] leading-relaxed text-brand-900/70">Appointments are available in person or by telehealth. Bring your medication list and details of previous treatments.</p>
+    <div class="mt-7 grid gap-4 sm:grid-cols-3">
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">1. Request a call</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Our team discusses your needs and verifies insurance benefits before scheduling.</p>
+      </div>
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">2. Meet your clinician</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Your 90-minute evaluation covers your history, current symptoms, medications, and goals.</p>
+      </div>
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">3. Plan your follow-up</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Leave with clear next steps and a plan for reviewing your response.</p>
       </div>
     </div>
-
-    <div class="reveal mt-10 grid lg:grid-cols-12 gap-6 lg:gap-10 items-center rounded-2xl sm:rounded-[28px] bg-sand/70 p-5 sm:p-7 lg:p-8">
-      <div class="lg:col-span-5">
-        <figure class="overflow-hidden rounded-xl sm:rounded-2xl ring-1 ring-black/5">
-          <img src="<?= $img('consult', 1000) ?>" alt="<?= $alt('consult') ?>" loading="lazy" decoding="async"
-               class="js-photo aspect-[16/10] w-full object-cover">
-        </figure>
-      </div>
-      <div class="lg:col-span-7">
-        <h3 class="font-display text-[20px] sm:text-[24px] tracking-tight text-brand-900">Bring these, and the first visit does more</h3>
-        <ul class="mt-5 grid sm:grid-cols-3 gap-4 sm:gap-5">
-          <?php
-          $bring = [
-            ['Your current bottles', 'Or a printout from your pharmacy — names and doses.'],
-            ['What you have tried',  'Anything you stopped, and why, even years ago.'],
-            ['One thing to change',  'The symptom or concern you would most like treatment to improve.'],
-          ];
-          foreach ($bring as [$h, $p]): ?>
-          <li>
-            <div class="h-px w-8 bg-accent-500"></div>
-            <p class="mt-3 text-[15px] font-medium text-brand-900"><?= $h ?></p>
-            <p class="mt-1 text-[14px] leading-relaxed text-brand-900/55"><?= $p ?></p>
-          </li>
-          <?php endforeach; ?>
-        </ul>
-      </div>
-    </div>
-
-    <!-- ── the practice itself ──────────────────────────────────────────────
-         A rail of modest tiles rather than a big collage: these sources top out
-         at 680px (and reception at 141px), so a full-width grid would upscale
-         them into mush. At this size they stay sharp, and it costs one row. -->
-    <div class="reveal mt-10">
-      <div class="flex flex-wrap items-end justify-between gap-3">
-        <h3 class="font-display text-[20px] sm:text-[23px] tracking-tight text-brand-900">A look at our Phoenix office</h3>
-        <p class="text-[13.5px] text-brand-900/45"><?= $ADDRESS_L1 ?>, <?= $ADDRESS_L2 ?></p>
-      </div>
-      <div class="slider mt-4 flex gap-3 overflow-x-auto snap-x pb-1 -mx-5 px-5 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0">
-        <?php
-        $ambience = [
-          ['care',      'Time to actually be heard'],
-          ['reception', 'A comfortable reception area'],
-          ['room',      'Our treatment rooms'],
-          ['tms',       'Our TMS treatment area'],
-        ];
-        foreach ($ambience as [$slot, $caption]): ?>
-        <figure class="group relative snap-start shrink-0 w-[11.5rem] sm:w-[13.5rem] overflow-hidden rounded-xl sm:rounded-2xl ring-1 ring-black/5 aspect-[4/3]">
-          <img src="<?= $img($slot, 500) ?>" alt="<?= $alt($slot) ?>" loading="lazy" decoding="async"
-               class="js-photo h-full w-full object-cover transition duration-700 group-hover:scale-[1.05]">
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/10 to-transparent"></div>
-          <figcaption class="absolute inset-x-0 bottom-0 p-3 text-[12.5px] font-medium leading-snug text-cream"><?= $caption ?></figcaption>
-        </figure>
-        <?php endforeach; ?>
-      </div>
-    </div>
-
-    <div class="reveal mt-8 text-center">
-      <a href="#book" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-7 py-4 text-[15.5px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20">
-        Request an Appointment
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
-      </a>
-      <p class="mt-3.5 text-[13.5px] text-brand-900/45">
-        Or call <a href="tel:<?= $PHONE_LINK ?>" class="font-medium text-brand-900/70 hover:text-accent-600 transition"><?= $PHONE_DISPLAY ?></a> — Monday to Friday, 8am–5pm.
-      </p>
-    </div>
+    <a href="#book" class="mt-7 inline-flex rounded-full bg-brand-900 px-6 py-3 text-[15px] font-medium text-cream hover:bg-brand-800 transition">Request a Call</a>
   </div>
 </section>
 
@@ -988,87 +800,8 @@ A longer medication-management visit creates more time to review the factors tha
   </div>
 </section>
 
-<!-- ══════════════════ WHY PATIENTS SWITCH ══════════════════ -->
-<section class="py-12 sm:py-14 lg:py-20 bg-sand/60 border-b border-black/5">
-  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
-    <div class="grid lg:grid-cols-12 gap-8 lg:gap-14">
 
-      <div class="lg:col-span-5 reveal">
-        <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Why patients switch</p>
-        <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] lg:text-[2.7rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
-          A different kind of psychiatric practice.
-        </h2>
-        <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-brand-900/60 font-light">
-          We built this clinic to provide thoughtful care for patients with complex treatment needs — and around the belief that complex cases deserve more time, not less.
-        </p>
-        <figure class="mt-6 overflow-hidden rounded-2xl ring-1 ring-black/5">
-          <img src="<?= $img('review', 900) ?>" alt="<?= $alt('review') ?>" loading="lazy" decoding="async"
-               class="js-photo aspect-[16/10] w-full object-cover">
-        </figure>
-      </div>
 
-      <div class="lg:col-span-7 reveal grid sm:grid-cols-2 gap-x-10 gap-y-8 content-start" style="transition-delay:.08s">
-        <?php
-        $why = [
-          ['Time to actually be heard', 'Appointments are built for real conversation. We ask about sleep, work, relationships and side effects — not just a symptom checklist.'],
-          ['Complex cases welcome',     'Our team works with complex psychiatric needs, including serious mental illness, co-occurring substance use, geriatric complexity and conditions that have not responded adequately to previous treatment.'],
-          ['Every option under one roof','If medication alone isn’t providing enough improvement, additional treatment options including TMS, SPRAVATO® and ECT are available within the practice and can be coordinated as part of your care.'],
-          ['Insurance-forward',         'We work with many major insurance plans, and our team can verify benefits and assist with prior authorization requirements when applicable.'],
-        ];
-        foreach ($why as $i => [$h, $p]): ?>
-        <div>
-          <div class="h-px w-10 bg-accent-500"></div>
-          <h3 class="mt-4 font-display text-[20px] sm:text-[22px] tracking-tight text-brand-900"><?= $h ?></h3>
-          <p class="mt-2 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/60"><?= $p ?></p>
-        </div>
-        <?php endforeach; ?>
-
-        <div class="sm:col-span-2 flex flex-wrap items-center gap-4 border-t border-black/10 pt-7">
-          <a href="#book" class="group inline-flex items-center gap-2 rounded-full bg-brand-900 px-7 py-3.5 text-[15px] font-medium text-cream hover:bg-brand-800 transition">
-            Request an Appointment
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
-          </a>
-          <p class="text-[14px] text-brand-900/50">One conversation, and an honest answer either way.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════ VIDEO TESTIMONIALS ══════════════════ -->
-<section id="video-testimonials" aria-labelledby="video-testimonials-heading" class="bg-sand py-12 sm:py-14 lg:py-20 scroll-mt-24">
-  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
-    <div class="text-center">
-      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Patient experiences</p>
-      <h2 id="video-testimonials-heading" class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] leading-[1.1] tracking-tightest text-brand-900 font-light">Hear From Our Patients</h2>
-    </div>
-    <div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
-      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
-        <iframe loading="lazy" title="Patient video testimonial 1" class="absolute inset-0 h-full w-full border-0"
-                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a20f"
-                referrerpolicy="origin"
-                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
-                allowfullscreen></iframe>
-      </div>
-      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
-        <iframe loading="lazy" title="Patient video testimonial 2" class="absolute inset-0 h-full w-full border-0"
-                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a210"
-                referrerpolicy="origin"
-                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
-                allowfullscreen></iframe>
-      </div>
-      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
-        <iframe loading="lazy" title="Patient video testimonial 3" class="absolute inset-0 h-full w-full border-0"
-                src="https://play.gumlet.io/embed/6ab227442394588e66b49ee3"
-                referrerpolicy="origin"
-                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
-                allowfullscreen></iframe>
-      </div>
-    </div>
-    <p class="mt-5 text-center text-[12px] leading-relaxed text-brand-700">Patient experiences vary. Testimonials reflect individual experiences and are not a guarantee of outcome.</p>
-  </div>
-</section>
 
 <!-- ══════════════════ REVIEWS + FAQ ══════════════════ -->
 <section id="faq" class="py-12 sm:py-14 lg:py-20 scroll-mt-24">
@@ -1095,7 +828,7 @@ A longer medication-management visit creates more time to review the factors tha
 
       <div id="tTrack" tabindex="0" role="region" aria-label="Patient reviews from Google"
            class="slider mt-6 flex gap-3.5 sm:gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth -mx-5 px-5 sm:-mx-6 sm:px-6 lg:-mx-2 lg:px-2 pb-2 outline-none">
-        <?php foreach ($reviews as [$name, $initials, $meta, $when, $tag, $body]): ?>
+        <?php foreach (array_slice($reviews, 0, 3) as [$name, $initials, $meta, $when, $tag, $body]): ?>
         <figure class="t-card snap-start shrink-0 flex flex-col w-[85%] sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
           <div class="flex items-start gap-3">
             <span class="grid place-items-center h-10 w-10 shrink-0 rounded-full bg-brand-900/[0.07] font-display text-[14px] text-brand-800"><?= $initials ?></span>
