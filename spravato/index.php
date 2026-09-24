@@ -119,10 +119,19 @@ $faqs = [
   ['Will I owe anything out of pocket?',
    'Your out-of-pocket cost depends on your insurance plan and may include a deductible, copay or coinsurance for the medication and treatment-related services. Before treatment begins, our team will verify your benefits and review your expected patient responsibility with you.
 Eligible patients with commercial insurance may also qualify for manufacturer savings or rebate programs that can help with certain SPRAVATO® medication and treatment-observation costs. Our team can help you determine whether you may be eligible.'],
+
+ ['What happens during a treatment session?',
+   'You self-administer SPRAVATO® nasal spray under the supervision of a healthcare provider at our REMS-certified treatment center. After administration, you will be monitored for at least two hours. Your healthcare provider will monitor you for potential side effects and determine when you are clinically stable and ready to leave. You will need to arrange transportation home and should not drive or operate machinery until the next day, after a full night’s sleep.'],
+
   ['How quickly does SPRAVATO® work?',
    'Response to SPRAVATO® varies. Some patients may experience improvement earlier in treatment, while others may require multiple treatment sessions before noticing a change. Your clinical team will monitor your symptoms throughout treatment and evaluate your individual response.'],
-  ['What happens during a treatment session?',
-   'You self-administer SPRAVATO® nasal spray under the supervision of a healthcare provider at our REMS-certified treatment center. After administration, you will be monitored for at least two hours. Your healthcare provider will monitor you for potential side effects and determine when you are clinically stable and ready to leave. You will need to arrange transportation home and should not drive or operate machinery until the next day, after a full night’s sleep.'],
+
+
+
+ 
+
+
+
   ['Can I drive myself home?',
    'No. You will need to arrange transportation home after each SPRAVATO® treatment. You should not drive or operate machinery until the next day, after a full night’s sleep. Your healthcare provider will determine when you are clinically stable and ready to leave the treatment center.'],
   ['What are the common side effects?',
