@@ -105,62 +105,76 @@
                 <div class="dm-h">
                     <a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an
                         Appointment </a> <br />
-                    <p>If you or a loved one is having a behavioral health crisis hotline <?php echo CRISIS_HOTLINE; ?>.
-                    </p>
+                    <p>For mental health crisis support, call or text <a href="tel:<?php echo CRISIS_HOTLINE; ?>"><?php echo CRISIS_HOTLINE; ?></a>. For an immediate emergency, call <a href="tel:911">911</a>.</p>
                 </div>
             </div>
         </div>
-        <div class="dm-flex">
-            <div class="dm-fourth">
-                <h3>
-                    Social
-                </h3>
+        <style>
+            #site-footer .footer-main { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1.2fr; gap: 28px; padding-top: 24px; padding-bottom: 24px; }
+            #site-footer .footer-main > * { min-width: 0; }
+            #site-footer .footer-main h3 { margin: 0 0 14px; font-size: 20px; color: #fff; }
+            #site-footer .footer-main p { font-size: 14px; line-height: 1.7; color: #eee; margin: 0 0 12px; }
+            #site-footer .footer-main ul { list-style: none; margin: 0; padding: 0; }
+            #site-footer .footer-main li { margin-bottom: 9px; }
+            #site-footer .footer-main a, #site-footer .footer-legal a { color: #fff; text-decoration: none; }
+            #site-footer .footer-main a:hover, #site-footer .footer-legal a:hover { text-decoration: underline; }
+            #site-footer a:focus-visible, #site-footer summary:focus-visible { outline: 2px solid #f5975f; outline-offset: 4px; }
+            #site-footer .footer-main .social-icons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+            #site-footer .footer-main .social-icons a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin: 0; background: #fff; color: #262858; border-radius: 50%; font-size: 19px; line-height: 1; text-decoration: none; }
+            #site-footer .footer-main .social-icons a:hover, #site-footer .footer-main .social-icons a:focus-visible { background: #f5975f; color: #262858; text-decoration: none; }
+            #site-footer .footer-main .footer-hours { margin-top: 18px; }
+            #site-footer .footer-legal { display: flex; flex-wrap: wrap; gap: 12px 22px; margin: 12px 0; }
+            #site-footer .footer-disclaimer { max-width: 900px; font-size: 13px; line-height: 1.6; color: #eee; }
+            @media (max-width: 1000px) { #site-footer .footer-main { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+            @media (max-width: 540px) { #site-footer .footer-main { grid-template-columns: 1fr; } }
+        </style>
+        <div class="container dm-flex footer-main">
+            <div>
+                <h3>About Our Practice</h3>
+                <p>Psychiatric evaluations, medication management, and interventional treatment options in Phoenix, with telehealth for eligible patients across Arizona.</p>
+                <a href="/meet-our-team/">Meet our clinical team &rarr;</a>
                 <div class="social-icons">
-                    <a class="header-facebook" href="<?php echo FACEBOOK_URL; ?>" target="_blank">
-                        <span class="fa fa-facebook"></span>
+                    <a class="header-facebook" aria-label="Facebook (opens in a new tab)" rel="noopener noreferrer" href="<?php echo FACEBOOK_URL; ?>" target="_blank">
+                        <span class="fa fa-facebook" aria-hidden="true"></span>
                     </a>
-                    <a class="header-google" href="<?php echo GOOGLE_MAPS_RATING; ?>" target="_blank">
-                        <span class="fa fa-google"></span>
+                    <a class="header-google" aria-label="Google reviews (opens in a new tab)" rel="noopener noreferrer" href="<?php echo GOOGLE_MAPS_RATING; ?>" target="_blank">
+                        <span class="fa fa-google" aria-hidden="true"></span>
                     </a>
-                    <a class="header-linkedin" href="<?php echo LINKEDIN_URL; ?>" target="_blank">
-                        <span class="fa fa-linkedin"></span>
+                    <a class="header-linkedin" aria-label="LinkedIn (opens in a new tab)" rel="noopener noreferrer" href="<?php echo LINKEDIN_URL; ?>" target="_blank">
+                        <span class="fa fa-linkedin" aria-hidden="true"></span>
                     </a>
-                    <a class="header-instagram" href="<?php echo INSTAGRAM_URL; ?>" target="_blank">
-                        <span class="fa fa-instagram"></span>
+                    <a class="header-instagram" aria-label="Instagram (opens in a new tab)" rel="noopener noreferrer" href="<?php echo INSTAGRAM_URL; ?>" target="_blank">
+                        <span class="fa fa-instagram" aria-hidden="true"></span>
                     </a>
                 </div>
             </div>
-            <div class="dm-fourth">
-                <h3> Office Hours </h3>
-                <div class="footer-hours">
-                    <p>Mon-Fri: 8am-5pm<br />
-                        Sat, Sun: Closed</p>
-                </div>
-            </div>
-            <div class="dm-fourth">
-                <h3>
-                    Contact Us
-                </h3>
-                <p>
-                    <a href="<?php echo GOOGLE_MAPS_OFFICE; ?>" target="_blank" style="color:white !important">
-                        <?php echo SITE_ADDRESS; ?></a>
-                </p>
-                <p> Phone: <a href="tel:<?php echo SITE_PHONE_RAW; ?>" style="color:white !important">
-                        <?php echo SITE_PHONE; ?> </a>
-                </p>
-            </div>
-            <div class="dm-fourth">
-                <h3>
-                    Areas We Serve
-                </h3>
-                <style>
-                    .footer-locations summary::-webkit-details-marker { display: none; }
-                    .footer-locations summary { list-style: none; outline: none; user-select: none; }
-                    .footer-loc-link { color: #ffffff !important; text-decoration: none; transition: color 0.2s ease, padding-left 0.2s ease; display: inline-block; }
-                    .footer-loc-link:hover, .footer-loc-link:focus { color: #ef7136 !important; text-decoration: underline; padding-left: 3px; }
-                </style>
-                <details class="footer-locations" open>
-                    <summary style="cursor: pointer; padding: 5px 0; color: white !important; font-weight: 500;">View Locations <i class="fa fa-caret-down"></i></summary>
+            <nav aria-label="Footer treatments">
+                <h3>Our Treatments</h3>
+                <ul>
+                    <li><a href="/medication-management/">Medication Management</a></li>
+                    <li><a href="/tms-therapy/">TMS Therapy</a></li>
+                    <li><a href="/spravato-esketamine-nasal-spray/">SPRAVATO&reg; Treatment</a></li>
+                    <li><a href="/electroconvulsive-therapy-ect/">Electroconvulsive Therapy (ECT)</a></li>
+                    <li><a href="/conditions-treated/">Conditions We Treat</a></li>
+                </ul>
+            </nav>
+            <nav aria-label="Footer patient resources">
+                <h3>Patient Resources</h3>
+                <ul>
+                    <li><a href="/new-patients/">New Patients</a></li>
+                    <li><a href="/appointments/">Request an Appointment</a></li>
+                    <li><a href="/contact/">Contact Our Office</a></li>
+                    <li><a href="/testimonials/">Patient Testimonials</a></li>
+                    <li><a href="/for-providers/">For Referring Providers</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h3>Contact &amp; Hours</h3>
+                <p><a href="<?php echo GOOGLE_MAPS_OFFICE; ?>" target="_blank" rel="noopener"><?php echo SITE_ADDRESS; ?></a></p>
+                <p><a href="tel:<?php echo SITE_PHONE_RAW; ?>"><?php echo SITE_PHONE; ?></a></p>
+                <p class="footer-hours">Mon–Fri: 8am–5pm<br>Sat, Sun: Closed</p>
+                <details class="footer-locations">
+                    <summary style="cursor: pointer; padding: 5px 0; color: white !important; font-weight: 500;">Areas We Serve <i class="fa fa-caret-down"></i></summary>
                     <ul style="list-style: none; padding-left: 0; margin-top: 10px; line-height: 1.8;">
                         <li><a href="/locations/scottsdale-az/" class="footer-loc-link">Scottsdale, AZ</a></li>
                         <li><a href="/locations/tempe-az/" class="footer-loc-link">Tempe, AZ</a></li>
@@ -177,6 +191,13 @@
         </div>
         <div class="dm-full footer-creds">
             <div class="container">
+                <p>&copy; <?php echo date('Y'); ?> <?php echo SITE_NAME; ?>. All rights reserved.</p>
+                <nav class="footer-legal" aria-label="Policies and accessibility">
+                    <a href="/privacy-policy/">Privacy Policy</a>
+                    <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+                    <a href="/accessibility/">Accessibility</a>
+                </nav>
+                <p class="footer-disclaimer">Information on this website is for general educational purposes and does not replace an evaluation or advice from your clinician. Treatment recommendations, eligibility, and insurance coverage vary. Please use contact forms for general inquiries only, without sensitive medical details.</p>
             </div>
         </div>
     </div>

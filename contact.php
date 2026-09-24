@@ -5,7 +5,8 @@ $pageDescription = 'Interventional Psychiatry of Arizona - Visit our Psychiatry 
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/contact/';
-$hideVisitUs = false;
+// The main contact form and map are already on this page.
+$hideVisitUs = true;
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
@@ -74,6 +75,7 @@ Sat, Sun: Closed</p>
 </div><!--#page-->
 
 <?php
+require __DIR__ . '/includes/office-gallery.php';
 require_once __DIR__ . '/includes/footer.php';
 ?>
 

@@ -56,13 +56,13 @@ $LOGO_LIGHT = $asset('interpsychaz-logo.webp');       // white — dark backgrou
 $LOGO_DARK  = $asset('interpsychaz-logo-dark.webp');  // indigo — light backgrounds
 
 $IMG = [
+  'consult' => ['file'=>'ambience/office-consult.webp', 'alt'=>'Consultation room with a desk and sofa at our Phoenix office'],
   'hero'      => ['file'=>'ambience/hero-consult.jpg',        'id'=>'photo-1573497491208-6b1acb260507', 'alt'=>'A psychiatrist listening and taking notes while talking with a patient'],
   'care'      => ['file'=>'ambience/why-patient-trust-us.webp','id'=>'photo-1584515933487-779824d29309', 'alt'=>'A clinician with a patient during a visit at our Phoenix practice'],
-  /* Practice photography. These sources top out around 680px, so they are only
-     ever rendered in the small tiles of the ambience rail. */
+  /* Selected real photographs of our Phoenix office. */
   'chair'     => ['file'=>'ambience/inter-a-2.webp',          'id'=>'photo-1666214280557-f1b5022eb634', 'alt'=>'Our TMS treatment room, with the Magstim chair and stimulator'],
   'room'      => ['file'=>'ambience/inter-a-1.webp',          'id'=>'photo-1512678080530-7760d81faba6', 'alt'=>'Our treatment room, with recliners, vitals equipment and privacy screens'],
-  'reception' => ['file'=>'ambience/inter-a-3.png',           'id'=>'photo-1519494026892-80bbd2d6fd0d', 'alt'=>'A member of our team at the front desk of our Phoenix office'],
+  'reception' => ['file'=>'ambience/office-reception.webp', 'alt'=>'Reception desk and entrance at our Phoenix office'],
 ];
 
 /** Resolve a slot to a URL — local file wins, stock placeholder otherwise. */
@@ -70,7 +70,7 @@ $img = function (string $key, int $w = 1200) use ($IMG, $IMG_DIR, $BASE): string
   if (!isset($IMG[$key])) return '';
   $local = $IMG_DIR . '/' . $IMG[$key]['file'];
   if (is_file(__DIR__ . '/' . $local)) return $BASE . '/' . $local . '?v=' . filemtime(__DIR__ . '/' . $local);
-  return 'https://images.unsplash.com/' . $IMG[$key]['id'] . '?auto=format&fit=crop&w=' . $w . '&q=70';
+  return 'https://images.unsplash.com/' . ($IMG[$key]['id'] ?? 'photo-1519494026892-80bbd2d6fd0d') . '?auto=format&fit=crop&w=' . $w . '&q=70';
 };
 $alt = fn(string $key): string => $IMG[$key]['alt'] ?? '';
 
@@ -729,6 +729,22 @@ tailwind.config = {
       </div>
     </div>
     <a href="#book" class="mt-7 inline-flex rounded-full bg-brand-900 px-6 py-3 text-[15px] font-medium text-cream hover:bg-brand-800 transition">Request a Call</a>
+  </div>
+</section>
+
+<section class="py-10 sm:py-12 bg-sand/60" aria-label="Our Phoenix office">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+    <h2 class="font-display text-[1.9rem] sm:text-[2.4rem] text-brand-900 font-light">A look inside our Phoenix office</h2>
+    <div class="mt-6 grid gap-5 sm:grid-cols-2">
+      <figure class="overflow-hidden rounded-2xl bg-white ring-1 ring-black/5">
+        <img src="<?= $img('reception', 1000) ?>" alt="<?= $alt('reception') ?>" width="1400" height="1050" loading="lazy" decoding="async" class="aspect-[4/3] w-full object-cover">
+        <figcaption class="px-5 py-3 text-[14px] text-brand-900/70">Welcome to our Phoenix office</figcaption>
+      </figure>
+      <figure class="overflow-hidden rounded-2xl bg-white ring-1 ring-black/5">
+        <img src="<?= $img('consult', 1000) ?>" alt="<?= $alt('consult') ?>" width="1400" height="1050" loading="lazy" decoding="async" class="aspect-[4/3] w-full object-cover">
+        <figcaption class="px-5 py-3 text-[14px] text-brand-900/70">Space for a conversation</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 

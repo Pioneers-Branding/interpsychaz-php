@@ -60,12 +60,13 @@ $LOGO_DARK     = $asset('interpsychaz-logo-dark.webp');  // indigo — light bac
 $SPRAVATO_MARK = $asset('spravato-logo.webp');           // SPRAVATO® brand lockup
 
 $IMG = [
+  'waiting' => ['file'=>'ambience/office-waiting.webp', 'alt'=>'Seating in the waiting area at our Phoenix office'],
   'hero'      => ['file'=>'ambience/hero-happy-patient.jpg',  'id'=>'photo-1559757148-5c350d0d3c56', 'alt'=>'A woman standing at the shore with her arms raised and her face turned to the sun, smiling'],
   'device'    => ['file'=>'ambience/spravato-image.webp',     'id'=>'photo-1631549916768-4119b2e5f926', 'alt'=>'A patient holding the SPRAVATO 28 mg esketamine nasal spray device up to their nose'],
   'session'   => ['file'=>'spravato-treatment-session.webp',  'id'=>'photo-1512678080530-7760d81faba6', 'alt'=>'A woman self-administering an esketamine nasal spray'],
   /* Practice photography — the rooms a patient actually walks into. */
-  'room'      => ['file'=>'ambience/inter-a-1.webp',           'id'=>'photo-1512678080530-7760d81faba6', 'alt'=>'Our monitoring room, with recliners, vitals equipment and privacy screens'],
-  'reception' => ['file'=>'ambience/inter-a-3.png',            'id'=>'photo-1519494026892-80bbd2d6fd0d', 'alt'=>'The front desk and reception area at our Phoenix office'],
+  'room' => ['file'=>'ambience/office-room.webp', 'alt'=>'Private room with a recliner at our Phoenix office'],
+  'reception' => ['file'=>'ambience/office-reception.webp', 'alt'=>'Reception desk and entrance at our Phoenix office'],
   'care'      => ['file'=>'ambience/why-patient-trust-us.webp','id'=>'photo-1584515933487-779824d29309', 'alt'=>'A clinician with a patient during a treatment session at our Phoenix practice'],
   'tms'       => ['file'=>'ambience/inter-a-2.webp',           'id'=>'photo-1666214280557-f1b5022eb634', 'alt'=>'Our TMS treatment room, with the Magstim chair and stimulator'],
 ];
@@ -75,7 +76,7 @@ $img = function (string $key, int $w = 1200) use ($IMG, $IMG_DIR, $BASE): string
   if (!isset($IMG[$key])) return '';
   $local = $IMG_DIR . '/' . $IMG[$key]['file'];
   if (is_file(__DIR__ . '/' . $local)) return $BASE . '/' . $local . '?v=' . filemtime(__DIR__ . '/' . $local);
-  return 'https://images.unsplash.com/' . $IMG[$key]['id'] . '?auto=format&fit=crop&w=' . $w . '&q=70';
+  return 'https://images.unsplash.com/' . ($IMG[$key]['id'] ?? 'photo-1519494026892-80bbd2d6fd0d') . '?auto=format&fit=crop&w=' . $w . '&q=70';
 };
 $alt = fn(string $key): string => $IMG[$key]['alt'] ?? '';
 
@@ -753,12 +754,11 @@ tailwind.config = {
 
     <!-- the practice itself -->
     <?php
-    /* Spans total 12 per row: 5+4+3, then the row-spanning tile plus 7. */
+    /* A small selection of real office photos. */
     $gallery = [
-      ['session',   'Self-administered, supervised',  'lg:col-span-5 lg:row-span-2'],
-      ['room',      'The monitoring room',            'lg:col-span-4'],
-      ['reception', 'Our reception area',       'lg:col-span-3'],
-      ['tms',       'Our TMS treatment area', 'lg:col-span-7'],
+      ['room', 'A private treatment room', ''],
+      ['reception', 'Our reception area', ''],
+      ['waiting', 'Our waiting area', ''],
     ];
     ?>
     <div class="reveal mt-10">
@@ -766,9 +766,9 @@ tailwind.config = {
         <h3 class="font-display text-[20px] sm:text-[23px] tracking-tight text-brand-900">Our Phoenix clinic</h3>
         <p class="text-[13.5px] text-brand-900/45"><?= $ADDRESS_L1 ?>, <?= $ADDRESS_L2 ?></p>
       </div>
-      <div class="mt-4 grid grid-cols-2 gap-2.5 sm:gap-3 lg:grid-cols-12 lg:auto-rows-[10.5rem]">
+      <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
         <?php foreach ($gallery as $i => [$slot, $caption, $span]): ?>
-        <figure class="group relative overflow-hidden rounded-xl sm:rounded-2xl ring-1 ring-black/5 aspect-[4/3] lg:aspect-auto <?= $i === 0 ? 'col-span-2 lg:col-span-5' : '' ?> <?= $span ?>">
+        <figure class="group relative overflow-hidden rounded-xl sm:rounded-2xl ring-1 ring-black/5 aspect-[4/3]">
           <img src="<?= $img($slot, 900) ?>" alt="<?= $alt($slot) ?>" loading="lazy" decoding="async"
                class="js-photo h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]">
           <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/10 to-transparent"></div>

@@ -606,6 +606,7 @@ require_once __DIR__ . '/includes/header.php';
 		</div>
 	</section>
 <?php require __DIR__ . '/includes/patient-video-slider.php'; ?>
+<?php require __DIR__ . '/includes/office-gallery.php'; ?>
 	<div class="hidde-modals" data-modal-counter="dm_modal_0" data-wpr-lazyrender="1">
 		<div class="dm-testmore dm-readmore">
 			<div class="dm-readmore-wrapper dm-modal">

@@ -56,16 +56,18 @@ $LOGO_LIGHT = $asset('interpsychaz-logo.webp');       // white — dark backgrou
 $LOGO_DARK  = $asset('interpsychaz-logo-dark.webp');  // indigo — light backgrounds
 
 $IMG = [
+  'seating' => ['file'=>'ambience/office-seating.webp', 'alt'=>'Two armchairs beside a window at our Phoenix office'],
+  'consult' => ['file'=>'ambience/office-consult.webp', 'alt'=>'Consultation room with a desk and sofa at our Phoenix office'],
+  'waiting' => ['file'=>'ambience/office-waiting.webp', 'alt'=>'Seating in the waiting area at our Phoenix office'],
   'hero'    => ['file'=>'ambience/hero-tms.jpg',              'id'=>'photo-1559757175-5700dde675bc', 'alt'=>'A patient seated for transcranial magnetic stimulation, with the coil positioned over the scalp and brain-mapping imagery on the screen beside them'],
   'session' => ['file'=>'tms-session.jpg',                    'id'=>'photo-1666214280557-f1b5022eb634', 'alt'=>'A woman reclined in the treatment chair, awake and comfortable, while a clinician positions the TMS coil against her head'],
   'coil'    => ['file'=>'ambience/magstim-coil.jpg',           'id'=>'photo-1559757148-5c350d0d3c56', 'alt'=>'A smiling patient seated with the Magstim treatment coil positioned against the side of his head'],
   'evaluation'=> ['file'=>'ambience/evaluation.jpg',          'id'=>'photo-1573497491208-6b1acb260507', 'alt'=>'A clinician listening and taking notes while talking with a patient'],
   'care'    => ['file'=>'ambience/why-patient-trust-us.webp', 'id'=>'photo-1584515933487-779824d29309', 'alt'=>'A clinician with a patient during a visit at our Phoenix practice'],
-  /* Practice photography. These sources top out around 680px, so they are only
-     ever rendered in the small tiles of the ambience rail. */
-  'chair'     => ['file'=>'ambience/inter-a-2.webp',          'id'=>'photo-1666214280557-f1b5022eb634', 'alt'=>'Our TMS treatment room, with the Magstim chair and stimulator'],
+  /* Selected real photographs of our Phoenix office. */
+  'chair' => ['file'=>'ambience/office-chair.webp', 'alt'=>'TMS equipment and treatment chair at our Phoenix office'],
   'room'      => ['file'=>'ambience/inter-a-1.webp',          'id'=>'photo-1512678080530-7760d81faba6', 'alt'=>'Our treatment room, with recliners, vitals equipment and privacy screens'],
-  'reception' => ['file'=>'ambience/inter-a-3.png',           'id'=>'photo-1519494026892-80bbd2d6fd0d', 'alt'=>'A member of our team at the front desk of our Phoenix office'],
+  'reception' => ['file'=>'ambience/office-reception.webp', 'alt'=>'Reception desk and entrance at our Phoenix office'],
 ];
 
 /** Resolve a slot to a URL — local file wins, stock placeholder otherwise. */
@@ -73,7 +75,7 @@ $img = function (string $key, int $w = 1200) use ($IMG, $IMG_DIR, $BASE): string
   if (!isset($IMG[$key])) return '';
   $local = $IMG_DIR . '/' . $IMG[$key]['file'];
   if (is_file(__DIR__ . '/' . $local)) return $BASE . '/' . $local . '?v=' . filemtime(__DIR__ . '/' . $local);
-  return 'https://images.unsplash.com/' . $IMG[$key]['id'] . '?auto=format&fit=crop&w=' . $w . '&q=70';
+  return 'https://images.unsplash.com/' . ($IMG[$key]['id'] ?? 'photo-1519494026892-80bbd2d6fd0d') . '?auto=format&fit=crop&w=' . $w . '&q=70';
 };
 $alt = fn(string $key): string => $IMG[$key]['alt'] ?? '';
 
@@ -728,18 +730,17 @@ tailwind.config = {
   <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
 
     <div class="grid lg:grid-cols-12 gap-8 lg:gap-14 items-center">
-      <div class="reveal lg:col-span-5 order-2 lg:order-1">
+      <div class="reveal lg:col-span-6 order-2 lg:order-1">
         <figure class="overflow-hidden rounded-2xl sm:rounded-3xl ring-1 ring-black/5">
-          <img src="<?= $img('session', 1060) ?>" alt="<?= $alt('session') ?>" loading="lazy" decoding="async"
+          <img src="<?= $img('chair', 1060) ?>" alt="<?= $alt('chair') ?>" loading="lazy" decoding="async"
                class="js-photo aspect-[4/3] w-full object-cover">
           <figcaption class="bg-brand-950 px-5 py-4 text-[13.5px] leading-relaxed text-cream/60">
-            <span class="text-cream">This is the whole thing.</span> You are awake, in your own
-            clothes, in a chair. Most people read, listen to something, or just sit.
+            <span class="text-cream">Our Phoenix TMS room.</span> The treatment chair and equipment used in our office.
           </figcaption>
         </figure>
       </div>
 
-      <div class="lg:col-span-7 reveal order-1 lg:order-2">
+      <div class="lg:col-span-6 reveal order-1 lg:order-2">
         <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">A session</p>
         <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
           What actually happens.
@@ -805,28 +806,25 @@ If you need to miss a session, contact our team. We will work with you to adjust
       </div>
     </div>
 
-    <!-- ── the practice itself ──────────────────────────────────────────────
-         A rail of modest tiles rather than a big collage: these sources top out
-         at 680px, so a full-width grid would upscale them into mush. -->
+    <!-- Real office photography in a spacious, responsive gallery. -->
     <div class="reveal mt-10">
       <div class="flex flex-wrap items-end justify-between gap-3">
-        <h3 class="font-display text-[20px] sm:text-[23px] tracking-tight text-brand-900">Where you will be coming, five days a week</h3>
+        <h3 class="font-display text-[20px] sm:text-[23px] tracking-tight text-brand-900">Take a look inside our Phoenix office</h3>
         <p class="text-[13.5px] text-brand-900/45"><?= $ADDRESS_L1 ?>, <?= $ADDRESS_L2 ?></p>
       </div>
-      <div class="slider mt-4 flex gap-3 overflow-x-auto snap-x pb-1 -mx-5 px-5 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0">
+      <div class="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
         <?php
         $ambience = [
-          ['chair',      'Our Magstim chair and stimulator'],
-          ['reception',  'A comfortable reception area'],
-          ['room',       'Our treatment rooms'],
-          ['care',       'A team that knows your case'],
+          ['reception', 'Our reception area'],
+          ['waiting', 'Our waiting area'],
+          ['consult', 'A private space for your consultation'],
+          ['seating', 'A comfortable place to settle in'],
         ];
         foreach ($ambience as [$slot, $caption]): ?>
-        <figure class="group relative snap-start shrink-0 w-[11.5rem] sm:w-[13.5rem] overflow-hidden rounded-xl sm:rounded-2xl ring-1 ring-black/5 aspect-[4/3]">
-          <img src="<?= $img($slot, 500) ?>" alt="<?= $alt($slot) ?>" loading="lazy" decoding="async"
-               class="js-photo h-full w-full object-cover transition duration-700 group-hover:scale-[1.05]">
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/10 to-transparent"></div>
-          <figcaption class="absolute inset-x-0 bottom-0 p-3 text-[12.5px] font-medium leading-snug text-cream"><?= $caption ?></figcaption>
+        <figure class="group overflow-hidden rounded-2xl bg-white ring-1 ring-black/5">
+          <img src="<?= $img($slot, 1400) ?>" alt="<?= $alt($slot) ?>" loading="lazy" decoding="async"
+               class="js-photo aspect-[4/3] w-full object-cover">
+          <figcaption class="px-5 py-4 text-[15px] font-medium leading-snug text-brand-900"><?= $caption ?></figcaption>
         </figure>
         <?php endforeach; ?>
       </div>
