@@ -39,15 +39,26 @@ $HERO_BG    = $asset('ambience/hero-medication.jpg');
   gtag('js', new Date());
 
   gtag('config', 'G-7TQS8BS5C3');
+  gtag('config', 'AW-11337249981');
 </script>
 
-<!-- Event snippet for Submit lead form Medication conversion page -->
+<!-- Submit lead form Medication conversion on confirmation page load. -->
 <script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
   gtag('event', 'conversion', {
-      'send_to': 'AW-11337249981/9wALCOnfguwcEL3pgp4q',
-      'value': 1.0,
-      'currency': 'USD'
+    'send_to': 'AW-11337249981/9wALCOnfguwcEL3pgp4q',
+    'value': 1.0,
+    'currency': 'USD',
+    'event_callback': callback
   });
+  return false;
+}
+gtag_report_conversion();
 </script>
 
 <title>Thank you | Medication Management at Interventional Psychiatry of Arizona</title>
