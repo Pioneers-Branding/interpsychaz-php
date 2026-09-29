@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $pageTitle = 'Sitemap | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page page-id-304';
 $pageDescription = 'Sitemap -';
@@ -71,6 +71,10 @@ require_once __DIR__ . '/includes/header.php';
 <h2> <strong>Posts</strong> </h2>
 <ul>
 <!-- the loop -->
+<li><a href="/does-ptsd-cause-memory-loss/">Does PTSD Cause Memory Loss? Causes, Science &amp; Recovery</a></li>
+<li><a href="/what-are-the-symptoms-of-adhd/">What Are the Symptoms of ADHD? Signs, Types &amp; Diagnosis</a></li>
+<li><a href="/is-spravato-covered-by-insurance/">Is Spravato Covered by Insurance? Costs &amp; Coverage Guide</a></li>
+<li><a href="/how-many-sessions-of-tms-are-needed/">How Many Sessions of TMS Are Needed? A Complete Guide</a></li>
 <li><a href="/sleep-problems-insomnia-why-your-brain-wont-shut-off-at-night/">Sleep Problems &amp; Insomnia: Why Your Brain Won’t Shut Off at Night</a></li>
 <li><a href="/depression-burnout-how-to-tell-the-difference-and-when-its-time-for-more-than-therapy/">Depression &amp; Burnout: How to Tell the Difference—and When It’s Time for More Than Therapy</a></li>
 <li><a href="/anxiety-panic-understanding-the-signs-finding-relief-and-knowing-when-to-seek-help/">Anxiety &amp; Panic: Understanding the Signs, Finding Relief, and Knowing When to Seek Help</a></li>
