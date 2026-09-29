@@ -512,6 +512,10 @@ tailwind.config = {
                 <label for="email" class="block text-[12.5px] font-medium text-cream/60 mb-1.5">Email</label>
                 <input id="email" name="Email" type="email" inputmode="email" autocomplete="email" required class="glass-field w-full rounded-xl px-4 py-3 outline-none" placeholder="you@email.com">
               </div>
+              <div class="sm:col-span-2">
+                <label for="message" class="block text-[12.5px] font-medium text-cream/60 mb-1.5">Message <span class="text-cream/40">(optional)</span></label>
+                <textarea id="message" name="Message" rows="3" class="glass-field w-full rounded-xl px-4 py-3 outline-none resize-y" placeholder="Anything you'd like us to know before we call?"></textarea>
+              </div>
             </div>
 
             <!-- Spam trap: real people never see this, bots fill it in. -->
