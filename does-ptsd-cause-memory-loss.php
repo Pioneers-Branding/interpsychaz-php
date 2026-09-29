@@ -386,25 +386,38 @@ require_once __DIR__ . '/includes/header.php';
 }
 </script>
 
-<h3 class="wp-block-heading" style="text-align: left;">Does PTSD Cause Memory Loss?</h3>
+<style>
+.thecontent h3.faq-question {
+  color: #154064 !important;
+  font-size: 19px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  margin-top: 24px !important;
+  margin-bottom: 8px !important;
+  line-height: 1.4 !important;
+}
+</style>
+
+<h3 class="faq-question" style="color: #154064; font-size: 19px; font-weight: 600; text-transform: none; margin-top: 24px; margin-bottom: 8px; text-align: left;">Does PTSD Cause Memory Loss?</h3>
 <p class="wp-block-paragraph">Yes. PTSD directly causes everyday short-term memory lapses and trauma-related dissociative amnesia. High cortisol levels reduce hippocampal volume and suppress prefrontal cortex activity, impairing your ability to process and recall new information.</p>
 
-<h3 class="wp-block-heading" style="text-align: left;">Can Trauma Cause Short-Term Memory Loss?</h3>
+<h3 class="faq-question" style="color: #154064; font-size: 19px; font-weight: 600; text-transform: none; margin-top: 24px; margin-bottom: 8px; text-align: left;">Can Trauma Cause Short-Term Memory Loss?</h3>
 <p class="wp-block-paragraph">Absolutely. When the brain is locked in survival mode, it prioritizes threat detection over executive functions. This leaves limited bandwidth in the prefrontal cortex for short-term working memory, causing forgetfulness in conversations and daily tasks.</p>
 
-<h3 class="wp-block-heading" style="text-align: left;">Is Memory Loss from PTSD Permanent?</h3>
+<h3 class="faq-question" style="color: #154064; font-size: 19px; font-weight: 600; text-transform: none; margin-top: 24px; margin-bottom: 8px; text-align: left;">Is Memory Loss from PTSD Permanent?</h3>
 <p class="wp-block-paragraph">No, PTSD memory loss is generally reversible. Trauma-related cognitive decline reflects functional inhibition rather than permanent cellular death. Through neuroplasticity, evidence-based therapy, and interventional treatments like TMS, memory function can be restored.</p>
 
-<h3 class="wp-block-heading" style="text-align: left;">Why Can't I Remember My Trauma If I Have PTSD?</h3>
+<h3 class="faq-question" style="color: #154064; font-size: 19px; font-weight: 600; text-transform: none; margin-top: 24px; margin-bottom: 8px; text-align: left;">Why Can't I Remember My Trauma If I Have PTSD?</h3>
 <p class="wp-block-paragraph">This phenomenon is called dissociative amnesia. During severe trauma, the brain suppresses conscious encoding to protect the psyche. While the factual timeline may be blocked, sensory fragments often persist as subconscious emotional triggers or nightmares.</p>
 
-<h3 class="wp-block-heading" style="text-align: left;">What Is PTSD Brain Fog and How Long Does It Last?</h3>
+<h3 class="faq-question" style="color: #154064; font-size: 19px; font-weight: 600; text-transform: none; margin-top: 24px; margin-bottom: 8px; text-align: left;">What Is PTSD Brain Fog and How Long Does It Last?</h3>
 <p class="wp-block-paragraph">PTSD brain fog is a combination of mental fatigue, poor concentration, and memory lapses stemming from chronic stress and sleep disruption. It can persist while PTSD is untreated, but improves significantly as trauma therapy stabilizes sleep and nervous system balance.</p>
 
-<h3 class="wp-block-heading" style="text-align: left;">How Does TMS Therapy Help with Memory Loss in PTSD?</h3>
+<h3 class="faq-question" style="color: #154064; font-size: 19px; font-weight: 600; text-transform: none; margin-top: 24px; margin-bottom: 8px; text-align: left;">How Does TMS Therapy Help with Memory Loss in PTSD?</h3>
 <p class="wp-block-paragraph">Transcranial Magnetic Stimulation (TMS) delivers non-invasive magnetic pulses to underactive regions of the prefrontal cortex. This stimulates neuroplasticity, enhances dendritic connectivity, releases BDNF, and re-establishes balanced communication between emotional and executive memory circuits.</p>
 
-<h3 class="wp-block-heading" style="text-align: left;">Where Can I Receive Specialized PTSD and Trauma Treatment in Phoenix, Arizona?</h3>
+<h3 class="faq-question" style="color: #154064; font-size: 19px; font-weight: 600; text-transform: none; margin-top: 24px; margin-bottom: 8px; text-align: left;">Where Can I Receive Specialized PTSD and Trauma Treatment in Phoenix, Arizona?</h3>
 <p class="wp-block-paragraph">Interventional Psychiatry of Arizona offers specialized trauma diagnosis, psychotherapy, personalized medication management, TMS therapy, and Spravato esketamine treatments for patients in Phoenix, Scottsdale, Tempe, and the surrounding Valley.</p>
 
 <div style="background-color: #f7f9fa; border-left: 5px solid #154064; padding: 22px; margin-top: 35px; margin-bottom: 25px; border-radius: 4px;">
