@@ -52,7 +52,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<figure class="wp-block-image size-large"><img alt="Mental health clinician and patient discussing trauma-related memory loss and PTSD recovery during a consultation in Phoenix Arizona" class="wp-image-1002" decoding="async" fetchpriority="high" height="874" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2026/09/does-ptsd-cause-memory-loss-thumbnail.jpg" srcset="/wp-content/uploads/2026/09/does-ptsd-cause-memory-loss-thumbnail.jpg 1024w" width="1024"/></figure>
+<figure class="wp-block-image size-large"><img alt="A person in quiet, thoughtful contemplation beside a sunlit window reflecting on trauma recovery and healing memory loss" class="wp-image-1002" decoding="async" fetchpriority="high" height="874" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2026/09/does-ptsd-cause-memory-loss-thumbnail.jpg" srcset="/wp-content/uploads/2026/09/does-ptsd-cause-memory-loss-thumbnail.jpg 1024w" width="1024"/></figure>
 
 <!-- Quick Answer / AEO Direct Summary Box -->
 <div style="background-color: #f0f7ff; border-left: 5px solid #0056b3; padding: 22px; margin-bottom: 25px; border-radius: 4px;">
