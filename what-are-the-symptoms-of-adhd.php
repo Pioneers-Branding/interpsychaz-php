@@ -26,7 +26,7 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
-<h4> <a href="/does-ptsd-cause-memory-loss/">Does PTSD Cause Memory Loss? Causes, Science &amp; Recovery</a> </h4>
+<h4> <a href="/does-ptsd-cause-memory-loss/">Does PTSD Cause Memory Loss? Causes &amp; Recovery</a> </h4>
 <p> Learn how psychological trauma alters the hippocampus and prefrontal cortex... </p>
 </div>
 <div>
