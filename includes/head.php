@@ -796,7 +796,47 @@ div#gform_wrapper_2 .gform_button {
 }
 
 /* ==========================================================================
-   2. DESKTOP NAVIGATION & DROPDOWN MENUS (>= 866px)
+   2. UI / UX ENHANCEMENTS (Modernization)
+   ========================================================================== */
+.home-icons .dm-third, .dm-service-section .dm-third, .staff-grid {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    background: #ffffff !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+}
+.home-icons .dm-third:hover, .dm-service-section .dm-third:hover, .staff-grid:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+}
+.home-icons .dm-third img, .dm-service-section .dm-third img {
+    transition: transform 0.5s ease !important;
+}
+.home-icons .dm-third:hover img, .dm-service-section .dm-third:hover img {
+    transform: scale(1.05) !important;
+}
+.home-icons .dm-third h4 {
+    padding: 20px !important;
+    margin: 0 !important;
+}
+
+/* Button UI Enhancement */
+a.btn, button.gform_button, #gform_submit_button_2 {
+    background: linear-gradient(135deg, #ef7136 0%, #e05e22 100%) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(239, 113, 54, 0.4) !important;
+}
+a.btn:hover, button.gform_button:hover, #gform_submit_button_2:hover {
+    background: linear-gradient(135deg, #e05e22 0%, #cc551f 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(239, 113, 54, 0.6) !important;
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   3. DESKTOP NAVIGATION & DROPDOWN MENUS (>= 866px)
    ========================================================================== */
 @media screen and (min-width: 866px) {
     #secondary-navigation .navigation > ul > li > a,

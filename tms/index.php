@@ -42,11 +42,7 @@ $IMG_DIR = 'assets/img';
    contents are deployed at the domain root. Assets are emitted against it rather
    than relatively, because a relative path silently resolves to the site root
    when the page is reached without a trailing slash. */
-$BASE = (function (): string {
-  $dir  = basename(__DIR__);
-  $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
-  return preg_match('#^(.*/' . preg_quote($dir, '#') . ')(?:/|$)#', $path, $m) ? $m[1] : '';
-})();
+$BASE = '/tms';
 
 $asset = function (string $rel) use ($IMG_DIR, $BASE): string {
   $p = $IMG_DIR . '/' . $rel;
@@ -409,11 +405,11 @@ tailwind.config = {
         </div>
 
         <h1 class="mt-5 sm:mt-7 font-display text-[2rem] leading-[1.08] min-[400px]:text-[2.3rem] sm:text-[2.9rem] lg:text-[3.1rem] xl:text-[3.5rem] tracking-tightest text-cream font-light">
-          TMS Therapy for Depression <span class="italic text-accent-400">in Phoenix.</span>
+          TMS Therapy for Depression <span class="italic text-accent-400">in Phoenix, AZ.</span>
         </h1>
 
         <p class="mt-5 max-w-lg text-[15.5px] sm:text-[16.5px] lg:text-[17.5px] leading-relaxed text-cream/70 font-light">
-          Explore a non-invasive treatment option when depression medications have not helped enough. Our team reviews your treatment history and insurance benefits.
+          Explore transcranial magnetic stimulation (TMS), an FDA-cleared, non-invasive treatment option when depression medications have not helped enough. Our psychiatric team in Phoenix reviews your treatment history and insurance benefits to provide a personalized care plan.
         </p>
 
         <div class="mt-7 flex flex-col sm:flex-row gap-3">
@@ -628,7 +624,7 @@ tailwind.config = {
           Four reasons people ask us about TMS.
         </h2>
         <p class="mt-4 text-[15.5px] sm:text-[17px] leading-relaxed text-brand-900/60 font-light">
-         TMS may be an option for adults with major depressive disorder who have not experienced adequate improvement with antidepressant treatment. If any of these experiences sound familiar, TMS may be worth discussing with our clinical team.
+         Transcranial Magnetic Stimulation (TMS) may be an option for adults with major depressive disorder who have not experienced adequate improvement with antidepressant treatment. If any of these experiences sound familiar, TMS therapy at our Phoenix clinic may be worth discussing with our psychiatric team.
         </p>
       </div>
       <figure class="lg:col-span-5 overflow-hidden rounded-2xl sm:rounded-3xl ring-1 ring-black/5">
@@ -706,23 +702,31 @@ tailwind.config = {
   </div>
 </section>
 
-<!-- ══════════════════ HOW IT WORKS + HOW IT COMPARES ══════════════════ -->
+<!-- ══════════════════ WHAT IS TMS & HOW IT WORKS ══════════════════ -->
 <section id="how" class="py-12 sm:py-14 bg-white border-y border-black/5 scroll-mt-24">
   <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
-    <h2 class="font-display text-[1.9rem] sm:text-[2.4rem] leading-tight text-brand-900 font-light">How TMS works.</h2>
-    <p class="mt-4 max-w-3xl text-[16px] leading-relaxed text-brand-900/70">TMS uses magnetic pulses to stimulate brain areas involved in mood regulation. Your clinician determines whether it is appropriate for you.</p>
+    <div class="mb-10">
+      <h2 class="font-display text-[1.9rem] sm:text-[2.4rem] leading-tight text-brand-900 font-light">What is TMS and how does it work?</h2>
+      <p class="mt-4 max-w-3xl text-[16px] leading-relaxed text-brand-900/70">
+        <strong>Transcranial Magnetic Stimulation (TMS)</strong> is an FDA-cleared, non-invasive treatment primarily used for major depressive disorder. It uses highly targeted magnetic pulses—similar to those used in an MRI machine—to stimulate areas of the brain that are underactive in patients suffering from depression. 
+      </p>
+      <p class="mt-3 max-w-3xl text-[16px] leading-relaxed text-brand-900/70">
+        By consistently stimulating these neural pathways, TMS helps improve mood regulation over time without the systemic side effects often associated with traditional antidepressant medications.
+      </p>
+    </div>
+
     <div class="mt-7 grid gap-4 sm:grid-cols-3">
       <div class="rounded-2xl bg-cream border border-black/5 p-5">
-        <h3 class="font-display text-xl text-brand-900">Personalized setup</h3>
-        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Initial mapping helps determine coil placement and treatment intensity.</p>
+        <h3 class="font-display text-xl text-brand-900">Personalized mapping</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Initial brain mapping during your first visit to our Phoenix clinic determines the exact coil placement and treatment intensity required for your specific physiology.</p>
       </div>
       <div class="rounded-2xl bg-cream border border-black/5 p-5">
         <h3 class="font-display text-xl text-brand-900">Awake during treatment</h3>
-        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">No sedation is required. Patients can typically drive home after a session.</p>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">No sedation or anesthesia is required. Patients are fully awake, comfortably seated, and can safely drive themselves home or back to work immediately after a session.</p>
       </div>
       <div class="rounded-2xl bg-cream border border-black/5 p-5">
         <h3 class="font-display text-xl text-brand-900">A course of care</h3>
-        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Treatment takes multiple visits. Your protocol and response determine the schedule.</p>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Treatment takes multiple visits over several weeks. Your specific protocol and individual response dictate the exact duration of the course.</p>
       </div>
     </div>
     <a href="#book" class="mt-7 inline-flex rounded-full bg-brand-900 px-6 py-3 text-[15px] font-medium text-cream hover:bg-brand-800 transition">Request a Call</a>

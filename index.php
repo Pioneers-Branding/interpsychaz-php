@@ -9,9 +9,9 @@ if ($cleanPath !== '' && $cleanPath !== 'index' && $cleanPath !== 'index.php' &&
 	}
 }
 
-$pageTitle = 'Premier Psychiatry Center in Phoenix, AZ | Interventional Psychiatry of Arizona';
+$pageTitle = 'Mental Health Clinic in Phoenix, AZ | Interventional Psychiatry of Arizona';
 $bodyClass = 'home wp-singular page-template-default page page-id-42';
-$pageDescription = 'Interventional Psychiatry of Arizona is a skilled Premier Psychiatry Center in Phoenix, AZ. Accepting new appointments. Call today or request an appointment on our website.';
+$pageDescription = 'Looking for a top-rated mental health clinic in Phoenix, AZ? Interventional Psychiatry of Arizona offers advanced treatments for depression, anxiety, and complex psychiatric conditions. Schedule an appointment today.';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'website';
 $pageCanonical = 'https://interpsychaz.com/';
@@ -659,6 +659,37 @@ require_once __DIR__ . '/includes/header.php';
 			</div>
 		</div>
 	</div>
+
+<!-- HOMEPAGE FAQS -->
+<div class="dm-service-section" style="background-color: #ffffff; padding: 60px 0;">
+	<div class="dm-container">
+		<div class="dm-flex">
+			<div class="dm-full wow fadeInUp">
+				<h2 style="color: #4b4d97; text-align: center;">Phoenix Mental Health Clinic FAQs</h2>
+				<div class="contentfaqs" style="max-width: 900px; margin: 0 auto; margin-top: 30px;">
+					<h4>Do you accept new patients at your Phoenix clinic?</h4>
+					<p>Yes, Interventional Psychiatry of Arizona is actively accepting new patients. Whether you are seeking an initial psychiatric evaluation or looking for a second opinion on a treatment-resistant condition, our board-certified providers are ready to help you.</p>
+
+					<h4>What makes an "interventional" psychiatry clinic different?</h4>
+					<p>Traditional clinics often rely solely on standard medications and talk therapy. As an interventional clinic, we specialize in advanced, biological treatments like TMS (Transcranial Magnetic Stimulation), Spravato (Esketamine), and ECT. These are specifically designed for patients whose depression or anxiety hasn't improved with standard care.</p>
+
+					<h4>Do you treat both depression and anxiety?</h4>
+					<p>Yes. We treat a comprehensive range of mental health conditions, including severe depression, generalized anxiety disorder, PTSD, OCD, bipolar disorder, and ADHD. We specialize in complex, dual-diagnosis cases.</p>
+
+					<h4>Do you take insurance for TMS and Spravato?</h4>
+					<p>Yes, we work with several major insurance providers. Because TMS and Spravato are FDA-approved for treatment-resistant depression, many insurance plans offer coverage. Our dedicated Patient Care Coordinator will help you navigate the authorization process.</p>
+
+					<h4>Do I need a referral to schedule an appointment?</h4>
+					<p>In most cases, you do not need a referral to become a patient at our clinic. You can contact us directly to schedule an evaluation. However, certain insurance HMO plans may require a referral from your primary care physician for specialist care.</p>
+
+					<h4>Where are you located in Phoenix?</h4>
+					<p>We are conveniently located in the heart of Phoenix, AZ, easily accessible from Scottsdale, Tempe, and surrounding Valley areas. Our state-of-the-art facility is designed to provide a comfortable, private, and welcoming environment for all our patients.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 </div><!--#page-->
 <section class="visit-us-today" data-wpr-lazyrender="1">
 	<div class="container-wide">

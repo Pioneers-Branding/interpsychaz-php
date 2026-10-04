@@ -1,7 +1,7 @@
-﻿<?php
-$pageTitle = 'TMS Therapy | Interventional Psychiatry of Arizona';
+<?php
+$pageTitle = 'TMS Therapy in Phoenix, AZ | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page page-id-99';
-$pageDescription = 'TMS Therapy -';
+$pageDescription = 'Discover FDA-cleared TMS therapy in Phoenix, AZ. A non-invasive, drug-free depression treatment. Find out if you qualify and schedule a consultation today.';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/services/tms-therapy/';
@@ -12,7 +12,7 @@ require_once __DIR__ . '/includes/header.php';
 ?>
 
 <div class="clear"></div>
-<div class="single no-padding" id="page">
+<div class="single no-padding" id="page" style="padding-top: 30px;">
 	<section class="page-header">
 		<div class="container">
 			<h1 class="page-title">TMS Therapy</h1>
@@ -23,7 +23,21 @@ require_once __DIR__ . '/includes/header.php';
 			<div class="g post post-98 page type-page status-publish" id="post-98">
 				<div class="single_page">
 					<div class="post-content">
+						
+                        <!-- HERO INTRO -->
 						<div class="dm-service-section">
+							<div class="dm-container">
+								<div class="dm-flex">
+                                    <div class="dm-full wow fadeIn">
+                                        <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #4b4d97;">Leading TMS Therapy in Phoenix, AZ</h2>
+                                        <p style="font-size: 1.1rem; line-height: 1.6;">If you are struggling with Major Depressive Disorder and haven't found relief through traditional medications, <strong>Interventional Psychiatry of Arizona</strong> offers a proven, FDA-cleared solution: <strong>Transcranial Magnetic Stimulation (TMS)</strong>. Located in the heart of Phoenix, our clinic provides personalized, compassionate care using state-of-the-art TMS technology to help you reclaim your life. We also offer comprehensive <a href="/medication-management/" style="color: #ef7136; text-decoration: underline;">medication management</a> to complement your treatment plan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- WHAT IS TMS & VIDEO -->
+						<div class="dm-service-section" style="background-color: #f9f9f9;">
 							<div class="dm-container">
 								<div class="dm-flex">
 									<div class="dm-half wow fadeInRight">
@@ -38,51 +52,62 @@ require_once __DIR__ . '/includes/header.php';
 												width="580"></iframe></noscript>
 									</div>
 									<div class="dm-half wow fadeInLeft dm-space">
-										<h3>Learn More about TMS Therapy</h3>
-										<p class="" data-end="330" data-start="40"><strong data-end="83"
-												data-start="40">Transcranial Magnetic Stimulation (TMS)</strong> is a
-											<strong data-end="115" data-start="89">non-invasive treatment</strong> that
-											uses MRI technology to stimulate specific brain regions involved in mood
-											regulation. It has been <strong data-end="253" data-start="218">proven
-												effective for depression</strong> and is a great option for those who
-											haven’t found relief with medications.</p>
-										<p class="" data-end="438" data-start="332">✔ <strong data-end="394"
-												data-start="334">50-60% of patients experience significant symptom
-												relief</strong><br data-end="397" data-start="394" />✔ <strong
-												data-end="436" data-start="399">30-40% achieve complete
-												remission</strong></p>
-										<h3 class="" data-end="471" data-start="440"><strong data-end="469"
-												data-start="444">Is TMS Right for You?</strong></h3>
-										<p class="" data-end="716" data-start="472">✅ You’ve tried <strong
-												data-end="510" data-start="487">2-4 antidepressants</strong> without
-											success or experienced intolerable side effects.<br data-end="570"
-												data-start="567" />✅ You’re seeking a <strong data-end="617"
-												data-start="589">non-invasive alternative</strong> to medications.<br
-												data-end="636" data-start="633" />✅ <strong data-end="679"
-												data-start="638">Insurance coverage is often available</strong> for
-											depression treatment with TMS.</p>
-										<h3 class="" data-end="762" data-start="718"><strong data-end="760"
-												data-start="722">Other Conditions TMS Can Help With</strong></h3>
-										<p class="" data-end="916" data-start="763">TMS has also shown <strong
-												data-end="803" data-start="782">promising results</strong> for:<br
-												data-end="811" data-start="808" />✔ <strong data-end="824"
-												data-start="813">Anxiety</strong><br data-end="827" data-start="824" />✔
-											<strong data-end="868" data-start="829">Obsessive-Compulsive Disorder
-												(OCD)</strong><br data-end="871" data-start="868" />✔ <strong
-												data-end="914" data-is-only-node="" data-start="873">Post-Traumatic
-												Stress Disorder (PTSD)</strong><br />
-											✔ <strong data-end="824" data-start="813">Pain</strong><br />
-											✔ <strong data-end="824" data-start="813">Postpartum Depression</strong></p>
-										<p class="" data-end="1091" data-start="918">While insurance <strong
-												data-end="986" data-start="934">may not always cover these off-label
-												treatments,</strong> we can assist in applying for coverage. Contact us
-											today to find out if TMS is the right option for you!</p>
-										<a class="btn" href="/appointments/"> <i aria-hidden="true"
-												class="fa fa-calendar"></i> Request an Appointment </a>
+										<h3 style="color: #ef7136;">What is Transcranial Magnetic Stimulation (TMS)?</h3>
+										<p><strong>Transcranial Magnetic Stimulation (TMS)</strong> is an FDA-cleared, <strong>non-invasive medical treatment</strong> that uses highly targeted magnetic pulses—similar to those used in an MRI machine—to stimulate specific regions of the brain involved in mood regulation.</p>
+                                        <p>Over time, depression can cause certain areas of the brain to become underactive. TMS therapy safely re-awakens these neural pathways. It has been <strong>proven highly effective for major depressive disorder</strong> and is a great option for patients in Phoenix, AZ, who have not found sufficient relief with traditional antidepressant medications.</p>
+										<p>✔ <strong>50-60% of patients experience significant symptom relief</strong><br />
+                                        ✔ <strong>30-40% achieve complete remission</strong></p>
 									</div>
 								</div>
 							</div>
 						</div>
+
+                        <!-- HOW DOES IT WORK (AEO OPTIMIZED) -->
+						<div class="dm-service-section">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeInUp">
+										<h2 style="color: #4b4d97;">How Does TMS Work for Depression?</h2>
+                                        <p style="font-size: 1.1rem; line-height: 1.6;">TMS works by delivering repetitive magnetic pulses (rTMS) directly to the prefrontal cortex—the area of the brain responsible for mood control and depression. These magnetic pulses safely induce small electrical currents that stimulate nerve cells, increasing neuroplasticity and blood flow.</p>
+                                        <p style="font-size: 1.1rem; line-height: 1.6;">Because it is a localized treatment, TMS bypasses the digestive system and bloodstream entirely. This means you do not experience the systemic side effects typically associated with oral antidepressants, such as weight gain, sexual dysfunction, fatigue, or stomach issues.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- IS TMS RIGHT FOR YOU & CONDITIONS TREATED -->
+                        <div class="dm-service-section" style="background-color: #f9f9f9;">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-half wow fadeInLeft">
+										<h2 style="color: #4b4d97;">Is TMS Right for You?</h2>
+										<p>TMS is an ideal treatment for individuals who meet the following criteria:</p>
+                                        <ul style="list-style: none; padding-left: 0;">
+                                            <li style="margin-bottom: 10px;">✅ You’ve tried <strong>2 or more antidepressants</strong> without success.</li>
+                                            <li style="margin-bottom: 10px;">✅ You have experienced intolerable side effects from psychiatric medications.</li>
+                                            <li style="margin-bottom: 10px;">✅ You are seeking a <strong>non-invasive alternative</strong> to traditional treatments.</li>
+                                            <li style="margin-bottom: 10px;">✅ You want a treatment that does not require systemic circulation or anesthesia.</li>
+                                            <li style="margin-bottom: 10px;">✅ <strong>Insurance coverage is often available</strong>, including Medicare, for depression treatment with TMS.</li>
+                                        </ul>
+									</div>
+                                    <div class="dm-half wow fadeInRight dm-space">
+										<h2 style="color: #4b4d97;">What Conditions Does TMS Treat?</h2>
+										<p>In addition to being FDA-cleared for Major Depressive Disorder (MDD), TMS has shown <strong>promising results</strong> for other off-label uses such as:</p>
+                                        <ul style="list-style: none; padding-left: 0;">
+                                            <li style="margin-bottom: 5px;">✔ <strong>Anxiety Disorders</strong></li>
+                                            <li style="margin-bottom: 5px;">✔ <strong>Obsessive-Compulsive Disorder (OCD)</strong></li>
+                                            <li style="margin-bottom: 5px;">✔ <strong>Post-Traumatic Stress Disorder (PTSD)</strong></li>
+                                            <li style="margin-bottom: 5px;">✔ <strong>Chronic Pain</strong></li>
+                                            <li style="margin-bottom: 5px;">✔ <strong>Postpartum Depression</strong></li>
+                                        </ul>
+										<p>While insurance <strong>may not always cover these off-label treatments,</strong> our Phoenix team can assist in verifying your benefits and applying for coverage. <a href="/appointments/" style="color: #ef7136; text-decoration: underline;">Contact us today</a> to find out if TMS is the right option for you!</p>
+                                        <p style="margin-top: 15px; font-style: italic;">Note: If TMS isn't the right fit, we also provide <a href="/spravato-esketamine-nasal-spray/" style="color: #ef7136; text-decoration: underline;">Spravato (Esketamine)</a> and <a href="/electroconvulsive-therapy-ect.php" style="color: #ef7136; text-decoration: underline;">Electroconvulsive Therapy (ECT)</a> for treatment-resistant depression.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- BENEFITS -->
 						<div class="dm-service-section">
 							<div class="dm-container">
 								<div class="dm-flex">
@@ -96,21 +121,49 @@ require_once __DIR__ . '/includes/header.php';
 											</video></div>
 									</div>
 									<div class="dm-half wow fadeInLeft dm-space">
-										<p>TMS Therapy is:</p>
-										<ul>
-											<li>Virtually side effect free</li>
-											<li>Non-invasive</li>
-											<li>Medication free</li>
-											<li>Covered by most insurances &amp; Medicare</li>
-											<li>FDA approved</li>
-											<li>If you are struggling, there is hope. We can help.</li>
+										<h2 style="color: #4b4d97;">Benefits of TMS Therapy in Phoenix, AZ</h2>
+                                        <p style="font-size: 1.1rem; line-height: 1.6;">At <strong>Interventional Psychiatry of Arizona</strong>, we utilize advanced TMS technology to ensure the highest level of care. Choosing our Phoenix clinic for your TMS treatment offers several distinct advantages:</p>
+										<ul style="font-size: 1.1rem; line-height: 1.6;">
+											<li><strong>Virtually side effect free:</strong> No weight gain, sexual dysfunction, or cognitive fog.</li>
+											<li><strong>100% Non-invasive:</strong> Requires no surgery, needles, or anesthesia.</li>
+											<li><strong>Medication free:</strong> Can be used as a standalone treatment or alongside your current medications.</li>
+											<li><strong>Convenient and fast:</strong> Sessions take just 15-40 minutes, and you can drive yourself home immediately after.</li>
+											<li><strong>Covered by Insurance:</strong> Covered by most major commercial insurances &amp; Medicare.</li>
+											<li><strong>Expert Local Care:</strong> Conveniently located for patients in Phoenix, Scottsdale, and the surrounding Valley.</li>
 										</ul>
-										<a class="btn" href="/appointments/"> <i aria-hidden="true"
-												class="fa fa-calendar"></i> Request an Appointment </a>
+										<a class="btn" href="/appointments/" style="margin-top: 20px;"> <i aria-hidden="true"
+												class="fa fa-calendar"></i> Book Your Phoenix TMS Consultation </a>
 									</div>
 								</div>
 							</div>
 						</div>
+
+                        <!-- STEP BY STEP PROCESS -->
+                        <div class="dm-service-section" style="background-color: #f9f9f9; padding-bottom: 40px;">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeInUp">
+										<h2 align="center" style="color: #4b4d97;">The TMS Treatment Process: Step-by-Step in Phoenix</h2>
+                                        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between; margin-top: 30px;">
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                                                <h4 style="color: #ef7136;">1. Consultation & Brain Mapping</h4>
+                                                <p>During your first visit, our psychiatrist will review your medical history to ensure you qualify. We then perform a precise "brain mapping" procedure to locate your exact treatment area and determine your specific motor threshold.</p>
+                                            </div>
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                                                <h4 style="color: #ef7136;">2. Relaxing Daily Sessions</h4>
+                                                <p>You will recline in a comfortable spa-like chair while the magnetic coil rests gently on your head. You will hear clicking sounds and feel a tapping sensation, but you remain fully awake and can read, listen to music, or relax.</p>
+                                            </div>
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                                                <h4 style="color: #ef7136;">3. Return to Your Day</h4>
+                                                <p>Each session lasts about 20 to 40 minutes. Because there is no sedation or anesthesia, you can immediately drive yourself back to work or home in Phoenix. A full course typically takes 4 to 6 weeks.</p>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- TESTIMONIALS -->
 						<div class="dm-service-section">
 							<div class="dm-container">
 								<div class="dm-flex">
@@ -153,83 +206,51 @@ require_once __DIR__ . '/includes/header.php';
 								</div>
 							</div>
 						</div>
-						<div class="dm-service-section">
+
+                        <!-- FAQ -->
+						<div class="dm-service-section" style="background-color: #f9f9f9; padding-bottom: 60px;">
 							<div class="dm-container">
 								<div class="dm-flex">
 									<div class="dm-full wow fadeInRight">
-										<h2>Frequently Asked Questions about TMS Therapy</h2>
+										<h2 style="color: #4b4d97;">Frequently Asked Questions about TMS Therapy in Phoenix</h2>
+                                        <p style="margin-bottom: 30px; font-size: 1.1rem;">Have questions about Transcranial Magnetic Stimulation? Read our answers to common questions asked by our Phoenix, AZ patients.</p>
 										<div class="contentfaqs">
-											<h4>How does rTMS work?</h4>
-											<p>Repetitive Transcranial Magnetic Stimulation (rTMS) is a non-invasive
-												neuromodulation therapy that stimulates brain regions associated with
-												mood regulation, such as the prefrontal cortex. Using direct magnetic
-												pulses, rTMS can either increase or decrease brain activity, depending
-												on the treatment approach. It has been safely used in clinical settings
-												since 2008.</p>
+											<h4>How long does a TMS session take and how many sessions will I need?</h4>
+											<p>A standard TMS therapy session typically lasts 20 to 40 minutes. A full course of treatment usually consists of 5 sessions per week over 4 to 6 weeks (for a total of 30 to 36 sessions). However, our Phoenix clinic also offers advanced protocols like Intermittent Theta Burst Stimulation (iTBS), which can shorten treatment time to as little as 3 minutes per session.</p>
+
+											<h4>Do I need to be hospitalized or sedated for a course of TMS?</h4>
+											<p>No. TMS is performed entirely on an outpatient basis at our comfortable Phoenix office. There is absolutely no need for sedation, general anesthesia, or hospitalization. Patients remain completely awake during the procedure and can safely resume normal activities, including driving, immediately after treatment.</p>
+
+											<h4>What are the side-effects of TMS?</h4>
+											<p>Unlike traditional oral antidepressant medications, TMS has minimal, non-systemic side effects. The most common side effect is mild scalp discomfort or a slight headache during or immediately after the session. This is usually temporary and treatable with over-the-counter pain medication like ibuprofen. Because TMS is not a pill, it does <strong>not</strong> cause weight gain, sexual dysfunction, or gastrointestinal issues. The risk of seizures is extremely low, and our clinic follows strict safety protocols to minimize any risk.</p>
+
+											<h4>What happens during a TMS procedure?</h4>
+											<ul>
+												<li>Patients arrive at our clinic and remove metal objects (jewelry, credit cards) before treatment.</li>
+												<li>Earplugs are provided for comfort, as the device produces clicking sounds similar to an MRI.</li>
+												<li>A motor threshold test is conducted to customize the treatment intensity to your specific neurophysiology.</li>
+												<li>Patients experience a light tapping sensation at the treatment site as the magnetic pulses are applied.</li>
+											</ul>
+
 											<h4>When is rTMS used?</h4>
-											<p>rTMS is recommended for individuals who have not found relief from
-												antidepressant medications or psychotherapy. It can be used as a
-												standalone treatment or in combination with other therapies to help
-												achieve symptom relief from major depression.</p>
-											<h4>What happens during an rTMS procedure?</h4>
-											<ul>
-												<li>Patients remove metal objects (jewelry, credit cards) before
-													treatment.</li>
-												<li>Earplugs are provided for comfort, as the device produces clicking
-													sounds.</li>
-												<li>The physician maps the scalp to determine the precise treatment
-													area.</li>
-												<li>A motor threshold test is conducted to customize treatment
-													intensity.</li>
-												<li>Patients experience a tapping sensation at the treatment site as
-													magnetic pulses are applied.</li>
-											</ul>
-											<h4>Who administers rTMS?</h4>
-											<p>A trained TMS physician prescribes and supervises the treatment. Once the
-												initial settings are established, a TMS technician administers sessions
-												under direct physician supervision to ensure safety and effectiveness.
-											</p>
-											<h4>How long is an rTMS procedure?</h4>
-											<p>rTMS therapy typically lasts 30-40 minutes per session and is
-												administered 5 days a week for 4-6 weeks. Some advanced protocols, such
-												as the Magstim® TMS device, can shorten treatment time to as little as 3
-												minutes per session.</p>
-											<h4>Do I need to be hospitalized for a course of rTMS?</h4>
-											<p>No. rTMS is performed on an outpatient basis with no need for sedation or
-												general anesthesia. Patients remain awake and can resume normal
-												activities, including driving, immediately after treatment.</p>
-											<h4>What are the side-effects of rTMS?</h4>
-											<p>rTMS has minimal side effects, including:</p>
-											<ul>
-												<li>Mild scalp discomfort or headaches (usually temporary, treatable
-													with over-the-counter pain medication).</li>
-												<li>The risk of seizures is extremely low, as safety protocols are
-													followed to minimize risk.</li>
-											</ul>
-											<h4>Who Should Not Receive rTMS?</h4>
-											<p>rTMS may not be suitable for individuals with:</p>
-											<ul>
-												<li>A history of seizures.</li>
-												<li>Metal implants or objects near the head (e.g., cochlear implants,
-													aneurysm clips, deep brain stimulators).</li>
-											</ul>
-											<h4>Who Benefits the Most from rTMS?</h4>
-											<p>rTMS is indicated for adults with Major Depressive Disorder (MDD) who
-												have not responded to antidepressants. If your physician believes you
-												may be a candidate, a referral for evaluation can be made.</p>
-											<h4>Is TMS covered by my insurance?</h4>
-											<p>Most insurance providers, including Medicare, cover rTMS therapy.
-												Medicaid may provide coverage in some states. Prior authorization is
-												typically required, and insurance often mandates trials of
-												antidepressant medications and psychotherapy before approving rTMS
-												treatment. Your physician will handle the approval process.</p>
-											<p>Want to learn more about rTMS? Contact us today to see if you’re a
-												candidate!</p>
+											<p>rTMS (Repetitive Transcranial Magnetic Stimulation) is highly recommended for individuals in the Phoenix area who have not found sufficient relief from antidepressant medications or psychotherapy. It is widely considered a frontline option for Treatment-Resistant Depression (TRD).</p>
+
+											<h4>Who administers the TMS treatment?</h4>
+											<p>A trained and board-certified TMS physician at Interventional Psychiatry of Arizona prescribes the protocol and oversees the initial brain mapping. After the initial settings are established, a certified, highly trained TMS technician administers your daily sessions under direct physician supervision to ensure safety, comfort, and clinical effectiveness.</p>
+
+											<h4>Who Should Not Receive TMS?</h4>
+											<p>TMS may not be suitable for individuals with a history of severe seizures or epilepsy, or those with non-removable magnetic or metal implants near the head (e.g., cochlear implants, aneurysm clips, deep brain stimulators). Please note that standard dental fillings and braces are perfectly safe.</p>
+
+											<h4>Is TMS covered by my insurance in Arizona?</h4>
+											<p>Yes, most major commercial insurance providers, as well as Medicare, cover TMS therapy for major depressive disorder. Medicaid (AHCCCS) may also provide coverage in certain circumstances. Prior authorization is typically required, meaning insurance companies usually mandate documentation showing that you have tried a certain number of antidepressant medications and psychotherapy before approving TMS. Our dedicated clinical team handles the entire approval and prior authorization process for you.</p>
+
+											<p style="margin-top: 30px;"><strong>Want to learn more about TMS in Phoenix?</strong> <a href="/appointments/">Contact us today</a> to schedule a consultation and see if you’re a candidate!</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -237,6 +258,7 @@ require_once __DIR__ . '/includes/header.php';
 	</article>
 	<!--< ?php get_sidebar(); ?>-->
 </div><!--#page-->
+
 <section class="visit-us-today" data-wpr-lazyrender="1">
 	<div class="container-wide">
 		<div class="dm-flex">
@@ -369,17 +391,6 @@ require_once __DIR__ . '/includes/header.php';
 							</div>
 						</div>
 						<div class="gform-footer gform_footer top_label"> <button class="gform_button button" data-submission-type="submit" id="gform_submit_button_2" type="submit">Submit</button>
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
 						</div>
 					</form>
 				</div>

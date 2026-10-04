@@ -1,7 +1,7 @@
-﻿<?php
-$pageTitle = 'Meet Our Phoenix Psychiatry Team | Interventional Psychiatry of Arizona';
+<?php
+$pageTitle = 'Meet the Best Psychiatrists in Arizona | Interventional Psychiatry of AZ';
 $bodyClass = 'wp-singular page-template-default page page-id-90';
-$pageDescription = 'Meet Our Phoenix Psychiatry Team -';
+$pageDescription = 'Looking for the best psychiatrists in Arizona? Meet our board-certified team of interventional psychiatrists in Phoenix, specializing in depression, PTSD, and complex mental health conditions.';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/meet-our-team/';
@@ -15,7 +15,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single" id="page">
     <section class="page-header">
         <div class="container">
-            <h1 class="page-title">Meet Our Phoenix Psychiatry Team</h1>
+            <h1 class="page-title">Meet the Best Psychiatrists in Arizona</h1>
         </div>
     </section>
     <article class="article">
@@ -23,6 +23,14 @@ require_once __DIR__ . '/includes/header.php';
             <div class="g post post-93 page type-page status-publish" id="post-93">
                 <div class="single_page">
                     <div class="post-content">
+                        <div class="dm-service-section" style="padding-top: 40px; padding-bottom: 20px;">
+                            <div class="dm-container">
+                                <div class="dm-full wow fadeIn">
+                                    <h2 style="color: #4b4d97; text-align: center;">Why We Are Recognized as the Best Psychiatrists in Arizona</h2>
+                                    <p style="text-align: center; max-width: 800px; margin: 0 auto;">When searching for the <strong>best psychiatrists in Arizona</strong>, you need a team that goes beyond standard medication management. At Interventional Psychiatry of Arizona in Phoenix, our board-certified providers specialize in treating complex, treatment-resistant conditions. We combine deep compassion with cutting-edge interventional therapies like TMS, Spravato, and ECT to deliver life-changing results. Meet the dedicated experts who are redefining mental health care in the Valley.</p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="container">
                             <div class="staff-grid-container">
                                 <div class="container">
@@ -250,6 +258,34 @@ require_once __DIR__ . '/includes/header.php';
                                 </div>
                             </div>
                         </div>
+
+                        <!-- CLICKBAIT FAQS -->
+						<div class="dm-service-section" style="background-color: #f9f9f9; padding: 60px 0;">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeInUp">
+										<h2 style="color: #4b4d97; text-align: center;">5 Shocking Truths About Psychiatric Care You Need to Know</h2>
+										<div class="contentfaqs" style="max-width: 900px; margin: 0 auto; margin-top: 30px;">
+											<h4>1. What’s the #1 Secret Most Psychiatrists Won’t Tell You About Treatment Resistance?</h4>
+											<p>The hard truth? Sticking to the exact same oral antidepressants for years after they’ve stopped working is a recipe for chronic suffering. Many traditional clinics simply don't have the technology for interventional treatments like <strong>Spravato</strong> or <strong>ECT</strong>, so they never mention them as an option. We do.</p>
+
+											<h4>2. Why Are Patients Driving Across Arizona Just to See Our Team?</h4>
+											<p>We aren't just another clinic prescribing SSRIs and hoping for the best. We specialize in the toughest, most stubborn cases of depression, PTSD, and bipolar disorder. Patients travel to us because we offer advanced, fast-acting biological interventions that actively rebuild neural pathways when standard meds fail.</p>
+
+											<h4>3. Is Your Current Provider Missing This Crucial Diagnosis?</h4>
+											<p>Misdiagnosing Bipolar II or treatment-resistant depression as "regular" anxiety is alarmingly common. If you’ve felt “numb” or deeply fatigued despite taking anxiety medication for years, your brain might be craving an entirely different class of treatment. Our board-certified experts catch what others miss.</p>
+
+                                            <h4>4. The "Gold Standard" Treatment You’ve Probably Never Heard Of—Until Now.</h4>
+											<p>While everyone talks about talk therapy, <strong>Electroconvulsive Therapy (ECT)</strong> remains the undisputed gold standard for severe, life-threatening depression. Despite the outdated stigma, modern ECT is a highly controlled, painless medical procedure that boasts the highest remission rates in psychiatry. We are one of the few clinics equipped to manage it.</p>
+
+                                            <h4>5. Why Traditional Talk Therapy Might Be Making You Worse Before You See Us.</h4>
+											<p>Trying to process severe trauma in talk therapy without first stabilizing your brain biologically can actually trigger <em>worse</em> panic attacks and flashbacks. Our team specializes in biological stabilization—calming your amygdala (the fear center) so that your brain can actually absorb the benefits of psychological therapy safely.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
                     </div>
                 </div>
             </div>

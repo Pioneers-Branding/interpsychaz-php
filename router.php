@@ -58,6 +58,24 @@ if ($cleanSlug === '' || $cleanSlug === 'index' || $cleanSlug === 'index.php' ||
 // 3. Resolve candidate PHP files in priority order
 $candidates = [];
 
+// New High-Performance Landing Pages mapping
+$landingPageMappings = [
+    'tms-therapy' => 'tms/index.php',
+    'services/tms-therapy' => 'tms/index.php',
+    'treatments/tms-therapy' => 'tms/index.php',
+    'spravato-esketamine-nasal-spray' => 'spravato/index.php',
+    'services/spravato-esketamine-nasal-spray' => 'spravato/index.php',
+    'treatments/spravato' => 'spravato/index.php',
+    'medication-management' => 'medication/index.php',
+    'services/medication-management' => 'medication/index.php',
+    'treatments/medication-management' => 'medication/index.php',
+];
+
+if (isset($landingPageMappings[$cleanSlug])) {
+    $candidates[] = __DIR__ . '/' . $landingPageMappings[$cleanSlug];
+}
+
+
 // (a) Direct match: e.g. /about -> about.php, /meet-our-team -> meet-our-team.php
 $candidates[] = __DIR__ . '/' . $cleanSlug . '.php';
 

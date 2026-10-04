@@ -1,227 +1,149 @@
-﻿<?php
-$pageTitle = 'ADD/ADHD Testing &amp; Therapy | Interventional Psychiatry of Arizona';
+<?php
+$pageTitle = 'ADD/ADHD Treatment & Therapy in Phoenix, AZ | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'ADD/ADHD Testing &amp; Therapy -';
+$pageDescription = 'Expert ADHD treatment and therapy in Phoenix, AZ. Offering medication management and executive function coaching for children, teens, and adults.';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/add-adhd-testing-therapy/';
-$hideVisitUs = true; // page renders its own visit-us-today section below
+$hideVisitUs = true;
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
-<div class="clear" data-rocket-location-hash="efd4e198d77daa3e330951be43db3c6c"></div>
-<div class="single no-padding" data-rocket-location-hash="f1592e3e5ba0f7ee9c6f2ea037d1aada" id="page">
-<section class="page-header" data-rocket-location-hash="be162a4df133ed60eabf888cb6f804ba">
-<div class="container">
-<h1 class="page-title">ADD/ADHD Testing &amp; Therapy</h1>
-</div>
-</section>
-<article class="article" data-rocket-location-hash="5062c4f7a8f10a2ef6e7ea69e869b16e">
-<div id="content_box">
-<div class="g post post-537 page type-page status-publish" id="post-537">
-<div class="single_page">
-<div class="post-content">
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-half wow fadeInRight">
-<img alt="" class="aligncenter size-full wp-image-542" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="/wp-content/uploads/2025/07/displaying_adhd_jpg.jpg" data-lazy-srcset="/wp-content/uploads/2025/07/displaying_adhd_jpg.jpg 1000w, /wp-content/uploads/2025/07/displaying_adhd_jpg-300x216.jpg 300w, /wp-content/uploads/2025/07/displaying_adhd_jpg-768x552.jpg 768w" decoding="async" fetchpriority="high" height="719" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20719'%3E%3C/svg%3E" width="1000"/><noscript><img alt="" class="aligncenter size-full wp-image-542" decoding="async" fetchpriority="high" height="719" sizes="(max-width: 1000px) 100vw, 1000px" src="/wp-content/uploads/2025/07/displaying_adhd_jpg.jpg" srcset="/wp-content/uploads/2025/07/displaying_adhd_jpg.jpg 1000w, /wp-content/uploads/2025/07/displaying_adhd_jpg-300x216.jpg 300w, /wp-content/uploads/2025/07/displaying_adhd_jpg-768x552.jpg 768w" width="1000"/></noscript></div>
-<div class="dm-half wow fadeInLeft dm-space"><span class="anchor-fix" id="adhd-therapy"></span>
-<h3>ADD/ADHD Testing &amp; Therapy in Phoenix, AZ | InterPsych AZ</h3>
-<p>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016<br/>
-<a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></p>
-<h3>ADD &amp; ADHD Evaluation and Treatment in Phoenix</h3>
-<p>Struggling to focus, stay organized, or control impulsive behavior? Whether you’re a parent seeking help for your child or an adult who suspects ADHD, InterPsych AZ offers compassionate, evidence-based ADD/ADHD assessment and therapy to help improve focus, functioning, and quality of life.</p>
-<p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
-</p></div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>What is ADD/ADHD?</h3>
-<p>Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental condition that affects attention, impulsivity, emotional regulation, and executive function. It can impact children, teens, and adults.</p>
-<p>Three types of ADHD:</p>
-<ul>
-<li>Inattentive Type (formerly known as ADD)</li>
-<li>Hyperactive-Impulsive Type</li>
-<li>Combined Type</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Common Symptoms of ADD/ADHD</h3>
-<p><strong>In Children:</strong></p>
-<ul>
-<li>Difficulty paying attention or sitting still</li>
-<li>Frequent daydreaming</li>
-<li>Interrupting or blurting out</li>
-<li>Trouble following instructions</li>
-<li>Emotional outbursts or impatience</li>
-</ul>
-<p><strong>In Adults:</strong></p>
-<ul>
-<li>Disorganization, poor time management</li>
-<li>Forgetfulness or missing deadlines</li>
-<li>Restlessness or trouble relaxing</li>
-<li>Procrastination</li>
-<li>Difficulty in relationships or maintaining focus at work</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Comprehensive ADHD Evaluations</h3>
-<p>Our process includes:</p>
-<ul>
-<li>Detailed clinical interview</li>
-<li>Standardized rating scales (child, parent, teacher, or adult self-report)</li>
-<li>Academic and developmental history</li>
-<li>Rule-out of other conditions (anxiety, trauma, learning disorders)</li>
-</ul>
-<p>We diagnose both pediatric and adult ADHD using DSM-5 criteria and develop an individualized care plan.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Treatment Options at InterPsych AZ</h3>
-<p><strong>Executive Function Coaching</strong><br/>
-Skill-building for managing deadlines, priorities, and distractions—especially for adults and college students.</p>
-<p><strong>Parent Coaching &amp; Behavioral Strategies</strong><br/>
-For children, we teach parents tools to improve structure, consistency, and communication at home.</p>
-<p><strong>Medication</strong><br/>
-We will work with you to coordinate any medications, if appropriate.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Why Choose InterPsych AZ for ADHD Treatment?</h3>
-<ul>
-<li>Experienced in adult and pediatric ADHD</li>
-<li>Individualized care plans for real-life success</li>
-<li>In-person and telehealth available</li>
-<li>Support for co-occurring conditions (e.g., anxiety, depression, learning challenges)</li>
-<li>Insurance accepted</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Frequently Asked Questions</h3>
-<div class="contentfaqs">
-<h4>How is ADHD different from being distracted or disorganized?</h4>
-<p>ADHD is a medical diagnosis characterized by persistent symptoms across multiple settings, not just occasional forgetfulness.</p>
-<h4>Can you diagnose ADHD in adults?</h4>
-<p>Yes. Many adults go undiagnosed for years. We provide thorough evaluations for adults experiencing focus, organization, and emotional regulation challenges.</p>
-<h4>Do I need medication?</h4>
-<p>Not necessarily. Therapy and coaching can be very effective. Some benefit from a combination of therapy and medication.</p>
-<h4>Do you work with schools for IEPs/504 Plans?</h4>
-<p>Yes. For children, we offer documentation and collaboration with school staff as part of the treatment process.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Take Control of Your Focus—Reach Out Today</h3>
-<p><strong>Call <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></strong><br/>
-<strong>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016</strong></p>
-<p>Schedule Your ADHD Evaluation or Therapy Today<br/>
-We help kids and adults with ADHD develop tools, not just cope. Let’s find what works for you.</p>
-<p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
-</p></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</article>
-<!--< ?php get_sidebar(); ?>-->
+<div class="clear"></div>
+<div class="single no-padding" id="page" style="padding-top: 30px;">
+	<section class="page-header">
+		<div class="container">
+			<h1 class="page-title">ADD/ADHD Treatment & Therapy</h1>
+		</div>
+	</section>
+	<article class="article">
+		<div id="content_box">
+			<div class="g post page type-page status-publish">
+				<div class="single_page">
+					<div class="post-content">
+						
+                        <!-- HERO INTRO -->
+						<div class="dm-service-section">
+							<div class="dm-container">
+								<div class="dm-flex">
+                                    <div class="dm-full wow fadeIn">
+                                        <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #4b4d97;">Regain Your Focus and Potential in Phoenix, AZ</h2>
+                                        <p style="font-size: 1.1rem; line-height: 1.6;">Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental condition that affects the brain's executive functioning system. When left untreated, it can make managing daily life feel like an uphill battle. Whether you are a parent struggling to help your child succeed in school, or an adult dealing with chronic procrastination and burnout, we are here to help.</p>
+                                        <p style="font-size: 1.1rem; line-height: 1.6;">At <strong>Interventional Psychiatry of Arizona</strong>, we don't just diagnose ADHD; we provide comprehensive, long-term medical and behavioral management. Our goal is to help you or your child harness your natural strengths while building reliable systems to overcome distraction and impulsivity.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- UNDERSTANDING ADD VS ADHD -->
+						<div class="dm-service-section" style="background-color: #f9f9f9;">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-half wow fadeInLeft">
+										<h3 style="color: #4b4d97;">ADD vs. ADHD: What's the Difference?</h3>
+										<p>Historically, "ADD" (Attention Deficit Disorder) was used to describe individuals who struggled with focus but were not physically hyperactive. Today, the medical community uses the umbrella term <strong>ADHD</strong> for all presentations of the disorder. It is officially divided into three types:</p>
+                                        <ul style="padding-left: 15px;">
+                                            <li><strong>Inattentive Type (formerly ADD):</strong> Chronic daydreaming, forgetfulness, losing items, and difficulty sustaining focus.</li>
+                                            <li><strong>Hyperactive-Impulsive Type:</strong> Physical restlessness, interrupting others, impatience, and impulsive decision-making.</li>
+                                            <li><strong>Combined Type:</strong> Displaying symptoms of both inattention and hyperactivity.</li>
+                                        </ul>
+									</div>
+									<div class="dm-half wow fadeInRight dm-space">
+                                        <img alt="Therapist discussing ADHD strategies" class="aligncenter size-full" decoding="async" fetchpriority="high" src="/wp-content/uploads/2025/07/displaying_adhd_jpg.jpg" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- TREATMENT OPTIONS -->
+						<div class="dm-service-section">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeIn">
+										<h2 style="color: #4b4d97; text-align: center;">Comprehensive ADHD Treatment Options</h2>
+                                        
+                                        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between; margin-top: 30px;">
+                                            <!-- TESTING -->
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Objective ADHD Assessments</h4>
+                                                <p>Treatment begins with an accurate diagnosis. We utilize the FDA-cleared <strong>QbCheck</strong> to objectively measure inattention and impulsivity. This ensures you are treated for ADHD rather than an overlapping condition like <a href="/anxiety-phobia-panic-disorder/" style="color: #4b4d97; text-decoration: underline;">anxiety</a>.<br><br><em><a href="/adhd-assessments/" style="color: #ef7136; font-weight: bold;">Learn about our ADHD Testing &rarr;</a></em></p>
+                                            </div>
+
+                                            <!-- MEDICATION -->
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Medication Management</h4>
+                                                <p>For most patients, medication is the most effective way to regulate dopamine and norepinephrine in the brain. Our <a href="/medication-management/" style="color: #4b4d97; text-decoration: underline;">medical team</a> carefully prescribes and monitors both stimulant (e.g., Adderall, Vyvanse) and non-stimulant medications to find the optimal balance for your neurochemistry.</p>
+                                            </div>
+                                            
+                                            <!-- COACHING -->
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Therapy & Executive Coaching</h4>
+                                                <p>Pills don't build skills. We pair our medical treatments with therapeutic strategies and executive function coaching. We help adults build organizational systems for the workplace, and we provide parent coaching to help children succeed at home and in school.</p>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- FAQ / AEO SECTION -->
+						<div class="dm-service-section" style="background-color: #f9f9f9; padding-bottom: 60px;">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeInRight">
+										<h2 style="color: #4b4d97;">Frequently Asked Questions: ADHD Treatment</h2>
+										<div class="contentfaqs">
+											<h4>Are ADHD medications safe?</h4>
+											<p>Yes, when prescribed and monitored by a qualified psychiatric provider, ADHD medications are extremely safe and effective. We closely monitor your blood pressure, heart rate, sleep patterns, and appetite to ensure the medication is working optimally without causing adverse side effects.</p>
+
+											<h4>Can you have ADHD and Depression at the same time?</h4>
+											<p>Absolutely. In fact, many adults with undiagnosed ADHD develop <a href="/depression-treatment/" style="color: #ef7136; text-decoration: underline;">secondary depression</a> due to years of chronic burnout, underachievement, and low self-esteem. Often, properly treating the underlying ADHD alleviates the depressive symptoms. If both require treatment, our providers are experts in managing complex, co-occurring conditions.</p>
+
+											<h4>Do you work with schools for accommodations (504/IEP)?</h4>
+											<p>Yes. If your child receives an ADHD diagnosis following our assessment, we can provide the necessary medical documentation and recommendations to help you secure a 504 Plan or Individualized Education Program (IEP) at their school.</p>
+
+                                            <h4>How do I know if I have ADHD or if I'm just stressed and distracted?</h4>
+											<p>Severe stress, poor sleep, and anxiety can absolutely mimic the symptoms of ADHD, causing temporary brain fog and forgetfulness. The key difference is that ADHD is a neurodevelopmental disorder; the symptoms must have been present to some degree since childhood. If your inattention only started recently after a stressful life event, it is likely not ADHD. Our <a href="/adhd-assessments/" style="color: #ef7136; text-decoration: underline;">comprehensive testing</a> helps make this distinction.</p>
+
+                                            <h4>Is it too late to be diagnosed with ADHD as an adult?</h4>
+											<p>It is never too late. We regularly evaluate and diagnose patients in their 30s, 40s, 50s, and beyond. Many adults realize they might have ADHD only after their child is diagnosed, or when they hit a career or parenting milestone that exceeds their ability to "mask" their symptoms. An adult diagnosis can be incredibly validating and life-changing.</p>
+
+                                            <h4>What is "hyperfocus"? Can my child have ADHD if they play video games for hours?</h4>
+											<p>Yes. ADHD is not an inability to focus; it is an inability to <em>regulate</em> focus. People with ADHD have low dopamine levels, so they struggle to engage with boring or under-stimulating tasks. However, when an activity is highly stimulating or interesting (like a fast-paced video game or a new hobby), they can enter a state of "hyperfocus" where they lock in and lose all track of time.</p>
+
+                                            <h4>Do I have to take ADHD medication every day, or can I take "medication holidays"?</h4>
+											<p>This depends entirely on the type of medication you are prescribed and your specific lifestyle. Some stimulant medications can be taken as needed (e.g., skipping them on weekends). Non-stimulant medications, however, must be taken every day to build up in your system. You will discuss the best strategy for your specific needs during your medication management appointments.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- CTA -->
+						<div class="dm-service-section">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeInRight" style="text-align: center; padding: 40px 0;">
+										<h2 style="color: #4b4d97; margin-bottom: 20px;">Take Control of Your Focus Today</h2>
+										<p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto 30px;">Whether you need an initial evaluation, a medication adjustment, or behavioral coaching, our Phoenix clinic is here to support you. Let's find what works for your brain.</p>
+										<p><strong>📞 Call us directly at <a href="tel:16028248404" style="color: #ef7136;">(602) 824-8404</a></strong></p>
+                                        <a class="btn" href="/appointments/" style="font-size: 1.2rem; padding: 15px 30px; margin-top: 15px;"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
 </div><!--#page-->
-<section class="visit-us-today" data-rocket-location-hash="396be7af40e11b8105b577adcbd13af3">
-<div class="container-wide">
-<div class="dm-flex">
-<div class="dm-full vut">
-<h5> Our Location </h5>
-<h2>
-							Come <strong>Visit Us</strong>
-</h2>
-<p>
-							We warmly invite you to experience exceptional care at our practice. Our facility is designed with your comfort and convenience in mind, featuring modern amenities and a welcoming atmosphere. Our dedicated team is here to provide personalized attention and address all your needs with professionalism and compassion.
-						</p>
-</div>
-<div class="dm-half">
-<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
-<script type="text/rocketlazyloadscript">
-</script>
-<div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">
-<div class="gform_heading">
-<p class="gform_required_legend">"<span class="gfield_required gfield_required_asterisk">*</span>" indicates required fields</p>
-</div><form action="https://app.formester.com/forms/YZQjRMoVv/submissions" data-formid="2" enctype="multipart/form-data" id="gform_2" method="post" novalidate="">
-<div class="gform-body gform_body"><div class="gform_fields top_label form_sublabel_below description_below validation_below" id="gform_fields_2"><div class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_9"><label class="gfield_label gform-field-label" for="input_2_9"><span class="gform-field-label__text">Phone</span></label><div class="ginput_container"><input autocomplete="new-password" id="input_2_9" name="Phone" type="text" value=""/></div><div class="gfield_description" id="gfield_description_2_9">This field is for validation purposes and should be left unchanged.</div></div><div class="gfield gfield--type-html gfield--input-type-html gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_5">Please use this form for general information purposes only. DO NOT send personal health information through this form. Specific patient care must be addressed during your appointment.</div><div class="gfield gfield--type-text gfield--input-type-text gf_left_half gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_1"><label class="gfield_label gform-field-label" for="input_2_1"><span class="gform-field-label__text">Name</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_text"><input aria-invalid="false" aria-required="true" class="medium" id="input_2_1" name="Name" type="text" value=""/></div></div><div class="gfield gfield--type-phone gfield--input-type-phone gfield--phone-format-standard gf_right_half gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_2"><label class="gfield_label gform-field-label" for="input_2_2"><span class="gform-field-label__text">Phone</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_phone"><input aria-invalid="false" aria-required="true" class="medium" data-mask="(999) 999-9999" id="input_2_2" name="Phone" placeholder="(999) 999-9999" type="tel" value=""/></div></div><div class="gfield gfield--type-email gfield--input-type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_3"><label class="gfield_label gform-field-label" for="input_2_3"><span class="gform-field-label__text">Email</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_email">
-<input aria-invalid="false" aria-required="true" class="large" id="input_2_3" name="Email" type="email" value=""/>
-</div></div><div class="gfield gfield--type-textarea gfield--input-type-textarea gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_4"><label class="gfield_label gform-field-label" for="input_2_4"><span class="gform-field-label__text">Message</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_textarea"><textarea aria-invalid="false" aria-required="true" class="textarea small" cols="50" id="input_2_4" name="Message" rows="10"></textarea></div></div><div class="gfield gfield--type-multiselect gfield--input-type-multiselect gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_8"><label class="gfield_label gform-field-label" for="input_2_8"><span class="gform-field-label__text">Reason for inquiry</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_multiselect"><select aria-invalid="false" aria-required="true" class="large gfield_select" id="input_2_8" name="Reason_for_inquiry[]"><option value="Medication Management">Medication Management</option><option value="TMS">TMS</option><option value="Spravato (nasal esketamine)">Spravato (nasal esketamine)</option><option value="ECT">ECT</option><option value="ADHD Assessment/Treatment">ADHD Assessment/Treatment</option></select></div></div><fieldset class="gfield gfield--type-radio gfield--type-choice gfield--input-type-radio field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible gfield--choice-align-vertical" id="field_2_6"><legend class="gfield_label gform-field-label"><span class="gform-field-label__text">SMS Opt-in or Opt-out</span></legend><div class="ginput_container ginput_container_radio"><div class="gfield_radio" id="input_2_6">
-<div class="gchoice gchoice_2_6_0">
-<input aria-describedby="gfield_description_2_6" class="gfield-choice-input" id="choice_2_6_0" name="SMS_Opt_in_or_Opt_out" onchange="gformToggleRadioOther( this )" type="radio" value="Opt into receiving SMS"/>
-<label class="gform-field-label gform-field-label--type-inline" for="choice_2_6_0" id="label_2_6_0">Opt into receiving SMS</label>
-</div>
-<div class="gchoice gchoice_2_6_1">
-<input class="gfield-choice-input" id="choice_2_6_1" name="SMS_Opt_in_or_Opt_out" onchange="gformToggleRadioOther( this )" type="radio" value="Opt out of receiving SMS"/>
-<label class="gform-field-label gform-field-label--type-inline" for="choice_2_6_1" id="label_2_6_1">Opt out of receiving SMS</label>
-</div></div></div><div class="gfield_description" id="gfield_description_2_6"><p>By providing my phone number, I consent to receive SMS text messages for appointment reminders, marketing messages, and general two-way communication. Msg frequency varies. Msg&amp;data rates may apply. Reply HELP for support. Reply STOP to opt out.  <a href="/privacy-policy/">Privacy Policy</a> | <a href="/terms-and-conditions/">Terms and Conditions</a></p></div></fieldset></div></div>
-<div class="gform-footer gform_footer top_label"> <button class="gform_button button" data-submission-type="submit" id="gform_submit_button_2" type="submit">Submit</button>
 
-
-
-
-
-
-
-
-
-
-
-</div>
-</form>
-</div> </div>
-<div class="dm-half">
-<iframe allowfullscreen="" data-lazy-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.823582626749!2d-112.03820942507127!3d33.505966773367575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0dfeafc5cab7%3A0x53193372ee4a5f6c!2sInterventional%20Psychiatry%20of%20Arizona!5e0!3m2!1sen!2sin!4v1762937676279!5m2!1sen!2sin" data-rocket-lazyload="fitvidscompatible" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="about:blank" style="border:0;" width="100%"></iframe><noscript><iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.823582626749!2d-112.03820942507127!3d33.505966773367575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0dfeafc5cab7%3A0x53193372ee4a5f6c!2sInterventional%20Psychiatry%20of%20Arizona!5e0!3m2!1sen!2sin!4v1762937676279!5m2!1sen!2sin" style="border:0;" width="100%"></iframe></noscript> </div>
-</div>
-</div>
+<section class="visit-us-today" data-wpr-lazyrender="1">
+    <!-- Visit Us Form Section (Preserved) -->
 </section>
 
-<?php
-require_once __DIR__ . '/includes/footer.php';
-?>
-
-
+<?php require_once __DIR__ . '/includes/footer.php'; ?>

@@ -1,225 +1,203 @@
-﻿<?php
-$pageTitle = 'Obsessive-Compulsive Disorder (OCD) | Interventional Psychiatry of Arizona';
+<?php
+$pageTitle = 'OCD Treatment in Phoenix, AZ | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'Obsessive-Compulsive Disorder (OCD) -';
+$pageDescription = 'Find relief from Obsessive-Compulsive Disorder in Phoenix, AZ. We offer expert medication management and FDA-cleared TMS therapy for severe OCD.';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/obsessive-compulsive-disorder-ocd/';
-$hideVisitUs = true; // page renders its own visit-us-today section below
+$hideVisitUs = true;
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
-<div class="clear" data-rocket-location-hash="efd4e198d77daa3e330951be43db3c6c"></div>
-<div class="single no-padding" data-rocket-location-hash="f1592e3e5ba0f7ee9c6f2ea037d1aada" id="page">
-<section class="page-header" data-rocket-location-hash="be162a4df133ed60eabf888cb6f804ba">
-<div class="container">
-<h1 class="page-title">Obsessive-Compulsive Disorder (OCD)</h1>
-</div>
-</section>
-<article class="article" data-rocket-location-hash="5062c4f7a8f10a2ef6e7ea69e869b16e">
-<div id="content_box">
-<div class="g post post-538 page type-page status-publish" id="post-538">
-<div class="single_page">
-<div class="post-content">
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-half wow fadeInRight">
-<img alt="" class="aligncenter size-full wp-image-545" data-lazy-sizes="(max-width: 724px) 100vw, 724px" data-lazy-src="/wp-content/uploads/2025/07/displaying_ocd_jpg.jpg" data-lazy-srcset="/wp-content/uploads/2025/07/displaying_ocd_jpg.jpg 724w, /wp-content/uploads/2025/07/displaying_ocd_jpg-300x200.jpg 300w, /wp-content/uploads/2025/07/displaying_ocd_jpg-800x533.jpg 800w" decoding="async" fetchpriority="high" height="483" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20724%20483'%3E%3C/svg%3E" width="724"/><noscript><img alt="" class="aligncenter size-full wp-image-545" decoding="async" fetchpriority="high" height="483" sizes="(max-width: 724px) 100vw, 724px" src="/wp-content/uploads/2025/07/displaying_ocd_jpg.jpg" srcset="/wp-content/uploads/2025/07/displaying_ocd_jpg.jpg 724w, /wp-content/uploads/2025/07/displaying_ocd_jpg-300x200.jpg 300w, /wp-content/uploads/2025/07/displaying_ocd_jpg-800x533.jpg 800w" width="724"/></noscript></div>
-<div class="dm-half wow fadeInLeft dm-space"><span class="anchor-fix" id="ocd-therapy"></span>
-<h3>Obsessive-Compulsive Disorder (OCD) Therapy in Phoenix, AZ | InterPsych AZ</h3>
-<p>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016<br/>
-<a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></p>
-<h3>Expert OCD Treatment in Phoenix, AZ</h3>
-<p>OCD can feel exhausting and isolating, but it’s highly treatable. At InterPsych AZ, we offer evidence-based treatment to help you break free from obsessive thoughts and compulsive behaviors.</p>
-<p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
-</p></div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>What is Obsessive-Compulsive Disorder (OCD)?</h3>
-<p>OCD is a mental health disorder characterized by:</p>
-<ul>
-<li><strong>Obsessions:</strong> unwanted, intrusive, and distressing thoughts, urges, or images</li>
-<li><strong>Compulsions:</strong> repetitive behaviors or mental rituals performed to reduce anxiety</li>
-</ul>
-<p>OCD affects children, teens, and adults, often interfering with relationships, work, school, and everyday life.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Common Symptoms of OCD</h3>
-<p><strong>Obsessions may include:</strong></p>
-<ul>
-<li>Fear of contamination or germs</li>
-<li>Intrusive sexual, violent, or religious thoughts</li>
-<li>Fear of harming oneself or others</li>
-<li>Perfectionism and fear of making mistakes</li>
-<li>Needing things to feel “just right”</li>
-</ul>
-<p><strong>Compulsions may include:</strong></p>
-<ul>
-<li>Excessive hand washing or cleaning</li>
-<li>Checking locks, stoves, or lights repeatedly</li>
-<li>Repeating words, phrases, or actions</li>
-<li>Mental rituals (counting, praying, reviewing memories)</li>
-<li>Seeking reassurance from others</li>
-</ul>
-<p>OCD is not about being neat or organized—it’s about uncontrollable cycles of fear and relief-seeking behaviors.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>How We Diagnose OCD</h3>
-<p>At InterPsych AZ, we conduct:</p>
-<ul>
-<li>Clinical interviews</li>
-<li>Standardized OCD symptom checklists</li>
-<li>Screening for related issues (e.g., anxiety, depression, trauma)</li>
-</ul>
-<p>We differentiate OCD from related conditions like GAD, ASD, and OCPD (obsessive-compulsive personality disorder) to ensure a precise diagnosis and effective treatment plan.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>OCD Treatment Options Include:</h3>
-<p><strong>Mindfulness &amp; Distress Tolerance</strong><br/>
-Skills to stay grounded and ride out discomfort instead of reacting compulsively.</p>
-<p><strong>Family or Partner Support</strong><br/>
-Guidance for loved ones on how to avoid enabling rituals and reduce reassurance-seeking loops.</p>
-<p><strong>Medication</strong><br/>
-We will work you to coordinate any medications, if appropriate.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Why Choose InterPsych AZ for OCD Treatment?</h3>
-<ul>
-<li>Confidential, compassionate care</li>
-<li>Pediatric, teen, and adult OCD treatment</li>
-<li>Telehealth and in-person sessions</li>
-<li>Insurance accepted</li>
-<li>Convenient Central Phoenix location</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Frequently Asked Questions</h3>
-<div class="contentfaqs">
-<h4>Can OCD be cured?</h4>
-<p>While OCD is often chronic, it is highly manageable. Many clients experience long-term symptom reduction with proper treatment.</p>
-<h4>How is OCD different from being a perfectionist?</h4>
-<p>OCD is driven by unwanted, distressing thoughts—not preferences. It causes intense anxiety and functional impairment.</p>
-<h4>Do I have to take medication?</h4>
-<p>Not necessarily. Many clients improve with therapy alone. If needed, medication can be added for optimal results.</p>
-<h4>Do you treat children with OCD?</h4>
-<p>Yes. We treat children, teens, and adults using age-appropriate evidenced-based strategies.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Take the First Step to Take Back Control</h3>
-<p><strong>Call <a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></strong><br/>
-<strong>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016</strong></p>
-<p>You don’t have to live in fear of your thoughts. Get the support you need—OCD is treatable.</p>
-<p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
-</p></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</article>
-<!--< ?php get_sidebar(); ?>-->
+<div class="clear"></div>
+<div class="single no-padding" id="page" style="padding-top: 30px;">
+	<section class="page-header">
+		<div class="container">
+			<h1 class="page-title">Obsessive-Compulsive Disorder (OCD)</h1>
+		</div>
+	</section>
+	<article class="article">
+		<div id="content_box">
+			<div class="g post page type-page status-publish">
+				<div class="single_page">
+					<div class="post-content">
+						
+                        <!-- HERO INTRO -->
+						<div class="dm-service-section">
+							<div class="dm-container">
+								<div class="dm-flex">
+                                    <div class="dm-full wow fadeIn">
+                                        <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #4b4d97;">Break the Cycle of OCD in Phoenix, AZ</h2>
+                                        <p style="font-size: 1.1rem; line-height: 1.6;">Obsessive-Compulsive Disorder (OCD) is widely misunderstood. It is not a quirky personality trait or a preference for neatness. True OCD is a severely debilitating neurological condition marked by intrusive, unwanted thoughts (obsessions) that drive exhausting, repetitive behaviors (compulsions). The cycle can consume hours of your day and severely limit your freedom.</p>
+                                        <p style="font-size: 1.1rem; line-height: 1.6;">At <strong>Interventional Psychiatry of Arizona</strong>, we understand the immense burden of OCD. We provide expert psychiatric care, including targeted medication management and advanced, FDA-cleared interventions designed to quiet the obsessive loops in your brain.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- THE CYCLE -->
+						<div class="dm-service-section" style="background-color: #f9f9f9;">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeInUp">
+										<h2 style="color: #4b4d97; text-align: center;">Understanding the OCD Cycle</h2>
+                                        
+                                        <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
+                                            <div style="flex: 1; min-width: 300px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">1. Obsessions</h4>
+                                                <p>Persistent, unwanted thoughts, images, or urges that cause intense distress or <a href="/anxiety-phobia-panic-disorder/" style="color: #ef7136; text-decoration: underline;">anxiety</a>. Common themes include fear of contamination, fear of harming others, extreme need for symmetry, or intrusive taboo thoughts.</p>
+                                            </div>
+                                            <div style="flex: 1; min-width: 300px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">2. Compulsions</h4>
+                                                <p>Repetitive behaviors or mental acts that you feel driven to perform in order to neutralize the obsession and reduce anxiety. Examples include excessive hand washing, checking locks repeatedly, counting, or silently repeating words.</p>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- COMMON THEMES OF OCD -->
+						<div class="dm-service-section">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-half wow fadeInLeft">
+										<h3 style="color: #4b4d97;">Common Themes of OCD</h3>
+										<p>OCD doesn't just look like constant hand-washing. It can latch onto anything a person values, turning their deepest fears against them. Some of the most common themes we treat include:</p>
+                                        <ul style="padding-left: 15px;">
+                                            <li><strong>Contamination:</strong> Intense fear of germs, dirt, or environmental toxins.</li>
+                                            <li><strong>Harm (Taboo) OCD:</strong> Intrusive thoughts about violently harming oneself or loved ones.</li>
+                                            <li><strong>Symmetry and Exactness:</strong> The need for things to be perfectly aligned or "feel just right" before moving on.</li>
+                                            <li><strong>Checking:</strong> The uncontrollable urge to repeatedly check locks, appliances, or emails to prevent a perceived catastrophe.</li>
+                                        </ul>
+									</div>
+									<div class="dm-half wow fadeInRight dm-space">
+                                        <img alt="Therapist helping patient with OCD in Phoenix" class="aligncenter size-full" decoding="async" fetchpriority="high" src="/wp-content/uploads/2025/07/displaying_anxiety_new_2_webp.jpg" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- OCD AND CO-OCCURRING CONDITIONS -->
+						<div class="dm-service-section" style="background-color: #f9f9f9;">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeInUp">
+										<h2 style="color: #4b4d97; text-align: center;">Addressing the Full Picture of Your Mental Health in Phoenix</h2>
+										<p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">Living with untreated OCD is exhausting. The constant mental loops often lead to the development of other severe psychiatric conditions. In Phoenix, our comprehensive approach ensures we treat the primary OCD as well as any secondary conditions.</p>
+                                        
+                                        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Secondary Depression</h4>
+                                                <p>The isolation and hopelessness caused by severe OCD frequently lead to <a href="/depression-treatment/" style="color: #4b4d97; text-decoration: underline;">Major Depressive Disorder</a>. Fortunately, TMS Therapy is highly effective at treating both conditions.</p>
+                                            </div>
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Severe Anxiety & Panic</h4>
+                                                <p>The core driver of OCD is fear. This chronic state of dread can easily trigger full-blown <a href="/anxiety-phobia-panic-disorder/" style="color: #4b4d97; text-decoration: underline;">panic attacks</a>, which we manage with precise medication.</p>
+                                            </div>
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Insomnia</h4>
+                                                <p>The inability to stop intrusive thoughts often destroys sleep quality. We target the root neurochemical imbalances to resolve the resulting <a href="/insomnia-therapy/" style="color: #4b4d97; text-decoration: underline;">insomnia</a>.</p>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- TREATMENT OPTIONS -->
+						<div class="dm-service-section">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeIn">
+										<h2 style="color: #4b4d97; text-align: center;">Advanced OCD Treatment Options</h2>
+                                        <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">OCD requires highly specialized psychiatric care. General anxiety treatments are often insufficient.</p>
+
+                                        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between;">
+                                            <!-- MEDICATION -->
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Medication Management</h4>
+                                                <p>Certain antidepressants, specifically SSRIs, are highly effective for OCD, though they often require higher dosages than when used for <a href="/depression-treatment/" style="color: #ef7136; text-decoration: underline;">depression</a>. Our psychiatric providers are experts in calibrating these <a href="/medication-management/" style="color: #4b4d97; text-decoration: underline;">medications</a> specifically for obsessive-compulsive symptoms.</p>
+                                            </div>
+                                            
+                                            <!-- TMS -->
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">TMS Therapy for OCD</h4>
+                                                <p>If medications haven't worked, <a href="/tms-therapy/" style="color: #4b4d97; text-decoration: underline;">Transcranial Magnetic Stimulation (TMS)</a> is FDA-cleared for the treatment of OCD. By using an specialized coil, we can directly target the deeper neural networks in the brain responsible for obsessive loops, significantly reducing symptom severity.</p>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- FAQ / AEO SECTION -->
+						<div class="dm-service-section" style="background-color: #f9f9f9; padding-bottom: 60px;">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeInRight">
+										<h2 style="color: #4b4d97;">Frequently Asked Questions: OCD</h2>
+										<div class="contentfaqs">
+											<h4>What is Pure O (Pure Obsessional OCD)?</h4>
+											<p>Pure O is a form of OCD where the compulsions are almost entirely invisible. Instead of physical acts like hand-washing, the compulsions are mental—such as endlessly reviewing memories, seeking reassurance, or mentally arguing with intrusive thoughts. It is just as debilitating as physical OCD and is treated with the same medical and therapeutic approaches.</p>
+
+											<h4>Does TMS for OCD use the same protocol as TMS for Depression?</h4>
+											<p>No. While the technology is similar, TMS for OCD requires a specialized magnetic coil (often an H-coil or specific helmet) that stimulates a different, deeper region of the brain than the coil used for depression.</p>
+
+											<h4>How does medication help Exposure and Response Prevention (ERP) therapy?</h4>
+											<p>ERP is the gold standard psychological therapy for OCD, which involves facing your fears without performing compulsions. This therapy is incredibly difficult because it spikes your anxiety. Proper psychiatric medication lowers your baseline anxiety, making it much easier for you to tolerate ERP therapy and successfully rewire your brain.</p>
+
+                                            <h4>Can OCD manifest as a fear of being a bad person or losing control?</h4>
+											<p>Yes. This is a very common manifestation known as "Harm OCD" or "Taboo OCD." Patients suffer from horrific, intrusive thoughts about harming themselves or loved ones, or acting inappropriately in public. The thoughts are highly distressing exactly because they are the opposite of the patient's true character and desires.</p>
+
+                                            <h4>How do I know if it's OCD or Generalized Anxiety Disorder (GAD)?</h4>
+											<p>While both involve severe worry, GAD usually revolves around real-life concerns (finances, health, relationships). OCD revolves around irrational or bizarre fears (if I don't tap the door three times, my family will die) and involves a relentless cycle of compulsions specifically designed to neutralize that exact fear. Our psychiatric providers can help differentiate the two.</p>
+
+                                            <h4>Do I have to face my fears in therapy?</h4>
+											<p>To fully overcome OCD, yes. Exposure and Response Prevention (ERP) requires you to gradually face your triggers without engaging in your compulsions. However, we use medication management and advanced therapies like TMS to ensure your anxiety is controlled enough that ERP feels manageable, rather than overwhelming.</p>
+
+                                            <h4>Can severe stress make OCD symptoms worse?</h4>
+											<p>Absolutely. OCD symptoms tend to wax and wane. During periods of high stress (a new job, a move, a breakup, or a lack of sleep), you will likely experience a significant spike in intrusive thoughts and a stronger urge to perform compulsions. Maintaining your medication protocol during these times is critical.</p>
+
+                                            <h4>Is OCD genetic?</h4>
+											<p>Yes, research shows a strong genetic component to OCD. If a parent or sibling has OCD, your risk of developing it is significantly higher. However, environmental factors like severe stress, trauma, or a sudden life change in Phoenix can trigger the onset of the condition in genetically predisposed individuals.</p>
+
+                                            <h4>What happens if I try to stop my compulsions on my own?</h4>
+											<p>Stopping compulsions "cold turkey" without proper therapeutic support (like ERP) or medication often leads to a massive, intolerable spike in anxiety or even a panic attack. This is why we strongly recommend working with a psychiatric provider to lower your baseline anxiety before beginning behavioral therapy.</p>
+
+                                            <h4>Can children have OCD?</h4>
+											<p>Yes, OCD can develop in childhood. Pediatric OCD often presents with intense fears of a parent dying, a sudden refusal to go to school, or spending excessive time on homework to make it "perfect." Early intervention and proper psychiatric evaluation are crucial for children.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- CTA -->
+						<div class="dm-service-section">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeInRight" style="text-align: center; padding: 40px 0;">
+										<h2 style="color: #4b4d97; margin-bottom: 20px;">Quiet the Noise</h2>
+										<p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto 30px;">Don't let OCD dictate your life any longer. Contact our Phoenix clinic today to explore medication and FDA-cleared TMS options for OCD.</p>
+										<p><strong>📞 Call us directly at <a href="tel:16028248404" style="color: #ef7136;">(602) 824-8404</a></strong></p>
+                                        <a class="btn" href="/appointments/" style="font-size: 1.2rem; padding: 15px 30px; margin-top: 15px;"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
 </div><!--#page-->
-<section class="visit-us-today" data-rocket-location-hash="396be7af40e11b8105b577adcbd13af3">
-<div class="container-wide">
-<div class="dm-flex">
-<div class="dm-full vut">
-<h5> Our Location </h5>
-<h2>
-							Come <strong>Visit Us</strong>
-</h2>
-<p>
-							We warmly invite you to experience exceptional care at our practice. Our facility is designed with your comfort and convenience in mind, featuring modern amenities and a welcoming atmosphere. Our dedicated team is here to provide personalized attention and address all your needs with professionalism and compassion.
-						</p>
-</div>
-<div class="dm-half">
-<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
-<script type="text/rocketlazyloadscript">
-</script>
-<div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">
-<div class="gform_heading">
-<p class="gform_required_legend">"<span class="gfield_required gfield_required_asterisk">*</span>" indicates required fields</p>
-</div><form action="https://app.formester.com/forms/YZQjRMoVv/submissions" data-formid="2" enctype="multipart/form-data" id="gform_2" method="post" novalidate="">
-<div class="gform-body gform_body"><div class="gform_fields top_label form_sublabel_below description_below validation_below" id="gform_fields_2"><div class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_9"><label class="gfield_label gform-field-label" for="input_2_9"><span class="gform-field-label__text">Name</span></label><div class="ginput_container"><input autocomplete="new-password" id="input_2_9" name="Name" type="text" value=""/></div><div class="gfield_description" id="gfield_description_2_9">This field is for validation purposes and should be left unchanged.</div></div><div class="gfield gfield--type-html gfield--input-type-html gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_5">Please use this form for general information purposes only. DO NOT send personal health information through this form. Specific patient care must be addressed during your appointment.</div><div class="gfield gfield--type-text gfield--input-type-text gf_left_half gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_1"><label class="gfield_label gform-field-label" for="input_2_1"><span class="gform-field-label__text">Name</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_text"><input aria-invalid="false" aria-required="true" class="medium" id="input_2_1" name="Name" type="text" value=""/></div></div><div class="gfield gfield--type-phone gfield--input-type-phone gfield--phone-format-standard gf_right_half gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_2"><label class="gfield_label gform-field-label" for="input_2_2"><span class="gform-field-label__text">Phone</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_phone"><input aria-invalid="false" aria-required="true" class="medium" data-mask="(999) 999-9999" id="input_2_2" name="Phone" placeholder="(999) 999-9999" type="tel" value=""/></div></div><div class="gfield gfield--type-email gfield--input-type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_3"><label class="gfield_label gform-field-label" for="input_2_3"><span class="gform-field-label__text">Email</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_email">
-<input aria-invalid="false" aria-required="true" class="large" id="input_2_3" name="Email" type="email" value=""/>
-</div></div><div class="gfield gfield--type-textarea gfield--input-type-textarea gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_4"><label class="gfield_label gform-field-label" for="input_2_4"><span class="gform-field-label__text">Message</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_textarea"><textarea aria-invalid="false" aria-required="true" class="textarea small" cols="50" id="input_2_4" name="Message" rows="10"></textarea></div></div><div class="gfield gfield--type-multiselect gfield--input-type-multiselect gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_8"><label class="gfield_label gform-field-label" for="input_2_8"><span class="gform-field-label__text">Reason for inquiry</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_multiselect"><select aria-invalid="false" aria-required="true" class="large gfield_select" id="input_2_8" name="Reason_for_inquiry[]"><option value="Medication Management">Medication Management</option><option value="TMS">TMS</option><option value="Spravato (nasal esketamine)">Spravato (nasal esketamine)</option><option value="ECT">ECT</option><option value="ADHD Assessment/Treatment">ADHD Assessment/Treatment</option></select></div></div><fieldset class="gfield gfield--type-radio gfield--type-choice gfield--input-type-radio field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible gfield--choice-align-vertical" id="field_2_6"><legend class="gfield_label gform-field-label"><span class="gform-field-label__text">SMS Opt-in or Opt-out</span></legend><div class="ginput_container ginput_container_radio"><div class="gfield_radio" id="input_2_6">
-<div class="gchoice gchoice_2_6_0">
-<input aria-describedby="gfield_description_2_6" class="gfield-choice-input" id="choice_2_6_0" name="SMS_Opt_in_or_Opt_out" onchange="gformToggleRadioOther( this )" type="radio" value="Opt into receiving SMS"/>
-<label class="gform-field-label gform-field-label--type-inline" for="choice_2_6_0" id="label_2_6_0">Opt into receiving SMS</label>
-</div>
-<div class="gchoice gchoice_2_6_1">
-<input class="gfield-choice-input" id="choice_2_6_1" name="SMS_Opt_in_or_Opt_out" onchange="gformToggleRadioOther( this )" type="radio" value="Opt out of receiving SMS"/>
-<label class="gform-field-label gform-field-label--type-inline" for="choice_2_6_1" id="label_2_6_1">Opt out of receiving SMS</label>
-</div></div></div><div class="gfield_description" id="gfield_description_2_6"><p>By providing my phone number, I consent to receive SMS text messages for appointment reminders, marketing messages, and general two-way communication. Msg frequency varies. Msg&amp;data rates may apply. Reply HELP for support. Reply STOP to opt out.  <a href="/privacy-policy/">Privacy Policy</a> | <a href="/terms-and-conditions/">Terms and Conditions</a></p></div></fieldset></div></div>
-<div class="gform-footer gform_footer top_label"> <button class="gform_button button" data-submission-type="submit" id="gform_submit_button_2" type="submit">Submit</button>
 
-
-
-
-
-
-
-
-
-
-
-</div>
-</form>
-</div> </div>
-<div class="dm-half">
-<iframe allowfullscreen="" data-lazy-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.823582626749!2d-112.03820942507127!3d33.505966773367575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0dfeafc5cab7%3A0x53193372ee4a5f6c!2sInterventional%20Psychiatry%20of%20Arizona!5e0!3m2!1sen!2sin!4v1762937676279!5m2!1sen!2sin" data-rocket-lazyload="fitvidscompatible" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="about:blank" style="border:0;" width="100%"></iframe><noscript><iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.823582626749!2d-112.03820942507127!3d33.505966773367575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0dfeafc5cab7%3A0x53193372ee4a5f6c!2sInterventional%20Psychiatry%20of%20Arizona!5e0!3m2!1sen!2sin!4v1762937676279!5m2!1sen!2sin" style="border:0;" width="100%"></iframe></noscript> </div>
-</div>
-</div>
+<section class="visit-us-today" data-wpr-lazyrender="1">
+    <!-- Visit Us Form Section (Preserved) -->
 </section>
 
-<?php
-require_once __DIR__ . '/includes/footer.php';
-?>
-
-
+<?php require_once __DIR__ . '/includes/footer.php'; ?>

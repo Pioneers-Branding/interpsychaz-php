@@ -45,11 +45,7 @@ $IMG_DIR = 'assets/img';
    folder's contents are deployed at the domain root. Assets are emitted against
    it rather than relatively, because a relative path silently resolves to the
    site root when the page is reached without a trailing slash (/spravato). */
-$BASE = (function (): string {
-  $dir  = basename(__DIR__);
-  $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
-  return preg_match('#^(.*/' . preg_quote($dir, '#') . ')(?:/|$)#', $path, $m) ? $m[1] : '';
-})();
+$BASE = '/spravato';
 
 $asset = function (string $rel) use ($IMG_DIR, $BASE): string {
   $p = $IMG_DIR . '/' . $rel;
@@ -695,6 +691,12 @@ tailwind.config = {
         <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Arrange transportation home. Do not drive until the next day after a full night’s sleep.</p>
       </div>
     </div>
+    <div class="mt-8 rounded-2xl bg-accent-50/60 border border-accent-200 p-5 sm:p-7">
+      <h3 class="font-display text-[20px] sm:text-[23px] tracking-tight text-brand-900">Exploring other options?</h3>
+      <p class="mt-2 text-[15px] leading-relaxed text-brand-900/75">
+        If you are looking for non-medication alternatives for treatment-resistant depression, we also offer FDA-cleared <a href="/tms-therapy/" class="text-accent-600 font-medium hover:underline">TMS Therapy</a> and <a href="/electroconvulsive-therapy-ect/" class="text-accent-600 font-medium hover:underline">Electroconvulsive Therapy (ECT)</a>. For comprehensive psychiatric care, our <a href="/medication-management/" class="text-accent-600 font-medium hover:underline">Medication Management</a> providers can help evaluate your history to determine the best path forward.
+      </p>
+    </div>
     <a href="#eligibility" class="mt-7 inline-flex rounded-full bg-brand-900 px-6 py-3 text-[15px] font-medium text-cream hover:bg-brand-800 transition">Check Eligibility</a>
   </div>
 </section>
@@ -955,7 +957,7 @@ If coverage is denied, our team will review the reason and discuss available nex
 
         <p class="sm:col-span-2 rounded-2xl bg-brand-900 px-5 sm:px-7 py-5 text-[14px] leading-relaxed text-cream/75">
           SPRAVATO&reg; is not a pain reliever or an anesthetic, and it is never taken home. Tell your
-          provider about every condition and medication you are on — that is how we judge whether it
+          <a href="/medication-management/" class="underline text-cream hover:text-accent-400">medication management</a> provider about every condition and medication you are on — that is how we judge whether it
           is safe for you specifically. This page is general information, not medical advice, and not
           a substitute for the full Prescribing Information and Medication Guide your clinician will
           review with you.

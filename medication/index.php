@@ -37,11 +37,7 @@ $IMG_DIR = 'assets/img';
    "" if the folder's contents are deployed at the domain root. Assets are
    emitted against it rather than relatively, because a relative path silently
    resolves to the site root when the page is reached without a trailing slash. */
-$BASE = (function (): string {
-  $dir  = basename(__DIR__);
-  $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
-  return preg_match('#^(.*/' . preg_quote($dir, '#') . ')(?:/|$)#', $path, $m) ? $m[1] : '';
-})();
+$BASE = '/medication';
 
 $asset = function (string $rel) use ($IMG_DIR, $BASE): string {
   $p = $IMG_DIR . '/' . $rel;
@@ -696,6 +692,12 @@ tailwind.config = {
         <h3 class="font-display text-xl text-brand-900">Ongoing support</h3>
         <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">30-minute follow-ups to review progress and adjust your plan.</p>
       </div>
+    </div>
+    <div class="mt-8 rounded-2xl bg-accent-50/60 border border-accent-200 p-5 sm:p-7">
+      <h3 class="font-display text-[20px] sm:text-[23px] tracking-tight text-brand-900">Advanced Treatment Options</h3>
+      <p class="mt-2 text-[15px] leading-relaxed text-brand-900/75">
+        If medications are not providing sufficient relief, our psychiatric providers may recommend advanced interventional therapies. We offer comprehensive evaluations for <a href="/tms-therapy/" class="text-accent-600 font-medium hover:underline">TMS Therapy</a>, <a href="/spravato-esketamine-nasal-spray/" class="text-accent-600 font-medium hover:underline">Spravato (Esketamine)</a>, and <a href="/electroconvulsive-therapy-ect/" class="text-accent-600 font-medium hover:underline">Electroconvulsive Therapy (ECT)</a>.
+      </p>
     </div>
     <a href="#book" class="mt-7 inline-flex rounded-full bg-brand-900 px-6 py-3 text-[15px] font-medium text-cream hover:bg-brand-800 transition">Request a Call</a>
   </div>

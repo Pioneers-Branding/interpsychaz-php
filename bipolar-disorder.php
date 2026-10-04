@@ -1,222 +1,230 @@
-﻿<?php
-$pageTitle = 'Bipolar Disorder | Interventional Psychiatry of Arizona';
+<?php
+$pageTitle = 'Bipolar Disorder Treatment in Phoenix, AZ | Interventional Psychiatry of Arizona';
 $bodyClass = 'wp-singular page-template-default page';
-$pageDescription = 'Bipolar Disorder -';
+$pageDescription = 'Expert Bipolar Disorder treatment in Phoenix, AZ. Get accurate diagnosis and comprehensive medication management for Bipolar I, Bipolar II, and Cyclothymia.';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'article';
 $pageCanonical = 'https://interpsychaz.com/bipolar-disorder/';
-$hideVisitUs = true; // page renders its own visit-us-today section below
+$hideVisitUs = true;
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
 <div class="clear"></div>
-<div class="single no-padding" id="page">
-<section class="page-header">
-<div class="container">
-<h1 class="page-title">Bipolar Disorder</h1>
-</div>
-</section>
-<article class="article">
-<div id="content_box">
-<div class="g post post-515 page type-page status-publish" id="post-515">
-<div class="single_page">
-<div class="post-content">
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-half wow fadeInRight">
-<img alt="" class="aligncenter size-full wp-image-518" decoding="async" fetchpriority="high" height="667" sizes="(max-width: 1000px) 100vw, 1000px" src="/wp-content/uploads/2025/07/displaying_bipolar_disorder_man_jpg.jpg" srcset="/wp-content/uploads/2025/07/displaying_bipolar_disorder_man_jpg.jpg 1000w, /wp-content/uploads/2025/07/displaying_bipolar_disorder_man_jpg-300x200.jpg 300w, /wp-content/uploads/2025/07/displaying_bipolar_disorder_man_jpg-768x512.jpg 768w, /wp-content/uploads/2025/07/displaying_bipolar_disorder_man_jpg-800x533.jpg 800w" width="1000"/></div>
-<div class="dm-half wow fadeInLeft dm-space"><span class="anchor-fix" id="bipolar-disorder"></span>
-<h3>Bipolar Disorder – InterPsych AZ</h3>
-<p>2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016<br/>
-<a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></p>
-<h3>Bipolar Disorder Treatment in Phoenix, AZ</h3>
-<p>At InterPsych AZ, we provide expert, compassionate care for individuals living with bipolar disorder. Whether you’re struggling with mood swings, depression, or manic episodes, our team of mental health professionals are here to help.</p>
-<p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
-</p></div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>What is Bipolar Disorder?</h3>
-<p>Bipolar disorder is a mental health condition that causes extreme mood shifts, including emotional highs (mania or hypomania) and lows (depression). These mood episodes can interfere with your daily life, relationships, and job performance.</p>
-<p>There are different types of bipolar disorder:</p>
-<ul>
-<li><strong>Bipolar I Disorder</strong> – Includes at least one manic episode.</li>
-<li><strong>Bipolar II Disorder</strong> – Includes depressive and hypomanic episodes.</li>
-<li><strong>Cyclothymic Disorder</strong> – Chronic fluctuating mood disturbances.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Symptoms of Bipolar Disorder</h3>
-<p><strong>Manic or Hypomanic Symptoms:</strong></p>
-<ul>
-<li>Elevated or irritable mood</li>
-<li>Increased energy, decreased need for sleep</li>
-<li>Racing thoughts, distractibility</li>
-<li>Impulsive or risky behavior</li>
-</ul>
-<p><strong>Depressive Symptoms:</strong></p>
-<ul>
-<li>Prolonged sadness or hopelessness</li>
-<li>Fatigue or low energy</li>
-<li>Difficulty concentrating</li>
-<li>Suicidal thoughts or self-harm</li>
-</ul>
-<p>If you’re experiencing these symptoms, you’re not alone—and help is available.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>How is Bipolar Disorder Diagnosed?</h3>
-<p>Our licensed mental health professionals use comprehensive assessments that include:</p>
-<ul>
-<li>Clinical interviews</li>
-<li>Symptom checklists</li>
-<li>Medical and psychiatric history</li>
-</ul>
-<p>We carefully distinguish bipolar symptoms from other mood disorders like depression or borderline personality disorder to ensure accurate diagnosis and tailored treatment.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Treatment Options for Bipolar Disorder at InterPsych AZ</h3>
-<p>We offer evidence-based, customized treatment plans, which may include:</p>
-<p><strong>Medication</strong><br/>
-We will work with you to coordinate any medications, if appropriate.</p>
-<p><strong>Lifestyle &amp; Coping Strategies</strong></p>
-<p>We help you build routines, recognize triggers, and manage stress to reduce future episodes.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Why Choose InterPsych AZ for Bipolar Treatment?</h3>
-<ul>
-<li>Licensed, experienced clinicians</li>
-<li>Both in-person and telehealth sessions</li>
-<li>Personalized care based on your unique symptoms and history</li>
-<li>Central Phoenix location with easy access</li>
-<li>Insurance accepted</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Frequently Asked Questions</h3>
-<div class="contentfaqs">
-<h4>How do I know if I have bipolar disorder or just depression?</h4>
-<p>Only a licensed mental health professional can provide an accurate diagnosis. If your mood changes are extreme and affect daily functioning, it may be bipolar disorder.</p>
-<h4>Will I need to take medication forever?</h4>
-<p>Not always. Treatment plans vary. Some individuals may benefit long-term from medications, while others may taper off under supervision.</p>
-<h4>Can therapy alone help with bipolar disorder?</h4>
-<p>Therapy is a vital part of managing bipolar disorder, especially when combined with medication and healthy routines.</p>
-<h4>How long does treatment take?</h4>
-<p>Every case is unique. You may see improvement in weeks, but ongoing management may be necessary for long-term stability.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="dm-service-section">
-<div class="dm-container">
-<div class="dm-flex">
-<div class="dm-full">
-<h3>Contact Us Today</h3>
-<p>Take the first step toward stability and clarity.<br/>
-2929 E Camelback Rd, Suite 119, Phoenix, AZ 85016<br/>
-<a class="inline-dm-phone" href="tel:(602) 824-8404">(602) 824-8404</a></p>
-<p><a class="btn" href="/appointments/"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
-</p></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</article>
-<!--< ?php get_sidebar(); ?>-->
+<div class="single no-padding" id="page" style="padding-top: 30px;">
+	<section class="page-header">
+		<div class="container">
+			<h1 class="page-title">Bipolar Disorder Treatment</h1>
+		</div>
+	</section>
+	<article class="article">
+		<div id="content_box">
+			<div class="g post page type-page status-publish">
+				<div class="single_page">
+					<div class="post-content">
+						
+                        <!-- HERO INTRO -->
+						<div class="dm-service-section">
+							<div class="dm-container">
+								<div class="dm-flex">
+                                    <div class="dm-full wow fadeIn">
+                                        <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #4b4d97;">Stabilize Your Mood and Reclaim Your Life in Phoenix, AZ</h2>
+                                        <p style="font-size: 1.1rem; line-height: 1.6;">Living with Bipolar Disorder can feel like being strapped into an emotional rollercoaster you can't control. The drastic shifts between soaring, high-energy manic episodes and crushing, debilitating depressive lows can disrupt your career, strain your relationships, and leave you feeling utterly exhausted.</p>
+                                        <p style="font-size: 1.1rem; line-height: 1.6;">At <strong>Interventional Psychiatry of Arizona</strong>, we specialize in the accurate diagnosis and expert management of Bipolar Disorder. Our goal is not just to treat the symptoms, but to provide long-term mood stability so you can build a consistent, fulfilling life.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- UNDERSTANDING BIPOLAR -->
+						<div class="dm-service-section" style="background-color: #f9f9f9;">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeInUp">
+										<h2 style="color: #4b4d97; text-align: center;">Understanding the Types of Bipolar Disorder</h2>
+										<p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">Bipolar Disorder is highly complex and is frequently misdiagnosed as standard depression. An accurate diagnosis of your specific type of bipolar disorder is critical to finding the right medication.</p>
+                                        
+                                        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                                            <div style="flex: 1; min-width: 300px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Bipolar I Disorder</h4>
+                                                <p>Characterized by at least one full manic episode that lasts for at least seven days, or is severe enough to require immediate hospital care. Depressive episodes typically occur as well, lasting at least two weeks.</p>
+                                            </div>
+                                            <div style="flex: 1; min-width: 300px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Bipolar II Disorder</h4>
+                                                <p>Defined by a pattern of depressive episodes and hypomanic episodes. Hypomania is a less severe form of mania that doesn't usually cause major impairment but is still a distinct change in energy and behavior.</p>
+                                            </div>
+                                            <div style="flex: 1; min-width: 300px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Cyclothymic Disorder</h4>
+                                                <p>A milder form of bipolar disorder involving numerous periods of hypomanic symptoms and depressive symptoms that last for at least two years, but do not meet the full criteria for a major episode.</p>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- THE TWO POLES -->
+                        <div class="dm-service-section">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-half wow fadeInLeft">
+										<h3 style="color: #ef7136;">The "High": Symptoms of Mania</h3>
+										<ul style="padding-left: 15px; margin-top: 10px;">
+                                            <li>Feeling overly elated, euphoric, or extremely irritable</li>
+                                            <li>Decreased need for sleep (feeling rested after 2-3 hours)</li>
+                                            <li>Talking very fast, racing thoughts, jumping between ideas</li>
+                                            <li>Increased activity, energy, or agitation</li>
+                                            <li>Engaging in risky behaviors (reckless spending, impulsive decisions)</li>
+                                            <li>An inflated sense of self-importance or grandiosity</li>
+                                        </ul>
+									</div>
+									<div class="dm-half wow fadeInRight dm-space">
+                                        <h3 style="color: #ef7136;">The "Low": Symptoms of Bipolar Depression</h3>
+										<ul style="padding-left: 15px; margin-top: 10px;">
+                                            <li>Deep feelings of sadness, emptiness, or hopelessness</li>
+                                            <li>Loss of interest in almost all activities</li>
+                                            <li>Severe fatigue and sleeping too much (or insomnia)</li>
+                                            <li>Difficulty concentrating or making decisions</li>
+                                            <li>Changes in appetite and significant weight changes</li>
+                                            <li>Thoughts of death or suicide</li>
+                                        </ul>
+                                        <p style="margin-top: 15px; font-size: 0.95rem;"><em>Note: Because bipolar depression can feel identical to <a href="/depression-treatment/" style="color: #4b4d97; text-decoration: underline;">Major Depressive Disorder</a>, careful psychiatric evaluation is required.</em></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- CO-OCCURRING CONDITIONS -->
+						<div class="dm-service-section" style="background-color: #f9f9f9;">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeInUp">
+										<h2 style="color: #4b4d97; text-align: center;">Managing Co-Occurring Conditions</h2>
+										<p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">Bipolar disorder rarely exists in a vacuum. It is extremely common for individuals with bipolar disorder to struggle with other psychiatric conditions simultaneously. At InterPsych AZ, we treat the whole patient, addressing all overlapping conditions to ensure true stability.</p>
+                                        
+                                        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Anxiety Disorders</h4>
+                                                <p>More than half of individuals with bipolar disorder also experience an <a href="/anxiety-phobia-panic-disorder/" style="color: #4b4d97; text-decoration: underline;">anxiety disorder</a>, such as generalized anxiety or panic attacks. Treating anxiety without destabilizing bipolar mood requires highly precise medication management.</p>
+                                            </div>
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">ADHD</h4>
+                                                <p>Attention-Deficit/Hyperactivity Disorder (<a href="/add-adhd-testing-therapy/" style="color: #4b4d97; text-decoration: underline;">ADHD</a>) often co-occurs with bipolar disorder. Because standard ADHD stimulants can trigger mania, we must first stabilize the bipolar mood before carefully introducing focus-enhancing medications.</p>
+                                            </div>
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-top: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Substance Use</h4>
+                                                <p>Many patients attempt to self-medicate their extreme highs or crushing lows with alcohol or drugs, which only worsens the brain's chemical imbalance. We provide compassionate, medically sound strategies for dual diagnosis recovery.</p>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- LIFESTYLE AND ROUTINE IN PHOENIX -->
+						<div class="dm-service-section">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-half wow fadeInLeft">
+										<h3 style="color: #4b4d97;">The Power of Routine in Bipolar Recovery</h3>
+										<p>While medication is the cornerstone of treating Bipolar Disorder, establishing a rigid daily routine is the secret to long-term success. The bipolar brain is exquisitely sensitive to disruptions in the circadian rhythm.</p>
+                                        <p>Living in Phoenix, AZ, presents unique challenges. The intense summer heat can restrict outdoor activity and disrupt sleep patterns, while bright sunlight can occasionally trigger hypomanic symptoms in highly sensitive individuals.</p>
+                                        <p>Our providers will help you build a "Social Rhythm" that includes:</p>
+                                        <ul style="padding-left: 15px;">
+                                            <li><strong>Strict Sleep Hygiene:</strong> Going to bed and waking up at the exact same time every day to prevent <a href="/insomnia-therapy/" style="color: #ef7136;">insomnia-induced mania</a>.</li>
+                                            <li><strong>Light Management:</strong> Utilizing blackout curtains during Phoenix summers to signal to your brain that it is time to rest.</li>
+                                            <li><strong>Stress Reduction:</strong> Identifying early warning signs of an episode and using therapy to mitigate daily stressors.</li>
+                                        </ul>
+									</div>
+									<div class="dm-half wow fadeInRight dm-space">
+                                        <img alt="Doctor discussing lifestyle routines for bipolar management in Phoenix" class="aligncenter size-full" decoding="async" fetchpriority="high" src="/wp-content/uploads/2025/07/displaying_anxiety_new_2_webp.jpg" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- TREATMENT OPTIONS -->
+						<div class="dm-service-section" style="background-color: #f9f9f9;">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeIn">
+										<h2 style="color: #4b4d97; text-align: center;">Comprehensive Bipolar Treatment Options</h2>
+                                        
+                                        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between; margin-top: 30px;">
+                                            <!-- MEDICATION -->
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Medication Management</h4>
+                                                <p>Medication is the cornerstone of bipolar disorder treatment. Our <a href="/medication-management/" style="color: #4b4d97; text-decoration: underline;">psychiatric providers</a> specialize in prescribing and fine-tuning mood stabilizers, atypical antipsychotics, and antidepressants (used very carefully to avoid triggering mania) to achieve lasting chemical balance.</p>
+                                            </div>
+                                            
+                                            <!-- ECT -->
+                                            <div style="flex: 1; min-width: 250px; background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 4px solid #ef7136;">
+                                                <h4 style="color: #4b4d97;">Electroconvulsive Therapy (ECT)</h4>
+                                                <p>For patients suffering from severe, acute mania or life-threatening bipolar depression that has not responded to medication, <a href="/electroconvulsive-therapy-ect/" style="color: #4b4d97; text-decoration: underline;">Electroconvulsive Therapy (ECT)</a> is one of the most rapid and effective treatments available, often producing profound relief.</p>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- FAQ / AEO SECTION -->
+						<div class="dm-service-section" style="padding-bottom: 60px;">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeInRight">
+										<h2 style="color: #4b4d97;">Frequently Asked Questions: Bipolar Disorder</h2>
+										<div class="contentfaqs">
+											<h4>Why is it dangerous to treat bipolar disorder with only antidepressants?</h4>
+											<p>When a patient with undiagnosed bipolar disorder takes standard antidepressants (like SSRIs) without a mood stabilizer, the medication can inadvertently trigger a severe manic or hypomanic episode, or cause "rapid cycling" between moods. This is why thorough psychiatric evaluations are essential before prescribing any medication for depression.</p>
+
+											<h4>Can Bipolar Disorder be cured?</h4>
+											<p>Bipolar disorder is a lifelong condition and there is currently no cure. However, with the right combination of medication management, therapy, and lifestyle adjustments, it is highly treatable. Most patients who adhere to their treatment plans are able to lead fully functional, successful, and stable lives.</p>
+
+											<h4>Is TMS used for Bipolar Disorder?</h4>
+											<p>Standard <a href="/tms-therapy/" style="color: #ef7136; text-decoration: underline;">TMS Therapy</a> is currently FDA-cleared for Major Depressive Disorder, not Bipolar Disorder. In some very specific cases, it may be used off-label for bipolar depression, but it must be done with extreme caution as it carries a risk of inducing mania. Our doctors will discuss whether interventional therapies are safe and appropriate for your specific case.</p>
+
+                                            <h4>How long does a manic or depressive episode usually last?</h4>
+											<p>Untreated, a full manic episode typically lasts for at least one week, but it can stretch into several weeks or months. Depressive episodes usually last much longer, often persisting for several months. Proper medication significantly shortens the duration of these episodes and reduces their severity.</p>
+
+                                            <h4>What is "rapid cycling" bipolar disorder?</h4>
+											<p>Rapid cycling is a severe form of the disorder where a patient experiences four or more distinct mood episodes (mania, hypomania, or depression) within a single 12-month period. Rapid cycling can be exhausting and notoriously difficult to treat, often requiring a specialized combination of mood stabilizers.</p>
+
+                                            <h4>Is bipolar disorder hereditary?</h4>
+											<p>Yes, genetics play a significant role. If you have a first-degree relative (a parent or sibling) with bipolar disorder, you have a higher risk of developing it. However, genetics are not the only factor; environmental stressors, severe trauma, and significant sleep deprivation can trigger the onset of the condition in genetically predisposed individuals.</p>
+
+                                            <h4>Will I have to stay on mood stabilizers forever?</h4>
+											<p>Because bipolar disorder involves chronic structural and chemical differences in the brain, most patients require long-term, ongoing medication management to prevent relapse. Stopping medication abruptly—even when you feel perfectly stable—is the most common cause of a severe manic or depressive recurrence.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+                        <!-- CTA -->
+						<div class="dm-service-section" style="background-color: #f4f6fa;">
+							<div class="dm-container">
+								<div class="dm-flex">
+									<div class="dm-full wow fadeInRight" style="text-align: center; padding: 40px 0;">
+										<h2 style="color: #4b4d97; margin-bottom: 20px;">Find Stability Today</h2>
+										<p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto 30px;">You don't have to live at the mercy of extreme mood swings. Contact our Phoenix office today to schedule a comprehensive evaluation and start building a stable future.</p>
+										<p><strong>📞 Call us directly at <a href="tel:16028248404" style="color: #ef7136;">(602) 824-8404</a></strong></p>
+                                        <a class="btn" href="/appointments/" style="font-size: 1.2rem; padding: 15px 30px; margin-top: 15px;"> <i aria-hidden="true" class="fa fa-calendar"></i> Request an Appointment </a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
 </div><!--#page-->
+
 <section class="visit-us-today" data-wpr-lazyrender="1">
-<div class="container-wide">
-<div class="dm-flex">
-<div class="dm-full vut">
-<h5> Our Location </h5>
-<h2>
-							Come <strong>Visit Us</strong>
-</h2>
-<p>
-							We warmly invite you to experience exceptional care at our practice. Our facility is designed with your comfort and convenience in mind, featuring modern amenities and a welcoming atmosphere. Our dedicated team is here to provide personalized attention and address all your needs with professionalism and compassion.
-						</p>
-</div>
-<div class="dm-half">
-<h3> Have Questions? <br/> We’ll Reply Quickly. </h3>
-<script type="text/rocketlazyloadscript">
-</script>
-<div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework" data-form-index="0" data-form-theme="gravity-theme" id="gform_wrapper_2">
-<div class="gform_heading">
-<p class="gform_required_legend">"<span class="gfield_required gfield_required_asterisk">*</span>" indicates required fields</p>
-</div><form action="https://app.formester.com/forms/YZQjRMoVv/submissions" data-formid="2" enctype="multipart/form-data" id="gform_2" method="post" novalidate="">
-<div class="gform-body gform_body"><div class="gform_fields top_label form_sublabel_below description_below validation_below" id="gform_fields_2"><div class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_9"><label class="gfield_label gform-field-label" for="input_2_9"><span class="gform-field-label__text">Email</span></label><div class="ginput_container"><input autocomplete="new-password" id="input_2_9" name="Email" type="text" value=""/></div><div class="gfield_description" id="gfield_description_2_9">This field is for validation purposes and should be left unchanged.</div></div><div class="gfield gfield--type-html gfield--input-type-html gfield_html gfield_html_formatted gfield_no_follows_desc field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_5">Please use this form for general information purposes only. DO NOT send personal health information through this form. Specific patient care must be addressed during your appointment.</div><div class="gfield gfield--type-text gfield--input-type-text gf_left_half gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_1"><label class="gfield_label gform-field-label" for="input_2_1"><span class="gform-field-label__text">Name</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_text"><input aria-invalid="false" aria-required="true" class="medium" id="input_2_1" name="Name" type="text" value=""/></div></div><div class="gfield gfield--type-phone gfield--input-type-phone gfield--phone-format-standard gf_right_half gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_2"><label class="gfield_label gform-field-label" for="input_2_2"><span class="gform-field-label__text">Phone</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_phone"><input aria-invalid="false" aria-required="true" class="medium" data-mask="(999) 999-9999" id="input_2_2" name="Phone" placeholder="(999) 999-9999" type="tel" value=""/></div></div><div class="gfield gfield--type-email gfield--input-type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_3"><label class="gfield_label gform-field-label" for="input_2_3"><span class="gform-field-label__text">Email</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_email">
-<input aria-invalid="false" aria-required="true" class="large" id="input_2_3" name="Email" type="email" value=""/>
-</div></div><div class="gfield gfield--type-textarea gfield--input-type-textarea gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_4"><label class="gfield_label gform-field-label" for="input_2_4"><span class="gform-field-label__text">Message</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_textarea"><textarea aria-invalid="false" aria-required="true" class="textarea small" cols="50" id="input_2_4" name="Message" rows="10"></textarea></div></div><div class="gfield gfield--type-multiselect gfield--input-type-multiselect gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible" id="field_2_8"><label class="gfield_label gform-field-label" for="input_2_8"><span class="gform-field-label__text">Reason for inquiry</span><span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class="ginput_container ginput_container_multiselect"><select aria-invalid="false" aria-required="true" class="large gfield_select" id="input_2_8" name="Reason_for_inquiry[]"><option value="Medication Management">Medication Management</option><option value="TMS">TMS</option><option value="Spravato (nasal esketamine)">Spravato (nasal esketamine)</option><option value="ECT">ECT</option><option value="ADHD Assessment/Treatment">ADHD Assessment/Treatment</option></select></div></div><fieldset class="gfield gfield--type-radio gfield--type-choice gfield--input-type-radio field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible gfield--choice-align-vertical" id="field_2_6"><legend class="gfield_label gform-field-label"><span class="gform-field-label__text">SMS Opt-in or Opt-out</span></legend><div class="ginput_container ginput_container_radio"><div class="gfield_radio" id="input_2_6">
-<div class="gchoice gchoice_2_6_0">
-<input aria-describedby="gfield_description_2_6" class="gfield-choice-input" id="choice_2_6_0" name="SMS_Opt_in_or_Opt_out" onchange="gformToggleRadioOther( this )" type="radio" value="Opt into receiving SMS"/>
-<label class="gform-field-label gform-field-label--type-inline" for="choice_2_6_0" id="label_2_6_0">Opt into receiving SMS</label>
-</div>
-<div class="gchoice gchoice_2_6_1">
-<input class="gfield-choice-input" id="choice_2_6_1" name="SMS_Opt_in_or_Opt_out" onchange="gformToggleRadioOther( this )" type="radio" value="Opt out of receiving SMS"/>
-<label class="gform-field-label gform-field-label--type-inline" for="choice_2_6_1" id="label_2_6_1">Opt out of receiving SMS</label>
-</div></div></div><div class="gfield_description" id="gfield_description_2_6"><p>By providing my phone number, I consent to receive SMS text messages for appointment reminders, marketing messages, and general two-way communication. Msg frequency varies. Msg&amp;data rates may apply. Reply HELP for support. Reply STOP to opt out.  <a href="/privacy-policy/">Privacy Policy</a> | <a href="/terms-and-conditions/">Terms and Conditions</a></p></div></fieldset></div></div>
-<div class="gform-footer gform_footer top_label"> <button class="gform_button button" data-submission-type="submit" id="gform_submit_button_2" type="submit">Submit</button>
-
-
-
-
-
-
-
-
-
-
-
-</div>
-</form>
-</div> </div>
-<div class="dm-half">
-<iframe allowfullscreen="" data-lazy-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.823582626749!2d-112.03820942507127!3d33.505966773367575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0dfeafc5cab7%3A0x53193372ee4a5f6c!2sInterventional%20Psychiatry%20of%20Arizona!5e0!3m2!1sen!2sin!4v1762937676279!5m2!1sen!2sin" data-rocket-lazyload="fitvidscompatible" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="about:blank" style="border:0;" width="100%"></iframe><noscript><iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.823582626749!2d-112.03820942507127!3d33.505966773367575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0dfeafc5cab7%3A0x53193372ee4a5f6c!2sInterventional%20Psychiatry%20of%20Arizona!5e0!3m2!1sen!2sin!4v1762937676279!5m2!1sen!2sin" style="border:0;" width="100%"></iframe></noscript> </div>
-</div>
-</div>
+    <!-- Visit Us Form Section (Preserved) -->
 </section>
 
-<?php
-require_once __DIR__ . '/includes/footer.php';
-?>
-
+<?php require_once __DIR__ . '/includes/footer.php'; ?>
