@@ -809,6 +809,25 @@ div#gform_wrapper_2 .gform_button {
     transform: translateY(-8px) !important;
     box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
 }
+/* The Read More modal is position:fixed inside the card; a transformed card
+   re-anchors it to the card and clips it, so the modal flickers on hover. */
+.staff-grid:has(.dm-classic-pop.show-dm-modal) {
+    transform: none !important;
+    transition: none !important;
+    overflow: visible !important;
+}
+/* Equal-height team cards, with Read More pinned to the bottom of each. */
+.staff-grid-container .container {
+    align-items: stretch !important;
+}
+.staff-grid-container .staff-grid {
+    display: flex !important;
+    flex-direction: column !important;
+}
+.staff-grid-container .staff-grid > p + span {
+    margin-top: auto !important;
+    align-self: center !important;
+}
 .home-icons .dm-third img, .dm-service-section .dm-third img {
     transition: transform 0.5s ease !important;
 }

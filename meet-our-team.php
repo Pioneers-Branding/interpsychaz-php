@@ -204,32 +204,6 @@ require_once __DIR__ . '/includes/header.php';
                                                 access, and effective practice growth.</p>
                                         </div>
                                     </div>
-                                    <div class="staff-grid dm-3 reg-staff-image" id="staff-item-5">
-                                        <div class="staff-image"
-                                            style="background-image: url(/wp-content/uploads/2026/05/Laila-Dowou-TMS-Technician.png)">
-                                        </div>
-                                        <h3> Laila Dowou </h3>
-                                        <h4> TMS Technician </h4>
-                                        <p>
-
-                                            Laila Dowou is a highly skilled and compassionate TMS Technician dedicated
-                                            to providing exceptional patient care. With extensive experience working
-                                            wi... </p>
-                                        <span data-dm-category="pop" id="dm-5">Read More</span>
-                                        <div class="dm-classic-pop" data-dm-popup="dm-5">
-                                            <h3>Laila Dowou</h3>
-                                            <h4>TMS Technician</h4>
-                                            <p>Laila Dowou is a highly skilled and compassionate TMS Technician
-                                                dedicated to providing exceptional patient care. With extensive
-                                                experience working with patients undergoing Transcranial Magnetic
-                                                Stimulation (TMS) treatment, Laila is known for her professionalism,
-                                                attention to detail, and supportive approach throughout each patient’s
-                                                treatment journey. She is passionate about helping individuals improve
-                                                their mental health and ensuring every patient feels comfortable,
-                                                supported, and cared for during their time at Interventional Psychiatry
-                                                of Arizona.</p>
-                                        </div>
-                                    </div>
                                     <div class="staff-grid dm-3 reg-staff-image" id="staff-item-6">
                                         <div class="staff-image rocket-lazyload"
                                             data-bg="/wp-content/uploads/2026/05/Evelyn-Guerrero-Patient-Care-Coordinator.png"
@@ -253,6 +227,28 @@ require_once __DIR__ . '/includes/header.php';
                                                 professionalism. Her strong communication skills and dedication to
                                                 patient care help ensure patients feel informed, comfortable, and
                                                 supported throughout their journey with our office.</p>
+                                        </div>
+                                    </div>
+                                    <div class="staff-grid dm-3 reg-staff-image" id="staff-item-5">
+                                        <div class="staff-image"
+                                            style="background-image: url(/assets/team/Antoinette-Johnson.jpeg)">
+                                        </div>
+                                        <h3> Antoinette Johnson </h3>
+                                        <h4> Patient Coordinator </h4>
+                                        <p>
+
+                                            Our Patient Coordinator is here to welcome you, answer your questions, and
+                                            help you feel comfortable as you begin your care... </p>
+                                        <span data-dm-category="pop" id="dm-5">Read More</span>
+                                        <div class="dm-classic-pop" data-dm-popup="dm-5">
+                                            <h3>Antoinette Johnson</h3>
+                                            <h4>Patient Coordinator</h4>
+                                            <p>Our Patient Coordinator is here to welcome you, answer your questions,
+                                                and help you feel comfortable as you begin your care with us. From
+                                                scheduling your first appointment to guiding you through the paperwork,
+                                                they offer friendly, attentive support every step of the way. Their goal
+                                                is to make your experience easy and welcoming so you can focus on your
+                                                well-being.</p>
                                         </div>
                                     </div>
                                 </div>
