@@ -355,39 +355,6 @@ require_once __DIR__ . '/includes/header.php';
 											<option value="ADHD Assessment/Treatment">ADHD Assessment/Treatment</option>
 										</select></div>
 								</div>
-								<fieldset
-									class="gfield gfield--type-radio gfield--type-choice gfield--input-type-radio field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible gfield--choice-align-vertical"
-									id="field_2_6">
-									<legend class="gfield_label gform-field-label"><span
-											class="gform-field-label__text">SMS Opt-in or Opt-out</span></legend>
-									<div class="ginput_container ginput_container_radio">
-										<div class="gfield_radio" id="input_2_6">
-											<div class="gchoice gchoice_2_6_0">
-												<input aria-describedby="gfield_description_2_6"
-													class="gfield-choice-input" id="choice_2_6_0" name="SMS_Opt_in_or_Opt_out"
-													onchange="gformToggleRadioOther( this )" type="radio"
-													value="Opt into receiving SMS" />
-												<label class="gform-field-label gform-field-label--type-inline"
-													for="choice_2_6_0" id="label_2_6_0">Opt into receiving SMS</label>
-											</div>
-											<div class="gchoice gchoice_2_6_1">
-												<input class="gfield-choice-input" id="choice_2_6_1" name="SMS_Opt_in_or_Opt_out"
-													onchange="gformToggleRadioOther( this )" type="radio"
-													value="Opt out of receiving SMS" />
-												<label class="gform-field-label gform-field-label--type-inline"
-													for="choice_2_6_1" id="label_2_6_1">Opt out of receiving SMS</label>
-											</div>
-										</div>
-									</div>
-									<div class="gfield_description" id="gfield_description_2_6">
-										<p>By providing my phone number, I consent to receive SMS text messages for
-											appointment reminders, marketing messages, and general two-way
-											communication. Msg frequency varies. Msg&amp;data rates may apply. Reply
-											HELP for support. Reply STOP to opt out. <a href="/privacy-policy/">Privacy
-												Policy</a> | <a href="/terms-and-conditions/">Terms and Conditions</a>
-										</p>
-									</div>
-								</fieldset>
 							</div>
 						</div>
 						<div class="gform-footer gform_footer top_label"> <button class="gform_button button" data-submission-type="submit" id="gform_submit_button_2" type="submit">Submit</button>
