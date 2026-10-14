@@ -504,6 +504,7 @@
     // original site. A second vanilla-JS toggle used to live here; both fired on the
     // same click and cancelled each other out, so the drawer never opened.
 </script>
+<?php require __DIR__ . "/recaptcha.php"; ?>
 </body>
 
 </html>
