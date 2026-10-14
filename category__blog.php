@@ -24,6 +24,26 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
+<a class="post-image post-image-left schema-featured" href="/how-long-does-tms-last/" id="post-image-thumbnail" title="How Long Does TMS Last? Results &amp; Durability">
+<div class="post-image-thumbnail"><img alt="How Long Does TMS Last? Results &amp; Durability" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" fetchpriority="high" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2026/10/how-long-does-tms-last-thumbnail.jpg" srcset="/wp-content/uploads/2026/10/how-long-does-tms-last-thumbnail.jpg 800w" title="" width="800"/></div> </a>
+</div>
+<div class="dm-half post-half">
+<p style="font-size:12px; color:#666; margin-bottom:5px;">October 13, 2026</p>
+<h3 class="title front-view-title"><a href="/how-long-does-tms-last/" title="How Long Does TMS Last? Results &amp; Durability">How Long Does TMS Last? Results &amp; Durability</a></h3>
+<div class="front-view-content">
+                        How long does TMS last? Discover clinical evidence on TMS therapy durability, remission timelines, maintenance sessions, and long-term relief in Phoenix, AZ.                    </div>
+<div class="readMore">
+<a href="/how-long-does-tms-last/" title="How Long Does TMS Last? Results &amp; Durability">
+                [Continue Reading...]            </a>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="dm-post excerpt">
+<div class="blog-article">
+<div class="dm-flex">
+<div class="dm-half post-image">
 <a class="post-image post-image-left schema-featured" href="/does-ptsd-cause-memory-loss/" id="post-image-thumbnail" title="Does PTSD Cause Memory Loss? Causes &amp; Recovery">
 <div class="post-image-thumbnail"><img alt="Does PTSD Cause Memory Loss? Causes &amp; Recovery" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" fetchpriority="high" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2026/09/does-ptsd-cause-memory-loss-thumbnail.jpg" srcset="/wp-content/uploads/2026/09/does-ptsd-cause-memory-loss-thumbnail.jpg 800w" title="" width="800"/></div> </a>
 </div>

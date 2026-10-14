@@ -26,6 +26,10 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
+<h4> <a href="/how-long-does-tms-last/">How Long Does TMS Last? Results &amp; Durability</a> </h4>
+<p> Explore clinical research on TMS therapy durability, remission timelines, and booster protocols... </p>
+</div>
+<div>
 <h4> <a href="/what-are-the-symptoms-of-adhd/">What Are the Symptoms of ADHD? Signs, Types &amp; Diagnosis</a> </h4>
 <p> Learn about common ADHD symptoms in children, teens, and adults... </p>
 </div>

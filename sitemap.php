@@ -71,6 +71,7 @@ require_once __DIR__ . '/includes/header.php';
 <h2> <strong>Posts</strong> </h2>
 <ul>
 <!-- the loop -->
+<li><a href="/how-long-does-tms-last/">How Long Does TMS Last? Results &amp; Durability</a></li>
 <li><a href="/does-ptsd-cause-memory-loss/">Does PTSD Cause Memory Loss? Causes &amp; Recovery</a></li>
 <li><a href="/what-are-the-symptoms-of-adhd/">What Are the Symptoms of ADHD? Signs, Types &amp; Diagnosis</a></li>
 <li><a href="/is-spravato-covered-by-insurance/">Is Spravato Covered by Insurance? Costs &amp; Coverage Guide</a></li>
