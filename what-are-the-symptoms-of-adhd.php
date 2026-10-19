@@ -60,7 +60,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<figure class="wp-block-image size-large"><img alt="Compassionate mental health professional evaluating a teenager showing common ADHD symptoms in a clinical setting" class="wp-image-1001" decoding="async" fetchpriority="high" height="685" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2026/09/what-are-the-symptoms-of-adhd-thumbnail.jpg" srcset="/wp-content/uploads/2026/09/what-are-the-symptoms-of-adhd-thumbnail.jpg 1024w" width="1024"/></figure>
+<figure class="wp-block-image size-large"><img alt="Compassionate mental health professional evaluating a teenager showing common ADHD symptoms in a clinical setting" class="wp-image-1001" decoding="async" fetchpriority="high" height="685" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2026/09/what-are-the-symptoms-of-adhd-thumbnail.jpg.webp" srcset="/wp-content/uploads/2026/09/what-are-the-symptoms-of-adhd-thumbnail.jpg.webp 1024w" width="1024"/></figure>
 
 <!-- Quick Answer / AEO Direct Summary Box -->
 <div style="background-color: #f0f7ff; border-left: 5px solid #0056b3; padding: 22px; margin-bottom: 25px; border-radius: 4px;">

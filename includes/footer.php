@@ -216,7 +216,8 @@
     })();
 </script>
 -->
-<div aria-labelledby="dmm-cg-title" class="dmm-cg dmm-cg--notice" hidden="" id="dmm-cg" role="region">
+<div aria-labelledby="dmm-cg-title" class="dmm-cg dmm-cg--notice" id="dmm-cg" role="region" style="position:fixed;left:0;right:0;bottom:0">
+<script>(function(d){try{if(/(?:^|;\s*)dmm_cg_consent=/.test(d.cookie)){var r=d.getElementById('dmm-cg');if(r){r.hidden=!0}}else{d.documentElement.classList.add('dmm-cg-showing')}}catch(e){}})(document);</script>
     <div class="dmm-cg__panel">
         <div class="dmm-cg__notice">
             <div class="dmm-cg__notice-copy">

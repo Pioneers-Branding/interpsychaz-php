@@ -13,9 +13,8 @@ $pageRobots = $pageRobots ?? 'index, follow, max-image-preview:large, max-snippe
 <html class="no-js" lang="en-US">
 <head itemscope="" itemtype="http://schema.org/WebSite">
 <meta charset="utf-8"/>
-<script src="https://www.google.com/recaptcha/enterprise.js?render=6LchPNUtAAAAAM_ijw_dQeAV5J679xzCozOVmZHe"></script>
 <link as="font" crossorigin="" href="/wp-content/uploads/dmm-consent-guard/fonts/f-b58a5805e17f555e1620.woff2" rel="preload" type="font/woff2"/>
-<link as="font" crossorigin="" href="/wp-content/uploads/dmm-consent-guard/fonts/f-0f7fcdc8ea1a3358e78a.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/wp-content/uploads/dmm-consent-guard/fonts/cinzel-v26-latin.woff2" rel="preload" type="font/woff2"/>
 <script id="dmm-cg-boot">window.DMMCG={"mode":"disclaimer","cats":["functional","analytics","marketing"],"allow":[],"lib":["code.jquery.com","cdnjs.cloudflare.com","unpkg.com","jsdelivr.net","bootstrapcdn.com","ajax.aspnetcdn.com","use.fontawesome.com","kit.fontawesome.com"],"map":{"google-analytics.com":"analytics","analytics.google.com":"analytics","googletagmanager.com":"analytics","segment.com":"analytics","segment.io":"analytics","withcherry.com":"marketing","recaptcha.net":"functional","gstatic.com":"functional","doubleclick.net":"marketing","googleadservices.com":"marketing","googlesyndication.com":"marketing","facebook.com":"marketing","facebook.net":"marketing","connect.facebook.net":"marketing","tiktok.com":"marketing","bing.com":"marketing","clarity.ms":"analytics","hotjar.com":"analytics","hotjar.io":"analytics","linkedin.com":"marketing","licdn.com":"marketing","hubspot.com":"marketing","hs-scripts.com":"marketing","hs-analytics.net":"analytics","youtube.com":"functional","youtube-nocookie.com":"functional","ytimg.com":"functional","vimeo.com":"functional","fonts.googleapis.com":"functional","fonts.gstatic.com":"functional","translate.google.com":"functional","translate.googleapis.com":"functional","gravatar.com":"functional","w.org":"functional","wp.com":"analytics","cloudflareinsights.com":"analytics","intercom.io":"marketing","tawk.to":"functional","podium.com":"marketing","birdeye.com":"marketing","callrail.com":"marketing","twilio.com":"functional","stripe.com":"functional","paypal.com":"functional"},"ep":"https://interpsychaz.com/wp-json/dmm/v1/","tok":"4249d6030bed8d8538c71a2e62a52d4b","pv":1,"audit":1,"banner":1,"recaptcha":1,"embeds":"placeholder","site":"interpsychaz.com"};</script>
 <script id="dmm-cg-guard">(function (w, d) {
 	'use strict';
@@ -352,21 +351,39 @@ $pageRobots = $pageRobots ?? 'index, follow, max-image-preview:large, max-snippe
 	d.addEventListener('visibilitychange', function () { if (d.visibilityState === 'hidden') { flush(); } });
 }(window, document));
 </script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','<?php echo GTM_ID; ?>');</script>
-<!-- End Google Tag Manager -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo GA_ID_1; ?>"></script>
+<!-- Google Tag Manager + gtag.js (consolidated: one loader, deferred until window load + idle or first interaction) -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '<?php echo GA_ID_1; ?>');
+window.dataLayer = window.dataLayer || [];
+window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+(function(w,d){
+  var booted = false;
+  function boot(){
+    if (booted) { return; }
+    booted = true;
+    w.gtag('js', new Date());
+    w.gtag('config', '<?php echo GA_ID_1; ?>');
+    w.gtag('config', '<?php echo GA_ID_2; ?>');
+    w.gtag('config', '<?php echo GOOGLE_ADS_ID; ?>');
+    var ref = d.getElementsByTagName('script')[0];
+    var gtm = d.createElement('script');
+    gtm.async = true;
+    gtm.src = 'https://www.googletagmanager.com/gtm.js?id=<?php echo GTM_ID; ?>&l=dataLayer';
+    ref.parentNode.insertBefore(gtm, ref);
+    var g = d.createElement('script');
+    g.async = true;
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=<?php echo GA_ID_1; ?>';
+    ref.parentNode.insertBefore(g, ref);
+  }
+  var signals = ['pointerdown','keydown','touchstart','scroll'];
+  var onSignal = function(){ boot(); };
+  signals.forEach(function(evt){
+    w.addEventListener(evt, onSignal, {passive:true, capture:true, once:true});
+  });
+  w.addEventListener('pagehide', boot);
+  d.addEventListener('visibilitychange', function(){ if (d.visibilityState === 'hidden') { boot(); } });
+})(window,document);
 </script>
+<!-- End Google Tag Manager + gtag.js -->
 <!--[if IE ]>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<![endif]-->
@@ -384,9 +401,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta content="<?php echo $pageRobots; ?>" name="robots"/>
 <script>document.documentElement.className = document.documentElement.className.replace( /\bno-js\b/,'js' );</script>
 <title><?php echo $pageTitle; ?></title>
-<link as="style" href="/_external/fonts.googleapis.com/css_54cf8c19.css" rel="preload"/>
-<link href="/wp-content/uploads/dmm-consent-guard/fonts/fonts-e32582ff5559e0a721ad.css" media="print" onload="this.media='all'" rel="stylesheet"/>
-<noscript><link href="/wp-content/uploads/dmm-consent-guard/fonts/fonts-e32582ff5559e0a721ad.css" rel="stylesheet"/></noscript>
+<link href="/wp-content/cache/min/perf/bundle-a.css" id="perf-bundle-a-css" media="all" rel="stylesheet"/>
 <meta content="<?php echo $pageDescription; ?>" name="description"/>
 <link href="<?php echo $pageCanonical; ?>" rel="canonical"/>
 <meta content="en_US" property="og:locale"/>
@@ -577,27 +592,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             margin-left: 3px;
         }
 </style>
-<link href="/wp-content/cache/min/1/wp-content/plugins/dmm-consent-guard/assets/css/banner.css" id="dmm-cg-banner-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/content/css/ada.css" id="ada_css-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/cache/min/1/wp-content/themes/blossom-child/style.css" id="schema-stylesheet-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/css/owl.carousel.css" id="owl-carousel-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/themes/mts_schema/css/animate.min.css" id="animatecss-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/fonts/all.min.css" id="fontawesome-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/css/responsive.css" id="responsive-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/cache/min/1/wp-content/themes/blossom-child/assets/slick.css" id="slickcss-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/content/css/content-style.css" id="content-css-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/theme-specific/testimonials/slick.css" id="wda_testimonials-css" media="all" rel="stylesheet"/>
-<?php
-// Page-specific stylesheets. WordPress enqueued these only on the pages that use
-// them; the static port has to do the same or those pages render unstyled.
-$pageOnlyStyles = [
-    'meet-our-team'                  => ['wda_staff_grid-css' => '/wp-content/cache/min/1/wp-content/themes/mts_schema/theme-specific/doctors/doctor-grid.css'],
-    'for-providers__refer-a-patient' => ['dashicons-css'      => '/wp-content/cache/min/1/wp-includes/css/dashicons.min.css'],
-];
-foreach (($pageOnlyStyles[$currentPage] ?? []) as $id => $href):
-?>
-<link href="<?php echo $href; ?>" id="<?php echo $id; ?>" media="all" rel="stylesheet"/>
-<?php endforeach; ?>
+<link href="/wp-content/cache/min/perf/bundle-a.css" id="perf-bundle-a-css" media="all" rel="stylesheet"/>
 <style id="slickcss-inline-css">
 	:root {
 	    --pColor: #4b4d97;
@@ -611,11 +606,7 @@ var mts_customscript = {"responsive":"1","nav_menu":"both"};
 </script>
 <script src="/wp-content/cache/min/1/wp-content/themes/mts_schema/js/customscript.js" defer id="customscript-js"></script>
 <script src="/wp-content/cache/min/1/wp-content/themes/mts_schema/content/js/ada.js" defer id="ada_js-js"></script>
-<script src="/wp-content/themes/blossom-child/assets/jquery.counterup.min.js" defer id="counterup-js"></script>
-<script src="/wp-content/themes/blossom-child/assets/waypoints.min.js" defer id="waypoints-js"></script>
 <script src="/wp-content/cache/min/1/wp-content/themes/blossom-child/assets/wow.js" defer id="wow-js"></script>
-<script src="/wp-content/themes/blossom-child/assets/slick.min.js" defer id="slick-js"></script>
-<script src="/wp-content/themes/mts_schema/theme-specific/testimonials/slick.min.js" defer id="wda_testimonials-js"></script>
 <style id="wp-custom-fonts">
         #logo a { font-family: 'Roboto'; font-weight: normal; font-size: 32px; color: #222222;text-transform: uppercase; }
         body { font-family: 'Roboto'; font-weight: 300; font-size: 18px; color: #000000; }
@@ -644,13 +635,9 @@ var mts_customscript = {"responsive":"1","nav_menu":"both"};
 		    "description": "Convenient and affordable Premier Psychiatry Center in Phoenix, AZ."
     	}
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo GA_ID_2; ?>"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '<?php echo GA_ID_2; ?>');
-</script>
+<?php if ($currentPage === 'index'): ?>
+<link as="image" fetchpriority="high" href="/wp-content/uploads/2025/06/UntitledCOMPRESSED-poster.webp" rel="preload"/>
+<?php endif; ?>
 <style id="wp-custom-css">
 @media only screen 
   and (max-device-width: 880px) {
@@ -661,635 +648,639 @@ div#gform_wrapper_2 .gform_button {
 }
 }
 </style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo GOOGLE_ADS_ID; ?>"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '<?php echo GOOGLE_ADS_ID; ?>');
-</script>
-<link href="/wp-content/cache/min/1/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css" id="gform_basic-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/plugins/gravityforms/assets/css/dist/theme-components.min.css" id="gform_theme_components-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/plugins/gravityforms/assets/css/dist/theme.min.css" id="gform_theme-css" media="all" rel="stylesheet"/>
-<link href="/wp-content/cache/min/1/wp-content/themes/mts_schema/css/slick.css" id="slick-main-css-css" media="all" rel="stylesheet"/>
-<style id="site-master-fixes-css">
-/* Hero Banner Carousel Typography & Layout */
-.carousel-caption,
-.homepage .carousel-caption,
-.video_holder .carousel-caption {
-    position: absolute !important;
-    top: 60% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 95% !important;
-    max-width: 1250px !important;
-    margin: 0 auto !important;
-    text-align: center !important;
-    z-index: 10 !important;
-    padding: 0 15px !important;
+<link href="/wp-content/cache/min/perf/bundle-b.css" id="perf-bundle-b-css" media="all" rel="stylesheet"/>
+<?php $_perfGform = __DIR__ . '/../wp-content/cache/min/perf/bundle-gform.css'; if (file_exists($_perfGform)) { echo '<style id="perf-gform-inline">' . file_get_contents($_perfGform) . '</style>'; } ?>
+<?php
+// Page-specific stylesheets. WordPress enqueued these only on the pages that use
+// them; the static port has to do the same or those pages render unstyled.
+$pageOnlyStyles = [
+    'meet-our-team'                  => ['wda_staff_grid-css' => '/wp-content/cache/min/1/wp-content/themes/mts_schema/theme-specific/doctors/doctor-grid.css'],
+    'for-providers__refer-a-patient' => ['dashicons-css'      => '/wp-content/cache/min/1/wp-includes/css/dashicons.min.css'],
+];
+foreach (($pageOnlyStyles[$currentPage] ?? []) as $id => $href):
+?>
+<link href="<?php echo $href; ?>" id="<?php echo $id; ?>" media="all" rel="stylesheet"/>
+<?php endforeach; ?>
+<style>
+/* Premium Gravity Forms Overrides */
+.gform_wrapper .gform_body .gfield input[type=text],
+.gform_wrapper .gform_body .gfield input[type=email],
+.gform_wrapper .gform_body .gfield input[type=tel],
+.gform_wrapper .gform_body .gfield select,
+.gform_wrapper .gform_body .gfield textarea {
+    width: 100% !important;
+    padding: 12px 15px !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 6px !important;
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+    font-size: 16px !important;
+    font-family: inherit !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05) inset !important;
     box-sizing: border-box !important;
+    margin-top: 4px !important;
 }
 
-.carousel-caption h1,
-.carousel-caption :is(h1, h2),
-.homepage .carousel-caption :is(h1, h2) {
-    font-family: 'Jost', 'Roboto', sans-serif !important;
-    font-size: clamp(22px, 2.7vw, 38px) !important;
+.gform_wrapper .gform_body .gfield input:focus,
+.gform_wrapper .gform_body .gfield select:focus,
+.gform_wrapper .gform_body .gfield textarea:focus {
+    outline: none !important;
+    border-color: #4b4d97 !important;
+    box-shadow: 0 0 0 3px rgba(75, 77, 151, 0.2) !important;
+    background-color: #fff !important;
+}
+
+.gform_wrapper .gform_body .gfield_label {
     font-weight: 600 !important;
-    color: #ffffff !important;
-    line-height: 1.25 !important;
-    margin: 0 auto 16px auto !important;
-    max-width: 100% !important;
-    white-space: nowrap !important;
-    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.75) !important;
-    letter-spacing: -0.2px !important;
-}
-
-.carousel-caption p,
-.video_holder .carousel-caption p,
-.homepage .carousel-caption p {
-    color: #ffffff !important;
-    font-family: 'Roboto', sans-serif !important;
-    font-size: clamp(15px, 1.4vw, 18px) !important;
-    font-weight: 400 !important;
-    line-height: 1.5 !important;
-    max-width: 820px !important;
-    margin: 0 auto 24px auto !important;
-    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.75) !important;
-    opacity: 0.95 !important;
-}
-
-.carousel-caption a.btn,
-.video_holder a.btn {
+    color: #374151 !important;
+    margin-bottom: 5px !important;
+    display: inline-block !important;
     font-size: 15px !important;
-    padding: 13px 32px !important;
+}
+
+.gform_wrapper .gform_footer button.gform_button,
+.gform_wrapper .gform_footer input.gform_button,
+.gform_wrapper .gform_footer button[type="submit"] {
+    background-color: #ea8529 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    padding: 14px 28px !important;
+    border-radius: 30px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(234, 133, 41, 0.3) !important;
+    text-transform: uppercase !important;
     letter-spacing: 0.5px !important;
 }
 
-/* ==========================================================================
-   1. PAGE-LEVEL COMPONENT STYLES
-   Typography is intentionally NOT overridden here: the original site uses the
-   theme fonts (Roboto body / Jost headings) set in <style id="wp-custom-fonts">.
-   ========================================================================== */
+.gform_wrapper .gform_footer button.gform_button:hover,
+.gform_wrapper .gform_footer input.gform_button:hover,
+.gform_wrapper .gform_footer button[type="submit"]:hover {
+    background-color: #d67420 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(234, 133, 41, 0.4) !important;
+}
 
-/* Responsive YouTube Player with Red Play Button */
-.rll-youtube-player {
-    position: relative !important;
-    padding-bottom: 56.25% !important;
-    height: 0 !important;
-    overflow: hidden !important;
-    max-width: 100% !important;
-    margin: 20px auto !important;
-    background: #000000 !important;
-    border-radius: 6px !important;
-    cursor: pointer !important;
+.gform_wrapper .gform_fields {
+    display: grid !important;
+    grid-gap: 20px !important;
 }
-.rll-youtube-player iframe {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    border: 0 !important;
-}
-.rll-youtube-player img {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    transition: filter 0.3s ease !important;
-}
-.rll-youtube-player:hover img {
-    filter: brightness(80%) !important;
-}
-.rll-youtube-player .play-btn {
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 68px !important;
-    height: 48px !important;
-    background-color: #ff0000 !important;
-    border-radius: 14px !important;
-    cursor: pointer !important;
-    border: none !important;
-    transition: transform 0.2s ease, background-color 0.2s ease !important;
+
+.gform_wrapper .gfield_radio .gchoice {
+    margin-bottom: 8px !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: center !important;
-    z-index: 10 !important;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4) !important;
-}
-.rll-youtube-player:hover .play-btn {
-    background-color: #cc0000 !important;
-    transform: translate(-50%, -50%) scale(1.1) !important;
-}
-.rll-youtube-player .play-btn::after {
-    content: '' !important;
-    border-style: solid !important;
-    border-width: 9px 0 9px 16px !important;
-    border-color: transparent transparent transparent #ffffff !important;
-    display: block !important;
-    margin-left: 3px !important;
 }
 
-/* ==========================================================================
-   2. UI / UX ENHANCEMENTS (Modernization)
-   ========================================================================== */
-.home-icons .dm-third, .dm-service-section .dm-third, .staff-grid {
-    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-    border-radius: 12px !important;
-    overflow: hidden !important;
-    background: #ffffff !important;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
-}
-.home-icons .dm-third:hover, .dm-service-section .dm-third:hover, .staff-grid:hover {
-    transform: translateY(-8px) !important;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
-}
-/* The Read More modal is position:fixed inside the card; a transformed card
-   re-anchors it to the card and clips it, so the modal flickers on hover. */
-.staff-grid:has(.dm-classic-pop.show-dm-modal) {
-    transform: none !important;
-    transition: none !important;
-    overflow: visible !important;
-}
-/* Equal-height team cards, with Read More pinned to the bottom of each. */
-.staff-grid-container .container {
-    align-items: stretch !important;
-}
-.staff-grid-container .staff-grid {
-    display: flex !important;
-    flex-direction: column !important;
-}
-.staff-grid-container .staff-grid > p + span {
-    margin-top: auto !important;
-    align-self: center !important;
-}
-.home-icons .dm-third img, .dm-service-section .dm-third img {
-    transition: transform 0.5s ease !important;
-}
-.home-icons .dm-third:hover img, .dm-service-section .dm-third:hover img {
-    transform: scale(1.05) !important;
-}
-.home-icons .dm-third h4 {
-    padding: 20px !important;
-    margin: 0 !important;
+.gform_wrapper .gfield_radio input[type="radio"] {
+    margin-right: 10px !important;
+    width: 18px !important;
+    height: 18px !important;
+    accent-color: #4b4d97 !important;
 }
 
-/* Button UI Enhancement */
-a.btn, button.gform_button, #gform_submit_button_2 {
-    background: linear-gradient(135deg, #ef7136 0%, #e05e22 100%) !important;
-    border: none !important;
-    border-radius: 8px !important;
+.gform_wrapper .gfield_description p {
+    font-size: 13px !important;
+    color: #6b7280 !important;
+    line-height: 1.5 !important;
+    margin-top: 8px !important;
+}
+</style>
+
+<style>
+/* Premium Gravity Forms Overrides */
+.gform_wrapper .gform_body .gfield input[type=text],
+.gform_wrapper .gform_body .gfield input[type=email],
+.gform_wrapper .gform_body .gfield input[type=tel],
+.gform_wrapper .gform_body .gfield select,
+.gform_wrapper .gform_body .gfield textarea {
+    width: 100% !important;
+    padding: 12px 15px !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 6px !important;
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+    font-size: 16px !important;
+    font-family: inherit !important;
     transition: all 0.3s ease !important;
-    box-shadow: 0 4px 15px rgba(239, 113, 54, 0.4) !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05) inset !important;
+    box-sizing: border-box !important;
+    margin-top: 4px !important;
 }
-a.btn:hover, button.gform_button:hover, #gform_submit_button_2:hover {
-    background: linear-gradient(135deg, #e05e22 0%, #cc551f 100%) !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 8px 20px rgba(239, 113, 54, 0.6) !important;
+
+.gform_wrapper .gform_body .gfield input:focus,
+.gform_wrapper .gform_body .gfield select:focus,
+.gform_wrapper .gform_body .gfield textarea:focus {
+    outline: none !important;
+    border-color: #4b4d97 !important;
+    box-shadow: 0 0 0 3px rgba(75, 77, 151, 0.2) !important;
+    background-color: #fff !important;
+}
+
+.gform_wrapper .gform_body .gfield_label {
+    font-weight: 600 !important;
+    color: #374151 !important;
+    margin-bottom: 5px !important;
+    display: inline-block !important;
+    font-size: 15px !important;
+}
+
+.gform_wrapper .gform_footer button.gform_button,
+.gform_wrapper .gform_footer input.gform_button,
+.gform_wrapper .gform_footer button[type="submit"] {
+    background-color: #ea8529 !important;
     color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    padding: 14px 28px !important;
+    border-radius: 30px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(234, 133, 41, 0.3) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
 }
 
-/* ==========================================================================
-   3. DESKTOP NAVIGATION & DROPDOWN MENUS (>= 866px)
-   ========================================================================== */
-@media screen and (min-width: 866px) {
-    #secondary-navigation .navigation > ul > li > a,
-    #secondary-navigation .navigation > ul > li > a:link,
-    #secondary-navigation .navigation > ul > li > a:visited {
-        color: #ffffff !important;
-        font-family: 'Roboto', sans-serif !important;
-        font-weight: 500 !important;
-        font-size: 16px !important;
-        text-transform: uppercase !important;
-    }
-    #secondary-navigation .navigation > ul > li:hover > a,
-    #secondary-navigation .navigation > ul > li.current-menu-item > a,
-    #secondary-navigation .navigation > ul > li.current-menu-parent > a {
-        color: #ffffff !important;
-    }
-    #secondary-navigation .navigation > ul > li:hover,
-    #secondary-navigation .navigation > ul > li.current-menu-item,
-    #secondary-navigation .navigation > ul > li.current-menu-parent {
-        background-color: #ea8529 !important;
-    }
-
-    #secondary-navigation .navigation ul.sub-menu,
-    #secondary-navigation .navigation ul ul,
-    .secondary-navigation .navigation ul.sub-menu {
-        background-color: #ffffff !important;
-        border-radius: 4px !important;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22) !important;
-        border: 1px solid rgba(0, 0, 0, 0.1) !important;
-        min-width: 290px !important;
-        width: max-content !important;
-        max-width: 420px !important;
-        padding: 6px 0 !important;
-        z-index: 99999 !important;
-    }
-    #secondary-navigation .navigation ul.sub-menu li,
-    #secondary-navigation .navigation ul ul li {
-        background: #ffffff !important;
-        display: block !important;
-        float: none !important;
-        width: 100% !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
-    #secondary-navigation .navigation ul.sub-menu li a,
-    #secondary-navigation .navigation ul ul li a,
-    #secondary-navigation .sub-menu a,
-    .navigation ul.sub-menu a,
-    ul.sub-menu li a {
-        color: #154064 !important;
-        font-family: 'Roboto', sans-serif !important;
-        font-size: 14px !important;
-        font-weight: 500 !important;
-        text-transform: none !important;
-        letter-spacing: 0.2px !important;
-        line-height: 1.45 !important;
-        display: block !important;
-        padding: 10px 22px !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-        background: #ffffff !important;
-        border-bottom: 1px solid #f0f2f5 !important;
-        transition: all 0.15s ease !important;
-        text-align: left !important;
-        white-space: normal !important;
-    }
-    #secondary-navigation .navigation ul.sub-menu li:last-child a,
-    #secondary-navigation .navigation ul ul li:last-child a {
-        border-bottom: none !important;
-    }
-
-    #secondary-navigation .navigation ul.sub-menu li a:hover,
-    #secondary-navigation .navigation ul.sub-menu li:hover > a,
-    #secondary-navigation .navigation ul ul li a:hover,
-    ul.sub-menu li a:hover {
-        background-color: #ea8529 !important;
-        color: #ffffff !important;
-        padding-left: 26px !important;
-    }
-    #secondary-navigation .navigation ul.sub-menu li.current-menu-item > a,
-    #secondary-navigation .navigation ul.sub-menu li.current_page_item > a {
-        background-color: #4b4d97 !important;
-        color: #ffffff !important;
-    }
-
-    .mobile_cta_buttons {
-        display: none !important;
-    }
+.gform_wrapper .gform_footer button.gform_button:hover,
+.gform_wrapper .gform_footer input.gform_button:hover,
+.gform_wrapper .gform_footer button[type="submit"]:hover {
+    background-color: #d67420 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(234, 133, 41, 0.4) !important;
 }
 
-/* ==========================================================================
-   3. MOBILE HEADER & NAVIGATION (<= 865px)
-   ========================================================================== */
-@media screen and (max-width: 865px) {
-    /* Hide desktop top bar and dynamic header spacer on mobile */
-    #new-top-header {
-        display: none !important;
-        height: 0 !important;
-        min-height: 0 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        overflow: hidden !important;
-    }
-    .header-spacer {
-        display: none !important;
-        height: 0 !important;
-        min-height: 0 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        overflow: hidden !important;
-    }
+.gform_wrapper .gform_fields {
+    display: grid !important;
+    grid-gap: 20px !important;
+}
 
-    /* Reset Header Wrappers */
-    #site-header,
-    .main-header,
-    .main-head-wrap,
-    #header {
-        margin: 0 !important;
-        padding: 0 !important;
-        border: none !important;
-        box-shadow: none !important;
-        min-height: auto !important;
-    }
+.gform_wrapper .gfield_radio .gchoice {
+    margin-bottom: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+}
 
-    /* Homepage Transparent Overlay Header */
-    body.home #site-header,
-    body.home .main-head-wrap,
-    body.home #header,
-    body.home #secondary-navigation {
-        background: transparent !important;
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        z-index: 1000 !important;
-    }
+.gform_wrapper .gfield_radio input[type="radio"] {
+    margin-right: 10px !important;
+    width: 18px !important;
+    height: 18px !important;
+    accent-color: #4b4d97 !important;
+}
 
-    /* Inner Pages Brand Orange Navbar (Matching Original Site Image 2) */
-    body:not(.home) #site-header,
-    body:not(.home) .main-head-wrap,
-    body:not(.home) #header,
-    body:not(.home) #secondary-navigation,
-    body:not(.home) .main-header {
-        background-color: #ea8529 !important;
-        background: #ea8529 !important;
-        position: relative !important;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.12) !important;
-        border: none !important;
-    }
+.gform_wrapper .gfield_description p {
+    font-size: 13px !important;
+    color: #6b7280 !important;
+    line-height: 1.5 !important;
+    margin-top: 8px !important;
+}
+</style>
 
-    /* Mobile Secondary Navigation Row */
-    #secondary-navigation {
-        position: relative !important;
-        width: 100% !important;
-        padding: 12px 15px !important;
-        box-sizing: border-box !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        min-height: 72px !important;
-        border: none !important;
-    }
+<style>
+/* Premium Gravity Forms Overrides */
+.gform_wrapper .gform_body .gfield input[type=text],
+.gform_wrapper .gform_body .gfield input[type=email],
+.gform_wrapper .gform_body .gfield input[type=tel],
+.gform_wrapper .gform_body .gfield select,
+.gform_wrapper .gform_body .gfield textarea {
+    width: 100% !important;
+    padding: 12px 15px !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 6px !important;
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+    font-size: 16px !important;
+    font-family: inherit !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05) inset !important;
+    box-sizing: border-box !important;
+    margin-top: 4px !important;
+}
 
-    /* Logo Wrap & Image */
-    .logo-wrap {
-        float: left !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        width: auto !important;
-        max-width: calc(100% - 60px) !important;
-        display: flex !important;
-        align-items: center !important;
-        border: none !important;
-    }
-    #logo {
-        margin: 0 !important;
-        padding: 0 !important;
-        float: none !important;
-        display: block !important;
-        line-height: 1 !important;
-        border: none !important;
-    }
-    #logo a {
-        display: block !important;
-        line-height: 1 !important;
-        border: none !important;
-    }
-    #logo img {
-        max-height: 52px !important;
-        height: auto !important;
-        width: auto !important;
-        max-width: 270px !important;
-        display: block !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        border: none !important;
-        outline: none !important;
-    }
+.gform_wrapper .gform_body .gfield input:focus,
+.gform_wrapper .gform_body .gfield select:focus,
+.gform_wrapper .gform_body .gfield textarea:focus {
+    outline: none !important;
+    border-color: #4b4d97 !important;
+    box-shadow: 0 0 0 3px rgba(75, 77, 151, 0.2) !important;
+    background-color: #fff !important;
+}
 
-    /* Hamburger Menu Toggle Icon */
-    a#pull, .toggle-mobile-menu {
-        float: right !important;
-        width: 44px !important;
-        height: 44px !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        background: transparent !important;
-        border: none !important;
-        cursor: pointer !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        color: #ffffff !important;
-        text-indent: 0 !important;
-        text-decoration: none !important;
-        position: absolute !important;
-        right: 15px !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
-    }
-    a#pull:after, .toggle-mobile-menu:after {
-        content: "\f0c9" !important;
-        font-family: "Font Awesome 5" !important;
-        font-weight: 900 !important;
-        font-size: 28px !important;
-        color: #ffffff !important;
-        position: static !important;
-        display: block !important;
-        line-height: 1 !important;
-    }
+.gform_wrapper .gform_body .gfield_label {
+    font-weight: 600 !important;
+    color: #374151 !important;
+    margin-bottom: 5px !important;
+    display: inline-block !important;
+    font-size: 15px !important;
+}
 
-    /* Inner Page Header Title Banner */
-    section.page-header, .page-header {
-        background-color: #4b4d97 !important;
-        background: #4b4d97 !important;
-        padding: 22px 15px !important;
-        margin: 0 !important;
-        text-align: center !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-        border: none !important;
-    }
-    section.page-header h1,
-    .page-header h1,
-    section.page-header .page-title,
-    .page-header .page-title,
-    section.page-header * {
-        color: #ffffff !important;
-        font-family: 'Jost', sans-serif !important;
-        font-size: 26px !important;
-        font-weight: 700 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 1.5px !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        line-height: 1.2 !important;
-        text-align: center !important;
-    }
+.gform_wrapper .gform_footer button.gform_button,
+.gform_wrapper .gform_footer input.gform_button,
+.gform_wrapper .gform_footer button[type="submit"] {
+    background-color: #ea8529 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    padding: 14px 28px !important;
+    border-radius: 30px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(234, 133, 41, 0.3) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
 
-    /* Mobile Drawer Navigation */
-    .navigation.mobile-menu-wrapper {
-        background-color: #222222 !important;
-        width: 290px !important;
-        z-index: 99999 !important;
-    }
-    .navigation.mobile-menu-wrapper ul.menu > li > a {
-        color: #ffffff !important;
-        font-family: 'Roboto', sans-serif !important;
-        font-size: 15px !important;
-        font-weight: 500 !important;
-        padding: 12px 18px !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-        display: block !important;
-        background: transparent !important;
-    }
-    .navigation.mobile-menu-wrapper ul.sub-menu {
-        background-color: #181818 !important;
-        box-shadow: none !important;
-        border: none !important;
-        position: static !important;
-        width: 100% !important;
-        padding: 0 !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        /* `display` deliberately has no !important: the theme's toggle-caret uses
-           slideToggle(), which animates via an inline display style. Forcing
-           display:block here left every submenu stuck open and the +/- inert. */
-        display: none;
-    }
-    .navigation.mobile-menu-wrapper ul.sub-menu li a {
-        color: #cccccc !important;
-        background: transparent !important;
-        font-size: 13px !important;
-        padding: 10px 18px 10px 30px !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
-        display: block !important;
-    }
-    .navigation.mobile-menu-wrapper a:hover,
-    .navigation.mobile-menu-wrapper ul.sub-menu li a:hover {
-        background-color: #ea8529 !important;
-        color: #ffffff !important;
-    }
+.gform_wrapper .gform_footer button.gform_button:hover,
+.gform_wrapper .gform_footer input.gform_button:hover,
+.gform_wrapper .gform_footer button[type="submit"]:hover {
+    background-color: #d67420 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(234, 133, 41, 0.4) !important;
+}
 
-    /* Homepage Hero Video on Mobile */
-    body.home #page {
-        padding-top: 0 !important;
-    }
-    .homepage .video_holder {
-        position: relative !important;
-        width: 100% !important;
-        min-height: 480px !important;
-        height: 75vh !important;
-        max-height: 600px !important;
-        overflow: hidden !important;
-        background: #000 !important;
-    }
-    .homepage .video_holder video {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important;
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-    }
-    .homepage .carousel-caption {
-        position: absolute !important;
-        top: 55% !important;
-        left: 50% !important;
-        transform: translate(-50%, -50%) !important;
-        width: 90% !important;
-        max-width: 450px !important;
-        text-align: center !important;
-        z-index: 10 !important;
-        padding: 0 !important;
-    }
-    .homepage .carousel-caption :is(h1,h2) {
-        font-family: 'Jost', serif !important;
-        font-size: clamp(22px, 5.5vw, 28px) !important;
-        font-weight: 600 !important;
-        color: #ffffff !important;
-        line-height: 1.25 !important;
-        margin-bottom: 15px !important;
-        text-shadow: 0 2px 10px rgba(0,0,0,0.8) !important;
-    }
-    .homepage .carousel-caption p {
-        display: none !important;
-    }
-    .homepage .carousel-caption a.btn {
-        background-color: #ea8529 !important;
-        color: #ffffff !important;
-        font-weight: 700 !important;
-        font-size: 14px !important;
-        padding: 13px 26px !important;
-        border-radius: 30px !important;
-        text-transform: uppercase !important;
-        letter-spacing: 0.5px !important;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.35) !important;
-        display: inline-block !important;
-    }
+.gform_wrapper .gform_fields {
+    display: grid !important;
+    grid-gap: 20px !important;
+}
 
-    /* Mobile CTA buttons section below hero on homepage */
-    .mobile_cta_buttons {
-        display: block !important;
-        background-color: #4b4d97 !important;
-        padding: 25px 20px 30px !important;
-        text-align: center !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-    }
-    .mobile_cta_buttons .mobileBtn {
-        margin: 0 0 12px 0 !important;
-    }
-    .mobile_cta_buttons .mobileBtn a {
-        display: block !important;
-        width: 100% !important;
-        max-width: 480px !important;
-        margin: 0 auto !important;
-        padding: 14px 20px !important;
-        background: #ffffff !important;
-        color: #154064 !important;
-        font-family: 'Roboto', sans-serif !important;
-        font-size: 16px !important;
-        font-weight: 600 !important;
-        border-radius: 4px !important;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
-        text-decoration: none !important;
-        box-sizing: border-box !important;
-    }
-    .mobile_cta_buttons .dm-rate-us {
-        margin: 18px 0 14px !important;
-        display: block !important;
-        text-align: center !important;
-    }
-    .mobile_cta_buttons .review-link {
-        color: #ffffff !important;
-        font-size: 18px !important;
-        font-weight: 600 !important;
-        display: inline-block !important;
-        vertical-align: middle !important;
-        margin-right: 8px !important;
-    }
-    .mobile_cta_buttons .rtg {
-        display: inline-block !important;
-        vertical-align: middle !important;
-    }
-    .mobile_cta_buttons .rtg a.fa-star-o {
-        color: #154064 !important;
-        font-size: 22px !important;
-        margin: 0 2px !important;
-    }
-    .mobile_cta_buttons .header-social-icons {
-        margin: 15px auto 0 !important;
-        display: flex !important;
-        justify-content: center !important;
-        gap: 14px !important;
-        background: transparent !important;
-        float: none !important;
-        width: 100% !important;
-    }
-    .mobile_cta_buttons .header-social-icons a {
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        width: 42px !important;
-        height: 42px !important;
-        border-radius: 50% !important;
-        background-color: #272863 !important;
-        color: #ffffff !important;
-        font-size: 18px !important;
-        text-decoration: none !important;
-        float: none !important;
-        padding: 0 !important;
-    }
+.gform_wrapper .gfield_radio .gchoice {
+    margin-bottom: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.gform_wrapper .gfield_radio input[type="radio"] {
+    margin-right: 10px !important;
+    width: 18px !important;
+    height: 18px !important;
+    accent-color: #4b4d97 !important;
+}
+
+.gform_wrapper .gfield_description p {
+    font-size: 13px !important;
+    color: #6b7280 !important;
+    line-height: 1.5 !important;
+    margin-top: 8px !important;
+}
+</style>
+
+<style>
+/* Premium Gravity Forms Overrides */
+.gform_wrapper .gform_body .gfield input[type=text],
+.gform_wrapper .gform_body .gfield input[type=email],
+.gform_wrapper .gform_body .gfield input[type=tel],
+.gform_wrapper .gform_body .gfield select,
+.gform_wrapper .gform_body .gfield textarea {
+    width: 100% !important;
+    padding: 12px 15px !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 6px !important;
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+    font-size: 16px !important;
+    font-family: inherit !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05) inset !important;
+    box-sizing: border-box !important;
+    margin-top: 4px !important;
+}
+
+.gform_wrapper .gform_body .gfield input:focus,
+.gform_wrapper .gform_body .gfield select:focus,
+.gform_wrapper .gform_body .gfield textarea:focus {
+    outline: none !important;
+    border-color: #4b4d97 !important;
+    box-shadow: 0 0 0 3px rgba(75, 77, 151, 0.2) !important;
+    background-color: #fff !important;
+}
+
+.gform_wrapper .gform_body .gfield_label {
+    font-weight: 600 !important;
+    color: #374151 !important;
+    margin-bottom: 5px !important;
+    display: inline-block !important;
+    font-size: 15px !important;
+}
+
+.gform_wrapper .gform_footer button.gform_button,
+.gform_wrapper .gform_footer input.gform_button,
+.gform_wrapper .gform_footer button[type="submit"] {
+    background-color: #ea8529 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    padding: 14px 28px !important;
+    border-radius: 30px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(234, 133, 41, 0.3) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.gform_wrapper .gform_footer button.gform_button:hover,
+.gform_wrapper .gform_footer input.gform_button:hover,
+.gform_wrapper .gform_footer button[type="submit"]:hover {
+    background-color: #d67420 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(234, 133, 41, 0.4) !important;
+}
+
+.gform_wrapper .gform_fields {
+    display: grid !important;
+    grid-gap: 20px !important;
+}
+
+.gform_wrapper .gfield_radio .gchoice {
+    margin-bottom: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.gform_wrapper .gfield_radio input[type="radio"] {
+    margin-right: 10px !important;
+    width: 18px !important;
+    height: 18px !important;
+    accent-color: #4b4d97 !important;
+}
+
+.gform_wrapper .gfield_description p {
+    font-size: 13px !important;
+    color: #6b7280 !important;
+    line-height: 1.5 !important;
+    margin-top: 8px !important;
+}
+</style>
+
+<style>
+/* Premium Gravity Forms Overrides */
+.gform_wrapper .gform_body .gfield input[type=text],
+.gform_wrapper .gform_body .gfield input[type=email],
+.gform_wrapper .gform_body .gfield input[type=tel],
+.gform_wrapper .gform_body .gfield select,
+.gform_wrapper .gform_body .gfield textarea {
+    width: 100% !important;
+    padding: 12px 15px !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 6px !important;
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+    font-size: 16px !important;
+    font-family: inherit !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05) inset !important;
+    box-sizing: border-box !important;
+    margin-top: 4px !important;
+}
+
+.gform_wrapper .gform_body .gfield input:focus,
+.gform_wrapper .gform_body .gfield select:focus,
+.gform_wrapper .gform_body .gfield textarea:focus {
+    outline: none !important;
+    border-color: #4b4d97 !important;
+    box-shadow: 0 0 0 3px rgba(75, 77, 151, 0.2) !important;
+    background-color: #fff !important;
+}
+
+.gform_wrapper .gform_body .gfield_label {
+    font-weight: 600 !important;
+    color: #374151 !important;
+    margin-bottom: 5px !important;
+    display: inline-block !important;
+    font-size: 15px !important;
+}
+
+.gform_wrapper .gform_footer button.gform_button,
+.gform_wrapper .gform_footer input.gform_button,
+.gform_wrapper .gform_footer button[type="submit"] {
+    background-color: #ea8529 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    padding: 14px 28px !important;
+    border-radius: 30px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(234, 133, 41, 0.3) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.gform_wrapper .gform_footer button.gform_button:hover,
+.gform_wrapper .gform_footer input.gform_button:hover,
+.gform_wrapper .gform_footer button[type="submit"]:hover {
+    background-color: #d67420 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(234, 133, 41, 0.4) !important;
+}
+
+.gform_wrapper .gform_fields {
+    display: grid !important;
+    grid-gap: 20px !important;
+}
+
+.gform_wrapper .gfield_radio .gchoice {
+    margin-bottom: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.gform_wrapper .gfield_radio input[type="radio"] {
+    margin-right: 10px !important;
+    width: 18px !important;
+    height: 18px !important;
+    accent-color: #4b4d97 !important;
+}
+
+.gform_wrapper .gfield_description p {
+    font-size: 13px !important;
+    color: #6b7280 !important;
+    line-height: 1.5 !important;
+    margin-top: 8px !important;
+}
+</style>
+
+<style>
+/* Premium Gravity Forms Overrides */
+.gform_wrapper .gform_body .gfield input[type=text],
+.gform_wrapper .gform_body .gfield input[type=email],
+.gform_wrapper .gform_body .gfield input[type=tel],
+.gform_wrapper .gform_body .gfield select,
+.gform_wrapper .gform_body .gfield textarea {
+    width: 100% !important;
+    padding: 12px 15px !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 6px !important;
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+    font-size: 16px !important;
+    font-family: inherit !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05) inset !important;
+    box-sizing: border-box !important;
+    margin-top: 4px !important;
+}
+
+.gform_wrapper .gform_body .gfield input:focus,
+.gform_wrapper .gform_body .gfield select:focus,
+.gform_wrapper .gform_body .gfield textarea:focus {
+    outline: none !important;
+    border-color: #4b4d97 !important;
+    box-shadow: 0 0 0 3px rgba(75, 77, 151, 0.2) !important;
+    background-color: #fff !important;
+}
+
+.gform_wrapper .gform_body .gfield_label {
+    font-weight: 600 !important;
+    color: #374151 !important;
+    margin-bottom: 5px !important;
+    display: inline-block !important;
+    font-size: 15px !important;
+}
+
+.gform_wrapper .gform_footer button.gform_button,
+.gform_wrapper .gform_footer input.gform_button,
+.gform_wrapper .gform_footer button[type="submit"] {
+    background-color: #ea8529 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    padding: 14px 28px !important;
+    border-radius: 30px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(234, 133, 41, 0.3) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.gform_wrapper .gform_footer button.gform_button:hover,
+.gform_wrapper .gform_footer input.gform_button:hover,
+.gform_wrapper .gform_footer button[type="submit"]:hover {
+    background-color: #d67420 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(234, 133, 41, 0.4) !important;
+}
+
+.gform_wrapper .gform_fields {
+    display: grid !important;
+    grid-gap: 20px !important;
+}
+
+.gform_wrapper .gfield_radio .gchoice {
+    margin-bottom: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.gform_wrapper .gfield_radio input[type="radio"] {
+    margin-right: 10px !important;
+    width: 18px !important;
+    height: 18px !important;
+    accent-color: #4b4d97 !important;
+}
+
+.gform_wrapper .gfield_description p {
+    font-size: 13px !important;
+    color: #6b7280 !important;
+    line-height: 1.5 !important;
+    margin-top: 8px !important;
+}
+</style>
+
+<style>
+/* Premium Gravity Forms Overrides */
+.gform_wrapper .gform_body .gfield input[type=text],
+.gform_wrapper .gform_body .gfield input[type=email],
+.gform_wrapper .gform_body .gfield input[type=tel],
+.gform_wrapper .gform_body .gfield select,
+.gform_wrapper .gform_body .gfield textarea {
+    width: 100% !important;
+    padding: 12px 15px !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 6px !important;
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+    font-size: 16px !important;
+    font-family: inherit !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05) inset !important;
+    box-sizing: border-box !important;
+    margin-top: 4px !important;
+}
+
+.gform_wrapper .gform_body .gfield input:focus,
+.gform_wrapper .gform_body .gfield select:focus,
+.gform_wrapper .gform_body .gfield textarea:focus {
+    outline: none !important;
+    border-color: #4b4d97 !important;
+    box-shadow: 0 0 0 3px rgba(75, 77, 151, 0.2) !important;
+    background-color: #fff !important;
+}
+
+.gform_wrapper .gform_body .gfield_label {
+    font-weight: 600 !important;
+    color: #374151 !important;
+    margin-bottom: 5px !important;
+    display: inline-block !important;
+    font-size: 15px !important;
+}
+
+.gform_wrapper .gform_footer button.gform_button,
+.gform_wrapper .gform_footer input.gform_button,
+.gform_wrapper .gform_footer button[type="submit"] {
+    background-color: #ea8529 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    padding: 14px 28px !important;
+    border-radius: 30px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(234, 133, 41, 0.3) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.gform_wrapper .gform_footer button.gform_button:hover,
+.gform_wrapper .gform_footer input.gform_button:hover,
+.gform_wrapper .gform_footer button[type="submit"]:hover {
+    background-color: #d67420 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(234, 133, 41, 0.4) !important;
+}
+
+.gform_wrapper .gform_fields {
+    display: grid !important;
+    grid-gap: 20px !important;
+}
+
+.gform_wrapper .gfield_radio .gchoice {
+    margin-bottom: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.gform_wrapper .gfield_radio input[type="radio"] {
+    margin-right: 10px !important;
+    width: 18px !important;
+    height: 18px !important;
+    accent-color: #4b4d97 !important;
+}
+
+.gform_wrapper .gfield_description p {
+    font-size: 13px !important;
+    color: #6b7280 !important;
+    line-height: 1.5 !important;
+    margin-top: 8px !important;
 }
 </style>
 

@@ -66,7 +66,7 @@ require_once __DIR__ . '/includes/header.php';
 							<div class="dm-container">
 								<div class="dm-flex">
 									<div class="dm-half wow fadeInRight">
-										<img alt="Psychiatrist speaking with a young adult patient" class="aligncenter size-full wp-image-475" decoding="async" fetchpriority="high" height="668" sizes="(max-width: 1000px) 100vw, 1000px" src="/wp-content/uploads/2025/05/displaying_teenagers_6_webp.jpg" srcset="/wp-content/uploads/2025/05/displaying_teenagers_6_webp.jpg 1000w, /wp-content/uploads/2025/05/displaying_teenagers_6_webp-300x200.jpg 300w, /wp-content/uploads/2025/05/displaying_teenagers_6_webp-768x513.jpg 768w, /wp-content/uploads/2025/05/displaying_teenagers_6_webp-800x533.jpg 800w" width="1000"/>
+										<img alt="Psychiatrist speaking with a young adult patient" class="aligncenter size-full wp-image-475" decoding="async" fetchpriority="high" height="668" sizes="(max-width: 1000px) 100vw, 1000px" src="/wp-content/uploads/2025/05/displaying_teenagers_6_webp.jpg.webp" srcset="/wp-content/uploads/2025/05/displaying_teenagers_6_webp.jpg.webp 1000w, /wp-content/uploads/2025/05/displaying_teenagers_6_webp-300x200.jpg 300w, /wp-content/uploads/2025/05/displaying_teenagers_6_webp-768x513.jpg 768w, /wp-content/uploads/2025/05/displaying_teenagers_6_webp-800x533.jpg 800w" width="1000"/>
 									</div>
 									<div class="dm-half wow fadeInLeft dm-space">
 										<h2 style="color: #4b4d97;">Comprehensive Treatment Strategies</h2>

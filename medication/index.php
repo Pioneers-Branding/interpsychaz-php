@@ -349,8 +349,7 @@ tailwind.config = {
           Request an Appointment
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
         </a>
-        <button id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"
-                class="nav-burger lg:hidden grid place-items-center h-11 w-11 rounded-lg border border-black/10 text-brand-900">
+        <button id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu" class="nav-burger lg:hidden grid place-items-center h-11 w-11 rounded-lg border border-black/10 text-brand-900">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         </button>
       </div>
@@ -433,7 +432,7 @@ tailwind.config = {
         <div class="relative">
           <div class="pointer-events-none absolute -inset-3 sm:-inset-4 rounded-[32px] bg-gradient-to-br from-accent-400/20 via-transparent to-brand-500/20 blur-2xl"></div>
 
-          <form id="contactForm" action="<?= $FORM_ENDPOINT ?>" method="POST" accept-charset="UTF-8"
+          <form id="contactForm" action="https://app.formester.com/forms/YZQjRMoVv/submissions" method="POST" accept-charset="UTF-8"
                 class="glass relative rounded-3xl sm:rounded-[28px] p-5 sm:p-8">
 
             <div class="flex items-start justify-between gap-4">
@@ -837,12 +836,10 @@ tailwind.config = {
           <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] leading-[1.1] tracking-tightest text-brand-900 font-light">In their words.</h2>
         </div>
         <div class="hidden sm:flex items-center gap-2.5 shrink-0">
-          <button id="tPrev" aria-label="Previous reviews" aria-controls="tTrack"
-                  class="grid place-items-center h-11 w-11 rounded-full border border-black/10 text-brand-900 transition hover:bg-brand-900 hover:text-cream hover:border-brand-900 disabled:opacity-30 disabled:pointer-events-none">
+          <button id="tPrev" aria-label="Previous reviews" aria-controls="tTrack" class="grid place-items-center h-11 w-11 rounded-full border border-black/10 text-brand-900 transition hover:bg-brand-900 hover:text-cream hover:border-brand-900 disabled:opacity-30 disabled:pointer-events-none">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M19 12H6M13 5l-7 7 7 7"/></svg>
           </button>
-          <button id="tNext" aria-label="More reviews" aria-controls="tTrack"
-                  class="grid place-items-center h-11 w-11 rounded-full border border-black/10 text-brand-900 transition hover:bg-brand-900 hover:text-cream hover:border-brand-900 disabled:opacity-30 disabled:pointer-events-none">
+          <button id="tNext" aria-label="More reviews" aria-controls="tTrack" class="grid place-items-center h-11 w-11 rounded-full border border-black/10 text-brand-900 transition hover:bg-brand-900 hover:text-cream hover:border-brand-900 disabled:opacity-30 disabled:pointer-events-none">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
           </button>
         </div>

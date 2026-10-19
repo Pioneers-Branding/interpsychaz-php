@@ -9,9 +9,9 @@ if ($cleanPath !== '' && $cleanPath !== 'index' && $cleanPath !== 'index.php' &&
 	}
 }
 
-$pageTitle = 'Premier Psychiatry Center in Phoenix, AZ | Interventional Psychiatry of Arizona';
+$pageTitle = 'Mental Health Clinic in Phoenix, AZ | Interventional Psychiatry of Arizona';
 $bodyClass = 'home wp-singular page-template-default page page-id-42';
-$pageDescription = 'Interventional Psychiatry of Arizona is a skilled Premier Psychiatry Center in Phoenix, AZ. Accepting new appointments. Call today or request an appointment on our website.';
+$pageDescription = 'Looking for a top-rated mental health clinic in Phoenix, AZ? Interventional Psychiatry of Arizona offers advanced treatments for depression, anxiety, and complex psychiatric conditions. Schedule an appointment today.';
 $pageOgImage = '/wp-content/uploads/2025/03/az-logo-white.png.png.webp';
 $pageOgType = 'website';
 $pageCanonical = 'https://interpsychaz.com/';
@@ -24,8 +24,13 @@ require_once __DIR__ . '/includes/header.php';
 <div class="homepage" id="page">
 	<div class="hide-las no-slider">
 		<div class="video_holder">
-			<video autoplay="" loop="" muted="" playsinline="" preload="auto">
-				<source src="/wp-content/uploads/2025/06/UntitledCOMPRESSED.mp4" type="video/mp4" />
+			<style>
+			.video_holder img.hero-poster{position:absolute;top:0;left:0;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:opacity .5s ease}
+			.video_holder.hero-playing img.hero-poster{opacity:0}
+			</style>
+			<img alt="" class="hero-poster" decoding="async" fetchpriority="high" height="720" src="/wp-content/uploads/2025/06/UntitledCOMPRESSED-poster.webp" width="1280"/>
+			<video fetchpriority="high" id="heroVideo" loop muted playsinline poster="/wp-content/uploads/2025/06/UntitledCOMPRESSED-poster.webp" preload="none">
+				<source src="/wp-content/uploads/2025/06/UntitledCOMPRESSED.mp4" type="video/mp4">
 			</video>
 			<div class="carousel-caption">
 				<h1 class="wow fadeIn">TMS Therapy & Psychiatric Care in Phoenix, AZ</h1>
@@ -36,6 +41,18 @@ require_once __DIR__ . '/includes/header.php';
 			</div>
 		</div>
 	</div>
+	<script>
+	(function(){var v=document.getElementById('heroVideo');if(!v||!v.play){return;}
+	var holder=v.parentNode,poster=holder.querySelector('img.hero-poster');
+	var started=false;
+	var evs=['pointermove','scroll','wheel','touchstart','keydown','pointerdown'];
+	var go=function(){if(started){return;}started=true;
+	evs.forEach(function(n){window.removeEventListener(n,go,true);});
+	v.addEventListener('playing',function(){holder.classList.add('hero-playing');},{once:true});
+	var p=v.play();if(p&&p.catch){p.catch(function(){});}};
+	evs.forEach(function(n){window.addEventListener(n,go,{passive:true,capture:true});});
+	})();
+	</script>
 	<div class="mobile_cta_buttons hide-d mobile-btn">
 		<p class="mobileBtn phoneBtn"><a href="tel:<?php echo SITE_PHONE_RAW; ?>"
 				onclick="gtag('event', 'Call Us', { event_category: 'Mobile', value: 25});">Call Us:
@@ -78,21 +95,17 @@ require_once __DIR__ . '/includes/header.php';
 				Psychotic Disorders, Mood Disorders, ADHD, Cognitive Disorders, and other Brain Disorders.</p>
 			<div class="dm-flex">
 				<div class="dm-third wow fadeInUp">
-					<img alt="" data-lazy-src="/wp-content/uploads/2025/03/psychiatry-1-2.jpg"
+					<img alt="" data-lazy-src="/wp-content/uploads/2025/03/psychiatry-1-2.jpg.webp"
 						src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" /><noscript><img
-							alt="" src="/wp-content/uploads/2025/03/psychiatry-1-2.jpg" /></noscript>
+							alt="" src="/wp-content/uploads/2025/03/psychiatry-1-2.jpg.webp" /></noscript>
 					<h4>Experienced Experts</h4>
 				</div>
 				<div class="dm-third wow fadeInUp">
-					<img alt="" data-lazy-src="/wp-content/uploads/2025/03/psychiatry-28-3.jpg"
-						src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" /><noscript><img
-							alt="" src="/wp-content/uploads/2025/03/psychiatry-28-3.jpg" /></noscript>
+					<img alt="" width="800" height="531" data-lazy-src="/wp-content/uploads/2025/03/psychiatry-28-3.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20531'%3E%3C/svg%3E" /><noscript><img alt="" width="800" height="531" src="/wp-content/uploads/2025/03/psychiatry-28-3.jpg.webp" /></noscript>
 					<h4>Innovative Treatments for Lasting Relief</h4>
 				</div>
 				<div class="dm-third wow fadeInUp">
-					<img alt="" data-lazy-src="/wp-content/uploads/2025/03/psychiatry-16.jpg"
-						src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" /><noscript><img
-							alt="" src="/wp-content/uploads/2025/03/psychiatry-16.jpg" /></noscript>
+					<img alt="" width="800" height="533" data-lazy-src="/wp-content/uploads/2025/03/psychiatry-16.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20533'%3E%3C/svg%3E" /><noscript><img alt="" width="800" height="533" src="/wp-content/uploads/2025/03/psychiatry-16.jpg.webp" /></noscript>
 					<h4>Personalized Care Tailored to Your Needs</h4>
 				</div>
 			</div>
@@ -175,10 +188,10 @@ require_once __DIR__ . '/includes/header.php';
 		</div>
 		<div class="cc container">
 			<img alt="Innovative solutions for mental health treatment at Interventional Psychiatry of Arizona"
-				data-lazy-src="/wp-content/uploads/2025/03/smiles8-1.jpg"
+				data-lazy-src="/wp-content/uploads/2025/03/smiles8-1.jpg.webp"
 				src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" /><noscript><img
 					alt="Innovative solutions for mental health treatment at Interventional Psychiatry of Arizona"
-					src="/wp-content/uploads/2025/03/smiles8-1.jpg" /></noscript>
+					src="/wp-content/uploads/2025/03/smiles8-1.jpg.webp" /></noscript>
 			<div class="dm-flex">
 				<div class="association-logos-dm">
 					<div class="dm-container">
@@ -365,10 +378,10 @@ require_once __DIR__ . '/includes/header.php';
 					<div class="dm-flex-box">
 						<div class="dm-half">
 							<img alt="Magstim TMS clinical treatment system"
-								data-lazy-src="/wp-content/uploads/2025/04/Magstim-TMS-Clinical-Treatment-Service.jpg"
+								data-lazy-src="/wp-content/uploads/2025/04/Magstim-TMS-Clinical-Treatment-Service.jpg.webp"
 								src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" /><noscript><img
 									alt="Magstim TMS clinical treatment system"
-									src="/wp-content/uploads/2025/04/Magstim-TMS-Clinical-Treatment-Service.jpg" /></noscript>
+									src="/wp-content/uploads/2025/04/Magstim-TMS-Clinical-Treatment-Service.jpg.webp" /></noscript>
 						</div>
 						<div class="dm-half">
 							<div>
@@ -384,10 +397,10 @@ require_once __DIR__ . '/includes/header.php';
 					<div class="dm-flex-box">
 						<div class="dm-half">
 							<img alt="Psychiatric medication management"
-								data-lazy-src="/wp-content/uploads/2025/03/psychiatrymedicationsmanagement_img.jpg"
+								data-lazy-src="/wp-content/uploads/2025/03/psychiatrymedicationsmanagement_img.jpg.webp"
 								src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" /><noscript><img
 									alt="Psychiatric medication management"
-									src="/wp-content/uploads/2025/03/psychiatrymedicationsmanagement_img.jpg" /></noscript>
+									src="/wp-content/uploads/2025/03/psychiatrymedicationsmanagement_img.jpg.webp" /></noscript>
 						</div>
 						<div class="dm-half">
 							<div>
@@ -605,6 +618,8 @@ require_once __DIR__ . '/includes/header.php';
 			</div>
 		</div>
 	</section>
+<?php require __DIR__ . '/includes/patient-video-slider.php'; ?>
+<?php require __DIR__ . '/includes/office-gallery.php'; ?>
 	<div class="hidde-modals" data-modal-counter="dm_modal_0" data-wpr-lazyrender="1">
 		<div class="dm-testmore dm-readmore">
 			<div class="dm-readmore-wrapper dm-modal">
@@ -657,6 +672,37 @@ require_once __DIR__ . '/includes/header.php';
 			</div>
 		</div>
 	</div>
+
+<!-- HOMEPAGE FAQS -->
+<div class="dm-service-section" style="background-color: #ffffff; padding: 60px 0;">
+	<div class="dm-container">
+		<div class="dm-flex">
+			<div class="dm-full wow fadeInUp">
+				<h2 style="color: #4b4d97; text-align: center;">Phoenix Mental Health Clinic FAQs</h2>
+				<div class="contentfaqs" style="max-width: 900px; margin: 0 auto; margin-top: 30px;">
+					<h4>Do you accept new patients at your Phoenix clinic?</h4>
+					<p>Yes, Interventional Psychiatry of Arizona is actively accepting new patients. Whether you are seeking an initial psychiatric evaluation or looking for a second opinion on a treatment-resistant condition, our board-certified providers are ready to help you.</p>
+
+					<h4>What makes an "interventional" psychiatry clinic different?</h4>
+					<p>Traditional clinics often rely solely on standard medications and talk therapy. As an interventional clinic, we specialize in advanced, biological treatments like TMS (Transcranial Magnetic Stimulation), Spravato (Esketamine), and ECT. These are specifically designed for patients whose depression or anxiety hasn't improved with standard care.</p>
+
+					<h4>Do you treat both depression and anxiety?</h4>
+					<p>Yes. We treat a comprehensive range of mental health conditions, including severe depression, generalized anxiety disorder, PTSD, OCD, bipolar disorder, and ADHD. We specialize in complex, dual-diagnosis cases.</p>
+
+					<h4>Do you take insurance for TMS and Spravato?</h4>
+					<p>Yes, we work with several major insurance providers. Because TMS and Spravato are FDA-approved for treatment-resistant depression, many insurance plans offer coverage. Our dedicated Patient Care Coordinator will help you navigate the authorization process.</p>
+
+					<h4>Do I need a referral to schedule an appointment?</h4>
+					<p>In most cases, you do not need a referral to become a patient at our clinic. You can contact us directly to schedule an evaluation. However, certain insurance HMO plans may require a referral from your primary care physician for specialist care.</p>
+
+					<h4>Where are you located in Phoenix?</h4>
+					<p>We are conveniently located in the heart of Phoenix, AZ, easily accessible from Scottsdale, Tempe, and surrounding Valley areas. Our state-of-the-art facility is designed to provide a comfortable, private, and welcoming environment for all our patients.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 </div><!--#page-->
 <section class="visit-us-today" data-wpr-lazyrender="1">
 	<div class="container-wide">
@@ -745,7 +791,7 @@ require_once __DIR__ . '/includes/header.php';
 												class="gfield_required gfield_required_asterisk">*</span></span></label>
 									<div class="ginput_container ginput_container_multiselect"><select
 											aria-invalid="false" aria-required="true" class="large gfield_select"
-											id="input_2_8"  name="Reason_for_inquiry[]" >
+											id="input_2_8" name="Reason_for_inquiry[]">
 											<option value="Medication Management">Medication Management</option>
 											<option value="TMS">TMS</option>
 											<option value="Spravato (nasal esketamine)">Spravato (nasal esketamine)
@@ -789,9 +835,19 @@ require_once __DIR__ . '/includes/header.php';
 								</fieldset>
 							</div>
 						</div>
-						<div class="gform-footer gform_footer top_label">
-    <button class="gform_button button" data-submission-type="submit" id="gform_submit_button_2" type="submit">Submit</button>
-</div>
+						<div class="gform-footer gform_footer top_label"> <button class="gform_button button" data-submission-type="submit" id="gform_submit_button_2" type="submit">Submit</button>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+						</div>
 					</form>
 				</div>
 			</div>

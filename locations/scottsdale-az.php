@@ -37,7 +37,7 @@ require_once __DIR__ . '/../includes/header.php';
 							<div class="dm-container">
 								<div class="dm-flex" style="align-items: center;">
 									<div class="dm-half wow fadeInRight">
-                                        <img src="/wp-content/uploads/2026/08/tms_sessions_thumbnail.png" alt="Mental Health Care near Scottsdale" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                                        <img src="/wp-content/uploads/2026/08/tms_sessions_thumbnail.png.webp" alt="Mental Health Care near Scottsdale" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
                                         <div style="background: #ef7136; color: white; padding: 20px; border-radius: 8px; margin-top: 20px;">
                                             <h4 style="color: white; margin-bottom: 10px;"><i class="fa fa-info-circle"></i> Insight</h4>
                                             <p style="margin: 0; font-size: 16px;">Did you know? Over 30% of adults in high-stress environments report symptoms of anxiety and depression. Interventional psychiatry provides targeted relief where traditional methods fall short.</p>

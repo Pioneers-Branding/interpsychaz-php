@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<figure class="wp-block-image size-large"><img alt="Is Spravato Covered by Insurance?" class="wp-image-998" decoding="async" fetchpriority="high" height="685" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2026/08/spravato_insurance_thumbnail.png" srcset="/wp-content/uploads/2026/08/spravato_insurance_thumbnail.png 1024w" width="1024"/></figure>
+<figure class="wp-block-image size-large"><img alt="Is Spravato Covered by Insurance?" class="wp-image-998" decoding="async" fetchpriority="high" height="685" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2026/08/spravato_insurance_thumbnail.png.webp" srcset="/wp-content/uploads/2026/08/spravato_insurance_thumbnail.png.webp 1024w" width="1024"/></figure>
 
 <p class="wp-block-paragraph">When traditional antidepressants fail to provide relief, innovative treatments like <a href="/services/spravato-esketamine-nasal-spray/">Spravato (esketamine) nasal spray</a> offer new hope for those struggling with treatment-resistant depression (TRD) and major depressive disorder with suicidal thoughts or actions. However, navigating the healthcare system can be daunting, leading many patients at <strong>Interventional Psychiatry of Arizona</strong> to ask: <em>"Is Spravato covered by insurance?"</em></p>
 

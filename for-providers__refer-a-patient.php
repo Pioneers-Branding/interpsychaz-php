@@ -250,9 +250,7 @@ require_once __DIR__ . '/includes/header.php';
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="gform-footer gform_footer top_label"> <button
-                                                        class="gform_button button" data-submission-type="submit"
-                                                        id="gform_submit_button_6" type="submit">Submit</button>
+                                                <div class="gform-footer gform_footer top_label"> <button class="gform_button button" data-submission-type="submit" id="gform_submit_button_6" type="submit">Submit</button>
 
 
 

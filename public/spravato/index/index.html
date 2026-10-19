@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7TQS8BS5C3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7TQS8BS5C3');
+  gtag('config', 'AW-11337249981');
+</script>
+
+<title>SPRAVATO&reg; (Esketamine) Nasal Spray in Phoenix, AZ | Interventional Psychiatry of Arizona</title>
+<meta name="description" content="REMS-certified SPRAVATO® (esketamine) nasal spray for treatment-resistant depression in Phoenix, AZ. Relief for some patients within 24 hours. Most insurance accepted — we handle the prior authorization. Call (602) 824-8404.">
+<meta property="og:title" content="SPRAVATO® (Esketamine) for Treatment-Resistant Depression | Phoenix, AZ">
+<meta property="og:description" content="If two antidepressants haven’t worked, SPRAVATO® works differently — and faster. REMS-certified treatment center in Phoenix. Most insurance accepted.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://127.0.0.1:8888/spravato/assets/img/ambience/hero-happy-patient.jpg?v=1792242630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/spravato/assets/img/favicon-32.png?v=1792242630">
+<link rel="apple-touch-icon" href="/spravato/assets/img/favicon-180.png?v=1792242630">
+<meta name="theme-color" content="#262858">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="/spravato/assets/img/ambience/hero-happy-patient.jpg?v=1792242630" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink:    '#1E1F42',
+        /* Primary — #4B4D97 at 600, darker steps stay in the same indigo family */
+        brand:  { 950:'#262858', 900:'#31336E', 800:'#3C3E84', 700:'#444690', 600:'#4B4D97', 500:'#7476BC', 200:'#C9CAE6' },
+        /* Accent — built around #EF7136 */
+        accent: { 50:'#FDF1E9', 200:'#FAD2B8', 400:'#F5975F', 500:'#EF7136', 600:'#C24E12' },
+        cream:  '#FBF9F6',
+        sand:   '#EFEDE7',
+      },
+      fontFamily: {
+        display: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+        sans:    ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+      letterSpacing: { tightest: '-0.045em' },
+      maxWidth: { '8xl': '88rem' },
+    }
+  }
+}
+</script>
+
+<style>
+  body { -webkit-font-smoothing: antialiased; }
+  /* Nothing on the page may push the viewport sideways on a phone. */
+  html, body { overflow-x: hidden; }
+
+  /* Soft film grain over the dark bands so the gradients don't band */
+  .grain::after{
+    content:''; position:absolute; inset:0; pointer-events:none; opacity:.22; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ── Header ──────────────────────────────────────────────────────────────
+     Transparent while it floats over the hero, solid cream once the page
+     scrolls past it. Children recolour off the header's data-state. */
+  #nav{ transition: background-color .35s ease, border-color .35s ease, backdrop-filter .35s ease; }
+  #nav[data-state="top"]{ background:transparent; border-color:transparent; backdrop-filter:none; box-shadow:none; }
+  #nav[data-state="top"] .nav-link{ color:rgba(251,249,246,.80); }
+  #nav[data-state="top"] .nav-link:hover{ background:rgba(255,255,255,.10); color:#FBF9F6; }
+  #nav[data-state="top"] .nav-cta{ background:#EF7136; color:#fff; }
+  #nav[data-state="top"] .nav-cta:hover{ background:#C24E12; }
+  #nav[data-state="top"] .nav-burger{ color:#FBF9F6; border-color:rgba(255,255,255,.28); }
+  #nav[data-state="top"] .nav-drawer{ border-color:rgba(255,255,255,.15); }
+
+  /* Logo lockups cross-fade with the header state */
+  .nav-logo{ transition:opacity .35s ease; }
+  #nav[data-state="top"] .nav-logo-dark{ opacity:0; }
+  #nav[data-state="top"] .nav-logo-light{ opacity:1; }
+  .nav-logo-light{ opacity:0; }
+
+  /* Scroll reveal */
+  .reveal { opacity:0; transform:translateY(18px); transition:opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+  .reveal.in { opacity:1; transform:none; }
+
+  /* ── Glass eligibility card ──────────────────────────────────────────────
+     Frosted panel over the hero artwork: a light gradient sheet for the glass
+     itself, a tinted base so type stays legible, and an inset top highlight. */
+  .glass{
+    background: linear-gradient(160deg, rgba(255,255,255,.14), rgba(255,255,255,.05)), rgba(38,40,88,.55);
+    backdrop-filter: blur(22px) saturate(150%);
+    -webkit-backdrop-filter: blur(22px) saturate(150%);
+    border: 1px solid rgba(255,255,255,.18);
+    box-shadow: 0 30px 70px -25px rgba(8,10,35,.75), inset 0 1px 0 rgba(255,255,255,.25);
+  }
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))){
+    .glass{ background: rgba(38,40,88,.93); }
+  }
+
+  .glass-field{
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.16);
+    color: #FBF9F6;
+    /* 16px on phones keeps iOS Safari from zooming the viewport on focus. */
+    font-size: 16px;
+    transition: background-color .2s, border-color .2s, box-shadow .2s;
+  }
+  @media (min-width: 640px){ .glass-field{ font-size: 15px; } }
+  .glass-field::placeholder{ color: rgba(251,249,246,.46); }
+  .glass-field:hover{ border-color: rgba(255,255,255,.26); }
+  .glass-field:focus{
+    background: rgba(255,255,255,.13);
+    border-color: #EF7136;
+    box-shadow: 0 0 0 3px rgba(239,113,54,.22);
+  }
+  /* Native dropdown panels don't inherit the glass — set them explicitly or the
+     options render cream-on-white. */
+  .glass-field option{ color:#1E1F42; background:#FBF9F6; }
+  /* Keep browser autofill from painting a solid block over the glass */
+  .glass-field:-webkit-autofill,
+  .glass-field:-webkit-autofill:focus{
+    -webkit-text-fill-color: #FBF9F6;
+    -webkit-box-shadow: 0 0 0 1000px rgba(72,74,120,.55) inset;
+    transition: background-color 9999s ease-in-out 0s;
+  }
+
+  /* Horizontal rails — testimonials and the carrier wall on small screens */
+  .slider{ scrollbar-width:none; -ms-overflow-style:none; }
+  .slider::-webkit-scrollbar{ display:none; }
+  .quote{ display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:7; overflow:hidden; }
+  .q-open .quote{ -webkit-line-clamp:unset; }
+  .q-more{ display:none; }
+  .q-clamped .q-more{ display:inline-flex; }
+
+  /* FAQ accordion */
+  .faq-body { display:grid; grid-template-rows:0fr; transition:grid-template-rows .35s cubic-bezier(.2,.7,.2,1); }
+  .faq.open .faq-body { grid-template-rows:1fr; }
+  .faq-body > div { overflow:hidden; }
+  .faq.open .faq-icon { transform:rotate(45deg); }
+
+  /* ── Sticky mobile action bar ────────────────────────────────────────────
+     The two things a visitor on a phone actually wants — call, or start the
+     eligibility check — stay one thumb away once the hero form scrolls off.
+     Padded for the iOS home indicator. */
+  #stickyBar{
+    transform:translateY(130%);
+    transition:transform .35s cubic-bezier(.2,.7,.2,1);
+    padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));
+  }
+  #stickyBar.show{ transform:none; }
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    .animate-ping{animation:none}
+    #stickyBar{transition:none}
+  }
+</style>
+<!-- Reveal-on-scroll starts at opacity 0; without JS it would never come back. -->
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
+</head>
+
+<body class="bg-cream text-ink font-sans antialiased selection:bg-accent-200 selection:text-brand-900">
+
+<!-- ══════════════════ TOP BAR ══════════════════ -->
+<div class="hidden md:block bg-brand-950 text-brand-200/80 text-[13px]">
+  <div class="mx-auto max-w-8xl px-6 lg:px-10 h-10 flex items-center justify-between gap-6">
+    <p class="text-white/60 truncate">REMS-certified SPRAVATO&reg; treatment center &middot; Now accepting new patients in Phoenix</p>
+    <div class="flex items-center gap-5 shrink-0 text-white/60">
+      <span class="hidden lg:inline">Mon–Fri · 8am–5pm</span>
+      <span class="hidden lg:inline h-3 w-px bg-white/20"></span>
+      <a href="tel:+16028248404" class="font-medium text-white/85 hover:text-white transition">(602) 824-8404</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ NAV ══════════════════ -->
+<header id="nav" data-state="top" class="sticky top-0 z-50 transition-all duration-300 bg-cream/85 backdrop-blur-xl border-b border-black/5">
+  <nav class="mx-auto max-w-8xl px-4 sm:px-6 lg:px-10">
+    <div class="h-[68px] sm:h-[80px] flex items-center justify-between gap-4 lg:gap-8">
+
+      <a href="#top" class="relative block shrink-0 h-12 sm:h-[3.6rem] aspect-[545/228]" aria-label="Interventional Psychiatry of Arizona — home">
+        <img src="/spravato/assets/img/interpsychaz-logo-dark.webp?v=1792242630" alt="Interventional Psychiatry of Arizona — Building Strong Minds"
+             width="545" height="228" class="nav-logo nav-logo-dark absolute inset-0 h-full w-auto">
+        <img src="/spravato/assets/img/interpsychaz-logo.webp?v=1792242630" alt="" aria-hidden="true"
+             width="545" height="228" class="nav-logo nav-logo-light absolute inset-0 h-full w-auto">
+      </a>
+
+      <div class="hidden lg:flex items-center gap-0.5 xl:gap-1 whitespace-nowrap text-[15px] text-brand-900/75">
+        <a href="#qualify"   class="nav-link px-3 py-2 rounded-lg hover:bg-sand hover:text-brand-900 transition">Do I qualify?</a>
+        <a href="#science"   class="nav-link px-3 py-2 rounded-lg hover:bg-sand hover:text-brand-900 transition">How it works</a>
+        <a href="#process"   class="nav-link px-3 py-2 rounded-lg hover:bg-sand hover:text-brand-900 transition">Treatment</a>
+        <a href="#insurance" class="nav-link px-3 py-2 rounded-lg hover:bg-sand hover:text-brand-900 transition">Insurance</a>
+        <a href="#faq"       class="nav-link px-3 py-2 rounded-lg hover:bg-sand hover:text-brand-900 transition">FAQ</a>
+      </div>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Phones get a tap-to-call button; the long CTA would overflow the bar,
+             and the sticky footer already carries the eligibility action. -->
+        <a href="tel:+16028248404" aria-label="Call (602) 824-8404"
+           class="nav-cta sm:hidden grid place-items-center h-11 w-11 rounded-full bg-brand-900 text-cream">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-[18px] w-[18px]"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
+        </a>
+        <a href="#eligibility" class="nav-cta hidden sm:inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-brand-900 px-5 py-2.5 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shadow-sm hover:shadow-md">
+          Check My Eligibility
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+        </a>
+        <button id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu" class="nav-burger lg:hidden grid place-items-center h-11 w-11 rounded-lg border border-black/10 text-brand-900">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- mobile drawer -->
+    <div id="mobileMenu" class="lg:hidden hidden pb-5">
+      <div class="nav-drawer grid gap-1 text-[16px] text-brand-900/80 border-t border-black/5 pt-4">
+        <a href="#qualify"     class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Do I qualify?</a>
+        <a href="#science"     class="nav-link px-3 py-3 rounded-lg hover:bg-sand">How it works</a>
+        <a href="#process"     class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Your treatment</a>
+        <a href="#insurance"   class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Insurance</a>
+        <a href="#safety"      class="nav-link px-3 py-3 rounded-lg hover:bg-sand">Safety</a>
+        <a href="#faq"         class="nav-link px-3 py-3 rounded-lg hover:bg-sand">FAQ</a>
+        <a href="#eligibility" class="mt-1 px-3 py-3 rounded-lg bg-accent-500 text-center font-medium text-white">Check My Eligibility</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section id="top" class="relative overflow-hidden bg-brand-950 -mt-[68px] sm:-mt-[80px] pt-[68px] sm:pt-[80px]">
+  <img src="/spravato/assets/img/ambience/hero-happy-patient.jpg?v=1792242630" alt="A woman standing at the shore with her arms raised and her face turned to the sun, smiling" fetchpriority="high" decoding="async"
+       class="js-photo pointer-events-none absolute inset-0 h-full w-full object-cover object-center">
+  <!-- Two overlays rather than one: a flat tint to sit the brand over the photo, then
+       a left-to-right gradient that darkens behind the headline and behind the form
+       while staying light through the middle, where the subject is. -->
+  <div class="pointer-events-none absolute inset-0 bg-brand-950/55"></div>
+  <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-brand-950/55 via-brand-950/5 to-brand-950/45"></div>
+
+  <div class="relative mx-auto max-w-8xl px-5 sm:px-6 lg:px-10 pt-8 pb-12 lg:pt-12 lg:pb-16">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+
+      <div class="lg:col-span-6 reveal">
+        <div class="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-[12px] sm:text-[13px] text-cream/80 backdrop-blur">
+          <span class="relative flex h-2 w-2 shrink-0">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-400 opacity-75"></span>
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-accent-400"></span>
+          </span>
+          REMS-certified SPRAVATO&reg; center · Phoenix, AZ
+        </div>
+
+        <h1 class="mt-5 sm:mt-7 font-display text-[2rem] leading-[1.08] min-[400px]:text-[2.3rem] sm:text-[2.9rem] lg:text-[3.1rem] xl:text-[3.6rem] tracking-tightest text-cream font-light">
+          SPRAVATO&reg; Treatment <span class="italic text-accent-400">in Phoenix.</span>
+        </h1>
+
+        <p class="mt-5 max-w-lg text-[15.5px] sm:text-[16.5px] lg:text-[17.5px] leading-relaxed text-cream/70 font-light">
+          If two or more antidepressants have not provided enough relief, our team can evaluate whether supervised SPRAVATO&reg; treatment may be appropriate.
+        </p>
+
+        <div class="mt-7 flex flex-col sm:flex-row gap-3">
+          <a href="#eligibility" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20">
+            Check If I Qualify
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="tel:+16028248404" class="inline-flex items-center justify-center gap-2.5 rounded-full border border-white/20 bg-white/5 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-cream hover:bg-white/10 transition backdrop-blur">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
+            <span class="sm:hidden">Call Us</span>
+            <span class="hidden sm:inline">Call (602) 824-8404</span>
+          </a>
+        </div>
+
+        <p class="mt-4 text-[13px] leading-relaxed text-cream/80 lg:hidden">Phoenix, AZ · Insurance benefits verified before treatment.</p>
+        <dl class="mt-5 hidden lg:grid grid-cols-3 gap-3 sm:gap-6 max-w-lg border-t border-white/10 pt-5">
+          <div>
+            <dt class="font-display text-2xl sm:text-3xl text-cream font-light">24 hrs</dt>
+            <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Relief can begin this fast</dd>
+          </div>
+          <div>
+            <dt class="font-display text-2xl sm:text-3xl text-cream font-light">2 hrs</dt>
+            <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Monitored, every session</dd>
+          </div>
+          <div>
+            <dt class="font-display text-2xl sm:text-3xl text-cream font-light">Most</dt>
+            <dd class="mt-1 text-[12px] sm:text-[13px] leading-snug text-cream/50">Insurance accepted &amp; verified</dd>
+          </div>
+        </dl>
+      </div>
+
+      <!-- eligibility form -->
+      <div id="eligibility" class="lg:col-span-6 reveal scroll-mt-24 sm:scroll-mt-28" style="transition-delay:.12s">
+        <div class="relative">
+          <div class="pointer-events-none absolute -inset-3 sm:-inset-4 rounded-[32px] bg-gradient-to-br from-accent-400/20 via-transparent to-brand-500/20 blur-2xl"></div>
+
+          <form id="contactForm" action="https://app.formester.com/forms/YZQjRMoVv/submissions" method="POST" accept-charset="UTF-8"
+                class="glass relative rounded-3xl sm:rounded-[28px] p-5 sm:p-8">
+
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h2 class="font-display text-[22px] sm:text-[27px] leading-tight tracking-tight text-cream">Check your SPRAVATO&reg; eligibility</h2>
+                <p class="mt-2 text-[14px] sm:text-[14.5px] leading-relaxed text-cream/60">
+                  Two questions and your contact details. We verify your benefits and call you back
+                  within one business day.
+                </p>
+              </div>
+              <span class="hidden sm:grid place-items-center h-11 w-11 shrink-0 rounded-2xl bg-white/10 ring-1 ring-white/15 text-accent-400">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-5 w-5"><path d="M12 3l7.5 3v5.5c0 4.4-3.1 8.2-7.5 9.5-4.4-1.3-7.5-5.1-7.5-9.5V6L12 3Z"/><path d="M9.5 12l1.8 1.8L15 10"/></svg>
+              </span>
+            </div>
+
+            <div class="mt-5 sm:mt-6 grid sm:grid-cols-2 gap-3 sm:gap-3.5">
+              <div class="sm:col-span-2">
+                <label for="tried" class="block text-[12.5px] font-medium text-cream/60 mb-1.5">How many antidepressants have you tried without enough relief?</label>
+                <select id="tried" name="Antidepressants tried" class="glass-field w-full appearance-none rounded-xl px-4 py-3 pr-10 outline-none"
+                        style="background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23FBF9F6' stroke-opacity='.6' stroke-width='2'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E&quot;);background-repeat:no-repeat;background-position:right 1rem center">
+                                    <option>Two or more — none have worked well enough</option>
+                                    <option>One so far</option>
+                                    <option>None yet — I’m just starting to look</option>
+                                    <option>I’m not sure</option>
+                                  </select>
+              </div>
+              <div class="sm:col-span-2">
+                <label for="carrier" class="block text-[12.5px] font-medium text-cream/60 mb-1.5">Your insurance</label>
+                <select id="carrier" name="Insurance" class="glass-field w-full appearance-none rounded-xl px-4 py-3 pr-10 outline-none"
+                        style="background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23FBF9F6' stroke-opacity='.6' stroke-width='2'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E&quot;);background-repeat:no-repeat;background-position:right 1rem center">
+                  <option>I’m not sure — please check for me</option>
+                                    <option>Aetna</option>
+                                    <option>Ambetter Health</option>
+                                    <option>Arizona Complete Health</option>
+                                    <option>Blue Cross Blue Shield of Arizona</option>
+                                    <option>Care1st Health Plan Arizona</option>
+                                    <option>Cigna Healthcare</option>
+                                    <option>Curative</option>
+                                    <option>Health Net</option>
+                                    <option>Humana</option>
+                                    <option>Medicare</option>
+                                    <option>Mercy Care</option>
+                                    <option>Optum</option>
+                                    <option>SCAN Health Plan</option>
+                                    <option>TRICARE For Life</option>
+                                    <option>TriWest Healthcare Alliance</option>
+                                    <option>UnitedHealthcare Community Plan</option>
+                                    <option>Wellcare By Allwell</option>
+                                    <option>AHCCCS / Arizona Medicaid</option>
+                  <option>Another plan</option>
+                  <option>No insurance / self-pay</option>
+                </select>
+              </div>
+              <div>
+                <label for="fname" class="block text-[12.5px] font-medium text-cream/60 mb-1.5">First name</label>
+                <input id="fname" name="First name" autocomplete="given-name" required class="glass-field w-full rounded-xl px-4 py-3 outline-none" placeholder="Jane">
+              </div>
+              <div>
+                <label for="lname" class="block text-[12.5px] font-medium text-cream/60 mb-1.5">Last name</label>
+                <input id="lname" name="Last name" autocomplete="family-name" required class="glass-field w-full rounded-xl px-4 py-3 outline-none" placeholder="Doe">
+              </div>
+              <div>
+                <label for="phone" class="block text-[12.5px] font-medium text-cream/60 mb-1.5">Phone</label>
+                <input id="phone" name="Phone" type="tel" inputmode="tel" autocomplete="tel" required class="glass-field w-full rounded-xl px-4 py-3 outline-none" placeholder="(602) 000-0000">
+              </div>
+              <div>
+                <label for="email" class="block text-[12.5px] font-medium text-cream/60 mb-1.5">Email</label>
+                <input id="email" name="Email" type="email" inputmode="email" autocomplete="email" required class="glass-field w-full rounded-xl px-4 py-3 outline-none" placeholder="you@email.com">
+              </div>
+              <div class="sm:col-span-2">
+                <label for="message" class="block text-[12.5px] font-medium text-cream/60 mb-1.5">Message <span class="text-cream/40">(optional)</span></label>
+                <textarea id="message" name="Message" rows="3" class="glass-field w-full rounded-xl px-4 py-3 outline-none resize-y" placeholder="Anything you'd like us to know before we call?"></textarea>
+              </div>
+            </div>
+
+            <!-- Spam trap: real people never see this, bots fill it in. -->
+            <div class="hidden" aria-hidden="true">
+              <label>Do not fill this in <input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+            </div>
+            <input type="hidden" name="Source" value="Spravato landing page">
+            <input type="hidden" name="leadsource" value="spravato">
+            <input type="hidden" name="Interested in" value="Spravato (nasal esketamine)">
+
+            <button type="submit" class="group mt-5 w-full inline-flex items-center justify-center gap-2.5 rounded-full bg-cream px-6 py-4 text-[15.5px] font-medium text-brand-900 hover:bg-white transition shadow-lg shadow-black/25">
+              Check My Eligibility
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+            </button>
+
+
+            <p class="mt-4 flex items-start gap-2.5 text-[11.5px] sm:text-[12px] leading-relaxed text-cream/55">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-4 w-4 shrink-0 mt-px"><rect x="4.5" y="10" width="15" height="10" rx="2"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></svg>
+              <span>Please don't include sensitive medical details. Not for emergencies — in a crisis, call <a href="tel:988" class="font-semibold text-accent-400 hover:underline">988</a> or 911.</span>
+            </p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- trust bar, attached to the hero so it costs no extra band -->
+  <div class="relative border-t border-white/10 bg-brand-950/60">
+    <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10 py-5">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-4">
+                <div class="flex items-start gap-2.5">
+          <span class="mt-0.5 grid place-items-center h-4 w-4 shrink-0 rounded-full bg-accent-500/20 text-accent-400">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" class="h-2.5 w-2.5"><path d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <div class="min-w-0">
+            <p class="text-[13.5px] font-semibold text-cream">REMS-certified</p>
+            <p class="text-[12.5px] text-cream/45 leading-snug">Protocol-driven monitoring</p>
+          </div>
+        </div>
+                <div class="flex items-start gap-2.5">
+          <span class="mt-0.5 grid place-items-center h-4 w-4 shrink-0 rounded-full bg-accent-500/20 text-accent-400">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" class="h-2.5 w-2.5"><path d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <div class="min-w-0">
+            <p class="text-[13.5px] font-semibold text-cream">FDA-approved</p>
+            <p class="text-[12.5px] text-cream/45 leading-snug">For treatment-resistant depression</p>
+          </div>
+        </div>
+                <div class="flex items-start gap-2.5">
+          <span class="mt-0.5 grid place-items-center h-4 w-4 shrink-0 rounded-full bg-accent-500/20 text-accent-400">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" class="h-2.5 w-2.5"><path d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <div class="min-w-0">
+            <p class="text-[13.5px] font-semibold text-cream">Insurance handled</p>
+            <p class="text-[12.5px] text-cream/45 leading-snug">We file the authorization</p>
+          </div>
+        </div>
+                <div class="flex items-start gap-2.5">
+          <span class="mt-0.5 grid place-items-center h-4 w-4 shrink-0 rounded-full bg-accent-500/20 text-accent-400">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" class="h-2.5 w-2.5"><path d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <div class="min-w-0">
+            <p class="text-[13.5px] font-semibold text-cream">Board-certified</p>
+            <p class="text-[12.5px] text-cream/45 leading-snug">15+ years in practice</p>
+          </div>
+        </div>
+              </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ VIDEO TESTIMONIALS ══════════════════ -->
+<section id="video-testimonials" aria-labelledby="video-testimonials-heading" class="bg-sand py-12 sm:py-14 lg:py-20 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+    <div class="text-center">
+      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Patient experiences</p>
+      <h2 id="video-testimonials-heading" class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] leading-[1.1] tracking-tightest text-brand-900 font-light">Hear From Our Patients</h2>
+    </div>
+    <div class="mt-7 mx-auto max-w-3xl">
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 1" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab419de6cc97c47e4fb1b3e?background=false&amp;autoplay=false&amp;loop=false&amp;disable_player_controls=true"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+    <details class="mt-5 rounded-2xl border border-black/10 bg-white p-4 sm:p-5">
+      <summary class="cursor-pointer font-medium text-brand-900">Watch three more patient stories</summary>
+      <div class="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 2" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227442394588e66b49ee3"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 3" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a210"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      <div class="relative aspect-video overflow-hidden rounded-2xl bg-black shadow-sm">
+        <iframe loading="lazy" title="Patient video testimonial 4" class="absolute inset-0 h-full w-full border-0"
+                src="https://play.gumlet.io/embed/6ab227f48a8d9ca7fc02a20f"
+                referrerpolicy="origin"
+                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write;"
+                allowfullscreen></iframe>
+      </div>
+      </div>
+    </details>
+    <p class="mt-5 text-center text-[12px] leading-relaxed text-brand-700">Patient experiences vary. Testimonials reflect individual experiences and are not a guarantee of outcome.</p>
+  </div>
+</section>
+
+
+<!-- ══════════════════ DO I QUALIFY ══════════════════ -->
+<section id="qualify" class="py-12 sm:py-14 lg:py-20 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+
+    <div class="max-w-3xl reveal">
+      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Do I qualify?</p>
+      <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
+        SPRAVATO<sup class="align-super text-[0.42em] font-normal">&reg;</sup> is for a specific kind of depression.
+      </h2>
+      <p class="mt-4 text-[15.5px] sm:text-[17px] leading-relaxed text-brand-900/60 font-light">
+        SPRAVATO® is FDA-approved for adults with treatment-resistant depression (TRD), a form of depression that has not adequately responded to previous antidepressant treatment.
+      </p>
+    </div>
+
+    <div class="mt-8 sm:mt-10 grid sm:grid-cols-3 gap-3.5 sm:gap-5">
+            <article class="reveal flex gap-4 sm:block rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]"
+               style="transition-delay:0ms">
+        <span class="grid place-items-center h-9 w-9 sm:h-11 sm:w-11 shrink-0 rounded-xl sm:rounded-2xl bg-accent-50 text-accent-600 ring-1 ring-accent-200">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="h-4 w-4 sm:h-5 sm:w-5"><path d="M5 13l4 4L19 7"/></svg>
+        </span>
+        <div class="min-w-0">
+          <h3 class="sm:mt-5 font-display text-[19px] sm:text-[22px] leading-snug tracking-tight text-brand-900">Treatment-resistant depression</h3>
+          <p class="mt-2 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/60">Adults with treatment-resistant depression (TRD), meaning depression that has not adequately responded to previous antidepressant treatment.</p>
+        </div>
+      </article>
+            <article class="reveal flex gap-4 sm:block rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]"
+               style="transition-delay:60ms">
+        <span class="grid place-items-center h-9 w-9 sm:h-11 sm:w-11 shrink-0 rounded-xl sm:rounded-2xl bg-accent-50 text-accent-600 ring-1 ring-accent-200">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="h-4 w-4 sm:h-5 sm:w-5"><path d="M5 13l4 4L19 7"/></svg>
+        </span>
+        <div class="min-w-0">
+          <h3 class="sm:mt-5 font-display text-[19px] sm:text-[22px] leading-snug tracking-tight text-brand-900">Two or more antidepressants tried</h3>
+          <p class="mt-2 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/60">Treatment history is reviewed as part of determining whether SPRAVATO® may be appropriate. Insurance authorization requirements vary by plan.</p>
+        </div>
+      </article>
+            <article class="reveal flex gap-4 sm:block rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]"
+               style="transition-delay:120ms">
+        <span class="grid place-items-center h-9 w-9 sm:h-11 sm:w-11 shrink-0 rounded-xl sm:rounded-2xl bg-accent-50 text-accent-600 ring-1 ring-accent-200">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="h-4 w-4 sm:h-5 sm:w-5"><path d="M5 13l4 4L19 7"/></svg>
+        </span>
+        <div class="min-w-0">
+          <h3 class="sm:mt-5 font-display text-[19px] sm:text-[22px] leading-snug tracking-tight text-brand-900">A clinical evaluation</h3>
+          <p class="mt-2 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/60">Your diagnosis, treatment history, current medications and overall health are reviewed to determine whether SPRAVATO® may be appropriate for you.
+
+</p>
+        </div>
+      </article>
+          </div>
+
+    <div class="reveal mt-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-black/[0.07] bg-white px-5 sm:px-7 py-5">
+      <p class="text-[15px] sm:text-[16px] leading-relaxed text-brand-900/65">
+        <span class="text-brand-900 font-medium">Not sure whether you meet the criteria?</span>
+        That is exactly what the first call is for.
+      </p>
+      <a href="#eligibility" class="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-900 px-6 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shrink-0">
+        Check My Eligibility
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ HOW IT WORKS + HOW IT COMPARES ══════════════════ -->
+<section id="science" class="py-12 sm:py-14 bg-white border-y border-black/5 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+    <h2 class="font-display text-[1.9rem] sm:text-[2.4rem] leading-tight text-brand-900 font-light">A different treatment approach.</h2>
+    <p class="mt-4 max-w-3xl text-[16px] leading-relaxed text-brand-900/70">SPRAVATO&reg; is esketamine nasal spray, given under clinical supervision. Its mechanism differs from many traditional antidepressants.</p>
+    <div class="mt-7 grid gap-4 sm:grid-cols-3">
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">Clinical evaluation</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Your team reviews previous treatments and whether SPRAVATO&reg; is appropriate.</p>
+      </div>
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">Supervised sessions</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Treatment takes place in our clinic, with at least two hours of monitoring.</p>
+      </div>
+      <div class="rounded-2xl bg-cream border border-black/5 p-5">
+        <h3 class="font-display text-xl text-brand-900">Plan your ride</h3>
+        <p class="mt-2 text-[15px] leading-relaxed text-brand-900/70">Arrange transportation home. Do not drive until the next day after a full night’s sleep.</p>
+      </div>
+    </div>
+    <div class="mt-8 rounded-2xl bg-accent-50/60 border border-accent-200 p-5 sm:p-7">
+      <h3 class="font-display text-[20px] sm:text-[23px] tracking-tight text-brand-900">Exploring other options?</h3>
+      <p class="mt-2 text-[15px] leading-relaxed text-brand-900/75">
+        If you are looking for non-medication alternatives for treatment-resistant depression, we also offer FDA-cleared <a href="/tms-therapy/" class="text-accent-600 font-medium hover:underline">TMS Therapy</a> and <a href="/electroconvulsive-therapy-ect/" class="text-accent-600 font-medium hover:underline">Electroconvulsive Therapy (ECT)</a>. For comprehensive psychiatric care, our <a href="/medication-management/" class="text-accent-600 font-medium hover:underline">Medication Management</a> providers can help evaluate your history to determine the best path forward.
+      </p>
+    </div>
+    <a href="#eligibility" class="mt-7 inline-flex rounded-full bg-brand-900 px-6 py-3 text-[15px] font-medium text-cream hover:bg-brand-800 transition">Check Eligibility</a>
+  </div>
+</section>
+
+<!-- ══════════════════ YOUR TREATMENT + THE CLINIC ══════════════════ -->
+<section id="process" class="py-12 sm:py-14 lg:py-20 border-b border-black/5 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+
+    <div class="max-w-2xl reveal">
+      <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Your treatment</p>
+      <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[3rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
+        From first call to first dose.
+      </h2>
+    </div>
+
+    <div class="relative mt-8 sm:mt-10">
+      <div class="hidden lg:block absolute top-6 left-0 right-0 h-px bg-gradient-to-r from-transparent via-black/10 to-transparent"></div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-7">
+                <div class="reveal relative flex gap-4 lg:block" style="transition-delay:0ms">
+          <span class="relative z-10 grid place-items-center h-11 w-11 lg:h-12 lg:w-12 shrink-0 rounded-2xl bg-brand-900 text-cream font-display text-lg font-light shadow-lg shadow-brand-900/15">
+            1          </span>
+          <div class="min-w-0">
+            <h3 class="lg:mt-5 font-display text-[19px] sm:text-[21px] leading-snug tracking-tight text-brand-900">Consultation &amp; evaluation</h3>
+            <p class="mt-2 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/60">A full psychiatric evaluation — history, every medication tried, medical factors and a baseline depression score. Also where we screen for what rules SPRAVATO® out.</p>
+          </div>
+        </div>
+                <div class="reveal relative flex gap-4 lg:block" style="transition-delay:70ms">
+          <span class="relative z-10 grid place-items-center h-11 w-11 lg:h-12 lg:w-12 shrink-0 rounded-2xl bg-brand-900 text-cream font-display text-lg font-light shadow-lg shadow-brand-900/15">
+            2          </span>
+          <div class="min-w-0">
+            <h3 class="lg:mt-5 font-display text-[19px] sm:text-[21px] leading-snug tracking-tight text-brand-900">Insurance &amp; authorization</h3>
+            <p class="mt-2 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/60">Authorization timing varies by insurance plan. Our team submits the required documentation and works directly with your insurer throughout the process. If authorization is denied, we can review available next steps, including an appeal when appropriate.</p>
+          </div>
+        </div>
+                <div class="reveal relative flex gap-4 lg:block" style="transition-delay:140ms">
+          <span class="relative z-10 grid place-items-center h-11 w-11 lg:h-12 lg:w-12 shrink-0 rounded-2xl bg-brand-900 text-cream font-display text-lg font-light shadow-lg shadow-brand-900/15">
+            3          </span>
+          <div class="min-w-0">
+            <h3 class="lg:mt-5 font-display text-[19px] sm:text-[21px] leading-snug tracking-tight text-brand-900">Induction — weeks 1 to 4</h3>
+            <p class="mt-2 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/60">Treatment is typically given twice weekly during the initial four-week induction phase. Your prescribed medication regimen will depend on your diagnosis and individualized treatment plan. Your clinical team will monitor your symptoms and response throughout treatment. Individual response and timing vary.</p>
+          </div>
+        </div>
+                <div class="reveal relative flex gap-4 lg:block" style="transition-delay:210ms">
+          <span class="relative z-10 grid place-items-center h-11 w-11 lg:h-12 lg:w-12 shrink-0 rounded-2xl bg-brand-900 text-cream font-display text-lg font-light shadow-lg shadow-brand-900/15">
+            4          </span>
+          <div class="min-w-0">
+            <h3 class="lg:mt-5 font-display text-[19px] sm:text-[21px] leading-snug tracking-tight text-brand-900">Maintenance &amp; follow-up</h3>
+            <p class="mt-2 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/60">Once you are responding, sessions taper to a maintenance schedule set by how you are actually doing — tracked at every visit.</p>
+          </div>
+        </div>
+              </div>
+    </div>
+
+    <!-- what one session looks like — a compact strip rather than its own band -->
+    <div class="reveal mt-10 rounded-2xl sm:rounded-3xl bg-sand/70 p-5 sm:p-7">
+      <h3 class="font-display text-[20px] sm:text-[23px] tracking-tight text-brand-900">What one session actually looks like</h3>
+      <ul class="mt-5 grid sm:grid-cols-3 gap-5 sm:gap-6">
+                <li class="flex gap-3.5 sm:block">
+          <span class="grid place-items-center h-9 w-9 sm:h-10 sm:w-10 shrink-0 rounded-xl bg-white text-brand-800 ring-1 ring-black/5">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 sm:h-5 sm:w-5"><path d="M12 3c3 3.5 5 6.4 5 9a5 5 0 0 1-10 0c0-2.6 2-5.5 5-9Z"/></svg>
+          </span>
+          <div class="min-w-0">
+            <p class="sm:mt-3.5 text-[15px] font-medium text-brand-900">You self-administer</p>
+            <p class="mt-1 text-[14px] leading-relaxed text-brand-900/55">The nasal spray, under the direct supervision of our trained staff.</p>
+          </div>
+        </li>
+                <li class="flex gap-3.5 sm:block">
+          <span class="grid place-items-center h-9 w-9 sm:h-10 sm:w-10 shrink-0 rounded-xl bg-white text-brand-800 ring-1 ring-black/5">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 sm:h-5 sm:w-5"><path d="M12 7v5l3 2M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z"/></svg>
+          </span>
+          <div class="min-w-0">
+            <p class="sm:mt-3.5 text-[15px] font-medium text-brand-900">At least two hours of monitoring</p>
+            <p class="mt-1 text-[14px] leading-relaxed text-brand-900/55">In a private room with a recliner. Vital signs checked throughout; most side effects resolve inside this window.</p>
+          </div>
+        </li>
+                <li class="flex gap-3.5 sm:block">
+          <span class="grid place-items-center h-9 w-9 sm:h-10 sm:w-10 shrink-0 rounded-xl bg-white text-brand-800 ring-1 ring-black/5">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 sm:h-5 sm:w-5"><path d="M5 16h14M6.5 16V11l1.6-4h7.8l1.6 4v5M8 19v-3M16 19v-3"/></svg>
+          </span>
+          <div class="min-w-0">
+            <p class="sm:mt-3.5 text-[15px] font-medium text-brand-900">Arrange a ride home</p>
+            <p class="mt-1 text-[14px] leading-relaxed text-brand-900/55">No driving or operating machinery until the next day, after a full night’s sleep.</p>
+          </div>
+        </li>
+              </ul>
+    </div>
+
+    <!-- the practice itself -->
+        <div class="reveal mt-10">
+      <div class="flex flex-wrap items-end justify-between gap-3">
+        <h3 class="font-display text-[20px] sm:text-[23px] tracking-tight text-brand-900">Our Phoenix clinic</h3>
+        <p class="text-[13.5px] text-brand-900/45">2929 E Camelback Rd #119, Phoenix, AZ 85016</p>
+      </div>
+      <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                <figure class="group relative overflow-hidden rounded-xl sm:rounded-2xl ring-1 ring-black/5 aspect-[4/3]">
+          <img src="/spravato/assets/img/ambience/office-room.webp?v=1792242630" alt="Private room with a recliner at our Phoenix office" loading="lazy" decoding="async"
+               class="js-photo h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]">
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/10 to-transparent"></div>
+          <figcaption class="absolute inset-x-0 bottom-0 p-3 sm:p-4 text-[12.5px] sm:text-[14px] font-medium leading-snug text-cream">A private treatment room</figcaption>
+        </figure>
+                <figure class="group relative overflow-hidden rounded-xl sm:rounded-2xl ring-1 ring-black/5 aspect-[4/3]">
+          <img src="/spravato/assets/img/ambience/office-reception.webp?v=1792242630" alt="Reception desk and entrance at our Phoenix office" loading="lazy" decoding="async"
+               class="js-photo h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]">
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/10 to-transparent"></div>
+          <figcaption class="absolute inset-x-0 bottom-0 p-3 sm:p-4 text-[12.5px] sm:text-[14px] font-medium leading-snug text-cream">Our reception area</figcaption>
+        </figure>
+                <figure class="group relative overflow-hidden rounded-xl sm:rounded-2xl ring-1 ring-black/5 aspect-[4/3]">
+          <img src="/spravato/assets/img/ambience/office-waiting.webp?v=1792242630" alt="Seating in the waiting area at our Phoenix office" loading="lazy" decoding="async"
+               class="js-photo h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]">
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-950/85 via-brand-950/10 to-transparent"></div>
+          <figcaption class="absolute inset-x-0 bottom-0 p-3 sm:p-4 text-[12.5px] sm:text-[14px] font-medium leading-snug text-cream">Our waiting area</figcaption>
+        </figure>
+              </div>
+    </div>
+
+    <div class="reveal mt-8 text-center">
+      <a href="#eligibility" class="group inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-7 py-4 text-[15.5px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20">
+        Start With an Eligibility Check
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:translate-x-1"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+      </a>
+      <p class="mt-3.5 text-[13.5px] text-brand-900/45">
+        Or call <a href="tel:+16028248404" class="font-medium text-brand-900/70 hover:text-accent-600 transition">(602) 824-8404</a> — Monday to Friday, 8am–5pm.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ INSURANCE & COST ══════════════════ -->
+<section id="insurance" class="py-12 sm:py-14 lg:py-20 bg-white border-b border-black/5 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+
+    <div class="grid lg:grid-cols-12 gap-5 lg:gap-16 lg:items-end reveal">
+      <div class="lg:col-span-7">
+        <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Insurance</p>
+        <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[2.9rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
+          SPRAVATO® is covered by many insurance plans.
+        </h2>
+      </div>
+      <div class="lg:col-span-5">
+        <p class="text-[15.5px] sm:text-[16px] leading-relaxed text-brand-900/60 font-light">
+Many commercial insurance plans, Medicare and some Medicaid plans may provide coverage for SPRAVATO®, subject to eligibility, plan requirements and prior authorization.
+        </p>
+      </div>
+    </div>
+
+    <!-- A rail on phones, a wrapped wall from lg — 17 logos would otherwise be
+         nine rows of vertical scroll on a handset. -->
+    <div class="slider reveal mt-8 flex gap-2.5 sm:gap-3 overflow-x-auto snap-x pb-1 -mx-5 px-5 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0 lg:flex-wrap lg:overflow-visible">
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/aetna.webp?v=1792242630" alt="Aetna" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/ambetter.png?v=1792242630" alt="Ambetter Health" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/arizona-complete-health.png?v=1792242630" alt="Arizona Complete Health" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/bcbs-arizona.png?v=1792242630" alt="Blue Cross Blue Shield of Arizona" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/care1st.png?v=1792242630" alt="Care1st Health Plan Arizona" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/cigna.png?v=1792242630" alt="Cigna Healthcare" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/curative.png?v=1792242630" alt="Curative" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/health-net.png?v=1792242630" alt="Health Net" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/humana.png?v=1792242630" alt="Humana" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/medicare.png?v=1792242630" alt="Medicare" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/mercy-care.png?v=1792242630" alt="Mercy Care" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/optum.png?v=1792242630" alt="Optum" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/scan-health-plan.png?v=1792242630" alt="SCAN Health Plan" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/tricare-for-life.png?v=1792242630" alt="TRICARE For Life" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/triwest.png?v=1792242630" alt="TriWest Healthcare Alliance" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/unitedhealthcare-community-plan.png?v=1792242630" alt="UnitedHealthcare Community Plan" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+            <div class="snap-start grid place-items-center shrink-0 h-20 sm:h-24 w-[8.5rem] sm:w-[10rem] lg:w-[calc(20%-0.6rem)] rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 transition duration-300 hover:border-brand-900/15 hover:shadow-lg hover:shadow-brand-900/[0.06]">
+                <img src="/spravato/assets/img/insurance/wellcare-allwell.png?v=1792242630" alt="Wellcare By Allwell" loading="lazy" decoding="async"
+             class="js-photo max-h-9 sm:max-h-11 max-w-[85%] w-auto object-contain opacity-90">
+              </div>
+          </div>
+    <p class="lg:hidden mt-2.5 text-[12px] text-brand-900/35">Swipe to see all 17 plans →</p>
+
+    <!-- the money questions, answered before they have to ask -->
+    <div class="mt-8 grid sm:grid-cols-3 gap-3.5 sm:gap-5">
+            <div class="reveal flex gap-4 sm:block rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7" style="transition-delay:0ms">
+        <span class="grid place-items-center h-9 w-9 sm:h-11 sm:w-11 shrink-0 rounded-xl sm:rounded-2xl bg-sand text-brand-800">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 sm:h-5 sm:w-5"><path d="M4 7h16v12H4V7Zm4-3h8v3H8V4Zm-1 8h10M7 15h6"/></svg>
+        </span>
+        <div class="min-w-0">
+          <h3 class="sm:mt-5 font-display text-[19px] sm:text-[21px] tracking-tight text-brand-900">We file the authorization</h3>
+          <p class="mt-2 text-[14.5px] leading-relaxed text-brand-900/60">Approval typically takes three days to two weeks. We handle the paperwork and talk to your insurer directly, so the wait is on us rather than on you.</p>
+        </div>
+      </div>
+            <div class="reveal flex gap-4 sm:block rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7" style="transition-delay:60ms">
+        <span class="grid place-items-center h-9 w-9 sm:h-11 sm:w-11 shrink-0 rounded-xl sm:rounded-2xl bg-sand text-brand-800">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 sm:h-5 sm:w-5"><path d="M12 3l7.5 3v5.5c0 4.4-3.1 8.2-7.5 9.5-4.4-1.3-7.5-5.1-7.5-9.5V6L12 3Z M9.5 12l1.8 1.8L15 10"/></svg>
+        </span>
+        <div class="min-w-0">
+          <h3 class="sm:mt-5 font-display text-[19px] sm:text-[21px] tracking-tight text-brand-900">Benefits verified first</h3>
+          <p class="mt-2 text-[14.5px] leading-relaxed text-brand-900/60">We confirm what your policy covers — the medication and the observation visit are billed separately — before anything begins. Manufacturer savings programs may apply; we will check.</p>
+        </div>
+      </div>
+            <div class="reveal flex gap-4 sm:block rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7" style="transition-delay:120ms">
+        <span class="grid place-items-center h-9 w-9 sm:h-11 sm:w-11 shrink-0 rounded-xl sm:rounded-2xl bg-sand text-brand-800">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 sm:h-5 sm:w-5"><path d="M12 3l7.5 3v5.5c0 4.4-3.1 8.2-7.5 9.5-4.4-1.3-7.5-5.1-7.5-9.5V6L12 3Z"/></svg>
+        </span>
+        <div class="min-w-0">
+          <h3 class="sm:mt-5 font-display text-[19px] sm:text-[21px] tracking-tight text-brand-900">Medicare &amp; AHCCCS </h3>
+          <p class="mt-2 text-[14.5px] leading-relaxed text-brand-900/60">Coverage may be available through Medicare and certain AHCCCS plans for eligible patients. Coverage requirements and prior authorization vary by plan. Our team will verify your benefits before treatment.</p>
+        </div>
+      </div>
+          </div>
+
+    <div class="reveal mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl bg-sand/70 px-5 sm:px-6 py-5">
+      <p class="text-[14.5px] leading-relaxed text-brand-900/60">
+        <span class="font-medium text-brand-900">Denied before, or worried you will be?</span>
+If coverage is denied, our team will review the reason and discuss available next steps, including an appeal when appropriate.
+      </p>
+      <a href="tel:+16028248404" class="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-900 px-6 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition shrink-0">
+        Verify My Coverage
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ SAFETY ══════════════════ -->
+<section id="safety" class="py-12 sm:py-14 lg:py-20 bg-sand/60 border-y border-black/5 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-14">
+
+      <div class="lg:col-span-5 reveal">
+        <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Safety</p>
+        <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] lg:text-[2.7rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
+          Why it is only given in a clinic.
+        </h2>
+        <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-brand-900/60 font-light">
+         SPRAVATO® can cause sedation, dissociation, respiratory depression and increases in blood pressure, and it carries a risk of abuse and misuse. Because of these risks, it is available only through the SPRAVATO® REMS program and requires monitoring by a healthcare provider after administration.
+        </p>
+
+        <ul class="mt-6 space-y-2.5">
+                    <li class="flex items-start gap-3 rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 sm:px-5 py-3.5">
+            <span class="mt-0.5 grid place-items-center h-5 w-5 shrink-0 rounded-full bg-brand-900/[0.07] text-brand-700">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="h-2.5 w-2.5"><path d="M5 13l4 4L19 7"/></svg>
+            </span>
+            <div class="min-w-0">
+              <p class="text-[14.5px] font-medium text-brand-900">Direct supervision</p>
+              <p class="mt-0.5 text-[13.5px] leading-snug text-brand-900/55">A clinician is with you while you self-administer.</p>
+            </div>
+          </li>
+                    <li class="flex items-start gap-3 rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 sm:px-5 py-3.5">
+            <span class="mt-0.5 grid place-items-center h-5 w-5 shrink-0 rounded-full bg-brand-900/[0.07] text-brand-700">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="h-2.5 w-2.5"><path d="M5 13l4 4L19 7"/></svg>
+            </span>
+            <div class="min-w-0">
+              <p class="text-[14.5px] font-medium text-brand-900">Two-hour monitoring</p>
+              <p class="mt-0.5 text-[13.5px] leading-snug text-brand-900/55">After every dose, with vital signs observed.</p>
+            </div>
+          </li>
+                    <li class="flex items-start gap-3 rounded-xl sm:rounded-2xl border border-black/[0.07] bg-white px-4 sm:px-5 py-3.5">
+            <span class="mt-0.5 grid place-items-center h-5 w-5 shrink-0 rounded-full bg-brand-900/[0.07] text-brand-700">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="h-2.5 w-2.5"><path d="M5 13l4 4L19 7"/></svg>
+            </span>
+            <div class="min-w-0">
+              <p class="text-[14.5px] font-medium text-brand-900">Transportation required</p>
+              <p class="mt-0.5 text-[13.5px] leading-snug text-brand-900/55">No driving until the next day, after a full night’s rest.</p>
+            </div>
+          </li>
+                  </ul>
+      </div>
+
+      <div class="lg:col-span-7 reveal grid sm:grid-cols-2 gap-3.5 sm:gap-5 content-start" style="transition-delay:.08s">
+
+        <div class="rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
+          <h3 class="font-display text-[20px] sm:text-[22px] tracking-tight text-brand-900">Common side effects</h3>
+          <p class="mt-2 text-[14px] leading-relaxed text-brand-900/55">
+            These usually begin shortly after the dose and resolve the same day — which is exactly
+            what the monitoring period is for.
+          </p>
+          <ul class="mt-4 flex flex-wrap gap-1.5 sm:gap-2">
+                        <li class="rounded-full bg-sand px-3 py-1.5 text-[12.5px] text-brand-900/70">Dissociation</li>
+                        <li class="rounded-full bg-sand px-3 py-1.5 text-[12.5px] text-brand-900/70">Dizziness</li>
+                        <li class="rounded-full bg-sand px-3 py-1.5 text-[12.5px] text-brand-900/70">Fatigue</li>
+                        <li class="rounded-full bg-sand px-3 py-1.5 text-[12.5px] text-brand-900/70">Nausea</li>
+                        <li class="rounded-full bg-sand px-3 py-1.5 text-[12.5px] text-brand-900/70">Feeling drunk or euphoric</li>
+                        <li class="rounded-full bg-sand px-3 py-1.5 text-[12.5px] text-brand-900/70">Anxiety or numbness</li>
+                        <li class="rounded-full bg-sand px-3 py-1.5 text-[12.5px] text-brand-900/70">Spinning sensation</li>
+                        <li class="rounded-full bg-sand px-3 py-1.5 text-[12.5px] text-brand-900/70">Raised blood pressure</li>
+                        <li class="rounded-full bg-sand px-3 py-1.5 text-[12.5px] text-brand-900/70">Sedation</li>
+                      </ul>
+        </div>
+
+        <div class="rounded-2xl sm:rounded-3xl border border-accent-200 bg-accent-50/60 p-5 sm:p-7">
+          <h3 class="font-display text-[20px] sm:text-[22px] tracking-tight text-brand-900">Who should not take it</h3>
+          <p class="mt-2 text-[14px] leading-relaxed text-brand-900/55">
+            Your evaluation screens for all of these before anything is prescribed.
+          </p>
+          <ul class="mt-4 space-y-2.5">
+                        <li class="flex items-start gap-2.5 text-[14px] leading-relaxed text-brand-900/70">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-1 h-3.5 w-3.5 shrink-0 text-accent-600"><path d="M5 5l14 14M19 5 5 19"/></svg>
+              Aneurysms or blood vessel disease            </li>
+                        <li class="flex items-start gap-2.5 text-[14px] leading-relaxed text-brand-900/70">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-1 h-3.5 w-3.5 shrink-0 text-accent-600"><path d="M5 5l14 14M19 5 5 19"/></svg>
+              Abnormal blood vessel connections (AVM)            </li>
+                        <li class="flex items-start gap-2.5 text-[14px] leading-relaxed text-brand-900/70">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-1 h-3.5 w-3.5 shrink-0 text-accent-600"><path d="M5 5l14 14M19 5 5 19"/></svg>
+              A history of bleeding in the brain            </li>
+                        <li class="flex items-start gap-2.5 text-[14px] leading-relaxed text-brand-900/70">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-1 h-3.5 w-3.5 shrink-0 text-accent-600"><path d="M5 5l14 14M19 5 5 19"/></svg>
+              An allergy to esketamine or ketamine            </li>
+                      </ul>
+        </div>
+
+        <p class="sm:col-span-2 rounded-2xl bg-brand-900 px-5 sm:px-7 py-5 text-[14px] leading-relaxed text-cream/75">
+          SPRAVATO&reg; is not a pain reliever or an anesthetic, and it is never taken home. Tell your
+          <a href="/medication-management/" class="underline text-cream hover:text-accent-400">medication management</a> provider about every condition and medication you are on — that is how we judge whether it
+          is safe for you specifically. This page is general information, not medical advice, and not
+          a substitute for the full Prescribing Information and Medication Guide your clinician will
+          review with you.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════ REVIEWS + FAQ ══════════════════ -->
+<section id="faq" class="py-12 sm:py-14 lg:py-20 scroll-mt-24">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10">
+
+    <!-- reviews rail — horizontal, so it costs almost no vertical space -->
+    <div class="reveal">
+      <div class="flex items-end justify-between gap-6">
+        <div>
+          <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Patient experiences</p>
+          <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] leading-[1.1] tracking-tightest text-brand-900 font-light">In their words.</h2>
+        </div>
+        <div class="hidden sm:flex items-center gap-2.5 shrink-0">
+          <button id="tPrev" aria-label="Previous reviews" aria-controls="tTrack" class="grid place-items-center h-11 w-11 rounded-full border border-black/10 text-brand-900 transition hover:bg-brand-900 hover:text-cream hover:border-brand-900 disabled:opacity-30 disabled:pointer-events-none">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M19 12H6M13 5l-7 7 7 7"/></svg>
+          </button>
+          <button id="tNext" aria-label="More reviews" aria-controls="tTrack" class="grid place-items-center h-11 w-11 rounded-full border border-black/10 text-brand-900 transition hover:bg-brand-900 hover:text-cream hover:border-brand-900 disabled:opacity-30 disabled:pointer-events-none">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="tTrack" tabindex="0" role="region" aria-label="Patient reviews from Google"
+           class="slider mt-6 flex gap-3.5 sm:gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth -mx-5 px-5 sm:-mx-6 sm:px-6 lg:-mx-2 lg:px-2 pb-2 outline-none">
+                <figure class="t-card snap-start shrink-0 flex flex-col w-[85%] sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
+          <div class="flex items-start gap-3">
+            <span class="grid place-items-center h-10 w-10 shrink-0 rounded-full bg-brand-900/[0.07] font-display text-[14px] text-brand-800">GJ</span>
+            <div class="min-w-0">
+              <p class="text-[15px] font-medium text-brand-900 truncate">Gary Johnson</p>
+              <p class="text-[12px] text-brand-900/45 mt-0.5 truncate">10 reviews · June 2026</p>
+            </div>
+            <svg viewBox="0 0 24 24" class="ml-auto h-5 w-5 shrink-0 text-accent-400/50" fill="currentColor"><path d="M9.5 6C6.5 7.5 5 10.2 5 14v4h6v-6H8.2c.2-2 1.2-3.4 3-4.3L9.5 6Zm9 0C15.5 7.5 14 10.2 14 14v4h6v-6h-2.8c.2-2 1.2-3.4 3-4.3L18.5 6Z"/></svg>
+          </div>
+          <blockquote class="quote mt-4 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/70 font-light">Dr. Gomez is incredible. He took the time to really understand my situation, medical history, and what I was trying to accomplish. He was empathetic, caring, and listened without judgement. I highly recommend him and his staff.</blockquote>
+          <button type="button" class="q-more mt-2.5 self-start text-[13.5px] font-medium text-accent-600 hover:underline">Read Full Review</button>
+          <figcaption class="mt-auto pt-5 flex items-center justify-between gap-3">
+            <span class="text-[12px] text-brand-900/40">Google review</span>
+            <span class="rounded-full bg-sand px-2.5 py-1 text-[11.5px] text-brand-900/60 shrink-0">Dr. Gomez</span>
+          </figcaption>
+        </figure>
+                <figure class="t-card snap-start shrink-0 flex flex-col w-[85%] sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
+          <div class="flex items-start gap-3">
+            <span class="grid place-items-center h-10 w-10 shrink-0 rounded-full bg-brand-900/[0.07] font-display text-[14px] text-brand-800">MS</span>
+            <div class="min-w-0">
+              <p class="text-[15px] font-medium text-brand-900 truncate">Michael Stella</p>
+              <p class="text-[12px] text-brand-900/45 mt-0.5 truncate">Local Guide · 26 reviews · May 2026</p>
+            </div>
+            <svg viewBox="0 0 24 24" class="ml-auto h-5 w-5 shrink-0 text-accent-400/50" fill="currentColor"><path d="M9.5 6C6.5 7.5 5 10.2 5 14v4h6v-6H8.2c.2-2 1.2-3.4 3-4.3L9.5 6Zm9 0C15.5 7.5 14 10.2 14 14v4h6v-6h-2.8c.2-2 1.2-3.4 3-4.3L18.5 6Z"/></svg>
+          </div>
+          <blockquote class="quote mt-4 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/70 font-light">The care I received her was far different past experiences with other providers, since Jessica took the time to hear all of my concerns, and fully took them into consideration as we developed a treatment plan. It was much appreciated!</blockquote>
+          <button type="button" class="q-more mt-2.5 self-start text-[13.5px] font-medium text-accent-600 hover:underline">Read Full Review</button>
+          <figcaption class="mt-auto pt-5 flex items-center justify-between gap-3">
+            <span class="text-[12px] text-brand-900/40">Google review</span>
+            <span class="rounded-full bg-sand px-2.5 py-1 text-[11.5px] text-brand-900/60 shrink-0">Jessica Cruz, NP</span>
+          </figcaption>
+        </figure>
+                <figure class="t-card snap-start shrink-0 flex flex-col w-[85%] sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] rounded-2xl sm:rounded-3xl border border-black/[0.07] bg-white p-5 sm:p-7">
+          <div class="flex items-start gap-3">
+            <span class="grid place-items-center h-10 w-10 shrink-0 rounded-full bg-brand-900/[0.07] font-display text-[14px] text-brand-800">SB</span>
+            <div class="min-w-0">
+              <p class="text-[15px] font-medium text-brand-900 truncate">Sandra Bennewitz</p>
+              <p class="text-[12px] text-brand-900/45 mt-0.5 truncate">Local Guide · 25 reviews · June 2026</p>
+            </div>
+            <svg viewBox="0 0 24 24" class="ml-auto h-5 w-5 shrink-0 text-accent-400/50" fill="currentColor"><path d="M9.5 6C6.5 7.5 5 10.2 5 14v4h6v-6H8.2c.2-2 1.2-3.4 3-4.3L9.5 6Zm9 0C15.5 7.5 14 10.2 14 14v4h6v-6h-2.8c.2-2 1.2-3.4 3-4.3L18.5 6Z"/></svg>
+          </div>
+          <blockquote class="quote mt-4 text-[14.5px] sm:text-[15px] leading-relaxed text-brand-900/70 font-light">Dr. Gomez is SO kind, thoughtful and smart. He really listens and is so helpful. His office staff is competent and very caring. I highly recommend Dr. Gomez.</blockquote>
+          <button type="button" class="q-more mt-2.5 self-start text-[13.5px] font-medium text-accent-600 hover:underline">Read Full Review</button>
+          <figcaption class="mt-auto pt-5 flex items-center justify-between gap-3">
+            <span class="text-[12px] text-brand-900/40">Google review</span>
+            <span class="rounded-full bg-sand px-2.5 py-1 text-[11.5px] text-brand-900/60 shrink-0">Dr. Gomez</span>
+          </figcaption>
+        </figure>
+              </div>
+      <p class="mt-3 text-[12px] leading-relaxed text-brand-900/35 max-w-3xl">
+        Reviews are reproduced as published by their authors on Google and describe care at this
+        practice generally, not SPRAVATO&reg; treatment specifically. Individual results vary.
+      </p>
+    </div>
+
+    <!-- FAQ -->
+    <div class="mt-12 sm:mt-14 grid lg:grid-cols-12 gap-8 lg:gap-14">
+      <div class="lg:col-span-4 reveal">
+        <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-600 font-semibold">Questions</p>
+        <h2 class="mt-4 font-display text-[1.9rem] sm:text-[2.4rem] leading-[1.1] tracking-tightest text-brand-900 font-light">
+          Good to know before you call.
+        </h2>
+
+        <div class="mt-6 rounded-2xl border border-black/[0.07] bg-white p-5 sm:p-6">
+          <p class="text-[11.5px] uppercase tracking-[0.16em] text-brand-900/40">Ask us directly</p>
+          <a href="tel:+16028248404" class="mt-1.5 block font-display text-[24px] sm:text-[26px] tracking-tight text-brand-900 hover:text-accent-600 transition">(602) 824-8404</a>
+          <p class="mt-1 text-[13.5px] text-brand-900/45">Monday to Friday, 8am–5pm</p>
+          <a href="#eligibility" class="group mt-4 inline-flex items-center gap-2 rounded-full bg-brand-900 px-5 py-3 text-[14.5px] font-medium text-cream hover:bg-brand-800 transition">
+            Check My Eligibility
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-8 reveal" style="transition-delay:.08s">
+                <div class="faq border-b border-black/10 border-t">
+          <button class="faq-btn w-full flex items-start justify-between gap-4 sm:gap-6 py-5 text-left group">
+            <span class="text-[16px] sm:text-[17.5px] leading-snug text-brand-900 font-medium group-hover:text-accent-600 transition">Is SPRAVATO® covered by my insurance?</span>
+            <span class="faq-icon mt-0.5 grid place-items-center h-7 w-7 shrink-0 rounded-full border border-black/15 text-brand-900 transition-transform duration-300">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div>
+              <p class="pb-5 pr-8 sm:pr-14 text-[14.5px] sm:text-[15.5px] leading-relaxed text-brand-900/60">For most patients, yes. The majority of commercial plans, Medicare and many Medicaid programs — including Arizona’s AHCCCS — cover SPRAVATO® for treatment-resistant depression. Coverage is not automatic: insurers require a prior authorization first. Our care coordinators handle that paperwork and talk to your insurer directly.</p>
+            </div>
+          </div>
+        </div>
+                <div class="faq border-b border-black/10 ">
+          <button class="faq-btn w-full flex items-start justify-between gap-4 sm:gap-6 py-5 text-left group">
+            <span class="text-[16px] sm:text-[17.5px] leading-snug text-brand-900 font-medium group-hover:text-accent-600 transition">Will I owe anything out of pocket?</span>
+            <span class="faq-icon mt-0.5 grid place-items-center h-7 w-7 shrink-0 rounded-full border border-black/15 text-brand-900 transition-transform duration-300">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div>
+              <p class="pb-5 pr-8 sm:pr-14 text-[14.5px] sm:text-[15.5px] leading-relaxed text-brand-900/60">Your out-of-pocket cost depends on your insurance plan and may include a deductible, copay or coinsurance for the medication and treatment-related services. Before treatment begins, our team will verify your benefits and review your expected patient responsibility with you.
+Eligible patients with commercial insurance may also qualify for manufacturer savings or rebate programs that can help with certain SPRAVATO® medication and treatment-observation costs. Our team can help you determine whether you may be eligible.</p>
+            </div>
+          </div>
+        </div>
+                <div class="faq border-b border-black/10 ">
+          <button class="faq-btn w-full flex items-start justify-between gap-4 sm:gap-6 py-5 text-left group">
+            <span class="text-[16px] sm:text-[17.5px] leading-snug text-brand-900 font-medium group-hover:text-accent-600 transition">What happens during a treatment session?</span>
+            <span class="faq-icon mt-0.5 grid place-items-center h-7 w-7 shrink-0 rounded-full border border-black/15 text-brand-900 transition-transform duration-300">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div>
+              <p class="pb-5 pr-8 sm:pr-14 text-[14.5px] sm:text-[15.5px] leading-relaxed text-brand-900/60">You self-administer SPRAVATO® nasal spray under the supervision of a healthcare provider at our REMS-certified treatment center. After administration, you will be monitored for at least two hours. Your healthcare provider will monitor you for potential side effects and determine when you are clinically stable and ready to leave. You will need to arrange transportation home and should not drive or operate machinery until the next day, after a full night’s sleep.</p>
+            </div>
+          </div>
+        </div>
+                <div class="faq border-b border-black/10 ">
+          <button class="faq-btn w-full flex items-start justify-between gap-4 sm:gap-6 py-5 text-left group">
+            <span class="text-[16px] sm:text-[17.5px] leading-snug text-brand-900 font-medium group-hover:text-accent-600 transition">How quickly does SPRAVATO® work?</span>
+            <span class="faq-icon mt-0.5 grid place-items-center h-7 w-7 shrink-0 rounded-full border border-black/15 text-brand-900 transition-transform duration-300">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div>
+              <p class="pb-5 pr-8 sm:pr-14 text-[14.5px] sm:text-[15.5px] leading-relaxed text-brand-900/60">Response to SPRAVATO® varies. Some patients may experience improvement earlier in treatment, while others may require multiple treatment sessions before noticing a change. Your clinical team will monitor your symptoms throughout treatment and evaluate your individual response.</p>
+            </div>
+          </div>
+        </div>
+                <div class="faq border-b border-black/10 ">
+          <button class="faq-btn w-full flex items-start justify-between gap-4 sm:gap-6 py-5 text-left group">
+            <span class="text-[16px] sm:text-[17.5px] leading-snug text-brand-900 font-medium group-hover:text-accent-600 transition">Can I drive myself home?</span>
+            <span class="faq-icon mt-0.5 grid place-items-center h-7 w-7 shrink-0 rounded-full border border-black/15 text-brand-900 transition-transform duration-300">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div>
+              <p class="pb-5 pr-8 sm:pr-14 text-[14.5px] sm:text-[15.5px] leading-relaxed text-brand-900/60">No. You will need to arrange transportation home after each SPRAVATO® treatment. You should not drive or operate machinery until the next day, after a full night’s sleep. Your healthcare provider will determine when you are clinically stable and ready to leave the treatment center.</p>
+            </div>
+          </div>
+        </div>
+                <div class="faq border-b border-black/10 ">
+          <button class="faq-btn w-full flex items-start justify-between gap-4 sm:gap-6 py-5 text-left group">
+            <span class="text-[16px] sm:text-[17.5px] leading-snug text-brand-900 font-medium group-hover:text-accent-600 transition">What are the common side effects?</span>
+            <span class="faq-icon mt-0.5 grid place-items-center h-7 w-7 shrink-0 rounded-full border border-black/15 text-brand-900 transition-transform duration-300">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div>
+              <p class="pb-5 pr-8 sm:pr-14 text-[14.5px] sm:text-[15.5px] leading-relaxed text-brand-900/60">Dissociation, dizziness, fatigue, nausea or vomiting, a feeling of being drunk or euphoric, anxiety or numbness, and a spinning sensation. They usually begin shortly after the dose and resolve the same day, which is what the monitoring period is for.</p>
+            </div>
+          </div>
+        </div>
+                <div class="faq border-b border-black/10 ">
+          <button class="faq-btn w-full flex items-start justify-between gap-4 sm:gap-6 py-5 text-left group">
+            <span class="text-[16px] sm:text-[17.5px] leading-snug text-brand-900 font-medium group-hover:text-accent-600 transition">How long does approval take, and what if I am denied?</span>
+            <span class="faq-icon mt-0.5 grid place-items-center h-7 w-7 shrink-0 rounded-full border border-black/15 text-brand-900 transition-transform duration-300">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div>
+              <p class="pb-5 pr-8 sm:pr-14 text-[14.5px] sm:text-[15.5px] leading-relaxed text-brand-900/60">Prior authorization usually takes three days to two weeks. Denials do happen, most often because of missing documentation — if that happens, our team files the appeal on your behalf with the additional clinical evidence.</p>
+            </div>
+          </div>
+        </div>
+                <div class="faq border-b border-black/10 ">
+          <button class="faq-btn w-full flex items-start justify-between gap-4 sm:gap-6 py-5 text-left group">
+            <span class="text-[16px] sm:text-[17.5px] leading-snug text-brand-900 font-medium group-hover:text-accent-600 transition">Do I need a referral to be seen?</span>
+            <span class="faq-icon mt-0.5 grid place-items-center h-7 w-7 shrink-0 rounded-full border border-black/15 text-brand-900 transition-transform duration-300">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-3.5 w-3.5"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </button>
+          <div class="faq-body">
+            <div>
+              <p class="pb-5 pr-8 sm:pr-14 text-[14.5px] sm:text-[15.5px] leading-relaxed text-brand-900/60">No referral is required to schedule an appointment with Interventional Psychiatry of Arizona. However, referral or authorization requirements may vary depending on your insurance plan and the services you receive. Our team can verify your benefits and any applicable requirements before your appointment.</p>
+            </div>
+          </div>
+        </div>
+              </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CONTACT ══════════════════ -->
+<section id="contact" class="relative overflow-hidden bg-brand-950 text-cream grain">
+  <div class="pointer-events-none absolute -left-40 bottom-0 h-[26rem] w-[26rem] rounded-full bg-brand-600/40 blur-[120px]"></div>
+  <div class="pointer-events-none absolute right-0 -top-24 h-[22rem] w-[22rem] rounded-full bg-accent-500/15 blur-[120px]"></div>
+
+  <div class="relative mx-auto max-w-8xl px-5 sm:px-6 lg:px-10 py-12 sm:py-14 lg:py-16">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+
+      <div class="lg:col-span-6 reveal">
+        <p class="text-[11.5px] sm:text-[12px] uppercase tracking-[0.24em] text-accent-400 font-semibold">Get started</p>
+        <h2 class="mt-3 font-display text-[1.9rem] sm:text-[2.5rem] lg:text-[2.9rem] leading-[1.1] tracking-tightest font-light">
+          You have waited long enough.
+        </h2>
+        <p class="mt-4 text-[15.5px] sm:text-[16.5px] leading-relaxed text-cream/65 font-light max-w-md">
+          Prior authorization takes three days to two weeks. The sooner we start it, the sooner you
+          can start treatment — and the first conversation costs you nothing.
+        </p>
+
+        <div class="mt-7 flex flex-col sm:flex-row gap-3">
+          <a href="tel:+16028248404" class="inline-flex items-center justify-center gap-2.5 rounded-full bg-accent-500 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-white hover:bg-accent-600 transition shadow-lg shadow-accent-500/20">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
+            Call (602) 824-8404          </a>
+          <a href="#eligibility" class="group inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-3.5 sm:px-7 sm:py-4 text-[15.5px] font-medium text-cream hover:bg-white/10 transition backdrop-blur">
+            Check My Eligibility
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4 transition-transform group-hover:-translate-y-0.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          </a>
+        </div>
+
+        <p class="mt-6 flex items-start gap-2.5 text-[13px] sm:text-[13.5px] leading-relaxed text-cream/50">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-4 w-4 shrink-0 mt-0.5 text-accent-400"><path d="M12 8.5v4.5M12 16.5h.01"/><path d="M10.3 3.9 2.6 17.3A2 2 0 0 0 4.3 20.3h15.4a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+          <span><span class="text-cream/80 font-medium">In crisis?</span> Call 911, or call or text
+            <a href="tel:988" class="font-semibold text-accent-400 hover:underline">988</a> for the 24/7 Suicide &amp; Crisis Lifeline.</span>
+        </p>
+      </div>
+
+      <div class="lg:col-span-6 reveal" style="transition-delay:.1s">
+        <div class="overflow-hidden rounded-2xl border border-white/12 bg-white/[0.04]">
+          <iframe
+            title="Map to Interventional Psychiatry of Arizona, 2929 E Camelback Rd #119, Phoenix, AZ 85016"
+            src="https://www.google.com/maps?cid=5987873748282924908&output=embed"
+            class="block h-52 sm:h-60 w-full grayscale-[0.3] contrast-[1.05]"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <div class="flex flex-wrap items-center justify-between gap-3 px-5 sm:px-6 py-4">
+            <a href="https://maps.app.goo.gl/4DGBt44Sru7zcEqH7" target="_blank" rel="noopener noreferrer"
+               class="group block text-[14px] leading-snug text-cream/70 hover:text-cream transition">
+              <span class="text-cream">2929 E Camelback Rd #119</span><br>Phoenix, AZ 85016              <span class="mt-1.5 flex items-center gap-1.5 text-[13px] text-accent-400">
+                Get Directions
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3 w-3 transition-transform group-hover:translate-x-0.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+              </span>
+            </a>
+            <p class="text-[14px] leading-snug text-cream/45 shrink-0">Mon–Fri<br>8am–5pm</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="bg-brand-950 border-t border-white/10 text-cream/60 pb-24 lg:pb-0">
+  <div class="mx-auto max-w-8xl px-5 sm:px-6 lg:px-10 py-10 sm:py-12">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10">
+
+      <div class="lg:col-span-5">
+        <img src="/spravato/assets/img/interpsychaz-logo.webp?v=1792242630" alt="Interventional Psychiatry of Arizona — Building Strong Minds"
+             width="545" height="228" loading="lazy" class="h-14 sm:h-16 w-auto">
+        <p class="mt-5 text-[14px] leading-relaxed max-w-sm">
+          A REMS-certified SPRAVATO&reg; treatment center in Phoenix — alongside TMS, ECT,
+          medication management and psychotherapy.
+        </p>
+        <a href="tel:+16028248404" class="mt-5 inline-flex items-center gap-2.5 rounded-full bg-accent-500 px-5 py-3 text-[14.5px] font-medium text-white hover:bg-accent-600 transition">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
+          Call (602) 824-8404        </a>
+      </div>
+
+      <div class="lg:col-span-3">
+        <p class="text-[11.5px] uppercase tracking-[0.18em] text-cream/35">On this page</p>
+        <ul class="mt-4 space-y-2.5 text-[14px]">
+          <li><a href="#qualify"   class="hover:text-accent-400 transition">Do I qualify?</a></li>
+          <li><a href="#science"   class="hover:text-accent-400 transition">How it works</a></li>
+          <li><a href="#process"   class="hover:text-accent-400 transition">Your treatment</a></li>
+          <li><a href="#insurance" class="hover:text-accent-400 transition">Insurance</a></li>
+          <li><a href="#safety"    class="hover:text-accent-400 transition">Safety</a></li>
+          <li><a href="#faq"       class="hover:text-accent-400 transition">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-4">
+        <p class="text-[11.5px] uppercase tracking-[0.18em] text-cream/35">Visit</p>
+        <ul class="mt-4 space-y-2.5 text-[14px]">
+          <li>2929 E Camelback Rd #119<br>Phoenix, AZ 85016</li>
+          <li class="text-cream/40">Mon–Fri · 8am–5pm</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-9 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-[12.5px] text-cream/40">
+      <p>&copy; 2026 Interventional Psychiatry of Arizona. All rights reserved.</p>
+      <p>Phoenix, AZ 85016 &middot; Mon–Fri 8am–5pm</p>
+    </div>
+
+    <p class="mt-6 text-[11.5px] leading-relaxed text-cream/25 max-w-4xl">
+      Savings program eligibility, benefits and plan participation are set by the program sponsor
+      and your insurer and can change; restrictions apply. Coverage varies by plan and by
+      treatment. Carrier names and logos are the property of their respective owners and are shown
+      solely to indicate plans accepted at this practice; their use does not imply endorsement or
+      affiliation. SPRAVATO&reg; and SPRAVATO withMe are trademarks of Janssen Pharmaceuticals, Inc.,
+      used here only to identify the treatment offered at this practice — Interventional Psychiatry of
+      Arizona is an independent REMS-certified provider, not affiliated with, endorsed by or sponsored
+      by Janssen Pharmaceuticals, Inc. or Johnson &amp; Johnson. The content on this page is for
+      general informational purposes only and is not a substitute for professional medical advice,
+      diagnosis or treatment, nor for the full Prescribing Information, Boxed Warning and Medication
+      Guide for SPRAVATO&reg;.
+    </p>
+  </div>
+</footer>
+
+<!-- ══════════════════ STICKY MOBILE CTA ══════════════════ -->
+<div id="stickyBar" class="lg:hidden fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-brand-950/95 px-4 pt-3 backdrop-blur-xl">
+  <div class="flex items-center gap-2.5">
+    <a href="tel:+16028248404" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-3.5 text-[14.5px] font-medium text-cream">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" class="h-4 w-4"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2c.7 0 1.3.5 1.5 1.2l.6 2.4c.1.6-.1 1.2-.6 1.5l-1.2.9a12 12 0 0 0 5.2 5.2l.9-1.2c.4-.5 1-.7 1.5-.6l2.4.6c.7.2 1.2.8 1.2 1.5v2c0 .8-.7 1.5-1.5 1.5A15.5 15.5 0 0 1 4 5.5Z"/></svg>
+      Call
+    </a>
+    <a href="#eligibility" class="flex-[1.5] inline-flex items-center justify-center gap-2 rounded-full bg-accent-500 px-4 py-3.5 text-[14.5px] font-medium text-white">
+      Check My Eligibility
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</div>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MedicalClinic","name":"Interventional Psychiatry of Arizona","url":"http://127.0.0.1:8888/spravato/","telephone":"(602) 824-8404","image":"http://127.0.0.1:8888/spravato/assets/img/ambience/hero-happy-patient.jpg?v=1792242630","address":{"@type":"PostalAddress","streetAddress":"2929 E Camelback Rd #119","addressLocality":"Phoenix","addressRegion":"AZ","postalCode":"85016","addressCountry":"US"},"medicalSpecialty":"Psychiatric","availableService":{"@type":"MedicalTherapy","name":"SPRAVATO® (esketamine) nasal spray","description":"REMS-certified esketamine nasal spray treatment, used alongside an oral antidepressant, for adults with treatment-resistant depression and for depressive symptoms with suicidal thoughts or actions."}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is SPRAVATO® covered by my insurance?","acceptedAnswer":{"@type":"Answer","text":"For most patients, yes. The majority of commercial plans, Medicare and many Medicaid programs — including Arizona’s AHCCCS — cover SPRAVATO® for treatment-resistant depression. Coverage is not automatic: insurers require a prior authorization first. Our care coordinators handle that paperwork and talk to your insurer directly."}},{"@type":"Question","name":"Will I owe anything out of pocket?","acceptedAnswer":{"@type":"Answer","text":"Your out-of-pocket cost depends on your insurance plan and may include a deductible, copay or coinsurance for the medication and treatment-related services. Before treatment begins, our team will verify your benefits and review your expected patient responsibility with you.\r\nEligible patients with commercial insurance may also qualify for manufacturer savings or rebate programs that can help with certain SPRAVATO® medication and treatment-observation costs. Our team can help you determine whether you may be eligible."}},{"@type":"Question","name":"What happens during a treatment session?","acceptedAnswer":{"@type":"Answer","text":"You self-administer SPRAVATO® nasal spray under the supervision of a healthcare provider at our REMS-certified treatment center. After administration, you will be monitored for at least two hours. Your healthcare provider will monitor you for potential side effects and determine when you are clinically stable and ready to leave. You will need to arrange transportation home and should not drive or operate machinery until the next day, after a full night’s sleep."}},{"@type":"Question","name":"How quickly does SPRAVATO® work?","acceptedAnswer":{"@type":"Answer","text":"Response to SPRAVATO® varies. Some patients may experience improvement earlier in treatment, while others may require multiple treatment sessions before noticing a change. Your clinical team will monitor your symptoms throughout treatment and evaluate your individual response."}},{"@type":"Question","name":"Can I drive myself home?","acceptedAnswer":{"@type":"Answer","text":"No. You will need to arrange transportation home after each SPRAVATO® treatment. You should not drive or operate machinery until the next day, after a full night’s sleep. Your healthcare provider will determine when you are clinically stable and ready to leave the treatment center."}},{"@type":"Question","name":"What are the common side effects?","acceptedAnswer":{"@type":"Answer","text":"Dissociation, dizziness, fatigue, nausea or vomiting, a feeling of being drunk or euphoric, anxiety or numbness, and a spinning sensation. They usually begin shortly after the dose and resolve the same day, which is what the monitoring period is for."}},{"@type":"Question","name":"How long does approval take, and what if I am denied?","acceptedAnswer":{"@type":"Answer","text":"Prior authorization usually takes three days to two weeks. Denials do happen, most often because of missing documentation — if that happens, our team files the appeal on your behalf with the additional clinical evidence."}},{"@type":"Question","name":"Do I need a referral to be seen?","acceptedAnswer":{"@type":"Answer","text":"No referral is required to schedule an appointment with Interventional Psychiatry of Arizona. However, referral or authorization requirements may vary depending on your insurance plan and the services you receive. Our team can verify your benefits and any applicable requirements before your appointment."}}]}]}</script>
+
+<script>
+/* ---------- mobile menu ---------- */
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const nav = document.getElementById('nav');
+
+/* ---------- header state ----------
+   Transparent over the hero, solid cream once scrolled past it — and always
+   solid while the mobile drawer is open, so the links stay readable. */
+const setNavState = () => {
+  const solid = window.scrollY > 12 || !mobileMenu.classList.contains('hidden');
+  nav.dataset.state = solid ? 'solid' : 'top';
+  nav.classList.toggle('shadow-[0_1px_24px_rgba(10,28,27,0.08)]', solid);
+};
+setNavState();
+window.addEventListener('scroll', setNavState, { passive: true });
+
+menuBtn.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('hidden') === false;
+  menuBtn.setAttribute('aria-expanded', String(open));
+  setNavState();
+});
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mobileMenu.classList.add('hidden');
+  menuBtn.setAttribute('aria-expanded', 'false');
+  setNavState();
+}));
+
+/* ---------- sticky mobile CTA ----------
+   Hidden while the hero form is on screen — two competing calls to action in
+   the same viewport just split attention. */
+(() => {
+  const bar  = document.getElementById('stickyBar');
+  const form = document.getElementById('eligibility');
+  if (!bar || !form) return;
+  new IntersectionObserver(
+    ([e]) => bar.classList.toggle('show', !e.isIntersecting),
+    { threshold: 0 }
+  ).observe(form);
+})();
+
+/* ---------- scroll reveal ---------- */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* ---------- FAQ accordion ---------- */
+document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq').forEach(f => f.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+/* ---------- testimonial rail ---------- */
+(() => {
+  const track = document.getElementById('tTrack');
+  if (!track) return;
+  const prev = document.getElementById('tPrev');
+  const next = document.getElementById('tNext');
+  const step = () => (track.querySelector('.t-card')?.offsetWidth || 320) + 20;
+
+  const sync = () => {
+    if (!prev || !next) return;
+    const max = track.scrollWidth - track.clientWidth;
+    prev.disabled = track.scrollLeft < 4;
+    next.disabled = track.scrollLeft > max - 4;
+  };
+
+  prev?.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+  next?.addEventListener('click', () => track.scrollBy({ left:  step(), behavior: 'smooth' }));
+  track.addEventListener('scroll', sync, { passive: true });
+  window.addEventListener('resize', sync);
+  sync();
+
+  /* Only offer "Read Full Review" on the reviews that are actually clipped. */
+  track.querySelectorAll('.t-card').forEach(card => {
+    const quote = card.querySelector('.quote');
+    const more  = card.querySelector('.q-more');
+    if (quote.scrollHeight > quote.clientHeight + 2) card.classList.add('q-clamped');
+    more.addEventListener('click', () => {
+      card.classList.toggle('q-open');
+      more.textContent = card.classList.contains('q-open') ? 'Show Less' : 'Read Full Review';
+      sync();
+    });
+  });
+})();
+
+/* ---------- photo fallback ----------
+   If a photo fails to load, drop it so the brand colour underneath shows through
+   rather than leaving a broken-image frame in the layout. */
+document.querySelectorAll('.js-photo').forEach(im => {
+  im.addEventListener('error', () => im.remove(), { once: true });
+});
+
+/* ---------- eligibility form ----------
+   Submits natively, so Formester records exactly one entry and the browser
+   lands on the confirmation page. Set that redirect on the Formester form.
+
+   This used to POST over fetch to keep the visitor on the page, falling back to
+   form.submit() when the call could not be confirmed. Formester sends no
+   Access-Control-Allow-Origin header, so the fetch always rejected — but only
+   *after* the POST had already been recorded. The fallback then posted a second
+   time and every enquiry arrived twice. Do not reintroduce that pattern without
+   CORS support on the endpoint. */
+(() => {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+  const btn = form.querySelector('button[type="submit"]');
+  let sent = false;
+
+  form.addEventListener('submit', (e) => {
+    /* Bots fill the hidden field; drop those without telling them why. */
+    if (form.elements.company && form.elements.company.value) {
+      e.preventDefault();
+      return;
+    }
+    /* An impatient second click would file a duplicate of its own. */
+    if (sent) { e.preventDefault(); return; }
+    sent = true;
+    /* Deferred, so the button is still enabled while the browser serialises
+       the form — a disabled control is omitted from the payload. */
+    setTimeout(() => {
+      btn.disabled = true;
+      btn.classList.add('opacity-70');
+      btn.textContent = 'Sending…';
+    }, 0);
+  });
+})();
+</script>
+</body>
+</html>

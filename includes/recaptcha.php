@@ -46,17 +46,74 @@ $RECAPTCHA_SITE_KEY = '6Ldc2O4tAAAAAHapsM6mHnimBBdh-2m41fmXHVPz';
   };
 
   /* Capture on document so this runs before any page-level submit handler.
-     A form without a solved challenge never posts. */
+     A form without a solved challenge never posts. If the reCAPTCHA script
+     cannot load (blocked network/extension), submissions are allowed through
+     rather than silently lost. */
   document.addEventListener('submit', (e) => {
     const form = e.target;
     if (!form.matches || !form.matches('form[action*="formester.com"]')) return;
+    if (window.ipazRecaptchaFailed && window.ipazRecaptchaFailed()) return;
     const w = widgets.get(form);
     const token = w && window.grecaptcha && grecaptcha.enterprise.getResponse(w.id);
     if (token) return;
     e.preventDefault();
     e.stopPropagation();
-    if (w) w.err.classList.add('is-visible');
+    if (window.ipazRecaptchaEnsure) window.ipazRecaptchaEnsure();
+    let err = w && w.err;
+    if (!err) {
+      err = form.querySelector('.ipaz-recaptcha-error');
+      if (!err) {
+        err = document.createElement('p');
+        err.className = 'ipaz-recaptcha-error';
+        err.setAttribute('role', 'alert');
+        err.textContent = 'Please confirm you are not a robot.';
+        const btn = form.querySelector('[type="submit"]');
+        if (btn && btn.parentNode) btn.parentNode.insertBefore(err, btn.nextSibling);
+        else form.appendChild(err);
+      }
+    }
+    err.classList.add('is-visible');
   }, true);
 })();
 </script>
-<script src="https://www.google.com/recaptcha/enterprise.js?onload=ipazRecaptchaLoad&render=explicit" async defer></script>
+<script>
+/* Load reCAPTCHA Enterprise only when a form is near the viewport or the
+   visitor starts interacting. Keeps ~350 KB of third-party JS off the
+   critical path on every page. */
+(function () {
+  var SRC = 'https://www.google.com/recaptcha/enterprise.js?onload=ipazRecaptchaLoad&render=explicit';
+  var loading = false, failed = false;
+  window.ipazRecaptchaFailed = function () { return failed; };
+  function load() {
+    if (loading || failed) return;
+    if (window.grecaptcha && window.grecaptcha.enterprise) return;
+    loading = true;
+    var s = document.createElement('script');
+    s.src = SRC;
+    s.async = true;
+    s.defer = true;
+    s.onerror = function () { failed = true; loading = false; };
+    document.head.appendChild(s);
+  }
+  window.ipazRecaptchaEnsure = load;
+
+  var forms = document.querySelectorAll('form[action*="formester.com"]');
+  if ('IntersectionObserver' in window && forms.length) {
+    var io = new IntersectionObserver(function (entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) { io.disconnect(); load(); return; }
+      }
+    }, { rootMargin: '600px 0px' });
+    for (var i = 0; i < forms.length; i++) io.observe(forms[i]);
+  }
+  /* Real gestures only. The consent banner focuses itself on load, so focusin
+     must be scoped to a form or it would pull reCAPTCHA in on every page. */
+  function inForm(t) {
+    return !!(t && t.closest && t.closest('form[action*="formester.com"]'));
+  }
+  document.addEventListener('pointerdown', load, { once: true, passive: true, capture: true });
+  document.addEventListener('touchstart', load, { once: true, passive: true, capture: true });
+  document.addEventListener('focusin', function (e) { if (inForm(e.target)) load(); }, true);
+  document.addEventListener('keydown', function (e) { if (inForm(e.target)) load(); }, true);
+})();
+</script>

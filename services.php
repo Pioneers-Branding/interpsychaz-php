@@ -28,25 +28,25 @@ require_once __DIR__ . '/includes/header.php';
 <div class="dm-flex">
 <div class="dm-half">
 <div align="center">
-<p><img alt="" decoding="async" src="/wp-content/uploads/2025/03/tms-therapy-scaled.jpg"/></p>
+<p><img alt="" decoding="async" src="/wp-content/uploads/2025/03/tms-therapy-scaled.jpg.webp"/></p>
 <p><a href="/tms-therapy/">TMS Therapy</a></p>
 </div>
 </div>
 <div class="dm-half">
 <div align="center">
-<p><img alt="" class="aligncenter size-full wp-image-370" decoding="async" fetchpriority="high" height="1536" sizes="(max-width: 1920px) 100vw, 1920px" src="/wp-content/uploads/2025/03/brain1.jpg" srcset="/wp-content/uploads/2025/03/brain1.jpg 1920w, /wp-content/uploads/2025/03/brain1-300x240.jpg 300w, /wp-content/uploads/2025/03/brain1-1024x819.jpg 1024w, /wp-content/uploads/2025/03/brain1-768x614.jpg 768w, /wp-content/uploads/2025/03/brain1-1536x1229.jpg 1536w" width="1920"/></p>
+<p><img alt="" class="aligncenter size-full wp-image-370" decoding="async" fetchpriority="high" height="1536" sizes="(max-width: 1920px) 100vw, 1920px" src="/wp-content/uploads/2025/03/brain1.jpg.webp" srcset="/wp-content/uploads/2025/03/brain1.jpg.webp 1920w, /wp-content/uploads/2025/03/brain1-300x240.jpg 300w, /wp-content/uploads/2025/03/brain1-1024x819.jpg.webp 1024w, /wp-content/uploads/2025/03/brain1-768x614.jpg 768w, /wp-content/uploads/2025/03/brain1-1536x1229.jpg.webp 1536w" width="1920"/></p>
 <p><a href="/electroconvulsive-therapy-ect/">ECT</a></p>
 </div>
 </div>
 <div class="dm-half">
 <div align="center">
-<p><img alt="" decoding="async" src="/wp-content/uploads/2025/05/displaying_teenagers_6_webp.jpg"/></p>
+<p><img alt="" decoding="async" src="/wp-content/uploads/2025/05/displaying_teenagers_6_webp.jpg.webp"/></p>
 <p><a href="/spravato-esketamine-nasal-spray/">Spravato</a></p>
 </div>
 </div>
 <div class="dm-half">
 <div align="center">
-<p><img alt="" decoding="async" src="/wp-content/uploads/2025/03/Pharmacy-4.jpg"/></p>
+<p><img alt="" decoding="async" src="/wp-content/uploads/2025/03/Pharmacy-4.jpg.webp"/></p>
 <p><a href="/medication-management/">Medication Management</a></p>
 </div>
 </div>

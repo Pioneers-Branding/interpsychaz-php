@@ -27,11 +27,11 @@ require_once __DIR__ . '/includes/header.php';
 							<div class="dm-container">
 								<div class="dm-flex">
 									<div class="dm-half wow fadeInRight"><img alt=""
-											data-lazy-src="/wp-content/uploads/2025/03/discussing-problem-patient.jpg"
+											data-lazy-src="/wp-content/uploads/2025/03/discussing-problem-patient.jpg.webp"
 											decoding="async"
 											src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" /><noscript><img
 												alt="" decoding="async"
-												src="/wp-content/uploads/2025/03/discussing-problem-patient.jpg" /></noscript>
+												src="/wp-content/uploads/2025/03/discussing-problem-patient.jpg.webp" /></noscript>
 									</div>
 									<div class="dm-half wow fadeInLeft dm-space">
 										<h4>We work alongside your existing treatment plan to enhance your mental health
@@ -59,16 +59,16 @@ require_once __DIR__ . '/includes/header.php';
 									<div class="dm-half wow fadeInRight"><img alt=""
 											class="aligncenter size-full wp-image-352"
 											data-lazy-sizes="(max-width: 1920px) 100vw, 1920px"
-											data-lazy-src="/wp-content/uploads/2025/03/doctor.jpg"
-											data-lazy-srcset="/wp-content/uploads/2025/03/doctor.jpg 1920w, /wp-content/uploads/2025/03/doctor-300x200.jpg 300w, /wp-content/uploads/2025/03/doctor-1024x683.jpg 1024w, /wp-content/uploads/2025/03/doctor-768x512.jpg 768w, /wp-content/uploads/2025/03/doctor-1536x1024.jpg 1536w, /wp-content/uploads/2025/03/doctor-800x533.jpg 800w"
+											data-lazy-src="/wp-content/uploads/2025/03/doctor.jpg.webp"
+											data-lazy-srcset="/wp-content/uploads/2025/03/doctor.jpg.webp 1920w, /wp-content/uploads/2025/03/doctor-300x200.jpg 300w, /wp-content/uploads/2025/03/doctor-1024x683.jpg.webp 1024w, /wp-content/uploads/2025/03/doctor-768x512.jpg 768w, /wp-content/uploads/2025/03/doctor-1536x1024.jpg.webp 1536w, /wp-content/uploads/2025/03/doctor-800x533.jpg 800w"
 											decoding="async" fetchpriority="high" height="1280"
 											src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201920%201280'%3E%3C/svg%3E"
 											width="1920" /><noscript><img alt=""
 												class="aligncenter size-full wp-image-352" decoding="async"
 												fetchpriority="high" height="1280"
 												sizes="(max-width: 1920px) 100vw, 1920px"
-												src="/wp-content/uploads/2025/03/doctor.jpg"
-												srcset="/wp-content/uploads/2025/03/doctor.jpg 1920w, /wp-content/uploads/2025/03/doctor-300x200.jpg 300w, /wp-content/uploads/2025/03/doctor-1024x683.jpg 1024w, /wp-content/uploads/2025/03/doctor-768x512.jpg 768w, /wp-content/uploads/2025/03/doctor-1536x1024.jpg 1536w, /wp-content/uploads/2025/03/doctor-800x533.jpg 800w"
+												src="/wp-content/uploads/2025/03/doctor.jpg.webp"
+												srcset="/wp-content/uploads/2025/03/doctor.jpg.webp 1920w, /wp-content/uploads/2025/03/doctor-300x200.jpg 300w, /wp-content/uploads/2025/03/doctor-1024x683.jpg.webp 1024w, /wp-content/uploads/2025/03/doctor-768x512.jpg 768w, /wp-content/uploads/2025/03/doctor-1536x1024.jpg.webp 1536w, /wp-content/uploads/2025/03/doctor-800x533.jpg 800w"
 												width="1920" /></noscript>
 									</div>
 									<div class="dm-half wow fadeInLeft dm-space">

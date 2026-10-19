@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/header.php';
 <div class="single_post">
 <div class="post-single-content box mark-links entry-content">
 <div class="thecontent">
-<figure class="wp-block-image size-large"><img alt="How Many Sessions of TMS Are Needed?" class="wp-image-999" decoding="async" fetchpriority="high" height="685" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2026/08/tms_sessions_thumbnail.png" srcset="/wp-content/uploads/2026/08/tms_sessions_thumbnail.png 1024w" width="1024"/></figure>
+<figure class="wp-block-image size-large"><img alt="How Many Sessions of TMS Are Needed?" class="wp-image-999" decoding="async" fetchpriority="high" height="685" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2026/08/tms_sessions_thumbnail.png.webp" srcset="/wp-content/uploads/2026/08/tms_sessions_thumbnail.png.webp 1024w" width="1024"/></figure>
 
 <p class="wp-block-paragraph">When considering treatments for treatment-resistant depression or anxiety, Transcranial Magnetic Stimulation (TMS) is often recommended due to its high efficacy and non-invasive nature. However, a common question we hear at <strong><a href="/">Interventional Psychiatry of Arizona</a></strong> is, <em>"How many sessions of TMS are needed?"</em> Understanding the typical TMS protocol is vital for setting realistic expectations and planning your path to wellness.</p>
 

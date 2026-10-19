@@ -37,7 +37,7 @@ require_once __DIR__ . '/../includes/header.php';
 							<div class="dm-container">
 								<div class="dm-flex" style="align-items: center;">
 									<div class="dm-half wow fadeInRight">
-                                        <img src="/wp-content/uploads/2026/05/Evelyn-Guerrero-Patient-Care-Coordinator.png" alt="Mental Health Care near Tempe" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                                        <img src="/wp-content/uploads/2026/05/Evelyn-Guerrero-Patient-Care-Coordinator.png.webp" alt="Mental Health Care near Tempe" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 20px;">
                                         <div style="background: #ef7136; color: white; padding: 20px; border-radius: 8px; margin-top: 20px;">
                                             <h4 style="color: white; margin-bottom: 10px;"><i class="fa fa-info-circle"></i> Insight</h4>
                                             <p style="margin: 0; font-size: 16px;">Studies show that young adults face the highest rates of major depressive episodes. Early intervention with treatments like TMS can significantly alter the trajectory of mental health.</p>

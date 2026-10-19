@@ -24,8 +24,13 @@ require_once __DIR__ . '/includes/header.php';
 <div class="homepage" id="page">
 	<div class="hide-las no-slider">
 		<div class="video_holder">
-			<video autoplay="" loop="" muted="" playsinline="" preload="auto">
-				<source src="/wp-content/uploads/2025/06/UntitledCOMPRESSED.mp4" type="video/mp4" />
+			<style>
+			.video_holder img.hero-poster{position:absolute;top:0;left:0;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:opacity .5s ease}
+			.video_holder.hero-playing img.hero-poster{opacity:0}
+			</style>
+			<img alt="" class="hero-poster" decoding="async" fetchpriority="high" height="720" src="/wp-content/uploads/2025/06/UntitledCOMPRESSED-poster.webp" width="1280"/>
+			<video fetchpriority="high" id="heroVideo" loop muted playsinline poster="/wp-content/uploads/2025/06/UntitledCOMPRESSED-poster.webp" preload="none">
+				<source src="/wp-content/uploads/2025/06/UntitledCOMPRESSED.mp4" type="video/mp4">
 			</video>
 			<div class="carousel-caption">
 				<h1 class="wow fadeIn">TMS Therapy & Psychiatric Care in Phoenix, AZ</h1>
@@ -36,6 +41,18 @@ require_once __DIR__ . '/includes/header.php';
 			</div>
 		</div>
 	</div>
+	<script>
+	(function(){var v=document.getElementById('heroVideo');if(!v||!v.play){return;}
+	var holder=v.parentNode,poster=holder.querySelector('img.hero-poster');
+	var started=false;
+	var evs=['pointermove','scroll','wheel','touchstart','keydown','pointerdown'];
+	var go=function(){if(started){return;}started=true;
+	evs.forEach(function(n){window.removeEventListener(n,go,true);});
+	v.addEventListener('playing',function(){holder.classList.add('hero-playing');},{once:true});
+	var p=v.play();if(p&&p.catch){p.catch(function(){});}};
+	evs.forEach(function(n){window.addEventListener(n,go,{passive:true,capture:true});});
+	})();
+	</script>
 	<div class="mobile_cta_buttons hide-d mobile-btn">
 		<p class="mobileBtn phoneBtn"><a href="tel:<?php echo SITE_PHONE_RAW; ?>"
 				onclick="gtag('event', 'Call Us', { event_category: 'Mobile', value: 25});">Call Us:
@@ -78,21 +95,17 @@ require_once __DIR__ . '/includes/header.php';
 				Psychotic Disorders, Mood Disorders, ADHD, Cognitive Disorders, and other Brain Disorders.</p>
 			<div class="dm-flex">
 				<div class="dm-third wow fadeInUp">
-					<img alt="" data-lazy-src="/wp-content/uploads/2025/03/psychiatry-1-2.jpg"
+					<img alt="" data-lazy-src="/wp-content/uploads/2025/03/psychiatry-1-2.jpg.webp"
 						src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" /><noscript><img
-							alt="" src="/wp-content/uploads/2025/03/psychiatry-1-2.jpg" /></noscript>
+							alt="" src="/wp-content/uploads/2025/03/psychiatry-1-2.jpg.webp" /></noscript>
 					<h4>Experienced Experts</h4>
 				</div>
 				<div class="dm-third wow fadeInUp">
-					<img alt="" data-lazy-src="/wp-content/uploads/2025/03/psychiatry-28-3.jpg"
-						src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" /><noscript><img
-							alt="" src="/wp-content/uploads/2025/03/psychiatry-28-3.jpg" /></noscript>
+					<img alt="" width="800" height="531" data-lazy-src="/wp-content/uploads/2025/03/psychiatry-28-3.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20531'%3E%3C/svg%3E" /><noscript><img alt="" width="800" height="531" src="/wp-content/uploads/2025/03/psychiatry-28-3.jpg.webp" /></noscript>
 					<h4>Innovative Treatments for Lasting Relief</h4>
 				</div>
 				<div class="dm-third wow fadeInUp">
-					<img alt="" data-lazy-src="/wp-content/uploads/2025/03/psychiatry-16.jpg"
-						src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" /><noscript><img
-							alt="" src="/wp-content/uploads/2025/03/psychiatry-16.jpg" /></noscript>
+					<img alt="" width="800" height="533" data-lazy-src="/wp-content/uploads/2025/03/psychiatry-16.jpg.webp" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20533'%3E%3C/svg%3E" /><noscript><img alt="" width="800" height="533" src="/wp-content/uploads/2025/03/psychiatry-16.jpg.webp" /></noscript>
 					<h4>Personalized Care Tailored to Your Needs</h4>
 				</div>
 			</div>
@@ -175,10 +188,10 @@ require_once __DIR__ . '/includes/header.php';
 		</div>
 		<div class="cc container">
 			<img alt="Innovative solutions for mental health treatment at Interventional Psychiatry of Arizona"
-				data-lazy-src="/wp-content/uploads/2025/03/smiles8-1.jpg"
+				data-lazy-src="/wp-content/uploads/2025/03/smiles8-1.jpg.webp"
 				src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" /><noscript><img
 					alt="Innovative solutions for mental health treatment at Interventional Psychiatry of Arizona"
-					src="/wp-content/uploads/2025/03/smiles8-1.jpg" /></noscript>
+					src="/wp-content/uploads/2025/03/smiles8-1.jpg.webp" /></noscript>
 			<div class="dm-flex">
 				<div class="association-logos-dm">
 					<div class="dm-container">
@@ -365,10 +378,10 @@ require_once __DIR__ . '/includes/header.php';
 					<div class="dm-flex-box">
 						<div class="dm-half">
 							<img alt="Magstim TMS clinical treatment system"
-								data-lazy-src="/wp-content/uploads/2025/04/Magstim-TMS-Clinical-Treatment-Service.jpg"
+								data-lazy-src="/wp-content/uploads/2025/04/Magstim-TMS-Clinical-Treatment-Service.jpg.webp"
 								src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" /><noscript><img
 									alt="Magstim TMS clinical treatment system"
-									src="/wp-content/uploads/2025/04/Magstim-TMS-Clinical-Treatment-Service.jpg" /></noscript>
+									src="/wp-content/uploads/2025/04/Magstim-TMS-Clinical-Treatment-Service.jpg.webp" /></noscript>
 						</div>
 						<div class="dm-half">
 							<div>
@@ -384,10 +397,10 @@ require_once __DIR__ . '/includes/header.php';
 					<div class="dm-flex-box">
 						<div class="dm-half">
 							<img alt="Psychiatric medication management"
-								data-lazy-src="/wp-content/uploads/2025/03/psychiatrymedicationsmanagement_img.jpg"
+								data-lazy-src="/wp-content/uploads/2025/03/psychiatrymedicationsmanagement_img.jpg.webp"
 								src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" /><noscript><img
 									alt="Psychiatric medication management"
-									src="/wp-content/uploads/2025/03/psychiatrymedicationsmanagement_img.jpg" /></noscript>
+									src="/wp-content/uploads/2025/03/psychiatrymedicationsmanagement_img.jpg.webp" /></noscript>
 						</div>
 						<div class="dm-half">
 							<div>

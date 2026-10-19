@@ -51,7 +51,7 @@ require_once __DIR__ . '/includes/header.php';
                                         </ul>
 									</div>
 									<div class="dm-half wow fadeInRight dm-space">
-                                        <img alt="Therapist discussing ADHD strategies" class="aligncenter size-full" decoding="async" fetchpriority="high" src="/wp-content/uploads/2025/07/displaying_adhd_jpg.jpg" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
+                                        <img alt="Therapist discussing ADHD strategies" class="aligncenter size-full" decoding="async" fetchpriority="high" src="/wp-content/uploads/2025/07/displaying_adhd_jpg.jpg.webp" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" />
 									</div>
 								</div>
 							</div>
