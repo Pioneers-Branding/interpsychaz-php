@@ -161,16 +161,23 @@ $reviews = [
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7TQS8BS5C3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NRTNJ3X4');</script>
+<!-- End Google Tag Manager -->
 
-  gtag('config', 'G-7TQS8BS5C3');
-  gtag('config', 'AW-11337249981');
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "z0k3sueo0e");
 </script>
+
 
 <title>SPRAVATO&reg; (Esketamine) Nasal Spray in Phoenix, AZ | Interventional Psychiatry of Arizona</title>
 <meta name="description" content="REMS-certified SPRAVATO® (esketamine) nasal spray for treatment-resistant depression in Phoenix, AZ. Relief for some patients within 24 hours. Most insurance accepted — we handle the prior authorization. Call (602) 824-8404.">
@@ -324,6 +331,10 @@ tailwind.config = {
 </head>
 
 <body class="bg-cream text-ink font-sans antialiased selection:bg-accent-200 selection:text-brand-900">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRTNJ3X4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- ══════════════════ TOP BAR ══════════════════ -->
 <div class="hidden md:block bg-brand-950 text-brand-200/80 text-[13px]">
