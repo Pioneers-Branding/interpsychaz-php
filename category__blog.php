@@ -24,6 +24,26 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
+<a class="post-image post-image-left schema-featured" href="/how-long-does-tms-last-for-depression/" id="post-image-thumbnail" title="How Long Does TMS Last for Depression? Treatment Results">
+<div class="post-image-thumbnail"><img alt="How Long Does TMS Last for Depression? Treatment Results" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" fetchpriority="high" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2026/10/how-long-does-tms-last-for-depression-thumbnail.jpg.webp" srcset="/wp-content/uploads/2026/10/how-long-does-tms-last-for-depression-thumbnail.jpg.webp 800w" title="" width="800"/></div> </a>
+</div>
+<div class="dm-half post-half">
+<p style="font-size:12px; color:#666; margin-bottom:5px;">October 23, 2026</p>
+<h3 class="title front-view-title"><a href="/how-long-does-tms-last-for-depression/" title="How Long Does TMS Last for Depression? Treatment Results">How Long Does TMS Last for Depression? Treatment Results</a></h3>
+<div class="front-view-content">
+                        Discover how long TMS results for depression may last, what affects long-term relief, and how Interventional Psychiatry of Arizona supports ongoing mental health care.                    </div>
+<div class="readMore">
+<a href="/how-long-does-tms-last-for-depression/" title="How Long Does TMS Last for Depression? Treatment Results">
+                [Continue Reading...]            </a>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="dm-post excerpt">
+<div class="blog-article">
+<div class="dm-flex">
+<div class="dm-half post-image">
 <a class="post-image post-image-left schema-featured" href="/does-tms-therapy-work-for-anxiety/" id="post-image-thumbnail" title="Does TMS Therapy Work for Anxiety? Benefits &amp; Results">
 <div class="post-image-thumbnail"><img alt="Does TMS Therapy Work for Anxiety? Benefits &amp; Results" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" fetchpriority="high" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2026/10/does-tms-therapy-work-for-anxiety-thumbnail.jpg.webp" srcset="/wp-content/uploads/2026/10/does-tms-therapy-work-for-anxiety-thumbnail.jpg.webp 800w" title="" width="800"/></div> </a>
 </div>

@@ -26,6 +26,10 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
+<h4> <a href="/how-long-does-tms-last-for-depression/">How Long Does TMS Last for Depression? Treatment Results</a> </h4>
+<p> Discover how long TMS results for depression may last, remission timelines... </p>
+</div>
+<div>
 <h4> <a href="/can-tms-make-depression-worse/">Can TMS Make Depression Worse? Risks &amp; Side Effects</a> </h4>
 <p> Learn whether TMS therapy can worsen depression and explore the temporary TMS dip... </p>
 </div>
@@ -114,8 +118,9 @@ require_once __DIR__ . '/includes/header.php';
 
 <p class="wp-block-paragraph">Over the past two decades, dozens of published clinical trials have evaluated the efficacy of Transcranial Magnetic Stimulation across various anxiety diagnoses. The clinical consensus is overwhelmingly positive:</p>
 
-<div style="overflow-x: auto; margin-bottom: 28px;">
-<table style="width: 100%; border-collapse: collapse; font-size: 15px; text-align: left; background-color: #fff; border: 1px solid #e0e0e0;">
+<p class="table-scroll-hint" style="display: none; font-size: 13px; color: #555; margin-bottom: 6px; font-style: italic;">&larr; Scroll horizontally to view full table &rarr;</p>
+<div class="table-responsive-wrapper" style="width: 100%; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 28px; border: 1px solid #e0e0e0; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); background: #fff;">
+<table style="width: 100%; min-width: 600px; border-collapse: collapse; font-size: 15px; text-align: left; background-color: #fff; margin-bottom: 0;">
 <thead>
 <tr style="background-color: #154064; color: #ffffff;">
 <th style="padding: 12px; border: 1px solid #154064;">Anxiety Condition</th>
@@ -172,8 +177,9 @@ require_once __DIR__ . '/includes/header.php';
 <li><strong>Long-Lasting Neurological Durability:</strong> While pills stop working the moment you discontinue them, TMS builds lasting structural brain adaptations. As detailed in our clinical article on <a href="/how-long-does-tms-last/"><strong>How Long Does TMS Last?</strong></a>, therapeutic benefits frequently endure for <strong>12 to 24+ months</strong> following treatment completion.</li>
 </ul>
 
-<div style="overflow-x: auto; margin-bottom: 25px;">
-<table style="width: 100%; border-collapse: collapse; font-size: 15px; text-align: left; background-color: #fff; border: 1px solid #e0e0e0;">
+<p class="table-scroll-hint" style="display: none; font-size: 13px; color: #555; margin-bottom: 6px; font-style: italic;">&larr; Scroll horizontally to view full table &rarr;</p>
+<div class="table-responsive-wrapper" style="width: 100%; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 25px; border: 1px solid #e0e0e0; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); background: #fff;">
+<table style="width: 100%; min-width: 600px; border-collapse: collapse; font-size: 15px; text-align: left; background-color: #fff; margin-bottom: 0;">
 <thead>
 <tr style="background-color: #154064; color: #ffffff;">
 <th style="padding: 10px; border: 1px solid #154064;">Feature</th>
@@ -270,6 +276,7 @@ require_once __DIR__ . '/includes/header.php';
 <h2 class="wp-block-heading"><strong>Frequently Asked Questions About TMS Therapy for Anxiety</strong></h2>
 
 <style>
+/* Base FAQ Heading Styles */
 .thecontent h3.faq-question,
 .thecontent h3.wp-block-heading {
   color: #ef7136 !important;
@@ -282,6 +289,128 @@ require_once __DIR__ . '/includes/header.php';
 .thecontent h3.faq-question {
   margin-top: 24px !important;
   margin-bottom: 8px !important;
+}
+
+/* Mobile & Overflow Fixes */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+.single #page {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.article.dm-full-width {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding-bottom: 85px !important;
+}
+.thecontent {
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+.thecontent p,
+.thecontent li {
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+}
+.thecontent figure,
+.thecontent img {
+  max-width: 100% !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+}
+.thecontent div[style*="border-left"] {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-wrap: break-word !important;
+}
+
+@media screen and (max-width: 768px) {
+  .page-header {
+    padding: 24px 15px !important;
+  }
+  .page-header .page-title {
+    font-size: 22px !important;
+    line-height: 1.35 !important;
+    word-break: break-word !important;
+    padding: 0 5px !important;
+    margin-bottom: 8px !important;
+  }
+  .page-header p {
+    font-size: 14px !important;
+    margin-top: 0 !important;
+  }
+  article.article {
+    padding: 15px 12px 90px 12px !important;
+  }
+  .container.single-page.dm-flex {
+    display: flex !important;
+    flex-direction: column !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .container.single-page.dm-flex > .post {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .thecontent {
+    font-size: 15.5px !important;
+    line-height: 1.65 !important;
+    padding-right: 6px !important;
+    padding-left: 2px !important;
+  }
+  .thecontent h2 {
+    font-size: 20px !important;
+    line-height: 1.35 !important;
+    margin-top: 26px !important;
+    margin-bottom: 12px !important;
+    word-break: break-word !important;
+  }
+  .thecontent h3 {
+    font-size: 17.5px !important;
+    line-height: 1.4 !important;
+    word-break: break-word !important;
+  }
+  .thecontent ul,
+  .thecontent ol {
+    padding-left: 20px !important;
+  }
+  .thecontent div[style*="border-left"] {
+    padding: 16px 14px !important;
+    margin: 20px 0 !important;
+  }
+  .table-scroll-hint {
+    display: block !important;
+  }
+  .table-responsive-wrapper table {
+    font-size: 13.5px !important;
+  }
+  .table-responsive-wrapper th,
+  .table-responsive-wrapper td {
+    padding: 10px 8px !important;
+  }
+  .dm-sidebar {
+    width: 100% !important;
+    order: 2 !important;
+    padding-right: 0 !important;
+    margin-top: 35px !important;
+  }
+  .wda-access-toolbar {
+    right: 2px !important;
+    top: 65% !important;
+    opacity: 0.8 !important;
+    transform: scale(0.8) !important;
+    transform-origin: right center !important;
+  }
 }
 </style>
 
