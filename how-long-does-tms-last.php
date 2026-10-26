@@ -26,6 +26,10 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
+<h4> <a href="/does-tms-therapy-work-for-anxiety/">Does TMS Therapy Work for Anxiety? Benefits &amp; Results</a> </h4>
+<p> Learn how TMS therapy calms neural hyperactivity and restores emotional balance... </p>
+</div>
+<div>
 <h4> <a href="/does-ptsd-cause-memory-loss/">Does PTSD Cause Memory Loss? Causes &amp; Recovery</a> </h4>
 <p> Learn how psychological trauma alters the hippocampus and prefrontal cortex... </p>
 </div>
