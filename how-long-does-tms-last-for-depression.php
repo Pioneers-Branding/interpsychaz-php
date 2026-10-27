@@ -26,6 +26,10 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
+<h4> <a href="/does-electroconvulsive-therapy-hurt/">Does Electroconvulsive Therapy Hurt? What to Expect</a> </h4>
+<p> Learn whether ECT hurts, modern anesthesia protocols, and patient comfort... </p>
+</div>
+<div>
 <h4> <a href="/does-tms-therapy-work-for-anxiety/">Does TMS Therapy Work for Anxiety? Benefits &amp; Results</a> </h4>
 <p> Explore how TMS modulates neural circuitry to relieve anxiety symptoms... </p>
 </div>
@@ -187,17 +191,7 @@ require_once __DIR__ . '/includes/header.php';
 
 <p class="wp-block-paragraph">Major depressive disorder can make lasting wellness feel out of reach, but advances in neuromodulation offer a powerful path forward. Transcranial Magnetic Stimulation delivers meaningful, drug-free relief that endures for one to two years for the majority of responders. Should symptoms re-emerge down the road, safe and proven booster options quickly re-establish emotional equilibrium.</p>
 
-<p class="wp-block-paragraph">At <strong>Interventional Psychiatry of Arizona</strong>, our experienced clinical team is dedicated to supporting your mental wellness through personalized care, state-of-the-art neuromodulation, and ongoing clinical guidance. We welcome patients from across the Valley, providing expert care to our neighbors in:</p>
-
-<ul class="wp-block-list">
-<li><a href="/locations/scottsdale-az/">Scottsdale, AZ</a></li>
-<li><a href="/locations/tempe-az/">Tempe, AZ</a></li>
-<li><a href="/locations/glendale-az/">Glendale, AZ</a></li>
-<li><a href="/locations/gilbert-az/">Gilbert, AZ</a></li>
-<li><a href="/locations/chandler-az/">Chandler, AZ</a></li>
-<li><a href="/locations/mesa-az/">Mesa, AZ</a></li>
-<li>Phoenix, AZ</li>
-</ul>
+<p class="wp-block-paragraph">At <a href="/"><strong>Interventional Psychiatry of Arizona</strong></a> in Phoenix, our experienced clinical team is dedicated to supporting your mental wellness through personalized care, state-of-the-art neuromodulation, and ongoing clinical guidance. Whether you are exploring treatment for the first time or seeking long-term remission strategies, we provide compassionate, individualized support throughout every phase of your recovery.</p>
 
 <h2 class="wp-block-heading"><strong>Frequently Asked Questions About TMS Durability for Depression</strong></h2>
 

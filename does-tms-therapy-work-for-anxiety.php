@@ -258,20 +258,9 @@ require_once __DIR__ . '/includes/header.php';
 
 <p class="wp-block-paragraph">Because depression and anxiety co-occur in up to <strong>70% of psychiatric patients</strong>, the vast majority of individuals suffering from debilitating anxiety meet the clinical criteria for insurance-covered TMS. For standalone Generalized Anxiety Disorder (off-label indications), our billing coordinators provide transparent self-pay packages and flexible financing options. To learn more about navigating insurance verification, check our guide on <a href="/is-spravato-covered-by-insurance/">insurance coverage and prior authorization</a>.</p>
 
-<h2 class="wp-block-heading"><strong>Comprehensive Anxiety Relief with Personalized Interventional Care</strong></h2>
+<h2 class="wp-block-heading"><strong>Final Thoughts: Comprehensive Anxiety Relief with Personalized Interventional Care</strong></h2>
 
-<p class="wp-block-paragraph">At <strong>Interventional Psychiatry of Arizona</strong>, we take an integrative, patient-first approach to brain health. We combine state-of-the-art neuronavigated TMS technology with compassionate psychiatric expertise to help you build resilient neural pathways and achieve lasting relief.</p>
-
-<p class="wp-block-paragraph">We proudly welcome patients across the entire Valley of the Sun, including our neighbors in:</p>
-<ul class="wp-block-list">
-<li><a href="/locations/scottsdale-az/">Scottsdale, AZ</a></li>
-<li><a href="/locations/tempe-az/">Tempe, AZ</a></li>
-<li><a href="/locations/glendale-az/">Glendale, AZ</a></li>
-<li><a href="/locations/gilbert-az/">Gilbert, AZ</a></li>
-<li><a href="/locations/chandler-az/">Chandler, AZ</a></li>
-<li><a href="/locations/mesa-az/">Mesa, AZ</a></li>
-<li>Phoenix, AZ</li>
-</ul>
+<p class="wp-block-paragraph">At <a href="/"><strong>Interventional Psychiatry of Arizona</strong></a> in Phoenix, we take an integrative, patient-first approach to brain health. We combine state-of-the-art neuronavigated TMS technology with compassionate psychiatric expertise to help you build resilient neural pathways, quiet hyperactive anxiety networks, and achieve lasting emotional calm.</p>
 
 <h2 class="wp-block-heading"><strong>Frequently Asked Questions About TMS Therapy for Anxiety</strong></h2>
 

@@ -26,6 +26,10 @@ require_once __DIR__ . '/includes/header.php';
 <h3> Recent Posts </h3>
 <div class="dm-posts">
 <div>
+<h4> <a href="/does-electroconvulsive-therapy-hurt/">Does Electroconvulsive Therapy Hurt? What to Expect</a> </h4>
+<p> Learn whether ECT hurts, modern anesthesia protocols, and patient comfort... </p>
+</div>
+<div>
 <h4> <a href="/how-long-does-tms-last-for-depression/">How Long Does TMS Last for Depression? Treatment Results</a> </h4>
 <p> Discover how long TMS results for depression may last, remission timelines... </p>
 </div>
@@ -217,18 +221,7 @@ require_once __DIR__ . '/includes/header.php';
 
 <p class="wp-block-paragraph">While temporary hurdles like the "TMS dip" can occur as dormant prefrontal circuits wake up and rewire, these fluctuations are brief, adaptive, and manageable. By staying in close communication with your care team, completing the full recommended protocol, and practicing proactive self-care, you give your brain the time and stimulation it needs to build durable, restorative neural pathways.</p>
 
-<p class="wp-block-paragraph">At <strong>Interventional Psychiatry of Arizona</strong>, our compassionate clinical team is dedicated to supporting you through every phase of healing. Whether you are navigating your first consultation or seeking an alternative to medications, we provide personalized, evidence-based care to help you reclaim lasting peace of mind.</p>
-
-<p class="wp-block-paragraph">We proudly welcome patients throughout the greater metropolitan community, including our neighbors across:</p>
-<ul class="wp-block-list">
-<li><a href="/locations/scottsdale-az/">Scottsdale, AZ</a></li>
-<li><a href="/locations/tempe-az/">Tempe, AZ</a></li>
-<li><a href="/locations/glendale-az/">Glendale, AZ</a></li>
-<li><a href="/locations/gilbert-az/">Gilbert, AZ</a></li>
-<li><a href="/locations/chandler-az/">Chandler, AZ</a></li>
-<li><a href="/locations/mesa-az/">Mesa, AZ</a></li>
-<li>Phoenix, AZ</li>
-</ul>
+<p class="wp-block-paragraph">At <a href="/"><strong>Interventional Psychiatry of Arizona</strong></a> in Phoenix, our compassionate clinical team is dedicated to supporting you through every phase of healing. Whether you are navigating your first consultation or seeking an advanced alternative to medications, we provide personalized, evidence-based care to help you reclaim lasting peace of mind.</p>
 
 <h2 class="wp-block-heading"><strong>Frequently Asked Questions About TMS Therapy and Depression Risks</strong></h2>
 

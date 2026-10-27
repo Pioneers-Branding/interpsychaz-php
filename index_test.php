@@ -17,8 +17,45 @@ $pageOgType = 'website';
 $pageCanonical = 'https://interpsychaz.com/';
 $hideVisitUs = true; // page renders its own visit-us-today section below
 require_once __DIR__ . '/config.php';
+/* Homepage-only tracking (GTM-NRTNJ3X4 + Microsoft Clarity), placed at the top
+   of <head> without touching the shared include used by every other page. The
+   site-wide GTM/gtag loader is swapped for a bare gtag() stub, so the old tags
+   don't load here but the header's onclick gtag('event', …) calls still work. */
+ob_start();
 require_once __DIR__ . '/includes/head.php';
+$homeHead = preg_replace(
+  '#<!-- Google Tag Manager \+ gtag\.js .*?<!-- End Google Tag Manager \+ gtag\.js -->#s',
+  "<script>window.dataLayer = window.dataLayer || [];\nwindow.gtag = window.gtag || function(){window.dataLayer.push(arguments);};</script>",
+  ob_get_clean(), 1);
+echo preg_replace('/<head\b[^>]*>/', "$0\n" . <<<'HTML'
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NRTNJ3X4');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "z0k3sueo0e");
+</script>
+HTML, $homeHead, 1);
+ob_start();
 require_once __DIR__ . '/includes/header.php';
+$homeHeader = preg_replace(
+  '#<!-- Google Tag Manager \(noscript\) -->.*?<!-- End Google Tag Manager \(noscript\) -->\n?#s',
+  '', ob_get_clean(), 1);
+echo preg_replace('/<body\b[^>]*>/', "$0\n" . <<<'HTML'
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRTNJ3X4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+HTML, $homeHeader, 1);
 ?>
 
 <div class="homepage" id="page">

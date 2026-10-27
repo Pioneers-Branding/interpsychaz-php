@@ -71,6 +71,10 @@ require_once __DIR__ . '/includes/header.php';
 <h2> <strong>Posts</strong> </h2>
 <ul>
 <!-- the loop -->
+<li><a href="/does-electroconvulsive-therapy-hurt/">Does Electroconvulsive Therapy Hurt? What to Expect</a></li>
+<li><a href="/how-long-does-tms-last-for-depression/">How Long Does TMS Last for Depression? Treatment Results</a></li>
+<li><a href="/does-tms-therapy-work-for-anxiety/">Does TMS Therapy Work for Anxiety? Benefits &amp; Results</a></li>
+<li><a href="/can-tms-make-depression-worse/">Can TMS Make Depression Worse? Risks &amp; Side Effects</a></li>
 <li><a href="/how-long-does-tms-last/">How Long Does TMS Last? Results &amp; Durability</a></li>
 <li><a href="/does-ptsd-cause-memory-loss/">Does PTSD Cause Memory Loss? Causes &amp; Recovery</a></li>
 <li><a href="/what-are-the-symptoms-of-adhd/">What Are the Symptoms of ADHD? Signs, Types &amp; Diagnosis</a></li>

@@ -24,8 +24,28 @@ require_once __DIR__ . '/includes/header.php';
 <div class="blog-article">
 <div class="dm-flex">
 <div class="dm-half post-image">
+<a class="post-image post-image-left schema-featured" href="/does-electroconvulsive-therapy-hurt/" id="post-image-thumbnail" title="Does Electroconvulsive Therapy Hurt? What to Expect">
+<div class="post-image-thumbnail"><img alt="Does Electroconvulsive Therapy Hurt? What to Expect" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" fetchpriority="high" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2026/10/does-electroconvulsive-therapy-hurt-thumbnail.jpg" srcset="/wp-content/uploads/2026/10/does-electroconvulsive-therapy-hurt-thumbnail.jpg 800w" title="" width="800"/></div> </a>
+</div>
+<div class="dm-half post-half">
+<p style="font-size:12px; color:#666; margin-bottom:5px;">October 26, 2026</p>
+<h3 class="title front-view-title"><a href="/does-electroconvulsive-therapy-hurt/" title="Does Electroconvulsive Therapy Hurt? What to Expect">Does Electroconvulsive Therapy Hurt? What to Expect</a></h3>
+<div class="front-view-content">
+                        Learn whether electroconvulsive therapy hurts, what to expect during treatment, and how Interventional Psychiatry of Arizona supports patients throughout the process.                    </div>
+<div class="readMore">
+<a href="/does-electroconvulsive-therapy-hurt/" title="Does Electroconvulsive Therapy Hurt? What to Expect">
+                [Continue Reading...]            </a>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="dm-post excerpt">
+<div class="blog-article">
+<div class="dm-flex">
+<div class="dm-half post-image">
 <a class="post-image post-image-left schema-featured" href="/how-long-does-tms-last-for-depression/" id="post-image-thumbnail" title="How Long Does TMS Last for Depression? Treatment Results">
-<div class="post-image-thumbnail"><img alt="How Long Does TMS Last for Depression? Treatment Results" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" fetchpriority="high" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2026/10/how-long-does-tms-last-for-depression-thumbnail.jpg.webp" srcset="/wp-content/uploads/2026/10/how-long-does-tms-last-for-depression-thumbnail.jpg.webp 800w" title="" width="800"/></div> </a>
+<div class="post-image-thumbnail"><img alt="How Long Does TMS Last for Depression? Treatment Results" class="attachment-schema-featured size-schema-featured wp-post-image" decoding="async" height="533" sizes="(max-width: 800px) 100vw, 800px" src="/wp-content/uploads/2026/10/how-long-does-tms-last-for-depression-thumbnail.jpg.webp" srcset="/wp-content/uploads/2026/10/how-long-does-tms-last-for-depression-thumbnail.jpg.webp 800w" title="" width="800"/></div> </a>
 </div>
 <div class="dm-half post-half">
 <p style="font-size:12px; color:#666; margin-bottom:5px;">October 23, 2026</p>
