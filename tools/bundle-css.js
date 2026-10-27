@@ -8,10 +8,14 @@ const bundleA = [
   "/wp-content/cache/min/1/wp-content/plugins/dmm-consent-guard/assets/css/banner.css",
   "/wp-content/cache/min/1/wp-content/themes/mts_schema/content/css/ada.css",
   "/wp-content/cache/min/1/wp-content/themes/blossom-child/style.css",
+  "/wp-content/cache/min/1/wp-content/themes/mts_schema/css/owl.carousel.css",
   "/wp-content/themes/mts_schema/css/animate.min.css",
   "/wp-content/cache/min/1/wp-content/themes/mts_schema/fonts/all.min.css",
   "/wp-content/cache/min/1/wp-content/themes/mts_schema/css/responsive.css",
+  "/wp-content/cache/min/1/wp-content/themes/blossom-child/assets/slick.css",
   "/wp-content/cache/min/1/wp-content/themes/mts_schema/content/css/content-style.css",
+  "/wp-content/cache/min/1/wp-content/themes/mts_schema/theme-specific/testimonials/slick.css",
+  "/wp-content/cache/min/1/wp-content/themes/mts_schema/css/slick.css",
 ];
 
 const bundleGform = [
