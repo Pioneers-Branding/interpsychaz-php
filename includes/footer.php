@@ -147,6 +147,9 @@
                         <span class="fa fa-instagram" aria-hidden="true"></span>
                     </a>
                 </div>
+                <div class="footer-badges" style="margin-top: 18px;">
+                    <a href="https://tmslist.com/clinic/interventional-psychiatry-of-arizona-phoenix-az/" title="Interventional Psychiatry of Arizona on TMS List" style="display:inline-block;line-height:0"><img src="https://tmslist.com/badge/interventional-psychiatry-of-arizona-phoenix-az.svg?layout=pill" width="180" height="40" alt="Interventional Psychiatry of Arizona is listed on TMS List" loading="lazy" style="border:0;max-width:100%;height:auto"></a>
+                </div>
             </div>
             <nav aria-label="Footer treatments">
                 <h3>Our Treatments</h3>
